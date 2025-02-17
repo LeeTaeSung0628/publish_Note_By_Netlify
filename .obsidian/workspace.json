@@ -172,8 +172,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5cc2f7897ebd9692",
+  "active": "9b99cd08eedd9b26",
   "lastOpenFiles": [
+    "lib/styles/other-plugins.css",
+    "lib/media/do-messenger_screenshot_2025-02-12_14_04_58.png",
+    "lib/media/do-messenger_screenshot_2025-02-11_16_31_10.png",
+    "lib/media/do-messenger_screenshot_2025-02-11_15_32_34.png",
+    "lib/media/do-messenger_screenshot_2025-02-11_13_47_16.png",
+    "lib/media/do-messenger_screenshot_2025-02-10_17_10_58.png",
+    "lib/media/do-messenger_screenshot_2025-02-10_15_04_45.png",
     "개발-및-공부-히스토리.html",
     "공부/정보처리기사/정보처리기사-실기/🥇정보처리-기사-실기-키워드.html",
     "공부/정보처리기사/정보처리기사-실기",
@@ -184,15 +191,8 @@
     "lib/metadata.json",
     "lib/styles/theme.css",
     "lib/styles/obsidian.css",
-    "lib/styles/supported-plugins.css",
     "lib/media/favicon.png",
     "lib/media/6155340132a851f6089e.svg",
-    "lib/media/do-messenger_screenshot_2025-02-12_14_04_58.png",
-    "lib/media/do-messenger_screenshot_2025-02-11_16_31_10.png",
-    "lib/media/do-messenger_screenshot_2025-02-11_15_32_34.png",
-    "lib/media/do-messenger_screenshot_2025-02-11_13_47_16.png",
-    "lib/media/do-messenger_screenshot_2025-02-10_17_10_58.png",
-    "lib/media/do-messenger_screenshot_2025-02-10_15_04_45.png",
     "환영합니다!.md"
   ]
 }

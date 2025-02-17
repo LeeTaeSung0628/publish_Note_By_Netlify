@@ -172,8 +172,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9b99cd08eedd9b26",
+  "active": "c915a28227e0f308",
   "lastOpenFiles": [
+    "개발-및-공부-히스토리.html",
+    "netlify.toml",
+    "새 텍스트 문서.txt",
     "lib/search-index.json",
     "lib/metadata.json",
     "lib/styles/theme.css",
@@ -183,10 +186,7 @@
     "lib/styles/global-variable-styles.css",
     "lib/styles",
     "lib/media/favicon.png",
-    "lib/html/file-tree.html",
-    "lib/html",
     "lib/media/6155340132a851f6089e.svg",
-    "lib/fonts/cbe0ae49c52c920fd563.woff2",
     "lib/media/do-messenger_screenshot_2025-02-12_14_04_58.png",
     "lib/media/do-messenger_screenshot_2025-02-11_16_31_10.png",
     "lib/media/do-messenger_screenshot_2025-02-11_15_32_34.png",

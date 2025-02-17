@@ -143,13 +143,23 @@
               "icon": "lucide-list",
               "title": "개요"
             }
+          },
+          {
+            "id": "5cc2f7897ebd9692",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -158,11 +168,31 @@
       "canvas:새 캔버스 만들기": false,
       "daily-notes:오늘의 일일 노트 열기": false,
       "templates:템플릿 삽입": false,
-      "command-palette:명령어 팔레트 열기": false
+      "command-palette:명령어 팔레트 열기": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "9b99cd08eedd9b26",
   "lastOpenFiles": [
+    "lib/search-index.json",
+    "lib/metadata.json",
+    "lib/styles/theme.css",
+    "lib/styles/obsidian.css",
+    "lib/styles/supported-plugins.css",
+    "lib/styles/main-styles.css",
+    "lib/styles/global-variable-styles.css",
+    "lib/styles",
+    "lib/media/favicon.png",
+    "lib/html/file-tree.html",
+    "lib/html",
+    "lib/media/6155340132a851f6089e.svg",
+    "lib/fonts/cbe0ae49c52c920fd563.woff2",
+    "lib/media/do-messenger_screenshot_2025-02-12_14_04_58.png",
+    "lib/media/do-messenger_screenshot_2025-02-11_16_31_10.png",
+    "lib/media/do-messenger_screenshot_2025-02-11_15_32_34.png",
+    "lib/media/do-messenger_screenshot_2025-02-11_13_47_16.png",
+    "lib/media/do-messenger_screenshot_2025-02-10_17_10_58.png",
+    "lib/media/do-messenger_screenshot_2025-02-10_15_04_45.png",
     "환영합니다!.md"
   ]
 }

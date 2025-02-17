@@ -1,4 +1,28 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault_md_public]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Vault_md_public</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Mon, 17 Feb 2025 08:57:31 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 17 Feb 2025 08:57:28 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[🥇정보처리 기사 실기 키워드]]></title><description><![CDATA[<a class="tag" href="?query=tag:정보처리기사" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#정보처리기사</a> <a class="tag" href="?query=tag:실기" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#실기</a> <a class="tag" href="?query=tag:키워드" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#키워드</a> <a class="tag" href="?query=tag:정리" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#정리</a> 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault_md_public]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Vault_md_public</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Mon, 17 Feb 2025 09:17:16 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 17 Feb 2025 09:16:59 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[👩‍👧‍👦유입 통계 ADMIN]]></title><description><![CDATA[<a class="tag" href="?query=tag:프로젝트" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#프로젝트</a> <a class="tag" href="?query=tag:개발" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#개발</a> 
+ <br><br><a href=".?query=tag:프로젝트" class="tag" target="_blank" rel="noopener nofollow">#프로젝트</a> <a href=".?query=tag:개발" class="tag" target="_blank" rel="noopener nofollow">#개발</a><br><br><br> <img alt="Pasted image 20241230154602.png" src="lib\media\pasted-image-20241230154602.png"><br><br><br><br><br><img alt="do-messenger_screenshot_2024-12-30_15_52_09.png" src="lib\media\do-messenger_screenshot_2024-12-30_15_52_09.png"><br>
+<img alt="Pasted image 20241226171158.png" src="lib\media\pasted-image-20241226171158.png"><br><br><br>hf_marketing_code<br><br>hf_marketing_target<br><br>hf_marketing_hit_log<br><br><br><br><br><br>-&gt; hit로그 테이블에는 동작을 동작 key로써만 저장할 수 있다.<br><br><br><img alt="Pasted image 20250102181842.png" src="lib\media\pasted-image-20250102181842.png"><br><br><br><br>=&gt; 해당형태로 컬럼을 고정시키고, 동적으로 유입 수 를 출력한다.<br><br><br><br>-&gt; 그 후 페이지에 뿌려주기<br>Date: 01-02<br>
+Ad Type: 구글광고<br>
+Total Inflow: 4<br>
+Total Hit: 27<br>
+Detail Information:<br>
+Page Name: 대출하기 페이지<br>
+Hit: 9<br>
+Page Name: 한도조회 버튼<br>
+Hit: 12<br>
+Page Name: 이용안내 페이지<br>
+Hit: 6<br><br><br><img alt="Pasted image 20250107173902.png" src="lib\media\pasted-image-20250107173902.png">]]></description><link>project\hello-marketing\유입-통계-admin.html</link><guid isPermaLink="false">project/hello marketing/유입 통계 ADMIN.md</guid><pubDate>Mon, 17 Feb 2025 09:13:13 GMT</pubDate><enclosure url="lib\media\pasted-image-20241230154602.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\pasted-image-20241230154602.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[👩‍👧‍👦유입 통계 APP]]></title><description><![CDATA[<a class="tag" href="?query=tag:프로젝트" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#프로젝트</a> <a class="tag" href="?query=tag:개발" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#개발</a> 
+ <br><br><a href=".?query=tag:프로젝트" class="tag" target="_blank" rel="noopener nofollow">#프로젝트</a> <a href=".?query=tag:개발" class="tag" target="_blank" rel="noopener nofollow">#개발</a><br><br><br> <img alt="Pasted image 20241230154602.png" src="lib\media\pasted-image-20241230154602.png"><br><br><br><br><br><img alt="do-messenger_screenshot_2024-12-30_15_52_09.png" src="lib\media\do-messenger_screenshot_2024-12-30_15_52_09.png"><br>
+<img alt="Pasted image 20241226171158.png" src="lib\media\pasted-image-20241226171158.png"><br><br><br>hf_marketing_code<br><br>hf_marketing_target<br><br>hf_marketing_hit_log<br><br><br><br><br><br>-&gt; hit로그 테이블에는 동작을 동작 key로써만 저장할 수 있다.<br><br><br><img alt="Pasted image 20250102181842.png" src="lib\media\pasted-image-20250102181842.png"><br><br><br><br>=&gt; 해당형태로 컬럼을 고정시키고, 동적으로 유입 수 를 출력한다.<br><br><br><br>-&gt; 그 후 페이지에 뿌려주기<br>Date: 01-02<br>
+Ad Type: 구글광고<br>
+Total Inflow: 4<br>
+Total Hit: 27<br>
+Detail Information:<br>
+Page Name: 대출하기 페이지<br>
+Hit: 9<br>
+Page Name: 한도조회 버튼<br>
+Hit: 12<br>
+Page Name: 이용안내 페이지<br>
+Hit: 6<br><br><br><img alt="Pasted image 20250107173902.png" src="lib\media\pasted-image-20250107173902.png">]]></description><link>project\hello-marketing\유입-통계-app.html</link><guid isPermaLink="false">project/hello marketing/유입 통계 APP.md</guid><pubDate>Mon, 17 Feb 2025 09:12:18 GMT</pubDate><enclosure url="lib\media\pasted-image-20241230154602.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\pasted-image-20241230154602.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[🥇정보처리 기사 실기 키워드]]></title><description><![CDATA[<a class="tag" href="?query=tag:정보처리기사" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#정보처리기사</a> <a class="tag" href="?query=tag:실기" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#실기</a> <a class="tag" href="?query=tag:키워드" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#키워드</a> <a class="tag" href="?query=tag:정리" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#정리</a> 
  <br><br><a href=".?query=tag:정보처리기사" class="tag" target="_blank" rel="noopener nofollow">#정보처리기사</a> <a href=".?query=tag:실기" class="tag" target="_blank" rel="noopener nofollow">#실기</a> <a href=".?query=tag:키워드" class="tag" target="_blank" rel="noopener nofollow">#키워드</a> <a href=".?query=tag:정리" class="tag" target="_blank" rel="noopener nofollow">#정리</a><br><br>
 <br>시제품을 끊임없이 제작하며 사이클을 반복하는 개발 방법론
 <br>워터폴과 대조적이며, 소프트웨어 개발을 넘어 기업 경영 전반에서 사용되고 있다.
@@ -508,11 +532,204 @@ ex) bool bIsTrue / int nCnt
 <br><br>
 1 → 가상 회선(Virtual Circuit)<br>
 2 → 데이터그램(Datagram)
-<br>]]></description><link>공부\정보처리기사\정보처리기사-실기\정보처리-기사-실기-키워드.html</link><guid isPermaLink="false">공부/정보처리기사/정보처리기사 실기/정보처리 기사 실기 키워드.md</guid><pubDate>Mon, 17 Feb 2025 08:10:59 GMT</pubDate><enclosure url="lib\media\do-messenger_screenshot_2025-02-10_15_04_45.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\do-messenger_screenshot_2025-02-10_15_04_45.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[📓 퍼블릭 노트 퍼블리시(CI/CD)과정]]></title><description><![CDATA[ 
- <br><br>
-<br>
+<br>]]></description><link>study\정보처리기사\정보처리기사-실기\정보처리-기사-실기-키워드.html</link><guid isPermaLink="false">study/정보처리기사/정보처리기사 실기/정보처리 기사 실기 키워드.md</guid><pubDate>Mon, 17 Feb 2025 09:05:01 GMT</pubDate><enclosure url="lib\media\do-messenger_screenshot_2025-02-10_15_04_45.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\do-messenger_screenshot_2025-02-10_15_04_45.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[🥈필기 1과목 - 소프트웨어 설계]]></title><description><![CDATA[<a class="tag" href="?query=tag:정보처리기사" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#정보처리기사</a> <a class="tag" href="?query=tag:필기" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#필기</a> <a class="tag" href="?query=tag:정리" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#정리</a> 
+ <br><br><a href=".?query=tag:정보처리기사" class="tag" target="_blank" rel="noopener nofollow">#정보처리기사</a> <a href=".?query=tag:필기" class="tag" target="_blank" rel="noopener nofollow">#필기</a> <a href=".?query=tag:정리" class="tag" target="_blank" rel="noopener nofollow">#정리</a> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br>클래스 인터페이스
+<br>명령어(사용자 질의 수)
+<br>데이터 파일
+<br>출력 보고서
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>흭공개운유<br><br><br><br><br><br><br>
+<br>네트워크 변화에 신속히 대처할 수 있다.
+<br>거리 벡터 라우팅 프로토콜 이라고 한다.
+<br>멀티캐스팅을 지원한다.
+<br>최단 경로 탐색에 다익스트라 알고리즘을 사용한다.
+<br><br><br>
+<br>클래스 설계서
+<br>통합시험 결과서
+<br>프로그램 코드
+<br>사용자 요구사항 정의서
 <br><br><br><br><br>
-<br>
+<br>암호화 키와 복호화 키가 동일한 암호화 알고리즘을 뜻한다.
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br>COCOMO
+<br>Putnam
+<br>Function-Point
+<br>PERT
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br>비교적 실행속도 빠르기 때문에, 다양한 암호의 핵심 함수로 사용될 수 있다.
+<br>키 교환을 필요로 하기 때문에, 키를 교환하는 중 탈취가 될 가능성이 있다.
 <br><br>
-<br><a data-href="정보처리 기사 실기 키워드" href="공부\정보처리기사\정보처리기사-실기\정보처리-기사-실기-키워드.html" class="internal-link" target="_self" rel="noopener nofollow">정보처리 기사 실기 키워드</a>
-]]></description><link>index.html</link><guid isPermaLink="false">index.md</guid><pubDate>Mon, 17 Feb 2025 08:57:27 GMT</pubDate></item></channel></rss>
+<br>자신만이 보관하는 비밀키를 이용하여 인증, 전자서명 등에 적용이 가능하다.
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>- 캡슐화를 통해 모듈화를 강화하고, 설계 및 구현의 변경에 따른 영향을 최소화 함으로써 품질을 향상시킨다.
+<br><br>- 재사용 가능한 모듈들을 제공함으로써 예산을 절감한다.
+<br><br>- 다형성을 통한 인터페이스 확장이 가능하여 다양한 형태와 기능을 가진 애플리케이션 개발이 가능하다.
+<br><br>- 개발자가 관리하고 통제해야 하는 객체들의 제어를 프레임워크에 넘김으로써 생상선을 향상시킴
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<br>벨만-포드 알고리즘 사용
+<br>RIP프로토콜 ( 최대 홉 개수 15개 )
+<br>인접 라우터와 주기적으로 정보 교환
+<br><br>
+<br>다익스트라 알고리즘 사용
+<br>OSPF프로토콜 ( 최대 홉 개수 제한 없음 )
+<br>최단 경로, 최소 지연, 최대 처리량
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>]]></description><link>study\정보처리기사\정보처리기사-필기\필기-1과목-소프트웨어-설계.html</link><guid isPermaLink="false">study/정보처리기사/정보처리기사 필기/필기 1과목 - 소프트웨어 설계.md</guid><pubDate>Mon, 17 Feb 2025 09:05:23 GMT</pubDate></item><item><title><![CDATA[🥈필기 2과목 - 소프트웨어 개발]]></title><description><![CDATA[<a class="tag" href="?query=tag:정보처리기사" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#정보처리기사</a> <a class="tag" href="?query=tag:필기" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#필기</a> <a class="tag" href="?query=tag:정리" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#정리</a> 
+ <br><br><a href=".?query=tag:정보처리기사" class="tag" target="_blank" rel="noopener nofollow">#정보처리기사</a> <a href=".?query=tag:필기" class="tag" target="_blank" rel="noopener nofollow">#필기</a> <a href=".?query=tag:정리" class="tag" target="_blank" rel="noopener nofollow">#정리</a> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br>프로그램의 하위 모듈에서 상위 모듈 방향으로 통합
+<br>하나의 주요 제어 모듈과 관련된 종속 모듈의 그룹인 클러스터 필요
+<br><br>
+<br>상위 모듈에서 하위 모듈방향으로 통합
+<br>깊이 우선 통합법, 넓이 우선 통합법 사용
+<br>초기부터 사용자에게 시스템 구조를 보여줌
+<br><br><br>
+<br>사용사례를 확장하여 명세하거나 설계 다이어그램, 원시코드, 테스트 케이스 등에 적용할 수 있다.
+<br>복잡한 알고리즘 또는 반복, 실시간 동작, 병행 처리와 같은 기능이나 동작을 이해하려고 할 때 유용하다.
+<br>단순한 테스트 케이스를 이용하여 프로덕트를 수작업으로 수행해 보는 것이다.
+<br>요구사항 명세서 작성자를 포함하여 사전 검토한 후에 짧은 검토 회의를 통해 결함을 발견
+<br><br>
+<br>요구사항 명세서 작성자를 제외한 다른 검토 전문가들이 요구사항 명세서를 확인하면서 결함을 발견
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>9 / 12 / 14 / 25<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br>기초 경로 검사 -&gt; 화이트 박스 테스트
+<br>동치 클래스 분해
+<br>경계값 분석
+<br>원인 결과 그래프
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>- 소프트웨어 품질 평가를 위한 소프트웨어 품질평가 통합모델의 표준
+- `SQuaRE`라고도 한다.
+- 기존 평가모델인 `ISO/IEC9126` 과 `ISO/IEC14598`을 통합하였다.
+<br><br>- 소프트웨어의 내부 및 외부 품질과 사용 품질에 대한 모델 등, 품질 모델 부분을 다룬다.
+<br><br>- 소프트웨어의 내부 측정, 외부 측정, 사용품질 측정 등 품직 측정 부분을 다룬다.
+<br><br><br>
+<br>특정한 몇몇 테스트 케이스의 입력 값들에 대해서만 기대하는 결과를 제공하는 오라클이다.
+<br><br>
+<br>모든 테스트 케이스의 입력 값에 대해 기대하는 결과를 제공하는 오라클
+<br><br>
+<br>특정 테스트 케이스의 입력값에 대해 기대하는 결과를 제공하고, 나머지 입력값들에 대해서는 추정으로 처리
+<br><br>
+<br>애플리케이션의 변경이 있을 경우 테스트 케이스의 수행 전과 후의 결과값이 동일한지를 확인하는 오라클
+]]></description><link>study\정보처리기사\정보처리기사-필기\필기-2과목-소프트웨어-개발.html</link><guid isPermaLink="false">study/정보처리기사/정보처리기사 필기/필기 2과목 - 소프트웨어 개발.md</guid><pubDate>Mon, 17 Feb 2025 09:06:03 GMT</pubDate></item><item><title><![CDATA[🥈필기 3과목 - 데이터베이스 구축]]></title><description><![CDATA[<a class="tag" href="?query=tag:정보처리기사" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#정보처리기사</a> <a class="tag" href="?query=tag:필기" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#필기</a> <a class="tag" href="?query=tag:정리" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#정리</a> 
+ <br><br><a href=".?query=tag:정보처리기사" class="tag" target="_blank" rel="noopener nofollow">#정보처리기사</a> <a href=".?query=tag:필기" class="tag" target="_blank" rel="noopener nofollow">#필기</a> <a href=".?query=tag:정리" class="tag" target="_blank" rel="noopener nofollow">#정리</a> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>0 or 1
+<br><br>트렌젠션 전/후 같아야함
+<br><br>다른 트렌젝션의 간섭 X
+<br><br>트렌젝션 커밋 결과가 영구히 저장
+<br><br><br>하드웨어와 소프트웨어의 물리적 위치를 사용자가 알 필요 없다. 논리적인 명칭으로만 엑세스할 수 있음
+<br><br>사용자에게 통지할 필요없이 시스템 안에 파일들과 자원들의 부가적인 복사를 자유롭게 할 수 있다.
+<br><br>다중 사용자들이 자원들을 자동으로 공유할 수 있다.
+<br><br>사용자들은 어는 위치의 시스템에 장애가 발생했는지 알 필요가 없다.
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>트렌젝션 모델링 / 독립적인 개념 스키마 모델링 / 개념스키마 설계 / E-R 다이어그램
+<br><br>트렌젝션 인터페이스 설계 / DBMS에 맞는 논리스키마 설계 / 테이블설계 / 논리적 맵핑 / 스키마 평가 및 정제
+<br><br>레코드 집중의 분석,설계 / 저장레코드 양식 설계 / 저장 구조 및 엑세스 경로 설정
+<br><br><br><br><br><br><br>각 릴레이션의 기본키를 구성하는 속성은 null값이나 중복값을 갖을 수 없음.
+<br><br>외래키 값은 null이거나 참조하는 릴레이션의 기본키와 값이 동일해야 한다.
+<br><br>특정 속성에 대해 고유한 값을 가지도록 조건이 주어진경우, 릴레이션의 각 튜플이 가지는 속성 값들은 서로 달라야 한다.
+<br><br>각 릴레이션은 최소한 한 개 이상의 키가 존재해야 한다.
+<br><br>릴레이션 내의 튜플들이 각 속성의 도메인에 지정된 값만을 가져야 한다.
+<br>도메인 : 하나의 에트리뷰트가 가질 수 있는 원자값들의 집합<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>]]></description><link>study\정보처리기사\정보처리기사-필기\필기-3과목-데이터베이스-구축.html</link><guid isPermaLink="false">study/정보처리기사/정보처리기사 필기/필기 3과목 - 데이터베이스 구축.md</guid><pubDate>Mon, 17 Feb 2025 09:06:12 GMT</pubDate></item><item><title><![CDATA[🥈필기 4과목 - 프로그래밍 언어 활용]]></title><description><![CDATA[<a class="tag" href="?query=tag:정보처리기사" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#정보처리기사</a> <a class="tag" href="?query=tag:필기" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#필기</a> <a class="tag" href="?query=tag:정리" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#정리</a> 
+ <br><br><a href=".?query=tag:정보처리기사" class="tag" target="_blank" rel="noopener nofollow">#정보처리기사</a> <a href=".?query=tag:필기" class="tag" target="_blank" rel="noopener nofollow">#필기</a> <a href=".?query=tag:정리" class="tag" target="_blank" rel="noopener nofollow">#정리</a> <br><br><br><br><br><br><br> 다른 프로세스가 뺐지 못하는 상태.
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>#### - 최적의 경로를 산출하기 위한 정보로서 홉(거리 값)만을 고려하므로, RIP를 선택한 경로가 ==최적의 경로가 아닌경우가== 많이 발생할 수 있다.
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br>두 모듈이 매개변수로 자료를 전달할 때, 자료구조 형태로 전달되어 이용될 때 데이터가 결합되어 있다고 한다.
+<br><br>
+<br>하나의 모듈이 직접적으로 다른 모듈의 내용을 참조할 때 두 모듈은 내용적으로 결합되어 있다고 한다.
+<br><br>
+<br>두 모듈이 동일한 전역 데이터를 접근한다면 공통결합 되어 있다고 한다.
+<br>결합도 - 두 모듈간의 상호작용, 또는 의존도 정도를 나타내는 것.<br><br>// a[0]의 주소값이 0일때,
+
+int a[] = {14, 22, 30, 38};
+
+printf("%u", &amp;a[2]);   =&gt; a[2]자리의 첫번째 주소값 -&gt; 18
+printf("%u", a);       =&gt; a[0]자리의 첫번째 주소값 -&gt; 10
+
+주소값 a[0] 14 =&gt; 10,11,12,13 / a[1] 22 =&gt; 14,15,16,17 / a[2] 30 =&gt; 18,19,20,21 / a[3] 38 =&gt; 22,23,24,25 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>권한이 있는 사용자들만 접근할 수 있는 보안 방법
+<br><br>자원에 대한 접근을 사용자나 그룹의 신분에따라 제한, 자원의 소유권을 가진 사람이 다른 사람의 접근을 허용하거나 제한할 수 있음
+<br><br>미리 정해진 자원의 보안 레벨과 사용자에게 허락된 접근권한비교
+<br><br><br><br><br><br><br>
+<br>5만 라인 이하
+<br>사무 처리용, 업무용, 과학용 소프트웨어 개발에 적합
+<br><br>
+<br>30만라인 이하
+<br>컴파일러, 인터프리터 개발에 적합
+<br><br>
+<br>30만 라인 이상
+<br>미사일 유도시스템, 실시간 처리 시스템 개발에 적합
+<br><br><br><br><br><br><br><br><br><br><br><br>네트워크상에서 공유되는 파일시스템. 다른 원격 호스트의 파일 시스템을 로컬 디스크에 접근하듯 간단하게 접근하여 자신의 디렉토리처럼 사용할 수 있다.
+<br><br>네트워크 보안을 위한 유틸리티. 네트워크의 보안을 위해 물리적 연결과 어떤 서버와 운영 체제가 작동 중인지 따위를 조사하는 응용 프로그램.
+<br><br>어떤 프로젝트를 마치기까지 수행되는 작업의 각 단계(상태)를 그래프의 정점으로 표현하고, 작업 하나가 완료되어 다음 단계로 넘어가는 시간을 그래프의 간선으로 나타낸 방향 그래프.
+<br><br>네트워크를 제어부, 데이터 전달부로 분리하여 네트워크 관리자가 보다 효율적으로 네트워크를 제어, 관리할 수 있는 기술. 
+
+기존의 라우터, 스위치 등과 같이 하드웨어에 의존하는 네트워크 체계에서 안정성, 속도, 보안 등을 소프트웨어로 제어, 관리하기 위해 개발됨.
+
+네트워크 장비의 펌웨어 업그레이드를 통해 사용자의 직접적인 데이터 전송 경로 관리가 가능하고, 기존 네트워크에는 영향을 주지 않으면서 특정 서비스의 전송 경로 수정을 통하여 인터넷상에서 발생하는 문제를 처리할 수 있음.
+<br><br>작업들 간의 상호 관련성, 결정경로, 경계시간, 자원할당 등을 제시한다.
+<br><br>각 작업들이 언제 시작하고 언제 종료되는지에 대한 일정을 막대 도표를 이용하여 표시한다.
+
+시간선(Time-line)차트 라고도 한다.
+
+수평 막대의 길이는 각 작업의 기간을 나타낸다.
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>내공 외제 스자<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>1의 개수가 27개 즉 11111111 11111111 11111111 11100000<br>
+0 0 0 0  0  1  1  1<br>
+1 2 4 8 16 32 64 128 -&gt; 32 + 64 + 128 = 224<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br>프로세스가 두개일때, 상호 배제를 보장하는 최초의 알고리즘
+<br>flag와 turn변수를 사용하여 조정
+<br><br>
+<br>프로세스 n개의 상호 배제 문제를 해결한 알고리즘
+<br>프로세스에게 고유한 번호를 부여하고, 번호를 기준으로 우선순위를 정하여 우선순위가 높은 프로세스가 먼저 임계구역에 진입하도록 구현
+<br><br>
+<br>프로세스가 두개일때 상호배제를 보장. 데커 알고리즘과 유사하지만 상대방에게 진입 기회를 양보한다는 차이
+<br><br>
+<br>공유된 자원의 데이터 혹은 임계영역 등에 따라 여러 Process혹은 Thread가 접근하는 것을 막아줌
+<br><br><br><br>]]></description><link>study\정보처리기사\정보처리기사-필기\필기-4과목-프로그래밍-언어-활용.html</link><guid isPermaLink="false">study/정보처리기사/정보처리기사 필기/필기 4과목 - 프로그래밍 언어 활용.md</guid><pubDate>Mon, 17 Feb 2025 09:06:22 GMT</pubDate></item><item><title><![CDATA[🥈필기 5과목 - 정보시스템 구축관리]]></title><description><![CDATA[<a class="tag" href="?query=tag:정보처리기사" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#정보처리기사</a> <a class="tag" href="?query=tag:필기" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#필기</a> <a class="tag" href="?query=tag:정리" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#정리</a> 
+ <br><br><a href=".?query=tag:정보처리기사" class="tag" target="_blank" rel="noopener nofollow">#정보처리기사</a> <a href=".?query=tag:필기" class="tag" target="_blank" rel="noopener nofollow">#필기</a> <a href=".?query=tag:정리" class="tag" target="_blank" rel="noopener nofollow">#정리</a> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br>클래스 인터페이스
+<br>명령어(사용자 질의 수)
+<br>데이터 파일
+<br>출력 보고서
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>흭공개운유<br><br><br><br><br><br><br>
+<br>네트워크 변화에 신속히 대처할 수 있다.
+<br>거리 벡터 라우팅 프로토콜 이라고 한다.
+<br>멀티캐스팅을 지원한다.
+<br>최단 경로 탐색에 다익스트라 알고리즘을 사용한다.
+<br><br><br>
+<br>클래스 설계서
+<br>통합시험 결과서
+<br>프로그램 코드
+<br>사용자 요구사항 정의서
+<br><br><br><br><br>
+<br>암호화 키와 복호화 키가 동일한 암호화 알고리즘을 뜻한다.
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br>COCOMO
+<br>Putnam
+<br>Function-Point
+<br>PERT
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br>비교적 실행속도 빠르기 때문에, 다양한 암호의 핵심 함수로 사용될 수 있다.
+<br>키 교환을 필요로 하기 때문에, 키를 교환하는 중 탈취가 될 가능성이 있다.
+<br><br>
+<br>자신만이 보관하는 비밀키를 이용하여 인증, 전자서명 등에 적용이 가능하다.
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>- 캡슐화를 통해 모듈화를 강화하고, 설계 및 구현의 변경에 따른 영향을 최소화 함으로써 품질을 향상시킨다.
+<br><br>- 재사용 가능한 모듈들을 제공함으로써 예산을 절감한다.
+<br><br>- 다형성을 통한 인터페이스 확장이 가능하여 다양한 형태와 기능을 가진 애플리케이션 개발이 가능하다.
+<br><br>- 개발자가 관리하고 통제해야 하는 객체들의 제어를 프레임워크에 넘김으로써 생상선을 향상시킴
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<br>벨만-포드 알고리즘 사용
+<br>RIP프로토콜 ( 최대 홉 개수 15개 )
+<br>인접 라우터와 주기적으로 정보 교환
+<br><br>
+<br>다익스트라 알고리즘 사용
+<br>OSPF프로토콜 ( 최대 홉 개수 제한 없음 )
+<br>최단 경로, 최소 지연, 최대 처리량
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>]]></description><link>study\정보처리기사\정보처리기사-필기\필기-5과목-정보시스템-구축관리.html</link><guid isPermaLink="false">study/정보처리기사/정보처리기사 필기/필기 5과목 - 정보시스템 구축관리.md</guid><pubDate>Mon, 17 Feb 2025 09:06:31 GMT</pubDate></item><item><title><![CDATA[💜옵시디언 연동 Blog CICD]]></title><description><![CDATA[<a class="tag" href="?query=tag:블로그" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#블로그</a> <a class="tag" href="?query=tag:연동" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#연동</a> <a class="tag" href="?query=tag:CI/CD" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#CI/CD</a> 
+ <br><br><a href=".?query=tag:블로그" class="tag" target="_blank" rel="noopener nofollow">#블로그</a> <a href=".?query=tag:연동" class="tag" target="_blank" rel="noopener nofollow">#연동</a> <a href=".?query=tag:CI\CD" class="tag" target="_blank" rel="noopener nofollow">#CI/CD</a><br>]]></description><link>study\note-ci_cd\옵시디언-연동-blog-cicd.html</link><guid isPermaLink="false">study/note CI_CD/옵시디언 연동 Blog CICD.md</guid><pubDate>Mon, 17 Feb 2025 09:15:38 GMT</pubDate></item><item><title><![CDATA[📓 퍼블릭 노트 퍼블리시(CI/CD)과정]]></title><description><![CDATA[ 
+ <br><br>
+<br><a data-href="옵시디언 연동 Blog CICD" href="study\note-ci_cd\옵시디언-연동-blog-cicd.html" class="internal-link" target="_self" rel="noopener nofollow">옵시디언 연동 Blog CICD</a>
+<br><br><br><br>
+<br>👩‍👧‍👦<a data-href="유입 통계 APP" href="project\hello-marketing\유입-통계-app.html" class="internal-link" target="_self" rel="noopener nofollow">유입 통계 APP</a>
+<br>👩‍👧‍👦<a data-href="유입 통계 ADMIN" href="project\hello-marketing\유입-통계-admin.html" class="internal-link" target="_self" rel="noopener nofollow">유입 통계 ADMIN</a>
+<br><br><br><br>
+<br>🥈<a data-href="필기 1과목 - 소프트웨어 설계" href="study\정보처리기사\정보처리기사-필기\필기-1과목-소프트웨어-설계.html" class="internal-link" target="_self" rel="noopener nofollow">필기 1과목 - 소프트웨어 설계</a>
+<br>🥈<a data-href="필기 2과목 - 소프트웨어 개발" href="study\정보처리기사\정보처리기사-필기\필기-2과목-소프트웨어-개발.html" class="internal-link" target="_self" rel="noopener nofollow">필기 2과목 - 소프트웨어 개발</a>
+<br>🥈<a data-href="필기 3과목 - 데이터베이스 구축" href="study\정보처리기사\정보처리기사-필기\필기-3과목-데이터베이스-구축.html" class="internal-link" target="_self" rel="noopener nofollow">필기 3과목 - 데이터베이스 구축</a>
+<br>🥈<a data-href="필기 4과목 - 프로그래밍 언어 활용" href="study\정보처리기사\정보처리기사-필기\필기-4과목-프로그래밍-언어-활용.html" class="internal-link" target="_self" rel="noopener nofollow">필기 4과목 - 프로그래밍 언어 활용</a>
+<br>🥈<a data-href="필기 5과목 - 정보시스템 구축관리" href="study\정보처리기사\정보처리기사-필기\필기-5과목-정보시스템-구축관리.html" class="internal-link" target="_self" rel="noopener nofollow">필기 5과목 - 정보시스템 구축관리</a>
+<br><br>
+<br>🥇<a data-href="정보처리 기사 실기 키워드" href="study\정보처리기사\정보처리기사-실기\정보처리-기사-실기-키워드.html" class="internal-link" target="_self" rel="noopener nofollow">정보처리 기사 실기 키워드</a>
+]]></description><link>index.html</link><guid isPermaLink="false">index.md</guid><pubDate>Mon, 17 Feb 2025 09:15:50 GMT</pubDate></item></channel></rss>

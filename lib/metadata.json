@@ -1,13 +1,26 @@
 {
   "vaultName": "Vault_md_public",
-  "lastExport": 1739782648066,
+  "lastExport": 1739783819378,
   "pluginVersion": "1.8.01",
   "validBodyClasses": "publish css-settings-manager show-inline-title show-ribbon theme-dark",
   "useCustomHeadContent": false,
   "useCustomFavicon": false,
   "files": [
-    "공부/정보처리기사/정보처리기사 실기/정보처리 기사 실기 키워드.md",
+    "project/hello marketing/유입 통계 ADMIN.md",
+    "project/hello marketing/유입 통계 APP.md",
+    "study/정보처리기사/정보처리기사 실기/정보처리 기사 실기 키워드.md",
+    "study/정보처리기사/정보처리기사 필기/필기 1과목 - 소프트웨어 설계.md",
+    "study/정보처리기사/정보처리기사 필기/필기 2과목 - 소프트웨어 개발.md",
+    "study/정보처리기사/정보처리기사 필기/필기 3과목 - 데이터베이스 구축.md",
+    "study/정보처리기사/정보처리기사 필기/필기 4과목 - 프로그래밍 언어 활용.md",
+    "study/정보처리기사/정보처리기사 필기/필기 5과목 - 정보시스템 구축관리.md",
+    "study/note CI_CD/옵시디언 연동 Blog CICD.md",
     "index.md",
+    "lib/media/pasted-image-20241230154602.png",
+    "lib/media/do-messenger_screenshot_2024-12-30_15_52_09.png",
+    "lib/media/pasted-image-20241226171158.png",
+    "lib/media/pasted-image-20250102181842.png",
+    "lib/media/pasted-image-20250107173902.png",
     "lib/media/do-messenger_screenshot_2025-02-10_15_04_45.png",
     "lib/media/do-messenger_screenshot_2025-02-10_17_10_58.png",
     "lib/media/do-messenger_screenshot_2025-02-11_13_47_16.png",
@@ -81,201 +94,261 @@
   ],
   "fileInfo": {
     "index.md": {
-      "modifiedTime": 1739782648066,
-      "sourceSize": 253,
+      "modifiedTime": 1739783819378,
+      "sourceSize": 674,
       "exportedPath": "index.html",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.wasm": {
-      "modifiedTime": 1739782648066,
+      "modifiedTime": 1739783819378,
       "sourceSize": 23377,
       "exportedPath": "lib/scripts/graph-wasm.wasm",
       "dependencies": []
     },
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1739782648066,
+      "modifiedTime": 1739783819378,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1739782648066,
+      "modifiedTime": 1739783819378,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1739782648066,
+      "modifiedTime": 1739783819378,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1739782648066,
+      "modifiedTime": 1739783819378,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1739782648066,
+      "modifiedTime": 1739783819378,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1739782648066,
+      "modifiedTime": 1739783819378,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1739782648066,
+      "modifiedTime": 1739783819378,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1739782648066,
+      "modifiedTime": 1739783819378,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1739782648066,
+      "modifiedTime": 1739783819378,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1739782648066,
+      "modifiedTime": 1739783819378,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1739782648066,
+      "modifiedTime": 1739783819378,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1739782648066,
+      "modifiedTime": 1739783819378,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1739782648066,
+      "modifiedTime": 1739783819378,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/6155340132a851f6089e.svg": {
-      "modifiedTime": 1739782648066,
+      "modifiedTime": 1739783819378,
       "sourceSize": 315,
       "exportedPath": "lib/media/6155340132a851f6089e.svg",
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1739782648066,
-      "sourceSize": 5786,
+      "modifiedTime": 1739783819378,
+      "sourceSize": 15940,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1739782648066,
+      "modifiedTime": 1739783819378,
       "sourceSize": 47290,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/scripts/graph-view.js": {
-      "modifiedTime": 1739782648066,
+      "modifiedTime": 1739783819378,
       "sourceSize": 15519,
       "exportedPath": "lib/scripts/graph-view.js",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.js": {
-      "modifiedTime": 1739782648066,
+      "modifiedTime": 1739783819378,
       "sourceSize": 14021,
       "exportedPath": "lib/scripts/graph-wasm.js",
       "dependencies": []
     },
     "lib/scripts/graph-render-worker.js": {
-      "modifiedTime": 1739782648066,
+      "modifiedTime": 1739783819378,
       "sourceSize": 5179,
       "exportedPath": "lib/scripts/graph-render-worker.js",
       "dependencies": []
     },
     "lib/scripts/tinycolor.js": {
-      "modifiedTime": 1739782648066,
+      "modifiedTime": 1739783819378,
       "sourceSize": 29832,
       "exportedPath": "lib/scripts/tinycolor.js",
       "dependencies": []
     },
     "lib/scripts/pixi.js": {
-      "modifiedTime": 1739782648066,
+      "modifiedTime": 1739783819378,
       "sourceSize": 449509,
       "exportedPath": "lib/scripts/pixi.js",
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1739782648066,
+      "modifiedTime": 1739783819378,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1739782648066,
+      "modifiedTime": 1739783819378,
       "sourceSize": 1105,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
     },
     "lib/scripts/graph-data.js": {
-      "modifiedTime": 1739782648066,
-      "sourceSize": 326,
+      "modifiedTime": 1739783819378,
+      "sourceSize": 1036,
       "exportedPath": "lib/scripts/graph-data.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1739782648066,
+      "modifiedTime": 1739783819378,
       "sourceSize": 137329,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/other-plugins.css": {
-      "modifiedTime": 1739782648066,
+      "modifiedTime": 1739783819378,
       "sourceSize": 390,
       "exportedPath": "lib/styles/other-plugins.css",
       "dependencies": []
     },
     "lib/styles/theme.css": {
-      "modifiedTime": 1739782648066,
+      "modifiedTime": 1739783819378,
       "sourceSize": 41426,
       "exportedPath": "lib/styles/theme.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1739782648066,
+      "modifiedTime": 1739783819378,
       "sourceSize": 417,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/supported-plugins.css": {
-      "modifiedTime": 1739782648066,
+      "modifiedTime": 1739783819378,
       "sourceSize": 1640,
       "exportedPath": "lib/styles/supported-plugins.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1739782648066,
+      "modifiedTime": 1739783819378,
       "sourceSize": 23130,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
     },
-    "공부/정보처리기사/정보처리기사 실기/정보처리 기사 실기 키워드.md": {
-      "modifiedTime": 1739782648066,
-      "sourceSize": 43661,
-      "exportedPath": "공부/정보처리기사/정보처리기사-실기/정보처리-기사-실기-키워드.html",
+    "lib/media/do-messenger_screenshot_2025-02-10_15_04_45.png": {
+      "modifiedTime": 1739783819378,
+      "sourceSize": 99317,
+      "exportedPath": "lib/media/do-messenger_screenshot_2025-02-10_15_04_45.png",
+      "dependencies": []
+    },
+    "lib/media/do-messenger_screenshot_2025-02-10_17_10_58.png": {
+      "modifiedTime": 1739783819378,
+      "sourceSize": 122009,
+      "exportedPath": "lib/media/do-messenger_screenshot_2025-02-10_17_10_58.png",
+      "dependencies": []
+    },
+    "lib/media/do-messenger_screenshot_2025-02-11_13_47_16.png": {
+      "modifiedTime": 1739783819378,
+      "sourceSize": 220968,
+      "exportedPath": "lib/media/do-messenger_screenshot_2025-02-11_13_47_16.png",
+      "dependencies": []
+    },
+    "lib/media/do-messenger_screenshot_2025-02-11_15_32_34.png": {
+      "modifiedTime": 1739783819378,
+      "sourceSize": 63401,
+      "exportedPath": "lib/media/do-messenger_screenshot_2025-02-11_15_32_34.png",
+      "dependencies": []
+    },
+    "lib/media/do-messenger_screenshot_2025-02-11_16_31_10.png": {
+      "modifiedTime": 1739783819378,
+      "sourceSize": 131078,
+      "exportedPath": "lib/media/do-messenger_screenshot_2025-02-11_16_31_10.png",
+      "dependencies": []
+    },
+    "lib/media/do-messenger_screenshot_2025-02-12_14_04_58.png": {
+      "modifiedTime": 1739783819378,
+      "sourceSize": 159770,
+      "exportedPath": "lib/media/do-messenger_screenshot_2025-02-12_14_04_58.png",
+      "dependencies": []
+    },
+    "project/hello marketing/유입 통계 ADMIN.md": {
+      "modifiedTime": 1739783819378,
+      "sourceSize": 3615,
+      "exportedPath": "project/hello-marketing/유입-통계-admin.html",
+      "dependencies": [
+        "lib/media/pasted-image-20241230154602.png",
+        "lib/media/do-messenger_screenshot_2024-12-30_15_52_09.png",
+        "lib/media/pasted-image-20241226171158.png",
+        "lib/media/pasted-image-20250102181842.png",
+        "lib/media/pasted-image-20250107173902.png"
+      ]
+    },
+    "project/hello marketing/유입 통계 APP.md": {
+      "modifiedTime": 1739783819378,
+      "sourceSize": 3622,
+      "exportedPath": "project/hello-marketing/유입-통계-app.html",
+      "dependencies": [
+        "lib/media/pasted-image-20241230154602.png",
+        "lib/media/do-messenger_screenshot_2024-12-30_15_52_09.png",
+        "lib/media/pasted-image-20241226171158.png",
+        "lib/media/pasted-image-20250102181842.png",
+        "lib/media/pasted-image-20250107173902.png"
+      ]
+    },
+    "study/정보처리기사/정보처리기사 실기/정보처리 기사 실기 키워드.md": {
+      "modifiedTime": 1739783819378,
+      "sourceSize": 43662,
+      "exportedPath": "study/정보처리기사/정보처리기사-실기/정보처리-기사-실기-키워드.html",
       "dependencies": [
         "lib/media/do-messenger_screenshot_2025-02-10_15_04_45.png",
         "lib/media/do-messenger_screenshot_2025-02-10_17_10_58.png",
@@ -285,40 +358,70 @@
         "lib/media/do-messenger_screenshot_2025-02-12_14_04_58.png"
       ]
     },
-    "lib/media/do-messenger_screenshot_2025-02-10_15_04_45.png": {
-      "modifiedTime": 1739782648066,
-      "sourceSize": 99317,
-      "exportedPath": "lib/media/do-messenger_screenshot_2025-02-10_15_04_45.png",
+    "study/정보처리기사/정보처리기사 필기/필기 1과목 - 소프트웨어 설계.md": {
+      "modifiedTime": 1739783819378,
+      "sourceSize": 21067,
+      "exportedPath": "study/정보처리기사/정보처리기사-필기/필기-1과목-소프트웨어-설계.html",
       "dependencies": []
     },
-    "lib/media/do-messenger_screenshot_2025-02-10_17_10_58.png": {
-      "modifiedTime": 1739782648066,
-      "sourceSize": 122009,
-      "exportedPath": "lib/media/do-messenger_screenshot_2025-02-10_17_10_58.png",
+    "study/정보처리기사/정보처리기사 필기/필기 2과목 - 소프트웨어 개발.md": {
+      "modifiedTime": 1739783819378,
+      "sourceSize": 11580,
+      "exportedPath": "study/정보처리기사/정보처리기사-필기/필기-2과목-소프트웨어-개발.html",
       "dependencies": []
     },
-    "lib/media/do-messenger_screenshot_2025-02-11_13_47_16.png": {
-      "modifiedTime": 1739782648066,
-      "sourceSize": 220968,
-      "exportedPath": "lib/media/do-messenger_screenshot_2025-02-11_13_47_16.png",
+    "study/정보처리기사/정보처리기사 필기/필기 3과목 - 데이터베이스 구축.md": {
+      "modifiedTime": 1739783819378,
+      "sourceSize": 11196,
+      "exportedPath": "study/정보처리기사/정보처리기사-필기/필기-3과목-데이터베이스-구축.html",
       "dependencies": []
     },
-    "lib/media/do-messenger_screenshot_2025-02-11_15_32_34.png": {
-      "modifiedTime": 1739782648066,
-      "sourceSize": 63401,
-      "exportedPath": "lib/media/do-messenger_screenshot_2025-02-11_15_32_34.png",
+    "study/정보처리기사/정보처리기사 필기/필기 4과목 - 프로그래밍 언어 활용.md": {
+      "modifiedTime": 1739783819378,
+      "sourceSize": 24995,
+      "exportedPath": "study/정보처리기사/정보처리기사-필기/필기-4과목-프로그래밍-언어-활용.html",
       "dependencies": []
     },
-    "lib/media/do-messenger_screenshot_2025-02-11_16_31_10.png": {
-      "modifiedTime": 1739782648066,
-      "sourceSize": 131078,
-      "exportedPath": "lib/media/do-messenger_screenshot_2025-02-11_16_31_10.png",
+    "study/정보처리기사/정보처리기사 필기/필기 5과목 - 정보시스템 구축관리.md": {
+      "modifiedTime": 1739783819378,
+      "sourceSize": 21073,
+      "exportedPath": "study/정보처리기사/정보처리기사-필기/필기-5과목-정보시스템-구축관리.html",
       "dependencies": []
     },
-    "lib/media/do-messenger_screenshot_2025-02-12_14_04_58.png": {
-      "modifiedTime": 1739782648066,
-      "sourceSize": 159770,
-      "exportedPath": "lib/media/do-messenger_screenshot_2025-02-12_14_04_58.png",
+    "study/note CI_CD/옵시디언 연동 Blog CICD.md": {
+      "modifiedTime": 1739783819378,
+      "sourceSize": 69,
+      "exportedPath": "study/note-ci_cd/옵시디언-연동-blog-cicd.html",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20241230154602.png": {
+      "modifiedTime": 1739783819378,
+      "sourceSize": 88681,
+      "exportedPath": "lib/media/pasted-image-20241230154602.png",
+      "dependencies": []
+    },
+    "lib/media/do-messenger_screenshot_2024-12-30_15_52_09.png": {
+      "modifiedTime": 1739783819378,
+      "sourceSize": 101710,
+      "exportedPath": "lib/media/do-messenger_screenshot_2024-12-30_15_52_09.png",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20241226171158.png": {
+      "modifiedTime": 1739783819378,
+      "sourceSize": 37765,
+      "exportedPath": "lib/media/pasted-image-20241226171158.png",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20250102181842.png": {
+      "modifiedTime": 1739783819378,
+      "sourceSize": 30146,
+      "exportedPath": "lib/media/pasted-image-20250102181842.png",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20250107173902.png": {
+      "modifiedTime": 1739783819378,
+      "sourceSize": 49808,
+      "exportedPath": "lib/media/pasted-image-20250107173902.png",
       "dependencies": []
     }
   }

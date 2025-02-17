@@ -172,9 +172,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c915a28227e0f308",
+  "active": "5cc2f7897ebd9692",
   "lastOpenFiles": [
     "개발-및-공부-히스토리.html",
+    "공부/정보처리기사/정보처리기사-실기/🥇정보처리-기사-실기-키워드.html",
+    "공부/정보처리기사/정보처리기사-실기",
+    "index.html",
     "netlify.toml",
     "새 텍스트 문서.txt",
     "lib/search-index.json",
@@ -182,9 +185,6 @@
     "lib/styles/theme.css",
     "lib/styles/obsidian.css",
     "lib/styles/supported-plugins.css",
-    "lib/styles/main-styles.css",
-    "lib/styles/global-variable-styles.css",
-    "lib/styles",
     "lib/media/favicon.png",
     "lib/media/6155340132a851f6089e.svg",
     "lib/media/do-messenger_screenshot_2025-02-12_14_04_58.png",

@@ -1,11 +1,14 @@
 {
   "vaultName": "Vault_md_public",
-  "lastExport": 1739842233669,
+  "lastExport": 1739843631359,
   "pluginVersion": "1.8.01",
   "validBodyClasses": "publish css-settings-manager theme-dark show-inline-title show-ribbon",
   "useCustomHeadContent": false,
   "useCustomFavicon": false,
   "files": [
+    "project/hello Batch/Spring Batch 구조 드로잉.md",
+    "project/hello Batch/Spring Batch 트러블 슈팅.md",
+    "project/hello Batch/Spring Batch 트러블 슈팅 부록.md",
     "project/hello marketing/유입 통계 ADMIN용 테이블 설계 과정.md",
     "project/hello marketing/유입 통계 APP__SPRING AOP에 관하여.md",
     "study/정보처리기사/정보처리기사 실기/정보처리 기사 실기 키워드.md",
@@ -16,6 +19,25 @@
     "study/정보처리기사/정보처리기사 필기/필기 5과목 - 정보시스템 구축관리.md",
     "study/note CI_CD/옵시디언 연동 Blog CICD.md",
     "index.md",
+    "lib/media/output-(1).png",
+    "lib/media/pasted-image-20241206113120.png",
+    "lib/media/pasted-image-20241213102128.png",
+    "lib/media/pasted-image-20241213102229.png",
+    "lib/media/pasted-image-20241213143101.png",
+    "lib/media/pasted-image-20241213143217.png",
+    "lib/media/pasted-image-20241213103503.png",
+    "lib/media/pasted-image-20241217150339.png",
+    "lib/media/pasted-image-20241219145746.png",
+    "lib/media/output-(9)-1.png",
+    "lib/media/output-(10).png",
+    "lib/media/do-messenger_screenshot_2024-12-23_14_40_21.png",
+    "lib/media/pasted-image-20241224093159.png",
+    "lib/media/pasted-image-20241224093207.png",
+    "lib/media/pasted-image-20241224093225.png",
+    "lib/media/회사-은행-서비스1111.png",
+    "lib/media/spring-batch-tasklet-예치금-잔액-비교-1.png",
+    "lib/media/spring-batch-tasklet-예치금-잔액-비교-잘못된-차액발생-인식-타임라인.png",
+    "lib/media/output-(9).png",
     "lib/media/pasted-image-20250102181842.png",
     "lib/media/pasted-image-20241224144309.png",
     "lib/media/pasted-image-20241226111559.png",
@@ -97,235 +119,235 @@
   ],
   "fileInfo": {
     "index.md": {
-      "modifiedTime": 1739842233669,
-      "sourceSize": 730,
+      "modifiedTime": 1739843631359,
+      "sourceSize": 918,
       "exportedPath": "index.html",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.wasm": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 23377,
       "exportedPath": "lib/scripts/graph-wasm.wasm",
       "dependencies": []
     },
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/6155340132a851f6089e.svg": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 315,
       "exportedPath": "lib/media/6155340132a851f6089e.svg",
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1739842233669,
-      "sourceSize": 15444,
+      "modifiedTime": 1739843631359,
+      "sourceSize": 18692,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 47290,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/scripts/graph-view.js": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 15519,
       "exportedPath": "lib/scripts/graph-view.js",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.js": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 14021,
       "exportedPath": "lib/scripts/graph-wasm.js",
       "dependencies": []
     },
     "lib/scripts/graph-render-worker.js": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 5179,
       "exportedPath": "lib/scripts/graph-render-worker.js",
       "dependencies": []
     },
     "lib/scripts/tinycolor.js": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 29832,
       "exportedPath": "lib/scripts/tinycolor.js",
       "dependencies": []
     },
     "lib/scripts/pixi.js": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 449509,
       "exportedPath": "lib/scripts/pixi.js",
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 1105,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
     },
     "lib/scripts/graph-data.js": {
-      "modifiedTime": 1739842233669,
-      "sourceSize": 1092,
+      "modifiedTime": 1739843631359,
+      "sourceSize": 1400,
       "exportedPath": "lib/scripts/graph-data.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 137329,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/other-plugins.css": {
-      "modifiedTime": 1739842233669,
-      "sourceSize": 390,
+      "modifiedTime": 1739843631359,
+      "sourceSize": 2692,
       "exportedPath": "lib/styles/other-plugins.css",
       "dependencies": []
     },
     "lib/styles/theme.css": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 41426,
       "exportedPath": "lib/styles/theme.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 417,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/supported-plugins.css": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 1640,
       "exportedPath": "lib/styles/supported-plugins.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 23130,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
     },
     "lib/media/do-messenger_screenshot_2025-02-10_15_04_45.png": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 99317,
       "exportedPath": "lib/media/do-messenger_screenshot_2025-02-10_15_04_45.png",
       "dependencies": []
     },
     "lib/media/do-messenger_screenshot_2025-02-10_17_10_58.png": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 122009,
       "exportedPath": "lib/media/do-messenger_screenshot_2025-02-10_17_10_58.png",
       "dependencies": []
     },
     "lib/media/do-messenger_screenshot_2025-02-11_13_47_16.png": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 220968,
       "exportedPath": "lib/media/do-messenger_screenshot_2025-02-11_13_47_16.png",
       "dependencies": []
     },
     "lib/media/do-messenger_screenshot_2025-02-11_15_32_34.png": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 63401,
       "exportedPath": "lib/media/do-messenger_screenshot_2025-02-11_15_32_34.png",
       "dependencies": []
     },
     "lib/media/do-messenger_screenshot_2025-02-11_16_31_10.png": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 131078,
       "exportedPath": "lib/media/do-messenger_screenshot_2025-02-11_16_31_10.png",
       "dependencies": []
     },
     "lib/media/do-messenger_screenshot_2025-02-12_14_04_58.png": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 159770,
       "exportedPath": "lib/media/do-messenger_screenshot_2025-02-12_14_04_58.png",
       "dependencies": []
     },
     "study/정보처리기사/정보처리기사 실기/정보처리 기사 실기 키워드.md": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 43662,
       "exportedPath": "study/정보처리기사/정보처리기사-실기/정보처리-기사-실기-키워드.html",
       "dependencies": [
@@ -338,55 +360,55 @@
       ]
     },
     "study/정보처리기사/정보처리기사 필기/필기 1과목 - 소프트웨어 설계.md": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 21067,
       "exportedPath": "study/정보처리기사/정보처리기사-필기/필기-1과목-소프트웨어-설계.html",
       "dependencies": []
     },
     "study/정보처리기사/정보처리기사 필기/필기 2과목 - 소프트웨어 개발.md": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 11580,
       "exportedPath": "study/정보처리기사/정보처리기사-필기/필기-2과목-소프트웨어-개발.html",
       "dependencies": []
     },
     "study/정보처리기사/정보처리기사 필기/필기 3과목 - 데이터베이스 구축.md": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 11196,
       "exportedPath": "study/정보처리기사/정보처리기사-필기/필기-3과목-데이터베이스-구축.html",
       "dependencies": []
     },
     "study/정보처리기사/정보처리기사 필기/필기 4과목 - 프로그래밍 언어 활용.md": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 24995,
       "exportedPath": "study/정보처리기사/정보처리기사-필기/필기-4과목-프로그래밍-언어-활용.html",
       "dependencies": []
     },
     "study/정보처리기사/정보처리기사 필기/필기 5과목 - 정보시스템 구축관리.md": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 21073,
       "exportedPath": "study/정보처리기사/정보처리기사-필기/필기-5과목-정보시스템-구축관리.html",
       "dependencies": []
     },
     "study/note CI_CD/옵시디언 연동 Blog CICD.md": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 69,
       "exportedPath": "study/note-ci_cd/옵시디언-연동-blog-cicd.html",
       "dependencies": []
     },
     "lib/media/pasted-image-20241226171158.png": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 37765,
       "exportedPath": "lib/media/pasted-image-20241226171158.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250102181842.png": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 30146,
       "exportedPath": "lib/media/pasted-image-20250102181842.png",
       "dependencies": []
     },
     "project/hello marketing/유입 통계 ADMIN용 테이블 설계 과정.md": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 3066,
       "exportedPath": "project/hello-marketing/유입-통계-admin용-테이블-설계-과정.html",
       "dependencies": [
@@ -394,44 +416,44 @@
       ]
     },
     "lib/media/pasted-image-20241224144309.png": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 65503,
       "exportedPath": "lib/media/pasted-image-20241224144309.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20241226111559.png": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 55022,
       "exportedPath": "lib/media/pasted-image-20241226111559.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20241226152219.png": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 5000,
       "exportedPath": "lib/media/pasted-image-20241226152219.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20241230135801.png": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 120367,
       "exportedPath": "lib/media/pasted-image-20241230135801.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250102160213.png": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 108505,
       "exportedPath": "lib/media/pasted-image-20250102160213.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250102160223.png": {
-      "modifiedTime": 1739842233669,
+      "modifiedTime": 1739843631359,
       "sourceSize": 29848,
       "exportedPath": "lib/media/pasted-image-20250102160223.png",
       "dependencies": []
     },
     "project/hello marketing/유입 통계 APP__SPRING AOP에 관하여.md": {
-      "modifiedTime": 1739842233669,
-      "sourceSize": 16021,
+      "modifiedTime": 1739843631359,
+      "sourceSize": 16017,
       "exportedPath": "project/hello-marketing/유입-통계-app__spring-aop에-관하여.html",
       "dependencies": [
         "lib/media/pasted-image-20241224144309.png",
@@ -442,6 +464,159 @@
         "lib/media/pasted-image-20250102160213.png",
         "lib/media/pasted-image-20250102160223.png"
       ]
+    },
+    "project/hello Batch/Spring Batch 트러블 슈팅.md": {
+      "modifiedTime": 1739843631359,
+      "sourceSize": 24695,
+      "exportedPath": "project/hello-batch/spring-batch-트러블-슈팅.html",
+      "dependencies": [
+        "lib/media/output-(1).png",
+        "lib/media/pasted-image-20241206113120.png",
+        "lib/media/pasted-image-20241213102128.png",
+        "lib/media/pasted-image-20241213102229.png",
+        "lib/media/pasted-image-20241213143101.png",
+        "lib/media/pasted-image-20241213143217.png",
+        "lib/media/pasted-image-20241213103503.png",
+        "lib/media/pasted-image-20241217150339.png",
+        "lib/media/pasted-image-20241219145746.png",
+        "lib/media/output-(9)-1.png",
+        "lib/media/output-(10).png",
+        "lib/media/do-messenger_screenshot_2024-12-23_14_40_21.png",
+        "lib/media/pasted-image-20241224093159.png",
+        "lib/media/pasted-image-20241224093207.png",
+        "lib/media/pasted-image-20241224093225.png",
+        "lib/media/회사-은행-서비스1111.png",
+        "lib/media/spring-batch-tasklet-예치금-잔액-비교-1.png",
+        "lib/media/spring-batch-tasklet-예치금-잔액-비교-잘못된-차액발생-인식-타임라인.png"
+      ]
+    },
+    "project/hello Batch/Spring Batch 트러블 슈팅 부록.md": {
+      "modifiedTime": 1739843631359,
+      "sourceSize": 8859,
+      "exportedPath": "project/hello-batch/spring-batch-트러블-슈팅-부록.html",
+      "dependencies": [
+        "lib/media/output-(9).png"
+      ]
+    },
+    "lib/media/output-(1).png": {
+      "modifiedTime": 1739843631359,
+      "sourceSize": 145878,
+      "exportedPath": "lib/media/output-(1).png",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20241206113120.png": {
+      "modifiedTime": 1739843631359,
+      "sourceSize": 53681,
+      "exportedPath": "lib/media/pasted-image-20241206113120.png",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20241213102128.png": {
+      "modifiedTime": 1739843631359,
+      "sourceSize": 22774,
+      "exportedPath": "lib/media/pasted-image-20241213102128.png",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20241213102229.png": {
+      "modifiedTime": 1739843631359,
+      "sourceSize": 212552,
+      "exportedPath": "lib/media/pasted-image-20241213102229.png",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20241213143101.png": {
+      "modifiedTime": 1739843631359,
+      "sourceSize": 547915,
+      "exportedPath": "lib/media/pasted-image-20241213143101.png",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20241213143217.png": {
+      "modifiedTime": 1739843631359,
+      "sourceSize": 19870,
+      "exportedPath": "lib/media/pasted-image-20241213143217.png",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20241213103503.png": {
+      "modifiedTime": 1739843631359,
+      "sourceSize": 86553,
+      "exportedPath": "lib/media/pasted-image-20241213103503.png",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20241217150339.png": {
+      "modifiedTime": 1739843631359,
+      "sourceSize": 140545,
+      "exportedPath": "lib/media/pasted-image-20241217150339.png",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20241219145746.png": {
+      "modifiedTime": 1739843631359,
+      "sourceSize": 86893,
+      "exportedPath": "lib/media/pasted-image-20241219145746.png",
+      "dependencies": []
+    },
+    "lib/media/output-(9)-1.png": {
+      "modifiedTime": 1739843631359,
+      "sourceSize": 156393,
+      "exportedPath": "lib/media/output-(9)-1.png",
+      "dependencies": []
+    },
+    "lib/media/output-(10).png": {
+      "modifiedTime": 1739843631359,
+      "sourceSize": 133656,
+      "exportedPath": "lib/media/output-(10).png",
+      "dependencies": []
+    },
+    "lib/media/do-messenger_screenshot_2024-12-23_14_40_21.png": {
+      "modifiedTime": 1739843631359,
+      "sourceSize": 146024,
+      "exportedPath": "lib/media/do-messenger_screenshot_2024-12-23_14_40_21.png",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20241224093159.png": {
+      "modifiedTime": 1739843631359,
+      "sourceSize": 85534,
+      "exportedPath": "lib/media/pasted-image-20241224093159.png",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20241224093207.png": {
+      "modifiedTime": 1739843631359,
+      "sourceSize": 25919,
+      "exportedPath": "lib/media/pasted-image-20241224093207.png",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20241224093225.png": {
+      "modifiedTime": 1739843631359,
+      "sourceSize": 39658,
+      "exportedPath": "lib/media/pasted-image-20241224093225.png",
+      "dependencies": []
+    },
+    "lib/media/회사-은행-서비스1111.png": {
+      "modifiedTime": 1739843631359,
+      "sourceSize": 82216,
+      "exportedPath": "lib/media/회사-은행-서비스1111.png",
+      "dependencies": []
+    },
+    "lib/media/spring-batch-tasklet-예치금-잔액-비교-1.png": {
+      "modifiedTime": 1739843631359,
+      "sourceSize": 104557,
+      "exportedPath": "lib/media/spring-batch-tasklet-예치금-잔액-비교-1.png",
+      "dependencies": []
+    },
+    "lib/media/spring-batch-tasklet-예치금-잔액-비교-잘못된-차액발생-인식-타임라인.png": {
+      "modifiedTime": 1739843631359,
+      "sourceSize": 113338,
+      "exportedPath": "lib/media/spring-batch-tasklet-예치금-잔액-비교-잘못된-차액발생-인식-타임라인.png",
+      "dependencies": []
+    },
+    "lib/media/output-(9).png": {
+      "modifiedTime": 1739843631359,
+      "sourceSize": 156393,
+      "exportedPath": "lib/media/output-(9).png",
+      "dependencies": []
+    },
+    "project/hello Batch/Spring Batch 구조 드로잉.md": {
+      "modifiedTime": 1739843631359,
+      "sourceSize": 58241,
+      "exportedPath": "project/hello-batch/spring-batch-구조-드로잉.html",
+      "dependencies": []
     }
   }
 }

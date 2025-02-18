@@ -1,28 +1,229 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault_md_public]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Vault_md_public</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Mon, 17 Feb 2025 09:17:16 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 17 Feb 2025 09:16:59 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[👩‍👧‍👦유입 통계 ADMIN]]></title><description><![CDATA[<a class="tag" href="?query=tag:프로젝트" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#프로젝트</a> <a class="tag" href="?query=tag:개발" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#개발</a> 
- <br><br><a href=".?query=tag:프로젝트" class="tag" target="_blank" rel="noopener nofollow">#프로젝트</a> <a href=".?query=tag:개발" class="tag" target="_blank" rel="noopener nofollow">#개발</a><br><br><br> <img alt="Pasted image 20241230154602.png" src="lib\media\pasted-image-20241230154602.png"><br><br><br><br><br><img alt="do-messenger_screenshot_2024-12-30_15_52_09.png" src="lib\media\do-messenger_screenshot_2024-12-30_15_52_09.png"><br>
-<img alt="Pasted image 20241226171158.png" src="lib\media\pasted-image-20241226171158.png"><br><br><br>hf_marketing_code<br><br>hf_marketing_target<br><br>hf_marketing_hit_log<br><br><br><br><br><br>-&gt; hit로그 테이블에는 동작을 동작 key로써만 저장할 수 있다.<br><br><br><img alt="Pasted image 20250102181842.png" src="lib\media\pasted-image-20250102181842.png"><br><br><br><br>=&gt; 해당형태로 컬럼을 고정시키고, 동적으로 유입 수 를 출력한다.<br><br><br><br>-&gt; 그 후 페이지에 뿌려주기<br>Date: 01-02<br>
-Ad Type: 구글광고<br>
-Total Inflow: 4<br>
-Total Hit: 27<br>
-Detail Information:<br>
-Page Name: 대출하기 페이지<br>
-Hit: 9<br>
-Page Name: 한도조회 버튼<br>
-Hit: 12<br>
-Page Name: 이용안내 페이지<br>
-Hit: 6<br><br><br><img alt="Pasted image 20250107173902.png" src="lib\media\pasted-image-20250107173902.png">]]></description><link>project\hello-marketing\유입-통계-admin.html</link><guid isPermaLink="false">project/hello marketing/유입 통계 ADMIN.md</guid><pubDate>Mon, 17 Feb 2025 09:13:13 GMT</pubDate><enclosure url="lib\media\pasted-image-20241230154602.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\pasted-image-20241230154602.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[👩‍👧‍👦유입 통계 APP]]></title><description><![CDATA[<a class="tag" href="?query=tag:프로젝트" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#프로젝트</a> <a class="tag" href="?query=tag:개발" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#개발</a> 
- <br><br><a href=".?query=tag:프로젝트" class="tag" target="_blank" rel="noopener nofollow">#프로젝트</a> <a href=".?query=tag:개발" class="tag" target="_blank" rel="noopener nofollow">#개발</a><br><br><br> <img alt="Pasted image 20241230154602.png" src="lib\media\pasted-image-20241230154602.png"><br><br><br><br><br><img alt="do-messenger_screenshot_2024-12-30_15_52_09.png" src="lib\media\do-messenger_screenshot_2024-12-30_15_52_09.png"><br>
-<img alt="Pasted image 20241226171158.png" src="lib\media\pasted-image-20241226171158.png"><br><br><br>hf_marketing_code<br><br>hf_marketing_target<br><br>hf_marketing_hit_log<br><br><br><br><br><br>-&gt; hit로그 테이블에는 동작을 동작 key로써만 저장할 수 있다.<br><br><br><img alt="Pasted image 20250102181842.png" src="lib\media\pasted-image-20250102181842.png"><br><br><br><br>=&gt; 해당형태로 컬럼을 고정시키고, 동적으로 유입 수 를 출력한다.<br><br><br><br>-&gt; 그 후 페이지에 뿌려주기<br>Date: 01-02<br>
-Ad Type: 구글광고<br>
-Total Inflow: 4<br>
-Total Hit: 27<br>
-Detail Information:<br>
-Page Name: 대출하기 페이지<br>
-Hit: 9<br>
-Page Name: 한도조회 버튼<br>
-Hit: 12<br>
-Page Name: 이용안내 페이지<br>
-Hit: 6<br><br><br><img alt="Pasted image 20250107173902.png" src="lib\media\pasted-image-20250107173902.png">]]></description><link>project\hello-marketing\유입-통계-app.html</link><guid isPermaLink="false">project/hello marketing/유입 통계 APP.md</guid><pubDate>Mon, 17 Feb 2025 09:12:18 GMT</pubDate><enclosure url="lib\media\pasted-image-20241230154602.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\pasted-image-20241230154602.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[🥇정보처리 기사 실기 키워드]]></title><description><![CDATA[<a class="tag" href="?query=tag:정보처리기사" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#정보처리기사</a> <a class="tag" href="?query=tag:실기" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#실기</a> <a class="tag" href="?query=tag:키워드" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#키워드</a> <a class="tag" href="?query=tag:정리" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#정리</a> 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault_md_public]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Vault_md_public</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Tue, 18 Feb 2025 01:28:12 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 18 Feb 2025 01:28:03 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[👩‍👧‍👦유입 통계 ADMIN용 테이블 설계 과정]]></title><description><![CDATA[<a class="tag" href="?query=tag:프로젝트" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#프로젝트</a> <a class="tag" href="?query=tag:개발" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#개발</a> <a class="tag" href="?query=tag:SPRING" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SPRING</a> <a class="tag" href="?query=tag:AOP" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#AOP</a> 
+ <br><br><a href=".?query=tag:프로젝트" class="tag" target="_blank" rel="noopener nofollow">#프로젝트</a> <a href=".?query=tag:개발" class="tag" target="_blank" rel="noopener nofollow">#개발</a> <a href=".?query=tag:SPRING" class="tag" target="_blank" rel="noopener nofollow">#SPRING</a> <a href=".?query=tag:AOP" class="tag" target="_blank" rel="noopener nofollow">#AOP</a><br><br><br>hf_marketing_code<br><br>hf_marketing_target<br><br>hf_marketing_hit_log<br><br><br><br><br><br><br><br><img alt="Pasted image 20250102181842.png" src="lib\media\pasted-image-20250102181842.png"><br><br><br><br>=&gt; 해당형태로 컬럼을 고정시키고, 동적으로 유입 수 를 출력한다.<br><br><br><br>-&gt; 그 후 페이지에 뿌려주기<br>Date: 01-02
+Ad Type: 구글광고
+Total Inflow: 4
+Total Hit: 27
+Detail Information:
+  Page Name: 대출하기 페이지
+  Hit: 9
+  Page Name: 한도조회 버튼
+  Hit: 12
+  Page Name: 이용안내 페이지
+  Hit: 6
+]]></description><link>project\hello-marketing\유입-통계-admin용-테이블-설계-과정.html</link><guid isPermaLink="false">project/hello marketing/유입 통계 ADMIN용 테이블 설계 과정.md</guid><pubDate>Tue, 18 Feb 2025 01:26:15 GMT</pubDate><enclosure url="lib\media\pasted-image-20250102181842.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\pasted-image-20250102181842.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[👩‍👧‍👦유입 통계 APP (SPRING AOP에 관하여)]]></title><description><![CDATA[<a class="tag" href="?query=tag:프로젝트" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#프로젝트</a> <a class="tag" href="?query=tag:개발" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#개발</a> <a class="tag" href="?query=tag:DB" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DB</a> 
+ <br><br><a href=".?query=tag:프로젝트" class="tag" target="_blank" rel="noopener nofollow">#프로젝트</a> <a href=".?query=tag:개발" class="tag" target="_blank" rel="noopener nofollow">#개발</a> <a href=".?query=tag:DB" class="tag" target="_blank" rel="noopener nofollow">#DB</a><br><br><br><a rel="noopener nofollow" class="external-link" href="https://www.hellofunding.co.kr/sp/loan/gtLoan?p=a2FrYW8xc3QK" target="_blank">https://www.hellofunding.co.kr/sp/loan/gtLoan?p=a2FrYW8xc3QK</a><br>
+<a rel="noopener nofollow" class="external-link" href="https://www.hellofunding.co.kr/sp/loan/gtLoan?p=a2FrYW8xc222" target="_blank">https://www.hellofunding.co.kr/sp/loan/gtLoan?p=a2FrYW8xc222</a><br><br><br>
+<br>통계 필요 페이지 내에서(프론트), 쿠키 데이터 페이지 별 최초 진입 확인?
+<br><br><br><br><br><br><br><br>
+<br>해당 진입시점부터 특정 동작에 대한 모든 타임라인 로그
+<br><br>
+<br>레디스 가용 메모리에 대한 한계값 산정. -&gt; 아직 적용 X
+<br><br>
+<br>URL + 함수명 조합
+<br><br><br>=&gt; 메인 테이블<br>
+=&gt; 백로직에서 쿠키 데이터 쌓기<br><br>=&gt; 디테일 테이블 - 타임라인으로 관리 단, 메인테이블에 존재하는 내셕들에 대해서<br>
+=&gt; AOP에서 특정 서비스or메서드orURL로 지정하여 로그 쌀기<br><br>- 관심사(Aspect)를 분리하여, 각 서비스 메서드에 반복해서 구현하는 것이 아닌, 별도의 Aspect로 관리하여 핵심로직을 공통으로 적용하기 위함이다.
+<br><br>
+<br>
+
+<br>난수 생성 후 물고있기☑
+
+
+<br>
+
+<br>IP로 추적
+
+
+<br><br><br><img alt="Pasted image 20241224144309.png" src="lib\media\pasted-image-20241224144309.png"><br>쿠키가 필요한 페이지의 경로가 기본 path와 일치하는 경우(redirect url 이 SP_MARKETING_HIT_TEST1 의 하위 url일 경우)<br>
+에는 명시적으로 표시할 필요가 없지만,<br><br><br><br><br><br><img alt="Pasted image 20241226111559.png" src="lib\media\pasted-image-20241226111559.png"><br><br><br>
+<br>장점:
+
+<br>코드가 간결하고 읽기 쉽다.
+<br>Spring의 AOP 인프라를 사용하여 메서드 인터셉션을 쉽게 구현할 수 있다.
+
+
+<br>단점:
+- 포인트컷 조건은 컴파일 시점에 고정된다.
+- 복잡한 조건이나 동적으로 변경되는 조건을 처리하기 어렵다.
+
+-&gt; @Pointcut 등의 조건에 부합하는 Bean객체를 컴파일 시점에 찾아내어 프록시를 감싼다.
+<br><br><br>
+<br>동적 생성:
+
+<br>런타임에 프록시를 생성하여 포인트컷과 어드바이스를 동적으로 적용.
+<br>StaticMethodMatcherPointcut 또는 DynamicMethodMatcherPointcut을 사용하여 런타임 조건 기반으로 메서드 매칭.
+
+
+<br>장점:
+
+<br>런타임 조건에 따라 동적으로 포인트컷 생성 가능.
+<br>복잡한 조건과 동적 필터링을 처리하기 용이.
+<br>Spring AOP가 아닌 순수 Java 프록시 방식도 지원.
+
+
+<br>단점:
+
+<br>코드가 복잡해지고 추가 구현이 필요.
+<br>Spring AOP와 동일한 수준의 간결성을 제공하지 않음.
+
+
+<br>-&gt; 해당 프록시 객체를 적용하고 싶은 Bean객체에 매번 생성(등록)해주어야 함.<br><br><br>import org.springframework.aop.Pointcut;
+import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator;
+import org.springframework.aop.support.DefaultPointcutAdvisor;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class AopConfig {
+
+    @Bean
+    public Pointcut customPointcut() {
+        return new CustomPointcut();
+    }
+
+    @Bean
+    public CustomAdvice customAdvice() {
+        return new CustomAdvice();
+    }
+
+    @Bean
+    public DefaultPointcutAdvisor customAdvisor(Pointcut customPointcut, CustomAdvice customAdvice) {
+        return new DefaultPointcutAdvisor(customPointcut, customAdvice);
+    }
+
+    @Bean
+    public DefaultAdvisorAutoProxyCreator proxyCreator() {
+        return new DefaultAdvisorAutoProxyCreator();
+    }
+}
+
+<br><br>
+<br>@Pointcut 방식과 동일한 동작:
+
+<br>Spring 컨테이너가 관리하는 모든 빈에 대해 조건을 평가하고 프록시를 자동 생성합니다.
+
+
+<br>프록시를 명시적으로 선언할 필요 없음:
+
+<br>ProxyFactory처럼 수동으로 프록시를 생성하지 않아도 됩니다.
+
+
+<br>유연성과 효율성 향상:
+
+<br>Spring AOP 인프라를 활용하므로, 관리가 용이하고 런타임 성능이 개선됩니다.
+
+
+<br><br><br>
+<br>BeanPostProcessor:
+
+<br>DefaultAdvisorAutoProxyCreator는 Spring의 BeanPostProcessor를 구현한 클래스이다.
+<br>Spring 컨테이너는 애플리케이션 컨텍스트에 등록된 모든 BeanPostProcessor를 자동으로 호출하여 빈의 초기화 전후 작업을 수행한다.
+<br>이를 통해, Spring AOP는 빈 생성 단계에서 프록시를 생성하고 조건에 맞는 빈에 대해 어드바이저를 적용.
+
+
+<br>Advisor 탐색:
+
+<br>DefaultAdvisorAutoProxyCreator는 Spring 컨텍스트에 등록된 모든 Advisor를 자동으로 탐색한다.
+<br>이는 DefaultAdvisorAutoProxyCreator가 BeanFactory를 통해 컨테이너의 모든 Advisor 타입 빈을 조회하기 때문.
+<br>탐색된 Advisor를 사용하여 각 빈의 메서드와 포인트컷 조건을 매칭.
+
+
+<br>Advisor와 빈의 매칭:
+
+<br>빈이 생성될 때, DefaultAdvisorAutoProxyCreator는 해당 빈의 메서드가 어떤 Advisor의 포인트컷 조건에 부합하는지 평가.
+<br>조건에 부합하면, 해당 빈을 프록시 객체로 감싸고, 어드바이스를 연결.
+
+
+<br><br><br><br>
+<br>이렇게 맵핑이 되어야 하나, 이를 동적으로 탐지하지 못한다.
+<br>/*  
+ * EnableAspectJAutoProxy &gt; 프록시 적용시 인터페이스/클래스 여부 자동 판단  
+ * 클래스에 인터페이스가 있으면 JDK 동적 프록시.  
+ * 인터페이스가 없으면 CGLIB 프록시.  
+ * */@Configuration  
+@EnableAspectJAutoProxy  
+public class AopConfig {  
+    @Bean  
+    public Pointcut customPointcut() {  
+        return new CustomPointcut();  
+    }  
+  
+    @Bean  
+    public CustomAdvice customAdvice() {  
+        return new CustomAdvice();  
+    }  
+  
+    @Bean  
+    public DefaultPointcutAdvisor customAdvisor(Pointcut customPointcut, CustomAdvice customAdvice) {  
+        return new DefaultPointcutAdvisor(customPointcut, customAdvice);  
+    }  
+	/*  
+	* @EnableAspectJAutoProxy를 사용해 등록했기 때문에 불필요.  
+	* */  
+	//    @Bean  
+	//    public DefaultAdvisorAutoProxyCreator proxyCreator() {  
+	//        return new DefaultAdvisorAutoProxyCreator();  
+	//    }  
+}
+<br><br><br><br><br>프록시(Proxy)는 대리자라는 뜻으로, 다른 객체에 대한 인터페이스 역할을 하는 객체를 말합니다. 프로그래밍에서 프록시는 실제 객체에 접근하기 전에 특정 작업(로깅, 보안, 트랜잭션 관리 등)을 수행하거나, 객체에 대한 접근을 제어하는 데 사용됩니다.<br><br>
+<br>대리 객체: 프록시는 실제 객체에 대한 중간다리 역할을 합니다.
+<br>동작 조정: 프록시는 요청을 가로채서 추가적인 작업을 수행하거나, 요청을 변형한 뒤 실제 객체에 전달할 수 있습니다.
+<br>AOP와 연관: 프록시를 사용하면 코드를 변경하지 않고도 객체의 동작을 확장하거나 변경할 수 있습니다.
+<br><br><br><br>Method Name: loanerLoginPage<br>
+javax.servlet.http.HttpServletRequest<br>
+org.springframework.web.bind.annotation.GetMapping <br><br><img alt="Pasted image 20241226152219.png" src="lib\media\pasted-image-20241226152219.png"><br><br><br><img alt="Pasted image 20241226171158.png" src="lib\media\pasted-image-20241226171158.png"><br><br><br><br><br><br>
+<br>외부링크 최초진입. hitCode, hitUid 발급 및 DB저장
+<br><br>
+<br>외부링크 재진입. hitCode는 변경될 수 있으므로 "p"파라미터로 재발급<br>
+=&gt; hitCode는 매번 재발급 / hitUid는 없을때만 발급
+<br><br><br>
+<br>일반사용자 이며, 아무동작 하지 않는다.
+<br><br>
+<br>외부링크 진입 후 동작. 없는 녀석 새로 발급 및 DB저장
+<br><br><br>@Override  
+@Transactional  
+public ResponseModel insertMarketingHitLog(String hitCode, String hitUid, String pageUrl, String pageType){  
+    try {  
+        Optional&lt;HfMarketingHitLog&gt; existingLog = hfMarketingHitLogRepository.findByHitCodeAndHitUidAndPageUrlAndPageType(hitCode, hitUid, pageUrl, pageType);  
+        if (existingLog.isPresent()) {  
+            HfMarketingHitLog logToUpdate = existingLog.get();  
+            logToUpdate.setUpdateDate(LocalDateTime.now());  
+            hfMarketingHitLogRepository.save(logToUpdate);  
+            return new ResponseModel(ResponseModel.ResponseStatus.SUCCESS);  
+        }  
+        HfMarketingHitLog hfMarketingHitLog = HfMarketingHitLog.builder()  
+                .hitCode(hitCode)  
+                .hitUid(hitUid)  
+                .pageUrl(pageUrl)  
+                .pageType(pageType)  
+                .build();  
+        hfMarketingHitLogRepository.save(hfMarketingHitLog);  
+        return new ResponseModel(ResponseModel.ResponseStatus.SUCCESS);  
+    } catch (Exception e) {  
+        return new ResponseModel(ResponseModel.ResponseStatus.FAILED, "데이터 처리 중 오류 발생");  
+    }  
+}
+<br><br>
+<br>여러 쓰레드(또는 트랜잭션)가 findByHitCodeAndHitUidAndPageUrlAndPageType 메서드를 호출하여 동일한 조건의 데이터를 동시에 조회할 수 있다.
+<br>두 쓰레드가 모두 existingLog.isPresent() 조건에서 false를 확인한 후, 동시에 새로운 HfMarketingHitLog 객체를 생성하고 저장하려 하면 데이터 중복 문제가 발생할 수 있다.
+<br><br>. Lock을 쓰면 되나, 이후 업데이트 로직 삭제(로그 테이블화) 변경으로 처리<br><br><br><img alt="Pasted image 20241230135801.png" src="lib\media\pasted-image-20241230135801.png"><br>
+<br>1일의 유효기간을 갖는 uid를 발급하여, 인입코드 / Hit된 기능 주소 / 시간 을 저장한다.
+<br>uid는 외부url로 접근시 발급
+<br>page_url는 코드에 미리 등록 / hit_code는 모두(only 영문+숫자) 수용 가능
+<br><br><br><img alt="Pasted image 20250102160213.png" src="lib\media\pasted-image-20250102160213.png"><br>
+<img alt="Pasted image 20250102160223.png" src="lib\media\pasted-image-20250102160223.png"><br><br><br>
+<br>enum객체에 정의된 메서드를 DB로 전환하여 pointcut에서 해당 클래스, 메서드를 가져와 조건으로 정의
+<br>해당 조건에 부합하는 메서드를 프록시로 전환
+<br><br><br><br>
+<br>api호출을 통해 advice내의 동작은 런타임 환경에서 동적으로 변경이 가능한 것을 확인했다.
+<br><br>
+<br>런타입 위빙 방식이라고 하더라도, 변경은 불가능하다.
+<br>컴파일 위빙 방식은 컴파일 단계에서 원본 클래스 바이트코드를 변경하여 직접 위빙을 하는 방식이고,<br>
+런타임 위빙은 런타임단계에서 원본 클래스를 변경하지 않고 프록시 객체를 사용하여 교체하는 방식이다.
+<br><br><br><br><br><br>=&gt; 해당하는 부분은 리빌드와 큰 차이가 없고, 각 class에 scope를 따로 적용해야했기 때문에 고려하지 않았다.<br><br><br>=&gt; 연관성 있는 모든 참조를 수동으로 재설정해야하기 때문에 매우 복잡해진다.<br><br><br><br><br>
+<br>참조를 갱신하기 위해서는 Java리플렉션을 사용하여 강제로 참조를 갱신하거나, AspectJ의 런타임 위빙 방식을 활용해야 한다.
+<br>따라서, 서버 Kill을 하는 것과 진배 없다.
+<br>]]></description><link>project\hello-marketing\유입-통계-app-(spring-aop에-관하여).html</link><guid isPermaLink="false">project/hello marketing/유입 통계 APP (SPRING AOP에 관하여).md</guid><pubDate>Tue, 18 Feb 2025 01:26:02 GMT</pubDate><enclosure url="lib\media\pasted-image-20241224144309.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\pasted-image-20241224144309.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[🥇정보처리 기사 실기 키워드]]></title><description><![CDATA[<a class="tag" href="?query=tag:정보처리기사" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#정보처리기사</a> <a class="tag" href="?query=tag:실기" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#실기</a> <a class="tag" href="?query=tag:키워드" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#키워드</a> <a class="tag" href="?query=tag:정리" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#정리</a> 
  <br><br><a href=".?query=tag:정보처리기사" class="tag" target="_blank" rel="noopener nofollow">#정보처리기사</a> <a href=".?query=tag:실기" class="tag" target="_blank" rel="noopener nofollow">#실기</a> <a href=".?query=tag:키워드" class="tag" target="_blank" rel="noopener nofollow">#키워드</a> <a href=".?query=tag:정리" class="tag" target="_blank" rel="noopener nofollow">#정리</a><br><br>
 <br>시제품을 끊임없이 제작하며 사이클을 반복하는 개발 방법론
 <br>워터폴과 대조적이며, 소프트웨어 개발을 넘어 기업 경영 전반에서 사용되고 있다.
@@ -722,8 +923,8 @@ printf("%u", a);       =&gt; a[0]자리의 첫번째 주소값 -&gt; 10
  <br><br>
 <br><a data-href="옵시디언 연동 Blog CICD" href="study\note-ci_cd\옵시디언-연동-blog-cicd.html" class="internal-link" target="_self" rel="noopener nofollow">옵시디언 연동 Blog CICD</a>
 <br><br><br><br>
-<br>👩‍👧‍👦<a data-href="유입 통계 APP" href="project\hello-marketing\유입-통계-app.html" class="internal-link" target="_self" rel="noopener nofollow">유입 통계 APP</a>
-<br>👩‍👧‍👦<a data-href="유입 통계 ADMIN" href="project\hello-marketing\유입-통계-admin.html" class="internal-link" target="_self" rel="noopener nofollow">유입 통계 ADMIN</a>
+<br>👩‍👧‍👦<a data-href="유입 통계 APP (SPRING AOP에 관하여)" href="project\hello-marketing\유입-통계-app-(spring-aop에-관하여).html" class="internal-link" target="_self" rel="noopener nofollow">유입 통계 APP (SPRING AOP에 관하여)</a>
+<br>👩‍👧‍👦<a data-href="유입 통계 ADMIN용 테이블 설계 과정" href="project\hello-marketing\유입-통계-admin용-테이블-설계-과정.html" class="internal-link" target="_self" rel="noopener nofollow">유입 통계 ADMIN용 테이블 설계 과정</a>
 <br><br><br><br>
 <br>🥈<a data-href="필기 1과목 - 소프트웨어 설계" href="study\정보처리기사\정보처리기사-필기\필기-1과목-소프트웨어-설계.html" class="internal-link" target="_self" rel="noopener nofollow">필기 1과목 - 소프트웨어 설계</a>
 <br>🥈<a data-href="필기 2과목 - 소프트웨어 개발" href="study\정보처리기사\정보처리기사-필기\필기-2과목-소프트웨어-개발.html" class="internal-link" target="_self" rel="noopener nofollow">필기 2과목 - 소프트웨어 개발</a>
@@ -732,4 +933,4 @@ printf("%u", a);       =&gt; a[0]자리의 첫번째 주소값 -&gt; 10
 <br>🥈<a data-href="필기 5과목 - 정보시스템 구축관리" href="study\정보처리기사\정보처리기사-필기\필기-5과목-정보시스템-구축관리.html" class="internal-link" target="_self" rel="noopener nofollow">필기 5과목 - 정보시스템 구축관리</a>
 <br><br>
 <br>🥇<a data-href="정보처리 기사 실기 키워드" href="study\정보처리기사\정보처리기사-실기\정보처리-기사-실기-키워드.html" class="internal-link" target="_self" rel="noopener nofollow">정보처리 기사 실기 키워드</a>
-]]></description><link>index.html</link><guid isPermaLink="false">index.md</guid><pubDate>Mon, 17 Feb 2025 09:15:50 GMT</pubDate></item></channel></rss>
+]]></description><link>index.html</link><guid isPermaLink="false">index.md</guid><pubDate>Tue, 18 Feb 2025 01:27:40 GMT</pubDate></item></channel></rss>

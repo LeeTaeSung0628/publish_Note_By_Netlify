@@ -172,12 +172,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d32930bb4480184f",
+  "active": "5cc2f7897ebd9692",
   "lastOpenFiles": [
     "lib/search-index.json",
     "lib/metadata.json",
     "lib/styles/theme.css",
-    "lib/styles/supported-plugins.css",
     "lib/styles/other-plugins.css",
     "lib/styles/obsidian.css",
     "lib/styles/main-styles.css",
@@ -187,14 +186,15 @@
     "lib/html/file-tree.html",
     "lib/html",
     "lib/media/6155340132a851f6089e.svg",
+    "lib/fonts/cbe0ae49c52c920fd563.woff2",
     "lib/media/do-messenger_screenshot_2025-02-18_16_25_42.png",
     "lib/media/pasted-image-20250218162355.png",
     "lib/media/pasted-image-20250218161937.png",
     "lib/media/pasted-image-20250218161847.png",
-    "lib/media/pasted-image-20250218161824.png",
-    "lib/media/pasted-image-20250218161728.png",
-    "lib/media/pasted-image-20250218161515.png",
-    "lib/media/pasted-image-20250218161424.png",
+    "lib/media/pasted-image-20250218151330.png",
+    "lib/media/pasted-image-20250218153553.png",
+    "lib/media/pasted-image-20250218153543.png",
+    "lib/media/pasted-image-20250218153445.png",
     "환영합니다!.md"
   ]
 }

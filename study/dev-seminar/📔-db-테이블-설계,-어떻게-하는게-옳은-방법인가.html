@@ -1,0 +1,269 @@
+<!DOCTYPE html> <html><head>
+<title>📔 DB 테이블 설계, 어떻게 하는게 옳은 방법인가</title>
+<base href="../..">
+<meta id="root-path" root-path="../..">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
+<meta charset="UTF-8">
+<meta name="description" content="Vault_md_public - 📔 DB 테이블 설계, 어떻게 하는게 옳은 방법인가">
+<meta property="og:title" content="📔 DB 테이블 설계, 어떻게 하는게 옳은 방법인가">
+<meta property="og:description" content="Vault_md_public - 📔 DB 테이블 설계, 어떻게 하는게 옳은 방법인가">
+<meta property="og:type" content="website">
+<meta property="og:url" content="study/dev-seminar/📔-db-테이블-설계,-어떻게-하는게-옳은-방법인가.html">
+<meta property="og:image" content="사진-및-문서/pasted-image-20241220113308.png">
+<meta property="og:site_name" content="Vault_md_public">
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="lib/rss.xml"><script async="" id="webpage-script" src="lib/scripts/webpage.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script type="module" async="" id="graph-view-script" src="lib/scripts/graph-view.js"></script><script async="" id="graph-wasm-script" src="lib/scripts/graph-wasm.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-render-worker-script" src="lib/scripts/graph-render-worker.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="tinycolor-script" src="lib/scripts/tinycolor.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="pixi-script" src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.4.0/pixi.min.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="minisearch-script" src="https://cdn.jsdelivr.net/npm/minisearch@6.3.0/dist/umd/index.min.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><link rel="icon" href="lib/media/favicon.png"><script async="" id="graph-data-script" src="lib/scripts/graph-data.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><link rel="stylesheet" href="lib/styles/obsidian.css"><link rel="preload" href="lib/styles/other-plugins.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/other-plugins.css"></noscript><link rel="stylesheet" href="lib/styles/theme.css"><link rel="preload" href="lib/styles/global-variable-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/global-variable-styles.css"></noscript><link rel="preload" href="lib/styles/supported-plugins.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/supported-plugins.css"></noscript><link rel="preload" href="lib/styles/main-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/main-styles.css"></noscript><style>body{--line-width:40em;--line-width-adaptive:40em;--file-line-width:40em;--sidebar-width:min(20em, 80vw);--collapse-arrow-size:11px;--tree-horizontal-spacing:0.6em;--tree-vertical-spacing:0.6em;--sidebar-margin:12px}.sidebar{height:100%;min-width:calc(var(--sidebar-width) + var(--divider-width-hover));max-width:calc(var(--sidebar-width) + var(--divider-width-hover));font-size:14px;z-index:10;position:relative;overflow:hidden;transition:min-width ease-in-out,max-width ease-in-out;transition-duration:.2s;contain:size}.sidebar-left{left:0}.sidebar-right{right:0}.sidebar.is-collapsed{min-width:0;max-width:0}body.floating-sidebars .sidebar{position:absolute}.sidebar-content{height:100%;min-width:calc(var(--sidebar-width) - var(--divider-width-hover));top:0;padding:var(--sidebar-margin);padding-top:4em;line-height:var(--line-height-tight);background-color:var(--background-secondary);transition:background-color,border-right,border-left,box-shadow;transition-duration:var(--color-fade-speed);transition-timing-function:ease-in-out;position:absolute;display:flex;flex-direction:column}.sidebar:not(.is-collapsed) .sidebar-content{min-width:calc(max(100%,var(--sidebar-width)) - 3px);max-width:calc(max(100%,var(--sidebar-width)) - 3px)}.sidebar-left .sidebar-content{left:0;border-top-right-radius:var(--radius-l);border-bottom-right-radius:var(--radius-l)}.sidebar-right .sidebar-content{right:0;border-top-left-radius:var(--radius-l);border-bottom-left-radius:var(--radius-l)}.sidebar:has(.sidebar-content:empty):has(.topbar-content:empty){display:none}.sidebar-topbar{height:2em;width:var(--sidebar-width);top:var(--sidebar-margin);padding-inline:var(--sidebar-margin);z-index:1;position:fixed;display:flex;align-items:center;transition:width ease-in-out;transition-duration:inherit}.sidebar.is-collapsed .sidebar-topbar{width:calc(2.3em + var(--sidebar-margin) * 2)}.sidebar .sidebar-topbar.is-collapsed{width:0}.sidebar-left .sidebar-topbar{left:0}.sidebar-right .sidebar-topbar{right:0}.topbar-content{overflow:hidden;overflow:clip;width:100%;height:100%;display:flex;align-items:center;transition:inherit}.sidebar.is-collapsed .topbar-content{width:0;transition:inherit}.clickable-icon.sidebar-collapse-icon{background-color:transparent;color:var(--icon-color-focused);padding:0!important;margin:0!important;height:100%!important;width:2.3em!important;margin-inline:0.14em!important;position:absolute}.sidebar-left .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);right:var(--sidebar-margin)}.sidebar-right .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);left:var(--sidebar-margin)}.clickable-icon.sidebar-collapse-icon svg.svg-icon{width:100%;height:100%}.sidebar-section-header{margin:0 0 1em 0;text-transform:uppercase;letter-spacing:.06em}body{transition:background-color var(--color-fade-speed) ease-in-out}.webpage-container{display:flex;flex-direction:row;height:100%;width:100%;align-items:stretch;justify-content:center}.document-container{opacity:1;flex-basis:100%;max-width:100%;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;transition:opacity .2s ease-in-out;contain:inline-size}.hide{opacity:0;transition:opacity .2s ease-in-out}.document-container>.markdown-preview-view{margin:var(--sidebar-margin);margin-bottom:0;width:100%;width:-webkit-fill-available;width:-moz-available;width:fill-available;background-color:var(--background-primary);transition:background-color var(--color-fade-speed) ease-in-out;border-top-right-radius:var(--window-radius,var(--radius-m));border-top-left-radius:var(--window-radius,var(--radius-m));overflow-x:hidden!important;overflow-y:auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;contain:inline-size}.document-container>.markdown-preview-view>.markdown-preview-sizer{padding-bottom:80vh!important;width:100%!important;max-width:var(--line-width)!important;flex-basis:var(--line-width)!important;transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}.markdown-rendered img:not([width]),.view-content img:not([width]){max-width:100%;outline:0}.document-container>.view-content.embed{display:flex;padding:1em;height:100%;width:100%;align-items:center;justify-content:center}.document-container>.view-content.embed>*{max-width:100%;max-height:100%;object-fit:contain}:not(h1,h2,h3,h4,h5,h6):has(> :is(.math,table)){overflow-x:auto!important}.document-container>.view-content{overflow-x:auto;contain:content;padding:0;margin:0;height:100%}.scroll-highlight{position:absolute;width:100%;height:100%;pointer-events:none;z-index:1000;background-color:hsla(var(--color-accent-hsl),.25);opacity:0;padding:1em;inset:50%;translate:-50% -50%;border-radius:var(--radius-s)}</style><script defer="">async function loadIncludes(){if("file:"!=location.protocol){let e=document.querySelectorAll("include");for(const t of e){let e=t.getAttribute("src");try{const o=await fetch(e);if(!o.ok){console.log("Could not include file: "+e),t?.remove();continue}let l=await o.text(),n=document.createRange().createContextualFragment(l),c=Array.from(n.children);for(let e of c)e.classList.add("hide"),e.style.transition="opacity 0.5s ease-in-out",setTimeout((()=>{e.classList.remove("hide")}),10);t.before(n),t.remove(),console.log("Included file: "+e)}catch(o){t?.remove(),console.log("Could not include file: "+e,o);continue}}}else{if(document.querySelectorAll("include").length>0){var e=document.createElement("div");e.id="error",e.textContent="Web server exports must be hosted on an http / web server to be viewed correctly.",e.style.position="fixed",e.style.top="50%",e.style.left="50%",e.style.transform="translate(-50%, -50%)",e.style.fontSize="1.5em",e.style.fontWeight="bold",e.style.textAlign="center",document.body.appendChild(e),document.querySelector(".document-container")?.classList.remove("hide")}}}document.addEventListener("DOMContentLoaded",(()=>{loadIncludes()}));let isFileProtocol="file:"==location.protocol;function waitLoadScripts(e,t){let o=e.map((e=>document.getElementById(e+"-script"))),l=0;!function e(){let n=o[l];l++,n&&"true"!=n.getAttribute("loaded")||l<o.length&&e(),l<o.length?n.addEventListener("load",e):t()}()}</script></head><body class="publish css-settings-manager theme-dark show-inline-title show-ribbon is-focused"><script defer="">let theme=localStorage.getItem("theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");"dark"==theme?(document.body.classList.add("theme-dark"),document.body.classList.remove("theme-light")):(document.body.classList.add("theme-light"),document.body.classList.remove("theme-dark")),window.innerWidth<480?document.body.classList.add("is-phone"):window.innerWidth<768?document.body.classList.add("is-tablet"):window.innerWidth<1024?document.body.classList.add("is-small-screen"):document.body.classList.add("is-large-screen")</script><div class="webpage-container workspace"><div class="sidebar-left sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><label class="theme-toggle-container" for="theme_toggle"><input class="theme-toggle-input" type="checkbox" id="theme_toggle"><div class="toggle-background"></div></label></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content"><div class="search-input-container"><div class="search-input-wrapper"><input enterkeyhint="search" type="search" spellcheck="false" placeholder="Search..."><div class="search-input-clear-button" aria-label="Clear search"></div></div></div><include src="lib/html/file-tree.html"></include></div><script defer="">let ls = document.querySelector(".sidebar-left"); ls.classList.add("is-collapsed"); if (window.innerWidth > 768) ls.classList.remove("is-collapsed"); ls.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-left-width"));</script></div><div class="document-container markdown-reading-view hide"><div class="markdown-preview-view markdown-rendered allow-fold-headings allow-fold-lists is-readable-line-width"><style id="MJX-CHTML-styles"></style><div class="markdown-preview-sizer markdown-preview-section"><h1 class="page-title heading inline-title" id="📔 DB 테이블 설계, 어떻게 하는게 옳은 방법인가"><p dir="auto">📔 DB 테이블 설계, 어떻게 하는게 옳은 방법인가</p></h1><div class="el-h1 heading-wrapper"><div class="heading-children"><div class="el-p"><p dir="auto"><a href="?query=tag:%EA%B3%B5%EB%B6%80" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a> <a href="?query=tag:DB" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#DB">#DB</a> <a href="?query=tag:DataBase" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#DataBase">#DataBase</a> <a href="?query=tag:%EC%84%A4%EA%B3%84" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#설계">#설계</a></p></div><div class="el-hr"><hr></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="어느? 데이터 테이블의 예시" dir="auto" class="heading" id="어느?_데이터_테이블의_예시">어느? 데이터 테이블의 예시</h1><div class="heading-children"><div class="el-p"><p dir="auto"><span alt="Pasted image 20241220113308.png" src="Pasted image 20241220113308.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20241220113308.png" src="사진-및-문서/pasted-image-20241220113308.png" target="_self"></span><br>
+<span alt="Pasted image 20241220113315.png" src="Pasted image 20241220113315.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20241220113315.png" src="사진-및-문서/pasted-image-20241220113315.png" target="_self"></span></p></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="테이블의 효율성과 확장성" dir="auto" class="heading" id="테이블의_효율성과_확장성">테이블의 효율성과 확장성</h1><div class="heading-children"><div class="el-h2 heading-wrapper"><h2 data-heading="위 테이블의 비효율성은 무엇인가?" dir="auto" class="heading" id="위_테이블의_비효율성은_무엇인가?"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>위 테이블의 비효율성은 무엇인가?</h2><div class="heading-children"><div class="el-ul"><ul>
+<li data-line="0" dir="auto">위 예시의 경우 데이터를 행(Row)이 아닌 열(Column)로 저장한 것으로 보인다.</li>
+</ul></div><div class="el-h3 heading-wrapper"><h3 data-heading="1. **확장 시 문제점**:" dir="auto" class="heading" id="1._**확장_시_문제점**"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>1. <strong>확장 시 문제점</strong>:</h3><div class="heading-children"><div class="el-ul"><ul>
+<li data-line="0" dir="auto">
+<p>페이지가 10개를 초과하면 새로운 페이지에 대해 <code>var11</code>, <code>var12</code> 등의 컬럼을 추가로 만들어야한다. ( 실제로 일어날 뻔 했다. )</p>
+</li>
+<li data-line="1" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p>이는 테이블 스키마를 수정하는 작업이며, 다음과 같은 위험을 수반한다.</p>
+<ol>
+<li data-line="2" dir="auto"><strong>서비스 중단</strong>: 테이블 스키마 변경 중 데이터베이스가 잠기거나 애플리케이션이 중단될 가능성이 있다.</li>
+<li data-line="3" dir="auto"><strong>코드 변경 필요</strong>: 새로운 컬럼에 맞춰 애플리케이션 로직(예: 데이터 입력, 조회 쿼리)을 수정해야 한다.</li>
+<li data-line="4" dir="auto"><strong>관리 복잡성 증가</strong>: 테이블 구조가 복잡해져 유지보수 비용이 증가한다.</li>
+</ol>
+</li>
+<li data-line="6" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<h4 data-heading="데이터 활용도 제한" dir="auto" class="heading" id="데이터_활용도_제한">데이터 활용도 제한</h4>
+<p>-현재 구조는 hit 수 외의 추가 정보를 기록하기 어렵다. ( 나중에 추가해달라고 할것같음. )</p>
+<ul>
+<li data-line="8" dir="auto">예: 페이지별 방문자의 디바이스 정보, 지역 정보 등.</li>
+</ul>
+</li>
+</ul></div></div></div><div class="el-h3 heading-wrapper"><h3 data-heading="2. **비효율적인 데이터 조회**:" dir="auto" class="heading" id="2._**비효율적인_데이터_조회**"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>2. <strong>비효율적인 데이터 조회</strong>:</h3><div class="heading-children"><div class="el-ul"><ul>
+<li data-line="0" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>열로 데이터를 저장하면 특정 페이지의 hit 수를 조회할 때, 각 컬럼을 명시적으로 참조해야 합니다.
+<ul>
+<li data-line="1" dir="auto">예: 특정 날짜에 대해 <code>var1</code> ~ <code>var10</code>의 데이터를 모두 합산하려면 <code>SELECT var1 + var2 + ... + var10 FROM table</code> 같은 비효율적인 쿼리를 작성해야 합니다.</li>
+</ul>
+</li>
+<li data-line="2" dir="auto">페이지별 hit 데이터를 통계적으로 분석하려는 경우(예: 총합, 평균 등) 쿼리가 복잡해지며, 컬럼이 늘어나면 쿼리 수정이 필요합니다.</li>
+</ul></div></div></div></div></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="- 위의 데이터 테이블의 설계자가, 데이터 테이블을 총 컬럼수를 줄이고" dir="auto" class="heading" id="-_위의_데이터_테이블의_설계자가,_데이터_테이블을_총_컬럼수를_줄이고">- 위의 데이터 테이블의 설계자가, 데이터 테이블을 총 컬럼수를 줄이고</h1><div class="heading-children"></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="페이지당 hit수 만을 필요로 하기 때문에, 가볍게 작성했다면 어떻게 반박할 것인가?" dir="auto" class="heading" id="페이지당_hit수_만을_필요로_하기_때문에,_가볍게_작성했다면_어떻게_반박할_것인가?">페이지당 hit수 만을 필요로 하기 때문에, 가볍게 작성했다면 어떻게 반박할 것인가?</h1><div class="heading-children"><div class="el-h2 heading-wrapper"><h2 data-heading="적어도 이렇게는 만들었어야 하지 않았나?" dir="auto" class="heading" id="적어도_이렇게는_만들었어야_하지_않았나?"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>적어도 이렇게는 만들었어야 하지 않았나?</h2><div class="heading-children"><div class="el-pre"><pre><code data-line="0">idx (PK) | xdate (PK)  | page_id  | hit_count
+---------------------------------------------
+   1     | 20241208    | var1    | 21
+   2     | 20241208    | var2    | 15
+   3     | 20241209    | var1    | 13
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-ul"><ul>
+<li data-line="0" dir="auto">새로운 페이지를 추가할 때 스키마 변경 불필요.</li>
+<li data-line="1" dir="auto">스토리지 효율성 향상 (0 또는 NULL 값 제거).</li>
+<li data-line="2" dir="auto">데이터 분석 및 통계 작업 간소화.</li>
+<li data-line="3" dir="auto">검색, 집계 성능 최적화 가능.</li>
+</ul></div><div class="el-hr"><hr></div></div></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="정규화 해보자!" dir="auto" class="heading" id="정규화_해보자!">정규화 해보자!</h1><div class="heading-children"><div class="el-h2 heading-wrapper"><h2 data-heading="제 1정규화 - 모든 도메인이 원자 값으로만 구성" dir="auto" class="heading" id="제_1정규화_-_모든_도메인이_원자_값으로만_구성"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>제 1정규화 - 모든 도메인이 원자 값으로만 구성</h2><div class="heading-children"><div class="el-p"><p dir="auto">변경 전 (비정규화된 테이블):</p></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">KEY <code>idx</code></th>
+<th dir="ltr">KEY <code>xdate</code></th>
+<th dir="ltr"><code>var1</code></th>
+<th dir="ltr"><code>var2</code></th>
+<th dir="ltr"><code>var3</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">1</td>
+<td dir="auto">20241208</td>
+<td dir="auto">21</td>
+<td dir="auto">15</td>
+<td dir="auto">13</td>
+</tr>
+</tbody>
+</table></div><div class="el-h4 heading-wrapper"><h4 data-heading="원자값을 갖는것 같은데??" dir="auto" class="heading" id="원자값을_갖는것_같은데??"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>원자값을 갖는것 같은데??</h4><div class="heading-children"><div class="el-ul"><ul>
+<li data-line="0" dir="auto">맞다. var1, var2 .. 는 각기 다른 페이지의 hit를 저장한다.</li>
+</ul></div><div class="el-p"><p dir="auto">하지만, "페이지의 hit 수"라는 속성에서 본다면, 동일한 의미를 여러 셀에 분산 저장한다고 볼 수 있다.<br>
+따라서 데이터의 동일 속성을 위반했다고 볼 수 있다.</p></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">KEY <code>idx</code></th>
+<th dir="ltr">KEY <code>xdate</code></th>
+<th dir="ltr"><code>page_id</code></th>
+<th dir="ltr"><code>hit_count</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">1</td>
+<td dir="auto">20241208</td>
+<td dir="ltr">var1</td>
+<td dir="auto">21</td>
+</tr>
+<tr>
+<td dir="auto">2</td>
+<td dir="auto">20241208</td>
+<td dir="ltr">var2</td>
+<td dir="auto">15</td>
+</tr>
+<tr>
+<td dir="auto">3</td>
+<td dir="auto">20241208</td>
+<td dir="ltr">var3</td>
+<td dir="auto">13</td>
+</tr>
+</tbody>
+</table></div><div class="el-p"><p dir="auto">따라서 다음과 같이 각 컬럼이 진짜 원자값을 갖도록 수정할 수 있다.</p></div><div class="el-hr"><hr></div></div></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="제 2정규화 - 모든 비기본 속성이 기본키의 **전체**에 종속되어야 하며, 기본키의 **일부에만 종속되는 부분 종속성**이 없어야 함." dir="auto" class="heading" id="제_2정규화_-_모든_비기본_속성이_기본키의_**전체**에_종속되어야_하며,_기본키의_**일부에만_종속되는_부분_종속성**이_없어야_함."><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>제 2정규화 - 모든 비기본 속성이 기본키의 <strong>전체</strong>에 종속되어야 하며, 기본키의 <strong>일부에만 종속되는 부분 종속성</strong>이 없어야 함.</h2><div class="heading-children"><div class="el-h4 heading-wrapper"><h4 data-heading="* 간접 종속 가능*" dir="auto" class="heading" id="*_간접_종속_가능*"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><em> 간접 종속 가능</em></h4><div class="heading-children"></div></div><div class="el-h3 heading-wrapper"><h3 data-heading="예를 들어 누군가..  page_id에 대한 속성을 만들어달라고 하신다면.." dir="auto" class="heading" id="예를_들어_누군가..__page_id에_대한_속성을_만들어달라고_하신다면.."><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>예를 들어 누군가..  page_id에 대한 속성을 만들어달라고 하신다면..</h3><div class="heading-children"><div class="el-p"><p dir="auto">다음과 같은 형태를 띄게 된다.</p></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">KEY <code>xdate</code></th>
+<th dir="ltr">KEY <code>page_id</code></th>
+<th dir="ltr"><code>hit_count</code></th>
+<th dir="ltr"><code>page_name</code></th>
+<th dir="ltr"><code>category</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">20241208</td>
+<td dir="ltr">var1</td>
+<td dir="auto">21</td>
+<td dir="ltr">Kakao_main</td>
+<td dir="ltr">main</td>
+</tr>
+<tr>
+<td dir="auto">20241208</td>
+<td dir="ltr">var2</td>
+<td dir="auto">15</td>
+<td dir="ltr">Kakao_case1</td>
+<td dir="ltr">detail</td>
+</tr>
+<tr>
+<td dir="auto">20241208</td>
+<td dir="ltr">var3</td>
+<td dir="auto">13</td>
+<td dir="ltr">Kakao_case2</td>
+<td dir="ltr">detail</td>
+</tr>
+</tbody>
+</table></div><div class="el-ul"><ul>
+<li data-line="0" dir="auto">여기서, <code>category</code>는 <code>page_name</code>에 종속되어있으며, <code>page_name</code>은 <code>page_id</code>에 종속되어있다.</li>
+</ul></div><div class="el-p"><p dir="auto">페이지 속성(비기본 속성)들이 기본키의 부분적으로 종속되어있다.</p></div></div></div><div class="el-h3 heading-wrapper"><h3 data-heading="결과" dir="auto" class="heading" id="결과"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>결과</h3><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">KEY <code>xdate</code></th>
+<th dir="ltr">KEY <code>page_id</code></th>
+<th dir="ltr"><code>hit_count</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">20241208</td>
+<td dir="ltr">var1</td>
+<td dir="auto">21</td>
+</tr>
+<tr>
+<td dir="auto">20241208</td>
+<td dir="ltr">var2</td>
+<td dir="auto">15</td>
+</tr>
+<tr>
+<td dir="auto">20241208</td>
+<td dir="ltr">var3</td>
+<td dir="auto">13</td>
+</tr>
+</tbody>
+</table></div><div class="el-p"><p dir="auto"><code>hit_count</code>는  <code>xdate, page_id</code>를 기본키로 갖는다 </p></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">KEY <code>page_id</code></th>
+<th dir="ltr">UNIQUE <code>page_name</code></th>
+<th dir="ltr"><code>category</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">var1</td>
+<td dir="ltr">Kakao_main</td>
+<td dir="ltr">main</td>
+</tr>
+<tr>
+<td dir="ltr">var2</td>
+<td dir="ltr">Kakao_case1</td>
+<td dir="ltr">detaile</td>
+</tr>
+<tr>
+<td dir="ltr">var3</td>
+<td dir="ltr">Kakao_case2</td>
+<td dir="ltr">detaile</td>
+</tr>
+</tbody>
+</table></div><div class="el-p"><p dir="auto"><code>category</code>는 <code>page_name</code>를 종속하며, <code>page_name</code>은 <code>page_id -&gt; page_id</code>처럼 간접 종속을 하기 때문에 만족</p></div><div class="el-hr"><hr></div></div></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="제 3정규화 - 이행성 함수 종속관계 삭제 (모든 비기본 속성이 기본키에 직접 종속)" dir="auto" class="heading" id="제_3정규화_-_이행성_함수_종속관계_삭제_(모든_비기본_속성이_기본키에_직접_종속)"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>제 3정규화 - 이행성 함수 종속관계 삭제 (모든 비기본 속성이 기본키에 직접 종속)</h2><div class="heading-children"><div class="el-p"><p dir="auto">속성 A → 속성 B → 속성 C로 이루어진 종속 관계에서, A가 C를 직접 결정하지 않고, B를 통해 C를 결정하는 경우를 말한다.</p></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">KEY <code>page_id</code></th>
+<th dir="ltr">UNIQUE <code>page_name</code></th>
+<th dir="ltr"><code>category</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">var1</td>
+<td dir="ltr">Kakao_main</td>
+<td dir="ltr">main</td>
+</tr>
+<tr>
+<td dir="ltr">var2</td>
+<td dir="ltr">Kakao_case1</td>
+<td dir="ltr">detaile</td>
+</tr>
+<tr>
+<td dir="ltr">var3</td>
+<td dir="ltr">Kakao_case2</td>
+<td dir="ltr">detaile</td>
+</tr>
+</tbody>
+</table></div><div class="el-p"><p dir="auto">해당 테이블에서 간접 종속을 제외한다.</p></div><div class="el-h3 heading-wrapper"><h3 data-heading="결과" dir="auto" class="heading" id="결과"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>결과</h3><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">KEY <code>page_id</code></th>
+<th dir="ltr">UNIQUE <code>page_name</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">var1</td>
+<td dir="ltr">Kakao_main</td>
+</tr>
+<tr>
+<td dir="ltr">var2</td>
+<td dir="ltr">Kakao_case1</td>
+</tr>
+<tr>
+<td dir="ltr">var3</td>
+<td dir="ltr">Kakao_case2</td>
+</tr>
+</tbody>
+</table></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">KEY <code>page_name</code></th>
+<th dir="ltr"><code>category</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Kakao_main</td>
+<td dir="ltr">main</td>
+</tr>
+<tr>
+<td dir="ltr">Kakao_case1</td>
+<td dir="ltr">detaile</td>
+</tr>
+<tr>
+<td dir="ltr">Kakao_case2</td>
+<td dir="ltr">detaile</td>
+</tr>
+</tbody>
+</table></div><div class="mod-footer mod-ui"></div></div></div></div></div></div></div></div></div></div><div class="sidebar-right sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content"><div class="graph-view-wrapper"><div class="sidebar-section-header">Interactive Graph</div><div class="graph-view-placeholder">
+		<div class="graph-view-container">
+			<div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
+			<canvas id="graph-canvas" class="hide" width="512px" height="512px"></canvas>
+		</div>
+		</div></div><div class="outline-tree tree-container"><div class="tree-item nav-folder mod-root" data-depth="0"><div class="tree-item-self nav-folder-title"><div class="tree-item-inner nav-folder-title-content">Table Of Contents</div><button class="clickable-icon nav-action-button tree-collapse-all" aria-label="Collapse All"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg></button></div><div class="tree-item-children nav-folder-children"><div class="nav-folder-spacer"></div><div class="tree-item" data-depth="1"><a class="tree-item-self is-clickable" href="study/dev-seminar/📔-db-테이블-설계,-어떻게-하는게-옳은-방법인가.html#📔 DB 테이블 설계, 어떻게 하는게 옳은 방법인가" data-path="#📔 DB 테이블 설계, 어떻게 하는게 옳은 방법인가"><div class="tree-item-inner heading-link" heading-name="📔 DB 테이블 설계, 어떻게 하는게 옳은 방법인가">📔 DB 테이블 설계, 어떻게 하는게 옳은 방법인가</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-item-self is-clickable" href="study/dev-seminar/📔-db-테이블-설계,-어떻게-하는게-옳은-방법인가.html#어느?_데이터_테이블의_예시" data-path="#어느?_데이터_테이블의_예시"><div class="tree-item-inner heading-link" heading-name="어느? 데이터 테이블의 예시">어느? 데이터 테이블의 예시</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-item-self is-clickable" href="study/dev-seminar/📔-db-테이블-설계,-어떻게-하는게-옳은-방법인가.html#테이블의_효율성과_확장성" data-path="#테이블의_효율성과_확장성"><div class="tree-item-inner heading-link" heading-name="테이블의 효율성과 확장성">테이블의 효율성과 확장성</div></a><div class="tree-item-children"><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-item-self is-clickable" href="study/dev-seminar/📔-db-테이블-설계,-어떻게-하는게-옳은-방법인가.html#위_테이블의_비효율성은_무엇인가?" data-path="#위_테이블의_비효율성은_무엇인가?"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><div class="tree-item-inner heading-link" heading-name="위 테이블의 비효율성은 무엇인가?">위 테이블의 비효율성은 무엇인가?</div></a><div class="tree-item-children"><div class="tree-item mod-collapsible" data-depth="3"><a class="tree-item-self is-clickable" href="study/dev-seminar/📔-db-테이블-설계,-어떻게-하는게-옳은-방법인가.html#1._**확장_시_문제점**" data-path="#1._**확장_시_문제점**"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><div class="tree-item-inner heading-link" heading-name="1. **확장 시 문제점**:">1. 
+확장 시 문제점:
+</div></a><div class="tree-item-children"><div class="tree-item" data-depth="4"><a class="tree-item-self is-clickable" href="study/dev-seminar/📔-db-테이블-설계,-어떻게-하는게-옳은-방법인가.html#데이터_활용도_제한" data-path="#데이터_활용도_제한"><div class="tree-item-inner heading-link" heading-name="데이터 활용도 제한">데이터 활용도 제한</div></a><div class="tree-item-children"></div></div></div></div><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="study/dev-seminar/📔-db-테이블-설계,-어떻게-하는게-옳은-방법인가.html#2._**비효율적인_데이터_조회**" data-path="#2._**비효율적인_데이터_조회**"><div class="tree-item-inner heading-link" heading-name="2. **비효율적인 데이터 조회**:">2. 
+비효율적인 데이터 조회:
+</div></a><div class="tree-item-children"></div></div></div></div></div></div><div class="tree-item" data-depth="1"><a class="tree-item-self is-clickable" href="study/dev-seminar/📔-db-테이블-설계,-어떻게-하는게-옳은-방법인가.html#-_위의_데이터_테이블의_설계자가,_데이터_테이블을_총_컬럼수를_줄이고" data-path="#-_위의_데이터_테이블의_설계자가,_데이터_테이블을_총_컬럼수를_줄이고"><div class="tree-item-inner heading-link" heading-name="- 위의 데이터 테이블의 설계자가, 데이터 테이블을 총 컬럼수를 줄이고"><span>- 
+
+<span>위의 데이터 테이블의 설계자가, 데이터 테이블을 총 컬럼수를 줄이고</span></span></div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-item-self is-clickable" href="study/dev-seminar/📔-db-테이블-설계,-어떻게-하는게-옳은-방법인가.html#페이지당_hit수_만을_필요로_하기_때문에,_가볍게_작성했다면_어떻게_반박할_것인가?" data-path="#페이지당_hit수_만을_필요로_하기_때문에,_가볍게_작성했다면_어떻게_반박할_것인가?"><div class="tree-item-inner heading-link" heading-name="페이지당 hit수 만을 필요로 하기 때문에, 가볍게 작성했다면 어떻게 반박할 것인가?">페이지당 hit수 만을 필요로 하기 때문에, 가볍게 작성했다면 어떻게 반박할 것인가?</div></a><div class="tree-item-children"><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="study/dev-seminar/📔-db-테이블-설계,-어떻게-하는게-옳은-방법인가.html#적어도_이렇게는_만들었어야_하지_않았나?" data-path="#적어도_이렇게는_만들었어야_하지_않았나?"><div class="tree-item-inner heading-link" heading-name="적어도 이렇게는 만들었어야 하지 않았나?">적어도 이렇게는 만들었어야 하지 않았나?</div></a><div class="tree-item-children"></div></div></div></div><div class="tree-item" data-depth="1"><a class="tree-item-self is-clickable" href="study/dev-seminar/📔-db-테이블-설계,-어떻게-하는게-옳은-방법인가.html#정규화_해보자!" data-path="#정규화_해보자!"><div class="tree-item-inner heading-link" heading-name="정규화 해보자!">정규화 해보자!</div></a><div class="tree-item-children"><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-item-self is-clickable" href="study/dev-seminar/📔-db-테이블-설계,-어떻게-하는게-옳은-방법인가.html#제_1정규화_-_모든_도메인이_원자_값으로만_구성" data-path="#제_1정규화_-_모든_도메인이_원자_값으로만_구성"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><div class="tree-item-inner heading-link" heading-name="제 1정규화 - 모든 도메인이 원자 값으로만 구성">제 1정규화 - 모든 도메인이 원자 값으로만 구성</div></a><div class="tree-item-children"><div class="tree-item" data-depth="4"><a class="tree-item-self is-clickable" href="study/dev-seminar/📔-db-테이블-설계,-어떻게-하는게-옳은-방법인가.html#원자값을_갖는것_같은데??" data-path="#원자값을_갖는것_같은데??"><div class="tree-item-inner heading-link" heading-name="원자값을 갖는것 같은데??">원자값을 갖는것 같은데??</div></a><div class="tree-item-children"></div></div></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-item-self is-clickable" href="study/dev-seminar/📔-db-테이블-설계,-어떻게-하는게-옳은-방법인가.html#제_2정규화_-_모든_비기본_속성이_기본키의_**전체**에_종속되어야_하며,_기본키의_**일부에만_종속되는_부분_종속성**이_없어야_함." data-path="#제_2정규화_-_모든_비기본_속성이_기본키의_**전체**에_종속되어야_하며,_기본키의_**일부에만_종속되는_부분_종속성**이_없어야_함."><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><div class="tree-item-inner heading-link" heading-name="제 2정규화 - 모든 비기본 속성이 기본키의 **전체**에 종속되어야 하며, 기본키의 **일부에만 종속되는 부분 종속성**이 없어야 함.">제 2정규화 - 모든 비기본 속성이 기본키의 <strong>전체</strong>에 종속되어야 하며, 기본키의 <strong>일부에만 종속되는 부분 종속성</strong>이 없어야 함.</div></a><div class="tree-item-children"><div class="tree-item" data-depth="4"><a class="tree-item-self is-clickable" href="study/dev-seminar/📔-db-테이블-설계,-어떻게-하는게-옳은-방법인가.html#*_간접_종속_가능*" data-path="#*_간접_종속_가능*"><div class="tree-item-inner heading-link" heading-name="* 간접 종속 가능*"><span>- 
+
+<span>간접 종속 가능*</span></span></div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="study/dev-seminar/📔-db-테이블-설계,-어떻게-하는게-옳은-방법인가.html#예를_들어_누군가..__page_id에_대한_속성을_만들어달라고_하신다면.." data-path="#예를_들어_누군가..__page_id에_대한_속성을_만들어달라고_하신다면.."><div class="tree-item-inner heading-link" heading-name="예를 들어 누군가..  page_id에 대한 속성을 만들어달라고 하신다면..">예를 들어 누군가..  page_id에 대한 속성을 만들어달라고 하신다면..</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="study/dev-seminar/📔-db-테이블-설계,-어떻게-하는게-옳은-방법인가.html#결과" data-path="#결과"><div class="tree-item-inner heading-link" heading-name="결과">결과</div></a><div class="tree-item-children"></div></div></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-item-self is-clickable" href="study/dev-seminar/📔-db-테이블-설계,-어떻게-하는게-옳은-방법인가.html#제_3정규화_-_이행성_함수_종속관계_삭제_(모든_비기본_속성이_기본키에_직접_종속)" data-path="#제_3정규화_-_이행성_함수_종속관계_삭제_(모든_비기본_속성이_기본키에_직접_종속)"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><div class="tree-item-inner heading-link" heading-name="제 3정규화 - 이행성 함수 종속관계 삭제 (모든 비기본 속성이 기본키에 직접 종속)">제 3정규화 - 이행성 함수 종속관계 삭제 (모든 비기본 속성이 기본키에 직접 종속)</div></a><div class="tree-item-children"><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="study/dev-seminar/📔-db-테이블-설계,-어떻게-하는게-옳은-방법인가.html#결과" data-path="#결과"><div class="tree-item-inner heading-link" heading-name="결과">결과</div></a><div class="tree-item-children"></div></div></div></div></div></div></div></div></div></div><script defer="">let rs = document.querySelector(".sidebar-right"); rs.classList.add("is-collapsed"); if (window.innerWidth > 768) rs.classList.remove("is-collapsed"); rs.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-right-width"));</script></div></div></body></html>

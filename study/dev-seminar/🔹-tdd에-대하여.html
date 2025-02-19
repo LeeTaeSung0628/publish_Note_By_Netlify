@@ -1,0 +1,450 @@
+<!DOCTYPE html> <html><head>
+<title>🔹 TDD에 대하여</title>
+<base href="../..">
+<meta id="root-path" root-path="../..">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
+<meta charset="UTF-8">
+<meta name="description" content="Vault_md_public - 🔹 TDD에 대하여">
+<meta property="og:title" content="🔹 TDD에 대하여">
+<meta property="og:description" content="Vault_md_public - 🔹 TDD에 대하여">
+<meta property="og:type" content="website">
+<meta property="og:url" content="study/dev-seminar/🔹-tdd에-대하여.html">
+<meta property="og:image" content="undefined">
+<meta property="og:site_name" content="Vault_md_public">
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="lib/rss.xml"><script async="" id="webpage-script" src="lib/scripts/webpage.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script type="module" async="" id="graph-view-script" src="lib/scripts/graph-view.js"></script><script async="" id="graph-wasm-script" src="lib/scripts/graph-wasm.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-render-worker-script" src="lib/scripts/graph-render-worker.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="tinycolor-script" src="lib/scripts/tinycolor.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="pixi-script" src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.4.0/pixi.min.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="minisearch-script" src="https://cdn.jsdelivr.net/npm/minisearch@6.3.0/dist/umd/index.min.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><link rel="icon" href="lib/media/favicon.png"><script async="" id="graph-data-script" src="lib/scripts/graph-data.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><link rel="stylesheet" href="lib/styles/obsidian.css"><link rel="preload" href="lib/styles/other-plugins.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/other-plugins.css"></noscript><link rel="stylesheet" href="lib/styles/theme.css"><link rel="preload" href="lib/styles/global-variable-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/global-variable-styles.css"></noscript><link rel="preload" href="lib/styles/supported-plugins.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/supported-plugins.css"></noscript><link rel="preload" href="lib/styles/main-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/main-styles.css"></noscript><style>body{--line-width:40em;--line-width-adaptive:40em;--file-line-width:40em;--sidebar-width:min(20em, 80vw);--collapse-arrow-size:11px;--tree-horizontal-spacing:0.6em;--tree-vertical-spacing:0.6em;--sidebar-margin:12px}.sidebar{height:100%;min-width:calc(var(--sidebar-width) + var(--divider-width-hover));max-width:calc(var(--sidebar-width) + var(--divider-width-hover));font-size:14px;z-index:10;position:relative;overflow:hidden;transition:min-width ease-in-out,max-width ease-in-out;transition-duration:.2s;contain:size}.sidebar-left{left:0}.sidebar-right{right:0}.sidebar.is-collapsed{min-width:0;max-width:0}body.floating-sidebars .sidebar{position:absolute}.sidebar-content{height:100%;min-width:calc(var(--sidebar-width) - var(--divider-width-hover));top:0;padding:var(--sidebar-margin);padding-top:4em;line-height:var(--line-height-tight);background-color:var(--background-secondary);transition:background-color,border-right,border-left,box-shadow;transition-duration:var(--color-fade-speed);transition-timing-function:ease-in-out;position:absolute;display:flex;flex-direction:column}.sidebar:not(.is-collapsed) .sidebar-content{min-width:calc(max(100%,var(--sidebar-width)) - 3px);max-width:calc(max(100%,var(--sidebar-width)) - 3px)}.sidebar-left .sidebar-content{left:0;border-top-right-radius:var(--radius-l);border-bottom-right-radius:var(--radius-l)}.sidebar-right .sidebar-content{right:0;border-top-left-radius:var(--radius-l);border-bottom-left-radius:var(--radius-l)}.sidebar:has(.sidebar-content:empty):has(.topbar-content:empty){display:none}.sidebar-topbar{height:2em;width:var(--sidebar-width);top:var(--sidebar-margin);padding-inline:var(--sidebar-margin);z-index:1;position:fixed;display:flex;align-items:center;transition:width ease-in-out;transition-duration:inherit}.sidebar.is-collapsed .sidebar-topbar{width:calc(2.3em + var(--sidebar-margin) * 2)}.sidebar .sidebar-topbar.is-collapsed{width:0}.sidebar-left .sidebar-topbar{left:0}.sidebar-right .sidebar-topbar{right:0}.topbar-content{overflow:hidden;overflow:clip;width:100%;height:100%;display:flex;align-items:center;transition:inherit}.sidebar.is-collapsed .topbar-content{width:0;transition:inherit}.clickable-icon.sidebar-collapse-icon{background-color:transparent;color:var(--icon-color-focused);padding:0!important;margin:0!important;height:100%!important;width:2.3em!important;margin-inline:0.14em!important;position:absolute}.sidebar-left .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);right:var(--sidebar-margin)}.sidebar-right .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);left:var(--sidebar-margin)}.clickable-icon.sidebar-collapse-icon svg.svg-icon{width:100%;height:100%}.sidebar-section-header{margin:0 0 1em 0;text-transform:uppercase;letter-spacing:.06em}body{transition:background-color var(--color-fade-speed) ease-in-out}.webpage-container{display:flex;flex-direction:row;height:100%;width:100%;align-items:stretch;justify-content:center}.document-container{opacity:1;flex-basis:100%;max-width:100%;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;transition:opacity .2s ease-in-out;contain:inline-size}.hide{opacity:0;transition:opacity .2s ease-in-out}.document-container>.markdown-preview-view{margin:var(--sidebar-margin);margin-bottom:0;width:100%;width:-webkit-fill-available;width:-moz-available;width:fill-available;background-color:var(--background-primary);transition:background-color var(--color-fade-speed) ease-in-out;border-top-right-radius:var(--window-radius,var(--radius-m));border-top-left-radius:var(--window-radius,var(--radius-m));overflow-x:hidden!important;overflow-y:auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;contain:inline-size}.document-container>.markdown-preview-view>.markdown-preview-sizer{padding-bottom:80vh!important;width:100%!important;max-width:var(--line-width)!important;flex-basis:var(--line-width)!important;transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}.markdown-rendered img:not([width]),.view-content img:not([width]){max-width:100%;outline:0}.document-container>.view-content.embed{display:flex;padding:1em;height:100%;width:100%;align-items:center;justify-content:center}.document-container>.view-content.embed>*{max-width:100%;max-height:100%;object-fit:contain}:not(h1,h2,h3,h4,h5,h6):has(> :is(.math,table)){overflow-x:auto!important}.document-container>.view-content{overflow-x:auto;contain:content;padding:0;margin:0;height:100%}.scroll-highlight{position:absolute;width:100%;height:100%;pointer-events:none;z-index:1000;background-color:hsla(var(--color-accent-hsl),.25);opacity:0;padding:1em;inset:50%;translate:-50% -50%;border-radius:var(--radius-s)}</style><script defer="">async function loadIncludes(){if("file:"!=location.protocol){let e=document.querySelectorAll("include");for(const t of e){let e=t.getAttribute("src");try{const o=await fetch(e);if(!o.ok){console.log("Could not include file: "+e),t?.remove();continue}let l=await o.text(),n=document.createRange().createContextualFragment(l),c=Array.from(n.children);for(let e of c)e.classList.add("hide"),e.style.transition="opacity 0.5s ease-in-out",setTimeout((()=>{e.classList.remove("hide")}),10);t.before(n),t.remove(),console.log("Included file: "+e)}catch(o){t?.remove(),console.log("Could not include file: "+e,o);continue}}}else{if(document.querySelectorAll("include").length>0){var e=document.createElement("div");e.id="error",e.textContent="Web server exports must be hosted on an http / web server to be viewed correctly.",e.style.position="fixed",e.style.top="50%",e.style.left="50%",e.style.transform="translate(-50%, -50%)",e.style.fontSize="1.5em",e.style.fontWeight="bold",e.style.textAlign="center",document.body.appendChild(e),document.querySelector(".document-container")?.classList.remove("hide")}}}document.addEventListener("DOMContentLoaded",(()=>{loadIncludes()}));let isFileProtocol="file:"==location.protocol;function waitLoadScripts(e,t){let o=e.map((e=>document.getElementById(e+"-script"))),l=0;!function e(){let n=o[l];l++,n&&"true"!=n.getAttribute("loaded")||l<o.length&&e(),l<o.length?n.addEventListener("load",e):t()}()}</script></head><body class="publish css-settings-manager theme-dark show-inline-title show-ribbon is-focused"><script defer="">let theme=localStorage.getItem("theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");"dark"==theme?(document.body.classList.add("theme-dark"),document.body.classList.remove("theme-light")):(document.body.classList.add("theme-light"),document.body.classList.remove("theme-dark")),window.innerWidth<480?document.body.classList.add("is-phone"):window.innerWidth<768?document.body.classList.add("is-tablet"):window.innerWidth<1024?document.body.classList.add("is-small-screen"):document.body.classList.add("is-large-screen")</script><div class="webpage-container workspace"><div class="sidebar-left sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><label class="theme-toggle-container" for="theme_toggle"><input class="theme-toggle-input" type="checkbox" id="theme_toggle"><div class="toggle-background"></div></label></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content"><div class="search-input-container"><div class="search-input-wrapper"><input enterkeyhint="search" type="search" spellcheck="false" placeholder="Search..."><div class="search-input-clear-button" aria-label="Clear search"></div></div></div><include src="lib/html/file-tree.html"></include></div><script defer="">let ls = document.querySelector(".sidebar-left"); ls.classList.add("is-collapsed"); if (window.innerWidth > 768) ls.classList.remove("is-collapsed"); ls.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-left-width"));</script></div><div class="document-container markdown-reading-view hide"><div class="markdown-preview-view markdown-rendered allow-fold-headings allow-fold-lists is-readable-line-width"><style id="MJX-CHTML-styles"></style><div class="markdown-preview-sizer markdown-preview-section"><h1 class="page-title heading inline-title" id="🔹 TDD에 대하여"><p dir="auto">🔹 TDD에 대하여</p></h1><div class="el-h1 heading-wrapper"><div class="heading-children"><div class="el-p"><p dir="auto"><a href="?query=tag:%EA%B3%B5%EB%B6%80" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a> <a href="?query=tag:Java" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Java">#Java</a> <a href="?query=tag:TDD" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#TDD">#TDD</a> <a href="?query=tag:Test" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Test">#Test</a></p></div><div class="el-hr"><hr></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="TDD가 필요한 이유" dir="auto" class="heading" id="TDD가_필요한_이유">TDD가 필요한 이유</h1><div class="heading-children"><div class="el-ol"><ol>
+<li data-line="0" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p><strong>코드 품질 향상</strong></p>
+<ul>
+<li data-line="2" dir="auto">TDD는 먼저 테스트를 작성한 후 코드를 구현하므로, 요구사항이 코드로 명확히 반영됩니다.</li>
+<li data-line="3" dir="auto">코드의 결함이 초기에 발견되어 수정 비용이 감소합니다.</li>
+</ul>
+</li>
+<li data-line="4" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p><strong>유지보수성 강화</strong></p>
+<ul>
+<li data-line="6" dir="auto">잘 작성된 테스트는 코드가 리팩토링될 때 문제를 방지합니다.</li>
+<li data-line="7" dir="auto">신규 기능 추가 시, 기존 코드와의 충돌을 빠르게 감지할 수 있습니다.</li>
+</ul>
+</li>
+<li data-line="8" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p><strong>명확한 설계 유도</strong></p>
+<ul>
+<li data-line="10" dir="auto">TDD는 코드를 작고 독립적인 단위로 나누어 설계하도록 장려합니다.</li>
+<li data-line="11" dir="auto">자연스럽게 SRP(Single Responsibility Principle) 등 객체지향 원칙을 따르게 됩니다.</li>
+</ul>
+</li>
+<li data-line="12" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p><strong>개발자 간 협업 강화</strong></p>
+<ul>
+<li data-line="14" dir="auto">테스트는 개발자들 간의 명세서 역할을 하며, 코드의 동작을 명확히 설명합니다.</li>
+<li data-line="15" dir="auto">코드리뷰 시 테스트를 통해 의도한 동작을 검증할 수 있습니다.</li>
+</ul>
+</li>
+</ol></div><div class="el-hr"><hr></div><div class="el-h2 heading-wrapper"><h2 data-heading="TDD 적용 범위?" dir="auto" class="heading" id="TDD_적용_범위?"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>TDD 적용 범위?</h2><div class="heading-children"><div class="el-ol"><ol>
+<li data-line="0" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p><strong>적용이 적합한 상황</strong></p>
+<ul>
+<li data-line="2" dir="auto"><strong>핵심 비즈니스 로직</strong>: 제품의 주요 기능이나 서비스 로직은 테스트가 필수적입니다.</li>
+<li data-line="3" dir="auto"><strong>복잡한 계산이나 알고리즘</strong>: 오작동이 치명적인 로직에는 TDD가 효과적입니다.</li>
+<li data-line="4" dir="auto"><strong>API 개발</strong>: REST API나 GraphQL과 같은 인터페이스는 TDD로 사전 정의하여 일관성을 보장합니다.</li>
+<li data-line="5" dir="auto"><strong>CI/CD 파이프라인</strong>: 자동화된 테스트를 활용하여 배포 전에 코드를 검증합니다.</li>
+</ul>
+</li>
+<li data-line="6" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p><strong>적용이 어려운 상황</strong></p>
+<ul>
+<li data-line="8" dir="auto"><strong>UI/UX</strong>: 사용자 인터페이스는 변동이 잦아 TDD를 적용하기 어렵습니다. 대신 e2e 테스트를 고려할 수 있습니다.</li>
+<li data-line="9" dir="auto"><strong>초기 프로토타입 개발</strong>: 초기에는 빠른 구현이 우선이므로 TDD를 생략할 수 있습니다.</li>
+<li data-line="10" dir="auto"><strong>시간/리소스 부족</strong>: 모든 코드를 테스트하기 어려운 경우, 핵심 영역에 우선순위를 두어야 합니다.</li>
+</ul>
+</li>
+<li data-line="11" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p><strong>테스트의 범위 조정</strong></p>
+<ul>
+<li data-line="13" dir="auto"><strong>유닛 테스트</strong>: 가장 작은 단위의 코드 동작을 테스트합니다.</li>
+<li data-line="14" dir="auto"><strong>통합 테스트</strong>: 여러 모듈이 함께 작동하는지 확인합니다.</li>
+<li data-line="15" dir="auto"><strong>엔드투엔드 테스트(e2e)</strong>: 사용자가 시스템 전체를 사용할 때의 흐름을 테스트합니다.</li>
+</ul>
+</li>
+</ol></div><div class="el-hr"><hr></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="실무 팁: TDD를 효과적으로 적용하려면?" dir="auto" class="heading" id="실무_팁_TDD를_효과적으로_적용하려면?"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>실무 팁: TDD를 효과적으로 적용하려면?</h2><div class="heading-children"><div class="el-ol"><ol>
+<li data-line="0" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p><strong>우선순위를 정하라</strong></p>
+<ul>
+<li data-line="2" dir="auto">모든 코드를 테스트하기보다는 핵심적인 기능에 집중합니다.</li>
+<li data-line="3" dir="auto">낮은 리스크 영역은 이후에 커버리지를 추가할 수 있습니다.</li>
+</ul>
+</li>
+<li data-line="4" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p><strong>자동화와 병행하라</strong></p>
+<ul>
+<li data-line="6" dir="auto">CI/CD 환경에서 테스트가 자동으로 실행되도록 설정하여, 코드 품질을 지속적으로 유지합니다.</li>
+</ul>
+</li>
+<li data-line="7" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p><strong>테스트를 문서로 활용하라</strong></p>
+<ul>
+<li data-line="9" dir="auto">테스트는 단순히 검증 도구가 아니라, 코드의 의도를 설명하는 문서 역할을 합니다.</li>
+<li data-line="10" dir="auto"></li>
+</ul>
+</li>
+</ol></div></div></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="필요하다면 실무에서의 범위는 어디까지일까?" dir="auto" class="heading" id="필요하다면_실무에서의_범위는_어디까지일까?">필요하다면 실무에서의 범위는 어디까지일까?</h1><div class="heading-children"><div class="el-h2 heading-wrapper"><h2 data-heading="1. **핵심 비즈니스 로직**" dir="auto" class="heading" id="1._**핵심_비즈니스_로직**"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>1. <strong>핵심 비즈니스 로직</strong></h2><div class="heading-children"><div class="el-ul"><ul>
+<li data-line="0" dir="auto"><strong>사례</strong>: 금융 계산, 결제 시스템, 인증 시스템.</li>
+<li data-line="1" dir="auto"><strong>이유</strong>: 로직 오류가 사용자 신뢰에 큰 영향을 미칠 수 있으며, 수정 비용이 크기 때문.</li>
+<li data-line="2" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>장점</strong>:
+<ul>
+<li data-line="3" dir="auto">요구사항 변경 시 빠르게 대응 가능.</li>
+<li data-line="4" dir="auto">결함 발생 확률 감소.</li>
+</ul>
+</li>
+<li data-line="5" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>TDD 도입 판단 기준</strong>:
+<ul>
+<li data-line="6" dir="auto">로직 복잡도: 복잡할수록 도입 우선순위가 높음.</li>
+<li data-line="7" dir="auto">장애 비용: 장애 발생 시 손실이 크면 반드시 도입.</li>
+</ul>
+</li>
+</ul></div><div class="el-hr"><hr></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="2. **대규모 협업 프로젝트**" dir="auto" class="heading" id="2._**대규모_협업_프로젝트**"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>2. <strong>대규모 협업 프로젝트</strong></h2><div class="heading-children"><div class="el-ul"><ul>
+<li data-line="0" dir="auto"><strong>사례</strong>: 여러 팀이 API를 개발하고 사용하는 상황.</li>
+<li data-line="1" dir="auto"><strong>이유</strong>: 인터페이스 사양이 변경되면 다른 팀에 영향을 줄 수 있음.</li>
+<li data-line="2" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>장점</strong>:
+<ul>
+<li data-line="3" dir="auto">명확한 명세서 제공으로 의사소통 오류 감소.</li>
+<li data-line="4" dir="auto">코드 변경 시, 관련 기능이 깨지지 않도록 보호.</li>
+</ul>
+</li>
+<li data-line="5" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>TDD 도입 판단 기준</strong>:
+<ul>
+<li data-line="6" dir="auto">팀 간 의존도가 높을수록 도입 가치 증가.</li>
+<li data-line="7" dir="auto">계약 기반 API 설계(contract-first approach)에 적합.</li>
+</ul>
+</li>
+</ul></div><div class="el-hr"><hr></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="3. **복잡한 알고리즘**" dir="auto" class="heading" id="3._**복잡한_알고리즘**"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>3. <strong>복잡한 알고리즘</strong></h2><div class="heading-children"><div class="el-ul"><ul>
+<li data-line="0" dir="auto"><strong>사례</strong>: 추천 시스템, 머신러닝 모델 전처리 로직.</li>
+<li data-line="1" dir="auto"><strong>이유</strong>: 알고리즘의 정확도가 비즈니스 성과와 직결.</li>
+<li data-line="2" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>장점</strong>:
+<ul>
+<li data-line="3" dir="auto">다양한 입력 데이터에 대한 처리 검증 가능.</li>
+<li data-line="4" dir="auto">결과의 일관성 유지.</li>
+</ul>
+</li>
+<li data-line="5" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>TDD 도입 판단 기준</strong>:
+<ul>
+<li data-line="6" dir="auto">입력/출력 데이터의 조합이 복잡할수록 필요성 증가.</li>
+<li data-line="7" dir="auto">정형화된 테스트 케이스 작성이 용이한 경우 적합.</li>
+</ul>
+</li>
+</ul></div><div class="el-hr"><hr></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="4. **프로토타입 개발**" dir="auto" class="heading" id="4._**프로토타입_개발**"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>4. <strong>프로토타입 개발</strong></h2><div class="heading-children"><div class="el-ul"><ul>
+<li data-line="0" dir="auto"><strong>사례</strong>: 스타트업 초기 제품.</li>
+<li data-line="1" dir="auto"><strong>이유</strong>: 빠른 피드백과 시장 검증이 우선.</li>
+<li data-line="2" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>단점</strong>:
+<ul>
+<li data-line="3" dir="auto">초기에는 개발 속도가 저하될 수 있음.</li>
+<li data-line="4" dir="auto">불필요한 테스트 작성 가능성.</li>
+</ul>
+</li>
+<li data-line="5" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>TDD 도입 판단 기준</strong>:
+<ul>
+<li data-line="6" dir="auto">제품 성공 가능성이 높은 핵심 기능에만 제한적으로 적용.</li>
+<li data-line="7" dir="auto">테스트는 리팩토링 이후 작성하는 방식을 병행.</li>
+</ul>
+</li>
+</ul></div><div class="el-hr"><hr></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="5. **긴 수명 주기를 가진 프로젝트**" dir="auto" class="heading" id="5._**긴_수명_주기를_가진_프로젝트**"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>5. <strong>긴 수명 주기를 가진 프로젝트</strong></h2><div class="heading-children"><div class="el-ul"><ul>
+<li data-line="0" dir="auto"><strong>사례</strong>: 장기 유지보수가 필요한 레거시 시스템.</li>
+<li data-line="1" dir="auto"><strong>이유</strong>: 시간이 지나도 코드 품질을 유지해야 함.</li>
+<li data-line="2" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>장점</strong>:
+<ul>
+<li data-line="3" dir="auto">기존 코드를 안전하게 리팩토링 가능.</li>
+<li data-line="4" dir="auto">신규 개발자 온보딩 시 유용한 학습 자료 제공.</li>
+</ul>
+</li>
+<li data-line="5" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>TDD 도입 판단 기준</strong>:
+<ul>
+<li data-line="6" dir="auto">유지보수 비용이 크거나, 새로운 요구사항이 자주 추가되는 프로젝트.</li>
+</ul>
+</li>
+</ul></div></div></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="테스트 툴" dir="auto" class="heading" id="테스트_툴">테스트 툴</h1><div class="heading-children"><div class="el-h2 heading-wrapper"><h2 data-heading="1. **JUnit 5 (Jupiter)**" dir="auto" class="heading" id="1._**JUnit_5_(Jupiter)**"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>1. <strong>JUnit 5 (Jupiter)</strong></h2><div class="heading-children"><div class="el-p"><p dir="auto">JUnit 5는 단위 테스트(Unit Test)를 작성하기 위한 핵심 도구입니다. Spring Boot는 기본적으로 JUnit 5를 지원하며, 다양한 애너테이션과 Assertions API를 통해 테스트를 쉽게 작성할 수 있습니다.</p></div><div class="el-h3 heading-wrapper"><h3 data-heading="주요 애너테이션" dir="auto" class="heading" id="주요_애너테이션"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>주요 애너테이션</h3><div class="heading-children"><div class="el-ol"><ol>
+<li data-line="0" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><code>@Test</code>
+<ul>
+<li data-line="1" dir="auto">테스트 메서드를 정의.</li>
+</ul>
+</li>
+<li data-line="2" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><code>@BeforeEach</code> / <code>@AfterEach</code>
+<ul>
+<li data-line="3" dir="auto">각각 테스트 메서드 실행 전후에 실행될 로직 정의.</li>
+</ul>
+</li>
+<li data-line="4" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><code>@BeforeAll</code> / <code>@AfterAll</code>
+<ul>
+<li data-line="5" dir="auto">각각 테스트 클래스 실행 전후에 한 번만 실행.</li>
+</ul>
+</li>
+<li data-line="6" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><code>@Disabled</code>
+<ul>
+<li data-line="7" dir="auto">테스트 메서드나 클래스를 비활성화.</li>
+</ul>
+</li>
+<li data-line="8" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><code>@Tag</code>
+<ul>
+<li data-line="9" dir="auto">테스트 그룹화(tagging) 기능 제공.</li>
+</ul>
+</li>
+</ol></div></div></div><div class="el-h3 heading-wrapper"><h3 data-heading="Assertions API" dir="auto" class="heading" id="Assertions_API"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Assertions API</h3><div class="heading-children"><div class="el-ul"><ul>
+<li data-line="0" dir="auto"><strong><code>assertEquals(expected, actual)</code></strong>: 두 값이 동일한지 비교.</li>
+<li data-line="1" dir="auto"><strong><code>assertTrue(condition)</code></strong>: 조건이 참인지 확인.</li>
+<li data-line="2" dir="auto"><strong><code>assertThrows(exception, executable)</code></strong>: 특정 예외가 발생하는지 확인.</li>
+</ul></div></div></div><div class="el-h3 heading-wrapper"><h3 data-heading="예제: 간단한 JUnit 테스트" dir="auto" class="heading" id="예제_간단한_JUnit_테스트"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>예제: 간단한 JUnit 테스트</h3><div class="heading-children"><div class="el-pre"><pre class="language-java" tabindex="0"><code data-line="0" class="language-java is-loaded"><span class="token keyword">import</span> <span class="token import"><span class="token namespace">org<span class="token punctuation">.</span>junit<span class="token punctuation">.</span>jupiter<span class="token punctuation">.</span>api<span class="token punctuation">.</span></span><span class="token class-name">Test</span></span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token keyword">static</span> <span class="token import static"><span class="token namespace">org<span class="token punctuation">.</span>junit<span class="token punctuation">.</span>jupiter<span class="token punctuation">.</span>api<span class="token punctuation">.</span></span><span class="token class-name">Assertions</span><span class="token punctuation">.</span><span class="token operator">*</span></span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">CalculatorTest</span> <span class="token punctuation">{</span>
+
+    <span class="token annotation punctuation">@Test</span>
+    <span class="token keyword">void</span> <span class="token function">additionShouldBeCorrect</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Calculator</span> calculator <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Calculator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> result <span class="token operator">=</span> calculator<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">assertEquals</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> result<span class="token punctuation">,</span> <span class="token string">"2 + 3은 5여야 합니다."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Test</span>
+    <span class="token keyword">void</span> <span class="token function">divisionShouldThrowExceptionForZero</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Calculator</span> calculator <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Calculator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">assertThrows</span><span class="token punctuation">(</span><span class="token class-name">ArithmeticException</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span> calculator<span class="token punctuation">.</span><span class="token function">divide</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div></div></div><div class="el-h3 heading-wrapper"><h3 data-heading="장점" dir="auto" class="heading" id="장점"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>장점</h3><div class="heading-children"><div class="el-ul"><ul>
+<li data-line="0" dir="auto"><strong>빠른 실행</strong>: 단위 테스트는 다른 계층과 독립적이므로 빠르게 실행 가능.</li>
+<li data-line="1" dir="auto"><strong>간단한 설정</strong>: 별도의 컨텍스트 로딩 없이 메서드 단위로 검증 가능.</li>
+</ul></div><div class="el-hr"><hr></div></div></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="2. **Spring Test Framework**" dir="auto" class="heading" id="2._**Spring_Test_Framework**"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>2. <strong>Spring Test Framework</strong></h2><div class="heading-children"><div class="el-p"><p dir="auto">Spring Test Framework는 Spring Boot 애플리케이션의 통합 테스트를 지원합니다. 스프링 컨텍스트를 로드하여 Spring Bean, 의존성 주입, 데이터베이스 연동 등을 테스트할 수 있습니다.</p></div><div class="el-h3 heading-wrapper"><h3 data-heading="주요 애너테이션" dir="auto" class="heading" id="주요_애너테이션"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>주요 애너테이션</h3><div class="heading-children"><div class="el-ol"><ol>
+<li data-line="0" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p><strong><code>@SpringBootTest</code></strong></p>
+<ul>
+<li data-line="2" dir="auto">전체 애플리케이션 컨텍스트를 로드.</li>
+<li data-line="3" dir="auto">단위 테스트와 통합 테스트를 모두 지원.</li>
+<li data-line="4" dir="auto">
+<pre><code data-line="4"></code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre>
+</li>
+</ul>
+</li>
+</ol></div><div class="el-pre"><pre class="language-java" tabindex="0"><code data-line="0" class="language-java is-loaded"><span class="token annotation punctuation">@SpringBootTest</span>
+<span class="token keyword">class</span> <span class="token class-name">MyAppTests</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Test</span>
+    <span class="token keyword">void</span> <span class="token function">contextLoads</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-ol"><ol start="2">
+<li data-line="0" dir="auto"><strong><code>@WebMvcTest</code></strong></li>
+</ol></div><div class="el-ul"><ul>
+<li data-line="0" dir="auto">컨트롤러 테스트 전용으로 사용.</li>
+<li data-line="1" dir="auto">MVC 관련 빈만 로드하여 REST API 테스트에 최적화.</li>
+</ul></div><div class="el-pre"><pre class="language-java" tabindex="0"><code data-line="0" class="language-java is-loaded"><span class="token annotation punctuation">@WebMvcTest</span><span class="token punctuation">(</span>controllers <span class="token operator">=</span> <span class="token class-name">MyController</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span>
+<span class="token keyword">class</span> <span class="token class-name">MyControllerTest</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Autowired</span>
+    <span class="token keyword">private</span> <span class="token class-name">MockMvc</span> mockMvc<span class="token punctuation">;</span>
+
+    <span class="token annotation punctuation">@Test</span>
+    <span class="token keyword">void</span> <span class="token function">shouldReturnDefaultMessage</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">Exception</span> <span class="token punctuation">{</span>
+        mockMvc<span class="token punctuation">.</span><span class="token function">perform</span><span class="token punctuation">(</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">"/api/hello"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+               <span class="token punctuation">.</span><span class="token function">andExpect</span><span class="token punctuation">(</span><span class="token function">status</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">isOk</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+               <span class="token punctuation">.</span><span class="token function">andExpect</span><span class="token punctuation">(</span><span class="token function">content</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">string</span><span class="token punctuation">(</span><span class="token string">"Hello, World!"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-ol"><ol start="3">
+<li data-line="0" dir="auto"><strong><code>@DataJpaTest</code></strong></li>
+</ol></div><div class="el-ul"><ul>
+<li data-line="0" dir="auto">JPA와 관련된 빈만 로드하여 테스트 속도를 최적화.</li>
+<li data-line="1" dir="auto">H2 Database와 함께 사용하여 데이터 계층 테스트.</li>
+</ul></div><div class="el-pre"><pre class="language-java" tabindex="0"><code data-line="0" class="language-java is-loaded"><span class="token annotation punctuation">@DataJpaTest</span>
+<span class="token keyword">class</span> <span class="token class-name">UserRepositoryTest</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Autowired</span>
+    <span class="token keyword">private</span> <span class="token class-name">UserRepository</span> userRepository<span class="token punctuation">;</span>
+
+    <span class="token annotation punctuation">@Test</span>
+    <span class="token keyword">void</span> <span class="token function">shouldSaveAndFindUser</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">User</span> user <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">User</span><span class="token punctuation">(</span><span class="token string">"John Doe"</span><span class="token punctuation">,</span> <span class="token string">"john@example.com"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        userRepository<span class="token punctuation">.</span><span class="token function">save</span><span class="token punctuation">(</span>user<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token class-name">Optional</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">User</span><span class="token punctuation">&gt;</span></span> result <span class="token operator">=</span> userRepository<span class="token punctuation">.</span><span class="token function">findByEmail</span><span class="token punctuation">(</span><span class="token string">"john@example.com"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">assertTrue</span><span class="token punctuation">(</span>result<span class="token punctuation">.</span><span class="token function">isPresent</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">assertEquals</span><span class="token punctuation">(</span><span class="token string">"John Doe"</span><span class="token punctuation">,</span> result<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-p"><p dir="auto">4.<strong><code>@MockBean</code></strong></p></div><div class="el-ul"><ul>
+<li data-line="0" dir="auto">특정 빈을 모킹하여 테스트 시 실제 구현체 대신 사용할 수 있음.</li>
+</ul></div><div class="el-pre"><pre class="language-java" tabindex="0"><code data-line="0" class="language-java is-loaded"><span class="token annotation punctuation">@SpringBootTest</span>
+<span class="token keyword">class</span> <span class="token class-name">MyServiceTest</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@MockBean</span>
+    <span class="token keyword">private</span> <span class="token class-name">MyRepository</span> myRepository<span class="token punctuation">;</span>
+
+    <span class="token annotation punctuation">@Autowired</span>
+    <span class="token keyword">private</span> <span class="token class-name">MyService</span> myService<span class="token punctuation">;</span>
+
+    <span class="token annotation punctuation">@Test</span>
+    <span class="token keyword">void</span> <span class="token function">shouldUseMockedRepository</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">when</span><span class="token punctuation">(</span>myRepository<span class="token punctuation">.</span><span class="token function">findSomething</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">thenReturn</span><span class="token punctuation">(</span><span class="token string">"Mocked Result"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token class-name">String</span> result <span class="token operator">=</span> myService<span class="token punctuation">.</span><span class="token function">getSomething</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">assertEquals</span><span class="token punctuation">(</span><span class="token string">"Mocked Result"</span><span class="token punctuation">,</span> result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-hr"><hr></div></div></div></div></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="최근 자체 디도스(내부 로직 부하)에 대한 대책" dir="auto" class="heading" id="최근_자체_디도스(내부_로직_부하)에_대한_대책">최근 자체 디도스(내부 로직 부하)에 대한 대책</h1><div class="heading-children"><div class="el-h2 heading-wrapper"><h2 data-heading="**1. JMeter로 JPA 쿼리 부하 테스트 준비**" dir="auto" class="heading" id="**1._JMeter로_JPA_쿼리_부하_테스트_준비**"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>1. JMeter로 JPA 쿼리 부하 테스트 준비</strong></h2><div class="heading-children"><div class="el-h3 heading-wrapper"><h3 data-heading="**필수 요구사항**" dir="auto" class="heading" id="**필수_요구사항**"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>필수 요구사항</strong></h3><div class="heading-children"><div class="el-ol"><ol>
+<li data-line="0" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p><strong>JDBC 드라이버 준비</strong></p>
+<ul>
+<li data-line="2" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>테스트할 데이터베이스의 JDBC 드라이버를 다운로드하여 JMeter의 <code>lib</code> 디렉토리에 복사.
+<ul>
+<li data-line="3" dir="auto">예: MySQL은 <code>mysql-connector-java</code>, PostgreSQL은 <code>postgresql.jar</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-line="4" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p><strong>테스트 대상 애플리케이션 준비</strong></p>
+<ul>
+<li data-line="6" dir="auto">JPA가 사용하는 데이터베이스를 직접 테스트하려면 데이터베이스 접속 정보가 필요.</li>
+<li data-line="7" dir="auto">Spring Boot 애플리케이션을 통해 동적으로 데이터를 생성하고 쿼리를 실행.</li>
+</ul>
+</li>
+</ol></div><div class="el-hr"><hr></div></div></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="**2. JMeter에서 JDBC Request 설정**" dir="auto" class="heading" id="**2._JMeter에서_JDBC_Request_설정**"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>2. JMeter에서 JDBC Request 설정</strong></h2><div class="heading-children"><div class="el-h3 heading-wrapper"><h3 data-heading="**1단계: JDBC Connection Configuration 추가**" dir="auto" class="heading" id="**1단계_JDBC_Connection_Configuration_추가**"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>1단계: JDBC Connection Configuration 추가</strong></h3><div class="heading-children"><div class="el-ol"><ol>
+<li data-line="0" dir="auto">JMeter의 <strong>Thread Group</strong>에 <strong>JDBC Connection Configuration</strong>을 추가.</li>
+<li data-line="1" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>설정:
+<ul>
+<li data-line="2" dir="auto"><strong>Variable Name</strong>: 커넥션을 참조할 이름 (예: <code>DBConnection</code>).</li>
+<li data-line="3" dir="auto"><strong>Database URL</strong>: JDBC URL (예: <code>jdbc:mysql://localhost:3306/testdb</code>).</li>
+<li data-line="4" dir="auto"><strong>JDBC Driver class</strong>: 드라이버 클래스 이름 (예: <code>com.mysql.cj.jdbc.Driver</code>).</li>
+<li data-line="5" dir="auto"><strong>Username/Password</strong>: 데이터베이스 접속 정보.</li>
+</ul>
+</li>
+</ol></div><div class="el-hr"><hr></div></div></div><div class="el-h3 heading-wrapper"><h3 data-heading="**2단계: JDBC Request 추가**" dir="auto" class="heading" id="**2단계_JDBC_Request_추가**"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>2단계: JDBC Request 추가</strong></h3><div class="heading-children"><div class="el-ol"><ol>
+<li data-line="0" dir="auto">
+<p>Thread Group에 <strong>JDBC Request</strong>를 추가.</p>
+</li>
+<li data-line="2" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p>설정:</p>
+<ul>
+<li data-line="4" dir="auto"><strong>Variable Name</strong>: 이전 단계에서 설정한 Variable Name 입력 (<code>DBConnection</code>).</li>
+<li data-line="5" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Query Type</strong>:
+<ul>
+<li data-line="6" dir="auto"><code>Select Statement</code>: 데이터 조회 쿼리.</li>
+<li data-line="7" dir="auto"><code>Update Statement</code>: 데이터 수정 쿼리.</li>
+</ul>
+</li>
+<li data-line="8" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Query</strong>: 실행할 SQL 쿼리.
+<ul>
+<li data-line="9" dir="auto">예: <code>SELECT * FROM users WHERE status = 'ACTIVE';</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-line="10" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p>매개변수를 동적으로 설정하려면 <strong>Prepared Statement</strong>를 사용할 수 있음:</p>
+<ul>
+<li data-line="12" dir="auto">SQL: <code>SELECT * FROM users WHERE age &gt; ?;</code></li>
+<li data-line="13" dir="auto">Parameters: <code>30</code> (동적으로 전달할 값).</li>
+</ul>
+</li>
+</ol></div><div class="el-hr"><hr></div></div></div><div class="el-h3 heading-wrapper"><h3 data-heading="**3단계: 동적 부하 생성**" dir="auto" class="heading" id="**3단계_동적_부하_생성**"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>3단계: 동적 부하 생성</strong></h3><div class="heading-children"><div class="el-ol"><ol>
+<li data-line="0" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p><strong>Thread Group</strong> 설정:</p>
+<ul>
+<li data-line="2" dir="auto"><strong>Number of Threads (Users)</strong>: 동시 실행 사용자 수.</li>
+<li data-line="3" dir="auto"><strong>Ramp-Up Period</strong>: 사용자가 몇 초에 걸쳐 증가할지 설정.</li>
+<li data-line="4" dir="auto"><strong>Loop Count</strong>: 각 사용자가 실행할 요청 반복 횟수.</li>
+</ul>
+</li>
+<li data-line="5" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p>부하를 동적으로 변경:</p>
+<ul>
+<li data-line="7" dir="auto">스레드 그룹에서 <strong>Scheduler</strong>를 활성화하여 특정 시간 간격으로 부하를 증감 가능.</li>
+</ul>
+</li>
+</ol></div><div class="el-hr"><hr></div></div></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="**3. JMeter와 JPA 연동 전략**" dir="auto" class="heading" id="**3._JMeter와_JPA_연동_전략**"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>3. JMeter와 JPA 연동 전략</strong></h2><div class="heading-children"><div class="el-h3 heading-wrapper"><h3 data-heading="**JPA 애플리케이션 직접 테스트**" dir="auto" class="heading" id="**JPA_애플리케이션_직접_테스트**"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>JPA 애플리케이션 직접 테스트</strong></h3><div class="heading-children"><div class="el-ol"><ol>
+<li data-line="0" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p><strong>HTTP 요청을 통해 JPA 메서드 호출</strong></p>
+<ul>
+<li data-line="2" dir="auto">REST API 엔드포인트를 호출하여 JPA 쿼리 실행.</li>
+<li data-line="3" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>JMeter의 HTTP Sampler로 테스트:
+<ul>
+<li data-line="4" dir="auto">URL: <code>http://localhost:8080/api/users?status=ACTIVE</code></li>
+<li data-line="5" dir="auto">Method: GET/POST.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-line="6" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p><strong>JPA 쿼리 매개변수 동적 설정</strong></p>
+<ul>
+<li data-line="8" dir="auto">REST API에 쿼리 매개변수 전달.</li>
+<li data-line="9" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>JMeter의 CSV Data Set Config를 사용하여 다양한 입력값 시뮬레이션:
+<ul>
+<li data-line="10" dir="auto">CSV 파일: <code>age,status</code>
+  <code>25,ACTIVE 30,INACTIVE 35,ACTIVE</code><br>
+</li>
+<li data-line="14" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>테스트 설정:
+<ul>
+<li data-line="15" dir="auto">Parameter: <code>${age}</code>와 <code>${status}</code>로 대체.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol></div><div class="el-hr"><hr></div></div></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="**4. 결과 분석**" dir="auto" class="heading" id="**4._결과_분석**"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>4. 결과 분석</strong></h2><div class="heading-children"><div class="el-h3 heading-wrapper"><h3 data-heading="**JPA 쿼리 성능 확인**" dir="auto" class="heading" id="**JPA_쿼리_성능_확인**"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>JPA 쿼리 성능 확인</strong></h3><div class="heading-children"><div class="el-ol"><ol>
+<li data-line="0" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p><strong>JMeter View Results Tree</strong></p>
+<ul>
+<li data-line="2" dir="auto">쿼리 실행 결과 및 응답 시간 확인.</li>
+</ul>
+</li>
+<li data-line="3" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p><strong>Database Monitoring Tools</strong></p>
+<ul>
+<li data-line="5" dir="auto">데이터베이스의 실행 계획(EXPLAIN) 확인.</li>
+<li data-line="6" dir="auto">DB에서 쿼리 실행 시간, CPU 사용량, I/O 병목 파악.</li>
+</ul>
+</li>
+<li data-line="7" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p><strong>Spring Actuator Metrics</strong></p>
+<ul>
+<li data-line="9" dir="auto"><code>@Timed</code> 애너테이션 또는 Actuator 메트릭을 통해 JPA 메서드의 실행 시간 측정.</li>
+</ul>
+</li>
+</ol></div><div class="el-hr"><hr></div></div></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="**5. 부하 테스트 시 주의사항**" dir="auto" class="heading" id="**5._부하_테스트_시_주의사항**"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>5. 부하 테스트 시 주의사항</strong></h2><div class="heading-children"><div class="el-ol"><ol>
+<li data-line="0" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p><strong>데이터베이스 상태 초기화</strong></p>
+<ul>
+<li data-line="2" dir="auto">테스트 전에 데이터베이스 상태를 초기화하여 결과의 일관성 유지.</li>
+</ul>
+</li>
+<li data-line="3" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p><strong>실제 환경과 동일한 설정</strong></p>
+<ul>
+<li data-line="5" dir="auto">실제 운영 환경의 DB 크기, 커넥션 풀 크기, 네트워크 조건을 반영.</li>
+</ul>
+</li>
+<li data-line="6" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p><strong>적정 부하 설정</strong></p>
+<ul>
+<li data-line="8" dir="auto">TPS(Transactions Per Second)를 기준으로 동시 요청 수 결정</li>
+</ul>
+</li>
+</ol></div><div class="mod-footer mod-ui"></div></div></div></div></div></div></div></div><div class="sidebar-right sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content"><div class="graph-view-wrapper"><div class="sidebar-section-header">Interactive Graph</div><div class="graph-view-placeholder">
+		<div class="graph-view-container">
+			<div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
+			<canvas id="graph-canvas" class="hide" width="512px" height="512px"></canvas>
+		</div>
+		</div></div><div class="outline-tree tree-container"><div class="tree-item nav-folder mod-root" data-depth="0"><div class="tree-item-self nav-folder-title"><div class="tree-item-inner nav-folder-title-content">Table Of Contents</div><button class="clickable-icon nav-action-button tree-collapse-all" aria-label="Collapse All"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg></button></div><div class="tree-item-children nav-folder-children"><div class="nav-folder-spacer"></div><div class="tree-item" data-depth="1"><a class="tree-item-self is-clickable" href="study/dev-seminar/🔹-tdd에-대하여.html#🔹 TDD에 대하여" data-path="#🔹 TDD에 대하여"><div class="tree-item-inner heading-link" heading-name="🔹 TDD에 대하여">🔹 TDD에 대하여</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-item-self is-clickable" href="study/dev-seminar/🔹-tdd에-대하여.html#TDD가_필요한_이유" data-path="#TDD가_필요한_이유"><div class="tree-item-inner heading-link" heading-name="TDD가 필요한 이유">TDD가 필요한 이유</div></a><div class="tree-item-children"><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="study/dev-seminar/🔹-tdd에-대하여.html#TDD_적용_범위?" data-path="#TDD_적용_범위?"><div class="tree-item-inner heading-link" heading-name="TDD 적용 범위?">TDD 적용 범위?</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="study/dev-seminar/🔹-tdd에-대하여.html#실무_팁_TDD를_효과적으로_적용하려면?" data-path="#실무_팁_TDD를_효과적으로_적용하려면?"><div class="tree-item-inner heading-link" heading-name="실무 팁: TDD를 효과적으로 적용하려면?">실무 팁: TDD를 효과적으로 적용하려면?</div></a><div class="tree-item-children"></div></div></div></div><div class="tree-item" data-depth="1"><a class="tree-item-self is-clickable" href="study/dev-seminar/🔹-tdd에-대하여.html#필요하다면_실무에서의_범위는_어디까지일까?" data-path="#필요하다면_실무에서의_범위는_어디까지일까?"><div class="tree-item-inner heading-link" heading-name="필요하다면 실무에서의 범위는 어디까지일까?">필요하다면 실무에서의 범위는 어디까지일까?</div></a><div class="tree-item-children"><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="study/dev-seminar/🔹-tdd에-대하여.html#1._**핵심_비즈니스_로직**" data-path="#1._**핵심_비즈니스_로직**"><div class="tree-item-inner heading-link" heading-name="1. **핵심 비즈니스 로직**">1. 
+핵심 비즈니스 로직
+</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="study/dev-seminar/🔹-tdd에-대하여.html#2._**대규모_협업_프로젝트**" data-path="#2._**대규모_협업_프로젝트**"><div class="tree-item-inner heading-link" heading-name="2. **대규모 협업 프로젝트**">2. 
+대규모 협업 프로젝트
+</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="study/dev-seminar/🔹-tdd에-대하여.html#3._**복잡한_알고리즘**" data-path="#3._**복잡한_알고리즘**"><div class="tree-item-inner heading-link" heading-name="3. **복잡한 알고리즘**">3. 
+복잡한 알고리즘
+</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="study/dev-seminar/🔹-tdd에-대하여.html#4._**프로토타입_개발**" data-path="#4._**프로토타입_개발**"><div class="tree-item-inner heading-link" heading-name="4. **프로토타입 개발**">4. 
+프로토타입 개발
+</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="study/dev-seminar/🔹-tdd에-대하여.html#5._**긴_수명_주기를_가진_프로젝트**" data-path="#5._**긴_수명_주기를_가진_프로젝트**"><div class="tree-item-inner heading-link" heading-name="5. **긴 수명 주기를 가진 프로젝트**">5. 
+긴 수명 주기를 가진 프로젝트
+</div></a><div class="tree-item-children"></div></div></div></div><div class="tree-item" data-depth="1"><a class="tree-item-self is-clickable" href="study/dev-seminar/🔹-tdd에-대하여.html#테스트_툴" data-path="#테스트_툴"><div class="tree-item-inner heading-link" heading-name="테스트 툴">테스트 툴</div></a><div class="tree-item-children"><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-item-self is-clickable" href="study/dev-seminar/🔹-tdd에-대하여.html#1._**JUnit_5_(Jupiter)**" data-path="#1._**JUnit_5_(Jupiter)**"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><div class="tree-item-inner heading-link" heading-name="1. **JUnit 5 (Jupiter)**">1. 
+JUnit 5 (Jupiter)
+</div></a><div class="tree-item-children"><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="study/dev-seminar/🔹-tdd에-대하여.html#주요_애너테이션" data-path="#주요_애너테이션"><div class="tree-item-inner heading-link" heading-name="주요 애너테이션">주요 애너테이션</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="study/dev-seminar/🔹-tdd에-대하여.html#Assertions_API" data-path="#Assertions_API"><div class="tree-item-inner heading-link" heading-name="Assertions API">Assertions API</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="study/dev-seminar/🔹-tdd에-대하여.html#예제_간단한_JUnit_테스트" data-path="#예제_간단한_JUnit_테스트"><div class="tree-item-inner heading-link" heading-name="예제: 간단한 JUnit 테스트">예제: 간단한 JUnit 테스트</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="study/dev-seminar/🔹-tdd에-대하여.html#장점" data-path="#장점"><div class="tree-item-inner heading-link" heading-name="장점">장점</div></a><div class="tree-item-children"></div></div></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-item-self is-clickable" href="study/dev-seminar/🔹-tdd에-대하여.html#2._**Spring_Test_Framework**" data-path="#2._**Spring_Test_Framework**"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><div class="tree-item-inner heading-link" heading-name="2. **Spring Test Framework**">2. 
+Spring Test Framework
+</div></a><div class="tree-item-children"><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="study/dev-seminar/🔹-tdd에-대하여.html#주요_애너테이션" data-path="#주요_애너테이션"><div class="tree-item-inner heading-link" heading-name="주요 애너테이션">주요 애너테이션</div></a><div class="tree-item-children"></div></div></div></div></div></div><div class="tree-item" data-depth="1"><a class="tree-item-self is-clickable" href="study/dev-seminar/🔹-tdd에-대하여.html#최근_자체_디도스(내부_로직_부하)에_대한_대책" data-path="#최근_자체_디도스(내부_로직_부하)에_대한_대책"><div class="tree-item-inner heading-link" heading-name="최근 자체 디도스(내부 로직 부하)에 대한 대책">최근 자체 디도스(내부 로직 부하)에 대한 대책</div></a><div class="tree-item-children"><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-item-self is-clickable" href="study/dev-seminar/🔹-tdd에-대하여.html#**1._JMeter로_JPA_쿼리_부하_테스트_준비**" data-path="#**1._JMeter로_JPA_쿼리_부하_테스트_준비**"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><div class="tree-item-inner heading-link" heading-name="**1. JMeter로 JPA 쿼리 부하 테스트 준비**"><strong>1. JMeter로 JPA 쿼리 부하 테스트 준비</strong></div></a><div class="tree-item-children"><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="study/dev-seminar/🔹-tdd에-대하여.html#**필수_요구사항**" data-path="#**필수_요구사항**"><div class="tree-item-inner heading-link" heading-name="**필수 요구사항**"><strong>필수 요구사항</strong></div></a><div class="tree-item-children"></div></div></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-item-self is-clickable" href="study/dev-seminar/🔹-tdd에-대하여.html#**2._JMeter에서_JDBC_Request_설정**" data-path="#**2._JMeter에서_JDBC_Request_설정**"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><div class="tree-item-inner heading-link" heading-name="**2. JMeter에서 JDBC Request 설정**"><strong>2. JMeter에서 JDBC Request 설정</strong></div></a><div class="tree-item-children"><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="study/dev-seminar/🔹-tdd에-대하여.html#**1단계_JDBC_Connection_Configuration_추가**" data-path="#**1단계_JDBC_Connection_Configuration_추가**"><div class="tree-item-inner heading-link" heading-name="**1단계: JDBC Connection Configuration 추가**"><strong>1단계: JDBC Connection Configuration 추가</strong></div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="study/dev-seminar/🔹-tdd에-대하여.html#**2단계_JDBC_Request_추가**" data-path="#**2단계_JDBC_Request_추가**"><div class="tree-item-inner heading-link" heading-name="**2단계: JDBC Request 추가**"><strong>2단계: JDBC Request 추가</strong></div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="study/dev-seminar/🔹-tdd에-대하여.html#**3단계_동적_부하_생성**" data-path="#**3단계_동적_부하_생성**"><div class="tree-item-inner heading-link" heading-name="**3단계: 동적 부하 생성**"><strong>3단계: 동적 부하 생성</strong></div></a><div class="tree-item-children"></div></div></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-item-self is-clickable" href="study/dev-seminar/🔹-tdd에-대하여.html#**3._JMeter와_JPA_연동_전략**" data-path="#**3._JMeter와_JPA_연동_전략**"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><div class="tree-item-inner heading-link" heading-name="**3. JMeter와 JPA 연동 전략**"><strong>3. JMeter와 JPA 연동 전략</strong></div></a><div class="tree-item-children"><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="study/dev-seminar/🔹-tdd에-대하여.html#**JPA_애플리케이션_직접_테스트**" data-path="#**JPA_애플리케이션_직접_테스트**"><div class="tree-item-inner heading-link" heading-name="**JPA 애플리케이션 직접 테스트**"><strong>JPA 애플리케이션 직접 테스트</strong></div></a><div class="tree-item-children"></div></div></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-item-self is-clickable" href="study/dev-seminar/🔹-tdd에-대하여.html#**4._결과_분석**" data-path="#**4._결과_분석**"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><div class="tree-item-inner heading-link" heading-name="**4. 결과 분석**"><strong>4. 결과 분석</strong></div></a><div class="tree-item-children"><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="study/dev-seminar/🔹-tdd에-대하여.html#**JPA_쿼리_성능_확인**" data-path="#**JPA_쿼리_성능_확인**"><div class="tree-item-inner heading-link" heading-name="**JPA 쿼리 성능 확인**"><strong>JPA 쿼리 성능 확인</strong></div></a><div class="tree-item-children"></div></div></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="study/dev-seminar/🔹-tdd에-대하여.html#**5._부하_테스트_시_주의사항**" data-path="#**5._부하_테스트_시_주의사항**"><div class="tree-item-inner heading-link" heading-name="**5. 부하 테스트 시 주의사항**"><strong>5. 부하 테스트 시 주의사항</strong></div></a><div class="tree-item-children"></div></div></div></div></div></div></div></div><script defer="">let rs = document.querySelector(".sidebar-right"); rs.classList.add("is-collapsed"); if (window.innerWidth > 768) rs.classList.remove("is-collapsed"); rs.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-right-width"));</script></div></div></body></html>

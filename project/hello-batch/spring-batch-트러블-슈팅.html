@@ -263,22 +263,22 @@ JPQL이 수행되던 부분에 코드를 수정하였다.</li>
 </code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-ul"><ul>
 <li data-line="0" dir="auto">job 레벨에서의 스레드 세이프한 전역 변수를 생성하였다.</li>
 <li data-line="1" dir="auto">그 후, 각 파티션 별 리더에 인자값으로 넘긴다.</li>
-</ul></div><div class="el-pre"><pre><code data-line="0">long currentExecutionOrder = executionOrder.getAndIncrement();  
-long startIndex = (currentExecutionOrder) * getPageSize();  
-int totalRecords = stepContext.getInt("totalRecords");  
+</ul></div><div class="el-pre"><pre class="language-java" tabindex="0"><code data-line="0" class="language-java is-loaded"><span class="token keyword">long</span> currentExecutionOrder <span class="token operator">=</span> executionOrder<span class="token punctuation">.</span><span class="token function">getAndIncrement</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+<span class="token keyword">long</span> startIndex <span class="token operator">=</span> <span class="token punctuation">(</span>currentExecutionOrder<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token function">getPageSize</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+<span class="token keyword">int</span> totalRecords <span class="token operator">=</span> stepContext<span class="token punctuation">.</span><span class="token function">getInt</span><span class="token punctuation">(</span><span class="token string">"totalRecords"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
   
-if (startIndex &gt;= totalRecords) {  
-    initResults(); // 빈 결과로 초기화  
-    tx.commit();  
-    return;  
-}  
+<span class="token keyword">if</span> <span class="token punctuation">(</span>startIndex <span class="token operator">&gt;=</span> totalRecords<span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+    <span class="token function">initResults</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 빈 결과로 초기화  </span>
+    tx<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+    <span class="token keyword">return</span><span class="token punctuation">;</span>  
+<span class="token punctuation">}</span>  
   
-int chunkSizeToRead = Math.min(getPageSize(), (int) (totalRecords - startIndex)); // 남은 데이터 크기만큼 읽기  
+<span class="token keyword">int</span> chunkSizeToRead <span class="token operator">=</span> <span class="token class-name">Math</span><span class="token punctuation">.</span><span class="token function">min</span><span class="token punctuation">(</span><span class="token function">getPageSize</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span> <span class="token punctuation">(</span>totalRecords <span class="token operator">-</span> startIndex<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 남은 데이터 크기만큼 읽기  </span>
   
-// QueryDSL Query 생성  
-JPQLQuery&lt;T&gt; query = createQuery()  
-        .offset(startIndex)  
-        .limit(chunkSizeToRead);
+<span class="token comment">// QueryDSL Query 생성  </span>
+<span class="token class-name">JPQLQuery</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">T</span><span class="token punctuation">&gt;</span></span> query <span class="token operator">=</span> <span class="token function">createQuery</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  
+        <span class="token punctuation">.</span><span class="token function">offset</span><span class="token punctuation">(</span>startIndex<span class="token punctuation">)</span>  
+        <span class="token punctuation">.</span><span class="token function">limit</span><span class="token punctuation">(</span>chunkSizeToRead<span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-h3 heading-wrapper"><h3 data-heading="스레드 세이프한 해당 변수는 각 페이징 리더의 startIndex를 지정 한 후," dir="auto" class="heading" id="스레드_세이프한_해당_변수는_각_페이징_리더의_startIndex를_지정_한_후,"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>스레드 세이프한 해당 변수는 각 페이징 리더의 startIndex를 지정 한 후,</h3><div class="heading-children"></div></div><div class="el-h3 heading-wrapper"><h3 data-heading="즉시 값을 늘린다. getAndIncrement()" dir="auto" class="heading" id="즉시_값을_늘린다._getAndIncrement()"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>즉시 값을 늘린다. getAndIncrement()</h3><div class="heading-children"></div></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="효과" dir="auto" class="heading" id="효과"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>효과</h2><div class="heading-children"><div class="el-ul"><ul>
 <li data-line="0" dir="auto">먼저 한 청크단위의 작업을 끝낸 파티션은 그 다음 작업을 즉시 할당받게 된다.</li>
 <li data-line="1" dir="auto">즉, 총 처리시간 기준 <mark>가장 빨리끝난 파티션</mark>과 <mark>가장 늦게 끝난 파티션</mark>의 실행 시간 차이는 최대 한 청크사이즈를 처리하는 시간보다 크지 않게 된다.</li>

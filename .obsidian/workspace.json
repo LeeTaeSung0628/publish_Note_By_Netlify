@@ -13,12 +13,12 @@
             "state": {
               "type": "split-diff-view",
               "state": {
-                "aFile": "lib/rss.xml",
-                "bFile": "lib/rss.xml",
+                "aFile": "lib/search-index.json",
+                "bFile": "lib/search-index.json",
                 "aRef": ""
               },
               "icon": "diff",
-              "title": "Diff: rss.xml"
+              "title": "Diff: search-index.json"
             }
           }
         ]
@@ -176,11 +176,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9b99cd08eedd9b26",
+  "active": "5cc2f7897ebd9692",
   "lastOpenFiles": [
     "lib/search-index.json",
     "lib/metadata.json",
-    "lib/styles/theme.css",
     "lib/styles/supported-plugins.css",
     "lib/styles/other-plugins.css",
     "lib/styles/obsidian.css",
@@ -188,17 +187,18 @@
     "lib/styles/global-variable-styles.css",
     "lib/styles",
     "lib/media/favicon.png",
-    "lib/scripts/pixi.js",
     "lib/scripts/webpage.js",
+    "lib/scripts/tinycolor.js",
+    "lib/scripts/pixi.js",
     "lib/media/6155340132a851f6089e.svg",
-    "lib/media/pasted-image-20250218160359.png",
-    "lib/media/pasted-image-20250218160328.png",
     "lib/media/pasted-image-20250218155524.png",
     "lib/media/pasted-image-20250218154647.png",
     "lib/media/pasted-image-20250218154633.png",
     "lib/media/pasted-image-20250218154615.png",
     "lib/media/pasted-image-20250218154433.png",
     "lib/media/pasted-image-20250218154352.png",
+    "lib/media/pasted-image-20250218153858.png",
+    "lib/media/pasted-image-20250218153814.png",
     "환영합니다!.md"
   ]
 }

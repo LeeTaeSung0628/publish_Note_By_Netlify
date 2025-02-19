@@ -1,79 +1,4 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault_md_public]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib/media/favicon.png</url><title>Vault_md_public</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 19 Feb 2025 08:39:41 GMT</lastBuildDate><atom:link href="lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 19 Feb 2025 08:39:36 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[👩‍👧‍👦 유입 통계 APP__SPRING AOP에 관하여]]></title><description><![CDATA[<a class="tag" href="?query=tag:프로젝트" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#프로젝트</a> <a class="tag" href="?query=tag:개발" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#개발</a> <a class="tag" href="?query=tag:DB" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DB</a> <br> <a href=".?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href=".?query=tag:개발" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개발">#개발</a> <a href=".?query=tag:DB" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#DB">#DB</a><br><a rel="noopener nofollow" class="external-link is-unresolved" href="https://www.hellofunding.co.kr/sp/loan/gtLoan?p=a2FrYW8xc3QK" target="_self">https://www.hellofunding.co.kr/sp/loan/gtLoan?p=a2FrYW8xc3QK</a><br>
-<a rel="noopener nofollow" class="external-link is-unresolved" href="https://www.hellofunding.co.kr/sp/loan/gtLoan?p=a2FrYW8xc222" target="_self">https://www.hellofunding.co.kr/sp/loan/gtLoan?p=a2FrYW8xc222</a><br>
-<br>통계 필요 페이지 내에서(프론트), 쿠키 데이터 페이지 별 최초 진입 확인?
-<br>
-<br>해당 진입시점부터 특정 동작에 대한 모든 타임라인 로그
-<br>
-<br>레디스 가용 메모리에 대한 한계값 산정. -&gt; 아직 적용 X
-<br>
-<br>URL + 함수명 조합
-<br>=&gt; 메인 테이블<br>
-=&gt; 백로직에서 쿠키 데이터 쌓기<br>=&gt; 디테일 테이블 - 타임라인으로 관리 단, 메인테이블에 존재하는 내셕들에 대해서<br>
-=&gt; AOP에서 특정 서비스or메서드orURL로 지정하여 로그 쌀기<br>- 관심사(Aspect)를 분리하여, 각 서비스 메서드에 반복해서 구현하는 것이 아닌, 별도의 Aspect로 관리하여 핵심로직을 공통으로 적용하기 위함이다.
-<br>
-<br>난수 생성 후 물고있기☑ <br>IP로 추적 <br><img alt="Pasted image 20241224144309.png" src="사진-및-문서/pasted-image-20241224144309.png" target="_self"><br>쿠키가 필요한 페이지의 경로가 기본 path와 일치하는 경우(redirect url 이 SP_MARKETING_HIT_TEST1 의 하위 url일 경우)<br>
-에는 명시적으로 표시할 필요가 없지만,<br><img alt="Pasted image 20241226111559.png" src="사진-및-문서/pasted-image-20241226111559.png" target="_self"><br>
-<br>장점: <br>코드가 간결하고 읽기 쉽다.
-<br>Spring의 AOP 인프라를 사용하여 메서드 인터셉션을 쉽게 구현할 수 있다. <br>단점:
-- 포인트컷 조건은 컴파일 시점에 고정된다.
-- 복잡한 조건이나 동적으로 변경되는 조건을 처리하기 어렵다. -&gt; @Pointcut 등의 조건에 부합하는 Bean객체를 컴파일 시점에 찾아내어 프록시를 감싼다.
-<br>
-<br>동적 생성: <br>런타임에 프록시를 생성하여 포인트컷과 어드바이스를 동적으로 적용.
-<br>StaticMethodMatcherPointcut 또는 DynamicMethodMatcherPointcut을 사용하여 런타임 조건 기반으로 메서드 매칭. <br>장점: <br>런타임 조건에 따라 동적으로 포인트컷 생성 가능.
-<br>복잡한 조건과 동적 필터링을 처리하기 용이.
-<br>Spring AOP가 아닌 순수 Java 프록시 방식도 지원. <br>단점: <br>코드가 복잡해지고 추가 구현이 필요.
-<br>Spring AOP와 동일한 수준의 간결성을 제공하지 않음. <br>-&gt; 해당 프록시 객체를 적용하고 싶은 Bean객체에 매번 생성(등록)해주어야 함.<br>import org.springframework.aop.Pointcut;
-import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator;
-import org.springframework.aop.support.DefaultPointcutAdvisor;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration; @Configuration
-public class AopConfig { @Bean public Pointcut customPointcut() { return new CustomPointcut(); } @Bean public CustomAdvice customAdvice() { return new CustomAdvice(); } @Bean public DefaultPointcutAdvisor customAdvisor(Pointcut customPointcut, CustomAdvice customAdvice) { return new DefaultPointcutAdvisor(customPointcut, customAdvice); } @Bean public DefaultAdvisorAutoProxyCreator proxyCreator() { return new DefaultAdvisorAutoProxyCreator(); }
-} <br>
-<br>@Pointcut 방식과 동일한 동작: <br>Spring 컨테이너가 관리하는 모든 빈에 대해 조건을 평가하고 프록시를 자동 생성합니다. <br>프록시를 명시적으로 선언할 필요 없음: <br>ProxyFactory처럼 수동으로 프록시를 생성하지 않아도 됩니다. <br>유연성과 효율성 향상: <br>Spring AOP 인프라를 활용하므로, 관리가 용이하고 런타임 성능이 개선됩니다. <br>
-<br>BeanPostProcessor: <br>DefaultAdvisorAutoProxyCreator는 Spring의 BeanPostProcessor를 구현한 클래스이다.
-<br>Spring 컨테이너는 애플리케이션 컨텍스트에 등록된 모든 BeanPostProcessor를 자동으로 호출하여 빈의 초기화 전후 작업을 수행한다.
-<br>이를 통해, Spring AOP는 빈 생성 단계에서 프록시를 생성하고 조건에 맞는 빈에 대해 어드바이저를 적용. <br>Advisor 탐색: <br>DefaultAdvisorAutoProxyCreator는 Spring 컨텍스트에 등록된 모든 Advisor를 자동으로 탐색한다.
-<br>이는 DefaultAdvisorAutoProxyCreator가 BeanFactory를 통해 컨테이너의 모든 Advisor 타입 빈을 조회하기 때문.
-<br>탐색된 Advisor를 사용하여 각 빈의 메서드와 포인트컷 조건을 매칭. <br>Advisor와 빈의 매칭: <br>빈이 생성될 때, DefaultAdvisorAutoProxyCreator는 해당 빈의 메서드가 어떤 Advisor의 포인트컷 조건에 부합하는지 평가.
-<br>조건에 부합하면, 해당 빈을 프록시 객체로 감싸고, 어드바이스를 연결. <br>
-<br>이렇게 맵핑이 되어야 하나, 이를 동적으로 탐지하지 못한다.
-<br>/* * EnableAspectJAutoProxy &gt; 프록시 적용시 인터페이스/클래스 여부 자동 판단 * 클래스에 인터페이스가 있으면 JDK 동적 프록시. * 인터페이스가 없으면 CGLIB 프록시. * */@Configuration @EnableAspectJAutoProxy public class AopConfig { @Bean public Pointcut customPointcut() { return new CustomPointcut(); } @Bean public CustomAdvice customAdvice() { return new CustomAdvice(); } @Bean public DefaultPointcutAdvisor customAdvisor(Pointcut customPointcut, CustomAdvice customAdvice) { return new DefaultPointcutAdvisor(customPointcut, customAdvice); } /* * @EnableAspectJAutoProxy를 사용해 등록했기 때문에 불필요. * */ // @Bean // public DefaultAdvisorAutoProxyCreator proxyCreator() { // return new DefaultAdvisorAutoProxyCreator(); // } }
-<br>프록시(Proxy)는 대리자라는 뜻으로, 다른 객체에 대한 인터페이스 역할을 하는 객체를 말합니다. 프로그래밍에서 프록시는 실제 객체에 접근하기 전에 특정 작업(로깅, 보안, 트랜잭션 관리 등)을 수행하거나, 객체에 대한 접근을 제어하는 데 사용됩니다.<br>
-<br>대리 객체: 프록시는 실제 객체에 대한 중간다리 역할을 합니다.
-<br>동작 조정: 프록시는 요청을 가로채서 추가적인 작업을 수행하거나, 요청을 변형한 뒤 실제 객체에 전달할 수 있습니다.
-<br>AOP와 연관: 프록시를 사용하면 코드를 변경하지 않고도 객체의 동작을 확장하거나 변경할 수 있습니다.
-<br>Method Name: loanerLoginPage<br>
-javax.servlet.http.HttpServletRequest<br>
-org.springframework.web.bind.annotation.GetMapping <br><img alt="Pasted image 20241226152219.png" src="사진-및-문서/pasted-image-20241226152219.png" target="_self"><br><img alt="Pasted image 20241226171158.png" src="사진-및-문서/pasted-image-20241226171158.png" target="_self"><br>
-<br>외부링크 최초진입. hitCode, hitUid 발급 및 DB저장
-<br>
-<br>외부링크 재진입. hitCode는 변경될 수 있으므로 "p"파라미터로 재발급<br>
-=&gt; hitCode는 매번 재발급 / hitUid는 없을때만 발급
-<br>
-<br>일반사용자 이며, 아무동작 하지 않는다.
-<br>
-<br>외부링크 진입 후 동작. 없는 녀석 새로 발급 및 DB저장
-<br>서비스 저장시 동시성 이슈가 발생할 수 있다?<br>@Override @Transactional public ResponseModel insertMarketingHitLog(String hitCode, String hitUid, String pageUrl, String pageType){ try { Optional&lt;HfMarketingHitLog&gt; existingLog = hfMarketingHitLogRepository.findByHitCodeAndHitUidAndPageUrlAndPageType(hitCode, hitUid, pageUrl, pageType); if (existingLog.isPresent()) { HfMarketingHitLog logToUpdate = existingLog.get(); logToUpdate.setUpdateDate(LocalDateTime.now()); hfMarketingHitLogRepository.save(logToUpdate); return new ResponseModel(ResponseModel.ResponseStatus.SUCCESS); } HfMarketingHitLog hfMarketingHitLog = HfMarketingHitLog.builder() .hitCode(hitCode) .hitUid(hitUid) .pageUrl(pageUrl) .pageType(pageType) .build(); hfMarketingHitLogRepository.save(hfMarketingHitLog); return new ResponseModel(ResponseModel.ResponseStatus.SUCCESS); } catch (Exception e) { return new ResponseModel(ResponseModel.ResponseStatus.FAILED, "데이터 처리 중 오류 발생"); } }
-<br>
-<br>여러 쓰레드(또는 트랜잭션)가 findByHitCodeAndHitUidAndPageUrlAndPageType 메서드를 호출하여 동일한 조건의 데이터를 동시에 조회할 수 있다.
-<br>두 쓰레드가 모두 existingLog.isPresent() 조건에서 false를 확인한 후, 동시에 새로운 HfMarketingHitLog 객체를 생성하고 저장하려 하면 데이터 중복 문제가 발생할 수 있다.
-<br>. Lock을 쓰면 되나, 이후 업데이트 로직 삭제(로그 테이블화) 변경으로 처리<br><img alt="Pasted image 20241230135801.png" src="사진-및-문서/pasted-image-20241230135801.png" target="_self"><br>1일의 유효기간을 갖는 uid를 발급하여, 인입코드 / Hit된 기능 주소 / 시간 을 저장한다.
-<br>uid는 외부url로 접근시 발급
-<br>page_url는 코드에 미리 등록 / hit_code는 모두(only 영문+숫자) 수용 가능
-<br><img alt="Pasted image 20250102160213.png" src="사진-및-문서/pasted-image-20250102160213.png" target="_self"><br>
-<img alt="Pasted image 20250102160223.png" src="사진-및-문서/pasted-image-20250102160223.png" target="_self"><br>
-<br>enum객체에 정의된 메서드를 DB로 전환하여 pointcut에서 해당 클래스, 메서드를 가져와 조건으로 정의
-<br>해당 조건에 부합하는 메서드를 프록시로 전환
-<br>
-<br>api호출을 통해 advice내의 동작은 런타임 환경에서 동적으로 변경이 가능한 것을 확인했다.
-<br>
-<br>런타입 위빙 방식이라고 하더라도, 변경은 불가능하다.
-<br>컴파일 위빙 방식은 컴파일 단계에서 원본 클래스 바이트코드를 변경하여 직접 위빙을 하는 방식이고,<br>
-런타임 위빙은 런타임단계에서 원본 클래스를 변경하지 않고 프록시 객체를 사용하여 교체하는 방식이다.
-<br>=&gt; 해당하는 부분은 리빌드와 큰 차이가 없고, 각 class에 scope를 따로 적용해야했기 때문에 고려하지 않았다.<br>=&gt; 연관성 있는 모든 참조를 수동으로 재설정해야하기 때문에 매우 복잡해진다.<br>
-<br>참조를 갱신하기 위해서는 Java리플렉션을 사용하여 강제로 참조를 갱신하거나, AspectJ의 런타임 위빙 방식을 활용해야 한다.
-<br>따라서, 서버 Kill을 하는 것과 진배 없다.
-<br><a data-href="👩‍👧‍👦 유입 통계 ADMIN용 테이블 설계 과정" href="project/hello-marketing/👩‍👧‍👦-유입-통계-admin용-테이블-설계-과정.html" class="internal-link" target="_self" rel="noopener nofollow">👩‍👧‍👦 유입 통계 ADMIN용 테이블 설계 과정</a>]]></description><link>project/hello-marketing/👩‍👧‍👦-유입-통계-app__spring-aop에-관하여.html</link><guid isPermaLink="false">project/hello marketing/👩‍👧‍👦 유입 통계 APP__SPRING AOP에 관하여.md</guid><pubDate>Wed, 19 Feb 2025 08:39:16 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20241224144309.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20241224144309.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[🏠 Home]]></title><description><![CDATA[<a class="tag" href="?query=tag:home" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#home</a> <a class="tag" href="?query=tag:index" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#index</a> <a class="tag" href="?query=tag:blog" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#blog</a> <br> <a href=".?query=tag:home" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#home">#home</a> <a href=".?query=tag:index" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#index">#index</a> <a href=".?query=tag:blog" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#blog">#blog</a> <br><a data-tooltip-position="top" aria-label="https://git.io/typing-svg" rel="noopener nofollow" class="external-link is-unresolved" href="https://git.io/typing-svg" target="_self"></a><img alt="Typing SVG" src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;pause=1000&amp;color=36A9F7&amp;random=false&amp;width=435&amp;lines=%EC%97%AC%EA%B8%B0%EB%8A%94+%EA%B3%B5%EB%B6%80%ED%95%98%EA%B3%A0%2C+%EA%B8%B0%EB%A1%9D%ED%95%98%EB%8A%94+%EA%B3%B3%EC%9E%85%EB%8B%88%EB%8B%A4" referrerpolicy="no-referrer" target="_self" class="is-unresolved"><br>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault_md_public]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib/media/favicon.png</url><title>Vault_md_public</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 19 Feb 2025 08:46:59 GMT</lastBuildDate><atom:link href="lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 19 Feb 2025 08:46:57 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[🏠 Home]]></title><description><![CDATA[<a class="tag" href="?query=tag:home" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#home</a> <a class="tag" href="?query=tag:index" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#index</a> <a class="tag" href="?query=tag:blog" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#blog</a> <br> <a href=".?query=tag:home" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#home">#home</a> <a href=".?query=tag:index" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#index">#index</a> <a href=".?query=tag:blog" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#blog">#blog</a> <br><a data-tooltip-position="top" aria-label="https://git.io/typing-svg" rel="noopener nofollow" class="external-link is-unresolved" href="https://git.io/typing-svg" target="_self"></a><img alt="Typing SVG" src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;pause=1000&amp;color=36A9F7&amp;random=false&amp;width=435&amp;lines=%EC%97%AC%EA%B8%B0%EB%8A%94+%EA%B3%B5%EB%B6%80%ED%95%98%EA%B3%A0%2C+%EA%B8%B0%EB%A1%9D%ED%95%98%EB%8A%94+%EA%B3%B3%EC%9E%85%EB%8B%88%EB%8B%A4" referrerpolicy="no-referrer" target="_self" class="is-unresolved"><br>
 <br><a data-href="👻 Obsidian 정적호스팅 CICD 과정" href="project/note-ci_cd/👻-obsidian-정적호스팅-cicd-과정.html" class="internal-link" target="_self" rel="noopener nofollow">👻 Obsidian 정적호스팅 CICD 과정</a>
 <br>
 <br><a data-href="🏹 Spring Batch 트러블 슈팅" href="project/hello-batch/🏹-spring-batch-트러블-슈팅.html" class="internal-link" target="_self" rel="noopener nofollow">🏹 Spring Batch 트러블 슈팅</a>
@@ -88,7 +13,6 @@ org.springframework.web.bind.annotation.GetMapping <br><img alt="Pasted image 20
 <br><a data-href="🎩 DevOps" href="study/cs/🎩-devops.html" class="internal-link" target="_self" rel="noopener nofollow">🎩 DevOps</a>
 <br><a data-href="📔 DataBase" href="study/cs/📔-database.html" class="internal-link" target="_self" rel="noopener nofollow">📔 DataBase</a>
 <br><a data-href="📭 Server" href="study/cs/📭-server.html" class="internal-link" target="_self" rel="noopener nofollow">📭 Server</a>
-<br><a data-href="🎵 Obsidian" href="study/cs/🎵-obsidian.html" class="internal-link" target="_self" rel="noopener nofollow">🎵 Obsidian</a>
 <br><a data-href="🐞 etc" href="study/cs/🐞-etc.html" class="internal-link" target="_self" rel="noopener nofollow">🐞 etc</a>
 <br>
 <br><a data-href="🔻 Redis 캐쉬 전략 - hello 서비스에 적용하여 성능개선 가능성" href="study/dev-seminar/🔻-redis-캐쉬-전략-hello-서비스에-적용하여-성능개선-가능성.html" class="internal-link" target="_self" rel="noopener nofollow">🔻 Redis 캐쉬 전략 - hello 서비스에 적용하여 성능개선 가능성</a>
@@ -105,238 +29,46 @@ org.springframework.web.bind.annotation.GetMapping <br><img alt="Pasted image 20
 <br><a data-href="🥈 필기 5과목 - 정보시스템 구축관리" href="study/정보처리기사/정보처리기사-필기/🥈-필기-5과목-정보시스템-구축관리.html" class="internal-link" target="_self" rel="noopener nofollow">🥈 필기 5과목 - 정보시스템 구축관리</a>
 <br>
 <br><a data-href="🥇 정보처리 기사 실기 키워드" href="study/정보처리기사/정보처리기사-실기/🥇-정보처리-기사-실기-키워드.html" class="internal-link" target="_self" rel="noopener nofollow">🥇 정보처리 기사 실기 키워드</a>
-<br>]]></description><link>index.html</link><guid isPermaLink="false">index.md</guid><pubDate>Wed, 19 Feb 2025 08:38:40 GMT</pubDate><enclosure url="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Hand%20with%20Fingers%20Splayed%20Light%20Skin%20Tone.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Hand%20with%20Fingers%20Splayed%20Light%20Skin%20Tone.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[🏹 Spring Batch 트러블 슈팅]]></title><description><![CDATA[<a class="tag" href="?query=tag:프로젝트" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#프로젝트</a> <a class="tag" href="?query=tag:개발" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#개발</a> <a class="tag" href="?query=tag:SPRING" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SPRING</a> <a class="tag" href="?query=tag:Batch" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Batch</a> <a class="tag" href="?query=tag:Partitioning" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Partitioning</a> <a class="tag" href="?query=tag:Chunk" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Chunk</a> <br> <a href=".?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href=".?query=tag:개발" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개발">#개발</a> <a href=".?query=tag:SPRING" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SPRING">#SPRING</a> <a href=".?query=tag:Batch" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Batch">#Batch</a> <a href=".?query=tag:Partitioning" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Partitioning">#Partitioning</a> <a href=".?query=tag:Chunk" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Chunk">#Chunk</a><br>기존 예치금 차액비교 Batch의 Tasklet방식의 배치의 단점을 보완하는 chunk 방식의 배치를 구현하고,<br>
-나아가 다른 기능의 Batch에도 효과적으로 빠르게 적용할 수 있는재사용성/유지보수성 높은 코드, 선례를 만들기 위함이다.<br>
-<br>Chunk, Partioning방식을 Job을 추가 개발 (기존 balanceJob 유지)
-<br>당분간 두 Job을 병행하면서 비교
-<br>추가한 Job 기능에 문제없다면 기존 balanceJob 삭제
 <br>
-<br>평균 소요시간: 약 17.35분
-<br>최대 소요시간: 22분
-<br>최소 소요시간: 12분<br>
-<img alt="output (1).png" src="사진-및-문서/output-(1).png" target="_self">
+<br><a data-href="🎵 Obsidian" href="tools/🎵-obsidian.html" class="internal-link" target="_self" rel="noopener nofollow">🎵 Obsidian</a>]]></description><link>index.html</link><guid isPermaLink="false">index.md</guid><pubDate>Wed, 19 Feb 2025 08:46:32 GMT</pubDate><enclosure url="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Hand%20with%20Fingers%20Splayed%20Light%20Skin%20Tone.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Hand%20with%20Fingers%20Splayed%20Light%20Skin%20Tone.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[🎵 Obsidian]]></title><description><![CDATA[<a class="tag" href="?query=tag:Tools" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Tools</a> <a class="tag" href="?query=tag:메모" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#메모</a> <a class="tag" href="?query=tag:Obsidian" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Obsidian</a> <br> <a href=".?query=tag:Tools" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Tools">#Tools</a> <a href=".?query=tag:메모" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#메모">#메모</a> <a href=".?query=tag:Obsidian" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Obsidian">#Obsidian</a><br>
+<br>옵시디언은 Markdow기반의 노트 작성 및 지식 관리 어플이다.
+<br>특히, 데이터 시각화 및 개인지식관리에 뛰어나다.
 <br>
-<br>처음 가져온 Point 배치 완료시 까지 계속 물고있다. -&gt; 한 트렌젝션의 범위가 넓다.
+<br>옵시디언은 Markdown 형식을 기반으로 노트를 작성하며, 간단한 텍스트 포맷팅(굵게, 기울임, 리스트, 링크 등)이 가능.
+<br>.md 파일로 저장되어 데이터 이동 및 백업이 자유로움.
 <br>
-<br>G5-Point 등은 처음 7시 시점에 묶여있다. 회원별로 실데이터를 건건이 api(신한)를 호출하여 비교한다. 때문에, 7시 이후에 수정된데이터를 실시간으로 반영하지 못한다.
+<br>옵시디언은 위키 스타일의 링크([[노트 제목]])를 사용하여 노트 간 연결이 가능.
+<br>노트 간의 관계를 자동으로 분석하여 연결된 구조를 보여줌.
 <br>
-<br>목적 : batch의 step 레벨에서의 스레드 분리 ( 병렬처리 )
+<br>연결된 노트들을 시각적으로 보여주는 그래프 뷰 제공.
+<br>노트 간의 관계를 네트워크 그래프 형태로 표현하여 지식 네트워크 구축에 용이.
 <br>
-<br>독립적인 ExecutionContext가 주어져 상태를 안전하게 관리할 수 있다.
+<br>기본 기능 외에도 다양한 플러그인을 추가하여 확장 가능.
+<br>공식 플러그인 및 커뮤니티에서 제공하는 다양한 기능 추가 가능. <br>예: 캘린더, 태그 관리, LaTeX 지원, AI 플러그인 등. <br>
+<br>클라우드가 아닌 로컬 저장 방식을 기본으로 하여 데이터 소유권을 보장.
+<br>추가적으로 Obsidian Sync를 사용하면 여러 기기 간 동기화 가능.
 <br>
-<br>목적 : 각 step내의 트렌젝션 단위 분리
-<br>Reader / Processor / writer 가 역할을 분담
+<br>Windows, macOS, Linux, iOS, Android에서 사용 가능.
+<br>모바일에서도 원활한 노트 작성과 검색이 가능.
 <br>
+<br>자주 사용하는 노트 형식을 템플릿으로 저장하여 반복 사용 가능.
+<br>태그(#태그이름)를 활용하여 노트 분류 및 검색 가능.
 <br>
-Partition 생성: <br>Partition 1 : ID 1 ~ 25 / 대기열1 : ID 101 ~ 125 / 대기열2 : ID 201 ~ 225
-<br>Partition 2 : ID 26 ~ 50 / 대기열 : ID 126 ~ 150 / 대기열2 : ID 226 ~ 250
-<br>Partition 3 : ID 51 ~ 75 / 대기열 : ID 151 ~ 175 / 대기열2 : -
-<br>Partition 4 : ID 76 ~ 100 / 대기열 : ID 176 ~ 200 / 대기열2 : - <br>
-각 Partition에서 Chunk 처리: <br>Partition 1: <br>Chunk 1: ID 1 ~ 10 → 커밋
-<br>Chunk 2: ID 11 ~ 20 → 커밋
-<br>Chunk 3: ID 21 ~ 25 → 커밋 <br>Partition 2: <br>Chunk 1: ID 26 ~ 35 → 커밋
-<br>Chunk 2: ID 36 ~ 45 → 커밋
-<br>Chunk 3: ID 46 ~ 50 → 커밋 <br>나머지 Partition도 동일 방식으로 처리. <br>
-병렬 실행: <br>스레드 풀 크기 = 4이므로 4개의 Partition이 동시에 실행됩니다.
-<br>Partition 처리 순서는 스레드 풀에서 처리되는 순서에 따라 다를 수 있음. <br>
-트랜잭션 관리: <br>각 Partition은 독립적인 트랜잭션을 가짐.
-<br>각 Chunk가 커밋될 때마다 트랜잭션이 종료됨. <br>
+<br>특정 키워드를 기반으로 노트 검색 가능.
+<br>정규 표현식(Regex) 지원으로 복잡한 검색도 가능
+<br><img alt="Pasted image 20250218145702.png" src="사진-및-문서/pasted-image-20250218145702.png" target="_self"><br><img alt="Pasted image 20250218145823.png" src="사진-및-문서/pasted-image-20250218145823.png" target="_self"><br>노션이란? - 올인원 생산성 및 노트 관리 도구로, 노트 작성, 데이터베이스, 프로젝트 관리, 협업 기능을 통합적으로 제공하는 플랫폼이다<br>단편적으로 기능의 차이를 보면 다음과 같다.<br>
+<br>옵시디언의 최대 장점으로는 다양한 유저 커스텀 플러그인이 있다.
+<br>노션에서 기본으로 지원하는 캘린더, 데이터베이스, 클라우드, 템플릿 등을 모두 사용 가능하다.
+<br>또한, 해당되는 플러그인 들은 유저들에 의해 지속적으로 업데이트 된다.
+<br>EX) ChatGPT / HTML Export / Git 등등..<br>
+<br>옵시디언은 노션과 달리 로컬 네이티브앱으로 인터넷 연결없이도 사용이 가능하다.
+<br>로컬환경에서 Markdown문법만으로 문서가 작성되기 때문에 속도가 무척 빠르고 쾌적하다.
+<br>또한, 로컬 저장 방식으로 직접적인 데이터의 소유가 가능하다. → 보안이 뛰어나다고 볼 수 있다.
 <br>
-Partition 생성: <br>Partition 1 : ID 1 ~ 25 / 대기열1 : ID 101 ~ 125 / 대기열2 : ID 201 ~ 225
-<br>Partition 2 : ID 26 ~ 50 / 대기열 : ID 126 ~ 150 / 대기열2 : ID 226 ~ 250
-<br>Partition 3 : ID 51 ~ 75 / 대기열 : ID 151 ~ 175 / 대기열2 : ID 251 ~ 275
-<br>Partition 4 : ID 76 ~ 100 / 대기열 : ID 176 ~ 200 / 대기열2 : ID 276 ~ 300
-<br>추가 스레드 풀 생성
-<br>Partition 5 : ID 300 ~ 325 / 대기열 : ID 326 ~ 350 / 대기열2 : ID 351 ~ 375
-<br>추가 스레드 풀 생성
-<br>Partition 6 : ID 376 ~ 400 / 대기열 : ID 401 ~ 425 / 대기열2 : ID 426 ~ 450 모든 대기열 소모 및 최대 스레드 풀 도달 =&gt; 작업 중단 및 오류 <br>-&gt; 이로볼때, 쿼리작업보다 api호출작업의 소요시간이 길어보임<br>범위 - 2017-11-07 ~ 2017-12-01<br>
-startDate=2017-11-07&amp;endDate=2017-12-01<br>기존 병렬처리 : 1분 7초<br>
-기존로직 : 6분 32초<br>t:스레드 개수 / c:각 스레드별 청크 파티션 수<br>SimpleAsyncTaskExecutor<br>
-g4/c10 : 1분 41.586초<br>
-g5/c10 : 1분 30.037초<br>
-g5/c3 : 1분 28.997초<br>
-g5/c1 : 1분 29.931초<br>
-g8/c10 : 1분 36.019초<br>
-g10/c1 : 1분 24.529초<br>
-<br>ThreadPoolTaskExecutor<br>
-Th min/maxSize64, g64/c10 : 1분 42.848초<br>
-Th min/maxSize32, g32/c10 : 1분 26.551초<br>Th min/maxSize16, g16/c10 :<br>
-1분 46.753초 / 1분 33.779초 / 2분 25.759초<br>
-1분 11.668초 / 2분 5.773초 / 2분 39.553초<br>Th min/maxSize32, g8/c20 : 3분 25.743초<br>Th min/maxSize16, g4/c10 : 2분 29.207초 / 2분 8.004초<br>
-<br>Grid사이즈(파티셔닝 갯수) 만큼 스레드 풀 계속 생성
-<br>파티셔닝 갯수가 많아졌을 때, 스레드 생성/소멸에 드는 오버헤드 증가
+<br>옵시디언은 기본적으로 모든 기능이 제한없이 무료이다.<br>
+! 유료 서비스인 Obsidian Sync(클라우드 동기화 서비스) 가 있지만, Git을 통한 형상관리를 한다면 전혀 사용할 필요가 없다
+<br>따라서, 용량에 구애받지 않고 무제한 확장이 가능하다고 볼 수 있다.
 <br>
-<br>최소 스레드풀 개수 / 최대 스레드풀 개수 / 대기열 큐 크기 / 유휴 시간 모두 설정가능
-<br>파티셔닝 갯수가 많을 경우, 처리 성능에 맞는 스레드 풀에서 대기작업으로 처리하여 오버헤드 감소
-<br>
-<br>총 처리량 기준 1/n로 각 스레드에 할당시 충분히 감당한 양으로, 대기열을 사용할 필요가 없다.
-<br>
-<br>쿼리 호출 및 페이징 기법 직접 구현
-<br>
-<br>Native Query 형태로 호출하여 자동 페이징
-<br>
-<br>Spring Batch에서는 공식적으로 지원하지 않음
-<br>자동 페이징
-<br>Querydsl형태로 쿼리 호출 가능
-<br>
-<br>기존(헬로)의 Querydsl기반 JPAQuery를 그대로 사용 가능
-<br>자동 페이징
-<br>그 외 Querydsl의 장점 보유
-<br>
-<br>기존 PagingItemReader의 메서드를 오버라이딩 하여 사용하며,<br>
-JPQL이 수행되던 부분에 코드를 수정하였다.
-<br>@Bean @Scope(value = "step", proxyMode = ScopedProxyMode.TARGET_CLASS) public QuerydslPagingItemReader&lt;HfbatBankBalanceCheckDto&gt; balanceReader() { ExecutionContext jobContext = Objects.requireNonNull(StepSynchronizationManager.getContext()).getStepExecution().getJobExecution().getExecutionContext(); Date startDate = (Date) jobContext.get(START_DATE_KEY); Date endDate = (Date) jobContext.get(END_DATE_KEY); return new QuerydslPagingItemReader&lt;&gt;( entityManagerFactory, executionOrder, DEFAULT_CHUNK_SIZE, queryFactory -&gt; repository.newFindChangeBalanceMemberList( startDate, endDate )); }
-<br>
-<br>각 파티션 스레드 별 종료 시간이 크게 상이하다. 총 소요시간 기준 최대 약 20% 차이
-<br>적용 한다면, 각 스레드 별로 even하게 작업을 수행하여 총 소요시간을 줄일 수 있을것이라 판단 <br>JOB private static AtomicLong executionOrder = new AtomicLong(0); ... new QuerydslPagingItemReader&lt;&gt;( entityManagerFactory, executionOrder, DEFAULT_CHUNK_SIZE, queryFactory -&gt; repository.newFindChangeBalanceMemberList( startDate, endDate ));
-<br>job 레벨에서의 스레드 세이프한 전역 변수를 생성하였다.
-<br>그 후, 각 파티션 별 리더에 인자값으로 넘긴다.
-<br>long currentExecutionOrder = executionOrder.getAndIncrement(); long startIndex = (currentExecutionOrder) * getPageSize(); int totalRecords = stepContext.getInt("totalRecords"); if (startIndex &gt;= totalRecords) { initResults(); // 빈 결과로 초기화 tx.commit(); return; } int chunkSizeToRead = Math.min(getPageSize(), (int) (totalRecords - startIndex)); // 남은 데이터 크기만큼 읽기 // QueryDSL Query 생성 JPQLQuery&lt;T&gt; query = createQuery() .offset(startIndex) .limit(chunkSizeToRead);
-<br>
-<br>먼저 한 청크단위의 작업을 끝낸 파티션은 그 다음 작업을 즉시 할당받게 된다.
-<br>즉, 총 처리시간 기준 가장 빨리끝난 파티션과 가장 늦게 끝난 파티션의 실행 시간 차이는 최대 한 청크사이즈를 처리하는 시간보다 크지 않게 된다.
-<br>1차 비교 이후 차액이 발생한 녀석들의 List 를 한번 더 검증한 후, =&gt; 추후 변경 됨<br>
-검증된 녀석들을 <br>List&lt;BalanceCheckResultDto&gt; realDiffList= new ArrayList&lt;&gt;();
-<br>최종적인 차액 리스트에 넣는다.<br>writer는 각 프로세서의 리턴으로 받은 녀석들을 하나의 DTO List로 합쳐 메세징 처리를 하게 된다.<br>
-<br>유지보수성이 좋다.
-<br>환경셋팅에 리소스가 많이든다. <br>
-<br>구현 레벨이 가장 쉽다
-<br>DTO(데이터)가 많아질 경우, 큰 리소스를 차지한다.
-<br>
-<br>방법 2.보다는 리소스가 적지만, 문자열 처리 시간이 추가로 소모된다.
-<br>
-<br>높은 쓰기 성능을 갖고있다.
-<br>동시성 문제 없이 다중 스레드에서 사용 가능하다.
-<br>인덱스로 접근이 불가능하다.
-<br>QueueManager클래스를 생성하며 공통으로 사용 가능하도록 하였고,<br>@Slf4j public class QueueManager&lt;T&gt; { protected final ConcurrentLinkedQueue&lt;T&gt; sharedQueue = new ConcurrentLinkedQueue&lt;&gt;(); // 데이터 추가 public void addItemToSharedQueue(T item) { if (item != null) { sharedQueue.add(item); } }
-<br>이를 상속받아 특정 오브젝트를 넘길 수 있도록 하였다.<br>public class BalanceQueue extends QueueManager&lt;BalanceCheckResultDto&gt;{ public List&lt;BalanceCheckResultDto&gt; getDtoFromQueue() { return super.getItemsFromQueue(); } }
-<br>이게 무슨소리인지? <br>보통의 Batch 서비스라면 I/O 작업에 부하가 걸려있겠지만, 현재 예치금 차액 배치는 processor 즉, 예치금 비교 연산에서 큰 리소스를 소모하고있다.
-<br>이에 해당하는 시간 소모를 줄이기 위해 processor(서비스로직) 을 병렬처리 함으로 최종 처리시간 단축을 꾀할 수 있을지에 대한 고민이다.
-<br>이후 설명하겠지만, 내부 병렬처리 로직은 청크의 트렌젝션을 무너뜨릴 가능성이 크므로 지양해야함. <br><img alt="Pasted image 20241206113120.png" src="사진-및-문서/pasted-image-20241206113120.png" target="_self"><br>소요시간 : 1분 9초
-<br>-&gt; 기존 limit절을 이용한 로직보다 속도가 더빠르며,<br>
-JpaPagingReader를 적용한다면 중복 select횟수를 줄여 더 빨라질 것으로 예상된다.<br>결론 : 둘 중 하나<br>#### 292 컬럼
-## Processor 삭제(병렬처리)로직
-#### grid-size:6 / chunk-size:20
-54679 ms
-54416 ms
-## Processor 순차처리(writer만 병렬처리) 로직 #### grid-size:6 / chunk-size:20
-60440 ms
-62271 ms
-#### grid-size:10 / chunk-size:20
-58129 ms
-56723 ms
-#### grid-size:16 / chunk-size:20
-58595 ms
-56314 ms #### grid-size:32 / chunk-size:20
-- SQLTransientConnectionException
-- 스레드풀 점유갯수 초과
-<br>하지만, 이후 청크 방식 Batch의 확장성과 유지보수성을 고려하여 리더,프로세서,라이터 방식으로 구현하기로 정했다.<br>청크사이즈가 다름에도 처리속도가 똑같은 이유?<br>grid-size:12 / chunk-size:30
--
-3분 22.856초
-3분 23.096초 grid-size:12 / chunk-size:20
--
-3분 23.546초
-3분 23.784초 grid-size:12 / chunk-size:10
--
-3분 24.243초
-3분 22.389초
-3분 24.667초
-3분 24.789초 grid-size:12 / chunk-size:5
--
-3분 24.953초
-3분 24.353초
-<br>
-<br>트렌젝션 분리가 되어있지 않았기 떄문에 청크사이즈를 아무리 잘게 쪼개도 시간이 같았던 것이다.
-<br>그럼 트렌젝션이 분리되지 않은 이유는?
-<br>dtoList.stream().parallel() .forEach(dto -&gt; {});
-<br>parallel문으로 내부 병렬처리로직을 구현했기 때문에, chunk의 트렌젝션에서 벗어나,<br>
-매 insert문 마다 커밋을 하였던 것이다.<br>반복 TEST 중.. 커넥션풀 Time Out 문제??<br>SHOW VARIABLES LIKE 'max_connections'; //최대 개수<br>
-SHOW STATUS LIKE 'Threads_connected'; //사용중인 개수<br><img alt="Pasted image 20241213102128.png" src="사진-및-문서/pasted-image-20241213102128.png" target="_self"><br>
-<br>배치를 완료한 이후에도 스레드 풀(히카리 풀)을 반환하지 않는지 확인
-<br><img alt="Pasted image 20241213102229.png" src="사진-및-문서/pasted-image-20241213102229.png" target="_self"><br>
-<br>Step이 마무리될때, 적어도 Job이 마무리 될때 entityManager를 클로즈 시키는것이 자명한데, 어째서 커넥션풀이 해제되지 않는가??
-<br><img alt="Pasted image 20241213143101.png" src="사진-및-문서/pasted-image-20241213143101.png" target="_self"><br><img alt="Pasted image 20241213143217.png" src="사진-및-문서/pasted-image-20241213143217.png" target="_self"><br><img alt="Pasted image 20241213103503.png" src="사진-및-문서/pasted-image-20241213103503.png" target="_self"><br><img alt="Pasted image 20241217150339.png" src="사진-및-문서/pasted-image-20241217150339.png" target="_self"><br>리스너에 너무 많은 역할이 부여된 모습
-<br><img alt="Pasted image 20241219145746.png" src="사진-및-문서/pasted-image-20241219145746.png" target="_self"><br>
-<br>StepExecution-Level ExecutionContext <br>
-각 Step에 고유한 ExecutionContext가 생성됩니다. <br>
-Step 내의 Reader, Processor, Writer 등에서 공유됩니다. <br>
-다른 Step과는 공유되지 않습니다. <br>
-balanceWorkerStep 내에서는 Reader, Processor, Writer가 동일한 ExecutionContext를 공유합니다. <br>
-balancePartitionStep과 balanceWorkerStep의 ExecutionContext는 서로 독립적입니다. <br>JobExecution-Level ExecutionContext <br>Job 전체에서 공유되며, 모든 Step이 동일한 ExecutionContext에 접근할 수 있습니다.
-<br>JobExecutionContext는 Step 간 데이터 전달이 필요할 때 유용합니다. <br>JobExecutionListener 객체 생성<br>@Slf4j public class JobTimerExecutionListener implements JobExecutionListener { private final String jobName; private long startTime = System.currentTimeMillis(); public JobTimerExecutionListener(String jobName) { this.jobName = jobName; } @Override public void beforeJob(JobExecution var1) { startTime = System.currentTimeMillis(); } @Override public void afterJob(JobExecution var1) { long endTime = System.currentTimeMillis(); long elapsedTime = endTime - startTime; long minutes = (elapsedTime / 1000) / 60; // 밀리초를 분으로 변환 double seconds = (elapsedTime / 1000.0) % 60; // 남은 밀리초를 초로 변환 (소수점 포함) log.info("{}-completed: {} ms | {} minutes {} seconds", jobName, elapsedTime, minutes, seconds); } }
-<br><img alt="output (9) 1.png" src="사진-및-문서/output-(9)-1.png" target="_self"><br><img alt="output (10).png" src="사진-및-문서/output-(10).png" target="_self"><br><img alt="do-messenger_screenshot_2024-12-23_14_40_21.png" src="사진-및-문서/do-messenger_screenshot_2024-12-23_14_40_21.png" target="_self"><br><img alt="Pasted image 20241224093159.png" src="사진-및-문서/pasted-image-20241224093159.png" target="_self"><br>
-<img alt="Pasted image 20241224093207.png" src="사진-및-문서/pasted-image-20241224093207.png" target="_self"><br>
-<img alt="Pasted image 20241224093225.png" src="사진-및-문서/pasted-image-20241224093225.png" target="_self"><br><img alt="회사 은행 서비스1111.png" src="사진-및-문서/회사-은행-서비스1111.png" target="_self"><br>
-<img alt="Spring Batch Tasklet 예치금 잔액 비교 1.png" src="사진-및-문서/spring-batch-tasklet-예치금-잔액-비교-1.png" target="_self"><br>
-<img alt="Spring Batch Tasklet 예치금 잔액 비교 잘못된 차액발생 인식 타임라인.png" src="사진-및-문서/spring-batch-tasklet-예치금-잔액-비교-잘못된-차액발생-인식-타임라인.png" target="_self"><br>🙇‍♂<a data-href="🏹 Spring Batch 트러블 슈팅 부록" href="project/hello-batch/🏹-spring-batch-트러블-슈팅-부록.html" class="internal-link" target="_self" rel="noopener nofollow">🏹 Spring Batch 트러블 슈팅 부록</a>]]></description><link>project/hello-batch/🏹-spring-batch-트러블-슈팅.html</link><guid isPermaLink="false">project/hello Batch/🏹 Spring Batch 트러블 슈팅.md</guid><pubDate>Wed, 19 Feb 2025 08:37:53 GMT</pubDate><enclosure url="사진-및-문서/output-(1).png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/output-(1).png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[👻 Obsidian 정적호스팅 CICD 과정]]></title><description><![CDATA[<a class="tag" href="?query=tag:프로젝트" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#프로젝트</a> <a class="tag" href="?query=tag:개발" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#개발</a> <a class="tag" href="?query=tag:Hosting" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Hosting</a> <a class="tag" href="?query=tag:Obsidian" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Obsidian</a> <a class="tag" href="?query=tag:CI/CD" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#CI/CD</a> <br> <a href=".?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href=".?query=tag:개발" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개발">#개발</a> <a href=".?query=tag:Hosting" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Hosting">#Hosting</a> <a href=".?query=tag:Obsidian" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Obsidian">#Obsidian</a> <a href=".?query=tag:CI/CD" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#CI/CD">#CI/CD</a><br> 먼저 옵시디언(Obsidian)에 대한 정보를 확인하고 싶다면.<br>정보!
-현재 보고있는 해당 사이트는 Obsidian앱의 지속적인 통합(CI), 지속적인 배포(CD)를 통해 구현된 사이트이다. <br>아주 기본적인 셋팅이므로, 이후 커스텀은 각자의 취향대로 진행하면 될 것이다.
-<br>WAS가 아닌 WEB 정적 호스팅을 위한 셋팅이다. <br><img alt="Pasted image 20250218151731.png" src="사진-및-문서/pasted-image-20250218151731.png" target="_self"><br>
-<img alt="Pasted image 20250218151806.png" src="사진-및-문서/pasted-image-20250218151806.png" target="_self"><br>이후 해당 위치에 Git을 생성해 줄 것이다.
-<br><img alt="Pasted image 20250218152044.png" src="사진-및-문서/pasted-image-20250218152044.png" target="_self"><br>
-<img alt="Pasted image 20250218152103.png" src="사진-및-문서/pasted-image-20250218152103.png" target="_self"><br>
-<br>이전 생성한 옵시디언 폴더로 이동한다.
-<br>&gt; cd C:\이하경로\obsidian\TEST
-<br><img alt="Pasted image 20250218153131.png" src="사진-및-문서/pasted-image-20250218153131.png" target="_self"><br>깃 파일 생성<br>
-해당 과정전 pc에 Git이 설치되어 있어야한다. (방법은 알아서)
-<br>&gt; git init
-<br><img alt="Pasted image 20250218153319.png" src="사진-및-문서/pasted-image-20250218153319.png" target="_self"><br>깃 레포에 연결
-<br>&gt; git remote add origin https://github.com/LeeTaeSung0628/obsidian_Test.git
-<br><img alt="Pasted image 20250218153445.png" src="사진-및-문서/pasted-image-20250218153445.png" target="_self"><br>옵시디언 레포에 올리기
-<br>&gt; git add . &gt; git commit -m "initial commit" &gt; git push -u origin master
-<br><img alt="Pasted image 20250218153543.png" src="사진-및-문서/pasted-image-20250218153543.png" target="_self"><img alt="Pasted image 20250218153553.png" src="사진-및-문서/pasted-image-20250218153553.png" style="width: 700px; max-width: 100%;" target="_self"><br>여기까지 따라왔다면, 옵시디언 파일을 git 레포지토리에 저장하는 것 까지 마칠 수 있다.<br><img alt="Pasted image 20250218151330.png" src="사진-및-문서/pasted-image-20250218151330.png" style="width: 1050px; max-width: 100%;" target="_self"><br>
-옵시디언의 Git플러그인이다. 기본적인 커밋 푸시 및 셋팅이 가능하다.<br>기능은 제한적이기 때문에, GitDesktop이나, Cmd에서 직접 Git을 셋팅하는것을 추천한다.
-<br>이후 셋팅이 완료되었을 때 배포 자동화를 위해 사용하면 편리하다.
-<br><img alt="Pasted image 20250218153814.png" src="사진-및-문서/pasted-image-20250218153814.png" style="width: 775px; max-width: 100%;" target="_self"><img alt="Pasted image 20250218153858.png" src="사진-및-문서/pasted-image-20250218153858.png" target="_self"><br>이전에 생성한 깃 파일의 주소가 들어가면 된다.
-<br>C:\Users\경로\obsidian\TEST\.git
-<br><img alt="Pasted image 20250218154352.png" src="사진-및-문서/pasted-image-20250218154352.png" style="width: 875px; max-width: 100%;" target="_self"><br>또한 설정에서 오토 커밋/푸시/풀 설정을 통해 지속 적인 통합 셋팅이 가능하다.<br>
-<img alt="Pasted image 20250218154433.png" src="사진-및-문서/pasted-image-20250218154433.png" style="width: 725px; max-width: 100%;" target="_self">
-<br>주의
-해당 디렉토리에 .gitignore 파일 및 세부적인 git셋팅은 자유롭게 진행하면 된다.<br>
-옵시디언은 캐쉬파일로 인한 충돌이 잦기 때문에 상세히 설정하는 것을 추천한다.
-<br><img alt="Pasted image 20250218154615.png" src="사진-및-문서/pasted-image-20250218154615.png" target="_self"><br>
-<img alt="Pasted image 20250218154633.png" src="사진-및-문서/pasted-image-20250218154633.png" target="_self"><br>정상적으로 푸시 완료.<br>
-<img alt="Pasted image 20250218154647.png" src="사진-및-문서/pasted-image-20250218154647.png" target="_self">
-<br>
-<br>해당 Git 레포는 옵시디언의 마크다운(md파일)자체를 저장하고 관리하는 레포다.
-<br>정적 컨텐츠 호스팅을 위한 레포지토리를 추가적으로 생성하여 줄 것이다.
-<br>
-<br>여러 방법이 있지만, md파일을 기반으로 배포가능한 형태의 HTML파일을 생성해주는 플러그인을 사용할 것이다.<br>
-<img alt="Pasted image 20250218155524.png" src="사진-및-문서/pasted-image-20250218155524.png" target="_self">
-<br>다양한 옵션을 지원하지만, 오늘은 기본적인 기능만 설명하겠다.
-<br>Control + P -&gt; export 를 검색
-<br><img alt="Pasted image 20250218160328.png" src="사진-및-문서/pasted-image-20250218160328.png" target="_self"><br>
-<img alt="Pasted image 20250218160359.png" src="사진-및-문서/pasted-image-20250218160359.png" target="_self"><br>폴더 생성 후 익스포트 한다.
-<br>주의
-이때 처음엔 index페이지를 생성하고, 추후 삭제하는 것을 추천(Netlify는 index가 필수)
-<br><img alt="Pasted image 20250218160428.png" src="사진-및-문서/pasted-image-20250218160428.png" target="_self"><img alt="Pasted image 20250218160532.png" src="사진-및-문서/pasted-image-20250218160532.png" target="_self"><br>생성한 새 디렉토리에 정상적으로 생성된것을 볼 수 있다.
-<br>
-<br>배포용 HTML파일 레포지토리<br>
-<img alt="Pasted image 20250218160956.png" src="사진-및-문서/pasted-image-20250218160956.png" target="_self">
-<br>
-<br>Netlify 정적 호스팅 서비스를 사용하여 Git 레포를 배포하겠다.
-<br><a rel="noopener nofollow" class="external-link is-unresolved" href="https://www.netlify.com/" target="_self">https://www.netlify.com/</a><br>
-위 사이트로 접속하여 로그인 한 후, 깃 레포에 Netlify서비스를 적용한다.
-1.깃허브를 선택한다.<br>
-<img alt="Pasted image 20250218161424.png" src="사진-및-문서/pasted-image-20250218161424.png" style="width: 750px; max-width: 100%;" target="_self"><br>
-2.배포용 옵시디언 레포를 선택한 후, SAVE를 누른다.<br>
-<img alt="Pasted image 20250218161515.png" src="사진-및-문서/pasted-image-20250218161515.png" target="_self"><br>
-3.site_name을 설정하고 Deploy를 누른다.<br>
-<img alt="Pasted image 20250218161728.png" src="사진-및-문서/pasted-image-20250218161728.png" target="_self"><br>
-정적웹사이트를 위한 셋팅으로 이외의 값은 공란으로 두어도 무방하다. <br>
-그리고 기다리면...<br>
-<img alt="Pasted image 20250218161824.png" src="사진-및-문서/pasted-image-20250218161824.png" target="_self"><br>
-<img alt="Pasted image 20250218161847.png" src="사진-및-문서/pasted-image-20250218161847.png" target="_self"> <br>
-<br>배포가 완료되고, 주소를 입력하여 확인이 가능하다.<br>
-<img alt="Pasted image 20250218161937.png" src="사진-및-문서/pasted-image-20250218161937.png" target="_self">
-<br>
-<br>커뮤니티 플러그인
-<br>인덱스페이지
-<br>테마
-<br>etc..
-<br>
-<br>본인의 경우에는 로컬 Obsidian에 민감정보를 포함하고 있으므로,<br>
-정적 호스팅 전, public한 Vault를 거쳐 배포되도록 관리하고 있다.<br>
-<img alt="Pasted image 20250218162355.png" src="사진-및-문서/pasted-image-20250218162355.png" style="width: 875px; max-width: 100%;" target="_self"> 좌 : 프라이빗 볼트 / 우 : 퍼블릭 볼트 <br>이렇게 사이트 배포가 완료되었다!<br>
-<img alt="do-messenger_screenshot_2025-02-19_16_19_04.png" src="사진-및-문서/do-messenger_screenshot_2025-02-19_16_19_04.png" target="_self"><br>주의 <br>현재 Export HTML 1.8.01 버전 기준으로 export된 HTML css에 오류가 있다. <br>BRAT 플러그인을 사용하여 버전 업(베타) 하여 해결<br>
-<img alt="Pasted image 20250219154331.png" src="사진-및-문서/pasted-image-20250219154331.png" target="_self"><br>
-<img alt="Pasted image 20250219154315.png" src="사진-및-문서/pasted-image-20250219154315.png" target="_self">]]></description><link>project/note-ci_cd/👻-obsidian-정적호스팅-cicd-과정.html</link><guid isPermaLink="false">project/note CI_CD/👻 Obsidian 정적호스팅 CICD 과정.md</guid><pubDate>Wed, 19 Feb 2025 08:25:22 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250218151731.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20250218151731.png"&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>
+<br>그럼에도 노션이 가지는 장점도 만만치 않으며, 옵시디언의 단점 또한 존재한다.
+<br>즉, 각자의 작업 환경 및 취향에 맞추어서 최적의 Tool을 선택하는 것이 바람직 하다고 볼 수 있다.
+<br>나는 그래도 옵시디언이다.]]></description><link>tools/🎵-obsidian.html</link><guid isPermaLink="false">Tools/🎵 Obsidian.md</guid><pubDate>Wed, 19 Feb 2025 08:46:17 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250218145702.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20250218145702.png"&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>

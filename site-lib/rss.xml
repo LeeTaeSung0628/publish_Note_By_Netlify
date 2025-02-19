@@ -1,4 +1,400 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault_md_public]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>site-lib/media/favicon.png</url><title>Vault_md_public</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 19 Feb 2025 04:42:00 GMT</lastBuildDate><atom:link href="site-lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 19 Feb 2025 04:40:50 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[🟣 Obsidian 정적호스팅 CICD 과정]]></title><description><![CDATA[<a href=".?query=tag:블로그" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#블로그">#블로그</a> <a href=".?query=tag:연동" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#연동">#연동</a> <a href=".?query=tag:CI/CD" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#CI/CD">#CI/CD</a> <a href=".?query=tag:옵시디언" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#옵시디언">#옵시디언</a> <a href=".?query=tag:Git" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Git">#Git</a> <a href=".?query=tag:Netlify" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Netlify">#Netlify</a> 먼저 옵시디언(Obsidian)에 대한 정보를 확인하고 싶다면.현재 보고있는 해당 사이트는 Obsidian앱의 지속적인 통합(CI), 지속적인 배포(CD)를 통해 구현된 사이트이다.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault_md_public]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>site-lib/media/favicon.png</url><title>Vault_md_public</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 19 Feb 2025 04:51:54 GMT</lastBuildDate><atom:link href="site-lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 19 Feb 2025 04:50:55 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[index]]></title><description><![CDATA[<a href=".?query=tag:home" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#home">#home</a> <a href=".?query=tag:index" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#index">#index</a> <a href=".?query=tag:blog" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#blog">#blog</a> <br><a data-tooltip-position="top" aria-label="https://git.io/typing-svg" rel="noopener nofollow" class="external-link is-unresolved" href="https://git.io/typing-svg" target="_self"></a><img alt="Typing SVG" src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;pause=1000&amp;color=36A9F7&amp;random=false&amp;width=435&amp;lines=%EC%97%AC%EA%B8%B0%EB%8A%94+%EA%B3%B5%EB%B6%80%ED%95%98%EA%B3%A0%2C+%EA%B8%B0%EB%A1%9D%ED%95%98%EB%8A%94+%EA%B3%B3%EC%9E%85%EB%8B%88%EB%8B%A4" referrerpolicy="no-referrer" target="_self" class="is-unresolved">
+<br><a data-href="🟣 Obsidian 정적호스팅 CICD 과정" href="study/note-ci_cd/🟣-obsidian-정적호스팅-cicd-과정.html#_0" class="internal-link" target="_self" rel="noopener nofollow">🟣 Obsidian 정적호스팅 CICD 과정</a> <br><a data-href="🖱 Spring Batch 트러블 슈팅" href="project/hello-batch/🖱-spring-batch-트러블-슈팅.html#_0" class="internal-link" target="_self" rel="noopener nofollow">🖱 Spring Batch 트러블 슈팅</a>
+<br><a data-href="🖱 Spring Batch 트러블 슈팅 부록" href="project/hello-batch/🖱-spring-batch-트러블-슈팅-부록.html#_0" class="internal-link" target="_self" rel="noopener nofollow">🖱 Spring Batch 트러블 슈팅 부록</a>
+<br><a data-href="🖱 Spring Batch 구조 드로잉" href="project/hello-batch/🖱-spring-batch-구조-드로잉.html#_0" class="internal-link" target="_self" rel="noopener nofollow">🖱 Spring Batch 구조 드로잉</a> <br><a data-href="👩‍👧‍👦 유입 통계 APP__SPRING AOP에 관하여" href="project/hello-marketing/👩‍👧‍👦-유입-통계-app__spring-aop에-관하여.html#_0" class="internal-link" target="_self" rel="noopener nofollow">👩‍👧‍👦 유입 통계 APP__SPRING AOP에 관하여</a>
+<br><a data-href="👩‍👧‍👦 유입 통계 ADMIN용 테이블 설계 과정" href="project/hello-marketing/👩‍👧‍👦-유입-통계-admin용-테이블-설계-과정.html#_0" class="internal-link" target="_self" rel="noopener nofollow">👩‍👧‍👦 유입 통계 ADMIN용 테이블 설계 과정</a> <br><a data-href="☕JAVA , OOP" href="study/프로그래밍/☕java-,-oop.html#_0" class="internal-link" target="_self" rel="noopener nofollow">☕JAVA , OOP</a>
+<br><a data-href="🍃 Spring" href="study/프로그래밍/🍃-spring.html#_0" class="internal-link" target="_self" rel="noopener nofollow">🍃 Spring</a>
+<br><a data-href="🧰 DevOps" href="study/프로그래밍/🧰-devops.html#_0" class="internal-link" target="_self" rel="noopener nofollow">🧰 DevOps</a>
+<br><a data-href="🗒 DataBase" href="study/프로그래밍/🗒-database.html#_0" class="internal-link" target="_self" rel="noopener nofollow">🗒 DataBase</a>
+<br><a data-href="📭 Server" href="study/프로그래밍/📭-server.html#_0" class="internal-link" target="_self" rel="noopener nofollow">📭 Server</a>
+<br><a data-href="🎵 Obsidian" href="study/프로그래밍/🎵-obsidian.html#_0" class="internal-link" target="_self" rel="noopener nofollow">🎵 Obsidian</a>
+<br><a data-href="🐞 etc" href="study/프로그래밍/🐞-etc.html#_0" class="internal-link" target="_self" rel="noopener nofollow">🐞 etc</a> <br><a data-href="🥈 필기 1과목 - 소프트웨어 설계" href="study/정보처리기사/정보처리기사-필기/🥈-필기-1과목-소프트웨어-설계.html#_0" class="internal-link" target="_self" rel="noopener nofollow">🥈 필기 1과목 - 소프트웨어 설계</a>
+<br><a data-href="🥈 필기 2과목 - 소프트웨어 개발" href="study/정보처리기사/정보처리기사-필기/🥈-필기-2과목-소프트웨어-개발.html#_0" class="internal-link" target="_self" rel="noopener nofollow">🥈 필기 2과목 - 소프트웨어 개발</a>
+<br><a data-href="🥈 필기 3과목 - 데이터베이스 구축" href="study/정보처리기사/정보처리기사-필기/🥈-필기-3과목-데이터베이스-구축.html#_0" class="internal-link" target="_self" rel="noopener nofollow">🥈 필기 3과목 - 데이터베이스 구축</a>
+<br><a data-href="🥈 필기 4과목 - 프로그래밍 언어 활용" href="study/정보처리기사/정보처리기사-필기/🥈-필기-4과목-프로그래밍-언어-활용.html#_0" class="internal-link" target="_self" rel="noopener nofollow">🥈 필기 4과목 - 프로그래밍 언어 활용</a>
+<br><a data-href="🥈 필기 5과목 - 정보시스템 구축관리" href="study/정보처리기사/정보처리기사-필기/🥈-필기-5과목-정보시스템-구축관리.html#_0" class="internal-link" target="_self" rel="noopener nofollow">🥈 필기 5과목 - 정보시스템 구축관리</a> <br><a data-href="🥇 정보처리 기사 실기 키워드" href="study/정보처리기사/정보처리기사-실기/🥇-정보처리-기사-실기-키워드.html#_0" class="internal-link" target="_self" rel="noopener nofollow">🥇 정보처리 기사 실기 키워드</a>
+]]></description><link>index.html</link><guid isPermaLink="false">index.md</guid><pubDate>Wed, 19 Feb 2025 04:48:23 GMT</pubDate><enclosure url="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Hand%20with%20Fingers%20Splayed%20Light%20Skin%20Tone.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Hand%20with%20Fingers%20Splayed%20Light%20Skin%20Tone.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[🖱 Spring Batch 트러블 슈팅 부록]]></title><description><![CDATA[<a href=".?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href=".?query=tag:개발" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개발">#개발</a> <a href=".?query=tag:SPRING" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SPRING">#SPRING</a> <a href=".?query=tag:Batch" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Batch">#Batch</a> <a href=".?query=tag:Partitioning" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Partitioning">#Partitioning</a> <a href=".?query=tag:Chunk" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Chunk">#Chunk</a>1 .GridSize: 4 ActiveConnections: 9/50 소요시간: 6 minutes 23.55
+2 .GridSize: 5 ActiveConnections: 11/50 소요시간: 4 minutes 55.57
+3 .GridSize: 6 ActiveConnections: 13/50 소요시간: 4 minutes 47.01
+4 .GridSize: 7 ActiveConnections: 15/50 소요시간: 3 minutes 47.76
+5 .GridSize: 8 ActiveConnections: 17/50 소요시간: 3 minutes 47.69
+6 .GridSize: 9 ActiveConnections: 19/50 소요시간: 3 minutes 59.85
+7 .GridSize: 10 ActiveConnections: 21/50 소요시간: 3 minutes 6.98
+8 .GridSize: 11 ActiveConnections: 23/50 소요시간: 3 minutes 0.52
+9 .GridSize: 12 ActiveConnections: 25/50 소요시간: 3 minutes 5.6112월21일
+164컬럼
+10분 40.78312월20일
+161컬럼
+10분 10.79412월19일
+223컬럼
+14분 29.279초12월18일
+181컬럼
+11분 09.660초12월17일
+329컬럼
+19분 56.948초 12월14일
+220컬럼
+13분 28.209초12월13일
+179컬럼
+10분 57.596초12월12일
+236컬럼
+14분 30.033초12월11일
+226컬럼
+14분 02.939초12월21일
+startDate=2024-12-14 07:30:00:00&amp;endDate=2024-12-21 07:30:00
+388컬럼
+4분 43.53초12월20일
+startDate=2024-12-13 07:30:00:00&amp;endDate=2024-12-20 07:30:00
+388컬럼
+4분 44.438초12월19일
+startDate=2024-12-12 07:30:00:00&amp;endDate=2024-12-19 07:30:00
+387컬럼
+4분 41.215초12월18일
+startDate=2024-12-11 07:30:00:00&amp;endDate=2024-12-18 07:30:00
+395컬럼
+4분 50.9초12월17일
+startDate=2024-12-10 07:30:00:00&amp;endDate=2024-12-17 07:30:00
+407컬럼
+4분 55.686초 12월14일
+startDate=2024-12-07 07:30:00:00&amp;endDate=2024-12-14 07:30:00
+376컬럼
+4분 35.387초12월13일
+startDate=2024-12-06 07:30:00:00&amp;endDate=2024-12-13 07:30:00
+384컬럼
+4분 43.642초12월12일
+startDate=2024-12-05 07:30:00:00&amp;endDate=2024-12-12 07:30:00
+438컬럼
+4분 47.027초12월11일
+startDate=2024-12-04 07:30:00:00&amp;endDate=2024-12-11 07:30:00
+437컬럼
+4분 54.308초
+4일 7:30분-5일 7:30분
+5일 7:30분-6일 7:30분
+6일 7:30분-7일 7:30분
+7일 7:30분-8일 7:30분
+8일 7:30분-9일 7:30분
+9일 7:30분-10일 7:30분
+10일 7:30분-11일 7:30분
+dev 배치 IP운영 배치 IP
+10.22.161.86:8010localhost:8010/run-newMemberBalance?gridSize=6&amp;startDate=2017-11-29 00:00:00&amp;endDate=2017-12-01 23:59:59localhost:8010/run-memberBalance?startDate=2017-11-29&amp;endDate=2017-12-01### 300테스트 1
+## 범위 - 2016-09-28 ~ 2016-12-13
+startDate=2016-09-28&amp;endDate=2016-12-13
+## 컬럼 개수 - 289개
+6분 22초 ### 300테스트 2
+## 범위 - 2016-12-13 ~ 2017-01-16
+startDate=2016-12-13&amp;endDate=2017-01-16
+## 컬럼 개수 - 280개
+5분 57초 ### 300테스트 3
+## 범위 - 2017-01-11 ~ 2017-02-13
+startDate=2017-01-11&amp;endDate=2017-02-13
+## 컬럼 개수 - 286개
+6분 23초 ### 300테스트 4
+## 범위 - 2017-05-17 ~ 2017-06-01
+startDate=2017-05-17&amp;endDate=2017-06-01
+## 컬럼 개수 - 274개
+5분 54초 ### 300테스트 5
+## 범위 - 2017-11-07 ~ 2017-12-01
+startDate=2017-11-07&amp;endDate=2017-12-01
+## 컬럼 개수 - 292개
+6분 32초 -------------------------------------------------- ### 1100테스트 1-1
+## 범위 - 2018-02-11 ~ 2018-05-06
+startDate=2018-02-11&amp;endDate=2018-05-06
+## 컬럼 개수 - 1094개(예상)
+22분 45초 ### 1100테스트 1-2
+## 범위 - 2018-02-11 ~ 2018-05-06
+startDate=2018-02-11&amp;endDate=2018-05-06
+## 컬럼 개수 - 1094개(예상)
+22분 34초 현재 예치금 차액 배치의 서비스로직은, 각 파티션에서 실행되며,
+이렇게 실행된 코드는 parallelStream을 사용하여 내부적인 병렬처리를 진행한다.
+해당 로직의 특징은 cpu에 부하를 주는 계산식이 아닌, 단순 I/O (api호출 대기)의 소요시간이 크다. API 호출 작업 10,000건 처리
+각 호출 응답 시간 200ms 기본 스레드 풀 크기: CPU 코어 수 - 1 (예: 7개의 코어)
+처리 시간 ≈ 작업&nbsp;개수/스레드&nbsp;수×응답&nbsp;시간\text{작업 개수} / \text{스레드 수} \times \text{응답 시간}작업&nbsp;개수/스레드&nbsp;수×응답&nbsp;시간
+≈10,000/7×200ms\approx 10,000 / 7 \times 200ms≈10,000/7×200ms
+≈286초\approx 286초≈286초 스레드 풀 크기: 100
+처리 시간 ≈ 작업&nbsp;개수/스레드&nbsp;수×응답&nbsp;시간\text{작업 개수} / \text{스레드 수} \times \text{응답 시간}작업&nbsp;개수/스레드&nbsp;수×응답&nbsp;시간
+≈10,000/100×200ms\approx 10,000 / 100 \times 200ms≈10,000/100×200ms
+≈20초\approx 20초≈20초 CPU 바운드 작업: CPU를 많이 사용하는 작업(예: 복잡한 계산)이면, 코어 수 이상의 스레드를 실행할 경우 컨텍스트 스위칭(스레드 간 전환) 비용이 증가해 성능이 오히려 떨어질 수 있습니다.
+예: 7개의 코어로 100개의 CPU 작업 스레드를 처리하려 하면 병목이 발생. I/O 바운드 작업(API 호출 포함): 네트워크 I/O 작업은 대기 시간이 길고, 대기 중에는 CPU를 거의 사용하지 않습니다.
+이 경우 스레드 수 &gt; 코어 수가 유리하며, 100개의 스레드를 실행해도 대부분의 스레드는 대기 상태에 있으므로 CPU 사용량이 낮습니다. 69961 ms
+70048 ms
+70396 ms55180 ms
+55036 ms
+55285 ms
+55442 ms71139 ms
+72220 ms64473 ms
+65609 ms
+미리 파티션 되어있는 데이터의 특성상 한번에 처리되는 양이 많지 않다.
+또한, stream().parallel()은 forkJoinPool에서 효율적으로 관리되며,
+데이터의 동기화 병목을 줄이고, 컨텍스트 전환 횟수를 줄여 더 효율적인 것으로 보임.
+사실 잘 모르겠음 stream().parallel() 기능이 효율적이다. 아마도 Where절이 추가되면서 reader의 속도가 크게 올라갓으며, 1번의 호출만을 하기 때문에 더 개선되었을것이다.
+chunk-size:20
+55969 mschunk-size:20
+54679 ms
+54416 ms기존 : reader에서 넘어온녀석들의(옛날기준 날짜범위 내의 가장최신Point)차액 -&gt; 차액이있는녀석들의 (모든날짜 범위내의 최신 Point)의 차액
+현재 : reader에서 가져온녀석들의(모든날짜범위내의 최신 Point)의 차액=&gt; 옛날기준 날짜범위 내의 가장최신포인트와 실시간 포인트는 다를 경우가 많음. 거기 내에전날의 최신포인트 vs 현재 최신포인트(신한) -&gt; 여기엔 안걸리지만
+현재 최신포인트 vs 현재 최신포인트(신한) -&gt; 여기에는 걸리면 로컬을 기준으로 잡아도, 운영 서버에서 어떠한 스레드 셋팅이 효과적일지 판단하기 힘듬.
+어떠한 방법을 사용해야 실제 운영 서버 반영 전, 테스트를 할 수 있을지? 1차에서는 어제 범위 Point (서브쿼리도 메인 쿼리에서 .where()에 의해 이미 어제의 데이터로 필터링된 상태에서 작동)
+2차에서는 모든데이터 범위의 최신 Point 배치를 돌리는 현재날짜 0시 ~ 7시 사이에 입출금건이 있는 고객의 경우 1차에서 항상 걸릴 수 밖에 없음Point 1차에서 모두 검증하는 방법은 어떨지?
+]]></description><link>project/hello-batch/🖱-spring-batch-트러블-슈팅-부록.html</link><guid isPermaLink="false">project/hello Batch/🖱 Spring Batch 트러블 슈팅 부록.md</guid><pubDate>Wed, 19 Feb 2025 04:47:56 GMT</pubDate><enclosure url="사진-및-문서/output-(9).png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;사진-및-문서/output-(9).png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[🖱 Spring Batch 트러블 슈팅]]></title><description><![CDATA[<a href=".?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href=".?query=tag:개발" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개발">#개발</a> <a href=".?query=tag:SPRING" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SPRING">#SPRING</a> <a href=".?query=tag:Batch" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Batch">#Batch</a> <a href=".?query=tag:Partitioning" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Partitioning">#Partitioning</a> <a href=".?query=tag:Chunk" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Chunk">#Chunk</a>기존 예치금 차액비교 Batch의 Tasklet방식의 배치의 단점을 보완하는 chunk 방식의 배치를 구현하고,
+나아가 다른 기능의 Batch에도 효과적으로 빠르게 적용할 수 있는재사용성/유지보수성 높은 코드, 선례를 만들기 위함이다.
+Chunk, Partioning방식을 Job을 추가 개발 (기존 balanceJob 유지)
+당분간 두 Job을 병행하면서 비교
+추가한 Job 기능에 문제없다면 기존 balanceJob 삭제 평균 소요시간: 약 17.35분
+최대 소요시간: 22분
+최소 소요시간: 12분<br>
+<img alt="output (1).png" src="사진-및-문서/output-(1).png" target="_self"> 처음 가져온 Point 배치 완료시 까지 계속 물고있다. -&gt; 한 트렌젝션의 범위가 넓다. G5-Point 등은 처음 7시 시점에 묶여있다. 회원별로 실데이터를 건건이 api(신한)를 호출하여 비교한다. 때문에, 7시 이후에 수정된데이터를 실시간으로 반영하지 못한다. 목적 : batch의 step 레벨에서의 스레드 분리 ( 병렬처리 ) 독립적인 ExecutionContext가 주어져 상태를 안전하게 관리할 수 있다. 목적 : 각 step내의 트렌젝션 단위 분리
+Reader / Processor / writer 가 역할을 분담 Partition 생성: Partition 1 : ID 1 ~ 25 / 대기열1 : ID 101 ~ 125 / 대기열2 : ID 201 ~ 225
+Partition 2 : ID 26 ~ 50 / 대기열 : ID 126 ~ 150 / 대기열2 : ID 226 ~ 250
+Partition 3 : ID 51 ~ 75 / 대기열 : ID 151 ~ 175 / 대기열2 : -
+Partition 4 : ID 76 ~ 100 / 대기열 : ID 176 ~ 200 / 대기열2 : - 각 Partition에서 Chunk 처리: Partition 1: Chunk 1: ID 1 ~ 10 → 커밋
+Chunk 2: ID 11 ~ 20 → 커밋
+Chunk 3: ID 21 ~ 25 → 커밋 Partition 2: Chunk 1: ID 26 ~ 35 → 커밋
+Chunk 2: ID 36 ~ 45 → 커밋
+Chunk 3: ID 46 ~ 50 → 커밋 나머지 Partition도 동일 방식으로 처리. 병렬 실행: 스레드 풀 크기 = 4이므로 4개의 Partition이 동시에 실행됩니다.
+Partition 처리 순서는 스레드 풀에서 처리되는 순서에 따라 다를 수 있음. 트랜잭션 관리: 각 Partition은 독립적인 트랜잭션을 가짐.
+각 Chunk가 커밋될 때마다 트랜잭션이 종료됨. Partition 생성: Partition 1 : ID 1 ~ 25 / 대기열1 : ID 101 ~ 125 / 대기열2 : ID 201 ~ 225
+Partition 2 : ID 26 ~ 50 / 대기열 : ID 126 ~ 150 / 대기열2 : ID 226 ~ 250
+Partition 3 : ID 51 ~ 75 / 대기열 : ID 151 ~ 175 / 대기열2 : ID 251 ~ 275
+Partition 4 : ID 76 ~ 100 / 대기열 : ID 176 ~ 200 / 대기열2 : ID 276 ~ 300
+추가 스레드 풀 생성
+Partition 5 : ID 300 ~ 325 / 대기열 : ID 326 ~ 350 / 대기열2 : ID 351 ~ 375
+추가 스레드 풀 생성
+Partition 6 : ID 376 ~ 400 / 대기열 : ID 401 ~ 425 / 대기열2 : ID 426 ~ 450 모든 대기열 소모 및 최대 스레드 풀 도달 =&gt; 작업 중단 및 오류 -&gt; 이로볼때, 쿼리작업보다 api호출작업의 소요시간이 길어보임범위 - 2017-11-07 ~ 2017-12-01
+startDate=2017-11-07&amp;endDate=2017-12-01기존 병렬처리 : 1분 7초
+기존로직 : 6분 32초t:스레드 개수 / c:각 스레드별 청크 파티션 수SimpleAsyncTaskExecutor
+g4/c10 : 1분 41.586초
+g5/c10 : 1분 30.037초
+g5/c3 : 1분 28.997초
+g5/c1 : 1분 29.931초
+g8/c10 : 1분 36.019초
+g10/c1 : 1분 24.529초 ThreadPoolTaskExecutor
+Th min/maxSize64, g64/c10 : 1분 42.848초
+Th min/maxSize32, g32/c10 : 1분 26.551초Th min/maxSize16, g16/c10 :
+1분 46.753초 / 1분 33.779초 / 2분 25.759초
+1분 11.668초 / 2분 5.773초 / 2분 39.553초Th min/maxSize32, g8/c20 : 3분 25.743초Th min/maxSize16, g4/c10 : 2분 29.207초 / 2분 8.004초
+Grid사이즈(파티셔닝 갯수) 만큼 스레드 풀 계속 생성
+파티셔닝 갯수가 많아졌을 때, 스레드 생성/소멸에 드는 오버헤드 증가 최소 스레드풀 개수 / 최대 스레드풀 개수 / 대기열 큐 크기 / 유휴 시간 모두 설정가능
+파티셔닝 갯수가 많을 경우, 처리 성능에 맞는 스레드 풀에서 대기작업으로 처리하여 오버헤드 감소 총 처리량 기준 1/n로 각 스레드에 할당시 충분히 감당한 양으로, 대기열을 사용할 필요가 없다. 쿼리 호출 및 페이징 기법 직접 구현 Native Query 형태로 호출하여 자동 페이징 Spring Batch에서는 공식적으로 지원하지 않음
+자동 페이징
+Querydsl형태로 쿼리 호출 가능 기존(헬로)의 Querydsl기반 JPAQuery를 그대로 사용 가능
+자동 페이징
+그 외 Querydsl의 장점 보유 기존 PagingItemReader의 메서드를 오버라이딩 하여 사용하며,
+JPQL이 수행되던 부분에 코드를 수정하였다.
+@Bean @Scope(value = "step", proxyMode = ScopedProxyMode.TARGET_CLASS) public QuerydslPagingItemReader&lt;HfbatBankBalanceCheckDto&gt; balanceReader() { ExecutionContext jobContext = Objects.requireNonNull(StepSynchronizationManager.getContext()).getStepExecution().getJobExecution().getExecutionContext(); Date startDate = (Date) jobContext.get(START_DATE_KEY); Date endDate = (Date) jobContext.get(END_DATE_KEY); return new QuerydslPagingItemReader&lt;&gt;( entityManagerFactory, executionOrder, DEFAULT_CHUNK_SIZE, queryFactory -&gt; repository.newFindChangeBalanceMemberList( startDate, endDate )); } 각 파티션 스레드 별 종료 시간이 크게 상이하다. 총 소요시간 기준 최대 약 20% 차이
+적용 한다면, 각 스레드 별로 even하게 작업을 수행하여 총 소요시간을 줄일 수 있을것이라 판단 JOB private static AtomicLong executionOrder = new AtomicLong(0); ... new QuerydslPagingItemReader&lt;&gt;( entityManagerFactory, executionOrder, DEFAULT_CHUNK_SIZE, queryFactory -&gt; repository.newFindChangeBalanceMemberList( startDate, endDate )); job 레벨에서의 스레드 세이프한 전역 변수를 생성하였다.
+그 후, 각 파티션 별 리더에 인자값으로 넘긴다.
+long currentExecutionOrder = executionOrder.getAndIncrement(); long startIndex = (currentExecutionOrder) * getPageSize(); int totalRecords = stepContext.getInt("totalRecords"); if (startIndex &gt;= totalRecords) { initResults(); // 빈 결과로 초기화 tx.commit(); return; } int chunkSizeToRead = Math.min(getPageSize(), (int) (totalRecords - startIndex)); // 남은 데이터 크기만큼 읽기 // QueryDSL Query 생성 JPQLQuery&lt;T&gt; query = createQuery() .offset(startIndex) .limit(chunkSizeToRead); 먼저 한 청크단위의 작업을 끝낸 파티션은 그 다음 작업을 즉시 할당받게 된다.
+즉, 총 처리시간 기준 가장 빨리끝난 파티션과 가장 늦게 끝난 파티션의 실행 시간 차이는 최대 한 청크사이즈를 처리하는 시간보다 크지 않게 된다.
+]]></description><link>project/hello-batch/🖱-spring-batch-트러블-슈팅.html</link><guid isPermaLink="false">project/hello Batch/🖱 Spring Batch 트러블 슈팅.md</guid><pubDate>Wed, 19 Feb 2025 04:47:49 GMT</pubDate><enclosure url="사진-및-문서/output-(1).png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;사진-및-문서/output-(1).png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[👩‍👧‍👦 유입 통계 ADMIN용 테이블 설계 과정]]></title><description><![CDATA[<a href=".?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href=".?query=tag:개발" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개발">#개발</a> <a href=".?query=tag:SPRING" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SPRING">#SPRING</a> <a href=".?query=tag:AOP" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#AOP">#AOP</a>hf_marketing_codehf_marketing_targethf_marketing_hit_log<br><img alt="Pasted image 20250102181842.png" src="사진-및-문서/pasted-image-20250102181842.png" target="_self">=&gt; 해당형태로 컬럼을 고정시키고, 동적으로 유입 수 를 출력한다.-&gt; 그 후 페이지에 뿌려주기Date: 01-02
+Ad Type: 구글광고
+Total Inflow: 4
+Total Hit: 27
+Detail Information: Page Name: 대출하기 페이지 Hit: 9 Page Name: 한도조회 버튼 Hit: 12 Page Name: 이용안내 페이지 Hit: 6
+]]></description><link>project/hello-marketing/👩‍👧‍👦-유입-통계-admin용-테이블-설계-과정.html</link><guid isPermaLink="false">project/hello marketing/👩‍👧‍👦 유입 통계 ADMIN용 테이블 설계 과정.md</guid><pubDate>Wed, 19 Feb 2025 04:46:55 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250102181842.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;사진-및-문서/pasted-image-20250102181842.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[👩‍👧‍👦 유입 통계 APP__SPRING AOP에 관하여]]></title><description><![CDATA[<a href=".?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href=".?query=tag:개발" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개발">#개발</a> <a href=".?query=tag:DB" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#DB">#DB</a><br><a rel="noopener nofollow" class="external-link is-unresolved" href="https://www.hellofunding.co.kr/sp/loan/gtLoan?p=a2FrYW8xc3QK" target="_self">https://www.hellofunding.co.kr/sp/loan/gtLoan?p=a2FrYW8xc3QK</a><br>
+<a rel="noopener nofollow" class="external-link is-unresolved" href="https://www.hellofunding.co.kr/sp/loan/gtLoan?p=a2FrYW8xc222" target="_self">https://www.hellofunding.co.kr/sp/loan/gtLoan?p=a2FrYW8xc222</a>
+통계 필요 페이지 내에서(프론트), 쿠키 데이터 페이지 별 최초 진입 확인? 해당 진입시점부터 특정 동작에 대한 모든 타임라인 로그 레디스 가용 메모리에 대한 한계값 산정. -&gt; 아직 적용 X URL + 함수명 조합
+=&gt; 메인 테이블
+=&gt; 백로직에서 쿠키 데이터 쌓기=&gt; 디테일 테이블 - 타임라인으로 관리 단, 메인테이블에 존재하는 내셕들에 대해서
+=&gt; AOP에서 특정 서비스or메서드orURL로 지정하여 로그 쌀기- 관심사(Aspect)를 분리하여, 각 서비스 메서드에 반복해서 구현하는 것이 아닌, 별도의 Aspect로 관리하여 핵심로직을 공통으로 적용하기 위함이다. 난수 생성 후 물고있기☑ IP로 추적 <br><img alt="Pasted image 20241224144309.png" src="사진-및-문서/pasted-image-20241224144309.png" target="_self">쿠키가 필요한 페이지의 경로가 기본 path와 일치하는 경우(redirect url 이 SP_MARKETING_HIT_TEST1 의 하위 url일 경우)
+에는 명시적으로 표시할 필요가 없지만,<br><img alt="Pasted image 20241226111559.png" src="사진-및-문서/pasted-image-20241226111559.png" target="_self">
+장점: 코드가 간결하고 읽기 쉽다.
+Spring의 AOP 인프라를 사용하여 메서드 인터셉션을 쉽게 구현할 수 있다. 단점:
+- 포인트컷 조건은 컴파일 시점에 고정된다.
+- 복잡한 조건이나 동적으로 변경되는 조건을 처리하기 어렵다. -&gt; @Pointcut 등의 조건에 부합하는 Bean객체를 컴파일 시점에 찾아내어 프록시를 감싼다. 동적 생성: 런타임에 프록시를 생성하여 포인트컷과 어드바이스를 동적으로 적용.
+StaticMethodMatcherPointcut 또는 DynamicMethodMatcherPointcut을 사용하여 런타임 조건 기반으로 메서드 매칭. 장점: 런타임 조건에 따라 동적으로 포인트컷 생성 가능.
+복잡한 조건과 동적 필터링을 처리하기 용이.
+Spring AOP가 아닌 순수 Java 프록시 방식도 지원. 단점: 코드가 복잡해지고 추가 구현이 필요.
+Spring AOP와 동일한 수준의 간결성을 제공하지 않음. -&gt; 해당 프록시 객체를 적용하고 싶은 Bean객체에 매번 생성(등록)해주어야 함.import org.springframework.aop.Pointcut;
+import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator;
+import org.springframework.aop.support.DefaultPointcutAdvisor;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration; @Configuration
+public class AopConfig { @Bean public Pointcut customPointcut() { return new CustomPointcut(); } @Bean public CustomAdvice customAdvice() { return new CustomAdvice(); } @Bean public DefaultPointcutAdvisor customAdvisor(Pointcut customPointcut, CustomAdvice customAdvice) { return new DefaultPointcutAdvisor(customPointcut, customAdvice); } @Bean public DefaultAdvisorAutoProxyCreator proxyCreator() { return new DefaultAdvisorAutoProxyCreator(); }
+} @Pointcut 방식과 동일한 동작: Spring 컨테이너가 관리하는 모든 빈에 대해 조건을 평가하고 프록시를 자동 생성합니다. 프록시를 명시적으로 선언할 필요 없음: ProxyFactory처럼 수동으로 프록시를 생성하지 않아도 됩니다. 유연성과 효율성 향상: Spring AOP 인프라를 활용하므로, 관리가 용이하고 런타임 성능이 개선됩니다. BeanPostProcessor: DefaultAdvisorAutoProxyCreator는 Spring의 BeanPostProcessor를 구현한 클래스이다.
+Spring 컨테이너는 애플리케이션 컨텍스트에 등록된 모든 BeanPostProcessor를 자동으로 호출하여 빈의 초기화 전후 작업을 수행한다.
+이를 통해, Spring AOP는 빈 생성 단계에서 프록시를 생성하고 조건에 맞는 빈에 대해 어드바이저를 적용. Advisor 탐색: DefaultAdvisorAutoProxyCreator는 Spring 컨텍스트에 등록된 모든 Advisor를 자동으로 탐색한다.
+이는 DefaultAdvisorAutoProxyCreator가 BeanFactory를 통해 컨테이너의 모든 Advisor 타입 빈을 조회하기 때문.
+탐색된 Advisor를 사용하여 각 빈의 메서드와 포인트컷 조건을 매칭. Advisor와 빈의 매칭: 빈이 생성될 때, DefaultAdvisorAutoProxyCreator는 해당 빈의 메서드가 어떤 Advisor의 포인트컷 조건에 부합하는지 평가.
+조건에 부합하면, 해당 빈을 프록시 객체로 감싸고, 어드바이스를 연결. 이렇게 맵핑이 되어야 하나, 이를 동적으로 탐지하지 못한다.
+/* * EnableAspectJAutoProxy &gt; 프록시 적용시 인터페이스/클래스 여부 자동 판단 * 클래스에 인터페이스가 있으면 JDK 동적 프록시. * 인터페이스가 없으면 CGLIB 프록시. * */@Configuration @EnableAspectJAutoProxy public class AopConfig { @Bean public Pointcut customPointcut() { return new CustomPointcut(); } @Bean public CustomAdvice customAdvice() { return new CustomAdvice(); } @Bean public DefaultPointcutAdvisor customAdvisor(Pointcut customPointcut, CustomAdvice customAdvice) { return new DefaultPointcutAdvisor(customPointcut, customAdvice); } /* * @EnableAspectJAutoProxy를 사용해 등록했기 때문에 불필요. * */ // @Bean // public DefaultAdvisorAutoProxyCreator proxyCreator() { // return new DefaultAdvisorAutoProxyCreator(); // } }
+프록시(Proxy)는 대리자라는 뜻으로, 다른 객체에 대한 인터페이스 역할을 하는 객체를 말합니다. 프로그래밍에서 프록시는 실제 객체에 접근하기 전에 특정 작업(로깅, 보안, 트랜잭션 관리 등)을 수행하거나, 객체에 대한 접근을 제어하는 데 사용됩니다.
+대리 객체: 프록시는 실제 객체에 대한 중간다리 역할을 합니다.
+동작 조정: 프록시는 요청을 가로채서 추가적인 작업을 수행하거나, 요청을 변형한 뒤 실제 객체에 전달할 수 있습니다.
+AOP와 연관: 프록시를 사용하면 코드를 변경하지 않고도 객체의 동작을 확장하거나 변경할 수 있습니다.
+Method Name: loanerLoginPage
+javax.servlet.http.HttpServletRequest
+org.springframework.web.bind.annotation.GetMapping <br><img alt="Pasted image 20241226152219.png" src="사진-및-문서/pasted-image-20241226152219.png" target="_self"><br><img alt="Pasted image 20241226171158.png" src="사진-및-문서/pasted-image-20241226171158.png" target="_self">
+외부링크 최초진입. hitCode, hitUid 발급 및 DB저장 외부링크 재진입. hitCode는 변경될 수 있으므로 "p"파라미터로 재발급
+=&gt; hitCode는 매번 재발급 / hitUid는 없을때만 발급 일반사용자 이며, 아무동작 하지 않는다. 외부링크 진입 후 동작. 없는 녀석 새로 발급 및 DB저장
+@Override @Transactional public ResponseModel insertMarketingHitLog(String hitCode, String hitUid, String pageUrl, String pageType){ try { Optional&lt;HfMarketingHitLog&gt; existingLog = hfMarketingHitLogRepository.findByHitCodeAndHitUidAndPageUrlAndPageType(hitCode, hitUid, pageUrl, pageType); if (existingLog.isPresent()) { HfMarketingHitLog logToUpdate = existingLog.get(); logToUpdate.setUpdateDate(LocalDateTime.now()); hfMarketingHitLogRepository.save(logToUpdate); return new ResponseModel(ResponseModel.ResponseStatus.SUCCESS); } HfMarketingHitLog hfMarketingHitLog = HfMarketingHitLog.builder() .hitCode(hitCode) .hitUid(hitUid) .pageUrl(pageUrl) .pageType(pageType) .build(); hfMarketingHitLogRepository.save(hfMarketingHitLog); return new ResponseModel(ResponseModel.ResponseStatus.SUCCESS); } catch (Exception e) { return new ResponseModel(ResponseModel.ResponseStatus.FAILED, "데이터 처리 중 오류 발생"); } }
+]]></description><link>project/hello-marketing/👩‍👧‍👦-유입-통계-app__spring-aop에-관하여.html</link><guid isPermaLink="false">project/hello marketing/👩‍👧‍👦 유입 통계 APP__SPRING AOP에 관하여.md</guid><pubDate>Wed, 19 Feb 2025 04:46:54 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20241224144309.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;사진-및-문서/pasted-image-20241224144309.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[🥇 정보처리 기사 실기 키워드]]></title><description><![CDATA[<a href=".?query=tag:정보처리기사" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#정보처리기사">#정보처리기사</a> <a href=".?query=tag:실기" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#실기">#실기</a> <a href=".?query=tag:키워드" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#키워드">#키워드</a> <a href=".?query=tag:정리" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#정리">#정리</a>
+시제품을 끊임없이 제작하며 사이클을 반복하는 개발 방법론
+워터폴과 대조적이며, 소프트웨어 개발을 넘어 기업 경영 전반에서 사용되고 있다.
+고객의 변화하는 요구사항과 환경 변화에 능동적인 소프트웨어 개발 방법론 소프트웨어 공학에서 리펙토링(Refactoring)을 하는 목적에 대해 간략히 서술하시오. 리펙토링의 목적은 프로그램을 쉽게 이해하고 수정하여 빠르게 개발할 수 있도록 하기 위함이다. ( 1 ) 요구사항은 시스템이 무엇을 하는지, 어떤 기능을 하는지 등 사용자가 시스템을 통해 제공받기를 원하는 기능이나 시스템이 반드시 수행해야하는 기능을 의미한다.
+( 2 ) 요구사항은 품질이나 제약사항과 관련된 요구사항으로, 시스템의 장비 구성, 성능, 인터페이스, 테스트, 보안 등의 요구사항을 말한다. UML에 관한 다음 괄호에 공통으로 들어갈 알맞은 용어는?
+( ) 다이어그램은 UML다이어그램중 객체(Object)들을 ( )로 추상화하여 표현하는 다이어그램으로, 대표적인 구조적 다이어그램이다.
+( )는 각각의 객체들이 갖는 속성과 메소드를 표현한 것으로 3개의 구획으로 나눠 이름, 속성, 메서드를 표기한다. UML은 시스템 분석, 설계, 구현 등 시스템 개발 과정에서 시스템 개발자와 고객 또는 개발자 상호 간의 의사소통이 원활하게 이루어지도록 표준화한 대표적인 객체지향 모델링 언어로 사물, ( 1 ), 다이어그램 으로 이루어져있다.
+( 1 )는 사물과 사물사이의 연관성을 표현하는 것으로 연관, 집합, 포함, 일반화 등 다양한 형태의 ( 1 )가 존재한다.
+( 2 )는 UML에 표현되는 사물의 하나로, 객체가 갖는 속성과 동작을 표현한다. 일반적으로 직사각형으로 표현하며, 직사각형 안에 이름, 속성, 동작을 표기한다.
+( 3 )는 ( 2 )와 같은 UML에 표현되는 사물의 하나로, ( 2 )나 컴포넌트의 동작을 모아놓은 것이며, 외부적으로 가시화되는 행동을 표현한다. 단독으로 사용되는 경우는 없으며, ( 3 )구현을 위한 ( 2 )또는 컴포넌트와 함께 사용된다. 관계(Relationship)는 사물과 사물 사이의 연관성을 표현하는 것이다.
+1 - 하나의 사물이 다른 사물에 포함되어 있는 관계로, 전체와 부분으로 구분되어지며, 서로 독립적이다.
+2 - 상위 모듈이 하위 모듈보다 더 일반적인 개념을 가지고 있으며, 하위 모듈이 상위 모듈보다 더 구체적인 개념을 가진다. [보기]
+-Association(연관 관계) : 객체간의 기본적인 관계를 나타낸다.
+-Dependency(의존 관계) : 한 객체가 다른 객체에 의존하거나 영향을 받는다.
+-Aggregation(집합 관계) : 부분과 전체의 관계를 나타내며, 부분이 독립적으로 존재할 수 있는 경우를 말한다.
+-Realization(실체화 관계) : 인터페이스와 이를 구현하는 클래스 간의 관계
+-Composition(합성 관계) : 집합관계의 특수한 형태로, 부분이 전체와 생명 주기를 공유하며 독립적으로 존재할 수 없는 경우
+-Generalization(일반화 관계) : 상위 클래스와 하위 클래스 간의 관계로, 상속을 통해 일반적인 특성을 공유한다. UML을 이용한 다이어그램 중 다음 그림에 해당하는 다이어그램을 쓰시오.
+[ ] &lt;&lt;import&gt;&gt; [Security]
+Order ----------------&gt; +(Credentials) / ( ) +(MDSCrupt) LOC기법에 의하여 예측된 총 라인 수가 30,000라인, 개발에 참여할 프로그래머가 5명, 프로그래머들의 평균 생산성이 월간 300라인일 때 개발에 소요되는 기간을 계산식과 함께 쓰시오. 데이터베이스 스키마(Schema)에 대해 간략히 서술하시오. 스키마는 데이터베이스의 구조와 제약 조건에 관한 전반적인 명세를 기술한 것이다. DB 설계에 대한 설명. 괄호를 채우시오
+( 1 ) : 논리적 구조로 표현된 데이터를 디스크 등의 저장장치에 저장할 수 있는 데이터로 변환하는 과정으로, 파일의 저장 구조 및 엑세스 경로를 결정하며, 테이블 정의서 및 명세서가 산출된다.
+( 2 ) : 현실 세계에 대한 인식을 추상적 개념으로 표현하는 과정으로, 개념 스키마 모델링과 트렌젝션 모델링을 수행하며, 요구 조건 명세를 E-R 다이어그램으로 작성한다.
+( 3 ) : 현실의 자료를 특정 DBMS가 지원하는 자료구조로 변환하는 과정으로, 트렌젝션의 인터페이스를 설계하고, 정규화를 통해 스키마를 평가 및 정제한다. 다음은 데이터베이스 구축까지의 과정을 나열한 것이다. 순서대로 괄호를 채우시오. 요구분석 → ( ) → ( ) → ( ) → 구현 데이터 모델이 구성 요소에 대한 다음 설명에서 괄호(1, 2)에 들어갈 용어를 쓰시오
+( 1 )은 데이터베이스에 저장된 실제 데이터를 처리하는 작업에 대한 명세서로서 데이터베이스를 조작하는 기본 도구에 해당된다.
+( 2 )는 논리적으로 표현된 객체 타입들 간의 관계로서 데이터의 구성 및 정적 성질을 표현한다.
+제약조건은 데이터베이스에 저장될 수 있는 실제 데이터의 논리적인 제약 조건을 의미한다.
+<br><img alt="do-messenger_screenshot_2025-02-10_15_04_45.png" src="사진-및-문서/do-messenger_screenshot_2025-02-10_15_04_45.png" target="_self">
+-다음 E-R다이어그램을 참고하여 괄호(1~5)의 설명에 적합한 요소를 찾아 기호로 표시
+( 1 ) : 관계 집합을 의미한다.
+( 2 ) : 관계 집합과 속성을 연결한다.
+( 3 ) : 개체 집합을 의미하며, 키로 사용되는 항목에는 밑줄을 표시한다.
+( 4 ) : 관계 집합의 속성을 의미한다.
+( 5 ) : 개체 집합과 집합을 연결한다. 1 → ㄴ
+2 → ㄷ
+3 → ㄱ
+4 → ㄹ
+5 → ㅁ
+-키(Key)에 대한 다음 설명에서 괄호(1, 2)에 들어갈 용어를 쓰시오.
+키는 데이터베이스에서 조건에 만족하는 튜플을 찾거나 순서대로 정렬할 때 기준이 되는 속성을 말한다.
+슈퍼키는 한 릴레이션 내에 있는 속성들의 집합으로 구성된 키로, 릴레이션을 구성하는 모든 튜플에 대해 ( 1 )을 만족한다.
+후보키(Candidate Key)는 릴레이션을 구성하는 속성들 중에서 튜플을 유일하게 식별하기 위해 사용되는 속성들의 부분집합으로, ( 1 )과 ( 2 )을 만족하는 특징이 있다. 관계대수란 관계형 데이터베이스에서 원하는 정보와 그 정보를 검색하기 위해서 어떻게 유도하는가를 기술하는 절차적인 언어이다. 관계 대수에 사용되는 연산은 다음과 같다. 합집합(UNION)은 두 릴레이션에 존재하는 튜플의 합집합을 구하되, 결과로 생성된 릴레이션에서 중복되는 튜플은 제되는 연산으로, 기호는 ( 1 )이다. 차집합(DIFFERENCCE)은 두 릴레이션에 존재하는 튜플의 차집합을 구하는 연산으로, 사용하는 기호는 ( 2 )이다. 교차곱(CARTESIAN PRODUCT)은 두 릴레이션에 있는 튜플들의 순서쌍을 구하는 연산으로, 사용하는 기호는 ( 3 )이다. 프로젝트(PROJECT)는 주어진 릴레이션에서 송성 리스트(Attribute List)에 제시된 속성 값만을 추출하여 새로운 릴레이션을 만드는 연산으로, 사용하는 기호는 ( 4 )이다. 조인(JOIN)은 공통 속성을 중심으로 두 개의 릴레이션을 하나로 합쳐서 새로운 릴레이션을 만드는 연산으로, 사용하는 기호는 ( 5 )이다. 1 → U
+2 → ㅡ
+3 → x
+4 → ㅠ
+5 → |&gt;&lt;| 릴레이션 A, B가 있을 때, 릴레이션 B의조건에 맞는 것들만 릴레이션 A에서 분리하여 프로젝션을 하는 연산은? ( )은 관계 데이터의 연산을 표현하는 방법으로, 관계 데이터 모델의 제안자인 코드(E. F. Codd)가 수학의 술어 해석(Predicate Calculus)에 기반을 두고 관계 데이터베이스를 위해 제안했다.
+원하는 정보가 무엇이라는 것만 정의하는 비절차적 특성을 지니며, 원하는 정보를 정의할 때 계산 수식을 사용한다.
+튜플 해석식을 사용하는 튜플 ( )과 도메인 해석식을 사용하는 도메인 ( )으로 구분된다. 데이터의 중복으로 인해 테이블 조작 시 문제가 발생하는 현상을 이상(Anomaly)이라고 한다. 이상 중 삭제 이상(Deletion Anomaly)에 대해 간략히 서술하시오. 데이터베이스의 이상(Anomaly)의 종류 3가지를 쓰시오. 삽입 이상(Insertion Anomaly)
+삭제 이상(Deletion Anomaly)
+갱신 이상(Update Anomaly)
+<br><img alt="do-messenger_screenshot_2025-02-10_17_10_58.png" src="사진-및-문서/do-messenger_screenshot_2025-02-10_17_10_58.png" target="_self">
+테이블 &lt;R&gt;에서 성적은 기본키인 {학생, 학과}에 대해 ( 1 ) Functional Dependency이다.
+테이블 &lt;R&gt;에서 학년은 기본키인 {학생, 학과} 중 학생만으로 식별이 가능하므로 기본키에 대해 ( 2 ) Functional Dependency이다.
+임이의 테이블에 속성 A, B, C가 있을 떄, A → B이고 B → C일 때 A → C인 관계는 ( 3 )Functional Dependency이다. Full
+Partial
+Transitive 데이터베이스에서 비(반)정규화(Denormalization)의 개념을 서술하시오. 비정규화는 정규화된 데이터 모델을 통합, 중복, 분리 하는 과정으로, 의도적으로 정규화 원칙을 위배하는 행위이다. 데이터베이스의 상태 변화를 일으키는 트렌젝션(Transaction)의 특성 원자성 : 트렌젝션의 연산은 데이터베이스에 모두 반영되도록 완료(Commit)되든지 아니면 전혀 반영되지 않도록 복구(Rollback)되어야 한다. 일관성 : 트렌젝션이 그 실행을 성공적으로 완료하면 언제나 일관성 있는 데이터베이스 상태로 변환한다. 독립성 : 둘 이상의 트렌젝션이 동시에 병행 실행되는 경우 어느 하나의 트렌젝션 실행중에 다른 트렌젝션의 연산이 끼어들 수 없다. 지속성 성공적으로 완료된 트렌젝션의 결과는 시스템이 고장나더라도 영구적으로 반영되어야 한다. 파일의 구조는 파일을 구성하는 레코드들이 보조기억장치에 편성되는 방식을 의미하는 것으로, 크게 순차, ( ), 해싱으로 구분한다.
+( ) 파일 구조는 &lt;값, 주소&gt; 쌍으로 구성되는 데이터 구조를 활용하여 데이터에 접근하는 방식으로, 자기 디스크서 주로 활용된다. 비상 상황이 발생한 경우 비상사태 또는 업무중단 시점부터 업무가 복구되어 다시 정상 가동 될 때까지의 시간을 의미한다. 접근통제는 데이터가 저장된 객체와 이를 사용하려는 주체 사이의 정보 흐름을 제한하는 것이다. 이러한 접근통제에 관한 기술 중 ( )는 데이터에 접근하는 사용자의 신원에 따라 접근 권한을 부여하여 제어하는 방식으로, 데이터의 소유자가 접근통제 권한을 지정하고 제어한다.
+객체를 생성한 사용자가 생성된 객체에 대한 모든 권한을 부여받고, 부여된 권한을 다른 사용자에게 허가할 수도 있다. DBMS는 데이터베이스에 치명적인 손실이 발생했을 때 이를 복구하기 위해 데이터베이스의 처리내용이나 이용 상황 등 상태 변화를 시간의 흐름에 따라 기록한 로그를 생성한다.
+( 1 ) : 데이터베이스가 비정상적으로 종료되었을 때, 디스크에 저장된 로그를 분석하여 트렌젝션의 시작(start)과 완료(commit)에 대한 기록이 있는 트렌젝션들의 작업을 재작업 한다. 즉, 로그를 이용하여 해당 데이터 항목에 대해 이전 값을 이후값으로 변경하는 연산이다.
+( 2 ) : 데이터베이스가 비정상적으로 종료되었을 때, 디스크에 저장된 로그를 분석하여 트렌젝션의 시작을 나타는 'start'는 있지만 완료를 나타내는 'commit' 기록이 없는 트렌젝션들이 작업한 내용들을 모두 취소한다. 즉 로그를 이용하여 해당 데이터 항목에 대해 이후 값을 이전 값으로 변경한다. 웹 페이지의 기본 형식인 HTML의 문법이 각 웹 브라우저에서 상호 호환적이지 못한다는 문제와 SGML의 복잡함을 해결하기 위하여 개발된 ( )은 다른 특수한 목적을 갖는 마크업 언어이다.
+원활한 데이터의 연계를 위해 송.수신 시스템 간에 전송되는 데이터가 동일한 구조로 구성될 수 있도록 형태를 정의는 역할을 수행하며, 다음과 같은 특징이 있다. 텍스트 데이터 형식으로 유니코드를 사용하여 전 세계 언어를 지원한다. 대다수의 웹 브라우저가 해석을 위한 번역기(Parser)를 내장하고 있다. XML문서의 문자들은 마크업과 내용으로 구분된다.
+일반적으로 마크업은 &lt;로 시작하여 &gt;로 끝나는 태그(Tag)를 의미하고, 그 외의 문자열은 내용에 해당한다. 마크업과 내용으로 이루어지는 하나의 요소를 의미한다. 통합 구현과 관련하여 다음 설명의 괄호에 공통으로 들어갈 알맞은 용어는?
+( )는 HTTP, HTTPS, SMTP 등을 사용하여 xml 기반의 메시지를 네트워크상에서 교환하는 프로토콜이다.
+( ) envelope, 헤더, 바디 등이 추가된 xml 문서이다.
+( )는 복잡하고 무거운 구조로 구성되어 있어, ( )보다는 RESTful 프로토콜을 이용하기도 한다. 웹 서비스와 관련된 다음 설명에 해당되는 용어는?
+웹 서비스와 관련된 서식이나 프로토콜 등을 표준적인 방법으로 기술하고 게시하기 위한 언어.
+XML로 작성되며 UDDI의 기초가 된다. SOAP, XML 스키마와 결합하여 인터넷에서 웹 서비스를 제공하기 위해 사용되며, 클라이언트는 이것을 통해 서버에서 어떠한 조작이 가능한지를 파악할 수 있다.
+]]></description><link>study/정보처리기사/정보처리기사-실기/🥇-정보처리-기사-실기-키워드.html</link><guid isPermaLink="false">study/정보처리기사/정보처리기사 실기/🥇 정보처리 기사 실기 키워드.md</guid><pubDate>Wed, 19 Feb 2025 04:46:45 GMT</pubDate><enclosure url="사진-및-문서/do-messenger_screenshot_2025-02-10_15_04_45.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;사진-및-문서/do-messenger_screenshot_2025-02-10_15_04_45.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[🥈 필기 5과목 - 정보시스템 구축관리]]></title><description><![CDATA[<a href=".?query=tag:정보처리기사" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#정보처리기사">#정보처리기사</a> <a href=".?query=tag:필기" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#필기">#필기</a> <a href=".?query=tag:정리" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#정리">#정리</a> 클래스 인터페이스
+명령어(사용자 질의 수)
+데이터 파일
+출력 보고서
+흭공개운유
+네트워크 변화에 신속히 대처할 수 있다.
+거리 벡터 라우팅 프로토콜 이라고 한다.
+멀티캐스팅을 지원한다.
+최단 경로 탐색에 다익스트라 알고리즘을 사용한다. 클래스 설계서
+통합시험 결과서
+프로그램 코드
+사용자 요구사항 정의서 암호화 키와 복호화 키가 동일한 암호화 알고리즘을 뜻한다. COCOMO
+Putnam
+Function-Point
+PERT 비교적 실행속도 빠르기 때문에, 다양한 암호의 핵심 함수로 사용될 수 있다.
+키 교환을 필요로 하기 때문에, 키를 교환하는 중 탈취가 될 가능성이 있다. 자신만이 보관하는 비밀키를 이용하여 인증, 전자서명 등에 적용이 가능하다.
+- 캡슐화를 통해 모듈화를 강화하고, 설계 및 구현의 변경에 따른 영향을 최소화 함으로써 품질을 향상시킨다.
+- 재사용 가능한 모듈들을 제공함으로써 예산을 절감한다.
+- 다형성을 통한 인터페이스 확장이 가능하여 다양한 형태와 기능을 가진 애플리케이션 개발이 가능하다.
+- 개발자가 관리하고 통제해야 하는 객체들의 제어를 프레임워크에 넘김으로써 생상선을 향상시킴 벨만-포드 알고리즘 사용
+RIP프로토콜 ( 최대 홉 개수 15개 )
+인접 라우터와 주기적으로 정보 교환 다익스트라 알고리즘 사용
+OSPF프로토콜 ( 최대 홉 개수 제한 없음 )
+최단 경로, 최소 지연, 최대 처리량
+<br><a data-href="🥇 정보처리 기사 실기 키워드" href="study/정보처리기사/정보처리기사-실기/🥇-정보처리-기사-실기-키워드.html#_0" class="internal-link" target="_self" rel="noopener nofollow">🥇 정보처리 기사 실기 키워드</a>]]></description><link>study/정보처리기사/정보처리기사-필기/🥈-필기-5과목-정보시스템-구축관리.html</link><guid isPermaLink="false">study/정보처리기사/정보처리기사 필기/🥈 필기 5과목 - 정보시스템 구축관리.md</guid><pubDate>Wed, 19 Feb 2025 04:46:43 GMT</pubDate></item><item><title><![CDATA[🥈 필기 4과목 - 프로그래밍 언어 활용]]></title><description><![CDATA[<a href=".?query=tag:정보처리기사" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#정보처리기사">#정보처리기사</a> <a href=".?query=tag:필기" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#필기">#필기</a> <a href=".?query=tag:정리" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#정리">#정리</a> 다른 프로세스가 뺐지 못하는 상태.
+#### - 최적의 경로를 산출하기 위한 정보로서 홉(거리 값)만을 고려하므로, RIP를 선택한 경로가 ==최적의 경로가 아닌경우가== 많이 발생할 수 있다.
+]]></description><link>study/정보처리기사/정보처리기사-필기/🥈-필기-4과목-프로그래밍-언어-활용.html</link><guid isPermaLink="false">study/정보처리기사/정보처리기사 필기/🥈 필기 4과목 - 프로그래밍 언어 활용.md</guid><pubDate>Wed, 19 Feb 2025 04:46:30 GMT</pubDate></item><item><title><![CDATA[🥈 필기 3과목 - 데이터베이스 구축]]></title><description><![CDATA[<a href=".?query=tag:정보처리기사" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#정보처리기사">#정보처리기사</a> <a href=".?query=tag:필기" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#필기">#필기</a> <a href=".?query=tag:정리" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#정리">#정리</a> 0 or 1
+트렌젠션 전/후 같아야함
+다른 트렌젝션의 간섭 X
+트렌젝션 커밋 결과가 영구히 저장
+하드웨어와 소프트웨어의 물리적 위치를 사용자가 알 필요 없다. 논리적인 명칭으로만 엑세스할 수 있음
+사용자에게 통지할 필요없이 시스템 안에 파일들과 자원들의 부가적인 복사를 자유롭게 할 수 있다.
+다중 사용자들이 자원들을 자동으로 공유할 수 있다.
+사용자들은 어는 위치의 시스템에 장애가 발생했는지 알 필요가 없다.
+]]></description><link>study/정보처리기사/정보처리기사-필기/🥈-필기-3과목-데이터베이스-구축.html</link><guid isPermaLink="false">study/정보처리기사/정보처리기사 필기/🥈 필기 3과목 - 데이터베이스 구축.md</guid><pubDate>Wed, 19 Feb 2025 04:46:28 GMT</pubDate></item><item><title><![CDATA[🥈 필기 2과목 - 소프트웨어 개발]]></title><description><![CDATA[<a href=".?query=tag:정보처리기사" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#정보처리기사">#정보처리기사</a> <a href=".?query=tag:필기" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#필기">#필기</a> <a href=".?query=tag:정리" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#정리">#정리</a> 프로그램의 하위 모듈에서 상위 모듈 방향으로 통합
+하나의 주요 제어 모듈과 관련된 종속 모듈의 그룹인 클러스터 필요 상위 모듈에서 하위 모듈방향으로 통합
+깊이 우선 통합법, 넓이 우선 통합법 사용
+초기부터 사용자에게 시스템 구조를 보여줌 사용사례를 확장하여 명세하거나 설계 다이어그램, 원시코드, 테스트 케이스 등에 적용할 수 있다.
+복잡한 알고리즘 또는 반복, 실시간 동작, 병행 처리와 같은 기능이나 동작을 이해하려고 할 때 유용하다.
+단순한 테스트 케이스를 이용하여 프로덕트를 수작업으로 수행해 보는 것이다.
+요구사항 명세서 작성자를 포함하여 사전 검토한 후에 짧은 검토 회의를 통해 결함을 발견 요구사항 명세서 작성자를 제외한 다른 검토 전문가들이 요구사항 명세서를 확인하면서 결함을 발견
+]]></description><link>study/정보처리기사/정보처리기사-필기/🥈-필기-2과목-소프트웨어-개발.html</link><guid isPermaLink="false">study/정보처리기사/정보처리기사 필기/🥈 필기 2과목 - 소프트웨어 개발.md</guid><pubDate>Wed, 19 Feb 2025 04:46:26 GMT</pubDate></item><item><title><![CDATA[🥈 필기 1과목 - 소프트웨어 설계]]></title><description><![CDATA[<a href=".?query=tag:정보처리기사" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#정보처리기사">#정보처리기사</a> <a href=".?query=tag:필기" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#필기">#필기</a> <a href=".?query=tag:정리" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#정리">#정리</a> 클래스 인터페이스
+명령어(사용자 질의 수)
+데이터 파일
+출력 보고서
+흭공개운유
+네트워크 변화에 신속히 대처할 수 있다.
+거리 벡터 라우팅 프로토콜 이라고 한다.
+멀티캐스팅을 지원한다.
+최단 경로 탐색에 다익스트라 알고리즘을 사용한다. 클래스 설계서
+통합시험 결과서
+프로그램 코드
+사용자 요구사항 정의서 암호화 키와 복호화 키가 동일한 암호화 알고리즘을 뜻한다.
+]]></description><link>study/정보처리기사/정보처리기사-필기/🥈-필기-1과목-소프트웨어-설계.html</link><guid isPermaLink="false">study/정보처리기사/정보처리기사 필기/🥈 필기 1과목 - 소프트웨어 설계.md</guid><pubDate>Wed, 19 Feb 2025 04:46:17 GMT</pubDate></item><item><title><![CDATA[📭 Server]]></title><description><![CDATA[<a href=".?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a> <a href=".?query=tag:Server" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Server">#Server</a>
+서버에 일을 분산시켜주는 역할을 한다. Random 랜덤분배 Least loaded 가장 적은양의 작업을 처리하고 있는 서버에게 요청 할당 Round Robin 순서를 정하여 돌아가며 작업 분배 layer4 : 데이터의 내용을 보지 않고 IP주소 및 TCP/UDP정보에 따라 단순히 분배를 해준다
+layer7 : 서버가 하는 역할이 분리되어 있는 환경에서 데이터의 내용을 보고 각기 맞는 역할을 하는 서버에게 분배
+로드밸런서는 클라이언트가 요청을 보내야 할 서버를 골라야하는 부담을 덜어주며, 로드 밸런서에게 할당된 vIP(가상IP)로 요청을 보내기만 하면 로드 밸런서에서 알아서 작업을 나눠준다.
+서버에서는 적절한 로드 밸런서를 사용하면 들어오는 요청이 여러 장비에 분산되어 처리량이 늘어나고 응답 시간이 줄어드는 효과를 기대할 수 있다. 웹서버가 클라이언트의 요청에 의해 웹페이지에 대한 응답 결과를 돌려줬을때,
+클라이언트의 화면에는 랜더링해야하는 수많은 이미지가 필요하다.
+이 이미지를 웹서버가 전부 주려면 데이터의 용량이 무거워서 서버에 부하가 걸리게 되는데,,
+따라서 웹서버는 이미지를 대신 건내주는 CDN에게 요청한다는 개념이다. CDN은 일반적으로 용량이 큰 컨텐츠 데이터를 빠른속도로 제공하기 위해 사용자와 가까운곳에 분산되어 있는 데이터 저장 서버이다. push CDN : 서버에서 컨텐츠가 업로드 되거나, 변경되었을 때 모두 반영하는 방식
+pull CDN : 클라이언트가 요청할 때마다 컨텐츠가 CDN에 새로 저장되는 방식
+두 방식 모두 장단점이 있다.
+Push방식은 모든 컨텐츠를 갖고 있기 때문에 웹서버에 요청할 일이 없지만 유지하는데 필요한 용량과 비용이 크고,
+Pull방식은 요청이 들어왔을 때 컨텐츠가 있다면 즉각 응답하지만, 그렇지 않을때 웹서버에 요청해야하는 부담이 있다.<br><img alt="Pasted image 20240603173517.png" src="사진-및-문서/pasted-image-20240603173517.png" target="_self">하지만, MSA의 경우 각 서비스마다 다른 데이터베이스를 사용하는 것이 일반적이고, 이를 하나의 데이터베이스 트렌젝션으로 처리하는 것은 기술적으로 어렵고, 처리한다 해도 긴 트렌젝션이 발생하기 때문에 효용도 적다.<br>
+<img alt="Pasted image 20240603180042.png" src="사진-및-문서/pasted-image-20240603180042.png" target="_self">
+tcc는 분산된 REST 시스템들 간의 트랜젝션을 HTTP와 REST원칙으로 접근하여 해결하는 방법이다.
+REST API 호출은 한 번에 끝내는 것이 아니라, 2번의 걸쳐서(Try / Confirm) 진행하게 된다.
+트렌젝션의 All-or-Nothing을 TCC의 REST API를 호출을 시도(Try)하고 전부 확정(Confirm)하거나 전부 취소(Cancel)하는 것으로 구현된다.
+Spring RestTemplate을 사용하여 HTTP 요청(POST)을 보냈을 때, try 요청의 경우 정상적인 HTTP응답(HttpStatus.CREATED)를 받으면 HTTP BODY에는 JSON형태로 Confirm하게 하거나 Cancel 할 수 있는 URL이 담겨 있다. 여기서 Service에서 반환받은 값을 기준으로 Confirm 할지 Cancel할지 선택하게 된다.
+중요한 것은 여기서 실제로 데이터베이스 테이블에 변경이 있는것 이 아닌, Confirm되었을때 그때 처리가 된다. 여기서 받은 반환값을 토대로 Service에서는 resource 필드(JSON)을 역질렬화 하고 이를 사용하여 그때 실제로 데이터베이스에 있는 테이블을 변경하게 된다. Try는 리소스를 사용하기 전에 예약하는 것이다. 만약 4.구매 주문 생성에서 Try만 하고, 실패했다면 REST로 통신은 기다리고 있던(Try만 한 상태) 두 API에는 Confirm이 전달되지 않아 예약만 된 상태로 남아있게 된다. 예약된 상태는 특정 리소스를 점유하고 있다는 의미이며, 리소스를 점유하고 있는 동안에는 다른 API에서 해당 리소스를 사용하는 것은 제한된다. 따라서, 4. 행위에서 Try만 하고 실패했다면, 예약한 리소스까지 해제해주어야 한다. 분산된 환경에서 리소스를 해제하는 것은 쉬운 문제가 아닌데, TCC매커니즘에서는 Cancel과 Timeout 두가지 방법으로 예약된 리소스를 해제한다.<br>
+<img alt="Pasted image 20240604102140.png" src="사진-및-문서/pasted-image-20240604102140.png" target="_self"> REST커뮤니케이션 관전에서 자세하게 설명하면,
+TCC REST API Consumer(여기선 OrderService)가 Try요청
+TCC REST API Provider (여기선 StockService/PaymentService)는 응답으로 Confirm하거나 Cancel할 수 있는 URI를 반환
+이를 사용하여 API Consumer는 DELETE HTTP Method로 예약한 리소스에 대한 해제를 요청한다.
+<br><img alt="Pasted image 20240604144026.png" src="사진-및-문서/pasted-image-20240604144026.png" target="_self">
+클라이언트가 주문을하고, OrderService는 StockService와 PaymentService로 Try한다.
+그리고 구매 주문을 생성 후 Confirm하였다. StockService는 재고 처리에 성공을 한 반면, PaymentService는 결제에 실패한다.
+이경우에는 어떻게 일관성을 유지할 수 있을까? 관계형 데이터베이스에서 트랜젝션을 처리할 때에는 데이터 적합성을 보장해야 하기 때문에 엄격한 일관성 모델을 사용한다.
+하지만 결제시스템 하나의 문제로 모든 비즈니스가 멈추게 되는 문제가 발생한다.(보통은 멈추는게 맞다) StockService와 PaymentService는 OrderService로부터 받은 Confirm요청을 Queue나 Log파일에 큐잉 하고, 이를 비동기적으로 처리한다. Confirm처리 과정에서 오류가 나는 경우 계속해서 재시도하여 결국(언젠가) 처리하게 한다. 이렇게 단기적으로 일관성을 잃더라도(클라이언트 입장에서는 성공했다고 느끼지만, 실제 결제처리가 되지 않았을 수도 있다.) 결국에서는 일관성을 유지하는 모델을 결과적 일관성 이라고 한다. 단, 결과적 일관성 모델은 단기적으로 일관성을 잃어버렸을 때를 대비한 화면 처리 등이 필요하다. ex) 아마존에서 전자책을 구입한 후, 결제 과정이 진행되었고 이후 카드가 정상처리되지 않는 메일을 받아, 2일후에 제대로 결제처리를 하였다. ]]></description><link>study/프로그래밍/📭-server.html</link><guid isPermaLink="false">study/프로그래밍/📭 Server.md</guid><pubDate>Wed, 19 Feb 2025 04:45:59 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20240603173517.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;사진-및-문서/pasted-image-20240603173517.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[🎵 Obsidian]]></title><description><![CDATA[<a href=".?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a> <a href=".?query=tag:메모" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#메모">#메모</a> <a href=".?query=tag:Obsidian" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Obsidian">#Obsidian</a>
+옵시디언은 Markdow기반의 노트 작성 및 지식 관리 어플이다.
+특히, 데이터 시각화 및 개인지식관리에 뛰어나다. 옵시디언은 Markdown 형식을 기반으로 노트를 작성하며, 간단한 텍스트 포맷팅(굵게, 기울임, 리스트, 링크 등)이 가능.
+.md 파일로 저장되어 데이터 이동 및 백업이 자유로움. 옵시디언은 위키 스타일의 링크([[노트 제목]])를 사용하여 노트 간 연결이 가능.
+노트 간의 관계를 자동으로 분석하여 연결된 구조를 보여줌. 연결된 노트들을 시각적으로 보여주는 그래프 뷰 제공.
+노트 간의 관계를 네트워크 그래프 형태로 표현하여 지식 네트워크 구축에 용이. 기본 기능 외에도 다양한 플러그인을 추가하여 확장 가능.
+공식 플러그인 및 커뮤니티에서 제공하는 다양한 기능 추가 가능. 예: 캘린더, 태그 관리, LaTeX 지원, AI 플러그인 등. 클라우드가 아닌 로컬 저장 방식을 기본으로 하여 데이터 소유권을 보장.
+추가적으로 Obsidian Sync를 사용하면 여러 기기 간 동기화 가능. Windows, macOS, Linux, iOS, Android에서 사용 가능.
+모바일에서도 원활한 노트 작성과 검색이 가능. 자주 사용하는 노트 형식을 템플릿으로 저장하여 반복 사용 가능.
+태그(#태그이름)를 활용하여 노트 분류 및 검색 가능. 특정 키워드를 기반으로 노트 검색 가능.
+정규 표현식(Regex) 지원으로 복잡한 검색도 가능
+<br><img alt="Pasted image 20250218145702.png" src="사진-및-문서/pasted-image-20250218145702.png" target="_self"><br><img alt="Pasted image 20250218145823.png" src="사진-및-문서/pasted-image-20250218145823.png" target="_self">노션이란? - 올인원 생산성 및 노트 관리 도구로, 노트 작성, 데이터베이스, 프로젝트 관리, 협업 기능을 통합적으로 제공하는 플랫폼이다단편적으로 기능의 차이를 보면 다음과 같다.
+옵시디언의 최대 장점으로는 다양한 유저 커스텀 플러그인이 있다.
+노션에서 기본으로 지원하는 캘린더, 데이터베이스, 클라우드, 템플릿 등을 모두 사용 가능하다.
+또한, 해당되는 플러그인 들은 유저들에 의해 지속적으로 업데이트 된다.
+EX) ChatGPT / HTML Export / Git 등등..
+옵시디언은 노션과 달리 로컬 네이티브앱으로 인터넷 연결없이도 사용이 가능하다.
+로컬환경에서 Markdown문법만으로 문서가 작성되기 때문에 속도가 무척 빠르고 쾌적하다.
+또한, 로컬 저장 방식으로 직접적인 데이터의 소유가 가능하다. → 보안이 뛰어나다고 볼 수 있다. 옵시디언은 기본적으로 모든 기능이 제한없이 무료이다.
+! 유료 서비스인 Obsidian Sync(클라우드 동기화 서비스) 가 있지만, Git을 통한 형상관리를 한다면 전혀 사용할 필요가 없다
+따라서, 용량에 구애받지 않고 무제한 확장이 가능하다고 볼 수 있다. 그럼에도 노션이 가지는 장점도 만만치 않으며, 옵시디언의 단점 또한 존재한다.
+즉, 각자의 작업 환경 및 취향에 맞추어서 최적의 Tool을 선택하는 것이 바람직 하다고 볼 수 있다.
+나는 그래도 옵시디언이다.
+]]></description><link>study/프로그래밍/🎵-obsidian.html</link><guid isPermaLink="false">study/프로그래밍/🎵 Obsidian.md</guid><pubDate>Wed, 19 Feb 2025 04:45:50 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250218145702.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;사진-및-문서/pasted-image-20250218145702.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[🟣 Obsidian 정적호스팅 CICD 과정]]></title><description><![CDATA[<a href=".?query=tag:블로그" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#블로그">#블로그</a> <a href=".?query=tag:연동" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#연동">#연동</a> <a href=".?query=tag:CI/CD" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#CI/CD">#CI/CD</a> <a href=".?query=tag:옵시디언" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#옵시디언">#옵시디언</a> <a href=".?query=tag:Git" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Git">#Git</a> <a href=".?query=tag:Netlify" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Netlify">#Netlify</a> 먼저 옵시디언(Obsidian)에 대한 정보를 확인하고 싶다면.현재 보고있는 해당 사이트는 Obsidian앱의 지속적인 통합(CI), 지속적인 배포(CD)를 통해 구현된 사이트이다.
 아주 기본적인 셋팅이므로, 이후 커스텀은 각자의 취향대로 진행하면 될 것이다.
 WAS가 아닌 WEB 정적 호스팅을 위한 셋팅이다.
 <br><img alt="Pasted image 20250218151731.png" src="사진-및-문서/pasted-image-20250218151731.png" target="_self"><br>
@@ -52,222 +448,40 @@ Control + P -&gt; export 를 검색
 <img alt="Pasted image 20250218161728.png" src="사진-및-문서/pasted-image-20250218161728.png" target="_self">
 정적웹사이트를 위한 셋팅으로 이외의 값은 공란으로 두어도 무방하다. 그리고 기다리면...<br>
 <img alt="Pasted image 20250218161824.png" src="사진-및-문서/pasted-image-20250218161824.png" target="_self"><br>
-<img alt="Pasted image 20250218161847.png" src="사진-및-문서/pasted-image-20250218161847.png" target="_self"> 배포가 완료되고, 주소를 입력하여 확인이 가능하다.<br>
-<img alt="Pasted image 20250218161937.png" src="사진-및-문서/pasted-image-20250218161937.png" target="_self"> 커뮤니티 플러그인
-인덱스페이지
-테마
-etc.. 본인의 경우에는 로컬 Obsidian에 민감정보를 포함하고 있으므로,
-정적 호스팅 전, public한 Vault를 거쳐 배포되도록 관리하고 있다.<br>
-<img alt="Pasted image 20250218162355.png" src="사진-및-문서/pasted-image-20250218162355.png" target="_self" style="width: 875px; max-width: 100%;"> 좌 : 프라이빗 볼트 / 우 : 퍼블릭 볼트 이렇게 사이트 배포가 완료되었다!<br>
-<img alt="do-messenger_screenshot_2025-02-18_16_25_42.png" src="사진-및-문서/do-messenger_screenshot_2025-02-18_16_25_42.png" target="_self">]]></description><link>study/note-ci_cd/🟣-obsidian-정적호스팅-cicd-과정.html</link><guid isPermaLink="false">study/note CI_CD/🟣 Obsidian 정적호스팅 CICD 과정.md</guid><pubDate>Wed, 19 Feb 2025 04:40:25 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250218151731.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20250218151731.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[index]]></title><description><![CDATA[<a href=".?query=tag:home" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#home">#home</a> <a href=".?query=tag:index" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#index">#index</a> <a href=".?query=tag:blog" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#blog">#blog</a> <br><a data-tooltip-position="top" aria-label="https://git.io/typing-svg" rel="noopener nofollow" class="external-link is-unresolved" href="https://git.io/typing-svg" target="_self"></a><img alt="Typing SVG" src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;pause=1000&amp;color=36A9F7&amp;random=false&amp;width=435&amp;lines=%EC%97%AC%EA%B8%B0%EB%8A%94+%EA%B3%B5%EB%B6%80%ED%95%98%EA%B3%A0%2C+%EA%B8%B0%EB%A1%9D%ED%95%98%EB%8A%94+%EA%B3%B3%EC%9E%85%EB%8B%88%EB%8B%A4" referrerpolicy="no-referrer" target="_self" class="is-unresolved">
-<br><a data-href="🟣 Obsidian 정적호스팅 CICD 과정" href="study/note-ci_cd/🟣-obsidian-정적호스팅-cicd-과정.html#_0" class="internal-link" target="_self" rel="noopener nofollow">🟣 Obsidian 정적호스팅 CICD 과정</a> <br>🙇‍♂<a data-href="Spring Batch 트러블 슈팅" href="project/hello-batch/spring-batch-트러블-슈팅.html#_0" class="internal-link" target="_self" rel="noopener nofollow">Spring Batch 트러블 슈팅</a>
-<br>🙇‍♂<a data-href="Spring Batch 트러블 슈팅 부록" href="project/hello-batch/spring-batch-트러블-슈팅-부록.html#_0" class="internal-link" target="_self" rel="noopener nofollow">Spring Batch 트러블 슈팅 부록</a>
-<br>🙇‍♂<a data-href="Spring Batch 구조 드로잉" href="project/hello-batch/spring-batch-구조-드로잉.html#_0" class="internal-link" target="_self" rel="noopener nofollow">Spring Batch 구조 드로잉</a> <br>👩‍👧‍👦<a data-href="유입 통계 APP__SPRING AOP에 관하여" href="project/hello-marketing/유입-통계-app__spring-aop에-관하여.html#_0" class="internal-link" target="_self" rel="noopener nofollow">유입 통계 APP__SPRING AOP에 관하여</a>
-<br>👩‍👧‍👦<a data-href="유입 통계 ADMIN용 테이블 설계 과정" href="project/hello-marketing/유입-통계-admin용-테이블-설계-과정.html#_0" class="internal-link" target="_self" rel="noopener nofollow">유입 통계 ADMIN용 테이블 설계 과정</a> <br>☕<a data-href="JAVA , OOP" href="study/프로그래밍/java-,-oop.html#_0" class="internal-link" target="_self" rel="noopener nofollow">JAVA , OOP</a>
-<br>🍃<a data-href="Spring" href="study/프로그래밍/spring.html#_0" class="internal-link" target="_self" rel="noopener nofollow">Spring</a>
-<br>🧰<a data-href="DevOps" href="study/프로그래밍/devops.html#_0" class="internal-link" target="_self" rel="noopener nofollow">DevOps</a>
-<br>🗒<a data-href="DataBase" href="study/프로그래밍/database.html#_0" class="internal-link" target="_self" rel="noopener nofollow">DataBase</a>
-<br>📭<a data-href="Server" href="study/프로그래밍/server.html#_0" class="internal-link" target="_self" rel="noopener nofollow">Server</a>
-<br>🎵<a data-href="Obsidian" href="study/프로그래밍/obsidian.html#_0" class="internal-link" target="_self" rel="noopener nofollow">Obsidian</a>
-<br>🐞<a data-href="etc" href="study/프로그래밍/etc.html#_0" class="internal-link" target="_self" rel="noopener nofollow">etc</a> <br>🥈<a data-href="필기 1과목 - 소프트웨어 설계" href="study/정보처리기사/정보처리기사-필기/필기-1과목-소프트웨어-설계.html#_0" class="internal-link" target="_self" rel="noopener nofollow">필기 1과목 - 소프트웨어 설계</a>
-<br>🥈<a data-href="필기 2과목 - 소프트웨어 개발" href="study/정보처리기사/정보처리기사-필기/필기-2과목-소프트웨어-개발.html#_0" class="internal-link" target="_self" rel="noopener nofollow">필기 2과목 - 소프트웨어 개발</a>
-<br>🥈<a data-href="필기 3과목 - 데이터베이스 구축" href="study/정보처리기사/정보처리기사-필기/필기-3과목-데이터베이스-구축.html#_0" class="internal-link" target="_self" rel="noopener nofollow">필기 3과목 - 데이터베이스 구축</a>
-<br>🥈<a data-href="필기 4과목 - 프로그래밍 언어 활용" href="study/정보처리기사/정보처리기사-필기/필기-4과목-프로그래밍-언어-활용.html#_0" class="internal-link" target="_self" rel="noopener nofollow">필기 4과목 - 프로그래밍 언어 활용</a>
-<br>🥈<a data-href="필기 5과목 - 정보시스템 구축관리" href="study/정보처리기사/정보처리기사-필기/필기-5과목-정보시스템-구축관리.html#_0" class="internal-link" target="_self" rel="noopener nofollow">필기 5과목 - 정보시스템 구축관리</a> <br>🥇<a data-href="정보처리 기사 실기 키워드" href="study/정보처리기사/정보처리기사-실기/정보처리-기사-실기-키워드.html#_0" class="internal-link" target="_self" rel="noopener nofollow">정보처리 기사 실기 키워드</a>
-]]></description><link>index.html</link><guid isPermaLink="false">index.md</guid><pubDate>Wed, 19 Feb 2025 04:40:22 GMT</pubDate><enclosure url="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Hand%20with%20Fingers%20Splayed%20Light%20Skin%20Tone.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Hand%20with%20Fingers%20Splayed%20Light%20Skin%20Tone.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Spring Batch 트러블 슈팅]]></title><description><![CDATA[<a href=".?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href=".?query=tag:개발" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개발">#개발</a> <a href=".?query=tag:SPRING" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SPRING">#SPRING</a> <a href=".?query=tag:Batch" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Batch">#Batch</a> <a href=".?query=tag:Partitioning" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Partitioning">#Partitioning</a> <a href=".?query=tag:Chunk" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Chunk">#Chunk</a>기존 예치금 차액비교 Batch의 Tasklet방식의 배치의 단점을 보완하는 chunk 방식의 배치를 구현하고,
-나아가 다른 기능의 Batch에도 효과적으로 빠르게 적용할 수 있는재사용성/유지보수성 높은 코드, 선례를 만들기 위함이다.
-Chunk, Partioning방식을 Job을 추가 개발 (기존 balanceJob 유지)
-당분간 두 Job을 병행하면서 비교
-추가한 Job 기능에 문제없다면 기존 balanceJob 삭제 평균 소요시간: 약 17.35분
-최대 소요시간: 22분
-최소 소요시간: 12분<br>
-<img alt="output (1).png" src="사진-및-문서/output-(1).png" target="_self"> 처음 가져온 Point 배치 완료시 까지 계속 물고있다. -&gt; 한 트렌젝션의 범위가 넓다. G5-Point 등은 처음 7시 시점에 묶여있다. 회원별로 실데이터를 건건이 api(신한)를 호출하여 비교한다. 때문에, 7시 이후에 수정된데이터를 실시간으로 반영하지 못한다. 목적 : batch의 step 레벨에서의 스레드 분리 ( 병렬처리 ) 독립적인 ExecutionContext가 주어져 상태를 안전하게 관리할 수 있다. 목적 : 각 step내의 트렌젝션 단위 분리
-Reader / Processor / writer 가 역할을 분담 Partition 생성: Partition 1 : ID 1 ~ 25 / 대기열1 : ID 101 ~ 125 / 대기열2 : ID 201 ~ 225
-Partition 2 : ID 26 ~ 50 / 대기열 : ID 126 ~ 150 / 대기열2 : ID 226 ~ 250
-Partition 3 : ID 51 ~ 75 / 대기열 : ID 151 ~ 175 / 대기열2 : -
-Partition 4 : ID 76 ~ 100 / 대기열 : ID 176 ~ 200 / 대기열2 : - 각 Partition에서 Chunk 처리: Partition 1: Chunk 1: ID 1 ~ 10 → 커밋
-Chunk 2: ID 11 ~ 20 → 커밋
-Chunk 3: ID 21 ~ 25 → 커밋 Partition 2: Chunk 1: ID 26 ~ 35 → 커밋
-Chunk 2: ID 36 ~ 45 → 커밋
-Chunk 3: ID 46 ~ 50 → 커밋 나머지 Partition도 동일 방식으로 처리. 병렬 실행: 스레드 풀 크기 = 4이므로 4개의 Partition이 동시에 실행됩니다.
-Partition 처리 순서는 스레드 풀에서 처리되는 순서에 따라 다를 수 있음. 트랜잭션 관리: 각 Partition은 독립적인 트랜잭션을 가짐.
-각 Chunk가 커밋될 때마다 트랜잭션이 종료됨. Partition 생성: Partition 1 : ID 1 ~ 25 / 대기열1 : ID 101 ~ 125 / 대기열2 : ID 201 ~ 225
-Partition 2 : ID 26 ~ 50 / 대기열 : ID 126 ~ 150 / 대기열2 : ID 226 ~ 250
-Partition 3 : ID 51 ~ 75 / 대기열 : ID 151 ~ 175 / 대기열2 : ID 251 ~ 275
-Partition 4 : ID 76 ~ 100 / 대기열 : ID 176 ~ 200 / 대기열2 : ID 276 ~ 300
-추가 스레드 풀 생성
-Partition 5 : ID 300 ~ 325 / 대기열 : ID 326 ~ 350 / 대기열2 : ID 351 ~ 375
-추가 스레드 풀 생성
-Partition 6 : ID 376 ~ 400 / 대기열 : ID 401 ~ 425 / 대기열2 : ID 426 ~ 450 모든 대기열 소모 및 최대 스레드 풀 도달 =&gt; 작업 중단 및 오류 -&gt; 이로볼때, 쿼리작업보다 api호출작업의 소요시간이 길어보임범위 - 2017-11-07 ~ 2017-12-01
-startDate=2017-11-07&amp;endDate=2017-12-01기존 병렬처리 : 1분 7초
-기존로직 : 6분 32초t:스레드 개수 / c:각 스레드별 청크 파티션 수SimpleAsyncTaskExecutor
-g4/c10 : 1분 41.586초
-g5/c10 : 1분 30.037초
-g5/c3 : 1분 28.997초
-g5/c1 : 1분 29.931초
-g8/c10 : 1분 36.019초
-g10/c1 : 1분 24.529초 ThreadPoolTaskExecutor
-Th min/maxSize64, g64/c10 : 1분 42.848초
-Th min/maxSize32, g32/c10 : 1분 26.551초Th min/maxSize16, g16/c10 :
-1분 46.753초 / 1분 33.779초 / 2분 25.759초
-1분 11.668초 / 2분 5.773초 / 2분 39.553초Th min/maxSize32, g8/c20 : 3분 25.743초Th min/maxSize16, g4/c10 : 2분 29.207초 / 2분 8.004초
-Grid사이즈(파티셔닝 갯수) 만큼 스레드 풀 계속 생성
-파티셔닝 갯수가 많아졌을 때, 스레드 생성/소멸에 드는 오버헤드 증가 최소 스레드풀 개수 / 최대 스레드풀 개수 / 대기열 큐 크기 / 유휴 시간 모두 설정가능
-파티셔닝 갯수가 많을 경우, 처리 성능에 맞는 스레드 풀에서 대기작업으로 처리하여 오버헤드 감소 총 처리량 기준 1/n로 각 스레드에 할당시 충분히 감당한 양으로, 대기열을 사용할 필요가 없다. 쿼리 호출 및 페이징 기법 직접 구현 Native Query 형태로 호출하여 자동 페이징 Spring Batch에서는 공식적으로 지원하지 않음
-자동 페이징
-Querydsl형태로 쿼리 호출 가능 기존(헬로)의 Querydsl기반 JPAQuery를 그대로 사용 가능
-자동 페이징
-그 외 Querydsl의 장점 보유 기존 PagingItemReader의 메서드를 오버라이딩 하여 사용하며,
-JPQL이 수행되던 부분에 코드를 수정하였다.
-@Bean @Scope(value = "step", proxyMode = ScopedProxyMode.TARGET_CLASS) public QuerydslPagingItemReader&lt;HfbatBankBalanceCheckDto&gt; balanceReader() { ExecutionContext jobContext = Objects.requireNonNull(StepSynchronizationManager.getContext()).getStepExecution().getJobExecution().getExecutionContext(); Date startDate = (Date) jobContext.get(START_DATE_KEY); Date endDate = (Date) jobContext.get(END_DATE_KEY); return new QuerydslPagingItemReader&lt;&gt;( entityManagerFactory, executionOrder, DEFAULT_CHUNK_SIZE, queryFactory -&gt; repository.newFindChangeBalanceMemberList( startDate, endDate )); } 각 파티션 스레드 별 종료 시간이 크게 상이하다. 총 소요시간 기준 최대 약 20% 차이
-적용 한다면, 각 스레드 별로 even하게 작업을 수행하여 총 소요시간을 줄일 수 있을것이라 판단 JOB private static AtomicLong executionOrder = new AtomicLong(0); ... new QuerydslPagingItemReader&lt;&gt;( entityManagerFactory, executionOrder, DEFAULT_CHUNK_SIZE, queryFactory -&gt; repository.newFindChangeBalanceMemberList( startDate, endDate )); job 레벨에서의 스레드 세이프한 전역 변수를 생성하였다.
-그 후, 각 파티션 별 리더에 인자값으로 넘긴다.
-long currentExecutionOrder = executionOrder.getAndIncrement(); long startIndex = (currentExecutionOrder) * getPageSize(); int totalRecords = stepContext.getInt("totalRecords"); if (startIndex &gt;= totalRecords) { initResults(); // 빈 결과로 초기화 tx.commit(); return; } int chunkSizeToRead = Math.min(getPageSize(), (int) (totalRecords - startIndex)); // 남은 데이터 크기만큼 읽기 // QueryDSL Query 생성 JPQLQuery&lt;T&gt; query = createQuery() .offset(startIndex) .limit(chunkSizeToRead); 먼저 한 청크단위의 작업을 끝낸 파티션은 그 다음 작업을 즉시 할당받게 된다.
-즉, 총 처리시간 기준 가장 빨리끝난 파티션과 가장 늦게 끝난 파티션의 실행 시간 차이는 최대 한 청크사이즈를 처리하는 시간보다 크지 않게 된다.
-1차 비교 이후 차액이 발생한 녀석들의 List 를 한번 더 검증한 후, =&gt; 추후 변경 됨
-검증된 녀석들을 List&lt;BalanceCheckResultDto&gt; realDiffList= new ArrayList&lt;&gt;();
-최종적인 차액 리스트에 넣는다.writer는 각 프로세서의 리턴으로 받은 녀석들을 하나의 DTO List로 합쳐 메세징 처리를 하게 된다.
-유지보수성이 좋다.
-환경셋팅에 리소스가 많이든다. 구현 레벨이 가장 쉽다
-DTO(데이터)가 많아질 경우, 큰 리소스를 차지한다. 방법 2.보다는 리소스가 적지만, 문자열 처리 시간이 추가로 소모된다. 높은 쓰기 성능을 갖고있다.
-동시성 문제 없이 다중 스레드에서 사용 가능하다.
-인덱스로 접근이 불가능하다.
-QueueManager클래스를 생성하며 공통으로 사용 가능하도록 하였고,@Slf4j public class QueueManager&lt;T&gt; { protected final ConcurrentLinkedQueue&lt;T&gt; sharedQueue = new ConcurrentLinkedQueue&lt;&gt;(); // 데이터 추가 public void addItemToSharedQueue(T item) { if (item != null) { sharedQueue.add(item); } }
-이를 상속받아 특정 오브젝트를 넘길 수 있도록 하였다.public class BalanceQueue extends QueueManager&lt;BalanceCheckResultDto&gt;{ public List&lt;BalanceCheckResultDto&gt; getDtoFromQueue() { return super.getItemsFromQueue(); } } 보통의 Batch 서비스라면 I/O 작업에 부하가 걸려있겠지만, 현재 예치금 차액 배치는 processor 즉, 예치금 비교 연산에서 큰 리소스를 소모하고있다.
-이에 해당하는 시간 소모를 줄이기 위해 processor(서비스로직) 을 병렬처리 함으로 최종 처리시간 단축을 꾀할 수 있을지에 대한 고민이다.
-이후 설명하겠지만, 내부 병렬처리 로직은 청크의 트렌젝션을 무너뜨릴 가능성이 크므로 지양해야함.
-<br><img alt="Pasted image 20241206113120.png" src="사진-및-문서/pasted-image-20241206113120.png" target="_self">소요시간 : 1분 9초
--&gt; 기존 limit절을 이용한 로직보다 속도가 더빠르며,
-JpaPagingReader를 적용한다면 중복 select횟수를 줄여 더 빨라질 것으로 예상된다.결론 : 둘 중 하나#### 292 컬럼
-## Processor 삭제(병렬처리)로직
-#### grid-size:6 / chunk-size:20
-54679 ms
-54416 ms
-## Processor 순차처리(writer만 병렬처리) 로직 #### grid-size:6 / chunk-size:20
-60440 ms
-62271 ms
-#### grid-size:10 / chunk-size:20
-58129 ms
-56723 ms
-#### grid-size:16 / chunk-size:20
-58595 ms
-56314 ms #### grid-size:32 / chunk-size:20
-- SQLTransientConnectionException
-- 스레드풀 점유갯수 초과 하지만, 이후 청크 방식 Batch의 확장성과 유지보수성을 고려하여 리더,프로세서,라이터 방식으로 구현하기로 정했다.
-grid-size:12 / chunk-size:30
--
-3분 22.856초
-3분 23.096초 grid-size:12 / chunk-size:20
--
-3분 23.546초
-3분 23.784초 grid-size:12 / chunk-size:10
--
-3분 24.243초
-3분 22.389초
-3분 24.667초
-3분 24.789초 grid-size:12 / chunk-size:5
--
-3분 24.953초
-3분 24.353초 트렌젝션 분리가 되어있지 않았기 떄문에 청크사이즈를 아무리 잘게 쪼개도 시간이 같았던 것이다.
-그럼 트렌젝션이 분리되지 않은 이유는?
-dtoList.stream().parallel() .forEach(dto -&gt; {});
-parallel문으로 내부 병렬처리로직을 구현했기 때문에, chunk의 트렌젝션에서 벗어나,
-매 insert문 마다 커밋을 하였던 것이다.]]></description><link>project/hello-batch/spring-batch-트러블-슈팅.html</link><guid isPermaLink="false">project/hello Batch/Spring Batch 트러블 슈팅.md</guid><pubDate>Wed, 19 Feb 2025 01:24:45 GMT</pubDate><enclosure url="사진-및-문서/output-(1).png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/output-(1).png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Obsidian]]></title><description><![CDATA[<a href=".?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a> <a href=".?query=tag:메모" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#메모">#메모</a> <a href=".?query=tag:Obsidian" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Obsidian">#Obsidian</a>
-옵시디언은 Markdow기반의 노트 작성 및 지식 관리 어플이다.
-특히, 데이터 시각화 및 개인지식관리에 뛰어나다. 옵시디언은 Markdown 형식을 기반으로 노트를 작성하며, 간단한 텍스트 포맷팅(굵게, 기울임, 리스트, 링크 등)이 가능.
-.md 파일로 저장되어 데이터 이동 및 백업이 자유로움. 옵시디언은 위키 스타일의 링크([[노트 제목]])를 사용하여 노트 간 연결이 가능.
-노트 간의 관계를 자동으로 분석하여 연결된 구조를 보여줌. 연결된 노트들을 시각적으로 보여주는 그래프 뷰 제공.
-노트 간의 관계를 네트워크 그래프 형태로 표현하여 지식 네트워크 구축에 용이. 기본 기능 외에도 다양한 플러그인을 추가하여 확장 가능.
-공식 플러그인 및 커뮤니티에서 제공하는 다양한 기능 추가 가능. 예: 캘린더, 태그 관리, LaTeX 지원, AI 플러그인 등. 클라우드가 아닌 로컬 저장 방식을 기본으로 하여 데이터 소유권을 보장.
-추가적으로 Obsidian Sync를 사용하면 여러 기기 간 동기화 가능. Windows, macOS, Linux, iOS, Android에서 사용 가능.
-모바일에서도 원활한 노트 작성과 검색이 가능. 자주 사용하는 노트 형식을 템플릿으로 저장하여 반복 사용 가능.
-태그(#태그이름)를 활용하여 노트 분류 및 검색 가능. 특정 키워드를 기반으로 노트 검색 가능.
-정규 표현식(Regex) 지원으로 복잡한 검색도 가능
-<br><img alt="Pasted image 20250218145702.png" src="사진-및-문서/pasted-image-20250218145702.png" target="_self"><br><img alt="Pasted image 20250218145823.png" src="사진-및-문서/pasted-image-20250218145823.png" target="_self">노션이란? - 올인원 생산성 및 노트 관리 도구로, 노트 작성, 데이터베이스, 프로젝트 관리, 협업 기능을 통합적으로 제공하는 플랫폼이다단편적으로 기능의 차이를 보면 다음과 같다.
-옵시디언의 최대 장점으로는 다양한 유저 커스텀 플러그인이 있다.
-노션에서 기본으로 지원하는 캘린더, 데이터베이스, 클라우드, 템플릿 등을 모두 사용 가능하다.
-또한, 해당되는 플러그인 들은 유저들에 의해 지속적으로 업데이트 된다.
-EX) ChatGPT / HTML Export / Git 등등..
-옵시디언은 노션과 달리 로컬 네이티브앱으로 인터넷 연결없이도 사용이 가능하다.
-로컬환경에서 Markdown문법만으로 문서가 작성되기 때문에 속도가 무척 빠르고 쾌적하다.
-또한, 로컬 저장 방식으로 직접적인 데이터의 소유가 가능하다. → 보안이 뛰어나다고 볼 수 있다. 옵시디언은 기본적으로 모든 기능이 제한없이 무료이다.
-! 유료 서비스인 Obsidian Sync(클라우드 동기화 서비스) 가 있지만, Git을 통한 형상관리를 한다면 전혀 사용할 필요가 없다
-따라서, 용량에 구애받지 않고 무제한 확장이 가능하다고 볼 수 있다. 그럼에도 노션이 가지는 장점도 만만치 않으며, 옵시디언의 단점 또한 존재한다.
-즉, 각자의 작업 환경 및 취향에 맞추어서 최적의 Tool을 선택하는 것이 바람직 하다고 볼 수 있다.
-나는 그래도 옵시디언이다.
-]]></description><link>study/프로그래밍/obsidian.html</link><guid isPermaLink="false">study/프로그래밍/Obsidian.md</guid><pubDate>Tue, 18 Feb 2025 07:29:20 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250218145702.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20250218145702.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[필기 5과목 - 정보시스템 구축관리]]></title><description><![CDATA[<a href=".?query=tag:정보처리기사" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#정보처리기사">#정보처리기사</a> <a href=".?query=tag:필기" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#필기">#필기</a> <a href=".?query=tag:정리" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#정리">#정리</a> 클래스 인터페이스
-명령어(사용자 질의 수)
-데이터 파일
-출력 보고서
-]]></description><link>study/정보처리기사/정보처리기사-필기/필기-5과목-정보시스템-구축관리.html</link><guid isPermaLink="false">study/정보처리기사/정보처리기사 필기/필기 5과목 - 정보시스템 구축관리.md</guid><pubDate>Tue, 18 Feb 2025 02:33:18 GMT</pubDate></item><item><title><![CDATA[필기 4과목 - 프로그래밍 언어 활용]]></title><description><![CDATA[<a href=".?query=tag:정보처리기사" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#정보처리기사">#정보처리기사</a> <a href=".?query=tag:필기" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#필기">#필기</a> <a href=".?query=tag:정리" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#정리">#정리</a> 다른 프로세스가 뺐지 못하는 상태.
-#### - 최적의 경로를 산출하기 위한 정보로서 홉(거리 값)만을 고려하므로, RIP를 선택한 경로가 ==최적의 경로가 아닌경우가== 많이 발생할 수 있다.
-]]></description><link>study/정보처리기사/정보처리기사-필기/필기-4과목-프로그래밍-언어-활용.html</link><guid isPermaLink="false">study/정보처리기사/정보처리기사 필기/필기 4과목 - 프로그래밍 언어 활용.md</guid><pubDate>Tue, 18 Feb 2025 02:28:00 GMT</pubDate></item><item><title><![CDATA[필기 3과목 - 데이터베이스 구축]]></title><description><![CDATA[<a href=".?query=tag:정보처리기사" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#정보처리기사">#정보처리기사</a> <a href=".?query=tag:필기" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#필기">#필기</a> <a href=".?query=tag:정리" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#정리">#정리</a> 0 or 1
-트렌젠션 전/후 같아야함
-다른 트렌젝션의 간섭 X
-트렌젝션 커밋 결과가 영구히 저장
-하드웨어와 소프트웨어의 물리적 위치를 사용자가 알 필요 없다. 논리적인 명칭으로만 엑세스할 수 있음
-사용자에게 통지할 필요없이 시스템 안에 파일들과 자원들의 부가적인 복사를 자유롭게 할 수 있다.
-다중 사용자들이 자원들을 자동으로 공유할 수 있다.
-사용자들은 어는 위치의 시스템에 장애가 발생했는지 알 필요가 없다.
-트렌젝션 모델링 / 독립적인 개념 스키마 모델링 / 개념스키마 설계 / E-R 다이어그램
-트렌젝션 인터페이스 설계 / DBMS에 맞는 논리스키마 설계 / 테이블설계 / 논리적 맵핑 / 스키마 평가 및 정제
-레코드 집중의 분석,설계 / 저장레코드 양식 설계 / 저장 구조 및 엑세스 경로 설정
-각 릴레이션의 기본키를 구성하는 속성은 null값이나 중복값을 갖을 수 없음.
-]]></description><link>study/정보처리기사/정보처리기사-필기/필기-3과목-데이터베이스-구축.html</link><guid isPermaLink="false">study/정보처리기사/정보처리기사 필기/필기 3과목 - 데이터베이스 구축.md</guid><pubDate>Tue, 18 Feb 2025 02:26:12 GMT</pubDate></item><item><title><![CDATA[필기 2과목 - 소프트웨어 개발]]></title><description><![CDATA[<a href=".?query=tag:정보처리기사" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#정보처리기사">#정보처리기사</a> <a href=".?query=tag:필기" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#필기">#필기</a> <a href=".?query=tag:정리" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#정리">#정리</a> 프로그램의 하위 모듈에서 상위 모듈 방향으로 통합
-하나의 주요 제어 모듈과 관련된 종속 모듈의 그룹인 클러스터 필요 상위 모듈에서 하위 모듈방향으로 통합
-깊이 우선 통합법, 넓이 우선 통합법 사용
-초기부터 사용자에게 시스템 구조를 보여줌 사용사례를 확장하여 명세하거나 설계 다이어그램, 원시코드, 테스트 케이스 등에 적용할 수 있다.
-복잡한 알고리즘 또는 반복, 실시간 동작, 병행 처리와 같은 기능이나 동작을 이해하려고 할 때 유용하다.
-단순한 테스트 케이스를 이용하여 프로덕트를 수작업으로 수행해 보는 것이다.
-요구사항 명세서 작성자를 포함하여 사전 검토한 후에 짧은 검토 회의를 통해 결함을 발견 요구사항 명세서 작성자를 제외한 다른 검토 전문가들이 요구사항 명세서를 확인하면서 결함을 발견
-]]></description><link>study/정보처리기사/정보처리기사-필기/필기-2과목-소프트웨어-개발.html</link><guid isPermaLink="false">study/정보처리기사/정보처리기사 필기/필기 2과목 - 소프트웨어 개발.md</guid><pubDate>Tue, 18 Feb 2025 02:25:36 GMT</pubDate></item><item><title><![CDATA[필기 1과목 - 소프트웨어 설계]]></title><description><![CDATA[<a href=".?query=tag:정보처리기사" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#정보처리기사">#정보처리기사</a> <a href=".?query=tag:필기" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#필기">#필기</a> <a href=".?query=tag:정리" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#정리">#정리</a> 클래스 인터페이스
-명령어(사용자 질의 수)
-데이터 파일
-출력 보고서
-]]></description><link>study/정보처리기사/정보처리기사-필기/필기-1과목-소프트웨어-설계.html</link><guid isPermaLink="false">study/정보처리기사/정보처리기사 필기/필기 1과목 - 소프트웨어 설계.md</guid><pubDate>Tue, 18 Feb 2025 02:25:29 GMT</pubDate></item><item><title><![CDATA[유입 통계 APP__SPRING AOP에 관하여]]></title><description><![CDATA[<a href=".?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href=".?query=tag:개발" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개발">#개발</a> <a href=".?query=tag:DB" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#DB">#DB</a><br><a rel="noopener nofollow" class="external-link is-unresolved" href="https://www.hellofunding.co.kr/sp/loan/gtLoan?p=a2FrYW8xc3QK" target="_self">https://www.hellofunding.co.kr/sp/loan/gtLoan?p=a2FrYW8xc3QK</a><br>
-<a rel="noopener nofollow" class="external-link is-unresolved" href="https://www.hellofunding.co.kr/sp/loan/gtLoan?p=a2FrYW8xc222" target="_self">https://www.hellofunding.co.kr/sp/loan/gtLoan?p=a2FrYW8xc222</a>
-통계 필요 페이지 내에서(프론트), 쿠키 데이터 페이지 별 최초 진입 확인? 해당 진입시점부터 특정 동작에 대한 모든 타임라인 로그 레디스 가용 메모리에 대한 한계값 산정. -&gt; 아직 적용 X URL + 함수명 조합
-=&gt; 메인 테이블
-=&gt; 백로직에서 쿠키 데이터 쌓기=&gt; 디테일 테이블 - 타임라인으로 관리 단, 메인테이블에 존재하는 내셕들에 대해서
-=&gt; AOP에서 특정 서비스or메서드orURL로 지정하여 로그 쌀기- 관심사(Aspect)를 분리하여, 각 서비스 메서드에 반복해서 구현하는 것이 아닌, 별도의 Aspect로 관리하여 핵심로직을 공통으로 적용하기 위함이다. 난수 생성 후 물고있기☑ IP로 추적 <br><img alt="Pasted image 20241224144309.png" src="사진-및-문서/pasted-image-20241224144309.png" target="_self">쿠키가 필요한 페이지의 경로가 기본 path와 일치하는 경우(redirect url 이 SP_MARKETING_HIT_TEST1 의 하위 url일 경우)
-에는 명시적으로 표시할 필요가 없지만,<br><img alt="Pasted image 20241226111559.png" src="사진-및-문서/pasted-image-20241226111559.png" target="_self">
-장점: 코드가 간결하고 읽기 쉽다.
-Spring의 AOP 인프라를 사용하여 메서드 인터셉션을 쉽게 구현할 수 있다. 단점:
-- 포인트컷 조건은 컴파일 시점에 고정된다.
-- 복잡한 조건이나 동적으로 변경되는 조건을 처리하기 어렵다. -&gt; @Pointcut 등의 조건에 부합하는 Bean객체를 컴파일 시점에 찾아내어 프록시를 감싼다. 동적 생성: 런타임에 프록시를 생성하여 포인트컷과 어드바이스를 동적으로 적용.
-StaticMethodMatcherPointcut 또는 DynamicMethodMatcherPointcut을 사용하여 런타임 조건 기반으로 메서드 매칭. 장점: 런타임 조건에 따라 동적으로 포인트컷 생성 가능.
-복잡한 조건과 동적 필터링을 처리하기 용이.
-Spring AOP가 아닌 순수 Java 프록시 방식도 지원. 단점: 코드가 복잡해지고 추가 구현이 필요.
-Spring AOP와 동일한 수준의 간결성을 제공하지 않음. -&gt; 해당 프록시 객체를 적용하고 싶은 Bean객체에 매번 생성(등록)해주어야 함.import org.springframework.aop.Pointcut;
-import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator;
-import org.springframework.aop.support.DefaultPointcutAdvisor;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration; @Configuration
-public class AopConfig { @Bean public Pointcut customPointcut() { return new CustomPointcut(); } @Bean public CustomAdvice customAdvice() { return new CustomAdvice(); } @Bean public DefaultPointcutAdvisor customAdvisor(Pointcut customPointcut, CustomAdvice customAdvice) { return new DefaultPointcutAdvisor(customPointcut, customAdvice); } @Bean public DefaultAdvisorAutoProxyCreator proxyCreator() { return new DefaultAdvisorAutoProxyCreator(); }
-} @Pointcut 방식과 동일한 동작: Spring 컨테이너가 관리하는 모든 빈에 대해 조건을 평가하고 프록시를 자동 생성합니다. 프록시를 명시적으로 선언할 필요 없음: ProxyFactory처럼 수동으로 프록시를 생성하지 않아도 됩니다. 유연성과 효율성 향상: Spring AOP 인프라를 활용하므로, 관리가 용이하고 런타임 성능이 개선됩니다. BeanPostProcessor: DefaultAdvisorAutoProxyCreator는 Spring의 BeanPostProcessor를 구현한 클래스이다.
-Spring 컨테이너는 애플리케이션 컨텍스트에 등록된 모든 BeanPostProcessor를 자동으로 호출하여 빈의 초기화 전후 작업을 수행한다.
-이를 통해, Spring AOP는 빈 생성 단계에서 프록시를 생성하고 조건에 맞는 빈에 대해 어드바이저를 적용. Advisor 탐색: DefaultAdvisorAutoProxyCreator는 Spring 컨텍스트에 등록된 모든 Advisor를 자동으로 탐색한다.
-이는 DefaultAdvisorAutoProxyCreator가 BeanFactory를 통해 컨테이너의 모든 Advisor 타입 빈을 조회하기 때문.
-탐색된 Advisor를 사용하여 각 빈의 메서드와 포인트컷 조건을 매칭. Advisor와 빈의 매칭: 빈이 생성될 때, DefaultAdvisorAutoProxyCreator는 해당 빈의 메서드가 어떤 Advisor의 포인트컷 조건에 부합하는지 평가.
-조건에 부합하면, 해당 빈을 프록시 객체로 감싸고, 어드바이스를 연결. 이렇게 맵핑이 되어야 하나, 이를 동적으로 탐지하지 못한다.
-/* * EnableAspectJAutoProxy &gt; 프록시 적용시 인터페이스/클래스 여부 자동 판단 * 클래스에 인터페이스가 있으면 JDK 동적 프록시. * 인터페이스가 없으면 CGLIB 프록시. * */@Configuration @EnableAspectJAutoProxy public class AopConfig { @Bean public Pointcut customPointcut() { return new CustomPointcut(); } @Bean public CustomAdvice customAdvice() { return new CustomAdvice(); } @Bean public DefaultPointcutAdvisor customAdvisor(Pointcut customPointcut, CustomAdvice customAdvice) { return new DefaultPointcutAdvisor(customPointcut, customAdvice); } /* * @EnableAspectJAutoProxy를 사용해 등록했기 때문에 불필요. * */ // @Bean // public DefaultAdvisorAutoProxyCreator proxyCreator() { // return new DefaultAdvisorAutoProxyCreator(); // } }
-프록시(Proxy)는 대리자라는 뜻으로, 다른 객체에 대한 인터페이스 역할을 하는 객체를 말합니다. 프로그래밍에서 프록시는 실제 객체에 접근하기 전에 특정 작업(로깅, 보안, 트랜잭션 관리 등)을 수행하거나, 객체에 대한 접근을 제어하는 데 사용됩니다.
-대리 객체: 프록시는 실제 객체에 대한 중간다리 역할을 합니다.
-동작 조정: 프록시는 요청을 가로채서 추가적인 작업을 수행하거나, 요청을 변형한 뒤 실제 객체에 전달할 수 있습니다.
-AOP와 연관: 프록시를 사용하면 코드를 변경하지 않고도 객체의 동작을 확장하거나 변경할 수 있습니다.
-Method Name: loanerLoginPage
-javax.servlet.http.HttpServletRequest
-org.springframework.web.bind.annotation.GetMapping <br><img alt="Pasted image 20241226152219.png" src="사진-및-문서/pasted-image-20241226152219.png" target="_self"><br><img alt="Pasted image 20241226171158.png" src="사진-및-문서/pasted-image-20241226171158.png" target="_self">
-외부링크 최초진입. hitCode, hitUid 발급 및 DB저장 외부링크 재진입. hitCode는 변경될 수 있으므로 "p"파라미터로 재발급
-=&gt; hitCode는 매번 재발급 / hitUid는 없을때만 발급 일반사용자 이며, 아무동작 하지 않는다. 외부링크 진입 후 동작. 없는 녀석 새로 발급 및 DB저장
-@Override @Transactional public ResponseModel insertMarketingHitLog(String hitCode, String hitUid, String pageUrl, String pageType){ try { Optional&lt;HfMarketingHitLog&gt; existingLog = hfMarketingHitLogRepository.findByHitCodeAndHitUidAndPageUrlAndPageType(hitCode, hitUid, pageUrl, pageType); if (existingLog.isPresent()) { HfMarketingHitLog logToUpdate = existingLog.get(); logToUpdate.setUpdateDate(LocalDateTime.now()); hfMarketingHitLogRepository.save(logToUpdate); return new ResponseModel(ResponseModel.ResponseStatus.SUCCESS); } HfMarketingHitLog hfMarketingHitLog = HfMarketingHitLog.builder() .hitCode(hitCode) .hitUid(hitUid) .pageUrl(pageUrl) .pageType(pageType) .build(); hfMarketingHitLogRepository.save(hfMarketingHitLog); return new ResponseModel(ResponseModel.ResponseStatus.SUCCESS); } catch (Exception e) { return new ResponseModel(ResponseModel.ResponseStatus.FAILED, "데이터 처리 중 오류 발생"); } } 여러 쓰레드(또는 트랜잭션)가 findByHitCodeAndHitUidAndPageUrlAndPageType 메서드를 호출하여 동일한 조건의 데이터를 동시에 조회할 수 있다.
-두 쓰레드가 모두 existingLog.isPresent() 조건에서 false를 확인한 후, 동시에 새로운 HfMarketingHitLog 객체를 생성하고 저장하려 하면 데이터 중복 문제가 발생할 수 있다.
-. Lock을 쓰면 되나, 이후 업데이트 로직 삭제(로그 테이블화) 변경으로 처리<br><img alt="Pasted image 20241230135801.png" src="사진-및-문서/pasted-image-20241230135801.png" target="_self">
-1일의 유효기간을 갖는 uid를 발급하여, 인입코드 / Hit된 기능 주소 / 시간 을 저장한다.
-uid는 외부url로 접근시 발급
-page_url는 코드에 미리 등록 / hit_code는 모두(only 영문+숫자) 수용 가능
-<br><img alt="Pasted image 20250102160213.png" src="사진-및-문서/pasted-image-20250102160213.png" target="_self"><br>
-<img alt="Pasted image 20250102160223.png" src="사진-및-문서/pasted-image-20250102160223.png" target="_self">]]></description><link>project/hello-marketing/유입-통계-app__spring-aop에-관하여.html</link><guid isPermaLink="false">project/hello marketing/유입 통계 APP__SPRING AOP에 관하여.md</guid><pubDate>Tue, 18 Feb 2025 02:25:16 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20241224144309.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20241224144309.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[etc]]></title><description><![CDATA[<a href=".?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a> <a href=".?query=tag:기타" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#기타">#기타</a>순서를 맞추어 호출하는 로직과 예외처리를하는 로직이 컨트롤러에 집중되어 있다면 가독성이 떨어지게된다 이를 해결하기위해, 서비스에서 로직을 구현하게 된다면 서비스에서 서비스를 호출하는 순환참조를 야기할 수 있게된다. 이를위한 해결법으로 서비스를 주입받는 메인 서비스를 만들어 여러서비스를 주입받고 한개의 서비스에서 이를 동작시킬 수 있다. 1. String x = "abc"; 2. String y = new String("abc");
+<img alt="Pasted image 20250218161847.png" src="사진-및-문서/pasted-image-20250218161847.png" target="_self"> ]]></description><link>study/note-ci_cd/🟣-obsidian-정적호스팅-cicd-과정.html</link><guid isPermaLink="false">study/note CI_CD/🟣 Obsidian 정적호스팅 CICD 과정.md</guid><pubDate>Wed, 19 Feb 2025 04:45:47 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250218151731.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;사진-및-문서/pasted-image-20250218151731.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[☕JAVA , OOP]]></title><description><![CDATA[<a href=".?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a> <a href=".?query=tag:Java" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Java">#Java</a> <a href=".?query=tag:OOP" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#OOP">#OOP</a>- 컴파일 다형성
+- 이름이 같지만, 매개변수의 타입/개수/순서 를 다르게 정의하여 사용하는 방법
+- 어떤 메서드가 호출될지 컴파일 시점에서 결정
+- 코드를 직관적이게 만드는데 사용
+- 런타임 다형성
+- 부모클래스 또는 인터페이스에 정의된 메서드를 하위 클래스에서 재정의하여 사용하는 방법
+- 어떤 메서드가 호출될지 런타임 시점에 결정된다.
+Map&lt;String, Integer&gt; map1 = new HashMap&lt;&gt;();
+Map&lt;String, Integer&gt; map2 = new TreeMap&lt;&gt;();
+해당 형태로 map1 / 2를 구현했다면.
+객체 타입은 각각 HashMap/TreeMap 이 되며,
+변수 타입은 모두 Map이 된다.
+- 즉 map1.add / map2.add 등 Map인터페이스가 가진 함수만을 사용할 수 있으며,
+HashMap이나 TreeMap가 가진 고유메서드는 사용할 수 없다.
+하지만, 오버라이딩(런타임 다형성)으로 재정의한 각각의 메서드로 해당 동작이
+구현체의 특성에 맞게 실행되게 된다.Java는 다중 상속을 지원하지 않는다.(부모가 2명 이상인것)
+다중 상속 처럼 여러개를 상속받을 수 있다. 부모의 메서드를 사용하며, 동작이 의도대로 흘러가도록 강제할 수 있으나, 구현은 자식 클래스에서 하기때문에 결합도를 낮출 수 있다. 상속은 부모 클래스의 내부 구현에 대해 상세히 알아야 하기 때문에, 자식과 부모 사이의 결합도가 높아질 수 밖에 없다.
+또한, 부모의 쓸모없는 기능까지 모두 받게 될 가능성이 있다.
+부모 클래스가 수정되면, 자식클래스도 동시에 수정해야하는 경우가 생긴다.
+단일 상속만 가능하기 때문에, 결국 인터페이스를 또 사용하게 된다. 합성은 구현에 의존하지 않는 점에서 상속과 다르다. 합성을 이용했을 때는, 객체의 내부는 공개되지 않고 인터페이스를 통해 코드를 재사용하기 때문에,
+구현에 대한 의존성을 인터페이스에 대한 의존성으로 변경하여 결합도를 낮출 수 있다.
+합성 관계는 실행 시점에 동적으로 변경될수 있다.(런타임) public class Phone { private RatePolicy ratePolicy; // 클래스 합성 private List&lt;Call&gt; calls = new ArrayList&lt;&gt;(); // 클래스 합성 public Phone(RatePolicy ratePolicy) { this.ratePolicy = ratePolicy; } public List&lt;Call&gt; getCalls() { return Collections.unmodifiableList(calls); }
+} 객체지향 설계시 지켜야 하는 5가지 원칙들의 앞글자를 딴것이다.
+순서는 노상관이다.
+책임 = 기능 이다. 수정시 영향도를 낮추는 주요한 원칙이다.
+- 추상화 사용을 통한 관계를 구축하기를 권장하는 의미이다.
+- 추상클래스,인터페이스를 통한 관계를 구축하여 확장은 쉽고, 변경에는 영향도가 없어지도록 분리해라?
+- 코드에는 문제가 없더라도, 부모타입의 설계 목적에도 부합하도록 설계해라. -&gt; 부모의 동작의도대로 흘러가도록 설계해라
+- Map a = new HashMap(); 같이 구현해서, 사용해도 문제 없도록 하는거다
+- &gt; 변수는 Map타입으로, Map메서드만 사용가능하지만 객체는 HashMap이기 때문에 각각의 기능으로 수행되고, 수정시에도 Map을 상속받는 다른 클래스로 변경이 쉬워진다.
+- 인터페이스의 단일책임과 비슷하다. 기능별로 잘 분리하고, 수정을 최소화할수 있도록 처음부터 생각하라.
+- 리스코프 치환의 원칙을 따라 설계했다면, 의존성 역전의 원칙을 따르기 쉬워진다.
+- 의존관계를 맺을때, 변화기 쉬운것 보다, 변화하기 어려운 것에 의존하라는 것이다.
+]]></description><link>study/프로그래밍/☕java-,-oop.html</link><guid isPermaLink="false">study/프로그래밍/☕JAVA , OOP.md</guid><pubDate>Wed, 19 Feb 2025 04:45:43 GMT</pubDate></item><item><title><![CDATA[🐞 etc]]></title><description><![CDATA[<a href=".?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a> <a href=".?query=tag:기타" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#기타">#기타</a>순서를 맞추어 호출하는 로직과 예외처리를하는 로직이 컨트롤러에 집중되어 있다면 가독성이 떨어지게된다 이를 해결하기위해, 서비스에서 로직을 구현하게 된다면 서비스에서 서비스를 호출하는 순환참조를 야기할 수 있게된다. 이를위한 해결법으로 서비스를 주입받는 메인 서비스를 만들어 여러서비스를 주입받고 한개의 서비스에서 이를 동작시킬 수 있다. 1. String x = "abc"; 2. String y = new String("abc");
 1번의 경우로 생성했을 때는 abc라는 문자열을 String 상수 pool에 저장하고,
 다음번에 동일 문자열이 선언될 때 이풀에서 꺼내의 재사용하게 된다.2번의 경우엔 String을 인스턴스와 하여 새로운 객체를 생성하게 된다.
 String Class는 자신을 수정하는 기능을 제공하지 않기때문에,
@@ -283,33 +497,148 @@ singleton객체에 접근 시 초기화 관련하여 문제가 있다. 보통 Si
 public class Singleton { private Singleton() {} public static Singleton getInstance() { return LazyHolder.INSTANCE; } private static class LazyHolder { private static final Singleton INSTANCE = new Singleton(); }
 }
 처음 singleton로딩 시에는 LazyHolder클래스의 변수가 없기 때문에 초기화 하지 않는다.
-LazyHolder클래스는 singleton클래스의 getInstance( ) 메서드가 참조되는 순간 class가 로딩되며 초기화 된다.Class를 로딩하고 초기화하는 시점은 thread-safe가 보장되기 때문에, 성능과 안정성을 모두 보장하는 훌륭한 방법이다.]]></description><link>study/프로그래밍/etc.html</link><guid isPermaLink="false">study/프로그래밍/etc.md</guid><pubDate>Tue, 18 Feb 2025 02:14:02 GMT</pubDate></item><item><title><![CDATA[Server]]></title><description><![CDATA[<a href=".?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a> <a href=".?query=tag:Server" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Server">#Server</a>
-서버에 일을 분산시켜주는 역할을 한다. Random 랜덤분배 Least loaded 가장 적은양의 작업을 처리하고 있는 서버에게 요청 할당 Round Robin 순서를 정하여 돌아가며 작업 분배 layer4 : 데이터의 내용을 보지 않고 IP주소 및 TCP/UDP정보에 따라 단순히 분배를 해준다
-layer7 : 서버가 하는 역할이 분리되어 있는 환경에서 데이터의 내용을 보고 각기 맞는 역할을 하는 서버에게 분배
-로드밸런서는 클라이언트가 요청을 보내야 할 서버를 골라야하는 부담을 덜어주며, 로드 밸런서에게 할당된 vIP(가상IP)로 요청을 보내기만 하면 로드 밸런서에서 알아서 작업을 나눠준다.
-서버에서는 적절한 로드 밸런서를 사용하면 들어오는 요청이 여러 장비에 분산되어 처리량이 늘어나고 응답 시간이 줄어드는 효과를 기대할 수 있다. 웹서버가 클라이언트의 요청에 의해 웹페이지에 대한 응답 결과를 돌려줬을때,
-클라이언트의 화면에는 랜더링해야하는 수많은 이미지가 필요하다.
-이 이미지를 웹서버가 전부 주려면 데이터의 용량이 무거워서 서버에 부하가 걸리게 되는데,,
-따라서 웹서버는 이미지를 대신 건내주는 CDN에게 요청한다는 개념이다. CDN은 일반적으로 용량이 큰 컨텐츠 데이터를 빠른속도로 제공하기 위해 사용자와 가까운곳에 분산되어 있는 데이터 저장 서버이다. push CDN : 서버에서 컨텐츠가 업로드 되거나, 변경되었을 때 모두 반영하는 방식
-pull CDN : 클라이언트가 요청할 때마다 컨텐츠가 CDN에 새로 저장되는 방식
-두 방식 모두 장단점이 있다.
-Push방식은 모든 컨텐츠를 갖고 있기 때문에 웹서버에 요청할 일이 없지만 유지하는데 필요한 용량과 비용이 크고,
-Pull방식은 요청이 들어왔을 때 컨텐츠가 있다면 즉각 응답하지만, 그렇지 않을때 웹서버에 요청해야하는 부담이 있다.<br><img alt="Pasted image 20240603173517.png" src="사진-및-문서/pasted-image-20240603173517.png" target="_self">하지만, MSA의 경우 각 서비스마다 다른 데이터베이스를 사용하는 것이 일반적이고, 이를 하나의 데이터베이스 트렌젝션으로 처리하는 것은 기술적으로 어렵고, 처리한다 해도 긴 트렌젝션이 발생하기 때문에 효용도 적다.<br>
-<img alt="Pasted image 20240603180042.png" src="사진-및-문서/pasted-image-20240603180042.png" target="_self">
-tcc는 분산된 REST 시스템들 간의 트랜젝션을 HTTP와 REST원칙으로 접근하여 해결하는 방법이다.
-REST API 호출은 한 번에 끝내는 것이 아니라, 2번의 걸쳐서(Try / Confirm) 진행하게 된다.
-트렌젝션의 All-or-Nothing을 TCC의 REST API를 호출을 시도(Try)하고 전부 확정(Confirm)하거나 전부 취소(Cancel)하는 것으로 구현된다.
-Spring RestTemplate을 사용하여 HTTP 요청(POST)을 보냈을 때, try 요청의 경우 정상적인 HTTP응답(HttpStatus.CREATED)를 받으면 HTTP BODY에는 JSON형태로 Confirm하게 하거나 Cancel 할 수 있는 URL이 담겨 있다. 여기서 Service에서 반환받은 값을 기준으로 Confirm 할지 Cancel할지 선택하게 된다.
-중요한 것은 여기서 실제로 데이터베이스 테이블에 변경이 있는것 이 아닌, Confirm되었을때 그때 처리가 된다. 여기서 받은 반환값을 토대로 Service에서는 resource 필드(JSON)을 역질렬화 하고 이를 사용하여 그때 실제로 데이터베이스에 있는 테이블을 변경하게 된다. Try는 리소스를 사용하기 전에 예약하는 것이다. 만약 4.구매 주문 생성에서 Try만 하고, 실패했다면 REST로 통신은 기다리고 있던(Try만 한 상태) 두 API에는 Confirm이 전달되지 않아 예약만 된 상태로 남아있게 된다. 예약된 상태는 특정 리소스를 점유하고 있다는 의미이며, 리소스를 점유하고 있는 동안에는 다른 API에서 해당 리소스를 사용하는 것은 제한된다. 따라서, 4. 행위에서 Try만 하고 실패했다면, 예약한 리소스까지 해제해주어야 한다. 분산된 환경에서 리소스를 해제하는 것은 쉬운 문제가 아닌데, TCC매커니즘에서는 Cancel과 Timeout 두가지 방법으로 예약된 리소스를 해제한다.<br>
-<img alt="Pasted image 20240604102140.png" src="사진-및-문서/pasted-image-20240604102140.png" target="_self"> REST커뮤니케이션 관전에서 자세하게 설명하면,
-TCC REST API Consumer(여기선 OrderService)가 Try요청
-TCC REST API Provider (여기선 StockService/PaymentService)는 응답으로 Confirm하거나 Cancel할 수 있는 URI를 반환
-이를 사용하여 API Consumer는 DELETE HTTP Method로 예약한 리소스에 대한 해제를 요청한다.
-<br><img alt="Pasted image 20240604144026.png" src="사진-및-문서/pasted-image-20240604144026.png" target="_self">
-클라이언트가 주문을하고, OrderService는 StockService와 PaymentService로 Try한다.
-그리고 구매 주문을 생성 후 Confirm하였다. StockService는 재고 처리에 성공을 한 반면, PaymentService는 결제에 실패한다.
-이경우에는 어떻게 일관성을 유지할 수 있을까? 관계형 데이터베이스에서 트랜젝션을 처리할 때에는 데이터 적합성을 보장해야 하기 때문에 엄격한 일관성 모델을 사용한다.
-하지만 결제시스템 하나의 문제로 모든 비즈니스가 멈추게 되는 문제가 발생한다.(보통은 멈추는게 맞다) StockService와 PaymentService는 OrderService로부터 받은 Confirm요청을 Queue나 Log파일에 큐잉 하고, 이를 비동기적으로 처리한다. Confirm처리 과정에서 오류가 나는 경우 계속해서 재시도하여 결국(언젠가) 처리하게 한다. 이렇게 단기적으로 일관성을 잃더라도(클라이언트 입장에서는 성공했다고 느끼지만, 실제 결제처리가 되지 않았을 수도 있다.) 결국에서는 일관성을 유지하는 모델을 결과적 일관성 이라고 한다. 단, 결과적 일관성 모델은 단기적으로 일관성을 잃어버렸을 때를 대비한 화면 처리 등이 필요하다. ex) 아마존에서 전자책을 구입한 후, 결제 과정이 진행되었고 이후 카드가 정상처리되지 않는 메일을 받아, 2일후에 제대로 결제처리를 하였다. ]]></description><link>study/프로그래밍/server.html</link><guid isPermaLink="false">study/프로그래밍/Server.md</guid><pubDate>Tue, 18 Feb 2025 02:12:22 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20240603173517.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20240603173517.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Spring]]></title><description><![CDATA[<a href=".?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a> <a href=".?query=tag:SPRING" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SPRING">#SPRING</a> <a href=".?query=tag:FRAMWORK" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#FRAMWORK">#FRAMWORK</a>1. 컴파일러에게 코드작성 문법에러를 체크하도록 정보 제공
+LazyHolder클래스는 singleton클래스의 getInstance( ) 메서드가 참조되는 순간 class가 로딩되며 초기화 된다.Class를 로딩하고 초기화하는 시점은 thread-safe가 보장되기 때문에, 성능과 안정성을 모두 보장하는 훌륭한 방법이다.]]></description><link>study/프로그래밍/🐞-etc.html</link><guid isPermaLink="false">study/프로그래밍/🐞 etc.md</guid><pubDate>Wed, 19 Feb 2025 04:45:36 GMT</pubDate></item><item><title><![CDATA[🧰 DevOps]]></title><description><![CDATA[<a href=".?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a> <a href=".?query=tag:DevOps" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#DevOps">#DevOps</a> <a href=".?query=tag:CI/CD" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#CI/CD">#CI/CD</a>
+애플리케이션을 실행하는데 필요한 모든 구성 요소와 기능을 갖춘 소프트웨어이다.
+전체 실행(runtime)환경에서 애플리케이션을 패키징하고 격리할 수 있는 기술이다. 컨테이너화 된 애플리케이션은 환경(개발/테스트/프로덕션)에 쉽게 이동할 수 있다. 컨테이너 파이프라인에 보안을 구축하고 인프라를 보호하여 컨테이너의 안정성, 확장성, 신뢰성을 보장할 수 있다. 일관된 행동과 기능으로, 퍼블릭/프라이빗/클라우드 간에 쉽게 이동이 가능하다. 담당 영역을 분리하여 개발 팀과 운영 팀간의 충돌을 줄일 수 있다.
+오픈기술을 기반으로 하기 때문에, 최신 기술을 활용하여 다양하고 강력한 기술의 제품을 채택할 수 있다.
+ex) docker / k8s 등등
+클라우드 네이티브 개발 방식에 필요한 기반 기술을 제공한다. 전사적으로 배포를 관리할 수 있는 방법이다.
+k8s(쿠버네티스)는 컨테이너 작업을 자동화하는 오픈소스 플랫폼이다.
+컨테이너화 된 애플리케이션을 배포하고 확장하는데 수동 프로세스를 필요로 하지 않는다.
+docker는 전통적인 LXC와 다르다. docker도 처음에는 LXC기반으로 개발되었지만 이후, 이러한 종속관계에서 벗어났다.
+LXC는 경량/가상화 기술은 뛰어났지만 사용자환경은 그에 미치지 못햇다.
+하지만 docker는 컨테이너를 실행하는 것 이상의 다양한 생성/구축/이미지전송 등의 프로세스 관리를 용이하게 해준다.
+- 젠킨스는 지속적 통합(CI)및 지속적 배포(CD)도구로, 개발 프로세스의 빌드, 테스트, 배포 등을 자동화하고 관리해주는 도구이다. 개발자들이 작성한 코드를 중앙 저장소에 자주 통합하고, 자동화된 빌드와
+테스트를 통해 문제를 빠르게 발견하고 해결할 수 있게 해주는것. 모든 변경사항을 자동화된 테스트와 빌드를 거친 후 실제 서버에 자동으로
+배포하는 기술. ( 현제 HF서비스에서는 ArgoCD를 사용하여 진행한다. ) 이러한 구조를 통해 다양한 환경에서 동시에 빌드와 테스트를 수행할 수 있으며,
+부하 분삭 및 확장성을 제공한다. 젠킨스는 소스코드관리(SCM)시스템과 통합하여 변경사항이 발견될때
+자동으로 빌드 및 테스트를 실행할 수 있다.
+웹훅이나 폴링 방식을 사용하여 scm시스템에서 변경사항을 감지하고
+해당작업을 트리거한다. 젠킨스는 빌드 및 테스트작업이 완료되면 해당결과와 로그를 저장한다.
+이를 통해 빌드 실패의 원인을 찾거나 테스트 결과를 검토할수 있다. 젠킨스는 빌드, 테스트 및 배포 과정에서 발생하는 로그와 메트릭을 수집하고
+분석하여 성능문제, 장애, 최적화 포인트 등을 식별할 수 있다. 개발자가 소스코드 변경사항을 SCM 시스템에 푸시한다. 젠킨스는 웹훅이나 폴링 방식을 통해 변경사항을 감지하고 Jenkinsfile에 정의된 파이프라인을 실행한다. 젠킨스는 마스터노드에서 슬레이브 노드로 작업을 할당하고 슬레이브 노드에서 빌드, 테스트 , 배포 작업을 수행한다. 각 단계에서 필요의 경우, 플러그인을 사용하여 다양한 도구와 통합하여작업을 수행할 수 있다. 작업이 완료되면 젠킨스는 결과와 로그를 저장하고 개발자에게 알림을 전송한다. Linux 컨테이너를 만들고 사용할 수 있도록 하는 컨테이너화 기술이다. 컨테이너를 매우 가벼운 모듈식 가상 머신처럼 다룰 수 있으며, 컨테이너를 구축, 배포, 복사, 이동 등 유연하게 사용할 수 있도록 도와준다. 애플리케이션을 클라우드에 최적화 하도록 지원한다. 커널과 네임스페이스 등 Linux의 기능을 사용하여 프로세스를 분리함으로 써, 독립적으로 실행할 수 있도록 한다.
+개별적으로 실행하여 인프라를 더 효과적으로 활용하고 개별시스템을 사용할 때와 동일한 보안을 유지할 수 있도록 한다.
+이미지 기반 배포 모델을 제공하여, 여러 환경에서 종속 항목과 손쉽게 공유 할 수 있다. 모듈성 컨테이너화에 대한 docker의 접근방식은 전체 애플리케이션을 분해하지 않고도 업데이트 또는 복구를 가능하게 한다 계층 및 이미지 버전제어 docker의 이미지파일은 일련의 계층으로 구성되며 이러한 계층들은 단일 이미지로 결합된다.
+이러한 이미지 계층을 재사용하여 구축 속도가 빠르며, 각 계층화에는 버전 제어가 가능하다. 롤백 롤백 기능을 제공하여 이전 이미지 버전으로 롤백이 가능하다. 신속한 배포 이전에는 하드웨어 확보, 실행, 프로비저닝, 테스트 하는데에 몇일이 걸렸으나, docker기반의 컨테이너는 배포 시간을 몇 초로 줄일 수 있다. 도커는 애플리케이션 뿐만 아니라, 실행에 필요한 시스템 환경을 모아서 컨테이너로 관리한다. 이것을 Docker Image라고 한다. 이 이미지로 만든 컨테이너는 도커가 설치된 곳이라면 어디든 똑같이 작동함을 보장한다. 개발자가 커밋할때마다, Jenkins와 같은 CI( 지속적 통합 )툴이 해당 소스를 도커 이미지로 빌드하고, 이미지 레파지토리에서 이미지를 버전별로 관리한다. 해당 이미지를 배포 하면, 독립적으로 동작하기 때문에 CD( 지속적인 배포 )또한 가능하게 된다. 이러한 특징은 MSA와도 잘 맞는데, 각각의 서비스를 컨테이너로 배포하는 것이다. 쿠버네티스는 "컨테이너화된 애플리케이션"을 배포, 관리, 확장 할때 수반되는 다수의 "수동 프로세스를 자동화"하는 오픈소스 "컨테이너 오케스트레이션 플랫폼"이다.
+1. 프로비저닝 및 배포
+2. 구성 및 일정 조정
+3. 리소스 할당
+4. 컨테이너 가용성 체크
+5. 로드밸런싱 기반 컨테이너 스케일링
+6. 트래픽 라우팅
+7. 컨테이너 상세 모니터링
+8. 컨테이너 간 상호작용 및 보안 클러스터 컨트롤 플레인 및 하나 이상의 컴퓨팅 머신 또는 노드를 뜻한다. 컨트롤 플레인 쿠버네티스 노드를 제어하는 프로세스의 컬렉션. 여기에 모든 태스크 할당이 시작된다. kubelet 노드에서 실행되며, 컨테이너 매니패스트를 읽고, 정의된 컨테이너가 실행중인지 확인한다. 포드(Pod) 단일 노드에 배포된 하나 이상의 컨테이너 그룹. 포드에 있는 모든 컨테이너는 IP주소.호스트 이름, 기타 리소스 등을 공유한다. 작동 중인 쿠버네티스 배포를 클러스터라고 한다. 클러스터는 컨테이너를 실행하는 호스트 그룹으로, 컨트롤 플레인과 컴퓨팅머신의 2개 부분으로 시각화 할 수 있다. Docker는 쿠버네티스가 오케스트레이션하는 컨테이너의 런타임으로 사용할 수 있다. 쿠버네티스가 노드에 대해 pod을 예약하면 해당 노드의 kubelet(각 컨테이너의 실행을 보장하는 서비스)가 지정된 컨테이너를 실행하도록 Docker에 명령한다. 이후, kubelet은 Docker로 부터, 지속적으로 상태를 수집하고 컨트롤 플레인에서 해당 정보를 집계한다.
+** 한줄 요약 : docker는 k8s가 시키는데로(이미짜여진대로, 자동으로) 컨테이너를 실행한다.- DevOps(개발과 운영을 통합하여 효율성,협력,안정성을 개선하는 개발/운영 방법론)의 실천 방법중 하나로, 애플리케이션 배포와 운영에 관련된 모든요소를 Git에서 관리(Opertation)한다는 뜻이다.
+- Git의 버전관리 시스템과 운영환경간의 일관성을 유지하여 소프트웨어간의 불일치 문제를
+해결할 수 있다.
+- GitOps를 구현하기 위한 도구 중 하나로, k8s애플리케이션의 자동배포(CD)를 위한 오픈소스 도구 이다.
+k8s클러스터에 배포된 애플리케이션의 CD를 담당한다.
+- Git저장소에서 변경사항을 감지하여 자동으로 k8s클러스터에 애플리케이션을 배포한다. 쿠버네티스는 클러스터 안에서 컨테이너 애플리케이션이나 네트워크 설정, 배치 실행을 하는 Job등
+리소스를 작성한다. 이와 같은 구체적인 설정 정보를 파일로 관리하는데,
+이것이 매니페스트파일(manifest file)이라고 한다.
+JSON이나 YALM 파일로 작성되며, 오브젝트를 생성하기 위해 필요한 파일이기도 하다. local브랜치에서 작업 후 각(dev/stg/prod)프로젝트로 소스를 통합(merge)한다.
+jar, 메니페스트 file 등 소스,배포에 필요한 파일들 이미지 화 Jenkin에서 이미지화된 배포에 필요한 파일,소스들을 ArgoCD로 Pull한다. Jenkins에서 받은 이미지파일과 매니패스트파일을 기반으로 실제 서버에 배포한다.
+<br><img alt="Pasted image 20240531162124.png" src="사진-및-문서/pasted-image-20240531162124.png" target="_self">
+두가지 모두 소스코드 저장소 호스팅 플랫폼이며, 기술적 기반을 깃(Git)으로 삼는다는 점에서 비슷하다.
+기본 기능은 같지만, 서비스의 초점이 조금 다른곳에 맞추어져 있다. 깃허브와 깃랩의 가장 큰 차이점은 데브옵스 요소에 있다. 즉 깃랩은 젠킨스와 아르고와 같은 CI/CD 도구들을 사용하지 않아도 자체적으로 파이프라인을 구성하여 간단하고 빠른 배포가 가능하다. 하지만 우리는 깃랩은 사용하지만, 깃랩CI/CD는 사용하고 있지 않은 상태이다. 그덕에 신속한 배포가 가능하고, 문제 발생시 이전 버전으로 신속하게 복원할 수 있다. 프로덕션과 스테이징의 분기가 최소한으로 있으며, 이러한 여러 다중 분기 접근방식은 여러단계의 테스트로 안정적인 유지가 가능하게 한다. 한편 이러한 이유로 병합및 수정시 코드 검토가 까다로워진다.
+<br><img alt="Pasted image 20240722180706.png" src="사진-및-문서/pasted-image-20240722180706.png" target="_self">
+ELK란 elastic / logstash / kibana 의 앞글자를 딴 시슷템으로
+데이터를 수집, 처리, 조회 하는데 특화되어있는 시스템이다. 인덱스란 ? - 단일 데이터 단위를 도큐먼트라고 하며, 이 도큐먼트를 모아놓은 집합을 인덱스라고 한다. 인덱스 용량이 증가함에 따라 운영부담과 비용이 크게 증가한다.
+튜닝을 통한 안정화에 한계가 있다. 수평 확장이 가능하다 가용성 높은 다중 테넌트 로그 집계가 가능하다 로그에 대한 메타데이터만 인덱싱한다. 즉 레이블을 기반으로 구축되어있다. 로그 내용을 색인화 하는것이 아닌, 레이블 세트를 색인화 하기 때문에 데이터 량을 감소시킬 수 있다. 검색시 레이블 기반으로만 조회하고, 레이블과 매칭된 압축된 로그 데이터를 가져와 사용한다. 풀텍스트 검색시 기존 ELK대비 느리다.
+쿼리언어를 새로이 학습해야한다.
+레퍼런스가 부족하다.
+]]></description><link>study/프로그래밍/🧰-devops.html</link><guid isPermaLink="false">study/프로그래밍/🧰 DevOps.md</guid><pubDate>Wed, 19 Feb 2025 04:45:09 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20240531162124.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;사진-및-문서/pasted-image-20240531162124.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[🗒 DataBase]]></title><description><![CDATA[<a href=".?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a> <a href=".?query=tag:DB" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#DB">#DB</a> <a href=".?query=tag:DataBase" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#DataBase">#DataBase</a>
+간단히 설명하면 "여러 쿼리를 한번에 실행하는 것" 이다.
+SQL의 Function과 비슷해 보이지만 차이가 있다.
+function : 클라이언트에서 처리, 리턴값 필수, 리턴값은 한개만 반환 가능
+프로시저 : 서버로 보내서 처리, 리턴값 선택, 리컨값 여러개 가능
+속도면에서는 함수에 비해 프로시저가 더 빠르다.
+그렇기 때문에 프로시저같은 경우는 실행,처리를 할때 주로 사용하고, 함수는 간단한 계산이나 수치 결과를 나타낼 때 사용한다.
+하나의 요청으로 여러 SQL문을 실행 할 수 있음
+네트워크 소요 시간을 줄일 수 있음(여러개의 쿼리를 처리하는 시점에서 네트워크 부하를 줄임)
+보수성이 뛰어나다
+개발 업무를 구분하여 개발할 수 있다.(DB관련 처리를 API처럼 만들어 사용가능) 재사용성이 낮다(DB버전 별 구문/규칙과 호환성이 다르기 때문)
+처리 성능이 좋지 않다(MySQL스토어드 프로그램 처리 성능이 낮다)
+<br><img alt="Pasted image 20240610171904.png" src="사진-및-문서/pasted-image-20240610171904.png" target="_self">
+파라미터 선언은 프로시저명() 안에서 선언하고, SQL문과 변수는 BEGIN - END 안에서 작성한다.
+SELECT사용시 반드시, 조회한 컬럼의 값을 INTO로 변수 안에 넣어주어야 한다.
+프로시저안에서 사용하는 SQL문은 세미콜론(;)으로 문장 끝을 맺어주어야 한다.
+if, case, loop 문을 사용할 수 있다.
+프로시저내에서 다른 프로시저를 호출 할 수 있다.
+- 커넥션이란 어플리케이션과 데이터베이스 서버간의 통신 링크를 뜻한다. 애플리케이션이 쿼리를 실행하고, 데이터를 검색하고, 데이터베이스에서 트랜젝션을 수행 할 수 있는 세션을
+설정하는데 사용된다.
+말그대로 애플리케이션과 DB를 연결하는 통신링크이며, 이가 모여있는것을 커넥션 풀 이라고 한다.
+매번 연결하고 끊고 하는것 보다 커넥션풀에 등록하는 것이 성능적인 향상을 기대할 수 있기 때문이다. 테이블 간에 중복된 데이터를 허용하지 않는다는 기본 목표를 갖는다. 중복된 데이터를 허용하지 않음으로 써 무결성 을 유지할 수 있다. DB의 저장 용량 또한 줄일 수 있다.
+데이터 테이블을 분해하여 이상현상이 발생할 가능성을 줄이고, 확장/수정시 구조 변경을
+최소화 할 수 있다. 릴레이션의 분해로 인해 Join연산이 늘어날 수 있다. 쿼리시 응답시간이 느려질 수 있다. 데이터의 중복속성을 최대한 제거하는 것 이기때문에, 속성이 하나의 테이블에 집약되므로
+데이터 용량이 최소화 되어 상황에따라 처리속도가 빨라질 수도 있고, 느려질 수도 있다.
+만약 조인이 만연하여 속도저하가 발생하게 된다면 반정규화를 통해 속도를 개선할 수 있다. 테이블의 컬럼이 원자값(하나의 값)을 갖도록 테이블을 분해하는 것이다.
+각 컬럼의 순서가 상관이 없어야한다.
+하나의 컬럼은 같은 종류의 타입을 가져야 한다.<br>
+<img alt="Pasted image 20240531103441.png" src="사진-및-문서/pasted-image-20240531103441.png" target="_self">
+원자값을 갖도록 컬럼을 나눈다.<br>
+<img alt="Pasted image 20240531103549.png" src="사진-및-문서/pasted-image-20240531103549.png" target="_self"> 제 1 정규화를 진행한 테이블에 대해 "완전 함수 종속"을 만족하도록 테이블을 분해하는 것이다.
+여기서 완전 함수 종속이란, 기본키의 부분집합이 결정자가 되어선 안된다는 것을 의미한다.
+즉, 부분적 종속을 없애는 것이다.
+<br><img alt="Pasted image 20240531105228.png" src="사진-및-문서/pasted-image-20240531105228.png" target="_self">
+해당 테이블의 기본키는 (학생번호, 강좌이름)으로 복합키 이다.
+성적은 (학생번호, 강좌이름)인 기본키가 결정하지만,
+강의실은 기본키의 부분집합인 강좌이름이 결정하게 된다.즉, 부분집합이 결정자가 되지 않도록 테이블을 분리시키는 것으로 완전 함수 종속을 만족시킬 수 있다.<br>
+<img alt="Pasted image 20240531105241.png" src="사진-및-문서/pasted-image-20240531105241.png" target="_self">
+제2 정규화를 진행한 테이블에 대해 "이행적 종속"을 없애도록 테이블을 분해하는 것이다.
+여기서 이행적 종속이란 A -&gt; B , B -&gt; C 가 성립할때, A -&gt; C 가 성립되는 것을 의미한다.<br>
+<img alt="Pasted image 20240531104351.png" src="사진-및-문서/pasted-image-20240531104351.png" target="_self">
+다음의 경유 이행적 종속상태 로 말할 수 있다.
+그 경우 테이블을 분리하여 데이터 변경시에 다른 데이터까지 변경되는 상황을 막을 수 있다.<br>
+<img alt="Pasted image 20240531104418.png" src="사진-및-문서/pasted-image-20240531104418.png" target="_self">
+제3 정규화를 좀 더 강화한 것이라 생각하면 된다.
+BCNF정규화란 제3 정규화를 진행한 테이블에 대해 모든 결정자가 후보키가 되도록
+테이블을 분해하는 것을 말한다.
+<br><img alt="Pasted image 20240531104751.png" src="사진-및-문서/pasted-image-20240531104751.png" target="_self">
+특수 수강 테이블에서 기본키는 (학생번호, 특강이름)이다. 그리고 기본키는 교수를 결정하고 있다.
+또한, 여기서 교수는 특강이름을 결정하고있다.문제는 교수가 특강이름을 결정하는 결정자 이지만, 후보키가 아니다.
+그렇기 때문에 BCNF 정규화를 만족시키기 위해서는 테이블을 분해하여 아래와 같이 분리할 수 있다.<br><img alt="Pasted image 20240531104803.png" src="사진-및-문서/pasted-image-20240531104803.png" target="_self">
+컬럼값의 중복을 제거하는것이다. 중복을 제거하기 위해 분해할 수 있을만큼 최대한 분해하는 것이다. 그 이상 정규화를 진행하면 오히려 정규화의 단점이 더 커지기 때문이다.
+세션2에서 동시에 같은 데이터를 수정하게 되면 여러가지 문제가 발생한다.
+이런문제를 방지하기 위해, 세션이 트렌젝션을 시작하고 데이터를 수정하는 동안에 커밋이나 롤백 전까지
+다른세션에서 해당 데이터를 수정할 수 없게 막아야 한다. 이런 문제를 해결하기 위해 DB에서는
+LOCK 락 이라는 개념을 제공한다.
+락은 언제 사용하는가? : 트렌젝션 종료 시점까지 해당 데이터를 다른 곳에서 변경하지 못하도록 강제로 막아야 할 때 사용한다.
+일반적인 조회는 락을 사용하지 않는다.
+락 타임아웃(다른 세션이 데이터를 점유하고 있을때 대기시간이 초과된 경우)에는 익셉션이 발생하게 된다.
+인덱스 : 단일데이터 단위인 도큐먼트(document)를 모아놓은 집합을 인덱스(index)라고 한다.
+색인 : 데이터를 Elasticsearch에 저장하는 행위
+샤드 : 인덱스는 기본적으로 샤드(shard)라는 단위로 분리되고, 각 노드에 분산되어 저장된다 (검색의 기본단위는 샤드이다.)<br>
+<img alt="Pasted image 20240828104032.png" src="사진-및-문서/pasted-image-20240828104032.png" target="_self">
+데이터를 범위나 카테고리로 나누어 관리하는 기법을 파티셔닝 이라고 한다. 인덱스를 생성할 때, 처음 생성된 샤드를 프라이머리 샤드, 복제본은 리플리카 라고 부른다. 예를 들어 한 인덱스가 5개의 샤드로 구성되어있고, 클러스터가 4개의 노드로 구성되어있다고 가정하면,
+각각 5개의 프라이머리 샤드와 복제본, 총 10개의 샤드들이 전체 노드에 골고루 분산되어 저장된다.<br>
+<img alt="Pasted image 20240828104728.png" src="사진-및-문서/pasted-image-20240828104728.png" target="_self">
+노드가 1개만 존재한다면 복제본은 생성되지 않는다. Elasticsearch는 아무리 작은 클러스터라도 최소 3개의 노드로 구성할 것을 권장하고 있다. 이렇게 프라이머리 샤드와 리플리카를 통해 Elasticsearch는 운영 중에 노드가 유실되어도 데이터를 잃어버리지 않고, 데이터 가용성과 무결성을 보장하게 된다. 샤드는 여러 서버에 분산되어 병렬 및 병행으로 검색되므로, 인덱스가 같던 다르던 상관이 없다.
+검색의 기본 단위는 샤드이기 때문이다. 따라서 인덱스를 나누는 것은 운영의 편의성을 고려할 때 선택하는 방법이다.
+전체색인을 할 경우 인덱스 1개가 7억건 이라면 색인이 모두 끝날때 까지 몇시간이 걸리게 된다.
+그 와중에 데이터에 변경이 있게 된다면 전체 색인 후 일괄적용이 들어가게 될텐데, 대기시간이 길어질 수록 일괄적용 시간도 함께 늘어나게 된다.
+결국 더 빠른 색인을 위해서는 하나의 인덱스를 여러개로 나누너 병행처리를 시키도록 해야한다. 다나와 에서는 상품DB특성상 카테고리군 별로 인덱스를 나누고 있다. 이때의 장점은 특정 카테고리만 검색할때 해당 인덱스만 검색하면 되므로, 검색 속도가 현저히 감소하게 된다. 일반적인 시스템 로그와 같은 로그성 문서는 색인을 하고 나면 수정이 필요없는 정적 컨텐츠인 반면
+상품문서같은 경우 색인이 끝나도 계속 갱신되어야 하는 살아있는 동적 컨텐츠이다. 따라서 동적색인에 원할하고, 검색성능도 높은 설계를 요구한다.
+트렌젝션
+- 데이터베이스의 상태를 변화시키기 위해 수행하는 작업의 단위트렌젝션매니저
+- Spring에서 제공하는 트렌젝션 관리 기능과 JPA를 연결하는 역할을 수행.@Transactional
+- 클래스나 메서드에 삽입하면, AOP레벨(프록시를 사용하여)에서 트렌젝션매니저를 이용한 동작을 공통으로 적용.앤티티매니저
+- 영속성 컨텍스트를 관리하는 인터페이스
+- 엔티티의 저장/수정/삭제/조회 작업을 수행
+- 스레드 세이프하지 않으므로 한트레젝션 내에서만 사용
+- 앤티티매니저펙토리는 스레드세이프하므로 공유 가능영속성컨텍스트
+- JPA의 엔티티를 관리하는 1차 캐시 역할을 하는 메모리 공간
+- 엔티티와 DB데이터간의 상태 동기화를 책임
+- 1차캐싱 / 변경 감지 / 지연 로딩 의 특징을 갖는다
+- 지연로딩 : 관계된 엔티티를 실제로 필요할때만 가져오며, 변경점을 한번만 commit한다스냅샷
+- DB스냅샷 :
+- 트렌젝션이 시작될때 생성된다.
+- 독립적인 데이터베이스 복사본으로, 원본데이터 변경과 무관하다.
+- 고급 격리 수준(REPEATABLE READ, SERIALIZABLE)에서 MVCC(Multi-Version Concurrency Control)를 구현할 때 사용한다.
+- 물리적인 복사본이 아닌, 논리적으로 매 쿼리마다 동적으로 가공이 되는 방식이다.
+- 앤티티매니저_스냅샷 :
+- 엔티티가 영속성 컨텍스트에 로드될 때 생성된다.
+- 엔티티의 초기 상태를 저장하여 변경 감지에 사용된다.]]></description><link>study/프로그래밍/🗒-database.html</link><guid isPermaLink="false">study/프로그래밍/🗒 DataBase.md</guid><pubDate>Wed, 19 Feb 2025 04:44:31 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20240610171904.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;사진-및-문서/pasted-image-20240610171904.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[🍃 Spring]]></title><description><![CDATA[<a href=".?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a> <a href=".?query=tag:SPRING" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SPRING">#SPRING</a> <a href=".?query=tag:FRAMWORK" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#FRAMWORK">#FRAMWORK</a>1. 컴파일러에게 코드작성 문법에러를 체크하도록 정보 제공
 2. 빌드나 배치시 코드를 자동으로 생성할수 있도록 정보 제공
 3. 실행시 특정 기능을 수행하도록 정보 제공
 - Spring컨테이너에 의해 관리되는 재사용 가능한 컴포넌트이다.
@@ -579,581 +908,4 @@ Page&lt;Dto&gt; -&gt; List&lt;Dto&gt;
 void equals() { //given Menu friedChicken = new Menu("후라이드치킨", 16_000); Menu friedChicken2 = new Menu("후라이드치킨", 16_000); //when &amp; then assertThat(friedChicken).isEqualTo(friedChicken2);
 }
 헤당 코드와 같이 구현한다면, false를 출력한다.
-이유는 객체의 equals메서드는 주소값이 서로 다른 객체는 다른객체로 판단하기 때문이다.이때, 왜 HashCode도 재정의 해야하나?해당 규약으로 인하여, 서로다른 객체의 해쉬값을 통일시켜주어야 한다.]]></description><link>study/프로그래밍/spring.html</link><guid isPermaLink="false">study/프로그래밍/Spring.md</guid><pubDate>Tue, 18 Feb 2025 02:11:41 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20240611144129.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20240611144129.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[DataBase]]></title><description><![CDATA[<a href=".?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a> <a href=".?query=tag:DB" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#DB">#DB</a> <a href=".?query=tag:DataBase" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#DataBase">#DataBase</a>
-간단히 설명하면 "여러 쿼리를 한번에 실행하는 것" 이다.
-SQL의 Function과 비슷해 보이지만 차이가 있다.
-function : 클라이언트에서 처리, 리턴값 필수, 리턴값은 한개만 반환 가능
-프로시저 : 서버로 보내서 처리, 리턴값 선택, 리컨값 여러개 가능
-속도면에서는 함수에 비해 프로시저가 더 빠르다.
-그렇기 때문에 프로시저같은 경우는 실행,처리를 할때 주로 사용하고, 함수는 간단한 계산이나 수치 결과를 나타낼 때 사용한다.
-하나의 요청으로 여러 SQL문을 실행 할 수 있음
-네트워크 소요 시간을 줄일 수 있음(여러개의 쿼리를 처리하는 시점에서 네트워크 부하를 줄임)
-보수성이 뛰어나다
-개발 업무를 구분하여 개발할 수 있다.(DB관련 처리를 API처럼 만들어 사용가능) 재사용성이 낮다(DB버전 별 구문/규칙과 호환성이 다르기 때문)
-처리 성능이 좋지 않다(MySQL스토어드 프로그램 처리 성능이 낮다)
-<br><img alt="Pasted image 20240610171904.png" src="사진-및-문서/pasted-image-20240610171904.png" target="_self">
-파라미터 선언은 프로시저명() 안에서 선언하고, SQL문과 변수는 BEGIN - END 안에서 작성한다.
-SELECT사용시 반드시, 조회한 컬럼의 값을 INTO로 변수 안에 넣어주어야 한다.
-프로시저안에서 사용하는 SQL문은 세미콜론(;)으로 문장 끝을 맺어주어야 한다.
-if, case, loop 문을 사용할 수 있다.
-프로시저내에서 다른 프로시저를 호출 할 수 있다.
-- 커넥션이란 어플리케이션과 데이터베이스 서버간의 통신 링크를 뜻한다. 애플리케이션이 쿼리를 실행하고, 데이터를 검색하고, 데이터베이스에서 트랜젝션을 수행 할 수 있는 세션을
-설정하는데 사용된다.
-말그대로 애플리케이션과 DB를 연결하는 통신링크이며, 이가 모여있는것을 커넥션 풀 이라고 한다.
-매번 연결하고 끊고 하는것 보다 커넥션풀에 등록하는 것이 성능적인 향상을 기대할 수 있기 때문이다. 테이블 간에 중복된 데이터를 허용하지 않는다는 기본 목표를 갖는다. 중복된 데이터를 허용하지 않음으로 써 무결성 을 유지할 수 있다. DB의 저장 용량 또한 줄일 수 있다.
-데이터 테이블을 분해하여 이상현상이 발생할 가능성을 줄이고, 확장/수정시 구조 변경을
-최소화 할 수 있다. 릴레이션의 분해로 인해 Join연산이 늘어날 수 있다. 쿼리시 응답시간이 느려질 수 있다. 데이터의 중복속성을 최대한 제거하는 것 이기때문에, 속성이 하나의 테이블에 집약되므로
-데이터 용량이 최소화 되어 상황에따라 처리속도가 빨라질 수도 있고, 느려질 수도 있다.
-만약 조인이 만연하여 속도저하가 발생하게 된다면 반정규화를 통해 속도를 개선할 수 있다. 테이블의 컬럼이 원자값(하나의 값)을 갖도록 테이블을 분해하는 것이다.
-각 컬럼의 순서가 상관이 없어야한다.
-하나의 컬럼은 같은 종류의 타입을 가져야 한다.<br>
-<img alt="Pasted image 20240531103441.png" src="사진-및-문서/pasted-image-20240531103441.png" target="_self">
-원자값을 갖도록 컬럼을 나눈다.<br>
-<img alt="Pasted image 20240531103549.png" src="사진-및-문서/pasted-image-20240531103549.png" target="_self"> 제 1 정규화를 진행한 테이블에 대해 "완전 함수 종속"을 만족하도록 테이블을 분해하는 것이다.
-여기서 완전 함수 종속이란, 기본키의 부분집합이 결정자가 되어선 안된다는 것을 의미한다.
-즉, 부분적 종속을 없애는 것이다.
-<br><img alt="Pasted image 20240531105228.png" src="사진-및-문서/pasted-image-20240531105228.png" target="_self">
-해당 테이블의 기본키는 (학생번호, 강좌이름)으로 복합키 이다.
-성적은 (학생번호, 강좌이름)인 기본키가 결정하지만,
-강의실은 기본키의 부분집합인 강좌이름이 결정하게 된다.즉, 부분집합이 결정자가 되지 않도록 테이블을 분리시키는 것으로 완전 함수 종속을 만족시킬 수 있다.<br>
-<img alt="Pasted image 20240531105241.png" src="사진-및-문서/pasted-image-20240531105241.png" target="_self">
-제2 정규화를 진행한 테이블에 대해 "이행적 종속"을 없애도록 테이블을 분해하는 것이다.
-여기서 이행적 종속이란 A -&gt; B , B -&gt; C 가 성립할때, A -&gt; C 가 성립되는 것을 의미한다.<br>
-<img alt="Pasted image 20240531104351.png" src="사진-및-문서/pasted-image-20240531104351.png" target="_self">
-다음의 경유 이행적 종속상태 로 말할 수 있다.
-그 경우 테이블을 분리하여 데이터 변경시에 다른 데이터까지 변경되는 상황을 막을 수 있다.<br>
-<img alt="Pasted image 20240531104418.png" src="사진-및-문서/pasted-image-20240531104418.png" target="_self">
-제3 정규화를 좀 더 강화한 것이라 생각하면 된다.
-BCNF정규화란 제3 정규화를 진행한 테이블에 대해 모든 결정자가 후보키가 되도록
-테이블을 분해하는 것을 말한다.
-<br><img alt="Pasted image 20240531104751.png" src="사진-및-문서/pasted-image-20240531104751.png" target="_self">
-특수 수강 테이블에서 기본키는 (학생번호, 특강이름)이다. 그리고 기본키는 교수를 결정하고 있다.
-또한, 여기서 교수는 특강이름을 결정하고있다.문제는 교수가 특강이름을 결정하는 결정자 이지만, 후보키가 아니다.
-그렇기 때문에 BCNF 정규화를 만족시키기 위해서는 테이블을 분해하여 아래와 같이 분리할 수 있다.<br><img alt="Pasted image 20240531104803.png" src="사진-및-문서/pasted-image-20240531104803.png" target="_self">
-컬럼값의 중복을 제거하는것이다. 중복을 제거하기 위해 분해할 수 있을만큼 최대한 분해하는 것이다. 그 이상 정규화를 진행하면 오히려 정규화의 단점이 더 커지기 때문이다.
-세션2에서 동시에 같은 데이터를 수정하게 되면 여러가지 문제가 발생한다.
-이런문제를 방지하기 위해, 세션이 트렌젝션을 시작하고 데이터를 수정하는 동안에 커밋이나 롤백 전까지
-다른세션에서 해당 데이터를 수정할 수 없게 막아야 한다. 이런 문제를 해결하기 위해 DB에서는
-LOCK 락 이라는 개념을 제공한다.
-락은 언제 사용하는가? : 트렌젝션 종료 시점까지 해당 데이터를 다른 곳에서 변경하지 못하도록 강제로 막아야 할 때 사용한다.
-일반적인 조회는 락을 사용하지 않는다.
-락 타임아웃(다른 세션이 데이터를 점유하고 있을때 대기시간이 초과된 경우)에는 익셉션이 발생하게 된다.
-인덱스 : 단일데이터 단위인 도큐먼트(document)를 모아놓은 집합을 인덱스(index)라고 한다.
-색인 : 데이터를 Elasticsearch에 저장하는 행위
-샤드 : 인덱스는 기본적으로 샤드(shard)라는 단위로 분리되고, 각 노드에 분산되어 저장된다 (검색의 기본단위는 샤드이다.)<br>
-<img alt="Pasted image 20240828104032.png" src="사진-및-문서/pasted-image-20240828104032.png" target="_self">
-데이터를 범위나 카테고리로 나누어 관리하는 기법을 파티셔닝 이라고 한다. 인덱스를 생성할 때, 처음 생성된 샤드를 프라이머리 샤드, 복제본은 리플리카 라고 부른다. 예를 들어 한 인덱스가 5개의 샤드로 구성되어있고, 클러스터가 4개의 노드로 구성되어있다고 가정하면,
-각각 5개의 프라이머리 샤드와 복제본, 총 10개의 샤드들이 전체 노드에 골고루 분산되어 저장된다.<br>
-<img alt="Pasted image 20240828104728.png" src="사진-및-문서/pasted-image-20240828104728.png" target="_self">
-노드가 1개만 존재한다면 복제본은 생성되지 않는다. Elasticsearch는 아무리 작은 클러스터라도 최소 3개의 노드로 구성할 것을 권장하고 있다. 이렇게 프라이머리 샤드와 리플리카를 통해 Elasticsearch는 운영 중에 노드가 유실되어도 데이터를 잃어버리지 않고, 데이터 가용성과 무결성을 보장하게 된다. 샤드는 여러 서버에 분산되어 병렬 및 병행으로 검색되므로, 인덱스가 같던 다르던 상관이 없다.
-검색의 기본 단위는 샤드이기 때문이다. 따라서 인덱스를 나누는 것은 운영의 편의성을 고려할 때 선택하는 방법이다.
-전체색인을 할 경우 인덱스 1개가 7억건 이라면 색인이 모두 끝날때 까지 몇시간이 걸리게 된다.
-그 와중에 데이터에 변경이 있게 된다면 전체 색인 후 일괄적용이 들어가게 될텐데, 대기시간이 길어질 수록 일괄적용 시간도 함께 늘어나게 된다.
-결국 더 빠른 색인을 위해서는 하나의 인덱스를 여러개로 나누너 병행처리를 시키도록 해야한다. 다나와 에서는 상품DB특성상 카테고리군 별로 인덱스를 나누고 있다. 이때의 장점은 특정 카테고리만 검색할때 해당 인덱스만 검색하면 되므로, 검색 속도가 현저히 감소하게 된다. 일반적인 시스템 로그와 같은 로그성 문서는 색인을 하고 나면 수정이 필요없는 정적 컨텐츠인 반면
-상품문서같은 경우 색인이 끝나도 계속 갱신되어야 하는 살아있는 동적 컨텐츠이다. 따라서 동적색인에 원할하고, 검색성능도 높은 설계를 요구한다.
-트렌젝션
-- 데이터베이스의 상태를 변화시키기 위해 수행하는 작업의 단위트렌젝션매니저
-- Spring에서 제공하는 트렌젝션 관리 기능과 JPA를 연결하는 역할을 수행.@Transactional
-- 클래스나 메서드에 삽입하면, AOP레벨(프록시를 사용하여)에서 트렌젝션매니저를 이용한 동작을 공통으로 적용.앤티티매니저
-- 영속성 컨텍스트를 관리하는 인터페이스
-- 엔티티의 저장/수정/삭제/조회 작업을 수행
-- 스레드 세이프하지 않으므로 한트레젝션 내에서만 사용
-- 앤티티매니저펙토리는 스레드세이프하므로 공유 가능영속성컨텍스트
-- JPA의 엔티티를 관리하는 1차 캐시 역할을 하는 메모리 공간
-- 엔티티와 DB데이터간의 상태 동기화를 책임
-- 1차캐싱 / 변경 감지 / 지연 로딩 의 특징을 갖는다
-- 지연로딩 : 관계된 엔티티를 실제로 필요할때만 가져오며, 변경점을 한번만 commit한다스냅샷
-- DB스냅샷 :
-- 트렌젝션이 시작될때 생성된다.
-- 독립적인 데이터베이스 복사본으로, 원본데이터 변경과 무관하다.
-- 고급 격리 수준(REPEATABLE READ, SERIALIZABLE)에서 MVCC(Multi-Version Concurrency Control)를 구현할 때 사용한다.
-- 물리적인 복사본이 아닌, 논리적으로 매 쿼리마다 동적으로 가공이 되는 방식이다.
-- 앤티티매니저_스냅샷 :
-- 엔티티가 영속성 컨텍스트에 로드될 때 생성된다.
-- 엔티티의 초기 상태를 저장하여 변경 감지에 사용된다.]]></description><link>study/프로그래밍/database.html</link><guid isPermaLink="false">study/프로그래밍/DataBase.md</guid><pubDate>Tue, 18 Feb 2025 02:07:35 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20240610171904.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20240610171904.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[DevOps]]></title><description><![CDATA[<a href=".?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a> <a href=".?query=tag:DevOps" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#DevOps">#DevOps</a> <a href=".?query=tag:CI/CD" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#CI/CD">#CI/CD</a>
-애플리케이션을 실행하는데 필요한 모든 구성 요소와 기능을 갖춘 소프트웨어이다.
-전체 실행(runtime)환경에서 애플리케이션을 패키징하고 격리할 수 있는 기술이다. 컨테이너화 된 애플리케이션은 환경(개발/테스트/프로덕션)에 쉽게 이동할 수 있다. 컨테이너 파이프라인에 보안을 구축하고 인프라를 보호하여 컨테이너의 안정성, 확장성, 신뢰성을 보장할 수 있다. 일관된 행동과 기능으로, 퍼블릭/프라이빗/클라우드 간에 쉽게 이동이 가능하다. 담당 영역을 분리하여 개발 팀과 운영 팀간의 충돌을 줄일 수 있다.
-오픈기술을 기반으로 하기 때문에, 최신 기술을 활용하여 다양하고 강력한 기술의 제품을 채택할 수 있다.
-ex) docker / k8s 등등
-클라우드 네이티브 개발 방식에 필요한 기반 기술을 제공한다. 전사적으로 배포를 관리할 수 있는 방법이다.
-k8s(쿠버네티스)는 컨테이너 작업을 자동화하는 오픈소스 플랫폼이다.
-컨테이너화 된 애플리케이션을 배포하고 확장하는데 수동 프로세스를 필요로 하지 않는다.
-docker는 전통적인 LXC와 다르다. docker도 처음에는 LXC기반으로 개발되었지만 이후, 이러한 종속관계에서 벗어났다.
-LXC는 경량/가상화 기술은 뛰어났지만 사용자환경은 그에 미치지 못햇다.
-하지만 docker는 컨테이너를 실행하는 것 이상의 다양한 생성/구축/이미지전송 등의 프로세스 관리를 용이하게 해준다.
-- 젠킨스는 지속적 통합(CI)및 지속적 배포(CD)도구로, 개발 프로세스의 빌드, 테스트, 배포 등을 자동화하고 관리해주는 도구이다. 개발자들이 작성한 코드를 중앙 저장소에 자주 통합하고, 자동화된 빌드와
-테스트를 통해 문제를 빠르게 발견하고 해결할 수 있게 해주는것. 모든 변경사항을 자동화된 테스트와 빌드를 거친 후 실제 서버에 자동으로
-배포하는 기술. ( 현제 HF서비스에서는 ArgoCD를 사용하여 진행한다. ) 이러한 구조를 통해 다양한 환경에서 동시에 빌드와 테스트를 수행할 수 있으며,
-부하 분삭 및 확장성을 제공한다. 젠킨스는 소스코드관리(SCM)시스템과 통합하여 변경사항이 발견될때
-자동으로 빌드 및 테스트를 실행할 수 있다.
-웹훅이나 폴링 방식을 사용하여 scm시스템에서 변경사항을 감지하고
-해당작업을 트리거한다. 젠킨스는 빌드 및 테스트작업이 완료되면 해당결과와 로그를 저장한다.
-이를 통해 빌드 실패의 원인을 찾거나 테스트 결과를 검토할수 있다. 젠킨스는 빌드, 테스트 및 배포 과정에서 발생하는 로그와 메트릭을 수집하고
-분석하여 성능문제, 장애, 최적화 포인트 등을 식별할 수 있다. 개발자가 소스코드 변경사항을 SCM 시스템에 푸시한다. 젠킨스는 웹훅이나 폴링 방식을 통해 변경사항을 감지하고 Jenkinsfile에 정의된 파이프라인을 실행한다. 젠킨스는 마스터노드에서 슬레이브 노드로 작업을 할당하고 슬레이브 노드에서 빌드, 테스트 , 배포 작업을 수행한다. 각 단계에서 필요의 경우, 플러그인을 사용하여 다양한 도구와 통합하여작업을 수행할 수 있다. 작업이 완료되면 젠킨스는 결과와 로그를 저장하고 개발자에게 알림을 전송한다. Linux 컨테이너를 만들고 사용할 수 있도록 하는 컨테이너화 기술이다. 컨테이너를 매우 가벼운 모듈식 가상 머신처럼 다룰 수 있으며, 컨테이너를 구축, 배포, 복사, 이동 등 유연하게 사용할 수 있도록 도와준다. 애플리케이션을 클라우드에 최적화 하도록 지원한다. 커널과 네임스페이스 등 Linux의 기능을 사용하여 프로세스를 분리함으로 써, 독립적으로 실행할 수 있도록 한다.
-개별적으로 실행하여 인프라를 더 효과적으로 활용하고 개별시스템을 사용할 때와 동일한 보안을 유지할 수 있도록 한다.
-이미지 기반 배포 모델을 제공하여, 여러 환경에서 종속 항목과 손쉽게 공유 할 수 있다. 모듈성 컨테이너화에 대한 docker의 접근방식은 전체 애플리케이션을 분해하지 않고도 업데이트 또는 복구를 가능하게 한다 계층 및 이미지 버전제어 docker의 이미지파일은 일련의 계층으로 구성되며 이러한 계층들은 단일 이미지로 결합된다.
-이러한 이미지 계층을 재사용하여 구축 속도가 빠르며, 각 계층화에는 버전 제어가 가능하다. 롤백 롤백 기능을 제공하여 이전 이미지 버전으로 롤백이 가능하다. 신속한 배포 이전에는 하드웨어 확보, 실행, 프로비저닝, 테스트 하는데에 몇일이 걸렸으나, docker기반의 컨테이너는 배포 시간을 몇 초로 줄일 수 있다. 도커는 애플리케이션 뿐만 아니라, 실행에 필요한 시스템 환경을 모아서 컨테이너로 관리한다. 이것을 Docker Image라고 한다. 이 이미지로 만든 컨테이너는 도커가 설치된 곳이라면 어디든 똑같이 작동함을 보장한다. 개발자가 커밋할때마다, Jenkins와 같은 CI( 지속적 통합 )툴이 해당 소스를 도커 이미지로 빌드하고, 이미지 레파지토리에서 이미지를 버전별로 관리한다. 해당 이미지를 배포 하면, 독립적으로 동작하기 때문에 CD( 지속적인 배포 )또한 가능하게 된다. 이러한 특징은 MSA와도 잘 맞는데, 각각의 서비스를 컨테이너로 배포하는 것이다. 쿠버네티스는 "컨테이너화된 애플리케이션"을 배포, 관리, 확장 할때 수반되는 다수의 "수동 프로세스를 자동화"하는 오픈소스 "컨테이너 오케스트레이션 플랫폼"이다.
-1. 프로비저닝 및 배포
-2. 구성 및 일정 조정
-3. 리소스 할당
-4. 컨테이너 가용성 체크
-5. 로드밸런싱 기반 컨테이너 스케일링
-6. 트래픽 라우팅
-7. 컨테이너 상세 모니터링
-8. 컨테이너 간 상호작용 및 보안 클러스터 컨트롤 플레인 및 하나 이상의 컴퓨팅 머신 또는 노드를 뜻한다. 컨트롤 플레인 쿠버네티스 노드를 제어하는 프로세스의 컬렉션. 여기에 모든 태스크 할당이 시작된다. kubelet 노드에서 실행되며, 컨테이너 매니패스트를 읽고, 정의된 컨테이너가 실행중인지 확인한다. 포드(Pod) 단일 노드에 배포된 하나 이상의 컨테이너 그룹. 포드에 있는 모든 컨테이너는 IP주소.호스트 이름, 기타 리소스 등을 공유한다. 작동 중인 쿠버네티스 배포를 클러스터라고 한다. 클러스터는 컨테이너를 실행하는 호스트 그룹으로, 컨트롤 플레인과 컴퓨팅머신의 2개 부분으로 시각화 할 수 있다. Docker는 쿠버네티스가 오케스트레이션하는 컨테이너의 런타임으로 사용할 수 있다. 쿠버네티스가 노드에 대해 pod을 예약하면 해당 노드의 kubelet(각 컨테이너의 실행을 보장하는 서비스)가 지정된 컨테이너를 실행하도록 Docker에 명령한다. 이후, kubelet은 Docker로 부터, 지속적으로 상태를 수집하고 컨트롤 플레인에서 해당 정보를 집계한다.
-** 한줄 요약 : docker는 k8s가 시키는데로(이미짜여진대로, 자동으로) 컨테이너를 실행한다.- DevOps(개발과 운영을 통합하여 효율성,협력,안정성을 개선하는 개발/운영 방법론)의 실천 방법중 하나로, 애플리케이션 배포와 운영에 관련된 모든요소를 Git에서 관리(Opertation)한다는 뜻이다.
-- Git의 버전관리 시스템과 운영환경간의 일관성을 유지하여 소프트웨어간의 불일치 문제를
-해결할 수 있다.
-- GitOps를 구현하기 위한 도구 중 하나로, k8s애플리케이션의 자동배포(CD)를 위한 오픈소스 도구 이다.
-k8s클러스터에 배포된 애플리케이션의 CD를 담당한다.
-- Git저장소에서 변경사항을 감지하여 자동으로 k8s클러스터에 애플리케이션을 배포한다. 쿠버네티스는 클러스터 안에서 컨테이너 애플리케이션이나 네트워크 설정, 배치 실행을 하는 Job등
-리소스를 작성한다. 이와 같은 구체적인 설정 정보를 파일로 관리하는데,
-이것이 매니페스트파일(manifest file)이라고 한다.
-JSON이나 YALM 파일로 작성되며, 오브젝트를 생성하기 위해 필요한 파일이기도 하다. local브랜치에서 작업 후 각(dev/stg/prod)프로젝트로 소스를 통합(merge)한다.
-jar, 메니페스트 file 등 소스,배포에 필요한 파일들 이미지 화 Jenkin에서 이미지화된 배포에 필요한 파일,소스들을 ArgoCD로 Pull한다. Jenkins에서 받은 이미지파일과 매니패스트파일을 기반으로 실제 서버에 배포한다.
-<br><img alt="Pasted image 20240531162124.png" src="사진-및-문서/pasted-image-20240531162124.png" target="_self">
-두가지 모두 소스코드 저장소 호스팅 플랫폼이며, 기술적 기반을 깃(Git)으로 삼는다는 점에서 비슷하다.
-기본 기능은 같지만, 서비스의 초점이 조금 다른곳에 맞추어져 있다. 깃허브와 깃랩의 가장 큰 차이점은 데브옵스 요소에 있다. 즉 깃랩은 젠킨스와 아르고와 같은 CI/CD 도구들을 사용하지 않아도 자체적으로 파이프라인을 구성하여 간단하고 빠른 배포가 가능하다. 하지만 우리는 깃랩은 사용하지만, 깃랩CI/CD는 사용하고 있지 않은 상태이다. 그덕에 신속한 배포가 가능하고, 문제 발생시 이전 버전으로 신속하게 복원할 수 있다. 프로덕션과 스테이징의 분기가 최소한으로 있으며, 이러한 여러 다중 분기 접근방식은 여러단계의 테스트로 안정적인 유지가 가능하게 한다. 한편 이러한 이유로 병합및 수정시 코드 검토가 까다로워진다.
-<br><img alt="Pasted image 20240722180706.png" src="사진-및-문서/pasted-image-20240722180706.png" target="_self">
-ELK란 elastic / logstash / kibana 의 앞글자를 딴 시슷템으로
-데이터를 수집, 처리, 조회 하는데 특화되어있는 시스템이다. 인덱스란 ? - 단일 데이터 단위를 도큐먼트라고 하며, 이 도큐먼트를 모아놓은 집합을 인덱스라고 한다.
-]]></description><link>study/프로그래밍/devops.html</link><guid isPermaLink="false">study/프로그래밍/DevOps.md</guid><pubDate>Tue, 18 Feb 2025 02:07:07 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20240531162124.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20240531162124.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[JAVA , OOP]]></title><description><![CDATA[<a href=".?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a> <a href=".?query=tag:Java" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Java">#Java</a> <a href=".?query=tag:OOP" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#OOP">#OOP</a>- 컴파일 다형성
-- 이름이 같지만, 매개변수의 타입/개수/순서 를 다르게 정의하여 사용하는 방법
-- 어떤 메서드가 호출될지 컴파일 시점에서 결정
-- 코드를 직관적이게 만드는데 사용
-- 런타임 다형성
-- 부모클래스 또는 인터페이스에 정의된 메서드를 하위 클래스에서 재정의하여 사용하는 방법
-- 어떤 메서드가 호출될지 런타임 시점에 결정된다.
-Map&lt;String, Integer&gt; map1 = new HashMap&lt;&gt;();
-Map&lt;String, Integer&gt; map2 = new TreeMap&lt;&gt;();
-해당 형태로 map1 / 2를 구현했다면.
-객체 타입은 각각 HashMap/TreeMap 이 되며,
-변수 타입은 모두 Map이 된다.
-- 즉 map1.add / map2.add 등 Map인터페이스가 가진 함수만을 사용할 수 있으며,
-HashMap이나 TreeMap가 가진 고유메서드는 사용할 수 없다.
-하지만, 오버라이딩(런타임 다형성)으로 재정의한 각각의 메서드로 해당 동작이
-구현체의 특성에 맞게 실행되게 된다.Java는 다중 상속을 지원하지 않는다.(부모가 2명 이상인것)
-다중 상속 처럼 여러개를 상속받을 수 있다. 부모의 메서드를 사용하며, 동작이 의도대로 흘러가도록 강제할 수 있으나, 구현은 자식 클래스에서 하기때문에 결합도를 낮출 수 있다. 상속은 부모 클래스의 내부 구현에 대해 상세히 알아야 하기 때문에, 자식과 부모 사이의 결합도가 높아질 수 밖에 없다.
-또한, 부모의 쓸모없는 기능까지 모두 받게 될 가능성이 있다.
-부모 클래스가 수정되면, 자식클래스도 동시에 수정해야하는 경우가 생긴다.
-단일 상속만 가능하기 때문에, 결국 인터페이스를 또 사용하게 된다. 합성은 구현에 의존하지 않는 점에서 상속과 다르다. 합성을 이용했을 때는, 객체의 내부는 공개되지 않고 인터페이스를 통해 코드를 재사용하기 때문에,
-구현에 대한 의존성을 인터페이스에 대한 의존성으로 변경하여 결합도를 낮출 수 있다.
-합성 관계는 실행 시점에 동적으로 변경될수 있다.(런타임) public class Phone { private RatePolicy ratePolicy; // 클래스 합성 private List&lt;Call&gt; calls = new ArrayList&lt;&gt;(); // 클래스 합성 public Phone(RatePolicy ratePolicy) { this.ratePolicy = ratePolicy; } public List&lt;Call&gt; getCalls() { return Collections.unmodifiableList(calls); }
-} 객체지향 설계시 지켜야 하는 5가지 원칙들의 앞글자를 딴것이다.
-순서는 노상관이다.
-책임 = 기능 이다. 수정시 영향도를 낮추는 주요한 원칙이다.
-- 추상화 사용을 통한 관계를 구축하기를 권장하는 의미이다.
-- 추상클래스,인터페이스를 통한 관계를 구축하여 확장은 쉽고, 변경에는 영향도가 없어지도록 분리해라?
-- 코드에는 문제가 없더라도, 부모타입의 설계 목적에도 부합하도록 설계해라. -&gt; 부모의 동작의도대로 흘러가도록 설계해라
-- Map a = new HashMap(); 같이 구현해서, 사용해도 문제 없도록 하는거다
-- &gt; 변수는 Map타입으로, Map메서드만 사용가능하지만 객체는 HashMap이기 때문에 각각의 기능으로 수행되고, 수정시에도 Map을 상속받는 다른 클래스로 변경이 쉬워진다.
-- 인터페이스의 단일책임과 비슷하다. 기능별로 잘 분리하고, 수정을 최소화할수 있도록 처음부터 생각하라.
-- 리스코프 치환의 원칙을 따라 설계했다면, 의존성 역전의 원칙을 따르기 쉬워진다.
-- 의존관계를 맺을때, 변화기 쉬운것 보다, 변화하기 어려운 것에 의존하라는 것이다. 자바 개발 키트의 약자로, 개발자들이 자바로 개발하는데 사용되는 SDK키트라고 생각하면 된다.
-자바 개발시 필요한 라이브러리와, javac, javadoc 등의 개발도구를 포함한다.
-자바 실행 프로그램인 JRE도 포함한다. (JRE에는 JVM이 들어가있다.)
-- 대표적으로, 안드로이드 스튜디오 등이 있다. Java SE(standard edition) : 가장 기본이 되는 표준 에디션의 자바 플랫폼.
-Java EE(enterprise edition) : 대규모 기업용 에디션. SE의 확장판
-Java ME(micro edition) : 피쳐폰/셋톱박스/프린터 와 같은 작은 임베디드 기기를 다루는데 이용하는 에디션
-Java FX : 가볍고 예쁜 그래픽 사용자 인터페이스를 제공하는 에디션 JRE는 자바 실행환경의 약자로서, JVM과 자바 프로그램을 실행시킬 때 필요한 라이브러리 API를 함께 묶어서 배포되는 패키지.
-또한, 자바 런타임 환경에서 사용하는 프로퍼티 세팅과 리소스(jar)파일을 가지고 있다.
-JRE는 기본적으로 JDK에 포함되어있기 때문에 JDK를 설치하면 함께 설치된다.<br>
-<img alt="Pasted image 20250110101642.png" src="사진-및-문서/pasted-image-20250110101642.png" target="_self"> JVM은 자바 가상머신의 약자로서, 직역하면 자바를 실행하는 머신, 자바를 돌리는 프로그램이다.
-자바로 작성된 모든 프로그램은 JVM에서만 실행될 수 있으므로, 자바 프로그램을 실행하기 위해서는 바늗시 자바 가상머신의 설치가 선행되어야 한다. java는 OS에 종속적이지 않다는 특징을 가지고 있다. 소스코드를 컴파일하여 기계어를 만드는 과정에서, window/mac/linux가 각기 다르게 컴파일을 시킨다. 때문에 각 OS별로 상이한 문법을 사용하게 되는 일이 벌어진다. 이러한 언어를 "이식성이 낮다" 라고 표한다. 하지만 java는 jvm를 거쳐서 OS와 상호작용 하기때문에, OS에 구애받지 않게 된다. 위에서 c언어는 컴파일을 거치면 기계어가 된다고 했는데,
-java는 JVM을 거쳐 바이트 코드로 변환되게 된다. 이는 가상 머신이 이해할 수 있는 중간 레벨의 언어로, 반쪽짜리 컴파일 결과물 이라고 할 수 있다.
-이는 어떠한 환경에 종속적이지 않고 실행될 수 있다.
-즉, 재컴파일 할 필요없이 기계가 바로 읽고 실행 할 수 있는 코드를 만들어 주는것이다.
-하지만 자바 프로그램과 달리 JVM은 각 운영체제에 종속적이므로, 각 운영체제에 맞는 JVM을 알맞게 설치해주어야한다.
-위의 설명과 같이 java는 일반 프로그램보다 JVM이라는 단계를 한 단계 더 거치기 때문에, 상대적으로 실행속도가 느리다는 단점을 내포하고 있다.
-이를 보환하기 위해, 필요한 부분만을 기계어로 바꾸어 속도를 향상시키는 JIT 컴파일러 같은 내부 프로그램이 있지만, 그럼에도 여전히 느리다.
-<br><img alt="Pasted image 20250110103409.png" src="사진-및-문서/pasted-image-20250110103409.png" target="_self">
-위 그림에서 Compiler는 javac.exe에 해당되고 JVM은 java.exe에 해당된다. 소스코드(MyPrograme.java)를 작성한다.
-컴파일러(Compiler)는 자바 소스코드를 이용하여 클래스 파일(MyProgram.class)을 생성한다. 컴파일 된 클래스 파일은 JVM(Java Virtual Machine)이 인식할 수 있는 바이트 코드 파일이다.
-JVM은 클래스 파일의 바이트 코드를 해석하여 바이너리 코드로 변환하고 프로그램을 수행한다.
-MyProgram 수행 결과가 컴퓨터에 반영된다 c또는 c++등으로 작성된 프로그램은 최종 결과물로 exe파일을 만들어낸다.
-java도 exe파일을 만들 수 있지만, class파일로 굳이 만들어내는 이유는 다음과 같다 JVM이 exe에 포함되는 형식으로 가능하기 때문에 exe파일이 무척 커지게 되는 단점이 있다.
-때문에 보통의 경우 일부러 생성하지 않는것이다. java에서 String은 객체이다.
-int, char와 달리 기본형,원시형(primitive type)이 아닌 참조형(reference type)변수로 분류된다.
-메모리의 Stack영역이 아닌, Heap영역에서 문자열 데이터가 생성되고 다뤄진다는 말이다.<br>
-<img alt="Pasted image 20250110122312.png" src="사진-및-문서/pasted-image-20250110122312.png" target="_self">
-또한 String은 불변(Immutable)객체이다. 예를들어, s = "a"; 에 s = s + s; 를 하면 "aa"가 되겠지만, heap영역 메모리에 새로운 주소로 생성하게 된다. JVM에서는 String Constant Pool이라는 독립적인 영억을 Heap영역에 구축하여
-문자열들을 Constant화 하여 다른 변수 혹은 객체들과 공유한다.
-이 과정에서 데이터 캐싱이 일어나고, 그만큼 성능적인 이득을 취할 수 있게된다. 데이터가 불변하다면, 멀티 스레드 환경에서 동기화 문제가 발생하지 않기 때문에 안전한 결과를 낼 수 있다. 만일 번지수의 문자열 값이 변경이 가능하다면, 참조값을 변경하여 애플리케이션에 보안 문제를 일으킬 수 있다. 먼저 문자열 리터럴 방식으로 변수에 저장하게 되면, 이 값은 string constant pool에 저장이 되지만, new연산자를 사용하여 생성한 값은 Heap영역에 존재하게된다. 대상 값 자체를 비교 대상의 주소값을 비교.
-즉, new연산자를 통해 만들어진 객체를 equals로 비교한다면 true가 나오겠지만,
-== 연산자를 사용한다면 false가 나오게 되는것이다. 두 클래스 모두 문자열을 연산(추가 및 변경)할 때 주로 사용하는 자료형이다.
-물론 String자료형 으로도 + 나 concat()으로 문자열을 이어붙일수 있다.
-하지만 +를 이용해 String인스턴스의 문자열을 결합하면, 내용이 합쳐진 새로운 String인스턴스를 생성하게된다.
-문자열을 많이 결합하면 결합할수록 공간낭비는 물론, 속도 또한 매우 느려진다.이를 해결하기 위해 Java는 문자열 연산을 전용으로 하는 자료형을 따로 만들어 제공하였다.
-내부적으로 Buffur라고 하는 독립적인 공간을 가지게 되어
-문자열을 바로 추가할 수 있어 공간의 낭비도 없으며, 문자열 연산 속도도 매우 빠르다
-기본적으로 16개의 문자를 저장할 수 있는 크기이며,
-연산 중 할당된 버퍼의 크기를 넘게되면 자동으로 버퍼를 증강 시킨다.SpringBuffer와 SpringBuilder의 메서드 사용법은 동일하다.
-불변자료형 으로써, 초기 공간과 다른 값에 대해서 새로운 메모리 공간을 할당하여 새로 생성한다.
-그렇게 남겨진 문자열 값은 java가비지 컬렉터에 의해 제거될 대상에 포함된다. 즉, 문자열을 조작할 때 새 객체를 생서하지 않고 기존 객체를 수정한다.
-메모리 관리 측면에서 효율적
-=&gt; 사실 자바는 문자열에 + 연산을 사용하면, 컴파일 전 내부적으로 StringBuilder 클래스를 자동으로 생성한 후 다시 문자열로 돌려준다. 다만, 문자열을 합치는 일이 빈번할 경우에는 단순히 +연산을 사용하는것은 효율이 떨어지므로
-SpringBuffer와 SpringBuilde 를 사용하는것이 옳다고 할 수 있다.
-컴파일 타임 위빙 (Compile-Time Weaving) 소스 코드 컴파일 시, Aspect가 대상 객체에 결합됩니다.
-AspectJ 같은 프레임워크에서는 가능하지만, Spring AOP는 이 방식을 지원하지 않습니다. 로드 타임 위빙 (Load-Time Weaving) 클래스 파일을 JVM에 로드할 때 Aspect를 결합합니다.
-Spring AOP는 기본적으로 지원하지 않으나, AspectJ 통합 설정을 통해 사용할 수 있습니다. 런타임 위빙 (Runtime Weaving) Spring AOP의 기본 방식입니다.
-런타임에 프록시 객체를 생성하여 부가 기능을 결합합니다.
-JDK 동적 프록시 또는 CGLIB를 사용하여 대상 객체를 프록시로 감싸고, 프록시가 메서드 호출을 가로채서 Advice를 실행합니다. 프록시 생성 시: 클래스 단위에서 PointCut 조건에 따라 프록시가 생성됩니다.
-메서드 호출 시: 개별 메서드 단위에서 PointCut 조건을 재평가합니다. 프록시 생성은 클래스 단위로 이루어지지만, PointCut 조건은 메서드 단위로 적용됩니다.
-런타임 정보(매개변수, 리턴 타입 등)를 기반으로 동적 조건을 평가해야 하는 경우가 있습니다.
-Spring AOP의 유연성과 확장성을 보장하기 위한 설계입니다. 클라이언트에서 서버를 직접 호출하고, 처리결과를 받는다. -&gt; 직접호출
-클라이언트에서 서버를 직접 호출하지 않고, 대리자를 통해 간접적으로 서버에 요청 -&gt; 간접호출 권한에 따른 접근 차단, 지연로딩을 수행하는 접근 제어 서버의 기능에 다른 기능을 추가해주는 부가 기능 추가 ex) 로그, 가공 대리자가 또 다른 대리자를 호출하는 프록시 체인 아무 객체나 프록시가 되는것은 아니다. 클라이언트는 서버에 요청한지, 프록시에게 요청한지 몰라야한다. 즉, 클라이언트의 코드를 건드리지 않고 프록시 추가와 런타임 객체 의존 관계 주입만 변경하여야 한다. 두 패턴 모두 프록시를 사용하는 방법이다.
-또한, 둘 모두 원본 객체를 건드리지 않고, 추가 기능을 실행 할 수 있다.
-하지만 GOF 디자인 패턴에서는 이 둘을 의도(Intent)에 따라서 구분한다.
-프록시 패턴 : 접근 제어가 목적
-데코레이터 패턴 : 새로운 기능 추가가 목적
-1.객체들이 사용하는 코드를 훼손하지 않으면서 런타임에 추가 행동들을 객체들에 할당할 때 사용.
-상속을 사용하여 객체의 행동을 호가장하는 것이 어색하거나, 불가능할 때 사용할 수 있다.
--만일 final 키워드가 기입된 클래스의 경우는 데코레이터 패턴을 통해 래핑하여 재사용 할 수 있다.
-ex)
-택스트 편집기
-- 택스트 편집기에서 굵게, 이텔릭체, 밑줄 등과 같은 다양한 텍스트 포맷을 지원한다.
-Spring
-- HttpServletRequestWrapper : Sevlet에서 제공하는 Wrapper로 데코레이터 패턴을 지원한다. 가상 프록시, 지연 로딩이 필요한 경우 부담되는 서비스 객체를 바로 초기화 한다면 리소스 낭비가 발생 할 수 있으므로, 프록시 객체를 통해 객체를 초기화 할 수 있다. 보호 프록시, 접근 제어가 필요한 경우 특정 클라이언트에 대해서만 서비스 객체를 이용할 수 있도록 하려는 경우 프록시 객체를 통해서 처리할 수 있다. 원격 프록시, 원격 서비스의 로컬 실행이 필요한 경우 서비스 객체가 원격 서버에 있는 경우에는 네트워크를 통해 클라이언트의 요청을 전달하여 처리할 수 있다. 로깅 프록시, 서비스 객체에 대한 로깅이 필요한 경우 프록시 객체에서 서비스에 전달하기 전과 후로 로깅을 진행할 수 있다. 캐싱 프록시, 요청 결과를 캐시하고 생명주기를 관리해야 하는 경우 ex) Spring JAP
-JPA의 지연 로딩의 경우, 가상 프록시를 적용하여 실제로 객체를 조회하기 이전까지 프록시 객체로 Entity를 대신하여 제공한다.
-ex) Spring AOP
-Spring AOP는 프록시 패턴을 사용하여 트렌젝션 관리, 로깅, 보안 등의 작업을 프록시에서 처리한다. public void write(char cbuf[], int off, int len) throws IOException { synchronized (lock) { ensureOpen(); if ((off &lt; 0) || (off &gt; cbuf.length) || (len &lt; 0) || ((off + len) &gt; cbuf.length) || ((off + len) &lt; 0)) { throw new IndexOutOfBoundsException(); } else if (len == 0) { return; } if (len &gt;= nChars) { /* If the request length exceeds the size of the output buffer, flush the buffer and then write the data directly. In this way buffered streams will cascade harmlessly. */ flushBuffer(); out.write(cbuf, off, len); return; } int b = off, t = off + len; while (b &lt; t) { int d = min(nChars - nextChar, t - b); System.arraycopy(cbuf, b, cb, nextChar, d); b += d; nextChar += d; if (nextChar &gt;= nChars) flushBuffer(); } }
-} JPA에서 실제 데이터가 필요한 시점까지 데이터베이스 조회를 지연하는 기법
-엔티티를 처음 조회할 때는 연관된 데이터를 즉시 로드하지 않고, 그 연관된 데이터가 실제로 사용될 때 데이터베이스에서 조회하는 방식
-불필요한 데이터 조회를 줄여서 성능을 최적화하는데 유리하다. 지연 로딩을 설정하면 연관된 엔티티나 컬렉션은 처음에 프록시 객체로 로드된다. 프록시는 실제 엔티티를 대신하는 객체로, DB조회가 필요할 때 프록시가 실제 데이터를 조회하여 값을 제공 처음 부터 연관된 데이터를 모두 로드하는것이 아닌, 실제 접근 시점에 DB에서 로드되도록 지연 엔티티 A를 조회시 관련(Reference)되어 있는 엔티티 B를 한 번에 가져오지 않는다.
-프록시를 맵핑하고 실제 B를 조회할 때 쿼리가 나간다.
-쿼리가 총 두 번 나간다. A조회시 한 번, B조회시 한 번 구체적인 Class Type을 알지 못하더라도 해당 Class의 method, type, variable들에 접근할 수 있도록 해주는 JAVA의 API이다.
-컴파일된 바이트 코드를 통해 Runtime에 동적으로 특정 Class의 정보를 추출할 수 있는 프로그래밍 기법 프로그램에 사용된 구성 요소의 실제 값 또는 프로퍼티를 결정짓는 행위
--즉 프로그램에서 사용되는 변수나 메서드 등 모든 것들이 결정되도록 연결해주는 것
-- 컴파일 시점에 결정
-- 프로그램이 실행 돼도 변하지 않음
-- 오버로딩 : 컴파일 다형성, 메서드 타입,개수,순서 를 다르게 하여 정의하는 것
-- private, final, static이 붙은 메서드
-- 런타임 시점에 결정
-- 오버라이딩 : 런타임 다형성, 부모,상위 클래스의 메서드를 하위 클래스가 재정의하여 사용하는 것
-- Java에서의 다형성, 상속이 가능한 이유 클래스의 수정 없이 유연하게 확장 가능한 코드를 작성할 수 있다. 앞서 설명했던 것을 토대로 생각해보면, Reflection은 Runtime에 Class Type을 모르는채로 객체를 생성하고 이용하기 때문에 동적 바인딩을 제공한다. 코드 작성 시점에서는 어떠한 Class를 사용해야할지 모르지만 Runtime에 Class를 가져와서 실행해야하는 경우 (Spring Annotation) private 변수를 변경하고 싶거나 private method를 테스트할 경우 IDE 사용 시 Da 입력만해도 이와 관련된 Class 혹은 Method 목록들을 IDE가 먼저 확인하고 사용자에게 제공한다 Reflection은 아래와 같은 정보를 가져올 수 있다. Class/Interface
-Constructor
-Method
-Field
-해당 정보들을 통해 (1) 객체 생성 (2) 메서드 호출 (3) 변수 값을 변경할 수 있다.[1] Class / Interfacepublic static void main(String[] args) throws Exception { // 1. class를 알고 있을 경우 Class car = Car.class; // 2. class 이름만 알고 있을 경우 Class car = Class.forName("com.reflection.test.Car"); // class.getName() -&gt; com.reflection.test.Car // 3. Default 생성자를 이용한 객체 생성 Car realCar = car.newInstance(); // 4. class에 구현된 interface 확인 Class[] interfaces = car.getInterfaces();
-}
-[2] Constructorpublic static void main(String[] args) throws Exception { Class car = Class.forName("com.reflection.test.Car"); // 1. 인자가 없는 생성자 가져오기 Constructor constructor = car.getDeclaredConstructor(); // 2. String 인자를 가진 생성자 가져오기 Constructor constructor = car.getDeclaredConstructor(String.class); // 3. 모든 생성자 가져오기 Constructor constructors[] = car.getDeclaredConstructors(); // 4. public 생성자만 가져오기 Constructor constructors[] = car.getConstructors(); // public com.reflection.test.Car() // public com.reflection.test.Car(java.lang.String) // 5. 생성자를 이용한 객체 생성 Car realCar = constructor.newInstance();
-}
-[3] Methodpublic static void main(String[] args) throws Exception { Class car = Class.forName("com.reflection.test.Car"); // 1. 인자가 없는 method 가져오기 Method method = car.getDeclaredMethod("move"); // 2. String 인자를 가진 method 가져오기 Method method = car.getDeclaredMethod("move", String.class); // 3. 모든 method 가져오기 Method methods[] = car.getDeclaredMethods(); // 4. 상속받은 method와 public method 가져오기 Method methods[] = car.getMethods(); // public void com.reflection.test.Car.move() // public void com.reflection.test.Car.move(java.lang.String) // 5. method 호출 Class realCar = car.newInstance(); method.invoke(realCar, /*인자*/); // 6. 접근 제한자를 무시한 method 호출. method.setAccessible(true); method.invoke(realCar, /*인자*/);
-}
-[4] Fieldpublic static void main(String[] args) throws Exception { Class car = Class.forName("com.reflection.test.Car"); // 1. car 객체에서 name 에 해당하는 field 가져오기 Field field = car.getDeclaredField("name"); // 2. car + car super 객체를 포함하여 name에 해당하는 field 가져오기 Field field = car.getField("name"); // 3. car 객체에 선언된 모든 field 가져오기 Field[] fields = car.getDeclaredFields(); // private java.lang.String com.reflection.test.Car.name // public java.lang.Integer com.reflection.test.Car.type // 4. car + car super 객체의 모든 public field 가져오기 Field[] fields = car.getFields(); // public java.lang.Integer com.reflection.test.Car.age
-}
-[5] Field 값 변경public static void main(String[] args) throws Exception { Class class = Class.forName("com.reflection.test.Car"); Constructor constructor = class.getConstructor() Car car = constructor.newInstance() Field field = car.getField("name"); // 1. public field 일 경우 field.set(car, "아반떼"); // 2. private field 일 경우 field.setAccessible(true); field.set(car, "아반떼");
-} 람다 표현식(Lambda Expression)이란?
-함수형 프로그래밍을 구성하기 위한 함수식이며, 간단히 말해 자바의 메소드를 간결한 함수 식으로 표현한 것. 이름없는 함수, 익명 함수(anonymous function) 이라고도 한다. int add(int x, int y) { return x + y;
-}
-// 위의 메서드를 람다 표현식을 이용해 아래와 같이 단축 시킬수 있다. (메서드 반환 타입, 메서드 이름 생략)
-(int x, int y) -&gt; { return x + y;
-};
-// 매개변수 타입도 생략 할 수 있다.
-(x, y) -&gt; { return x + y;
-};
-// 함수에 리턴문 한줄만 있을 경우 더욱 더 단축 시킬 수 있다. (중괄호, return 생략)
-(x, y) -&gt; x + y; 람다의 바디에서는 파라미터가 아닌 바디 외부에 있는 변수를 참조할 수 있다.
-유사하게 로컬 클래스, 익명 클래스에서도 참조가 가능하다.
-public class VariableCapture { private void run() { // 로컬 클래스, 익명 클래스, 람다에서 이 변수를 참조하면 effective final로 변경 int baseNumber = 10; // 람다 IntConsumer lambda = (i) -&gt; System.out.println(i + baseNumber); // i + 10 // 로컬 클래스 class LocalClass { void printBaseNumber() { System.out.println(baseNumber); // 10 } } // 익명 클래스 IntConsumer intConsumer = new IntConsumer() { @Override public void accept(int i) { System.out.println(i + baseNumber); // i + 10 } }; }
-} 자유 변수는 final로 선언되어 있어야 한다.
-final로 선언되지 않은 자유 변수는 final처럼 동작해야 한다. (effectively final) 지역 변수는 JVM의 영역 중 stack영역에 생성된다.
-쓰레드별로 해당 stack영역을 별로 갖는다.
-즉, 쓰레드 끼리 공유가 되지 않는다.
-반면 인스턴스 변수는 Heap영역에 생성된다.
-즉, 인스턴스 변수는 공유가 가능하다.
-람다는 별도의 쓰레드에서 실행이 가능하다.
-따라서 지역 변수(자유 변수)가 있는 쓰레드가 사라졌을 때, 람다가 이 변수를 참조하고 있다면, 오류를 야기할 수 있는것이다. 람다는 자유 변수를 참조할 때 직접 그 변수를 참조하는 것이 아닌,
-자유 변수를 자신의 stack영역에 복사하여 참조하는 방법으로 참조 오류를 해결했다.
-이러한 이유로 자유 변수는 수정이 불가능하도록 final처럼 동작해야 하는 것이다. 로컬 클래스 / 익명 클래스 / 람다 모두 자유 변수를 참조할 수 있다는 공통점이 있다.
-하지만 로컬클래스 / 익명클래스와 다르게 람다에서는 자유 변수와 같은 이름의 변수를 선언할 수 없다.
-람다의 scope는 자유변수의 scope와 같기 때문이다.
-반면 로컬/익명 클래스는 내부에 생성된 변수의 스코프가 더 지엽적이기 때문에 선언이 가능하다. 클래스 레벨의 변수나, 메서드, 블록 을 정의 할 때 사용된다.
-인스턴스(객체)생성 , new키워드 없이도 접근이 가능하다.
-모든 인스턴스에서 공유된다.
-static변수는 프로그램이 빌드될 때 메모리에 할당, 종료될 때 까지 유지.
-static키워드의 남용은 OOP의 원칙과 상반되며, 메모리 사용량의 증가로 이어질 수 있으므로 주의가 필요하다. 클래스 레벨에서 공유되는 값을 정의할 때 사용.
-인스턴스마다 별도의 복사본을 유지 할 필요가 없다.
-메모리 사용을 최적화 할 수 있다. 클래스 생성없이 직접 호출 가능.
-유틸리티 함수나, 상태가 필요없는 연산에 주로 활용. ex) 수학 연산
-인스턴스 생성의 오버헤드 없이 빠른 실행이 가능하다.
-단, static메서드는 해당 클래스 내의 다른 static메서드나, 변수에만 접근 할 수 있으므로 인스턴스 멤버에 접근해야하는 경우 사용할 수 없다.
-<br><img alt="Pasted image 20250122111223.png" src="사진-및-문서/pasted-image-20250122111223.png" target="_self">
-int, long, booolean 등 기본 자료형을 생성할 때 저장하는 공간
-임시적으로 사용되는 변수나 정보들이 저장되는 영역
-메서드 호출 시 마다 스텍 프레임(그 메서드만을 위한 공간이 생성되고, 그 메서드 안에서
-사용되는 값들을 저장하고, 호출된 메서드의 매개변수, 지역변수, 리턴 값 등을 임시로 저장한다.그리고 메서드의 수행이 끝나면 프레임별로 삭제된다.단, 데이터 타입에 따라 스텍과 힙에 저장되는 방식이 다르다는 점을 유의해야한다.위사진 참고- 이를 넘어서면 StackOverFlowError를 발생한다. 메서드 영역과 함께 모든 스레드가 공유한다.
-JVM이 관리하는 프로그램 상에서 데이터를 저장하기 위해 런타임 시 동적으로 할당되어 사용되는 영역이다.
-new연산자로 생성되는 클래스와 인스턴스 변수, 배열 타입 등 Reference Type이 저장된다.
-메서드 영역에 저장된 클래스만이 힙영역에 생성이 되어 적재된다.
-힙영역에 더이상 아무도 참조하지않는 객체가 있다면, GC에 의해 제거된다.
-]]></description><link>study/프로그래밍/java-,-oop.html</link><guid isPermaLink="false">study/프로그래밍/JAVA , OOP.md</guid><pubDate>Tue, 18 Feb 2025 02:05:34 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250110101642.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20250110101642.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Spring Batch 구조 드로잉]]></title><description><![CDATA[balancePartitionedJobbalanceInitializeStepbalancePartitionStepbalanceSendSnsStepbalanceResetSteppartitionerpartitionHandlerStepExecutionContextReaderprocesserwriterdtochuck sizeSlaveStep-no: 2SlaveStep-no: gridSize balanceQueueResponnse QueueProcessed ItemsProcessed Itemstotal DataProcessed ItemsProcessed ItemsworkingProcessed ItemsProcessed ItemsProcessed ItemsProcessed ItemsSlaveStep-no: 1gridSize - 1gridSize - 2partiton thread-no: 1partiton thread-no: 2partiton thread-no: gridSize totalRecords+ datagridSizeContorllerjobParameters(read only)jobParameters - gridSize - startDate - endDateJob Schedulerexcutedto List(chuck size)dto Listdto Listdto Listdto Listdto Listdto Listdto Listdto ListThe restdto ListfinishedfinishedworkingworkingdtotriggerJobExecutionContextgrid size]]></description><link>project/hello-batch/spring-batch-구조-드로잉.html</link><guid isPermaLink="false">project/hello Batch/Spring Batch 구조 드로잉.md</guid><pubDate>Tue, 18 Feb 2025 02:00:18 GMT</pubDate></item><item><title><![CDATA[Spring Batch 트러블 슈팅 부록]]></title><description><![CDATA[<a href=".?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href=".?query=tag:개발" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개발">#개발</a> <a href=".?query=tag:SPRING" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SPRING">#SPRING</a> <a href=".?query=tag:Batch" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Batch">#Batch</a> <a href=".?query=tag:Partitioning" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Partitioning">#Partitioning</a> <a href=".?query=tag:Chunk" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Chunk">#Chunk</a>1 .GridSize: 4 ActiveConnections: 9/50 소요시간: 6 minutes 23.55
-2 .GridSize: 5 ActiveConnections: 11/50 소요시간: 4 minutes 55.57
-3 .GridSize: 6 ActiveConnections: 13/50 소요시간: 4 minutes 47.01
-4 .GridSize: 7 ActiveConnections: 15/50 소요시간: 3 minutes 47.76
-5 .GridSize: 8 ActiveConnections: 17/50 소요시간: 3 minutes 47.69
-6 .GridSize: 9 ActiveConnections: 19/50 소요시간: 3 minutes 59.85
-7 .GridSize: 10 ActiveConnections: 21/50 소요시간: 3 minutes 6.98
-8 .GridSize: 11 ActiveConnections: 23/50 소요시간: 3 minutes 0.52
-9 .GridSize: 12 ActiveConnections: 25/50 소요시간: 3 minutes 5.6112월21일
-164컬럼
-10분 40.78312월20일
-161컬럼
-10분 10.79412월19일
-223컬럼
-14분 29.279초12월18일
-181컬럼
-11분 09.660초12월17일
-329컬럼
-19분 56.948초 12월14일
-220컬럼
-13분 28.209초12월13일
-179컬럼
-10분 57.596초12월12일
-236컬럼
-14분 30.033초12월11일
-226컬럼
-14분 02.939초12월21일
-startDate=2024-12-14 07:30:00:00&amp;endDate=2024-12-21 07:30:00
-388컬럼
-4분 43.53초12월20일
-startDate=2024-12-13 07:30:00:00&amp;endDate=2024-12-20 07:30:00
-388컬럼
-4분 44.438초12월19일
-startDate=2024-12-12 07:30:00:00&amp;endDate=2024-12-19 07:30:00
-387컬럼
-4분 41.215초12월18일
-startDate=2024-12-11 07:30:00:00&amp;endDate=2024-12-18 07:30:00
-395컬럼
-4분 50.9초12월17일
-startDate=2024-12-10 07:30:00:00&amp;endDate=2024-12-17 07:30:00
-407컬럼
-4분 55.686초 12월14일
-startDate=2024-12-07 07:30:00:00&amp;endDate=2024-12-14 07:30:00
-376컬럼
-4분 35.387초12월13일
-startDate=2024-12-06 07:30:00:00&amp;endDate=2024-12-13 07:30:00
-384컬럼
-4분 43.642초12월12일
-startDate=2024-12-05 07:30:00:00&amp;endDate=2024-12-12 07:30:00
-438컬럼
-4분 47.027초12월11일
-startDate=2024-12-04 07:30:00:00&amp;endDate=2024-12-11 07:30:00
-437컬럼
-4분 54.308초
-4일 7:30분-5일 7:30분
-5일 7:30분-6일 7:30분
-6일 7:30분-7일 7:30분
-7일 7:30분-8일 7:30분
-8일 7:30분-9일 7:30분
-9일 7:30분-10일 7:30분
-10일 7:30분-11일 7:30분
-dev 배치 IP운영 배치 IP
-10.22.161.86:8010localhost:8010/run-newMemberBalance?gridSize=6&amp;startDate=2017-11-29 00:00:00&amp;endDate=2017-12-01 23:59:59localhost:8010/run-memberBalance?startDate=2017-11-29&amp;endDate=2017-12-01### 300테스트 1
-## 범위 - 2016-09-28 ~ 2016-12-13
-startDate=2016-09-28&amp;endDate=2016-12-13
-## 컬럼 개수 - 289개
-6분 22초 ### 300테스트 2
-## 범위 - 2016-12-13 ~ 2017-01-16
-startDate=2016-12-13&amp;endDate=2017-01-16
-## 컬럼 개수 - 280개
-5분 57초 ### 300테스트 3
-## 범위 - 2017-01-11 ~ 2017-02-13
-startDate=2017-01-11&amp;endDate=2017-02-13
-## 컬럼 개수 - 286개
-6분 23초 ### 300테스트 4
-## 범위 - 2017-05-17 ~ 2017-06-01
-startDate=2017-05-17&amp;endDate=2017-06-01
-## 컬럼 개수 - 274개
-5분 54초 ### 300테스트 5
-## 범위 - 2017-11-07 ~ 2017-12-01
-startDate=2017-11-07&amp;endDate=2017-12-01
-## 컬럼 개수 - 292개
-6분 32초 -------------------------------------------------- ### 1100테스트 1-1
-## 범위 - 2018-02-11 ~ 2018-05-06
-startDate=2018-02-11&amp;endDate=2018-05-06
-## 컬럼 개수 - 1094개(예상)
-22분 45초 ### 1100테스트 1-2
-## 범위 - 2018-02-11 ~ 2018-05-06
-startDate=2018-02-11&amp;endDate=2018-05-06
-## 컬럼 개수 - 1094개(예상)
-22분 34초 현재 예치금 차액 배치의 서비스로직은, 각 파티션에서 실행되며,
-이렇게 실행된 코드는 parallelStream을 사용하여 내부적인 병렬처리를 진행한다.
-해당 로직의 특징은 cpu에 부하를 주는 계산식이 아닌, 단순 I/O (api호출 대기)의 소요시간이 크다. API 호출 작업 10,000건 처리
-각 호출 응답 시간 200ms 기본 스레드 풀 크기: CPU 코어 수 - 1 (예: 7개의 코어)
-처리 시간 ≈ 작업&nbsp;개수/스레드&nbsp;수×응답&nbsp;시간\text{작업 개수} / \text{스레드 수} \times \text{응답 시간}작업&nbsp;개수/스레드&nbsp;수×응답&nbsp;시간
-≈10,000/7×200ms\approx 10,000 / 7 \times 200ms≈10,000/7×200ms
-≈286초\approx 286초≈286초 스레드 풀 크기: 100
-처리 시간 ≈ 작업&nbsp;개수/스레드&nbsp;수×응답&nbsp;시간\text{작업 개수} / \text{스레드 수} \times \text{응답 시간}작업&nbsp;개수/스레드&nbsp;수×응답&nbsp;시간
-≈10,000/100×200ms\approx 10,000 / 100 \times 200ms≈10,000/100×200ms
-≈20초\approx 20초≈20초 CPU 바운드 작업: CPU를 많이 사용하는 작업(예: 복잡한 계산)이면, 코어 수 이상의 스레드를 실행할 경우 컨텍스트 스위칭(스레드 간 전환) 비용이 증가해 성능이 오히려 떨어질 수 있습니다.
-예: 7개의 코어로 100개의 CPU 작업 스레드를 처리하려 하면 병목이 발생. I/O 바운드 작업(API 호출 포함): 네트워크 I/O 작업은 대기 시간이 길고, 대기 중에는 CPU를 거의 사용하지 않습니다.
-이 경우 스레드 수 &gt; 코어 수가 유리하며, 100개의 스레드를 실행해도 대부분의 스레드는 대기 상태에 있으므로 CPU 사용량이 낮습니다. 69961 ms
-70048 ms
-70396 ms55180 ms
-55036 ms
-55285 ms
-55442 ms71139 ms
-72220 ms64473 ms
-65609 ms
-미리 파티션 되어있는 데이터의 특성상 한번에 처리되는 양이 많지 않다.
-또한, stream().parallel()은 forkJoinPool에서 효율적으로 관리되며,
-데이터의 동기화 병목을 줄이고, 컨텍스트 전환 횟수를 줄여 더 효율적인 것으로 보임.
-사실 잘 모르겠음 stream().parallel() 기능이 효율적이다. 아마도 Where절이 추가되면서 reader의 속도가 크게 올라갓으며, 1번의 호출만을 하기 때문에 더 개선되었을것이다.
-chunk-size:20
-55969 mschunk-size:20
-54679 ms
-54416 ms기존 : reader에서 넘어온녀석들의(옛날기준 날짜범위 내의 가장최신Point)차액 -&gt; 차액이있는녀석들의 (모든날짜 범위내의 최신 Point)의 차액
-현재 : reader에서 가져온녀석들의(모든날짜범위내의 최신 Point)의 차액=&gt; 옛날기준 날짜범위 내의 가장최신포인트와 실시간 포인트는 다를 경우가 많음. 거기 내에전날의 최신포인트 vs 현재 최신포인트(신한) -&gt; 여기엔 안걸리지만
-현재 최신포인트 vs 현재 최신포인트(신한) -&gt; 여기에는 걸리면 로컬을 기준으로 잡아도, 운영 서버에서 어떠한 스레드 셋팅이 효과적일지 판단하기 힘듬.
-어떠한 방법을 사용해야 실제 운영 서버 반영 전, 테스트를 할 수 있을지? 1차에서는 어제 범위 Point (서브쿼리도 메인 쿼리에서 .where()에 의해 이미 어제의 데이터로 필터링된 상태에서 작동)
-2차에서는 모든데이터 범위의 최신 Point 배치를 돌리는 현재날짜 0시 ~ 7시 사이에 입출금건이 있는 고객의 경우 1차에서 항상 걸릴 수 밖에 없음Point 1차에서 모두 검증하는 방법은 어떨지?
-]]></description><link>project/hello-batch/spring-batch-트러블-슈팅-부록.html</link><guid isPermaLink="false">project/hello Batch/Spring Batch 트러블 슈팅 부록.md</guid><pubDate>Tue, 18 Feb 2025 01:50:31 GMT</pubDate><enclosure url="사진-및-문서/output-(9).png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/output-(9).png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[유입 통계 ADMIN용 테이블 설계 과정]]></title><description><![CDATA[<a href=".?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href=".?query=tag:개발" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개발">#개발</a> <a href=".?query=tag:SPRING" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SPRING">#SPRING</a> <a href=".?query=tag:AOP" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#AOP">#AOP</a>hf_marketing_codehf_marketing_targethf_marketing_hit_log<br><img alt="Pasted image 20250102181842.png" src="사진-및-문서/pasted-image-20250102181842.png" target="_self">=&gt; 해당형태로 컬럼을 고정시키고, 동적으로 유입 수 를 출력한다.-&gt; 그 후 페이지에 뿌려주기Date: 01-02
-Ad Type: 구글광고
-Total Inflow: 4
-Total Hit: 27
-Detail Information: Page Name: 대출하기 페이지 Hit: 9 Page Name: 한도조회 버튼 Hit: 12 Page Name: 이용안내 페이지 Hit: 6
-]]></description><link>project/hello-marketing/유입-통계-admin용-테이블-설계-과정.html</link><guid isPermaLink="false">project/hello marketing/유입 통계 ADMIN용 테이블 설계 과정.md</guid><pubDate>Tue, 18 Feb 2025 01:26:15 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250102181842.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20250102181842.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[정보처리 기사 실기 키워드]]></title><description><![CDATA[<a href=".?query=tag:정보처리기사" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#정보처리기사">#정보처리기사</a> <a href=".?query=tag:실기" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#실기">#실기</a> <a href=".?query=tag:키워드" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#키워드">#키워드</a> <a href=".?query=tag:정리" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#정리">#정리</a>
-시제품을 끊임없이 제작하며 사이클을 반복하는 개발 방법론
-워터폴과 대조적이며, 소프트웨어 개발을 넘어 기업 경영 전반에서 사용되고 있다.
-고객의 변화하는 요구사항과 환경 변화에 능동적인 소프트웨어 개발 방법론 소프트웨어 공학에서 리펙토링(Refactoring)을 하는 목적에 대해 간략히 서술하시오. 리펙토링의 목적은 프로그램을 쉽게 이해하고 수정하여 빠르게 개발할 수 있도록 하기 위함이다. ( 1 ) 요구사항은 시스템이 무엇을 하는지, 어떤 기능을 하는지 등 사용자가 시스템을 통해 제공받기를 원하는 기능이나 시스템이 반드시 수행해야하는 기능을 의미한다.
-( 2 ) 요구사항은 품질이나 제약사항과 관련된 요구사항으로, 시스템의 장비 구성, 성능, 인터페이스, 테스트, 보안 등의 요구사항을 말한다. UML에 관한 다음 괄호에 공통으로 들어갈 알맞은 용어는?
-( ) 다이어그램은 UML다이어그램중 객체(Object)들을 ( )로 추상화하여 표현하는 다이어그램으로, 대표적인 구조적 다이어그램이다.
-( )는 각각의 객체들이 갖는 속성과 메소드를 표현한 것으로 3개의 구획으로 나눠 이름, 속성, 메서드를 표기한다. UML은 시스템 분석, 설계, 구현 등 시스템 개발 과정에서 시스템 개발자와 고객 또는 개발자 상호 간의 의사소통이 원활하게 이루어지도록 표준화한 대표적인 객체지향 모델링 언어로 사물, ( 1 ), 다이어그램 으로 이루어져있다.
-( 1 )는 사물과 사물사이의 연관성을 표현하는 것으로 연관, 집합, 포함, 일반화 등 다양한 형태의 ( 1 )가 존재한다.
-( 2 )는 UML에 표현되는 사물의 하나로, 객체가 갖는 속성과 동작을 표현한다. 일반적으로 직사각형으로 표현하며, 직사각형 안에 이름, 속성, 동작을 표기한다.
-( 3 )는 ( 2 )와 같은 UML에 표현되는 사물의 하나로, ( 2 )나 컴포넌트의 동작을 모아놓은 것이며, 외부적으로 가시화되는 행동을 표현한다. 단독으로 사용되는 경우는 없으며, ( 3 )구현을 위한 ( 2 )또는 컴포넌트와 함께 사용된다. 관계(Relationship)는 사물과 사물 사이의 연관성을 표현하는 것이다.
-1 - 하나의 사물이 다른 사물에 포함되어 있는 관계로, 전체와 부분으로 구분되어지며, 서로 독립적이다.
-2 - 상위 모듈이 하위 모듈보다 더 일반적인 개념을 가지고 있으며, 하위 모듈이 상위 모듈보다 더 구체적인 개념을 가진다. [보기]
--Association(연관 관계) : 객체간의 기본적인 관계를 나타낸다.
--Dependency(의존 관계) : 한 객체가 다른 객체에 의존하거나 영향을 받는다.
--Aggregation(집합 관계) : 부분과 전체의 관계를 나타내며, 부분이 독립적으로 존재할 수 있는 경우를 말한다.
--Realization(실체화 관계) : 인터페이스와 이를 구현하는 클래스 간의 관계
--Composition(합성 관계) : 집합관계의 특수한 형태로, 부분이 전체와 생명 주기를 공유하며 독립적으로 존재할 수 없는 경우
--Generalization(일반화 관계) : 상위 클래스와 하위 클래스 간의 관계로, 상속을 통해 일반적인 특성을 공유한다. UML을 이용한 다이어그램 중 다음 그림에 해당하는 다이어그램을 쓰시오.
-[ ] &lt;&lt;import&gt;&gt; [Security]
-Order ----------------&gt; +(Credentials) / ( ) +(MDSCrupt) LOC기법에 의하여 예측된 총 라인 수가 30,000라인, 개발에 참여할 프로그래머가 5명, 프로그래머들의 평균 생산성이 월간 300라인일 때 개발에 소요되는 기간을 계산식과 함께 쓰시오. 데이터베이스 스키마(Schema)에 대해 간략히 서술하시오. 스키마는 데이터베이스의 구조와 제약 조건에 관한 전반적인 명세를 기술한 것이다. DB 설계에 대한 설명. 괄호를 채우시오
-( 1 ) : 논리적 구조로 표현된 데이터를 디스크 등의 저장장치에 저장할 수 있는 데이터로 변환하는 과정으로, 파일의 저장 구조 및 엑세스 경로를 결정하며, 테이블 정의서 및 명세서가 산출된다.
-( 2 ) : 현실 세계에 대한 인식을 추상적 개념으로 표현하는 과정으로, 개념 스키마 모델링과 트렌젝션 모델링을 수행하며, 요구 조건 명세를 E-R 다이어그램으로 작성한다.
-( 3 ) : 현실의 자료를 특정 DBMS가 지원하는 자료구조로 변환하는 과정으로, 트렌젝션의 인터페이스를 설계하고, 정규화를 통해 스키마를 평가 및 정제한다. 다음은 데이터베이스 구축까지의 과정을 나열한 것이다. 순서대로 괄호를 채우시오. 요구분석 → ( ) → ( ) → ( ) → 구현 데이터 모델이 구성 요소에 대한 다음 설명에서 괄호(1, 2)에 들어갈 용어를 쓰시오
-( 1 )은 데이터베이스에 저장된 실제 데이터를 처리하는 작업에 대한 명세서로서 데이터베이스를 조작하는 기본 도구에 해당된다.
-( 2 )는 논리적으로 표현된 객체 타입들 간의 관계로서 데이터의 구성 및 정적 성질을 표현한다.
-제약조건은 데이터베이스에 저장될 수 있는 실제 데이터의 논리적인 제약 조건을 의미한다.
-<br><img alt="do-messenger_screenshot_2025-02-10_15_04_45.png" src="사진-및-문서/do-messenger_screenshot_2025-02-10_15_04_45.png" target="_self">
--다음 E-R다이어그램을 참고하여 괄호(1~5)의 설명에 적합한 요소를 찾아 기호로 표시
-( 1 ) : 관계 집합을 의미한다.
-( 2 ) : 관계 집합과 속성을 연결한다.
-( 3 ) : 개체 집합을 의미하며, 키로 사용되는 항목에는 밑줄을 표시한다.
-( 4 ) : 관계 집합의 속성을 의미한다.
-( 5 ) : 개체 집합과 집합을 연결한다. 1 → ㄴ
-2 → ㄷ
-3 → ㄱ
-4 → ㄹ
-5 → ㅁ
--키(Key)에 대한 다음 설명에서 괄호(1, 2)에 들어갈 용어를 쓰시오.
-키는 데이터베이스에서 조건에 만족하는 튜플을 찾거나 순서대로 정렬할 때 기준이 되는 속성을 말한다.
-슈퍼키는 한 릴레이션 내에 있는 속성들의 집합으로 구성된 키로, 릴레이션을 구성하는 모든 튜플에 대해 ( 1 )을 만족한다.
-후보키(Candidate Key)는 릴레이션을 구성하는 속성들 중에서 튜플을 유일하게 식별하기 위해 사용되는 속성들의 부분집합으로, ( 1 )과 ( 2 )을 만족하는 특징이 있다. 관계대수란 관계형 데이터베이스에서 원하는 정보와 그 정보를 검색하기 위해서 어떻게 유도하는가를 기술하는 절차적인 언어이다. 관계 대수에 사용되는 연산은 다음과 같다. 합집합(UNION)은 두 릴레이션에 존재하는 튜플의 합집합을 구하되, 결과로 생성된 릴레이션에서 중복되는 튜플은 제되는 연산으로, 기호는 ( 1 )이다. 차집합(DIFFERENCCE)은 두 릴레이션에 존재하는 튜플의 차집합을 구하는 연산으로, 사용하는 기호는 ( 2 )이다. 교차곱(CARTESIAN PRODUCT)은 두 릴레이션에 있는 튜플들의 순서쌍을 구하는 연산으로, 사용하는 기호는 ( 3 )이다. 프로젝트(PROJECT)는 주어진 릴레이션에서 송성 리스트(Attribute List)에 제시된 속성 값만을 추출하여 새로운 릴레이션을 만드는 연산으로, 사용하는 기호는 ( 4 )이다. 조인(JOIN)은 공통 속성을 중심으로 두 개의 릴레이션을 하나로 합쳐서 새로운 릴레이션을 만드는 연산으로, 사용하는 기호는 ( 5 )이다. 1 → U
-2 → ㅡ
-3 → x
-4 → ㅠ
-5 → |&gt;&lt;| 릴레이션 A, B가 있을 때, 릴레이션 B의조건에 맞는 것들만 릴레이션 A에서 분리하여 프로젝션을 하는 연산은? ( )은 관계 데이터의 연산을 표현하는 방법으로, 관계 데이터 모델의 제안자인 코드(E. F. Codd)가 수학의 술어 해석(Predicate Calculus)에 기반을 두고 관계 데이터베이스를 위해 제안했다.
-원하는 정보가 무엇이라는 것만 정의하는 비절차적 특성을 지니며, 원하는 정보를 정의할 때 계산 수식을 사용한다.
-튜플 해석식을 사용하는 튜플 ( )과 도메인 해석식을 사용하는 도메인 ( )으로 구분된다. 데이터의 중복으로 인해 테이블 조작 시 문제가 발생하는 현상을 이상(Anomaly)이라고 한다. 이상 중 삭제 이상(Deletion Anomaly)에 대해 간략히 서술하시오. 데이터베이스의 이상(Anomaly)의 종류 3가지를 쓰시오. 삽입 이상(Insertion Anomaly)
-삭제 이상(Deletion Anomaly)
-갱신 이상(Update Anomaly)
-<br><img alt="do-messenger_screenshot_2025-02-10_17_10_58.png" src="사진-및-문서/do-messenger_screenshot_2025-02-10_17_10_58.png" target="_self">
-테이블 &lt;R&gt;에서 성적은 기본키인 {학생, 학과}에 대해 ( 1 ) Functional Dependency이다.
-테이블 &lt;R&gt;에서 학년은 기본키인 {학생, 학과} 중 학생만으로 식별이 가능하므로 기본키에 대해 ( 2 ) Functional Dependency이다.
-임이의 테이블에 속성 A, B, C가 있을 떄, A → B이고 B → C일 때 A → C인 관계는 ( 3 )Functional Dependency이다. Full
-Partial
-Transitive 데이터베이스에서 비(반)정규화(Denormalization)의 개념을 서술하시오. 비정규화는 정규화된 데이터 모델을 통합, 중복, 분리 하는 과정으로, 의도적으로 정규화 원칙을 위배하는 행위이다. 데이터베이스의 상태 변화를 일으키는 트렌젝션(Transaction)의 특성 원자성 : 트렌젝션의 연산은 데이터베이스에 모두 반영되도록 완료(Commit)되든지 아니면 전혀 반영되지 않도록 복구(Rollback)되어야 한다. 일관성 : 트렌젝션이 그 실행을 성공적으로 완료하면 언제나 일관성 있는 데이터베이스 상태로 변환한다. 독립성 : 둘 이상의 트렌젝션이 동시에 병행 실행되는 경우 어느 하나의 트렌젝션 실행중에 다른 트렌젝션의 연산이 끼어들 수 없다. 지속성 성공적으로 완료된 트렌젝션의 결과는 시스템이 고장나더라도 영구적으로 반영되어야 한다. 파일의 구조는 파일을 구성하는 레코드들이 보조기억장치에 편성되는 방식을 의미하는 것으로, 크게 순차, ( ), 해싱으로 구분한다.
-( ) 파일 구조는 &lt;값, 주소&gt; 쌍으로 구성되는 데이터 구조를 활용하여 데이터에 접근하는 방식으로, 자기 디스크서 주로 활용된다. 비상 상황이 발생한 경우 비상사태 또는 업무중단 시점부터 업무가 복구되어 다시 정상 가동 될 때까지의 시간을 의미한다. 접근통제는 데이터가 저장된 객체와 이를 사용하려는 주체 사이의 정보 흐름을 제한하는 것이다. 이러한 접근통제에 관한 기술 중 ( )는 데이터에 접근하는 사용자의 신원에 따라 접근 권한을 부여하여 제어하는 방식으로, 데이터의 소유자가 접근통제 권한을 지정하고 제어한다.
-객체를 생성한 사용자가 생성된 객체에 대한 모든 권한을 부여받고, 부여된 권한을 다른 사용자에게 허가할 수도 있다. DBMS는 데이터베이스에 치명적인 손실이 발생했을 때 이를 복구하기 위해 데이터베이스의 처리내용이나 이용 상황 등 상태 변화를 시간의 흐름에 따라 기록한 로그를 생성한다.
-( 1 ) : 데이터베이스가 비정상적으로 종료되었을 때, 디스크에 저장된 로그를 분석하여 트렌젝션의 시작(start)과 완료(commit)에 대한 기록이 있는 트렌젝션들의 작업을 재작업 한다. 즉, 로그를 이용하여 해당 데이터 항목에 대해 이전 값을 이후값으로 변경하는 연산이다.
-( 2 ) : 데이터베이스가 비정상적으로 종료되었을 때, 디스크에 저장된 로그를 분석하여 트렌젝션의 시작을 나타는 'start'는 있지만 완료를 나타내는 'commit' 기록이 없는 트렌젝션들이 작업한 내용들을 모두 취소한다. 즉 로그를 이용하여 해당 데이터 항목에 대해 이후 값을 이전 값으로 변경한다. 웹 페이지의 기본 형식인 HTML의 문법이 각 웹 브라우저에서 상호 호환적이지 못한다는 문제와 SGML의 복잡함을 해결하기 위하여 개발된 ( )은 다른 특수한 목적을 갖는 마크업 언어이다.
-원활한 데이터의 연계를 위해 송.수신 시스템 간에 전송되는 데이터가 동일한 구조로 구성될 수 있도록 형태를 정의는 역할을 수행하며, 다음과 같은 특징이 있다. 텍스트 데이터 형식으로 유니코드를 사용하여 전 세계 언어를 지원한다. 대다수의 웹 브라우저가 해석을 위한 번역기(Parser)를 내장하고 있다. XML문서의 문자들은 마크업과 내용으로 구분된다.
-일반적으로 마크업은 &lt;로 시작하여 &gt;로 끝나는 태그(Tag)를 의미하고, 그 외의 문자열은 내용에 해당한다. 마크업과 내용으로 이루어지는 하나의 요소를 의미한다. 통합 구현과 관련하여 다음 설명의 괄호에 공통으로 들어갈 알맞은 용어는?
-( )는 HTTP, HTTPS, SMTP 등을 사용하여 xml 기반의 메시지를 네트워크상에서 교환하는 프로토콜이다.
-( ) envelope, 헤더, 바디 등이 추가된 xml 문서이다.
-( )는 복잡하고 무거운 구조로 구성되어 있어, ( )보다는 RESTful 프로토콜을 이용하기도 한다. 웹 서비스와 관련된 다음 설명에 해당되는 용어는?
-웹 서비스와 관련된 서식이나 프로토콜 등을 표준적인 방법으로 기술하고 게시하기 위한 언어.
-XML로 작성되며 UDDI의 기초가 된다. SOAP, XML 스키마와 결합하여 인터넷에서 웹 서비스를 제공하기 위해 사용되며, 클라이언트는 이것을 통해 서버에서 어떠한 조작이 가능한지를 파악할 수 있다. 다음 럼바우 데이터 모델링에 대한 설명에서 각 지문(1~3)에 해당하는 모델링을 매칭시키기
-ㄱ. 다수의 프로세스들 간의 자료 흐름을 중심으로 처리 과정을 표현한 모델링
-ex) 자료흐름도(DFD)ㄴ. 시간의 흐름에 따른 객체들 간의 제어 흐름, 상호 작용, 동작 순서 등의 동적인 행위를 표현하는 모델링
-ex) 상태 변화도(STD), 사건 추적도ㄷ. 시스템에서 요구되는 객체를 찾아내어 속성과 연산 식별 및 객체들 간의 관계를 규정하여 표시하는 모델링
-ex) ER 다이어그램(ERD)
-1 → Function(기능)
-2 → Dynamic(동적)
-3 → Information(객체) 자신이 사용하지 않는 인터페이스와 의존 관계를 맺거나 영향을 받지 않아야 한다는 객체지향 설계 원칙 중 하나다.
-예를 들어 프린터, 펙스, 복사 기능을 가진 복합기의 경우 3가지 기능을 모두 가지 범용 인터페이스보다는, 프린터 인터페이스, 팩스 인터페이스, 복사 인터페이스로 분리함으로써 하나의 기능 변경으로 인해 다른기능이 영향을 받지 않도록 해야한다.
-]]></description><link>study/정보처리기사/정보처리기사-실기/정보처리-기사-실기-키워드.html</link><guid isPermaLink="false">study/정보처리기사/정보처리기사 실기/정보처리 기사 실기 키워드.md</guid><pubDate>Mon, 17 Feb 2025 09:05:01 GMT</pubDate><enclosure url="사진-및-문서/do-messenger_screenshot_2025-02-10_15_04_45.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/do-messenger_screenshot_2025-02-10_15_04_45.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[🏚index]]></title><description><![CDATA[<a href=".?query=tag:home" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#home">#home</a> <a href=".?query=tag:index" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#index">#index</a> <a href=".?query=tag:blog" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#blog">#blog</a> <br><a data-tooltip-position="top" aria-label="https://git.io/typing-svg" rel="noopener nofollow" class="external-link is-unresolved" href="https://git.io/typing-svg" target="_self"></a><img alt="Typing SVG" src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;pause=1000&amp;color=36A9F7&amp;random=false&amp;width=435&amp;lines=%EC%97%AC%EA%B8%B0%EB%8A%94+%EA%B3%B5%EB%B6%80%ED%95%98%EA%B3%A0%2C+%EA%B8%B0%EB%A1%9D%ED%95%98%EB%8A%94+%EA%B3%B3%EC%9E%85%EB%8B%88%EB%8B%A4" referrerpolicy="no-referrer" target="_self" class="is-unresolved">
-<br><a data-href="Obsidian 정적호스팅 CICD 과정" href="study/note-ci_cd/obsidian-정적호스팅-cicd-과정.html#_0" class="internal-link" target="_self" rel="noopener nofollow">Obsidian 정적호스팅 CICD 과정</a> <br>🙇‍♂<a data-href="Spring Batch 트러블 슈팅" href="project/hello-batch/spring-batch-트러블-슈팅.html#_0" class="internal-link" target="_self" rel="noopener nofollow">Spring Batch 트러블 슈팅</a>
-<br>🙇‍♂<a data-href="Spring Batch 트러블 슈팅 부록" href="project/hello-batch/spring-batch-트러블-슈팅-부록.html#_0" class="internal-link" target="_self" rel="noopener nofollow">Spring Batch 트러블 슈팅 부록</a>
-<br>🙇‍♂<a data-href="Spring Batch 구조 드로잉" href="project/hello-batch/spring-batch-구조-드로잉.html#_0" class="internal-link" target="_self" rel="noopener nofollow">Spring Batch 구조 드로잉</a> <br>👩‍👧‍👦<a data-href="유입 통계 APP__SPRING AOP에 관하여" href="project/hello-marketing/유입-통계-app__spring-aop에-관하여.html#_0" class="internal-link" target="_self" rel="noopener nofollow">유입 통계 APP__SPRING AOP에 관하여</a>
-<br>👩‍👧‍👦<a data-href="유입 통계 ADMIN용 테이블 설계 과정" href="project/hello-marketing/유입-통계-admin용-테이블-설계-과정.html#_0" class="internal-link" target="_self" rel="noopener nofollow">유입 통계 ADMIN용 테이블 설계 과정</a> <br>☕<a data-href="JAVA , OOP" href="study/프로그래밍/java-,-oop.html#_0" class="internal-link" target="_self" rel="noopener nofollow">JAVA , OOP</a>
-<br>🍃<a data-href="Spring" href="study/프로그래밍/spring.html#_0" class="internal-link" target="_self" rel="noopener nofollow">Spring</a>
-<br>🧰<a data-href="DevOps" href="study/프로그래밍/devops.html#_0" class="internal-link" target="_self" rel="noopener nofollow">DevOps</a>
-<br>🗒<a data-href="DataBase" href="study/프로그래밍/database.html#_0" class="internal-link" target="_self" rel="noopener nofollow">DataBase</a>
-<br>📭<a data-href="Server" href="study/프로그래밍/server.html#_0" class="internal-link" target="_self" rel="noopener nofollow">Server</a>
-<br>🎵<a data-href="Obsidian" href="study/프로그래밍/obsidian.html#_0" class="internal-link" target="_self" rel="noopener nofollow">Obsidian</a>
-<br>🐞<a data-href="etc" href="study/프로그래밍/etc.html#_0" class="internal-link" target="_self" rel="noopener nofollow">etc</a> <br>🥈<a data-href="필기 1과목 - 소프트웨어 설계" href="study/정보처리기사/정보처리기사-필기/필기-1과목-소프트웨어-설계.html#_0" class="internal-link" target="_self" rel="noopener nofollow">필기 1과목 - 소프트웨어 설계</a>
-<br>🥈<a data-href="필기 2과목 - 소프트웨어 개발" href="study/정보처리기사/정보처리기사-필기/필기-2과목-소프트웨어-개발.html#_0" class="internal-link" target="_self" rel="noopener nofollow">필기 2과목 - 소프트웨어 개발</a>
-<br>🥈<a data-href="필기 3과목 - 데이터베이스 구축" href="study/정보처리기사/정보처리기사-필기/필기-3과목-데이터베이스-구축.html#_0" class="internal-link" target="_self" rel="noopener nofollow">필기 3과목 - 데이터베이스 구축</a>
-<br>🥈<a data-href="필기 4과목 - 프로그래밍 언어 활용" href="study/정보처리기사/정보처리기사-필기/필기-4과목-프로그래밍-언어-활용.html#_0" class="internal-link" target="_self" rel="noopener nofollow">필기 4과목 - 프로그래밍 언어 활용</a>
-<br>🥈<a data-href="필기 5과목 - 정보시스템 구축관리" href="study/정보처리기사/정보처리기사-필기/필기-5과목-정보시스템-구축관리.html#_0" class="internal-link" target="_self" rel="noopener nofollow">필기 5과목 - 정보시스템 구축관리</a> <br>🥇<a data-href="정보처리 기사 실기 키워드" href="study/정보처리기사/정보처리기사-실기/정보처리-기사-실기-키워드.html#_0" class="internal-link" target="_self" rel="noopener nofollow">정보처리 기사 실기 키워드</a>
-]]></description><link>🏚index.html</link><guid isPermaLink="false">🏚index.md</guid><pubDate>Wed, 19 Feb 2025 04:36:18 GMT</pubDate><enclosure url="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Hand%20with%20Fingers%20Splayed%20Light%20Skin%20Tone.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Hand%20with%20Fingers%20Splayed%20Light%20Skin%20Tone.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Obsidian 정적호스팅 CICD 과정]]></title><description><![CDATA[<a href=".?query=tag:블로그" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#블로그">#블로그</a> <a href=".?query=tag:연동" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#연동">#연동</a> <a href=".?query=tag:CI/CD" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#CI/CD">#CI/CD</a> <a href=".?query=tag:옵시디언" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#옵시디언">#옵시디언</a> <a href=".?query=tag:Git" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Git">#Git</a> <a href=".?query=tag:Netlify" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Netlify">#Netlify</a> 먼저 옵시디언(Obsidian)에 대한 정보를 확인하고 싶다면.현재 보고있는 해당 사이트는 Obsidian앱의 지속적인 통합(CI), 지속적인 배포(CD)를 통해 구현된 사이트이다.
-아주 기본적인 셋팅이므로, 이후 커스텀은 각자의 취향대로 진행하면 될 것이다.
-WAS가 아닌 WEB 정적 호스팅을 위한 셋팅이다.
-<br><img alt="Pasted image 20250218151731.png" src="사진-및-문서/pasted-image-20250218151731.png" target="_self"><br>
-<img alt="Pasted image 20250218151806.png" src="사진-및-문서/pasted-image-20250218151806.png" target="_self">
-이후 해당 위치에 Git을 생성해 줄 것이다.
-<br><img alt="Pasted image 20250218152044.png" src="사진-및-문서/pasted-image-20250218152044.png" target="_self"><br>
-<img alt="Pasted image 20250218152103.png" src="사진-및-문서/pasted-image-20250218152103.png" target="_self">
-이전 생성한 옵시디언 폴더로 이동한다.
-&gt; cd C:\이하경로\obsidian\TEST
-<br><img alt="Pasted image 20250218153131.png" src="사진-및-문서/pasted-image-20250218153131.png" target="_self">
-깃 파일 생성
-해당 과정전 pc에 Git이 설치되어 있어야한다. (방법은 알아서)
-&gt; git init
-<br><img alt="Pasted image 20250218153319.png" src="사진-및-문서/pasted-image-20250218153319.png" target="_self">
-깃 레포에 연결
-&gt; git remote add origin https://github.com/LeeTaeSung0628/obsidian_Test.git
-<br><img alt="Pasted image 20250218153445.png" src="사진-및-문서/pasted-image-20250218153445.png" target="_self">
-옵시디언 레포에 올리기
-&gt; git add . &gt; git commit -m "initial commit" &gt; git push -u origin master
-<br><img alt="Pasted image 20250218153543.png" src="사진-및-문서/pasted-image-20250218153543.png" target="_self"><img alt="Pasted image 20250218153553.png" src="사진-및-문서/pasted-image-20250218153553.png" target="_self" style="width: 700px; max-width: 100%;">여기까지 따라왔다면, 옵시디언 파일을 git 레포지토리에 저장하는 것 까지 마칠 수 있다.<br><img alt="Pasted image 20250218151330.png" src="사진-및-문서/pasted-image-20250218151330.png" target="_self" style="width: 1050px; max-width: 100%;">
-옵시디언의 Git플러그인이다. 기본적인 커밋 푸시 및 셋팅이 가능하다.
-기능은 제한적이기 때문에, GitDesktop이나, Cmd에서 직접 Git을 셋팅하는것을 추천한다.
-이후 셋팅이 완료되었을 때 배포 자동화를 위해 사용하면 편리하다.
-<br><img alt="Pasted image 20250218153814.png" src="사진-및-문서/pasted-image-20250218153814.png" target="_self" style="width: 775px; max-width: 100%;"><img alt="Pasted image 20250218153858.png" src="사진-및-문서/pasted-image-20250218153858.png" target="_self">
-이전에 생성한 깃 파일의 주소가 들어가면 된다.
-C:\Users\경로\obsidian\TEST\.git
-<br><img alt="Pasted image 20250218154352.png" src="사진-및-문서/pasted-image-20250218154352.png" target="_self" style="width: 875px; max-width: 100%;">
-또한 설정에서 오토 커밋/푸시/풀 설정을 통해 지속 적인 통합 셋팅이 가능하다.<br>
-<img alt="Pasted image 20250218154433.png" src="사진-및-문서/pasted-image-20250218154433.png" target="_self" style="width: 725px; max-width: 100%;">
-옵시디언은 캐쉬파일로 인한 충돌이 잦기 때문에 상세히 설정하는 것을 추천한다.<br><img alt="Pasted image 20250218154615.png" src="사진-및-문서/pasted-image-20250218154615.png" target="_self"><br>
-<img alt="Pasted image 20250218154633.png" src="사진-및-문서/pasted-image-20250218154633.png" target="_self">
-정상적으로 푸시 완료.<br>
-<img alt="Pasted image 20250218154647.png" src="사진-및-문서/pasted-image-20250218154647.png" target="_self"> 해당 Git 레포는 옵시디언의 마크다운(md파일)자체를 저장하고 관리하는 레포다.
-정적 컨텐츠 호스팅을 위한 레포지토리를 추가적으로 생성하여 줄 것이다. 여러 방법이 있지만, md파일을 기반으로 배포가능한 형태의 HTML파일을 생성해주는 플러그인을 사용할 것이다.<br>
-<img alt="Pasted image 20250218155524.png" src="사진-및-문서/pasted-image-20250218155524.png" target="_self">
-다양한 옵션을 지원하지만, 오늘은 기본적인 기능만 설명하겠다.
-Control + P -&gt; export 를 검색
-<br><img alt="Pasted image 20250218160328.png" src="사진-및-문서/pasted-image-20250218160328.png" target="_self"><br>
-<img alt="Pasted image 20250218160359.png" src="사진-및-문서/pasted-image-20250218160359.png" target="_self">
-폴더 생성 후 익스포트 한다.
-이때 처음엔 index페이지를 생성하고, 추후 삭제하는 것을 추천(Netlify는 index가 필수)<br>
-<img alt="Pasted image 20250218160428.png" src="사진-및-문서/pasted-image-20250218160428.png" target="_self"><img alt="Pasted image 20250218160532.png" src="사진-및-문서/pasted-image-20250218160532.png" target="_self">
-하댕 디렉토리에 정상적으로 생성된것을 볼 수 있다. 배포용 HTML파일 레포지토리<br>
-<img alt="Pasted image 20250218160956.png" src="사진-및-문서/pasted-image-20250218160956.png" target="_self"> Netlify 정적 호스팅 서비스를 사용하여 Git 레포를 배포하겠다.
-<br><a rel="noopener nofollow" class="external-link is-unresolved" href="https://www.netlify.com/" target="_self">https://www.netlify.com/</a> 위 사이트로 접속하여 로그인 한 후, 깃 레포에 Netlify서비스를 적용한다.
-1.깃허브를 선택한다.<br>
-<img alt="Pasted image 20250218161424.png" src="사진-및-문서/pasted-image-20250218161424.png" target="_self" style="width: 750px; max-width: 100%;">
-2.배포용 옵시디언 레포를 선택한 후, SAVE를 누른다.<br>
-<img alt="Pasted image 20250218161515.png" src="사진-및-문서/pasted-image-20250218161515.png" target="_self">
-3.site_name을 설정하고 Deploy를 누른다.<br>
-<img alt="Pasted image 20250218161728.png" src="사진-및-문서/pasted-image-20250218161728.png" target="_self">
-정적웹사이트를 위한 셋팅으로 이외의 값은 공란으로 두어도 무방하다. 그리고 기다리면...<br>
-<img alt="Pasted image 20250218161824.png" src="사진-및-문서/pasted-image-20250218161824.png" target="_self"><br>
-<img alt="Pasted image 20250218161847.png" src="사진-및-문서/pasted-image-20250218161847.png" target="_self"> ]]></description><link>study/note-ci_cd/obsidian-정적호스팅-cicd-과정.html</link><guid isPermaLink="false">study/note CI_CD/Obsidian 정적호스팅 CICD 과정.md</guid><pubDate>Tue, 18 Feb 2025 07:33:06 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250218151731.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20250218151731.png"&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>
+이유는 객체의 equals메서드는 주소값이 서로 다른 객체는 다른객체로 판단하기 때문이다.이때, 왜 HashCode도 재정의 해야하나?해당 규약으로 인하여, 서로다른 객체의 해쉬값을 통일시켜주어야 한다.]]></description><link>study/프로그래밍/🍃-spring.html</link><guid isPermaLink="false">study/프로그래밍/🍃 Spring.md</guid><pubDate>Wed, 19 Feb 2025 04:44:20 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20240611144129.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;사진-및-문서/pasted-image-20240611144129.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[🖱 Spring Batch 구조 드로잉]]></title><description><![CDATA[balancePartitionedJobbalanceInitializeStepbalancePartitionStepbalanceSendSnsStepbalanceResetSteppartitionerpartitionHandlerStepExecutionContextReaderprocesserwriterdtochuck sizeSlaveStep-no: 2SlaveStep-no: gridSize balanceQueueResponnse QueueProcessed ItemsProcessed Itemstotal DataProcessed ItemsProcessed ItemsworkingProcessed ItemsProcessed ItemsProcessed ItemsProcessed ItemsSlaveStep-no: 1gridSize - 1gridSize - 2partiton thread-no: 1partiton thread-no: 2partiton thread-no: gridSize totalRecords+ datagridSizeContorllerjobParameters(read only)jobParameters - gridSize - startDate - endDateJob Schedulerexcutedto List(chuck size)dto Listdto Listdto Listdto Listdto Listdto Listdto Listdto ListThe restdto ListfinishedfinishedworkingworkingdtotriggerJobExecutionContextgrid size]]></description><link>project/hello-batch/🖱-spring-batch-구조-드로잉.html</link><guid isPermaLink="false">project/hello Batch/🖱 Spring Batch 구조 드로잉.md</guid><pubDate>Tue, 18 Feb 2025 02:00:18 GMT</pubDate></item></channel></rss>

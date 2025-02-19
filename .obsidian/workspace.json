@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "fdef10b671cfa743",
+        "id": "6be62c3c517b777b",
         "type": "tabs",
         "children": [
           {
-            "id": "9b99cd08eedd9b26",
+            "id": "d32930bb4480184f",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": "lib/search-index.json",
-                "bFile": "lib/search-index.json",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: search-index.json"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "새 탭"
             }
           }
         ]
@@ -178,27 +174,27 @@
   },
   "active": "5cc2f7897ebd9692",
   "lastOpenFiles": [
-    "lib/search-index.json",
-    "lib/metadata.json",
-    "lib/styles/supported-plugins.css",
-    "lib/styles/theme.css",
-    "lib/styles/other-plugins.css",
-    "lib/styles/obsidian.css",
-    "lib/styles/main-styles.css",
-    "lib/styles/global-variable-styles.css",
-    "lib/styles",
-    "lib/media/favicon.png",
+    "lib/scripts/webpage.js",
+    "lib/scripts/tinycolor.js",
+    "lib/scripts/pixi.js",
+    "lib/scripts/minisearch.js",
+    "lib/scripts/graph-wasm.js",
+    "lib/scripts/graph-wasm.wasm",
+    "lib/scripts/graph-view.js",
+    "lib/scripts/graph-render-worker.js",
+    "lib/scripts/graph-data.js",
+    "lib/scripts",
     "lib/html/file-tree.html",
-    "lib/html",
-    "lib/media/6155340132a851f6089e.svg",
-    "lib/media/do-messenger_screenshot_2025-02-18_16_25_42.png",
-    "lib/media/pasted-image-20250218162355.png",
-    "lib/media/pasted-image-20250218161937.png",
-    "lib/media/pasted-image-20250218153858.png",
-    "lib/media/pasted-image-20250218153814.png",
-    "lib/media/pasted-image-20250218151330.png",
-    "lib/media/pasted-image-20250218153553.png",
-    "lib/media/pasted-image-20250218153543.png",
+    "lib/media/pasted-image-20250218161824.png",
+    "lib/media/pasted-image-20250218161728.png",
+    "lib/media/pasted-image-20250218161515.png",
+    "lib/media/pasted-image-20250218161424.png",
+    "lib/media/pasted-image-20250218160956.png",
+    "lib/media/pasted-image-20250218160532.png",
+    "lib/media/pasted-image-20250218160428.png",
+    "lib/media/pasted-image-20250218160359.png",
+    "lib/media/pasted-image-20250218160328.png",
+    "lib/media/pasted-image-20250218155524.png",
     "환영합니다!.md"
   ]
 }

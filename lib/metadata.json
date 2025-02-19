@@ -1,6 +1,6 @@
 {
   "vaultName": "Obsidian",
-  "lastExport": 1739925664911,
+  "lastExport": 1739928141401,
   "pluginVersion": "1.8.01",
   "validBodyClasses": "publish css-settings-manager theme-dark show-inline-title show-ribbon",
   "useCustomHeadContent": false,
@@ -184,13 +184,13 @@
   ],
   "fileInfo": {
     "project/hello Batch/Spring Batch 구조 드로잉.md": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 57706,
       "exportedPath": "project/hello-batch/spring-batch-구조-드로잉.html",
       "dependencies": []
     },
     "project/hello Batch/Spring Batch 트러블 슈팅.md": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 24696,
       "exportedPath": "project/hello-batch/spring-batch-트러블-슈팅.html",
       "dependencies": [
@@ -215,7 +215,7 @@
       ]
     },
     "project/hello Batch/Spring Batch 트러블 슈팅 부록.md": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 8859,
       "exportedPath": "project/hello-batch/spring-batch-트러블-슈팅-부록.html",
       "dependencies": [
@@ -223,7 +223,7 @@
       ]
     },
     "project/hello marketing/유입 통계 ADMIN용 테이블 설계 과정.md": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 3066,
       "exportedPath": "project/hello-marketing/유입-통계-admin용-테이블-설계-과정.html",
       "dependencies": [
@@ -231,7 +231,7 @@
       ]
     },
     "project/hello marketing/유입 통계 APP__SPRING AOP에 관하여.md": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 16073,
       "exportedPath": "project/hello-marketing/유입-통계-app__spring-aop에-관하여.html",
       "dependencies": [
@@ -245,7 +245,7 @@
       ]
     },
     "study/정보처리기사/정보처리기사 실기/정보처리 기사 실기 키워드.md": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 43662,
       "exportedPath": "study/정보처리기사/정보처리기사-실기/정보처리-기사-실기-키워드.html",
       "dependencies": [
@@ -258,37 +258,37 @@
       ]
     },
     "study/정보처리기사/정보처리기사 필기/필기 1과목 - 소프트웨어 설계.md": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 21320,
       "exportedPath": "study/정보처리기사/정보처리기사-필기/필기-1과목-소프트웨어-설계.html",
       "dependencies": []
     },
     "study/정보처리기사/정보처리기사 필기/필기 2과목 - 소프트웨어 개발.md": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 11740,
       "exportedPath": "study/정보처리기사/정보처리기사-필기/필기-2과목-소프트웨어-개발.html",
       "dependencies": []
     },
     "study/정보처리기사/정보처리기사 필기/필기 3과목 - 데이터베이스 구축.md": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 11350,
       "exportedPath": "study/정보처리기사/정보처리기사-필기/필기-3과목-데이터베이스-구축.html",
       "dependencies": []
     },
     "study/정보처리기사/정보처리기사 필기/필기 4과목 - 프로그래밍 언어 활용.md": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 25263,
       "exportedPath": "study/정보처리기사/정보처리기사-필기/필기-4과목-프로그래밍-언어-활용.html",
       "dependencies": []
     },
     "study/정보처리기사/정보처리기사 필기/필기 5과목 - 정보시스템 구축관리.md": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 21323,
       "exportedPath": "study/정보처리기사/정보처리기사-필기/필기-5과목-정보시스템-구축관리.html",
       "dependencies": []
     },
     "study/프로그래밍/DataBase.md": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 11889,
       "exportedPath": "study/프로그래밍/database.html",
       "dependencies": [
@@ -306,7 +306,7 @@
       ]
     },
     "study/프로그래밍/DevOps.md": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 14371,
       "exportedPath": "study/프로그래밍/devops.html",
       "dependencies": [
@@ -315,13 +315,13 @@
       ]
     },
     "study/프로그래밍/etc.md": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 3884,
       "exportedPath": "study/프로그래밍/etc.html",
       "dependencies": []
     },
     "study/프로그래밍/JAVA , OOP.md": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 36029,
       "exportedPath": "study/프로그래밍/java-,-oop.html",
       "dependencies": [
@@ -332,7 +332,7 @@
       ]
     },
     "study/프로그래밍/Obsidian.md": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 5658,
       "exportedPath": "study/프로그래밍/obsidian.html",
       "dependencies": [
@@ -341,7 +341,7 @@
       ]
     },
     "study/프로그래밍/Server.md": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 6987,
       "exportedPath": "study/프로그래밍/server.html",
       "dependencies": [
@@ -352,7 +352,7 @@
       ]
     },
     "study/프로그래밍/Spring.md": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 46710,
       "exportedPath": "study/프로그래밍/spring.html",
       "dependencies": [
@@ -363,7 +363,7 @@
       ]
     },
     "study/note CI_CD/Obsidian 정적호스팅 CICD 과정.md": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 6042,
       "exportedPath": "study/note-ci_cd/obsidian-정적호스팅-cicd-과정.html",
       "dependencies": [
@@ -401,739 +401,739 @@
       ]
     },
     "index.md": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 1603,
       "exportedPath": "index.html",
       "dependencies": []
     },
     "lib/media/output-(1).png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 145878,
       "exportedPath": "lib/media/output-(1).png",
       "dependencies": []
     },
     "lib/media/pasted-image-20241206113120.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 53681,
       "exportedPath": "lib/media/pasted-image-20241206113120.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20241213102128.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 22774,
       "exportedPath": "lib/media/pasted-image-20241213102128.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20241213102229.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 212552,
       "exportedPath": "lib/media/pasted-image-20241213102229.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20241213143101.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 547915,
       "exportedPath": "lib/media/pasted-image-20241213143101.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20241213143217.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 19870,
       "exportedPath": "lib/media/pasted-image-20241213143217.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20241213103503.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 86553,
       "exportedPath": "lib/media/pasted-image-20241213103503.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20241217150339.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 140545,
       "exportedPath": "lib/media/pasted-image-20241217150339.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20241219145746.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 86893,
       "exportedPath": "lib/media/pasted-image-20241219145746.png",
       "dependencies": []
     },
     "lib/media/output-(9)-1.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 156393,
       "exportedPath": "lib/media/output-(9)-1.png",
       "dependencies": []
     },
     "lib/media/output-(10).png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 133656,
       "exportedPath": "lib/media/output-(10).png",
       "dependencies": []
     },
     "lib/media/do-messenger_screenshot_2024-12-23_14_40_21.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 146024,
       "exportedPath": "lib/media/do-messenger_screenshot_2024-12-23_14_40_21.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20241224093159.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 85534,
       "exportedPath": "lib/media/pasted-image-20241224093159.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20241224093207.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 25919,
       "exportedPath": "lib/media/pasted-image-20241224093207.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20241224093225.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 39658,
       "exportedPath": "lib/media/pasted-image-20241224093225.png",
       "dependencies": []
     },
     "lib/media/회사-은행-서비스1111.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 82216,
       "exportedPath": "lib/media/회사-은행-서비스1111.png",
       "dependencies": []
     },
     "lib/media/spring-batch-tasklet-예치금-잔액-비교-1.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 104557,
       "exportedPath": "lib/media/spring-batch-tasklet-예치금-잔액-비교-1.png",
       "dependencies": []
     },
     "lib/media/spring-batch-tasklet-예치금-잔액-비교-잘못된-차액발생-인식-타임라인.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 113338,
       "exportedPath": "lib/media/spring-batch-tasklet-예치금-잔액-비교-잘못된-차액발생-인식-타임라인.png",
       "dependencies": []
     },
     "lib/media/output-(9).png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 156393,
       "exportedPath": "lib/media/output-(9).png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250102181842.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 30146,
       "exportedPath": "lib/media/pasted-image-20250102181842.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20241224144309.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 65503,
       "exportedPath": "lib/media/pasted-image-20241224144309.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20241226111559.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 55022,
       "exportedPath": "lib/media/pasted-image-20241226111559.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20241226152219.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 5000,
       "exportedPath": "lib/media/pasted-image-20241226152219.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20241226171158.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 37765,
       "exportedPath": "lib/media/pasted-image-20241226171158.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20241230135801.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 120367,
       "exportedPath": "lib/media/pasted-image-20241230135801.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250102160213.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 108505,
       "exportedPath": "lib/media/pasted-image-20250102160213.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250102160223.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 29848,
       "exportedPath": "lib/media/pasted-image-20250102160223.png",
       "dependencies": []
     },
     "lib/media/do-messenger_screenshot_2025-02-10_15_04_45.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 99317,
       "exportedPath": "lib/media/do-messenger_screenshot_2025-02-10_15_04_45.png",
       "dependencies": []
     },
     "lib/media/do-messenger_screenshot_2025-02-10_17_10_58.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 122009,
       "exportedPath": "lib/media/do-messenger_screenshot_2025-02-10_17_10_58.png",
       "dependencies": []
     },
     "lib/media/do-messenger_screenshot_2025-02-11_13_47_16.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 220968,
       "exportedPath": "lib/media/do-messenger_screenshot_2025-02-11_13_47_16.png",
       "dependencies": []
     },
     "lib/media/do-messenger_screenshot_2025-02-11_15_32_34.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 63401,
       "exportedPath": "lib/media/do-messenger_screenshot_2025-02-11_15_32_34.png",
       "dependencies": []
     },
     "lib/media/do-messenger_screenshot_2025-02-11_16_31_10.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 131078,
       "exportedPath": "lib/media/do-messenger_screenshot_2025-02-11_16_31_10.png",
       "dependencies": []
     },
     "lib/media/do-messenger_screenshot_2025-02-12_14_04_58.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 159770,
       "exportedPath": "lib/media/do-messenger_screenshot_2025-02-12_14_04_58.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240610171904.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 48061,
       "exportedPath": "lib/media/pasted-image-20240610171904.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240531103441.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 13085,
       "exportedPath": "lib/media/pasted-image-20240531103441.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240531103549.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 13731,
       "exportedPath": "lib/media/pasted-image-20240531103549.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240531105228.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 68992,
       "exportedPath": "lib/media/pasted-image-20240531105228.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240531105241.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 74304,
       "exportedPath": "lib/media/pasted-image-20240531105241.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240531104351.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 47662,
       "exportedPath": "lib/media/pasted-image-20240531104351.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240531104418.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 27661,
       "exportedPath": "lib/media/pasted-image-20240531104418.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240531104751.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 24466,
       "exportedPath": "lib/media/pasted-image-20240531104751.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240531104803.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 35445,
       "exportedPath": "lib/media/pasted-image-20240531104803.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240828104032.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 89251,
       "exportedPath": "lib/media/pasted-image-20240828104032.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240828104728.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 123190,
       "exportedPath": "lib/media/pasted-image-20240828104728.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240531162124.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 142328,
       "exportedPath": "lib/media/pasted-image-20240531162124.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240722180706.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 191141,
       "exportedPath": "lib/media/pasted-image-20240722180706.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250110101642.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 69526,
       "exportedPath": "lib/media/pasted-image-20250110101642.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250110103409.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 95529,
       "exportedPath": "lib/media/pasted-image-20250110103409.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250110122312.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 33411,
       "exportedPath": "lib/media/pasted-image-20250110122312.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250122111223.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 228572,
       "exportedPath": "lib/media/pasted-image-20250122111223.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250218145702.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 27774,
       "exportedPath": "lib/media/pasted-image-20250218145702.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250218145823.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 178936,
       "exportedPath": "lib/media/pasted-image-20250218145823.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240603173517.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 35221,
       "exportedPath": "lib/media/pasted-image-20240603173517.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240603180042.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 54764,
       "exportedPath": "lib/media/pasted-image-20240603180042.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240604102140.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 70352,
       "exportedPath": "lib/media/pasted-image-20240604102140.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240604144026.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 65753,
       "exportedPath": "lib/media/pasted-image-20240604144026.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240611144129.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 167252,
       "exportedPath": "lib/media/pasted-image-20240611144129.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240605160336.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 84155,
       "exportedPath": "lib/media/pasted-image-20240605160336.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240723134224.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 33317,
       "exportedPath": "lib/media/pasted-image-20240723134224.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240723134333.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 27480,
       "exportedPath": "lib/media/pasted-image-20240723134333.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250218151731.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 36657,
       "exportedPath": "lib/media/pasted-image-20250218151731.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250218151806.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 23625,
       "exportedPath": "lib/media/pasted-image-20250218151806.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250218152044.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 46477,
       "exportedPath": "lib/media/pasted-image-20250218152044.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250218152103.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 47581,
       "exportedPath": "lib/media/pasted-image-20250218152103.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250218153131.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 5662,
       "exportedPath": "lib/media/pasted-image-20250218153131.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250218153319.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 4846,
       "exportedPath": "lib/media/pasted-image-20250218153319.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250218153445.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 3834,
       "exportedPath": "lib/media/pasted-image-20250218153445.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250218153543.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 51007,
       "exportedPath": "lib/media/pasted-image-20250218153543.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250218153553.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 36756,
       "exportedPath": "lib/media/pasted-image-20250218153553.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250218151330.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 323323,
       "exportedPath": "lib/media/pasted-image-20250218151330.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250218153814.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 94156,
       "exportedPath": "lib/media/pasted-image-20250218153814.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250218153858.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 18633,
       "exportedPath": "lib/media/pasted-image-20250218153858.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250218154352.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 32120,
       "exportedPath": "lib/media/pasted-image-20250218154352.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250218154433.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 71085,
       "exportedPath": "lib/media/pasted-image-20250218154433.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250218154615.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 19734,
       "exportedPath": "lib/media/pasted-image-20250218154615.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250218154633.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 7603,
       "exportedPath": "lib/media/pasted-image-20250218154633.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250218154647.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 79039,
       "exportedPath": "lib/media/pasted-image-20250218154647.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250218155524.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 72167,
       "exportedPath": "lib/media/pasted-image-20250218155524.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250218160328.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 15278,
       "exportedPath": "lib/media/pasted-image-20250218160328.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250218160359.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 15865,
       "exportedPath": "lib/media/pasted-image-20250218160359.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250218160428.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 43414,
       "exportedPath": "lib/media/pasted-image-20250218160428.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250218160532.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 16755,
       "exportedPath": "lib/media/pasted-image-20250218160532.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250218160956.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 71694,
       "exportedPath": "lib/media/pasted-image-20250218160956.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250218161424.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 88775,
       "exportedPath": "lib/media/pasted-image-20250218161424.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250218161515.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 66971,
       "exportedPath": "lib/media/pasted-image-20250218161515.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250218161728.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 36864,
       "exportedPath": "lib/media/pasted-image-20250218161728.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250218161824.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 81212,
       "exportedPath": "lib/media/pasted-image-20250218161824.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250218161847.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 57171,
       "exportedPath": "lib/media/pasted-image-20250218161847.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250218161937.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 47752,
       "exportedPath": "lib/media/pasted-image-20250218161937.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250218162355.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 174935,
       "exportedPath": "lib/media/pasted-image-20250218162355.png",
       "dependencies": []
     },
     "lib/media/do-messenger_screenshot_2025-02-18_16_25_42.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 170894,
       "exportedPath": "lib/media/do-messenger_screenshot_2025-02-18_16_25_42.png",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.wasm": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 23377,
       "exportedPath": "lib/scripts/graph-wasm.wasm",
       "dependencies": []
     },
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/6155340132a851f6089e.svg": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 315,
       "exportedPath": "lib/media/6155340132a851f6089e.svg",
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 25056,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 47290,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/scripts/graph-view.js": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 15519,
       "exportedPath": "lib/scripts/graph-view.js",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.js": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 14021,
       "exportedPath": "lib/scripts/graph-wasm.js",
       "dependencies": []
     },
     "lib/scripts/graph-render-worker.js": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 5179,
       "exportedPath": "lib/scripts/graph-render-worker.js",
       "dependencies": []
     },
     "lib/scripts/tinycolor.js": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 29832,
       "exportedPath": "lib/scripts/tinycolor.js",
       "dependencies": []
     },
     "lib/scripts/pixi.js": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 449509,
       "exportedPath": "lib/scripts/pixi.js",
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 1105,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
     },
     "lib/scripts/graph-data.js": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 1867,
       "exportedPath": "lib/scripts/graph-data.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 137329,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/other-plugins.css": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 2692,
       "exportedPath": "lib/styles/other-plugins.css",
       "dependencies": []
     },
     "lib/styles/theme.css": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 41426,
       "exportedPath": "lib/styles/theme.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1739925664911,
-      "sourceSize": 437,
+      "modifiedTime": 1739928141401,
+      "sourceSize": 262,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/supported-plugins.css": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 1640,
       "exportedPath": "lib/styles/supported-plugins.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1739925664911,
+      "modifiedTime": 1739928141401,
       "sourceSize": 23130,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []

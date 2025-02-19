@@ -180,11 +180,11 @@
   "lastOpenFiles": [
     "lib/search-index.json",
     "lib/metadata.json",
-    "lib/styles/other-plugins.css",
     "lib/styles/theme.css",
+    "lib/styles/other-plugins.css",
     "lib/styles/supported-plugins.css",
-    "lib/styles/obsidian.css",
     "lib/styles/main-styles.css",
+    "lib/styles/obsidian.css",
     "lib/styles/global-variable-styles.css",
     "lib/styles",
     "lib/media/favicon.png",

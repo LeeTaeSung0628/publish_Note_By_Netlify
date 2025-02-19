@@ -11,10 +11,12 @@
             "id": "d32930bb4480184f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "새 탭"
+              "type": "image",
+              "state": {
+                "file": "사진-및-문서/pasted-image-20250218160532.png"
+              },
+              "icon": "lucide-image",
+              "title": "pasted-image-20250218160532"
             }
           }
         ]
@@ -172,29 +174,29 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5cc2f7897ebd9692",
+  "active": "d32930bb4480184f",
   "lastOpenFiles": [
     "site-lib/search-index.json",
-    "사진-및-문서/pasted-image-20241226111559.png",
-    "사진-및-문서/pasted-image-20241224144309.png",
-    "사진-및-문서/pasted-image-20250218145823.png",
-    "사진-및-문서/pasted-image-20250218145702.png",
-    "사진-및-문서/pasted-image-20250218162355.png",
-    "사진-및-문서/do-messenger_screenshot_2025-02-18_16_25_42.png",
-    "사진-및-문서/pasted-image-20250218161937.png",
-    "사진-및-문서/pasted-image-20250218161847.png",
-    "사진-및-문서/pasted-image-20250218161728.png",
-    "사진-및-문서/pasted-image-20250218161824.png",
-    "site-lib/rss.xml",
-    "site-lib",
-    "사진-및-문서",
-    "study/정보처리기사/정보처리기사-실기/정보처리-기사-실기-키워드.html",
-    "study/정보처리기사/정보처리기사-실기",
-    "project/hello-marketing/유입-통계-admin용-테이블-설계-과정.html",
-    "project/hello-batch/spring-batch-트러블-슈팅-부록.html",
-    "project/hello-batch/spring-batch-구조-드로잉.html",
-    "study/프로그래밍/java-,-oop.html",
-    "study/프로그래밍/devops.html",
+    "site-lib/styles/theme.css",
+    "site-lib/styles/other-plugins.css",
+    "site-lib/styles/obsidian.css",
+    "site-lib/styles/supported-plugins.css",
+    "site-lib/styles/main-styles.css",
+    "site-lib/styles/global-variable-styles.css",
+    "site-lib/styles",
+    "site-lib/metadata.json",
+    "site-lib/html/file-tree-content.html",
+    "site-lib/html",
+    "사진-및-문서/pasted-image-20250218153543.png",
+    "사진-및-문서/pasted-image-20250218153445.png",
+    "사진-및-문서/pasted-image-20250218153319.png",
+    "사진-및-문서/pasted-image-20250218152103.png",
+    "사진-및-문서/pasted-image-20250218153131.png",
+    "사진-및-문서/pasted-image-20250218152044.png",
+    "사진-및-문서/pasted-image-20250218151806.png",
+    "사진-및-문서/pasted-image-20241213103503.png",
+    "사진-및-문서/pasted-image-20250218151731.png",
+    "사진-및-문서/pasted-image-20241213143217.png",
     "환영합니다!.md"
   ]
 }

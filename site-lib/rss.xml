@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault_md_public]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>site-lib/media/favicon.png</url><title>Vault_md_public</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 19 Feb 2025 03:12:23 GMT</lastBuildDate><atom:link href="site-lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 19 Feb 2025 03:11:32 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[Spring Batch 트러블 슈팅]]></title><description><![CDATA[<a href=".?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href=".?query=tag:개발" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개발">#개발</a> <a href=".?query=tag:SPRING" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SPRING">#SPRING</a> <a href=".?query=tag:Batch" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Batch">#Batch</a> <a href=".?query=tag:Partitioning" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Partitioning">#Partitioning</a> <a href=".?query=tag:Chunk" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Chunk">#Chunk</a>기존 예치금 차액비교 Batch의 Tasklet방식의 배치의 단점을 보완하는 chunk 방식의 배치를 구현하고,
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault_md_public]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>site-lib/media/favicon.png</url><title>Vault_md_public</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 19 Feb 2025 03:30:13 GMT</lastBuildDate><atom:link href="site-lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 19 Feb 2025 03:29:23 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[Spring Batch 트러블 슈팅]]></title><description><![CDATA[<a href=".?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href=".?query=tag:개발" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개발">#개발</a> <a href=".?query=tag:SPRING" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SPRING">#SPRING</a> <a href=".?query=tag:Batch" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Batch">#Batch</a> <a href=".?query=tag:Partitioning" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Partitioning">#Partitioning</a> <a href=".?query=tag:Chunk" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Chunk">#Chunk</a>기존 예치금 차액비교 Batch의 Tasklet방식의 배치의 단점을 보완하는 chunk 방식의 배치를 구현하고,
 나아가 다른 기능의 Batch에도 효과적으로 빠르게 적용할 수 있는재사용성/유지보수성 높은 코드, 선례를 만들기 위함이다.
 Chunk, Partioning방식을 Job을 추가 개발 (기존 balanceJob 유지)
 당분간 두 Job을 병행하면서 비교
@@ -39,8 +39,69 @@ Grid사이즈(파티셔닝 갯수) 만큼 스레드 풀 계속 생성
 파티셔닝 갯수가 많아졌을 때, 스레드 생성/소멸에 드는 오버헤드 증가 최소 스레드풀 개수 / 최대 스레드풀 개수 / 대기열 큐 크기 / 유휴 시간 모두 설정가능
 파티셔닝 갯수가 많을 경우, 처리 성능에 맞는 스레드 풀에서 대기작업으로 처리하여 오버헤드 감소 총 처리량 기준 1/n로 각 스레드에 할당시 충분히 감당한 양으로, 대기열을 사용할 필요가 없다. 쿼리 호출 및 페이징 기법 직접 구현 Native Query 형태로 호출하여 자동 페이징 Spring Batch에서는 공식적으로 지원하지 않음
 자동 페이징
-Querydsl형태로 쿼리 호출 가능
-]]></description><link>project/hello-batch/spring-batch-트러블-슈팅.html</link><guid isPermaLink="false">project/hello Batch/Spring Batch 트러블 슈팅.md</guid><pubDate>Wed, 19 Feb 2025 01:24:45 GMT</pubDate><enclosure url="사진-및-문서/output-(1).png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;사진-및-문서/output-(1).png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[index]]></title><description><![CDATA[<a href=".?query=tag:home" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#home">#home</a> <a href=".?query=tag:index" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#index">#index</a> <a href=".?query=tag:blog" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#blog">#blog</a> <br><a data-tooltip-position="top" aria-label="https://git.io/typing-svg" rel="noopener nofollow" class="external-link is-unresolved" href="https://git.io/typing-svg" target="_self"></a><img alt="Typing SVG" src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;pause=1000&amp;color=36A9F7&amp;random=false&amp;width=435&amp;lines=%EC%97%AC%EA%B8%B0%EB%8A%94+%EA%B3%B5%EB%B6%80%ED%95%98%EA%B3%A0%2C+%EA%B8%B0%EB%A1%9D%ED%95%98%EB%8A%94+%EA%B3%B3%EC%9E%85%EB%8B%88%EB%8B%A4" referrerpolicy="no-referrer" target="_self" class="is-unresolved">
+Querydsl형태로 쿼리 호출 가능 기존(헬로)의 Querydsl기반 JPAQuery를 그대로 사용 가능
+자동 페이징
+그 외 Querydsl의 장점 보유 기존 PagingItemReader의 메서드를 오버라이딩 하여 사용하며,
+JPQL이 수행되던 부분에 코드를 수정하였다.
+@Bean @Scope(value = "step", proxyMode = ScopedProxyMode.TARGET_CLASS) public QuerydslPagingItemReader&lt;HfbatBankBalanceCheckDto&gt; balanceReader() { ExecutionContext jobContext = Objects.requireNonNull(StepSynchronizationManager.getContext()).getStepExecution().getJobExecution().getExecutionContext(); Date startDate = (Date) jobContext.get(START_DATE_KEY); Date endDate = (Date) jobContext.get(END_DATE_KEY); return new QuerydslPagingItemReader&lt;&gt;( entityManagerFactory, executionOrder, DEFAULT_CHUNK_SIZE, queryFactory -&gt; repository.newFindChangeBalanceMemberList( startDate, endDate )); } 각 파티션 스레드 별 종료 시간이 크게 상이하다. 총 소요시간 기준 최대 약 20% 차이
+적용 한다면, 각 스레드 별로 even하게 작업을 수행하여 총 소요시간을 줄일 수 있을것이라 판단 JOB private static AtomicLong executionOrder = new AtomicLong(0); ... new QuerydslPagingItemReader&lt;&gt;( entityManagerFactory, executionOrder, DEFAULT_CHUNK_SIZE, queryFactory -&gt; repository.newFindChangeBalanceMemberList( startDate, endDate )); job 레벨에서의 스레드 세이프한 전역 변수를 생성하였다.
+그 후, 각 파티션 별 리더에 인자값으로 넘긴다.
+long currentExecutionOrder = executionOrder.getAndIncrement(); long startIndex = (currentExecutionOrder) * getPageSize(); int totalRecords = stepContext.getInt("totalRecords"); if (startIndex &gt;= totalRecords) { initResults(); // 빈 결과로 초기화 tx.commit(); return; } int chunkSizeToRead = Math.min(getPageSize(), (int) (totalRecords - startIndex)); // 남은 데이터 크기만큼 읽기 // QueryDSL Query 생성 JPQLQuery&lt;T&gt; query = createQuery() .offset(startIndex) .limit(chunkSizeToRead); 먼저 한 청크단위의 작업을 끝낸 파티션은 그 다음 작업을 즉시 할당받게 된다.
+즉, 총 처리시간 기준 가장 빨리끝난 파티션과 가장 늦게 끝난 파티션의 실행 시간 차이는 최대 한 청크사이즈를 처리하는 시간보다 크지 않게 된다.
+1차 비교 이후 차액이 발생한 녀석들의 List 를 한번 더 검증한 후, =&gt; 추후 변경 됨
+검증된 녀석들을 List&lt;BalanceCheckResultDto&gt; realDiffList= new ArrayList&lt;&gt;();
+최종적인 차액 리스트에 넣는다.writer는 각 프로세서의 리턴으로 받은 녀석들을 하나의 DTO List로 합쳐 메세징 처리를 하게 된다.
+유지보수성이 좋다.
+환경셋팅에 리소스가 많이든다. 구현 레벨이 가장 쉽다
+DTO(데이터)가 많아질 경우, 큰 리소스를 차지한다. 방법 2.보다는 리소스가 적지만, 문자열 처리 시간이 추가로 소모된다. 높은 쓰기 성능을 갖고있다.
+동시성 문제 없이 다중 스레드에서 사용 가능하다.
+인덱스로 접근이 불가능하다.
+QueueManager클래스를 생성하며 공통으로 사용 가능하도록 하였고,@Slf4j public class QueueManager&lt;T&gt; { protected final ConcurrentLinkedQueue&lt;T&gt; sharedQueue = new ConcurrentLinkedQueue&lt;&gt;(); // 데이터 추가 public void addItemToSharedQueue(T item) { if (item != null) { sharedQueue.add(item); } }
+이를 상속받아 특정 오브젝트를 넘길 수 있도록 하였다.public class BalanceQueue extends QueueManager&lt;BalanceCheckResultDto&gt;{ public List&lt;BalanceCheckResultDto&gt; getDtoFromQueue() { return super.getItemsFromQueue(); } } 보통의 Batch 서비스라면 I/O 작업에 부하가 걸려있겠지만, 현재 예치금 차액 배치는 processor 즉, 예치금 비교 연산에서 큰 리소스를 소모하고있다.
+이에 해당하는 시간 소모를 줄이기 위해 processor(서비스로직) 을 병렬처리 함으로 최종 처리시간 단축을 꾀할 수 있을지에 대한 고민이다.
+이후 설명하겠지만, 내부 병렬처리 로직은 청크의 트렌젝션을 무너뜨릴 가능성이 크므로 지양해야함.
+<br><img alt="Pasted image 20241206113120.png" src="사진-및-문서/pasted-image-20241206113120.png" target="_self">소요시간 : 1분 9초
+-&gt; 기존 limit절을 이용한 로직보다 속도가 더빠르며,
+JpaPagingReader를 적용한다면 중복 select횟수를 줄여 더 빨라질 것으로 예상된다.결론 : 둘 중 하나#### 292 컬럼
+## Processor 삭제(병렬처리)로직
+#### grid-size:6 / chunk-size:20
+54679 ms
+54416 ms
+## Processor 순차처리(writer만 병렬처리) 로직 #### grid-size:6 / chunk-size:20
+60440 ms
+62271 ms
+#### grid-size:10 / chunk-size:20
+58129 ms
+56723 ms
+#### grid-size:16 / chunk-size:20
+58595 ms
+56314 ms #### grid-size:32 / chunk-size:20
+- SQLTransientConnectionException
+- 스레드풀 점유갯수 초과 하지만, 이후 청크 방식 Batch의 확장성과 유지보수성을 고려하여 리더,프로세서,라이터 방식으로 구현하기로 정했다.
+grid-size:12 / chunk-size:30
+-
+3분 22.856초
+3분 23.096초 grid-size:12 / chunk-size:20
+-
+3분 23.546초
+3분 23.784초 grid-size:12 / chunk-size:10
+-
+3분 24.243초
+3분 22.389초
+3분 24.667초
+3분 24.789초 grid-size:12 / chunk-size:5
+-
+3분 24.953초
+3분 24.353초 트렌젝션 분리가 되어있지 않았기 떄문에 청크사이즈를 아무리 잘게 쪼개도 시간이 같았던 것이다.
+그럼 트렌젝션이 분리되지 않은 이유는?
+dtoList.stream().parallel() .forEach(dto -&gt; {});
+parallel문으로 내부 병렬처리로직을 구현했기 때문에, chunk의 트렌젝션에서 벗어나,
+매 insert문 마다 커밋을 하였던 것이다.SHOW VARIABLES LIKE 'max_connections'; //최대 개수
+SHOW STATUS LIKE 'Threads_connected'; //사용중인 개수<br><img alt="Pasted image 20241213102128.png" src="사진-및-문서/pasted-image-20241213102128.png" target="_self">
+배치를 완료한 이후에도 스레드 풀(히카리 풀)을 반환하지 않는지 확인
+<br><img alt="Pasted image 20241213102229.png" src="사진-및-문서/pasted-image-20241213102229.png" target="_self">
+Step이 마무리될때, 적어도 Job이 마무리 될때 entityManager를 클로즈 시키는것이 자명한데, 어째서 커넥션풀이 해제되지 않는가??
+<br><img alt="Pasted image 20241213143101.png" src="사진-및-문서/pasted-image-20241213143101.png" target="_self"><br><img alt="Pasted image 20241213143217.png" src="사진-및-문서/pasted-image-20241213143217.png" target="_self"><br><img alt="Pasted image 20241213103503.png" src="사진-및-문서/pasted-image-20241213103503.png" target="_self">]]></description><link>project/hello-batch/spring-batch-트러블-슈팅.html</link><guid isPermaLink="false">project/hello Batch/Spring Batch 트러블 슈팅.md</guid><pubDate>Wed, 19 Feb 2025 01:24:45 GMT</pubDate><enclosure url="사진-및-문서/output-(1).png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;사진-및-문서/output-(1).png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[index]]></title><description><![CDATA[<a href=".?query=tag:home" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#home">#home</a> <a href=".?query=tag:index" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#index">#index</a> <a href=".?query=tag:blog" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#blog">#blog</a> <br><a data-tooltip-position="top" aria-label="https://git.io/typing-svg" rel="noopener nofollow" class="external-link is-unresolved" href="https://git.io/typing-svg" target="_self"></a><img alt="Typing SVG" src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;pause=1000&amp;color=36A9F7&amp;random=false&amp;width=435&amp;lines=%EC%97%AC%EA%B8%B0%EB%8A%94+%EA%B3%B5%EB%B6%80%ED%95%98%EA%B3%A0%2C+%EA%B8%B0%EB%A1%9D%ED%95%98%EB%8A%94+%EA%B3%B3%EC%9E%85%EB%8B%88%EB%8B%A4" referrerpolicy="no-referrer" target="_self" class="is-unresolved">
 <br><a data-href="Obsidian 정적호스팅 CICD 과정" href="study/note-ci_cd/obsidian-정적호스팅-cicd-과정.html#_0" class="internal-link" target="_self" rel="noopener nofollow">Obsidian 정적호스팅 CICD 과정</a> <br>🙇‍♂<a data-href="Spring Batch 트러블 슈팅" href="project/hello-batch/spring-batch-트러블-슈팅.html#_0" class="internal-link" target="_self" rel="noopener nofollow">Spring Batch 트러블 슈팅</a>
 <br>🙇‍♂<a data-href="Spring Batch 트러블 슈팅 부록" href="project/hello-batch/spring-batch-트러블-슈팅-부록.html#_0" class="internal-link" target="_self" rel="noopener nofollow">Spring Batch 트러블 슈팅 부록</a>
 <br>🙇‍♂<a data-href="Spring Batch 구조 드로잉" href="project/hello-batch/spring-batch-구조-드로잉.html#_0" class="internal-link" target="_self" rel="noopener nofollow">Spring Batch 구조 드로잉</a> <br>👩‍👧‍👦<a data-href="유입 통계 APP__SPRING AOP에 관하여" href="project/hello-marketing/유입-통계-app__spring-aop에-관하여.html#_0" class="internal-link" target="_self" rel="noopener nofollow">유입 통계 APP__SPRING AOP에 관하여</a>
@@ -144,9 +205,8 @@ EX) ChatGPT / HTML Export / Git 등등..
 데이터 파일
 출력 보고서
 ]]></description><link>study/정보처리기사/정보처리기사-필기/필기-5과목-정보시스템-구축관리.html</link><guid isPermaLink="false">study/정보처리기사/정보처리기사 필기/필기 5과목 - 정보시스템 구축관리.md</guid><pubDate>Tue, 18 Feb 2025 02:33:18 GMT</pubDate></item><item><title><![CDATA[필기 4과목 - 프로그래밍 언어 활용]]></title><description><![CDATA[<a href=".?query=tag:정보처리기사" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#정보처리기사">#정보처리기사</a> <a href=".?query=tag:필기" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#필기">#필기</a> <a href=".?query=tag:정리" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#정리">#정리</a> 다른 프로세스가 뺐지 못하는 상태.
-#### - 최적의 경로를 산출하기 위한 정보로서 홉(거리 값)만을 고려하므로, RIP를 선택한 경로가 ==최적의 경로가 아닌경우가== 많이 발생할 수 있다. 두 모듈이 매개변수로 자료를 전달할 때, 자료구조 형태로 전달되어 이용될 때 데이터가 결합되어 있다고 한다. 하나의 모듈이 직접적으로 다른 모듈의 내용을 참조할 때 두 모듈은 내용적으로 결합되어 있다고 한다. 두 모듈이 동일한 전역 데이터를 접근한다면 공통결합 되어 있다고 한다.
-결합도 - 두 모듈간의 상호작용, 또는 의존도 정도를 나타내는 것.// a[0]의 주소값이 0일때, int a[] = {14, 22, 30, 38}; printf("%u", &amp;a[2]); =&gt; a[2]자리의 첫번째 주소값 -&gt; 18
-printf("%u", a); =&gt; a[0]자리의 첫번째 주소값 -&gt; 10 주소값 a[0] 14 =&gt; 10,11,12,13 / a[1] 22 =&gt; 14,15,16,17 / a[2] 30 =&gt; 18,19,20,21 / a[3] 38 =&gt; 22,23,24,25 ]]></description><link>study/정보처리기사/정보처리기사-필기/필기-4과목-프로그래밍-언어-활용.html</link><guid isPermaLink="false">study/정보처리기사/정보처리기사 필기/필기 4과목 - 프로그래밍 언어 활용.md</guid><pubDate>Tue, 18 Feb 2025 02:28:00 GMT</pubDate></item><item><title><![CDATA[필기 3과목 - 데이터베이스 구축]]></title><description><![CDATA[<a href=".?query=tag:정보처리기사" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#정보처리기사">#정보처리기사</a> <a href=".?query=tag:필기" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#필기">#필기</a> <a href=".?query=tag:정리" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#정리">#정리</a> 0 or 1
+#### - 최적의 경로를 산출하기 위한 정보로서 홉(거리 값)만을 고려하므로, RIP를 선택한 경로가 ==최적의 경로가 아닌경우가== 많이 발생할 수 있다.
+]]></description><link>study/정보처리기사/정보처리기사-필기/필기-4과목-프로그래밍-언어-활용.html</link><guid isPermaLink="false">study/정보처리기사/정보처리기사 필기/필기 4과목 - 프로그래밍 언어 활용.md</guid><pubDate>Tue, 18 Feb 2025 02:28:00 GMT</pubDate></item><item><title><![CDATA[필기 3과목 - 데이터베이스 구축]]></title><description><![CDATA[<a href=".?query=tag:정보처리기사" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#정보처리기사">#정보처리기사</a> <a href=".?query=tag:필기" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#필기">#필기</a> <a href=".?query=tag:정리" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#정리">#정리</a> 0 or 1
 트렌젠션 전/후 같아야함
 다른 트렌젝션의 간섭 X
 트렌젝션 커밋 결과가 영구히 저장
@@ -154,6 +214,10 @@ printf("%u", a); =&gt; a[0]자리의 첫번째 주소값 -&gt; 10 주소값 a[0]
 사용자에게 통지할 필요없이 시스템 안에 파일들과 자원들의 부가적인 복사를 자유롭게 할 수 있다.
 다중 사용자들이 자원들을 자동으로 공유할 수 있다.
 사용자들은 어는 위치의 시스템에 장애가 발생했는지 알 필요가 없다.
+트렌젝션 모델링 / 독립적인 개념 스키마 모델링 / 개념스키마 설계 / E-R 다이어그램
+트렌젝션 인터페이스 설계 / DBMS에 맞는 논리스키마 설계 / 테이블설계 / 논리적 맵핑 / 스키마 평가 및 정제
+레코드 집중의 분석,설계 / 저장레코드 양식 설계 / 저장 구조 및 엑세스 경로 설정
+각 릴레이션의 기본키를 구성하는 속성은 null값이나 중복값을 갖을 수 없음.
 ]]></description><link>study/정보처리기사/정보처리기사-필기/필기-3과목-데이터베이스-구축.html</link><guid isPermaLink="false">study/정보처리기사/정보처리기사 필기/필기 3과목 - 데이터베이스 구축.md</guid><pubDate>Tue, 18 Feb 2025 02:26:12 GMT</pubDate></item><item><title><![CDATA[필기 2과목 - 소프트웨어 개발]]></title><description><![CDATA[<a href=".?query=tag:정보처리기사" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#정보처리기사">#정보처리기사</a> <a href=".?query=tag:필기" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#필기">#필기</a> <a href=".?query=tag:정리" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#정리">#정리</a> 프로그램의 하위 모듈에서 상위 모듈 방향으로 통합
 하나의 주요 제어 모듈과 관련된 종속 모듈의 그룹인 클러스터 필요 상위 모듈에서 하위 모듈방향으로 통합
 깊이 우선 통합법, 넓이 우선 통합법 사용
@@ -208,15 +272,7 @@ org.springframework.web.bind.annotation.GetMapping <br><img alt="Pasted image 20
 uid는 외부url로 접근시 발급
 page_url는 코드에 미리 등록 / hit_code는 모두(only 영문+숫자) 수용 가능
 <br><img alt="Pasted image 20250102160213.png" src="사진-및-문서/pasted-image-20250102160213.png" target="_self"><br>
-<img alt="Pasted image 20250102160223.png" src="사진-및-문서/pasted-image-20250102160223.png" target="_self">
-enum객체에 정의된 메서드를 DB로 전환하여 pointcut에서 해당 클래스, 메서드를 가져와 조건으로 정의
-해당 조건에 부합하는 메서드를 프록시로 전환 api호출을 통해 advice내의 동작은 런타임 환경에서 동적으로 변경이 가능한 것을 확인했다. 런타입 위빙 방식이라고 하더라도, 변경은 불가능하다.
-컴파일 위빙 방식은 컴파일 단계에서 원본 클래스 바이트코드를 변경하여 직접 위빙을 하는 방식이고,
-런타임 위빙은 런타임단계에서 원본 클래스를 변경하지 않고 프록시 객체를 사용하여 교체하는 방식이다.
-=&gt; 해당하는 부분은 리빌드와 큰 차이가 없고, 각 class에 scope를 따로 적용해야했기 때문에 고려하지 않았다.=&gt; 연관성 있는 모든 참조를 수동으로 재설정해야하기 때문에 매우 복잡해진다.
-참조를 갱신하기 위해서는 Java리플렉션을 사용하여 강제로 참조를 갱신하거나, AspectJ의 런타임 위빙 방식을 활용해야 한다.
-따라서, 서버 Kill을 하는 것과 진배 없다.
-<br><a data-href="유입 통계 ADMIN용 테이블 설계 과정" href="project/hello-marketing/유입-통계-admin용-테이블-설계-과정.html#_0" class="internal-link" target="_self" rel="noopener nofollow">유입 통계 ADMIN용 테이블 설계 과정</a>]]></description><link>project/hello-marketing/유입-통계-app__spring-aop에-관하여.html</link><guid isPermaLink="false">project/hello marketing/유입 통계 APP__SPRING AOP에 관하여.md</guid><pubDate>Tue, 18 Feb 2025 02:25:16 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20241224144309.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;사진-및-문서/pasted-image-20241224144309.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[etc]]></title><description><![CDATA[<a href=".?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a> <a href=".?query=tag:기타" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#기타">#기타</a>순서를 맞추어 호출하는 로직과 예외처리를하는 로직이 컨트롤러에 집중되어 있다면 가독성이 떨어지게된다 이를 해결하기위해, 서비스에서 로직을 구현하게 된다면 서비스에서 서비스를 호출하는 순환참조를 야기할 수 있게된다. 이를위한 해결법으로 서비스를 주입받는 메인 서비스를 만들어 여러서비스를 주입받고 한개의 서비스에서 이를 동작시킬 수 있다. 1. String x = "abc"; 2. String y = new String("abc");
+<img alt="Pasted image 20250102160223.png" src="사진-및-문서/pasted-image-20250102160223.png" target="_self">]]></description><link>project/hello-marketing/유입-통계-app__spring-aop에-관하여.html</link><guid isPermaLink="false">project/hello marketing/유입 통계 APP__SPRING AOP에 관하여.md</guid><pubDate>Tue, 18 Feb 2025 02:25:16 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20241224144309.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;사진-및-문서/pasted-image-20241224144309.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[etc]]></title><description><![CDATA[<a href=".?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a> <a href=".?query=tag:기타" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#기타">#기타</a>순서를 맞추어 호출하는 로직과 예외처리를하는 로직이 컨트롤러에 집중되어 있다면 가독성이 떨어지게된다 이를 해결하기위해, 서비스에서 로직을 구현하게 된다면 서비스에서 서비스를 호출하는 순환참조를 야기할 수 있게된다. 이를위한 해결법으로 서비스를 주입받는 메인 서비스를 만들어 여러서비스를 주입받고 한개의 서비스에서 이를 동작시킬 수 있다. 1. String x = "abc"; 2. String y = new String("abc");
 1번의 경우로 생성했을 때는 abc라는 문자열을 String 상수 pool에 저장하고,
 다음번에 동일 문자열이 선언될 때 이풀에서 꺼내의 재사용하게 된다.2번의 경우엔 String을 인스턴스와 하여 새로운 객체를 생성하게 된다.
 String Class는 자신을 수정하는 기능을 제공하지 않기때문에,
@@ -697,60 +753,7 @@ HashMap이나 TreeMap가 가진 고유메서드는 사용할 수 없다.
 - Map a = new HashMap(); 같이 구현해서, 사용해도 문제 없도록 하는거다
 - &gt; 변수는 Map타입으로, Map메서드만 사용가능하지만 객체는 HashMap이기 때문에 각각의 기능으로 수행되고, 수정시에도 Map을 상속받는 다른 클래스로 변경이 쉬워진다.
 - 인터페이스의 단일책임과 비슷하다. 기능별로 잘 분리하고, 수정을 최소화할수 있도록 처음부터 생각하라.
-- 리스코프 치환의 원칙을 따라 설계했다면, 의존성 역전의 원칙을 따르기 쉬워진다.
-- 의존관계를 맺을때, 변화기 쉬운것 보다, 변화하기 어려운 것에 의존하라는 것이다. 자바 개발 키트의 약자로, 개발자들이 자바로 개발하는데 사용되는 SDK키트라고 생각하면 된다.
-자바 개발시 필요한 라이브러리와, javac, javadoc 등의 개발도구를 포함한다.
-자바 실행 프로그램인 JRE도 포함한다. (JRE에는 JVM이 들어가있다.)
-- 대표적으로, 안드로이드 스튜디오 등이 있다. Java SE(standard edition) : 가장 기본이 되는 표준 에디션의 자바 플랫폼.
-Java EE(enterprise edition) : 대규모 기업용 에디션. SE의 확장판
-Java ME(micro edition) : 피쳐폰/셋톱박스/프린터 와 같은 작은 임베디드 기기를 다루는데 이용하는 에디션
-Java FX : 가볍고 예쁜 그래픽 사용자 인터페이스를 제공하는 에디션 JRE는 자바 실행환경의 약자로서, JVM과 자바 프로그램을 실행시킬 때 필요한 라이브러리 API를 함께 묶어서 배포되는 패키지.
-또한, 자바 런타임 환경에서 사용하는 프로퍼티 세팅과 리소스(jar)파일을 가지고 있다.
-JRE는 기본적으로 JDK에 포함되어있기 때문에 JDK를 설치하면 함께 설치된다.<br>
-<img alt="Pasted image 20250110101642.png" src="사진-및-문서/pasted-image-20250110101642.png" target="_self"> JVM은 자바 가상머신의 약자로서, 직역하면 자바를 실행하는 머신, 자바를 돌리는 프로그램이다.
-자바로 작성된 모든 프로그램은 JVM에서만 실행될 수 있으므로, 자바 프로그램을 실행하기 위해서는 바늗시 자바 가상머신의 설치가 선행되어야 한다. java는 OS에 종속적이지 않다는 특징을 가지고 있다. 소스코드를 컴파일하여 기계어를 만드는 과정에서, window/mac/linux가 각기 다르게 컴파일을 시킨다. 때문에 각 OS별로 상이한 문법을 사용하게 되는 일이 벌어진다. 이러한 언어를 "이식성이 낮다" 라고 표한다. 하지만 java는 jvm를 거쳐서 OS와 상호작용 하기때문에, OS에 구애받지 않게 된다. 위에서 c언어는 컴파일을 거치면 기계어가 된다고 했는데,
-java는 JVM을 거쳐 바이트 코드로 변환되게 된다. 이는 가상 머신이 이해할 수 있는 중간 레벨의 언어로, 반쪽짜리 컴파일 결과물 이라고 할 수 있다.
-이는 어떠한 환경에 종속적이지 않고 실행될 수 있다.
-즉, 재컴파일 할 필요없이 기계가 바로 읽고 실행 할 수 있는 코드를 만들어 주는것이다.
-하지만 자바 프로그램과 달리 JVM은 각 운영체제에 종속적이므로, 각 운영체제에 맞는 JVM을 알맞게 설치해주어야한다.
-위의 설명과 같이 java는 일반 프로그램보다 JVM이라는 단계를 한 단계 더 거치기 때문에, 상대적으로 실행속도가 느리다는 단점을 내포하고 있다.
-이를 보환하기 위해, 필요한 부분만을 기계어로 바꾸어 속도를 향상시키는 JIT 컴파일러 같은 내부 프로그램이 있지만, 그럼에도 여전히 느리다.
-<br><img alt="Pasted image 20250110103409.png" src="사진-및-문서/pasted-image-20250110103409.png" target="_self">
-위 그림에서 Compiler는 javac.exe에 해당되고 JVM은 java.exe에 해당된다. 소스코드(MyPrograme.java)를 작성한다.
-컴파일러(Compiler)는 자바 소스코드를 이용하여 클래스 파일(MyProgram.class)을 생성한다. 컴파일 된 클래스 파일은 JVM(Java Virtual Machine)이 인식할 수 있는 바이트 코드 파일이다.
-JVM은 클래스 파일의 바이트 코드를 해석하여 바이너리 코드로 변환하고 프로그램을 수행한다.
-MyProgram 수행 결과가 컴퓨터에 반영된다 c또는 c++등으로 작성된 프로그램은 최종 결과물로 exe파일을 만들어낸다.
-java도 exe파일을 만들 수 있지만, class파일로 굳이 만들어내는 이유는 다음과 같다 JVM이 exe에 포함되는 형식으로 가능하기 때문에 exe파일이 무척 커지게 되는 단점이 있다.
-때문에 보통의 경우 일부러 생성하지 않는것이다. java에서 String은 객체이다.
-int, char와 달리 기본형,원시형(primitive type)이 아닌 참조형(reference type)변수로 분류된다.
-메모리의 Stack영역이 아닌, Heap영역에서 문자열 데이터가 생성되고 다뤄진다는 말이다.<br>
-<img alt="Pasted image 20250110122312.png" src="사진-및-문서/pasted-image-20250110122312.png" target="_self">
-또한 String은 불변(Immutable)객체이다. 예를들어, s = "a"; 에 s = s + s; 를 하면 "aa"가 되겠지만, heap영역 메모리에 새로운 주소로 생성하게 된다. JVM에서는 String Constant Pool이라는 독립적인 영억을 Heap영역에 구축하여
-문자열들을 Constant화 하여 다른 변수 혹은 객체들과 공유한다.
-이 과정에서 데이터 캐싱이 일어나고, 그만큼 성능적인 이득을 취할 수 있게된다. 데이터가 불변하다면, 멀티 스레드 환경에서 동기화 문제가 발생하지 않기 때문에 안전한 결과를 낼 수 있다. 만일 번지수의 문자열 값이 변경이 가능하다면, 참조값을 변경하여 애플리케이션에 보안 문제를 일으킬 수 있다. 먼저 문자열 리터럴 방식으로 변수에 저장하게 되면, 이 값은 string constant pool에 저장이 되지만, new연산자를 사용하여 생성한 값은 Heap영역에 존재하게된다. 대상 값 자체를 비교 대상의 주소값을 비교.
-즉, new연산자를 통해 만들어진 객체를 equals로 비교한다면 true가 나오겠지만,
-== 연산자를 사용한다면 false가 나오게 되는것이다. 두 클래스 모두 문자열을 연산(추가 및 변경)할 때 주로 사용하는 자료형이다.
-물론 String자료형 으로도 + 나 concat()으로 문자열을 이어붙일수 있다.
-하지만 +를 이용해 String인스턴스의 문자열을 결합하면, 내용이 합쳐진 새로운 String인스턴스를 생성하게된다.
-문자열을 많이 결합하면 결합할수록 공간낭비는 물론, 속도 또한 매우 느려진다.이를 해결하기 위해 Java는 문자열 연산을 전용으로 하는 자료형을 따로 만들어 제공하였다.
-내부적으로 Buffur라고 하는 독립적인 공간을 가지게 되어
-문자열을 바로 추가할 수 있어 공간의 낭비도 없으며, 문자열 연산 속도도 매우 빠르다
-기본적으로 16개의 문자를 저장할 수 있는 크기이며,
-연산 중 할당된 버퍼의 크기를 넘게되면 자동으로 버퍼를 증강 시킨다.SpringBuffer와 SpringBuilder의 메서드 사용법은 동일하다.
-불변자료형 으로써, 초기 공간과 다른 값에 대해서 새로운 메모리 공간을 할당하여 새로 생성한다.
-그렇게 남겨진 문자열 값은 java가비지 컬렉터에 의해 제거될 대상에 포함된다. 즉, 문자열을 조작할 때 새 객체를 생서하지 않고 기존 객체를 수정한다.
-메모리 관리 측면에서 효율적
-=&gt; 사실 자바는 문자열에 + 연산을 사용하면, 컴파일 전 내부적으로 StringBuilder 클래스를 자동으로 생성한 후 다시 문자열로 돌려준다. 다만, 문자열을 합치는 일이 빈번할 경우에는 단순히 +연산을 사용하는것은 효율이 떨어지므로
-SpringBuffer와 SpringBuilde 를 사용하는것이 옳다고 할 수 있다.
-컴파일 타임 위빙 (Compile-Time Weaving) 소스 코드 컴파일 시, Aspect가 대상 객체에 결합됩니다.
-AspectJ 같은 프레임워크에서는 가능하지만, Spring AOP는 이 방식을 지원하지 않습니다. 로드 타임 위빙 (Load-Time Weaving) 클래스 파일을 JVM에 로드할 때 Aspect를 결합합니다.
-Spring AOP는 기본적으로 지원하지 않으나, AspectJ 통합 설정을 통해 사용할 수 있습니다. 런타임 위빙 (Runtime Weaving) Spring AOP의 기본 방식입니다.
-런타임에 프록시 객체를 생성하여 부가 기능을 결합합니다.
-JDK 동적 프록시 또는 CGLIB를 사용하여 대상 객체를 프록시로 감싸고, 프록시가 메서드 호출을 가로채서 Advice를 실행합니다. 프록시 생성 시: 클래스 단위에서 PointCut 조건에 따라 프록시가 생성됩니다.
-메서드 호출 시: 개별 메서드 단위에서 PointCut 조건을 재평가합니다. 프록시 생성은 클래스 단위로 이루어지지만, PointCut 조건은 메서드 단위로 적용됩니다.
-런타임 정보(매개변수, 리턴 타입 등)를 기반으로 동적 조건을 평가해야 하는 경우가 있습니다.
-Spring AOP의 유연성과 확장성을 보장하기 위한 설계입니다.
-]]></description><link>study/프로그래밍/java-,-oop.html</link><guid isPermaLink="false">study/프로그래밍/JAVA , OOP.md</guid><pubDate>Tue, 18 Feb 2025 02:05:34 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250110101642.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;사진-및-문서/pasted-image-20250110101642.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Spring Batch 구조 드로잉]]></title><description><![CDATA[balancePartitionedJobbalanceInitializeStepbalancePartitionStepbalanceSendSnsStepbalanceResetSteppartitionerpartitionHandlerStepExecutionContextReaderprocesserwriterdtochuck sizeSlaveStep-no: 2SlaveStep-no: gridSize balanceQueueResponnse QueueProcessed ItemsProcessed Itemstotal DataProcessed ItemsProcessed ItemsworkingProcessed ItemsProcessed ItemsProcessed ItemsProcessed ItemsSlaveStep-no: 1gridSize - 1gridSize - 2partiton thread-no: 1partiton thread-no: 2partiton thread-no: gridSize totalRecords+ datagridSizeContorllerjobParameters(read only)jobParameters - gridSize - startDate - endDateJob Schedulerexcutedto List(chuck size)dto Listdto Listdto Listdto Listdto Listdto Listdto Listdto ListThe restdto ListfinishedfinishedworkingworkingdtotriggerJobExecutionContextgrid size]]></description><link>project/hello-batch/spring-batch-구조-드로잉.html</link><guid isPermaLink="false">project/hello Batch/Spring Batch 구조 드로잉.md</guid><pubDate>Tue, 18 Feb 2025 02:00:18 GMT</pubDate></item><item><title><![CDATA[Spring Batch 트러블 슈팅 부록]]></title><description><![CDATA[<a href=".?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href=".?query=tag:개발" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개발">#개발</a> <a href=".?query=tag:SPRING" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SPRING">#SPRING</a> <a href=".?query=tag:Batch" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Batch">#Batch</a> <a href=".?query=tag:Partitioning" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Partitioning">#Partitioning</a> <a href=".?query=tag:Chunk" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Chunk">#Chunk</a>1 .GridSize: 4 ActiveConnections: 9/50 소요시간: 6 minutes 23.55
+]]></description><link>study/프로그래밍/java-,-oop.html</link><guid isPermaLink="false">study/프로그래밍/JAVA , OOP.md</guid><pubDate>Tue, 18 Feb 2025 02:05:34 GMT</pubDate></item><item><title><![CDATA[Spring Batch 구조 드로잉]]></title><description><![CDATA[balancePartitionedJobbalanceInitializeStepbalancePartitionStepbalanceSendSnsStepbalanceResetSteppartitionerpartitionHandlerStepExecutionContextReaderprocesserwriterdtochuck sizeSlaveStep-no: 2SlaveStep-no: gridSize balanceQueueResponnse QueueProcessed ItemsProcessed Itemstotal DataProcessed ItemsProcessed ItemsworkingProcessed ItemsProcessed ItemsProcessed ItemsProcessed ItemsSlaveStep-no: 1gridSize - 1gridSize - 2partiton thread-no: 1partiton thread-no: 2partiton thread-no: gridSize totalRecords+ datagridSizeContorllerjobParameters(read only)jobParameters - gridSize - startDate - endDateJob Schedulerexcutedto List(chuck size)dto Listdto Listdto Listdto Listdto Listdto Listdto Listdto ListThe restdto ListfinishedfinishedworkingworkingdtotriggerJobExecutionContextgrid size]]></description><link>project/hello-batch/spring-batch-구조-드로잉.html</link><guid isPermaLink="false">project/hello Batch/Spring Batch 구조 드로잉.md</guid><pubDate>Tue, 18 Feb 2025 02:00:18 GMT</pubDate></item><item><title><![CDATA[Spring Batch 트러블 슈팅 부록]]></title><description><![CDATA[<a href=".?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href=".?query=tag:개발" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개발">#개발</a> <a href=".?query=tag:SPRING" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SPRING">#SPRING</a> <a href=".?query=tag:Batch" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Batch">#Batch</a> <a href=".?query=tag:Partitioning" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Partitioning">#Partitioning</a> <a href=".?query=tag:Chunk" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Chunk">#Chunk</a>1 .GridSize: 4 ActiveConnections: 9/50 소요시간: 6 minutes 23.55
 2 .GridSize: 5 ActiveConnections: 11/50 소요시간: 4 minutes 55.57
 3 .GridSize: 6 ActiveConnections: 13/50 소요시간: 4 minutes 47.01
 4 .GridSize: 7 ActiveConnections: 15/50 소요시간: 3 minutes 47.76
@@ -941,5 +944,13 @@ Transitive 데이터베이스에서 비(반)정규화(Denormalization)의 개념
 ( ) envelope, 헤더, 바디 등이 추가된 xml 문서이다.
 ( )는 복잡하고 무거운 구조로 구성되어 있어, ( )보다는 RESTful 프로토콜을 이용하기도 한다. 웹 서비스와 관련된 다음 설명에 해당되는 용어는?
 웹 서비스와 관련된 서식이나 프로토콜 등을 표준적인 방법으로 기술하고 게시하기 위한 언어.
-XML로 작성되며 UDDI의 기초가 된다. SOAP, XML 스키마와 결합하여 인터넷에서 웹 서비스를 제공하기 위해 사용되며, 클라이언트는 이것을 통해 서버에서 어떠한 조작이 가능한지를 파악할 수 있다.
+XML로 작성되며 UDDI의 기초가 된다. SOAP, XML 스키마와 결합하여 인터넷에서 웹 서비스를 제공하기 위해 사용되며, 클라이언트는 이것을 통해 서버에서 어떠한 조작이 가능한지를 파악할 수 있다. 다음 럼바우 데이터 모델링에 대한 설명에서 각 지문(1~3)에 해당하는 모델링을 매칭시키기
+ㄱ. 다수의 프로세스들 간의 자료 흐름을 중심으로 처리 과정을 표현한 모델링
+ex) 자료흐름도(DFD)ㄴ. 시간의 흐름에 따른 객체들 간의 제어 흐름, 상호 작용, 동작 순서 등의 동적인 행위를 표현하는 모델링
+ex) 상태 변화도(STD), 사건 추적도ㄷ. 시스템에서 요구되는 객체를 찾아내어 속성과 연산 식별 및 객체들 간의 관계를 규정하여 표시하는 모델링
+ex) ER 다이어그램(ERD)
+1 → Function(기능)
+2 → Dynamic(동적)
+3 → Information(객체) 자신이 사용하지 않는 인터페이스와 의존 관계를 맺거나 영향을 받지 않아야 한다는 객체지향 설계 원칙 중 하나다.
+예를 들어 프린터, 펙스, 복사 기능을 가진 복합기의 경우 3가지 기능을 모두 가지 범용 인터페이스보다는, 프린터 인터페이스, 팩스 인터페이스, 복사 인터페이스로 분리함으로써 하나의 기능 변경으로 인해 다른기능이 영향을 받지 않도록 해야한다.
 ]]></description><link>study/정보처리기사/정보처리기사-실기/정보처리-기사-실기-키워드.html</link><guid isPermaLink="false">study/정보처리기사/정보처리기사 실기/정보처리 기사 실기 키워드.md</guid><pubDate>Mon, 17 Feb 2025 09:05:01 GMT</pubDate><enclosure url="사진-및-문서/do-messenger_screenshot_2025-02-10_15_04_45.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;사진-및-문서/do-messenger_screenshot_2025-02-10_15_04_45.png&quot;&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>

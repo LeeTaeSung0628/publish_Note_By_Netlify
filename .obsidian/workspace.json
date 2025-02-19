@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "6be62c3c517b777b",
+        "id": "ea25d597cfa958cf",
         "type": "tabs",
         "children": [
           {
-            "id": "d32930bb4480184f",
+            "id": "389fc3cf85ae38e1",
             "type": "leaf",
             "state": {
-              "type": "image",
-              "state": {
-                "file": "사진-및-문서/pasted-image-20250218160532.png"
-              },
-              "icon": "lucide-image",
-              "title": "pasted-image-20250218160532"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "새 탭"
             }
           }
         ]
@@ -178,25 +176,24 @@
   "lastOpenFiles": [
     "site-lib/search-index.json",
     "site-lib/metadata.json",
+    "사진-및-문서/do-messenger_screenshot_2025-02-10_17_10_58.png",
+    "사진-및-문서/do-messenger_screenshot_2025-02-10_15_04_45.png",
+    "사진-및-문서/pasted-image-20250102181842.png",
+    "사진-및-문서/output-(9).png",
+    "사진-및-문서/pasted-image-20250122111223.png",
+    "사진-및-문서/pasted-image-20250110122312.png",
+    "사진-및-문서/pasted-image-20250110103409.png",
+    "사진-및-문서/pasted-image-20250110101642.png",
+    "사진-및-문서/pasted-image-20240722180706.png",
+    "사진-및-문서/pasted-image-20240531162124.png",
+    "index.html",
+    "study/note-ci_cd/🟣-obsidian-정적호스팅-cicd-과정.html",
     "site-lib/html/file-tree-content.html",
     "site-lib/html",
     "site-lib/styles/theme.css",
     "site-lib/styles/other-plugins.css",
     "site-lib/styles/supported-plugins.css",
     "site-lib/styles/obsidian.css",
-    "site-lib/styles/main-styles.css",
-    "site-lib/styles/global-variable-styles.css",
-    "site-lib/styles",
-    "site-lib/media/favicon.png",
-    "site-lib/media/6155340132a851f6089e.svg",
-    "site-lib/media/2308ab1944a6bfa5c5b8.svg",
-    "사진-및-문서/pasted-image-20250218160956.png",
-    "사진-및-문서/pasted-image-20250218161515.png",
-    "사진-및-문서/pasted-image-20250218160328.png",
-    "사진-및-문서/pasted-image-20250218160428.png",
-    "사진-및-문서/pasted-image-20250218160359.png",
-    "사진-및-문서/pasted-image-20250218155524.png",
-    "사진-및-문서/pasted-image-20250218154615.png",
     "환영합니다!.md"
   ]
 }

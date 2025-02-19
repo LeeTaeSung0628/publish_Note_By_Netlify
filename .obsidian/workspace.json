@@ -11,10 +11,14 @@
             "id": "9b99cd08eedd9b26",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "새 탭"
+              "type": "split-diff-view",
+              "state": {
+                "aFile": "lib/rss.xml",
+                "bFile": "lib/rss.xml",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: rss.xml"
             }
           }
         ]
@@ -172,7 +176,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5cc2f7897ebd9692",
+  "active": "9b99cd08eedd9b26",
   "lastOpenFiles": [
     "lib/search-index.json",
     "lib/metadata.json",

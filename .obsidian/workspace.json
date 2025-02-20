@@ -174,6 +174,8 @@
   },
   "active": "5cc2f7897ebd9692",
   "lastOpenFiles": [
+    "study/커리큘럼/🆕-dev-커리큘럼.html",
+    "study/커리큘럼",
     "tools/🎵-obsidian.html",
     "tools",
     "lib/styles/theme.css",
@@ -183,8 +185,6 @@
     "lib/styles/main-styles.css",
     "lib/styles/global-variable-styles.css",
     "lib/scripts/tinycolor.js",
-    "lib/scripts/webpage.js",
-    "lib/scripts/pixi.js",
     "lib/media/favicon.png",
     "lib/media/6155340132a851f6089e.svg",
     "lib/media/2308ab1944a6bfa5c5b8.svg",

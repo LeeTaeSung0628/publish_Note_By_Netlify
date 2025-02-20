@@ -1,127 +1,72 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[taesunglog]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib/media/favicon.png</url><title>taesunglog</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Thu, 20 Feb 2025 06:23:19 GMT</lastBuildDate><atom:link href="lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Thu, 20 Feb 2025 06:23:15 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[🏠 Home]]></title><description><![CDATA[<a class="tag" href="?query=tag:home" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#home</a> <a class="tag" href="?query=tag:index" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#index</a> <a class="tag" href="?query=tag:blog" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#blog</a> <br> <a href=".?query=tag:home" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#home">#home</a> <a href=".?query=tag:index" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#index">#index</a> <a href=".?query=tag:blog" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#blog">#blog</a> <br><a data-tooltip-position="top" aria-label="https://github.com/LeeTaeSung0628" rel="noopener nofollow" class="external-link is-unresolved" href="https://github.com/LeeTaeSung0628" target="_self"><span alt="Pasted image 20250220144552.png" src="Pasted image 20250220144552.png" class="internal-embed media-embed image-embed is-loaded" style="width: 220px; max-width: 100%;"></span></a><img alt="Pasted image 20250220144552.png" src="사진-및-문서/pasted-image-20250220144552.png" style="width: 220px; max-width: 100%;" target="_self"><br><a data-tooltip-position="top" aria-label="https://github.com/LeeTaeSung0628" rel="noopener nofollow" class="external-link is-unresolved" href="https://github.com/LeeTaeSung0628" target="_self">🔗Git Hub</a>
-<br><a data-tooltip-position="top" aria-label="https://git.io/typing-svg" rel="noopener nofollow" class="external-link is-unresolved" href="https://git.io/typing-svg" target="_self"></a><img alt="Typing SVG" src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;pause=1000&amp;color=36A9F7&amp;random=false&amp;width=435&amp;lines=%EC%97%AC%EA%B8%B0%EB%8A%94+%EA%B3%B5%EB%B6%80%ED%95%98%EA%B3%A0%2C+%EA%B8%B0%EB%A1%9D%ED%95%98%EB%8A%94+%EA%B3%B3%EC%9E%85%EB%8B%88%EB%8B%A4" referrerpolicy="no-referrer" target="_self" class="is-unresolved"><br> <br> <br> <br> <br> <br> <br> <br>이후 진행할 것 들 <br>각 카테고리별로 서브 홈페이지를 만들어 그래프를 관리해도 좋아보인다.!!
-<br>깃 레포에서도 블로그 주소로 이어질 수 있도록 리드미를 꾸며보자~
-<br>리드미 또한 옵시디언에서 작업이 가능하다.]]></description><link>index.html</link><guid isPermaLink="false">index.md</guid><pubDate>Thu, 20 Feb 2025 06:22:22 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250220144552.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20250220144552.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[🪓 Tools]]></title><description><![CDATA[<a class="tag" href="?query=tag:Tools" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Tools</a> <a class="tag" href="?query=tag:모음" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#모음</a> <br> <a href=".?query=tag:Tools" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Tools">#Tools</a> <a href=".?query=tag:모음" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#모음">#모음</a><br>툴 모음
-제가 사용하고 있는 편리/유용한 TOOL을 두서없이 설명하는 곳 입니다.
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[taesunglog]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib/media/favicon.png</url><title>taesunglog</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Thu, 20 Feb 2025 06:52:42 GMT</lastBuildDate><atom:link href="lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Thu, 20 Feb 2025 06:52:41 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[👻 Obsidian 정적호스팅 CICD 과정]]></title><description><![CDATA[<a class="tag" href="?query=tag:프로젝트" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#프로젝트</a> <a class="tag" href="?query=tag:개발" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#개발</a> <a class="tag" href="?query=tag:Hosting" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Hosting</a> <a class="tag" href="?query=tag:Obsidian" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Obsidian</a> <a class="tag" href="?query=tag:CI/CD" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#CI/CD</a> <br> <a href=".?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href=".?query=tag:개발" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개발">#개발</a> <a href=".?query=tag:Hosting" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Hosting">#Hosting</a> <a href=".?query=tag:Obsidian" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Obsidian">#Obsidian</a> <a href=".?query=tag:CI/CD" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#CI/CD">#CI/CD</a><br> 먼저 옵시디언(Obsidian)에 대한 정보를 확인하고 싶다면.<br>정보!
+현재 보고있는 해당 사이트는 Obsidian앱의 지속적인 통합(CI), 지속적인 배포(CD)를 구현한 사이트이다. <br>아주 기본적인 셋팅이므로, 이후 커스텀은 각자의 취향대로 진행하면 될 것이다.
+<br>WAS가 아닌 WEB 정적 호스팅을 위한 셋팅이다. <br><img alt="Pasted image 20250218151731.png" src="사진-및-문서/pasted-image-20250218151731.png" target="_self"><br>
+<img alt="Pasted image 20250218151806.png" src="사진-및-문서/pasted-image-20250218151806.png" target="_self"><br>이후 해당 위치에 Git을 생성해 줄 것이다.
+<br><img alt="Pasted image 20250218152044.png" src="사진-및-문서/pasted-image-20250218152044.png" target="_self"><br>
+<img alt="Pasted image 20250218152103.png" src="사진-및-문서/pasted-image-20250218152103.png" target="_self"><br>
+<br>이전 생성한 옵시디언 폴더로 이동한다.
+<br>&gt; cd C:\이하경로\obsidian\TEST
+<br><img alt="Pasted image 20250218153131.png" src="사진-및-문서/pasted-image-20250218153131.png" target="_self"><br>깃 파일 생성<br>
+해당 과정전 pc에 Git이 설치되어 있어야한다. (방법은 알아서)
+<br>&gt; git init
+<br><img alt="Pasted image 20250218153319.png" src="사진-및-문서/pasted-image-20250218153319.png" target="_self"><br>깃 레포에 연결
+<br>&gt; git remote add origin https://github.com/LeeTaeSung0628/obsidian_Test.git
+<br><img alt="Pasted image 20250218153445.png" src="사진-및-문서/pasted-image-20250218153445.png" target="_self"><br>옵시디언 레포에 올리기
+<br>&gt; git add . &gt; git commit -m "initial commit" &gt; git push -u origin master
+<br><img alt="Pasted image 20250218153543.png" src="사진-및-문서/pasted-image-20250218153543.png" target="_self"><img alt="Pasted image 20250218153553.png" src="사진-및-문서/pasted-image-20250218153553.png" style="width: 700px; max-width: 100%;" target="_self"><br>여기까지 따라왔다면, 옵시디언 파일을 git 레포지토리에 저장하는 것 까지 마칠 수 있다.<br><img alt="Pasted image 20250218151330.png" src="사진-및-문서/pasted-image-20250218151330.png" style="width: 1050px; max-width: 100%;" target="_self"><br>
+옵시디언의 Git플러그인이다. 기본적인 커밋 푸시 및 셋팅이 가능하다.<br>기능은 제한적이기 때문에, GitDesktop이나, Cmd에서 직접 Git을 셋팅하는것을 추천한다.
+<br>이후 셋팅이 완료되었을 때 배포 자동화를 위해 사용하면 편리하다.
+<br><img alt="Pasted image 20250218153814.png" src="사진-및-문서/pasted-image-20250218153814.png" style="width: 775px; max-width: 100%;" target="_self"><img alt="Pasted image 20250218153858.png" src="사진-및-문서/pasted-image-20250218153858.png" target="_self"><br>이전에 생성한 깃 파일의 주소가 들어가면 된다.
+<br>C:\Users\경로\obsidian\TEST\.git
+<br><img alt="Pasted image 20250218154352.png" src="사진-및-문서/pasted-image-20250218154352.png" style="width: 875px; max-width: 100%;" target="_self"><br>또한 설정에서 오토 커밋/푸시/풀 설정을 통해 지속 적인 통합 셋팅이 가능하다.<br>
+<img alt="Pasted image 20250218154433.png" src="사진-및-문서/pasted-image-20250218154433.png" style="width: 725px; max-width: 100%;" target="_self">
+<br>주의
+해당 디렉토리에 .gitignore 파일 및 세부적인 git셋팅은 자유롭게 진행하면 된다.<br>
+옵시디언은 캐쉬파일로 인한 충돌이 잦기 때문에 상세히 설정하는 것을 추천한다.
+<br><img alt="Pasted image 20250218154615.png" src="사진-및-문서/pasted-image-20250218154615.png" target="_self"><br>
+<img alt="Pasted image 20250218154633.png" src="사진-및-문서/pasted-image-20250218154633.png" target="_self"><br>정상적으로 푸시 완료.<br>
+<img alt="Pasted image 20250218154647.png" src="사진-및-문서/pasted-image-20250218154647.png" target="_self">
 <br>
-<br><a data-href="🎵 Obsidian" href="tools/🎵-obsidian.html" class="internal-link" target="_self" rel="noopener nofollow">🎵 Obsidian</a>
+<br>해당 Git 레포는 옵시디언의 마크다운(md파일)자체를 저장하고 관리하는 레포다.
+<br>정적 컨텐츠 호스팅을 위한 레포지토리를 추가적으로 생성하여 줄 것이다.
 <br>
-<br>🩹추가예정!!
+<br>여러 방법이 있지만, md파일을 기반으로 배포가능한 형태의 HTML파일을 생성해주는 플러그인을 사용할 것이다.<br>
+<img alt="Pasted image 20250218155524.png" src="사진-및-문서/pasted-image-20250218155524.png" target="_self">
+<br>다양한 옵션을 지원하지만, 오늘은 기본적인 기능만 설명하겠다.
+<br>Control + P -&gt; export 를 검색
+<br><img alt="Pasted image 20250218160328.png" src="사진-및-문서/pasted-image-20250218160328.png" target="_self"><br>
+<img alt="Pasted image 20250218160359.png" src="사진-및-문서/pasted-image-20250218160359.png" target="_self"><br>폴더 생성 후 익스포트 한다.
+<br>주의
+이때 처음엔 index페이지를 생성하고, 추후 삭제하는 것을 추천(Netlify는 index가 필수)
+<br><img alt="Pasted image 20250218160428.png" src="사진-및-문서/pasted-image-20250218160428.png" target="_self"><img alt="Pasted image 20250218160532.png" src="사진-및-문서/pasted-image-20250218160532.png" target="_self"><br>생성한 새 디렉토리에 정상적으로 생성된것을 볼 수 있다.
 <br>
-<br>🩹추가예정!!]]></description><link>tools/🪓-tools.html</link><guid isPermaLink="false">Tools/🪓 Tools.md</guid><pubDate>Thu, 20 Feb 2025 06:21:03 GMT</pubDate></item><item><title><![CDATA[💻 프로젝트]]></title><description><![CDATA[<a class="tag" href="?query=tag:프로젝트" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#프로젝트</a> <a class="tag" href="?query=tag:모음" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#모음</a> <br> <a href=".?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href=".?query=tag:모음" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#모음">#모음</a><br>프로젝트
-public하게 공개할 수 있는 프로젝트의 제작 과정입니다.
+<br>배포용 HTML파일 레포지토리<br>
+<img alt="Pasted image 20250218160956.png" src="사진-및-문서/pasted-image-20250218160956.png" target="_self">
 <br>
-<br><a data-href="👻 Obsidian 정적호스팅 CICD 과정" href="project/note-ci_cd/👻-obsidian-정적호스팅-cicd-과정.html" class="internal-link" target="_self" rel="noopener nofollow">👻 Obsidian 정적호스팅 CICD 과정</a>
+<br>Netlify 정적 호스팅 서비스를 사용하여 Git 레포를 배포하겠다.
+<br><a rel="noopener nofollow" class="external-link is-unresolved" href="https://www.netlify.com/" target="_self">https://www.netlify.com/</a><br>
+위 사이트로 접속하여 로그인 한 후, 깃 레포에 Netlify서비스를 적용한다.
+1.깃허브를 선택한다.<br>
+<img alt="Pasted image 20250218161424.png" src="사진-및-문서/pasted-image-20250218161424.png" style="width: 750px; max-width: 100%;" target="_self"><br>
+2.배포용 옵시디언 레포를 선택한 후, SAVE를 누른다.<br>
+<img alt="Pasted image 20250218161515.png" src="사진-및-문서/pasted-image-20250218161515.png" target="_self"><br>
+3.site_name을 설정하고 Deploy를 누른다.<br>
+<img alt="Pasted image 20250218161728.png" src="사진-및-문서/pasted-image-20250218161728.png" target="_self"><br>
+정적웹사이트를 위한 셋팅으로 이외의 값은 공란으로 두어도 무방하다. <br>
+그리고 기다리면...<br>
+<img alt="Pasted image 20250218161824.png" src="사진-및-문서/pasted-image-20250218161824.png" target="_self"><br>
+<img alt="Pasted image 20250218161847.png" src="사진-및-문서/pasted-image-20250218161847.png" target="_self"> <br>
+<br>배포가 완료되고, 주소를 입력하여 확인이 가능하다.<br>
+<img alt="Pasted image 20250218161937.png" src="사진-및-문서/pasted-image-20250218161937.png" target="_self">
 <br>
-<br><a data-href="🏹 Spring Batch 트러블 슈팅" href="project/hello-batch/🏹-spring-batch-트러블-슈팅.html" class="internal-link" target="_self" rel="noopener nofollow">🏹 Spring Batch 트러블 슈팅</a>
-<br><a data-href="🏹 Spring Batch 트러블 슈팅 부록" href="project/hello-batch/🏹-spring-batch-트러블-슈팅-부록.html" class="internal-link" target="_self" rel="noopener nofollow">🏹 Spring Batch 트러블 슈팅 부록</a>
-<br><a data-href="🏹 Spring Batch 구조 드로잉" href="project/hello-batch/🏹-spring-batch-구조-드로잉.html" class="internal-link" target="_self" rel="noopener nofollow">🏹 Spring Batch 구조 드로잉</a>
+<br>커뮤니티 플러그인
+<br>인덱스페이지
+<br>테마
+<br>etc..
 <br>
-<br><a data-href="👩‍👧‍👦 유입 통계 APP__SPRING AOP에 관하여" href="project/hello-marketing/👩‍👧‍👦-유입-통계-app__spring-aop에-관하여.html" class="internal-link" target="_self" rel="noopener nofollow">👩‍👧‍👦 유입 통계 APP__SPRING AOP에 관하여</a>
-<br><a data-href="👩‍👧‍👦 유입 통계 ADMIN용 테이블 설계 과정" href="project/hello-marketing/👩‍👧‍👦-유입-통계-admin용-테이블-설계-과정.html" class="internal-link" target="_self" rel="noopener nofollow">👩‍👧‍👦 유입 통계 ADMIN용 테이블 설계 과정</a>]]></description><link>project/💻-프로젝트.html</link><guid isPermaLink="false">project/💻 프로젝트.md</guid><pubDate>Thu, 20 Feb 2025 06:17:55 GMT</pubDate></item><item><title><![CDATA[🤠 Coding Test 풀이 모음]]></title><description><![CDATA[<a class="tag" href="?query=tag:공부" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#공부</a> <a class="tag" href="?query=tag:Coding" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Coding</a> <a class="tag" href="?query=tag:Test" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Test</a> <a class="tag" href="?query=tag:모음" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#모음</a> <br> <a href=".?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a> <a href=".?query=tag:Coding" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Coding">#Coding</a> <a href=".?query=tag:Test" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Test">#Test</a> <a href=".?query=tag:모음" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#모음">#모음</a><br>Coding Test
-코딩 테스트 문제 풀이 입니다.
-<br>
-<br> <br>
-<br>]]></description><link>study/coding-test/🤠-coding-test-풀이-모음.html</link><guid isPermaLink="false">study/Coding Test/🤠 Coding Test 풀이 모음.md</guid><pubDate>Thu, 20 Feb 2025 06:14:07 GMT</pubDate></item><item><title><![CDATA[👽 Algorithm]]></title><description><![CDATA[<a class="tag" href="?query=tag:공부" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#공부</a> <a class="tag" href="?query=tag:Coding" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Coding</a> <a class="tag" href="?query=tag:Test" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Test</a> <a class="tag" href="?query=tag:알고리즘" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#알고리즘</a> <br> <a href=".?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a> <a href=".?query=tag:Coding" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Coding">#Coding</a> <a href=".?query=tag:Test" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Test">#Test</a> <a href=".?query=tag:알고리즘" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#알고리즘">#알고리즘</a><br>Algorithm
-알고리즘 유형 별 풀이 입니다.]]></description><link>study/coding-test/👽-algorithm.html</link><guid isPermaLink="false">study/Coding Test/👽 Algorithm.md</guid><pubDate>Thu, 20 Feb 2025 06:02:04 GMT</pubDate></item><item><title><![CDATA[📕 공부]]></title><description><![CDATA[<a class="tag" href="?query=tag:공부" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#공부</a> <a class="tag" href="?query=tag:모음" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#모음</a> <br> <a href=".?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a> <a href=".?query=tag:모음" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#모음">#모음</a><br>공부
-보고 배운 지식 중 공유하고 싶은 정보를 모아둔 카테고리 입니다.
-<br>
-<br><a data-href="☕ JAVA , OOP" href="study/cs/☕-java-,-oop.html" class="internal-link" target="_self" rel="noopener nofollow">☕ JAVA , OOP</a>
-<br><a data-href="🍃 Spring" href="study/cs/🍃-spring.html" class="internal-link" target="_self" rel="noopener nofollow">🍃 Spring</a>
-<br><a data-href="🎩 DevOps" href="study/cs/🎩-devops.html" class="internal-link" target="_self" rel="noopener nofollow">🎩 DevOps</a>
-<br><a data-href="📔 DataBase" href="study/cs/📔-database.html" class="internal-link" target="_self" rel="noopener nofollow">📔 DataBase</a>
-<br><a data-href="📭 Server" href="study/cs/📭-server.html" class="internal-link" target="_self" rel="noopener nofollow">📭 Server</a>
-<br><a data-href="🐞 etc" href="study/cs/🐞-etc.html" class="internal-link" target="_self" rel="noopener nofollow">🐞 etc</a>
-<br>
-<br><a data-href="🤠 Coding Test 풀이 모음" href="study/coding-test/🤠-coding-test-풀이-모음.html" class="internal-link" target="_self" rel="noopener nofollow">🤠 Coding Test 풀이 모음</a>
-<br><a data-href="👽 Algorithm" href="study/coding-test/👽-algorithm.html" class="internal-link" target="_self" rel="noopener nofollow">👽 Algorithm</a>
-<br>
-<br><a data-href="🔻 Redis 캐쉬 전략 - hello 서비스에 적용하여 성능개선 가능성" href="study/dev-seminar/🔻-redis-캐쉬-전략-hello-서비스에-적용하여-성능개선-가능성.html" class="internal-link" target="_self" rel="noopener nofollow">🔻 Redis 캐쉬 전략 - hello 서비스에 적용하여 성능개선 가능성</a>
-<br><a data-href="🍂 JPA, Mybatis , Dead Lock" href="study/dev-seminar/🍂-jpa,-mybatis-,-dead-lock.html" class="internal-link" target="_self" rel="noopener nofollow">🍂 JPA, Mybatis , Dead Lock</a>
-<br><a data-href="🔹 TDD에 대하여" href="study/dev-seminar/🔹-tdd에-대하여.html" class="internal-link" target="_self" rel="noopener nofollow">🔹 TDD에 대하여</a>
-<br><a data-href="🪕 JPA 에 대한 고찰" href="study/dev-seminar/🪕-jpa-에-대한-고찰.html" class="internal-link" target="_self" rel="noopener nofollow">🪕 JPA 에 대한 고찰</a>
-<br><a data-href="🥗 Spring Security_토큰_세션_쿠키_JWT 에 대하여" href="study/dev-seminar/🥗-spring-security_토큰_세션_쿠키_jwt-에-대하여.html" class="internal-link" target="_self" rel="noopener nofollow">🥗 Spring Security_토큰_세션_쿠키_JWT 에 대하여</a>
-<br><a data-href="📔 DB 테이블 설계, 어떻게 하는게 옳은 방법인가" href="study/dev-seminar/📔-db-테이블-설계,-어떻게-하는게-옳은-방법인가.html" class="internal-link" target="_self" rel="noopener nofollow">📔 DB 테이블 설계, 어떻게 하는게 옳은 방법인가</a>
-<br>
-<br><a data-href="🥈 필기 1과목 - 소프트웨어 설계" href="study/정보처리기사/정보처리기사-필기/🥈-필기-1과목-소프트웨어-설계.html" class="internal-link" target="_self" rel="noopener nofollow">🥈 필기 1과목 - 소프트웨어 설계</a>
-<br><a data-href="🥈 필기 2과목 - 소프트웨어 개발" href="study/정보처리기사/정보처리기사-필기/🥈-필기-2과목-소프트웨어-개발.html" class="internal-link" target="_self" rel="noopener nofollow">🥈 필기 2과목 - 소프트웨어 개발</a>
-<br><a data-href="🥈 필기 3과목 - 데이터베이스 구축" href="study/정보처리기사/정보처리기사-필기/🥈-필기-3과목-데이터베이스-구축.html" class="internal-link" target="_self" rel="noopener nofollow">🥈 필기 3과목 - 데이터베이스 구축</a>
-<br><a data-href="🥈 필기 4과목 - 프로그래밍 언어 활용" href="study/정보처리기사/정보처리기사-필기/🥈-필기-4과목-프로그래밍-언어-활용.html" class="internal-link" target="_self" rel="noopener nofollow">🥈 필기 4과목 - 프로그래밍 언어 활용</a>
-<br><a data-href="🥈 필기 5과목 - 정보시스템 구축관리" href="study/정보처리기사/정보처리기사-필기/🥈-필기-5과목-정보시스템-구축관리.html" class="internal-link" target="_self" rel="noopener nofollow">🥈 필기 5과목 - 정보시스템 구축관리</a>
-<br>
-<br><a data-href="🥇 정보처리 기사 실기 키워드" href="study/정보처리기사/정보처리기사-실기/🥇-정보처리-기사-실기-키워드.html" class="internal-link" target="_self" rel="noopener nofollow">🥇 정보처리 기사 실기 키워드</a>]]></description><link>study/📕-공부.html</link><guid isPermaLink="false">study/📕 공부.md</guid><pubDate>Thu, 20 Feb 2025 06:01:22 GMT</pubDate></item><item><title><![CDATA[👩‍👧‍👦 유입 통계 APP__SPRING AOP에 관하여]]></title><description><![CDATA[<a class="tag" href="?query=tag:프로젝트" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#프로젝트</a> <a class="tag" href="?query=tag:개발" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#개발</a> <a class="tag" href="?query=tag:DB" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DB</a> <br> <a href=".?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href=".?query=tag:개발" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개발">#개발</a> <a href=".?query=tag:DB" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#DB">#DB</a><br><a rel="noopener nofollow" class="external-link is-unresolved" href="https://www.hellofunding.co.kr/sp/loan/gtLoan?p=a2FrYW8xc3QK" target="_self">https://www.hellofunding.co.kr/sp/loan/gtLoan?p=a2FrYW8xc3QK</a><br>
-<a rel="noopener nofollow" class="external-link is-unresolved" href="https://www.hellofunding.co.kr/sp/loan/gtLoan?p=a2FrYW8xc222" target="_self">https://www.hellofunding.co.kr/sp/loan/gtLoan?p=a2FrYW8xc222</a><br>
-<br>통계 필요 페이지 내에서(프론트), 쿠키 데이터 페이지 별 최초 진입 확인?
-<br>
-<br>해당 진입시점부터 특정 동작에 대한 모든 타임라인 로그
-<br>
-<br>레디스 가용 메모리에 대한 한계값 산정. -&gt; 아직 적용 X
-<br>
-<br>URL + 함수명 조합
-<br>=&gt; 메인 테이블<br>
-=&gt; 백로직에서 쿠키 데이터 쌓기<br>=&gt; 디테일 테이블 - 타임라인으로 관리 단, 메인테이블에 존재하는 내셕들에 대해서<br>
-=&gt; AOP에서 특정 서비스or메서드orURL로 지정하여 로그 쌀기<br>- 관심사(Aspect)를 분리하여, 각 서비스 메서드에 반복해서 구현하는 것이 아닌, 별도의 Aspect로 관리하여 핵심로직을 공통으로 적용하기 위함이다.
-<br>
-<br>난수 생성 후 물고있기☑ <br>IP로 추적 <br><img alt="Pasted image 20241224144309.png" src="사진-및-문서/pasted-image-20241224144309.png" target="_self"><br>쿠키가 필요한 페이지의 경로가 기본 path와 일치하는 경우(redirect url 이 SP_MARKETING_HIT_TEST1 의 하위 url일 경우)<br>
-에는 명시적으로 표시할 필요가 없지만,<br><img alt="Pasted image 20241226111559.png" src="사진-및-문서/pasted-image-20241226111559.png" target="_self"><br>
-<br>장점: <br>코드가 간결하고 읽기 쉽다.
-<br>Spring의 AOP 인프라를 사용하여 메서드 인터셉션을 쉽게 구현할 수 있다. <br>단점:
-- 포인트컷 조건은 컴파일 시점에 고정된다.
-- 복잡한 조건이나 동적으로 변경되는 조건을 처리하기 어렵다. -&gt; @Pointcut 등의 조건에 부합하는 Bean객체를 컴파일 시점에 찾아내어 프록시를 감싼다.
-<br>
-<br>동적 생성: <br>런타임에 프록시를 생성하여 포인트컷과 어드바이스를 동적으로 적용.
-<br>StaticMethodMatcherPointcut 또는 DynamicMethodMatcherPointcut을 사용하여 런타임 조건 기반으로 메서드 매칭. <br>장점: <br>런타임 조건에 따라 동적으로 포인트컷 생성 가능.
-<br>복잡한 조건과 동적 필터링을 처리하기 용이.
-<br>Spring AOP가 아닌 순수 Java 프록시 방식도 지원. <br>단점: <br>코드가 복잡해지고 추가 구현이 필요.
-<br>Spring AOP와 동일한 수준의 간결성을 제공하지 않음. <br>-&gt; 해당 프록시 객체를 적용하고 싶은 Bean객체에 매번 생성(등록)해주어야 함.<br>import org.springframework.aop.Pointcut;
-import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator;
-import org.springframework.aop.support.DefaultPointcutAdvisor;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration; @Configuration
-public class AopConfig { @Bean public Pointcut customPointcut() { return new CustomPointcut(); } @Bean public CustomAdvice customAdvice() { return new CustomAdvice(); } @Bean public DefaultPointcutAdvisor customAdvisor(Pointcut customPointcut, CustomAdvice customAdvice) { return new DefaultPointcutAdvisor(customPointcut, customAdvice); } @Bean public DefaultAdvisorAutoProxyCreator proxyCreator() { return new DefaultAdvisorAutoProxyCreator(); }
-} <br>
-<br>@Pointcut 방식과 동일한 동작: <br>Spring 컨테이너가 관리하는 모든 빈에 대해 조건을 평가하고 프록시를 자동 생성합니다. <br>프록시를 명시적으로 선언할 필요 없음: <br>ProxyFactory처럼 수동으로 프록시를 생성하지 않아도 됩니다. <br>유연성과 효율성 향상: <br>Spring AOP 인프라를 활용하므로, 관리가 용이하고 런타임 성능이 개선됩니다. <br>
-<br>BeanPostProcessor: <br>DefaultAdvisorAutoProxyCreator는 Spring의 BeanPostProcessor를 구현한 클래스이다.
-<br>Spring 컨테이너는 애플리케이션 컨텍스트에 등록된 모든 BeanPostProcessor를 자동으로 호출하여 빈의 초기화 전후 작업을 수행한다.
-<br>이를 통해, Spring AOP는 빈 생성 단계에서 프록시를 생성하고 조건에 맞는 빈에 대해 어드바이저를 적용. <br>Advisor 탐색: <br>DefaultAdvisorAutoProxyCreator는 Spring 컨텍스트에 등록된 모든 Advisor를 자동으로 탐색한다.
-<br>이는 DefaultAdvisorAutoProxyCreator가 BeanFactory를 통해 컨테이너의 모든 Advisor 타입 빈을 조회하기 때문.
-<br>탐색된 Advisor를 사용하여 각 빈의 메서드와 포인트컷 조건을 매칭. <br>Advisor와 빈의 매칭: <br>빈이 생성될 때, DefaultAdvisorAutoProxyCreator는 해당 빈의 메서드가 어떤 Advisor의 포인트컷 조건에 부합하는지 평가.
-<br>조건에 부합하면, 해당 빈을 프록시 객체로 감싸고, 어드바이스를 연결. <br>
-<br>이렇게 맵핑이 되어야 하나, 이를 동적으로 탐지하지 못한다.
-<br>/* * EnableAspectJAutoProxy &gt; 프록시 적용시 인터페이스/클래스 여부 자동 판단 * 클래스에 인터페이스가 있으면 JDK 동적 프록시. * 인터페이스가 없으면 CGLIB 프록시. * */@Configuration @EnableAspectJAutoProxy public class AopConfig { @Bean public Pointcut customPointcut() { return new CustomPointcut(); } @Bean public CustomAdvice customAdvice() { return new CustomAdvice(); } @Bean public DefaultPointcutAdvisor customAdvisor(Pointcut customPointcut, CustomAdvice customAdvice) { return new DefaultPointcutAdvisor(customPointcut, customAdvice); } /* * @EnableAspectJAutoProxy를 사용해 등록했기 때문에 불필요. * */ // @Bean // public DefaultAdvisorAutoProxyCreator proxyCreator() { // return new DefaultAdvisorAutoProxyCreator(); // } }
-<br>프록시(Proxy)는 대리자라는 뜻으로, 다른 객체에 대한 인터페이스 역할을 하는 객체를 말합니다. 프로그래밍에서 프록시는 실제 객체에 접근하기 전에 특정 작업(로깅, 보안, 트랜잭션 관리 등)을 수행하거나, 객체에 대한 접근을 제어하는 데 사용됩니다.<br>
-<br>대리 객체: 프록시는 실제 객체에 대한 중간다리 역할을 합니다.
-<br>동작 조정: 프록시는 요청을 가로채서 추가적인 작업을 수행하거나, 요청을 변형한 뒤 실제 객체에 전달할 수 있습니다.
-<br>AOP와 연관: 프록시를 사용하면 코드를 변경하지 않고도 객체의 동작을 확장하거나 변경할 수 있습니다.
-<br>Method Name: loanerLoginPage<br>
-javax.servlet.http.HttpServletRequest<br>
-org.springframework.web.bind.annotation.GetMapping <br><img alt="Pasted image 20241226152219.png" src="사진-및-문서/pasted-image-20241226152219.png" target="_self"><br><img alt="Pasted image 20241226171158.png" src="사진-및-문서/pasted-image-20241226171158.png" target="_self"><br>
-<br>외부링크 최초진입. hitCode, hitUid 발급 및 DB저장
-<br>
-<br>외부링크 재진입. hitCode는 변경될 수 있으므로 "p"파라미터로 재발급<br>
-=&gt; hitCode는 매번 재발급 / hitUid는 없을때만 발급
-<br>
-<br>일반사용자 이며, 아무동작 하지 않는다.
-<br>
-<br>외부링크 진입 후 동작. 없는 녀석 새로 발급 및 DB저장
-<br>서비스 저장시 동시성 이슈가 발생할 수 있다?<br>@Override @Transactional public ResponseModel insertMarketingHitLog(String hitCode, String hitUid, String pageUrl, String pageType){ try { Optional&lt;HfMarketingHitLog&gt; existingLog = hfMarketingHitLogRepository.findByHitCodeAndHitUidAndPageUrlAndPageType(hitCode, hitUid, pageUrl, pageType); if (existingLog.isPresent()) { HfMarketingHitLog logToUpdate = existingLog.get(); logToUpdate.setUpdateDate(LocalDateTime.now()); hfMarketingHitLogRepository.save(logToUpdate); return new ResponseModel(ResponseModel.ResponseStatus.SUCCESS); } HfMarketingHitLog hfMarketingHitLog = HfMarketingHitLog.builder() .hitCode(hitCode) .hitUid(hitUid) .pageUrl(pageUrl) .pageType(pageType) .build(); hfMarketingHitLogRepository.save(hfMarketingHitLog); return new ResponseModel(ResponseModel.ResponseStatus.SUCCESS); } catch (Exception e) { return new ResponseModel(ResponseModel.ResponseStatus.FAILED, "데이터 처리 중 오류 발생"); } }
-<br>
-<br>여러 쓰레드(또는 트랜잭션)가 findByHitCodeAndHitUidAndPageUrlAndPageType 메서드를 호출하여 동일한 조건의 데이터를 동시에 조회할 수 있다.
-<br>두 쓰레드가 모두 existingLog.isPresent() 조건에서 false를 확인한 후, 동시에 새로운 HfMarketingHitLog 객체를 생성하고 저장하려 하면 데이터 중복 문제가 발생할 수 있다.
-<br>. Lock을 쓰면 되나, 이후 업데이트 로직 삭제(로그 테이블화) 변경으로 처리<br><img alt="Pasted image 20241230135801.png" src="사진-및-문서/pasted-image-20241230135801.png" target="_self"><br>1일의 유효기간을 갖는 uid를 발급하여, 인입코드 / Hit된 기능 주소 / 시간 을 저장한다.
-<br>uid는 외부url로 접근시 발급
-<br>page_url는 코드에 미리 등록 / hit_code는 모두(only 영문+숫자) 수용 가능
-<br><img alt="Pasted image 20250102160213.png" src="사진-및-문서/pasted-image-20250102160213.png" target="_self"><br>
-<img alt="Pasted image 20250102160223.png" src="사진-및-문서/pasted-image-20250102160223.png" target="_self"><br>
-<br>enum객체에 정의된 메서드를 DB로 전환하여 pointcut에서 해당 클래스, 메서드를 가져와 조건으로 정의
-<br>해당 조건에 부합하는 메서드를 프록시로 전환
-<br>
-<br>api호출을 통해 advice내의 동작은 런타임 환경에서 동적으로 변경이 가능한 것을 확인했다.
-<br>
-<br>런타입 위빙 방식이라고 하더라도, 변경은 불가능하다.
-<br>컴파일 위빙 방식은 컴파일 단계에서 원본 클래스 바이트코드를 변경하여 직접 위빙을 하는 방식이고,<br>
-런타임 위빙은 런타임단계에서 원본 클래스를 변경하지 않고 프록시 객체를 사용하여 교체하는 방식이다.
-<br>=&gt; 해당하는 부분은 리빌드와 큰 차이가 없고, 각 class에 scope를 따로 적용해야했기 때문에 고려하지 않았다.<br>=&gt; 연관성 있는 모든 참조를 수동으로 재설정해야하기 때문에 매우 복잡해진다.<br>
-<br>참조를 갱신하기 위해서는 Java리플렉션을 사용하여 강제로 참조를 갱신하거나, AspectJ의 런타임 위빙 방식을 활용해야 한다.
-<br>따라서, 서버 Kill을 하는 것과 진배 없다.
-<br><a data-href="👩‍👧‍👦 유입 통계 ADMIN용 테이블 설계 과정" href="project/hello-marketing/👩‍👧‍👦-유입-통계-admin용-테이블-설계-과정.html" class="internal-link" target="_self" rel="noopener nofollow">👩‍👧‍👦 유입 통계 ADMIN용 테이블 설계 과정</a>]]></description><link>project/hello-marketing/👩‍👧‍👦-유입-통계-app__spring-aop에-관하여.html</link><guid isPermaLink="false">project/hello marketing/👩‍👧‍👦 유입 통계 APP__SPRING AOP에 관하여.md</guid><pubDate>Thu, 20 Feb 2025 05:31:06 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20241224144309.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20241224144309.png"&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>
+<br>본인의 경우에는 로컬 Obsidian에 민감정보를 포함하고 있으므로,<br>
+정적 호스팅 전, public한 Vault를 거쳐 배포되도록 관리하고 있다.<br>
+<img alt="Pasted image 20250218162355.png" src="사진-및-문서/pasted-image-20250218162355.png" style="width: 875px; max-width: 100%;" target="_self"> 좌 : 프라이빗 볼트 / 우 : 퍼블릭 볼트 <br>이렇게 사이트 배포가 완료되었다!<br>
+<img alt="do-messenger_screenshot_2025-02-19_16_19_04.png" src="사진-및-문서/do-messenger_screenshot_2025-02-19_16_19_04.png" target="_self"><br>주의 <br>현재 Export HTML 1.8.01 버전 기준으로 export된 HTML css에 오류가 있다. <br>BRAT 플러그인을 사용하여 버전 업(베타) 하여 해결<br>
+<img alt="Pasted image 20250219154331.png" src="사진-및-문서/pasted-image-20250219154331.png" target="_self"><br>
+<img alt="Pasted image 20250219154315.png" src="사진-및-문서/pasted-image-20250219154315.png" target="_self">]]></description><link>project/note-ci_cd/👻-obsidian-정적호스팅-cicd-과정.html</link><guid isPermaLink="false">project/note CI_CD/👻 Obsidian 정적호스팅 CICD 과정.md</guid><pubDate>Thu, 20 Feb 2025 06:35:21 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250218151731.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20250218151731.png"&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>

@@ -1,4 +1,191 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[taesunglog]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib/media/favicon.png</url><title>taesunglog</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 21 Feb 2025 03:14:15 GMT</lastBuildDate><atom:link href="lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 21 Feb 2025 03:14:14 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[🏠 Home]]></title><description><![CDATA[<a class="tag" href="?query=tag:home" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#home</a> <a class="tag" href="?query=tag:index" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#index</a> <a class="tag" href="?query=tag:blog" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#blog</a> <br> <a href=".?query=tag:home" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#home">#home</a> <a href=".?query=tag:index" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#index">#index</a> <a href=".?query=tag:blog" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#blog">#blog</a> <br><a data-tooltip-position="top" aria-label="https://github.com/LeeTaeSung0628" rel="noopener nofollow" class="external-link is-unresolved" href="https://github.com/LeeTaeSung0628" target="_self"><span alt="Pasted image 20250220144552.png" src="Pasted image 20250220144552.png" class="internal-embed media-embed image-embed is-loaded" style="width: 220px; max-width: 100%;"></span></a><img alt="Pasted image 20250220144552.png" src="사진-및-문서/pasted-image-20250220144552.png" style="width: 220px; max-width: 100%;" target="_self"><br><a data-tooltip-position="top" aria-label="https://github.com/LeeTaeSung0628" rel="noopener nofollow" class="external-link is-unresolved" href="https://github.com/LeeTaeSung0628" target="_self">🔗Git Hub</a>
-<br><a data-tooltip-position="top" aria-label="https://git.io/typing-svg" rel="noopener nofollow" class="external-link is-unresolved" href="https://git.io/typing-svg" target="_self"></a><img alt="Typing SVG" src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;pause=1000&amp;color=36A9F7&amp;random=false&amp;width=435&amp;lines=%EC%97%AC%EA%B8%B0%EB%8A%94+%EA%B3%B5%EB%B6%80%ED%95%98%EA%B3%A0%2C+%EA%B8%B0%EB%A1%9D%ED%95%98%EB%8A%94+%EA%B3%B3%EC%9E%85%EB%8B%88%EB%8B%A4" referrerpolicy="no-referrer" target="_self" class="is-unresolved"><br> <br> <br> <br> <br> <br> <br> <br> <br>이후 진행할 것 들 <br>각 카테고리별로 서브 홈페이지를 만들어 그래프를 관리해도 좋아보인다.!!
-<br>깃 레포에서도 블로그 주소로 이어질 수 있도록 리드미를 꾸며보자~
-<br>리드미 또한 옵시디언에서 작업이 가능하다.]]></description><link>index.html</link><guid isPermaLink="false">index.md</guid><pubDate>Fri, 21 Feb 2025 03:14:09 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250220144552.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20250220144552.png"&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[taesunglog]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib/media/favicon.png</url><title>taesunglog</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 21 Feb 2025 05:05:00 GMT</lastBuildDate><atom:link href="lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 21 Feb 2025 05:04:57 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[🌥 aws(EC2)셋팅부터 배포까지]]></title><description><![CDATA[<a class="tag" href="?query=tag:Tools" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Tools</a> <a class="tag" href="?query=tag:AWS" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#AWS</a> <a class="tag" href="?query=tag:Amazon" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Amazon</a> <a class="tag" href="?query=tag:Cloud" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Cloud</a> <a class="tag" href="?query=tag:Docker" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Docker</a> <a class="tag" href="?query=tag:Redis" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Redis</a> <br> <a href=".?query=tag:Tools" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Tools">#Tools</a> <a href=".?query=tag:AWS" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#AWS">#AWS</a> <a href=".?query=tag:Amazon" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Amazon">#Amazon</a> <a href=".?query=tag:Cloud" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Cloud">#Cloud</a> <a href=".?query=tag:Docker" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Docker">#Docker</a> <a href=".?query=tag:Redis" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Redis">#Redis</a> <br><img alt="Pasted image 20250221112429.png" src="사진-및-문서/pasted-image-20250221112429.png" target="_self"><br>
+<br>AWS가 제공하는&nbsp;'클라우드 컴퓨팅 서비스'&nbsp;이다.
+<br>예전의 쓴 더 자세한 글.<br>- Amazon Elastic Compute Cloud으로써 AWS에서 제공하는 클라우드 컴퓨팅 서비스이다. 즉, 독립괸 컴퓨터를 임대해주는 aws의
+<br>오늘은 EC2에서 인스턴스를 생성하고, docker를 통해 Spring boot 프로젝트를 띄워보겠다.<br>
+천천히 따라가 보자.<br>먼저&nbsp; 프로젝트가 설치된 경로에서 ' mvn install '명령어를 사용하여 jar 파일을 생성한다<br><img alt="Pasted image 20250221114856.png" src="사진-및-문서/pasted-image-20250221114856.png" target="_self"><br>
+<img alt="Pasted image 20250221114901.png" src="사진-및-문서/pasted-image-20250221114901.png" target="_self"><br>docker build -t [이미지 이름]:[태그] [dockerfile이 저장된 경로]
+<br><img alt="Pasted image 20250221114932.png" src="사진-및-문서/pasted-image-20250221114932.png" target="_self"><br><img alt="Pasted image 20250221114945.png" src="사진-및-문서/pasted-image-20250221114945.png" target="_self"><br><img alt="Pasted image 20250221114951.png" src="사진-및-문서/pasted-image-20250221114951.png" target="_self"><br>이제 docker는 준비가 끝났다...<br>자세한 설명은 생략한다. 검색해 보시길<br><img alt="Pasted image 20250221114959.png" src="사진-및-문서/pasted-image-20250221114959.png" target="_self"><br>4.번의 주소를 사용해서 접속한다.<br>
+이때!,&nbsp;.pem&nbsp;파일이 저장 되어있는 경로에서 진행한다<br><img alt="Pasted image 20250221115004.png" src="사진-및-문서/pasted-image-20250221115004.png" target="_self"><br>접속완료.<br><img alt="Pasted image 20250221115010.png" src="사진-및-문서/pasted-image-20250221115010.png" target="_self"><br>먼저, aws 무료 버전 인스턴스를 생성하고자 한다.<br>aws 사이트에 접속하여 개인계정을 생성한다. (aws 프리티어 서비스를 이용하면 1년 무료로 사용가능 함)
+<br>sudo docker pull [image이름]:[태그]
+<br><img alt="Pasted image 20250221115019.png" src="사진-및-문서/pasted-image-20250221115019.png" target="_self"><br>sudo docker images
+<br>명령어를 통해 생성된것을 확인할 수 있다.<br><img alt="Pasted image 20250221115024.png" src="사진-및-문서/pasted-image-20250221115024.png" target="_self"><br>1.2의 과정에서 ' --platform linux/amd64 ' 태그를 추가해 주고, 태그에 -linux를 붙였다.<br><img alt="Pasted image 20250221115030.png" src="사진-및-문서/pasted-image-20250221115030.png" target="_self"><br><img alt="Pasted image 20250221115035.png" src="사진-및-문서/pasted-image-20250221115035.png" target="_self"><br>잘 따라왔다면 EC2 환경에서 docker를 통해 받은 jar파일이 잘 실행되는 것을 볼 수 있다.<br>내가 만든 포트는 8000번이며 IP주소는 AWS의 인스턴스에서 찾아볼 수있다.<br>퍼블릭 IP주소 를 통해 접속을 확인해보기 전에..<br><img alt="Pasted image 20250221115040.png" src="사진-및-문서/pasted-image-20250221115040.png" target="_self"><br>해당 인스턴스의 보안그룹을 확인하고, 내가 설정한 포트(:8000)에 대한 접근을 허가해주어야한다.<br>
+보안그룹 확인 후,<br><img alt="Pasted image 20250221115046.png" src="사진-및-문서/pasted-image-20250221115046.png" target="_self"><br>네트워크 및 보안 -&gt; 해당 보안그룹 -&gt;&nbsp; 인바운드 규칙 편집 ( 인바운드란, 외부에서 해당 인스턴스로 접근하는 것)<br><img alt="Pasted image 20250221115052.png" src="사진-및-문서/pasted-image-20250221115052.png" target="_self"><br>8000번 포트 추가<br><img alt="Pasted image 20250221115058.png" src="사진-및-문서/pasted-image-20250221115058.png" target="_self"><br>이렇게 과정을 마치면...<br>http://[인스턴스의 퍼블릭 IP주소]:[포트번호]
+<br> 로 접속이 가능하다!<br>
+<img alt="Pasted image 20250221115102.png" src="사진-및-문서/pasted-image-20250221115102.png" target="_self"><br>다음의 대략정인 과정을 통해 진행될 것이다.<br>1. Docker를 통해 Redis 다운받기<br>2. Redis config 파일 생성/수정 및 docker file 생성하기<br>3. 2에서 생성한 conf 파일과 dockerfile로 docker image 생성하기<br>4. 생성한 image 를 docker hub에 올리기<br>5. EC2에서 redis image와 spring(jar)image 내려받기<br>6. 내려받은 image를 container로 실행하고, EC2 포트 열기<br>EC2셋팅법과 docker 및 redis를 셋팅하는 방법은 이전 글에서 찾아볼 수 있다.<br>spring + docker 셋팅<br>로컬에 도커가 셋팅되어있다고 가정하고,&nbsp; redis를 최신으로 내려받는다.<br>docker pull redis
+<br><img alt="Pasted image 20250221115117.png" src="사진-및-문서/pasted-image-20250221115117.png" target="_self"><br>docker desktop을 통해 확인할 수 있고,&nbsp;<br>docker images
+<br>명령어를 통해서 확인 할 수 있다.<br><img alt="Pasted image 20250221115122.png" src="사진-및-문서/pasted-image-20250221115122.png" target="_self"><br>1.에서 redis를 내려받았다면 해당하는 디렉토리에 redis.conf 파일이 생성된다.<br>
+생성되지 않았을경우 text파일 형식으로 생성해도 문제없다.<br>생성된 conf파일을 다음과 같이 수정하였다.<br># 연결 가능한 네트위크(0.0.0.0 = Anywhere)
+bind 0.0.0.0 # 연결 포트
+port 6379 # Master 노드의 기본 사용자 비밀번호
+requirepass 사용할비밀번호입력 # 최대 사용 메모리 용량(지정하지 않으면 시스템 전체 용량)
+maxmemory 2gb # 설정된 최대 사용 메모리 용량을 초과했을때 처리 방식
+# - noeviction : 쓰기 동작에 대해 error 반환 (Default)
+# - volatile-lru : expire 가 설정된 key 들중에서 LRU algorithm 에 의해서 선택된 key 제거
+# - allkeys-lru : 모든 key 들 중 LRU algorithm에 의해서 선택된 key 제거
+# - volatile-random : expire 가 설정된 key 들 중 임의의 key 제거
+# - allkeys-random : 모든 key 들 중 임의의 key 제거
+# - volatile-ttl : expire time(TTL)이 가장 적게 남은 key 제거 (minor TTL)
+maxmemory-policy volatile-ttl # == RDB 관련 설정 ==
+# 저장할 RDB 파일명
+dbfilename backup.rdb
+# 15분 안에 최소 1개 이상의 key가 변경 되었을 때
+save 900 1
+# 5분 안에 최소 10개 이상의 key가 변경 되었을 때
+save 300 10
+# 60초 안에 최소 10000개 이상의 key가 변경 되었을 때
+save 60 10000
+# RDB 저장 실패 시 write 명령 차단 여부
+stop-writes-on-bgsave-error no # == AOF 관련 설정 ==
+# AOF 사용 여부
+appendonly yes
+# 저장할 AOF 파일명
+appendfilename appendonly.aof
+# 디스크와 동기화 처리 방식
+# - always : AOF 값을 추가할 때마다 fsync를 호출해서 디스크에 쓰기
+# - everysec : 매초마다 fsync를 호출해서 디스크에 쓰기
+# - no : OS가 실제 sync를 할 때까지 따로 설정하지 않음
+appendfsync everysec # == Replication 관련 설정테스트 ==
+# Slave Redis 설정
+#임시주석slaveof 127.0.0.1 6380
+<br>docker file도 생성하여 준다.<br>FROM redis:latest
+COPY redis.conf /저장디렉토리/redis.conf
+CMD [ "redis-server", "/저장디렉토리/redis.conf" ]
+EXPOSE 6379
+<br><img alt="Pasted image 20250221115129.png" src="사진-및-문서/pasted-image-20250221115129.png" target="_self"><br>docker build --platform linux/amd64 -t 이미지이름:태그 디렉토리
+----
+docker build --platform linux/amd64 -t springredis:linux .
+<br>dockerfile이 있는 디렉토리에서 해당 명령어를 실행한다.<br>* --platform linux/amd64 태그는 본인의 ec2환경이 리눅스64 환경이기 때문에 추가했다.<br><img alt="Pasted image 20250221115132.png" src="사진-및-문서/pasted-image-20250221115132.png" target="_self"><br>docker push xotjd794613/springredis:linux
+------
+docker push 계정명/이미지이름:태그
+<br><img alt="Pasted image 20250221115136.png" src="사진-및-문서/pasted-image-20250221115136.png" target="_self"><br><img alt="Pasted image 20250221115140.png" src="사진-및-문서/pasted-image-20250221115140.png" target="_self"><br>업로드까지 완료했다.<br>이전에 만들어두었던 Spring(jar)이미지&nbsp;와 방금 push한 redis이미지를 받는다<br>docker pull xotjd794613/funfun:0.0.1-linux
+docker pull xotjd794613/springredis:linux
+--
+docker pull 계정명/이미지이름:태그
+<br>docker images
+<br>명령어로 확인 할 수 있다.<br><img alt="Pasted image 20250221115146.png" src="사진-및-문서/pasted-image-20250221115146.png" target="_self"><br>이미지를 컨테이너로 실행하자.<br>Spring 이미지 실행<br>sudo docker run -d -p 8000:8080 xotjd794613/funfun:0.0.1-linux
+------
+sudo docker run -d -p 포트 계정명/이미지명:태그
+<br>redis 이미지 실행<br>docker run --name springredis -p 6379:6379 -v /home/ec2-user/redis:/data -d xotjd794613/springredis:linux --appendonly yes ---------- docker run --name 컨테이너이름 -p 포트 -v 데이터저장할디렉토리:/data -d 계정명/이미지명:태그 --appendonly yes
+<br>'docker ps -a' 명령어로 실행중인 모든 컨테이너를 확인 할 수 있다.<br><img alt="Pasted image 20250221115151.png" src="사진-및-문서/pasted-image-20250221115151.png" target="_self"><br>http://ec2주소:포트번호로 접속시 정상적으로 spring기반 페이지와 redis가 연결된 것을 확인할 수 있다.<br><img alt="Pasted image 20250221115157.png" src="사진-및-문서/pasted-image-20250221115157.png" target="_self"><br>오류
+만약,&nbsp;해당주소로 접속시 접속이 안되거나, redis가 정상적으로 실행되지 않는경우
+<br>
+<br><img alt="Pasted image 20250221115201.png" src="사진-및-문서/pasted-image-20250221115201.png" target="_self">
+<br><img alt="Pasted image 20250221115214.png" src="사진-및-문서/pasted-image-20250221115214.png" target="_self"><br>2.1 ec2 redis 컨테이너 포트 확인<br>docker ps -a
+<br>로 redis 컨테이너 ID 확인<br><img alt="Pasted image 20250221115220.png" src="사진-및-문서/pasted-image-20250221115220.png" target="_self"><br>docker inspect 컨테이너ID
+<br>명령어로 IP 확인<br><img alt="Pasted image 20250221115224.png" src="사진-및-문서/pasted-image-20250221115224.png" target="_self"><br><img alt="Pasted image 20250221115228.png" src="사진-및-문서/pasted-image-20250221115228.png" target="_self"><br>spring 프로젝트에 ip 정보 추가<br>
+<img alt="Pasted image 20250221115232.png" src="사진-및-문서/pasted-image-20250221115232.png" target="_self"><br>]]></description><link>tools/aws/🌥-aws(ec2)셋팅부터-배포까지.html</link><guid isPermaLink="false">Tools/aws/🌥 aws(EC2)셋팅부터 배포까지.md</guid><pubDate>Fri, 21 Feb 2025 05:04:10 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250221112429.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20250221112429.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[🏠 Home]]></title><description><![CDATA[<a class="tag" href="?query=tag:home" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#home</a> <a class="tag" href="?query=tag:index" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#index</a> <a class="tag" href="?query=tag:blog" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#blog</a> <a class="tag" href="?query=tag:공부" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#공부</a> <br> <a href=".?query=tag:home" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#home">#home</a> <a href=".?query=tag:index" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#index">#index</a> <a href=".?query=tag:blog" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#blog">#blog</a> <a href=".?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a><br><a data-tooltip-position="top" aria-label="https://github.com/LeeTaeSung0628" rel="noopener nofollow" class="external-link is-unresolved" href="https://github.com/LeeTaeSung0628" target="_self"><span alt="Pasted image 20250220144552.png" src="Pasted image 20250220144552.png" class="internal-embed media-embed image-embed is-loaded" style="width: 220px; max-width: 100%;"></span></a><img alt="Pasted image 20250220144552.png" src="사진-및-문서/pasted-image-20250220144552.png" style="width: 220px; max-width: 100%;" target="_self"><br>
+<a data-tooltip-position="top" aria-label="https://github.com/LeeTaeSung0628" rel="noopener nofollow" class="external-link is-unresolved" href="https://github.com/LeeTaeSung0628" target="_self"><font color="#ffffff"></font></a>🔗git Hub 이동<br><a data-tooltip-position="top" aria-label="https://git.io/typing-svg" rel="noopener nofollow" class="external-link is-unresolved" href="https://git.io/typing-svg" target="_self"></a><img alt="Typing SVG" src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;pause=1000&amp;color=36A9F7&amp;random=false&amp;width=435&amp;lines=%EC%97%AC%EA%B8%B0%EB%8A%94+%EA%B3%B5%EB%B6%80%ED%95%98%EA%B3%A0%2C+%EA%B8%B0%EB%A1%9D%ED%95%98%EB%8A%94+%EA%B3%B3%EC%9E%85%EB%8B%88%EB%8B%A4" referrerpolicy="no-referrer" target="_self" class="is-unresolved"><br> <br> <br> <br> <br> <br> <br> <br> <br>Soon <br>깃 레포에서도 블로그 주소로 이어질 수 있도록 Readme 설정하기. <br>리드미 또한 옵시디언에서 작업이 가능하다. <br>Netlify 셋팅 추가하기]]></description><link>index.html</link><guid isPermaLink="false">index.md</guid><pubDate>Fri, 21 Feb 2025 04:53:03 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250220144552.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20250220144552.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[📘 SpringBoot &amp; Docker + Reids 연동]]></title><description><![CDATA[<a class="tag" href="?query=tag:Tools" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Tools</a> <a class="tag" href="?query=tag:도커" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#도커</a> <a class="tag" href="?query=tag:Docker" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Docker</a> <a class="tag" href="?query=tag:SPRING" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SPRING</a> <a class="tag" href="?query=tag:Boot" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Boot</a> <a class="tag" href="?query=tag:Redis" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Redis</a> <br> <a href=".?query=tag:Tools" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Tools">#Tools</a> <a href=".?query=tag:도커" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#도커">#도커</a> <a href=".?query=tag:Docker" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Docker">#Docker</a> <a href=".?query=tag:SPRING" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SPRING">#SPRING</a> <a href=".?query=tag:Boot" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Boot">#Boot</a> <a href=".?query=tag:Redis" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Redis">#Redis</a> <br><img alt="Pasted image 20250221114306.png" src="사진-및-문서/pasted-image-20250221114306.png" target="_self"><br>먼저 도커에 대한 간단한 이전 글!<br>aws의 설명에 의하면 Docker란 <br>애플리케이션을 신속하게 구축, 테스트 및 배포할 수 있는 소프트웨어 플랫폼이다. <br>소프트웨어를 컨테이너 라는 표준화된 유닛으로 패키징하여 관리한다. <br><a data-tooltip-position="top" aria-label="https://docs.docker.com/desktop/install/mac-install/" rel="noopener nofollow" class="external-link is-unresolved" href="https://docs.docker.com/desktop/install/mac-install/" target="_self">도커 다운로드 링크</a><br>각 기기에 맞는 docker 버전을 다운로드 받는다.<br>
+<img alt="Pasted image 20250221114324.png" src="사진-및-문서/pasted-image-20250221114324.png" target="_self"><br>다운로드 받은 후 명령어를 입력하여 docker의 현재 버전을 볼 수 있다.<br>※ 터미널에 'docker' 를 입력하게 되면 다양한 명령어들을 확인할 수 있다.<br>
+<img alt="Pasted image 20250221114327.png" src="사진-및-문서/pasted-image-20250221114327.png" target="_self"><br>제대로 다운로드 받았다면 docker에 기본적으로 만들어져있는 이미지들을 확인 할수 있다. 밑에 사진은 도커 데스트톱 이라는 앱이다.<br><img alt="Pasted image 20250221114334.png" src="사진-및-문서/pasted-image-20250221114334.png" target="_self"><br>터미널에서도 확인할 수 있다.<br><img alt="Pasted image 20250221114339.png" src="사진-및-문서/pasted-image-20250221114339.png" target="_self"><br>이제&nbsp;도커 파일&nbsp;을 이용하여&nbsp;도커 이미지를 생성한 후, 이미지를 빌드하여&nbsp;컨테이너를 생성해 줄것이다.<br>여기서 여러 용어들이 나오는데...<br>용어들에 대한 설명이다<br><img alt="Pasted image 20250221114345.png" src="사진-및-문서/pasted-image-20250221114345.png" target="_self"><br><img alt="Pasted image 20250221114353.png" src="사진-및-문서/pasted-image-20250221114353.png" target="_self"><br>Dockerfile을 생성하기에 앞서, .jar 파일을 생성해야한다.<br>gradle 이나 maven 을 사용하여 프로젝트를 빌드 할것이다.<br>여기서는 Maven 을 사용한다.<br><a rel="noopener nofollow" class="external-link is-unresolved" href="https://maven.apache.org/download.cgi" target="_self">https://maven.apache.org/download.cgi</a><br>홈페이지에서 직접 다운받아도 되고, brew를 사용해 각자 다운받으면 된다.<br>이후에, 프로젝트의 루트 디렉토리에서 'mvn install' 명령어를 사용하여 프로젝트를 빌드 할 수 있다.<br><img alt="Pasted image 20250221114400.png" src="사진-및-문서/pasted-image-20250221114400.png" target="_self"><br>빌드를 마치면, 프로젝트 내에&nbsp;target이 생성 됨을 볼 수 있다.<br><img alt="Pasted image 20250221114406.png" src="사진-및-문서/pasted-image-20250221114406.png" target="_self"><br>그 후, 루트 디렉토리에 'Dockerfile' 을 생성하여 준다.<br><img alt="Pasted image 20250221114411.png" src="사진-및-문서/pasted-image-20250221114411.png" target="_self"><br><img alt="Pasted image 20250221114423.png" src="사진-및-문서/pasted-image-20250221114423.png" target="_self"><br>Dockerfile 생성시 사용되는 명령어들은 다음과 같다.<br><img alt="Pasted image 20250221114428.png" src="사진-및-문서/pasted-image-20250221114428.png" target="_self"><br>나는 기본적인 옵션만 넣어서 test 하였다.<br>FROM 태그에 나의 java(jdk)버전을 확인하여 baseimage를 지정하고<br>
+( dockerRpository에서 다양한 이미지를 가져다 사용할 수 있으므로 찾아보세요)<br>ADD 태그에 maven을 통해 생성된 .jar파일과 경로를 입력한다<br>이외에 태그는 자유롭게 작성해 줄 수 있다.<br>프롬프트에 <br>docker build -t ${"도커파일 명"} ${"디렉토리"} <br>형식으로 사용할 수 있다.<br><img alt="Pasted image 20250221114434.png" src="사진-및-문서/pasted-image-20250221114434.png" target="_self"><br><img alt="Pasted image 20250221114439.png" src="사진-및-문서/pasted-image-20250221114439.png" target="_self"><br>해당 단계를 마치면 이미지가 생성된 것을 확인할 수 있다.<br>프롬프트에 <br>docker run -p ${사용할 포트번호} ${이미지 명}
+<br>을 사용한다.<br>본인은 8000번 포트를 직접 사용하여 8080포트인 도커 컨테이너에 접근할 것이다.<br><img alt="Pasted image 20250221114443.png" src="사진-및-문서/pasted-image-20250221114443.png" target="_self"><br>짜잔!&nbsp; &nbsp;정상적으로 동작한다.<br>
+<img alt="Pasted image 20250221114501.png" src="사진-및-문서/pasted-image-20250221114501.png" target="_self"><br>
+<img alt="Pasted image 20250221114448.png" src="사진-및-문서/pasted-image-20250221114448.png" target="_self"><br>docker는 다운받아져 있는걸로 알고..&nbsp;<br>'docker pull redis:latest' 명령어를 사용하여 최신버전의 redis를 받아온다.<br><img alt="Pasted image 20250221114522.png" src="사진-및-문서/pasted-image-20250221114522.png" target="_self"><br>그 다음, <br>docker network create redis-network --driver bridge
+<br>명령어를 사용하여 네트워크를 생성해 준다.<br>※ docker network : 컨테이너간의 통신 및 데이터 공유를 위한 가상 네트워크<br><img alt="Pasted image 20250221114527.png" src="사진-및-문서/pasted-image-20250221114527.png" target="_self"><br>이제, 'sudo vim redis.conf' 명령어를 사용하여 redis.conf 파일을 수정하여 설정을 잡아준다.<br><img alt="Pasted image 20250221114531.png" src="사진-및-문서/pasted-image-20250221114531.png" target="_self"><br>docker run \ -d \ --name redis \ -p 6379:6379 \ --network redis-network \ -v ~/${데이터를 저장할 파일 경로} /redis.conf:/etc/redis/redis.conf \ -v redis_data:/data \
+redis:latest redis-server /etc/redis/redis.conf
+<br><img alt="Pasted image 20250221114535.png" src="사진-및-문서/pasted-image-20250221114535.png" target="_self"><br>포트번호와, 방금 설정한 네트워크, 데이터 저장 경로를 잡아준다.<br>이렇게 설정을 마쳤으면 redis 이미지가 생성되었음을 확인할 수 있다.<br><img alt="Pasted image 20250221114539.png" src="사진-및-문서/pasted-image-20250221114539.png" target="_self"><br>최종적으로 생성된 이미지로 컨테이너를 만들어 준다.<br><img alt="Pasted image 20250221114543.png" src="사진-및-문서/pasted-image-20250221114543.png" target="_self"><br>docker run --name myredis \ -p 6379:6379 \ --network redis-network \ -v /Users/lts/Desktop/docker/redis:/data \ -d redis:latest redis-server \ --appendonly yes
+<br><img alt="Pasted image 20250221114600.png" src="사진-및-문서/pasted-image-20250221114600.png" target="_self"><br>컨테이너까지 생성완료!<br>docker exec -it myredis redis-cli --raw
+<br>명령어를 사용하여 컨테이너 실행<br><img alt="Pasted image 20250221114605.png" src="사진-및-문서/pasted-image-20250221114605.png" target="_self"><br>프롬프트를 보면 정상적으로 접속됨을 확인할 수 있다.<br>※ 해당 프로젝트는 Maven 을 사용한 프로젝트이다.<br>spring.cache.type=redis
+spring.redis.host=localhost
+spring.redis.port=6379
+<br><img alt="Pasted image 20250221114610.png" src="사진-및-문서/pasted-image-20250221114610.png" target="_self"><br><img alt="Pasted image 20250221114616.png" src="사진-및-문서/pasted-image-20250221114616.png" target="_self"><br>import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.data.redis.serializer.StringRedisSerializer; @Configuration
+public class RedisConfig { @Value("${spring.redis.host}") private String host; @Value("${spring.redis.port}") private int port; @Bean public LettuceConnectionFactory redisConnectionFactory() { return new LettuceConnectionFactory(host, port); } @Bean public RedisTemplate&lt;String, Object&gt; redisTemplate() { RedisTemplate&lt;String, Object&gt; redisTemplate = new RedisTemplate&lt;&gt;(); redisTemplate.setKeySerializer(new StringRedisSerializer()); redisTemplate.setValueSerializer(new StringRedisSerializer()); redisTemplate.setConnectionFactory(redisConnectionFactory()); return redisTemplate; } @Bean public StringRedisTemplate stringRedisTemplate() { final StringRedisTemplate stringRedisTemplate = new StringRedisTemplate(); stringRedisTemplate.setKeySerializer(new StringRedisSerializer()); stringRedisTemplate.setValueSerializer(new StringRedisSerializer()); stringRedisTemplate.setConnectionFactory(redisConnectionFactory()); return stringRedisTemplate; }
+}
+<br><img alt="Pasted image 20250221114621.png" src="사진-및-문서/pasted-image-20250221114621.png" target="_self"><br>import lombok.AllArgsConstructor; import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.redis.core.RedisHash;
+import org.springframework.data.redis.core.index.Indexed; import java.time.LocalDateTime; @Getter
+@RedisHash(value = "resultHistory", timeToLive = 3600) // Redis Repository 사용을 위한
+@AllArgsConstructor
+@NoArgsConstructor
+public class ResultHistory { @Id private String id; @Indexed // 필드 값으로 데이터를 찾을 수 있도록 설정 (findByAccessToken) private String ip; private String originalText; private String translatedText; @Indexed private LocalDateTime createDateTime; @Builder public ResultHistory(String ip, String originalText, String translatedText, LocalDateTime createDateTime) { this.ip = ip; this.originalText = originalText; this.translatedText = translatedText; this.createDateTime = createDateTime; }
+}
+<br><img alt="Pasted image 20250221114628.png" src="사진-및-문서/pasted-image-20250221114628.png" target="_self"><br>import com.teamTS.funfun.model.ResultHistory;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository; import java.util.List;
+import java.util.Optional; @Repository
+public interface ResultRedisRepository extends JpaRepository&lt;ResultHistory, String&gt; { Optional&lt;List&lt;ResultHistory&gt;&gt; findByIpOrderByCreateDateTimeAsc(String ip);
+}
+<br><img alt="Pasted image 20250221114633.png" src="사진-및-문서/pasted-image-20250221114633.png" target="_self"><br> @GetMapping("/hello") public String HelloWorld(Model model) { redisConnectionTest(); List&lt;TestModel&gt; tm = testRepository.getTestData(); model.addAttribute("data", tm.get(0).getTitle()); return "home/homeView"; } void redisConnectionTest() { final String key = "a"; final String data = "1"; final ValueOperations&lt;String, String&gt; valueOperations = redisTemplate.opsForValue(); valueOperations.set(key, data); final String s = valueOperations.get(key); } }
+<br><img alt="Pasted image 20250221114638.png" src="사진-및-문서/pasted-image-20250221114638.png" target="_self"><br>Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+<br>원인은 기존 MapperRepository와 Redis용 JpaRepository에서<br>@Repository
+<br>해당 어노테이션을 사용하여 충돌한듯 하다.<br>
+이럴때는<br>spring.main.allow-bean-definition-overriding=true
+<br>한 줄을 추가하여 준다.<br><img alt="Pasted image 20250221114644.png" src="사진-및-문서/pasted-image-20250221114644.png" target="_self"><br>성공적인 실행.<br><img alt="Pasted image 20250221114648.png" src="사진-및-문서/pasted-image-20250221114648.png" target="_self"><br>&nbsp;이후 ' keys * ' 명령어를 사용하여 데이터가 정상적으로 추가된 것을 확인할 수 있다.<br>]]></description><link>tools/docker/📘-springboot-&amp;-docker-+-reids-연동.html</link><guid isPermaLink="false">Tools/docker/📘 SpringBoot &amp; Docker + Reids 연동.md</guid><pubDate>Fri, 21 Feb 2025 04:50:17 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250221114306.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20250221114306.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[💻 프로젝트]]></title><description><![CDATA[<a class="tag" href="?query=tag:프로젝트" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#프로젝트</a> <a class="tag" href="?query=tag:모음" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#모음</a> <br> <a href=".?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href=".?query=tag:모음" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#모음">#모음</a><br>프로젝트
+public하게 공개할 수 있는 프로젝트의 제작 과정입니다.
+<br>
+<br><a data-href="👻 Obsidian 정적호스팅 CICD 과정" href="project/note-ci_cd/👻-obsidian-정적호스팅-cicd-과정.html" class="internal-link" target="_self" rel="noopener nofollow">👻 Obsidian 정적호스팅 CICD 과정</a>
+<br><a data-href="⛈ Obsidian-AWS연동" href="project/note-ci_cd/⛈-obsidian-aws연동.html" class="internal-link" target="_self" rel="noopener nofollow">⛈ Obsidian-AWS연동</a>
+<br>
+<br><a data-href="🏹 Spring Batch 트러블 슈팅" href="project/hello-batch/🏹-spring-batch-트러블-슈팅.html" class="internal-link" target="_self" rel="noopener nofollow">🏹 Spring Batch 트러블 슈팅</a>
+<br><a data-href="🏹 Spring Batch 트러블 슈팅 부록" href="project/hello-batch/🏹-spring-batch-트러블-슈팅-부록.html" class="internal-link" target="_self" rel="noopener nofollow">🏹 Spring Batch 트러블 슈팅 부록</a>
+<br><a data-href="🏹 Spring Batch 구조 드로잉" href="project/hello-batch/🏹-spring-batch-구조-드로잉.html" class="internal-link" target="_self" rel="noopener nofollow">🏹 Spring Batch 구조 드로잉</a>
+<br>
+<br><a data-href="👩‍👧‍👦 유입 통계 APP__SPRING AOP에 관하여" href="project/hello-marketing/👩‍👧‍👦-유입-통계-app__spring-aop에-관하여.html" class="internal-link" target="_self" rel="noopener nofollow">👩‍👧‍👦 유입 통계 APP__SPRING AOP에 관하여</a>
+<br><a data-href="👩‍👧‍👦 유입 통계 ADMIN용 테이블 설계 과정" href="project/hello-marketing/👩‍👧‍👦-유입-통계-admin용-테이블-설계-과정.html" class="internal-link" target="_self" rel="noopener nofollow">👩‍👧‍👦 유입 통계 ADMIN용 테이블 설계 과정</a>
+<br>
+<br><a data-href="📘 SpringBoot &amp; Docker + Reids 연동" href="tools/docker/📘-springboot-&amp;-docker-+-reids-연동.html" class="internal-link" target="_self" rel="noopener nofollow">📘 SpringBoot &amp; Docker + Reids 연동</a>
+<br><a data-href="🌥 aws(EC2)셋팅부터 배포까지" href="tools/aws/🌥-aws(ec2)셋팅부터-배포까지.html" class="internal-link" target="_self" rel="noopener nofollow">🌥 aws(EC2)셋팅부터 배포까지</a>]]></description><link>project/💻-프로젝트.html</link><guid isPermaLink="false">project/💻 프로젝트.md</guid><pubDate>Fri, 21 Feb 2025 04:33:04 GMT</pubDate></item><item><title><![CDATA[🍊 aws EC2란]]></title><description><![CDATA[<a class="tag" href="?query=tag:Tools" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Tools</a> <a class="tag" href="?query=tag:AWS" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#AWS</a> <a class="tag" href="?query=tag:Amazon" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Amazon</a> <a class="tag" href="?query=tag:Cloud" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Cloud</a> <br> <a href=".?query=tag:Tools" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Tools">#Tools</a> <a href=".?query=tag:AWS" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#AWS">#AWS</a> <a href=".?query=tag:Amazon" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Amazon">#Amazon</a> <a href=".?query=tag:Cloud" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Cloud">#Cloud</a><br><img alt="Pasted image 20250221114152.png" src="사진-및-문서/pasted-image-20250221114152.png" target="_self"><br>
+AWS의 EC2는 무엇이며, 왜 사용하는가? 에 대해 알아보겠다.<br>
+<br>
+Amazon Elastic Compute Cloud으로써 AWS에서 제공하는 클라우드 컴퓨팅 서비스이다.<br>
+즉, 독립괸 컴퓨터를 임대해주는 aws의 대표적인 서비스상품 이다. <br>
+클라우드 컴퓨팅 서비스로 컴퓨팅 요구사항의 변화에 따라 컴퓨팅 파워를 조정할 수 있다. <br>
+실제로 사용한 용량 만큼만 지불하여, 서비스 요금을 미리 선입금 할 필요가 없다. <br>
+Linux / Window 중 OS선택이 자유롭다. <br>
+머신러닝, 웹서버, 게임서버 등 다양한 용도에 최적화된 서버를 쉽게 구성 가능하다. <br>
+여러 aws서비스와 유기적인 연동이 가능하다. <br>
+<br>
+인스턴스란 aws클라우드에서 사용하는&nbsp;가상컴퓨터&nbsp;이다. <br>
+cpu, 메모리, 그래픽카드 등 연산을 위한 하드웨어 부분을 담당한다. <br>
+aws는 각 사용 사례에 맞게 최적화된 다양한 인스턴스 유형을 제공한다. <br>-&nbsp;한정된 요금으로&nbsp;유형(사용목적)을 정하고,&nbsp;사이즈를 골라, 각 인스턴스별 사용 목적에 따라 최적화 시킨다.<br>
+<img alt="Pasted image 20250221114208.png" src="사진-및-문서/pasted-image-20250221114208.png" target="_self"><br>
+<br>
+인스턴스가 연산(cpu, 메모리 등) 처리를 담당한다면, EBS는&nbsp;데이터를 저장하는&nbsp;역할을 한다. <br>
+즉, 클라우드에서 사용하는 가상 HDD이다. <br>
+손쉽게 사용량을 많게, 혹은 적게 확장할 수 있으며, 빌린 부분에 대한 부분만 저렴하게 비용을 지불 할 수 있다. <br>
+총 5가지 타입을 제공하는데, 다음과 같다.<br>
+<img alt="Pasted image 20250221114220.png" src="사진-및-문서/pasted-image-20250221114220.png" target="_self"> <br>
+<br>
+AMI는 인스턴스를 실행하기 위한 정보를 모은 단위이다. <br>
+EC2를 실행하기 위해서, cpu프로세서 타입, 저장공간 용량, 32/64비트, OS정보, 설치된 소프트웨어 정보 등 <br>세팅정보(템플릿)을 저장한 단위 이다.<br>
+즉, 서버에 필요한 운영체제와 다양한 소프트웨어로 구성된 탬플릿 <br>
+AMI를 사용하여&nbsp;현재 상태의 EC2셋팅(템플릿)을 복제하여 다른 계정이나, 다른 리전에 전달이 가능하다. <br>
+<br>위의 이유들로 생각할 수 있는&nbsp;장점들!
+<br>. 클라우드에서 확장 가능한 컴퓨팅 용량을 제공하기 때문에, 하드웨어에 대한 투자를 앞당길 필요가 없기 때문에,<br>신속하게 개발하고 배포 할 수 있다!<br>. 컴퓨팅 요구가 변화했을 때,&nbsp;용량을 빠르게 확장/축소&nbsp;할 수 있다. 즉, 비용을 아낄 수 있다.<br>. 일반적인 실패 시나리오를 방지하고, 장애 복구 능력이 뛰어난 도구를 제공한다.<br>. 이렇게 유연한 구조/사이즈 변경이 가능한 호스팅 서비스와 더불어, 안정적인 환경을 제공하며,<br>본안성이 매우 높은 네트워킹 기능을 제공한다.<br>]]></description><link>tools/aws/🍊-aws-ec2란.html</link><guid isPermaLink="false">Tools/aws/🍊 aws EC2란.md</guid><pubDate>Fri, 21 Feb 2025 03:24:20 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250221114152.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20250221114152.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[🐋 docker]]></title><description><![CDATA[<a class="tag" href="?query=tag:Tools" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Tools</a> <a class="tag" href="?query=tag:도커" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#도커</a> <a class="tag" href="?query=tag:Docker" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Docker</a> <br> <a href=".?query=tag:Tools" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Tools">#Tools</a> <a href=".?query=tag:도커" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#도커">#도커</a> <a href=".?query=tag:Docker" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Docker">#Docker</a><br><img alt="Pasted image 20250221114743.png" src="사진-및-문서/pasted-image-20250221114743.png" target="_self"><br>...aws의 설명에 의하면<br>
+<br>애플리케이션을 신속하게 구축, 테스트 및 배포할 수 있는 소프트웨어 플랫폼이다.
+<br>소프트웨어를&nbsp;컨테이너&nbsp;라는 표준화된 유닛으로 패키징하여 관리한다.<br>
+2-1. 컨테이너에는 라이브러리, 시스템 도구, 코드, 런타임 등 소프트웨어를 실행하는 데 필요한 모든것이 포함되어 있다.
+<br>Docker는 AWS와 협업하여 다양한 규모에서 안정적이고 저렴하게 애플리케이션을 구축, 제공할 수 있게 한다.
+<br>
+<br>코드, 런타임, 시스템도구 등등등 소프트웨어를 실행하는 데 필요한 모든 것을 포함하는 독립 실행형 실행 가능 패키지 이다.
+<br>다른컨테이너나 호스트 시스템을 방해하지 않고, Docker runtime을 사용하여 모든 호스트에서 실행할 수 있는 소프트웨어의 격리된 단위로 설계되어있다.
+<br>
+<br>별도의 하드웨어 에뮬레이션 없이 리눅스 커널을 공유해 컨테이너를 실행한다.
+<br>
+<br>하드웨어 에뮬레이션이 없어서 매우 빠르다. 또한 하나의 머신에서 프로세스만큼 많이 실행하는 것이 가능하다.
+<br>
+<br>컨테이너는 호스트의 환경이 아닌 독자적인 실행환경을 갖고 있다.
+<br>이 환경은 파일(Dockerfile)들로 구성되며, 공유될 수 있다.
+<br>
+<br>모든 이미지에는 계층이 있으며, 현재의 이미지가 적절하지 않은 경우 이전 버전으로 롤백이 가능하다.
+<br>CI/CD를 수행하는 데 도움을 준다.
+<br>
+<br>
+서버를 처음 설정할때, OS, 라이브러리, 컴파일러 등 많은 설정이 필요하고, 버전으 변경되고 업데이트 될 때 마다 다시 재설정이 필요하다. <br>
+하지만, 이러한 설정 등을 도커 컨테이너 위에서 진행한다면, 호스트 OS에 아무런 영향을 주지 않는다.<br>
+즉, 로컬 환경의 간섭 없이 독립적으로 구동된다! <br>
+또한 다른 서버로 이사를 가는 상황에서 이미지만을 가져와 새로운 서버에 컨테이너를 만들어 쉽게 동일한 환경을 구성할 수 있다. <br>
+<br>마이크로 서비스 구조로, 애플리케이션이 독립적인 구성 요소로 구축되어 각 애플리케이션 프로세스가 서비스로 실행된다.
+<br>
+<br>도커는 각 환경마다 쓸 수 있는 자원이 고정적으로 정해져 있지 않기 때문에, 유동적으로 자원을 할당하여 기존의 가상화 방식보다 훨씬 자원적, 성능적으로 뛰어나다
+<br>]]></description><link>tools/docker/🐋-docker.html</link><guid isPermaLink="false">Tools/docker/🐋 docker.md</guid><pubDate>Fri, 21 Feb 2025 03:23:57 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250221114743.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20250221114743.png"&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>

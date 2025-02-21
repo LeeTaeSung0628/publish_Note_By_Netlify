@@ -1,126 +1,260 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[taesunglog]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib/media/favicon.png</url><title>taesunglog</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 21 Feb 2025 05:05:00 GMT</lastBuildDate><atom:link href="lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 21 Feb 2025 05:04:57 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[🌥 aws(EC2)셋팅부터 배포까지]]></title><description><![CDATA[<a class="tag" href="?query=tag:Tools" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Tools</a> <a class="tag" href="?query=tag:AWS" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#AWS</a> <a class="tag" href="?query=tag:Amazon" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Amazon</a> <a class="tag" href="?query=tag:Cloud" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Cloud</a> <a class="tag" href="?query=tag:Docker" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Docker</a> <a class="tag" href="?query=tag:Redis" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Redis</a> <br> <a href=".?query=tag:Tools" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Tools">#Tools</a> <a href=".?query=tag:AWS" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#AWS">#AWS</a> <a href=".?query=tag:Amazon" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Amazon">#Amazon</a> <a href=".?query=tag:Cloud" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Cloud">#Cloud</a> <a href=".?query=tag:Docker" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Docker">#Docker</a> <a href=".?query=tag:Redis" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Redis">#Redis</a> <br><img alt="Pasted image 20250221112429.png" src="사진-및-문서/pasted-image-20250221112429.png" target="_self"><br>
-<br>AWS가 제공하는&nbsp;'클라우드 컴퓨팅 서비스'&nbsp;이다.
-<br>예전의 쓴 더 자세한 글.<br>- Amazon Elastic Compute Cloud으로써 AWS에서 제공하는 클라우드 컴퓨팅 서비스이다. 즉, 독립괸 컴퓨터를 임대해주는 aws의
-<br>오늘은 EC2에서 인스턴스를 생성하고, docker를 통해 Spring boot 프로젝트를 띄워보겠다.<br>
-천천히 따라가 보자.<br>먼저&nbsp; 프로젝트가 설치된 경로에서 ' mvn install '명령어를 사용하여 jar 파일을 생성한다<br><img alt="Pasted image 20250221114856.png" src="사진-및-문서/pasted-image-20250221114856.png" target="_self"><br>
-<img alt="Pasted image 20250221114901.png" src="사진-및-문서/pasted-image-20250221114901.png" target="_self"><br>docker build -t [이미지 이름]:[태그] [dockerfile이 저장된 경로]
-<br><img alt="Pasted image 20250221114932.png" src="사진-및-문서/pasted-image-20250221114932.png" target="_self"><br><img alt="Pasted image 20250221114945.png" src="사진-및-문서/pasted-image-20250221114945.png" target="_self"><br><img alt="Pasted image 20250221114951.png" src="사진-및-문서/pasted-image-20250221114951.png" target="_self"><br>이제 docker는 준비가 끝났다...<br>자세한 설명은 생략한다. 검색해 보시길<br><img alt="Pasted image 20250221114959.png" src="사진-및-문서/pasted-image-20250221114959.png" target="_self"><br>4.번의 주소를 사용해서 접속한다.<br>
-이때!,&nbsp;.pem&nbsp;파일이 저장 되어있는 경로에서 진행한다<br><img alt="Pasted image 20250221115004.png" src="사진-및-문서/pasted-image-20250221115004.png" target="_self"><br>접속완료.<br><img alt="Pasted image 20250221115010.png" src="사진-및-문서/pasted-image-20250221115010.png" target="_self"><br>먼저, aws 무료 버전 인스턴스를 생성하고자 한다.<br>aws 사이트에 접속하여 개인계정을 생성한다. (aws 프리티어 서비스를 이용하면 1년 무료로 사용가능 함)
-<br>sudo docker pull [image이름]:[태그]
-<br><img alt="Pasted image 20250221115019.png" src="사진-및-문서/pasted-image-20250221115019.png" target="_self"><br>sudo docker images
-<br>명령어를 통해 생성된것을 확인할 수 있다.<br><img alt="Pasted image 20250221115024.png" src="사진-및-문서/pasted-image-20250221115024.png" target="_self"><br>1.2의 과정에서 ' --platform linux/amd64 ' 태그를 추가해 주고, 태그에 -linux를 붙였다.<br><img alt="Pasted image 20250221115030.png" src="사진-및-문서/pasted-image-20250221115030.png" target="_self"><br><img alt="Pasted image 20250221115035.png" src="사진-및-문서/pasted-image-20250221115035.png" target="_self"><br>잘 따라왔다면 EC2 환경에서 docker를 통해 받은 jar파일이 잘 실행되는 것을 볼 수 있다.<br>내가 만든 포트는 8000번이며 IP주소는 AWS의 인스턴스에서 찾아볼 수있다.<br>퍼블릭 IP주소 를 통해 접속을 확인해보기 전에..<br><img alt="Pasted image 20250221115040.png" src="사진-및-문서/pasted-image-20250221115040.png" target="_self"><br>해당 인스턴스의 보안그룹을 확인하고, 내가 설정한 포트(:8000)에 대한 접근을 허가해주어야한다.<br>
-보안그룹 확인 후,<br><img alt="Pasted image 20250221115046.png" src="사진-및-문서/pasted-image-20250221115046.png" target="_self"><br>네트워크 및 보안 -&gt; 해당 보안그룹 -&gt;&nbsp; 인바운드 규칙 편집 ( 인바운드란, 외부에서 해당 인스턴스로 접근하는 것)<br><img alt="Pasted image 20250221115052.png" src="사진-및-문서/pasted-image-20250221115052.png" target="_self"><br>8000번 포트 추가<br><img alt="Pasted image 20250221115058.png" src="사진-및-문서/pasted-image-20250221115058.png" target="_self"><br>이렇게 과정을 마치면...<br>http://[인스턴스의 퍼블릭 IP주소]:[포트번호]
-<br> 로 접속이 가능하다!<br>
-<img alt="Pasted image 20250221115102.png" src="사진-및-문서/pasted-image-20250221115102.png" target="_self"><br>다음의 대략정인 과정을 통해 진행될 것이다.<br>1. Docker를 통해 Redis 다운받기<br>2. Redis config 파일 생성/수정 및 docker file 생성하기<br>3. 2에서 생성한 conf 파일과 dockerfile로 docker image 생성하기<br>4. 생성한 image 를 docker hub에 올리기<br>5. EC2에서 redis image와 spring(jar)image 내려받기<br>6. 내려받은 image를 container로 실행하고, EC2 포트 열기<br>EC2셋팅법과 docker 및 redis를 셋팅하는 방법은 이전 글에서 찾아볼 수 있다.<br>spring + docker 셋팅<br>로컬에 도커가 셋팅되어있다고 가정하고,&nbsp; redis를 최신으로 내려받는다.<br>docker pull redis
-<br><img alt="Pasted image 20250221115117.png" src="사진-및-문서/pasted-image-20250221115117.png" target="_self"><br>docker desktop을 통해 확인할 수 있고,&nbsp;<br>docker images
-<br>명령어를 통해서 확인 할 수 있다.<br><img alt="Pasted image 20250221115122.png" src="사진-및-문서/pasted-image-20250221115122.png" target="_self"><br>1.에서 redis를 내려받았다면 해당하는 디렉토리에 redis.conf 파일이 생성된다.<br>
-생성되지 않았을경우 text파일 형식으로 생성해도 문제없다.<br>생성된 conf파일을 다음과 같이 수정하였다.<br># 연결 가능한 네트위크(0.0.0.0 = Anywhere)
-bind 0.0.0.0 # 연결 포트
-port 6379 # Master 노드의 기본 사용자 비밀번호
-requirepass 사용할비밀번호입력 # 최대 사용 메모리 용량(지정하지 않으면 시스템 전체 용량)
-maxmemory 2gb # 설정된 최대 사용 메모리 용량을 초과했을때 처리 방식
-# - noeviction : 쓰기 동작에 대해 error 반환 (Default)
-# - volatile-lru : expire 가 설정된 key 들중에서 LRU algorithm 에 의해서 선택된 key 제거
-# - allkeys-lru : 모든 key 들 중 LRU algorithm에 의해서 선택된 key 제거
-# - volatile-random : expire 가 설정된 key 들 중 임의의 key 제거
-# - allkeys-random : 모든 key 들 중 임의의 key 제거
-# - volatile-ttl : expire time(TTL)이 가장 적게 남은 key 제거 (minor TTL)
-maxmemory-policy volatile-ttl # == RDB 관련 설정 ==
-# 저장할 RDB 파일명
-dbfilename backup.rdb
-# 15분 안에 최소 1개 이상의 key가 변경 되었을 때
-save 900 1
-# 5분 안에 최소 10개 이상의 key가 변경 되었을 때
-save 300 10
-# 60초 안에 최소 10000개 이상의 key가 변경 되었을 때
-save 60 10000
-# RDB 저장 실패 시 write 명령 차단 여부
-stop-writes-on-bgsave-error no # == AOF 관련 설정 ==
-# AOF 사용 여부
-appendonly yes
-# 저장할 AOF 파일명
-appendfilename appendonly.aof
-# 디스크와 동기화 처리 방식
-# - always : AOF 값을 추가할 때마다 fsync를 호출해서 디스크에 쓰기
-# - everysec : 매초마다 fsync를 호출해서 디스크에 쓰기
-# - no : OS가 실제 sync를 할 때까지 따로 설정하지 않음
-appendfsync everysec # == Replication 관련 설정테스트 ==
-# Slave Redis 설정
-#임시주석slaveof 127.0.0.1 6380
-<br>docker file도 생성하여 준다.<br>FROM redis:latest
-COPY redis.conf /저장디렉토리/redis.conf
-CMD [ "redis-server", "/저장디렉토리/redis.conf" ]
-EXPOSE 6379
-<br><img alt="Pasted image 20250221115129.png" src="사진-및-문서/pasted-image-20250221115129.png" target="_self"><br>docker build --platform linux/amd64 -t 이미지이름:태그 디렉토리
-----
-docker build --platform linux/amd64 -t springredis:linux .
-<br>dockerfile이 있는 디렉토리에서 해당 명령어를 실행한다.<br>* --platform linux/amd64 태그는 본인의 ec2환경이 리눅스64 환경이기 때문에 추가했다.<br><img alt="Pasted image 20250221115132.png" src="사진-및-문서/pasted-image-20250221115132.png" target="_self"><br>docker push xotjd794613/springredis:linux
-------
-docker push 계정명/이미지이름:태그
-<br><img alt="Pasted image 20250221115136.png" src="사진-및-문서/pasted-image-20250221115136.png" target="_self"><br><img alt="Pasted image 20250221115140.png" src="사진-및-문서/pasted-image-20250221115140.png" target="_self"><br>업로드까지 완료했다.<br>이전에 만들어두었던 Spring(jar)이미지&nbsp;와 방금 push한 redis이미지를 받는다<br>docker pull xotjd794613/funfun:0.0.1-linux
-docker pull xotjd794613/springredis:linux
---
-docker pull 계정명/이미지이름:태그
-<br>docker images
-<br>명령어로 확인 할 수 있다.<br><img alt="Pasted image 20250221115146.png" src="사진-및-문서/pasted-image-20250221115146.png" target="_self"><br>이미지를 컨테이너로 실행하자.<br>Spring 이미지 실행<br>sudo docker run -d -p 8000:8080 xotjd794613/funfun:0.0.1-linux
-------
-sudo docker run -d -p 포트 계정명/이미지명:태그
-<br>redis 이미지 실행<br>docker run --name springredis -p 6379:6379 -v /home/ec2-user/redis:/data -d xotjd794613/springredis:linux --appendonly yes ---------- docker run --name 컨테이너이름 -p 포트 -v 데이터저장할디렉토리:/data -d 계정명/이미지명:태그 --appendonly yes
-<br>'docker ps -a' 명령어로 실행중인 모든 컨테이너를 확인 할 수 있다.<br><img alt="Pasted image 20250221115151.png" src="사진-및-문서/pasted-image-20250221115151.png" target="_self"><br>http://ec2주소:포트번호로 접속시 정상적으로 spring기반 페이지와 redis가 연결된 것을 확인할 수 있다.<br><img alt="Pasted image 20250221115157.png" src="사진-및-문서/pasted-image-20250221115157.png" target="_self"><br>오류
-만약,&nbsp;해당주소로 접속시 접속이 안되거나, redis가 정상적으로 실행되지 않는경우
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[taesunglog]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib/media/favicon.png</url><title>taesunglog</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 21 Feb 2025 05:40:04 GMT</lastBuildDate><atom:link href="lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 21 Feb 2025 05:39:58 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[🏫 강의]]></title><description><![CDATA[<a class="tag" href="?query=tag:강의" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#강의</a> <a class="tag" href="?query=tag:모음" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#모음</a> <a class="tag" href="?query=tag:lectur" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#lectur</a> <br> <a href=".?query=tag:강의" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#강의">#강의</a> <a href=".?query=tag:모음" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#모음">#모음</a> <a href=".?query=tag:lectur" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#lectur">#lectur</a><br>강의
+강의를 수강하며, 정리한 내용 모음집 입니다.
+<br>정보
+inflearn - SpringCoreBasic.김영한 님의 강의 입니다.
+<br> <br> <br> <br> <br>]]></description><link>lectur/🏫-강의.html</link><guid isPermaLink="false">lectur/🏫 강의.md</guid><pubDate>Fri, 21 Feb 2025 05:39:29 GMT</pubDate></item><item><title><![CDATA[1. 객체 지향 설계와 스프링]]></title><description><![CDATA[<a class="tag" href="?query=tag:SpringCoreBasic" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SpringCoreBasic</a> <a class="tag" href="?query=tag:SPRING" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SPRING</a> <a class="tag" href="?query=tag:lectur" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#lectur</a> <a class="tag" href="?query=tag:강의" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#강의</a> <br> <a href=".?query=tag:SpringCoreBasic" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SpringCoreBasic">#SpringCoreBasic</a> <a href=".?query=tag:SPRING" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SPRING">#SPRING</a> <a href=".?query=tag:lectur" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#lectur">#lectur</a> <a href=".?query=tag:강의" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#강의">#강의</a><br>]]></description><link>lectur/1.-객체-지향-설계와-스프링.html</link><guid isPermaLink="false">lectur/1. 객체 지향 설계와 스프링.md</guid><pubDate>Fri, 21 Feb 2025 05:37:53 GMT</pubDate></item><item><title><![CDATA[🏠 taesung's Blog]]></title><description><![CDATA[<a class="tag" href="?query=tag:home" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#home</a> <a class="tag" href="?query=tag:index" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#index</a> <a class="tag" href="?query=tag:blog" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#blog</a> <a class="tag" href="?query=tag:공부" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#공부</a> <br> <a href=".?query=tag:home" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#home">#home</a> <a href=".?query=tag:index" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#index">#index</a> <a href=".?query=tag:blog" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#blog">#blog</a> <a href=".?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a><br><a data-tooltip-position="top" aria-label="https://github.com/LeeTaeSung0628" rel="noopener nofollow" class="external-link is-unresolved" href="https://github.com/LeeTaeSung0628" target="_self"><span alt="Pasted image 20250220144552.png" src="Pasted image 20250220144552.png" class="internal-embed media-embed image-embed is-loaded" style="width: 220px; max-width: 100%;"></span></a><img alt="Pasted image 20250220144552.png" src="사진-및-문서/pasted-image-20250220144552.png" style="width: 220px; max-width: 100%;" target="_self"><br>
+<a data-tooltip-position="top" aria-label="https://github.com/LeeTaeSung0628" rel="noopener nofollow" class="external-link is-unresolved" href="https://github.com/LeeTaeSung0628" target="_self"><font color="#ffffff"></font></a>🔗git Hub 이동<br><a data-tooltip-position="top" aria-label="https://git.io/typing-svg" rel="noopener nofollow" class="external-link is-unresolved" href="https://git.io/typing-svg" target="_self"></a><img alt="Typing SVG" src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;pause=1000&amp;color=36A9F7&amp;random=false&amp;width=435&amp;lines=%EC%97%AC%EA%B8%B0%EB%8A%94+%EA%B3%B5%EB%B6%80%ED%95%98%EA%B3%A0%2C+%EA%B8%B0%EB%A1%9D%ED%95%98%EB%8A%94+%EA%B3%B3%EC%9E%85%EB%8B%88%EB%8B%A4" referrerpolicy="no-referrer" target="_self" class="is-unresolved"><br> <br> <br> <br> <br> <br> <br> <br> <br> <br>Soon <br>깃 레포에서도 블로그 주소로 이어질 수 있도록 Readme 설정하기. <br>리드미 또한 옵시디언에서 작업이 가능하다. <br>Netlify 셋팅 추가하기]]></description><link>index.html</link><guid isPermaLink="false">index.md</guid><pubDate>Fri, 21 Feb 2025 05:25:16 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250220144552.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20250220144552.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[🪓 도구]]></title><description><![CDATA[<a class="tag" href="?query=tag:Tools" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Tools</a> <a class="tag" href="?query=tag:모음" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#모음</a> <a class="tag" href="?query=tag:도구" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#도구</a> <br> <a href=".?query=tag:Tools" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Tools">#Tools</a> <a href=".?query=tag:모음" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#모음">#모음</a> <a href=".?query=tag:도구" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#도구">#도구</a><br>툴 모음
+제가 사용하고 있는 편리/유용한 TOOL을 소개하고 설명하는 곳 입니다.
 <br>
-<br><img alt="Pasted image 20250221115201.png" src="사진-및-문서/pasted-image-20250221115201.png" target="_self">
-<br><img alt="Pasted image 20250221115214.png" src="사진-및-문서/pasted-image-20250221115214.png" target="_self"><br>2.1 ec2 redis 컨테이너 포트 확인<br>docker ps -a
-<br>로 redis 컨테이너 ID 확인<br><img alt="Pasted image 20250221115220.png" src="사진-및-문서/pasted-image-20250221115220.png" target="_self"><br>docker inspect 컨테이너ID
-<br>명령어로 IP 확인<br><img alt="Pasted image 20250221115224.png" src="사진-및-문서/pasted-image-20250221115224.png" target="_self"><br><img alt="Pasted image 20250221115228.png" src="사진-및-문서/pasted-image-20250221115228.png" target="_self"><br>spring 프로젝트에 ip 정보 추가<br>
-<img alt="Pasted image 20250221115232.png" src="사진-및-문서/pasted-image-20250221115232.png" target="_self"><br>]]></description><link>tools/aws/🌥-aws(ec2)셋팅부터-배포까지.html</link><guid isPermaLink="false">Tools/aws/🌥 aws(EC2)셋팅부터 배포까지.md</guid><pubDate>Fri, 21 Feb 2025 05:04:10 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250221112429.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20250221112429.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[🏠 Home]]></title><description><![CDATA[<a class="tag" href="?query=tag:home" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#home</a> <a class="tag" href="?query=tag:index" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#index</a> <a class="tag" href="?query=tag:blog" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#blog</a> <a class="tag" href="?query=tag:공부" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#공부</a> <br> <a href=".?query=tag:home" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#home">#home</a> <a href=".?query=tag:index" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#index">#index</a> <a href=".?query=tag:blog" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#blog">#blog</a> <a href=".?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a><br><a data-tooltip-position="top" aria-label="https://github.com/LeeTaeSung0628" rel="noopener nofollow" class="external-link is-unresolved" href="https://github.com/LeeTaeSung0628" target="_self"><span alt="Pasted image 20250220144552.png" src="Pasted image 20250220144552.png" class="internal-embed media-embed image-embed is-loaded" style="width: 220px; max-width: 100%;"></span></a><img alt="Pasted image 20250220144552.png" src="사진-및-문서/pasted-image-20250220144552.png" style="width: 220px; max-width: 100%;" target="_self"><br>
-<a data-tooltip-position="top" aria-label="https://github.com/LeeTaeSung0628" rel="noopener nofollow" class="external-link is-unresolved" href="https://github.com/LeeTaeSung0628" target="_self"><font color="#ffffff"></font></a>🔗git Hub 이동<br><a data-tooltip-position="top" aria-label="https://git.io/typing-svg" rel="noopener nofollow" class="external-link is-unresolved" href="https://git.io/typing-svg" target="_self"></a><img alt="Typing SVG" src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;pause=1000&amp;color=36A9F7&amp;random=false&amp;width=435&amp;lines=%EC%97%AC%EA%B8%B0%EB%8A%94+%EA%B3%B5%EB%B6%80%ED%95%98%EA%B3%A0%2C+%EA%B8%B0%EB%A1%9D%ED%95%98%EB%8A%94+%EA%B3%B3%EC%9E%85%EB%8B%88%EB%8B%A4" referrerpolicy="no-referrer" target="_self" class="is-unresolved"><br> <br> <br> <br> <br> <br> <br> <br> <br>Soon <br>깃 레포에서도 블로그 주소로 이어질 수 있도록 Readme 설정하기. <br>리드미 또한 옵시디언에서 작업이 가능하다. <br>Netlify 셋팅 추가하기]]></description><link>index.html</link><guid isPermaLink="false">index.md</guid><pubDate>Fri, 21 Feb 2025 04:53:03 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250220144552.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20250220144552.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[📘 SpringBoot &amp; Docker + Reids 연동]]></title><description><![CDATA[<a class="tag" href="?query=tag:Tools" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Tools</a> <a class="tag" href="?query=tag:도커" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#도커</a> <a class="tag" href="?query=tag:Docker" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Docker</a> <a class="tag" href="?query=tag:SPRING" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SPRING</a> <a class="tag" href="?query=tag:Boot" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Boot</a> <a class="tag" href="?query=tag:Redis" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Redis</a> <br> <a href=".?query=tag:Tools" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Tools">#Tools</a> <a href=".?query=tag:도커" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#도커">#도커</a> <a href=".?query=tag:Docker" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Docker">#Docker</a> <a href=".?query=tag:SPRING" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SPRING">#SPRING</a> <a href=".?query=tag:Boot" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Boot">#Boot</a> <a href=".?query=tag:Redis" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Redis">#Redis</a> <br><img alt="Pasted image 20250221114306.png" src="사진-및-문서/pasted-image-20250221114306.png" target="_self"><br>먼저 도커에 대한 간단한 이전 글!<br>aws의 설명에 의하면 Docker란 <br>애플리케이션을 신속하게 구축, 테스트 및 배포할 수 있는 소프트웨어 플랫폼이다. <br>소프트웨어를 컨테이너 라는 표준화된 유닛으로 패키징하여 관리한다. <br><a data-tooltip-position="top" aria-label="https://docs.docker.com/desktop/install/mac-install/" rel="noopener nofollow" class="external-link is-unresolved" href="https://docs.docker.com/desktop/install/mac-install/" target="_self">도커 다운로드 링크</a><br>각 기기에 맞는 docker 버전을 다운로드 받는다.<br>
-<img alt="Pasted image 20250221114324.png" src="사진-및-문서/pasted-image-20250221114324.png" target="_self"><br>다운로드 받은 후 명령어를 입력하여 docker의 현재 버전을 볼 수 있다.<br>※ 터미널에 'docker' 를 입력하게 되면 다양한 명령어들을 확인할 수 있다.<br>
-<img alt="Pasted image 20250221114327.png" src="사진-및-문서/pasted-image-20250221114327.png" target="_self"><br>제대로 다운로드 받았다면 docker에 기본적으로 만들어져있는 이미지들을 확인 할수 있다. 밑에 사진은 도커 데스트톱 이라는 앱이다.<br><img alt="Pasted image 20250221114334.png" src="사진-및-문서/pasted-image-20250221114334.png" target="_self"><br>터미널에서도 확인할 수 있다.<br><img alt="Pasted image 20250221114339.png" src="사진-및-문서/pasted-image-20250221114339.png" target="_self"><br>이제&nbsp;도커 파일&nbsp;을 이용하여&nbsp;도커 이미지를 생성한 후, 이미지를 빌드하여&nbsp;컨테이너를 생성해 줄것이다.<br>여기서 여러 용어들이 나오는데...<br>용어들에 대한 설명이다<br><img alt="Pasted image 20250221114345.png" src="사진-및-문서/pasted-image-20250221114345.png" target="_self"><br><img alt="Pasted image 20250221114353.png" src="사진-및-문서/pasted-image-20250221114353.png" target="_self"><br>Dockerfile을 생성하기에 앞서, .jar 파일을 생성해야한다.<br>gradle 이나 maven 을 사용하여 프로젝트를 빌드 할것이다.<br>여기서는 Maven 을 사용한다.<br><a rel="noopener nofollow" class="external-link is-unresolved" href="https://maven.apache.org/download.cgi" target="_self">https://maven.apache.org/download.cgi</a><br>홈페이지에서 직접 다운받아도 되고, brew를 사용해 각자 다운받으면 된다.<br>이후에, 프로젝트의 루트 디렉토리에서 'mvn install' 명령어를 사용하여 프로젝트를 빌드 할 수 있다.<br><img alt="Pasted image 20250221114400.png" src="사진-및-문서/pasted-image-20250221114400.png" target="_self"><br>빌드를 마치면, 프로젝트 내에&nbsp;target이 생성 됨을 볼 수 있다.<br><img alt="Pasted image 20250221114406.png" src="사진-및-문서/pasted-image-20250221114406.png" target="_self"><br>그 후, 루트 디렉토리에 'Dockerfile' 을 생성하여 준다.<br><img alt="Pasted image 20250221114411.png" src="사진-및-문서/pasted-image-20250221114411.png" target="_self"><br><img alt="Pasted image 20250221114423.png" src="사진-및-문서/pasted-image-20250221114423.png" target="_self"><br>Dockerfile 생성시 사용되는 명령어들은 다음과 같다.<br><img alt="Pasted image 20250221114428.png" src="사진-및-문서/pasted-image-20250221114428.png" target="_self"><br>나는 기본적인 옵션만 넣어서 test 하였다.<br>FROM 태그에 나의 java(jdk)버전을 확인하여 baseimage를 지정하고<br>
-( dockerRpository에서 다양한 이미지를 가져다 사용할 수 있으므로 찾아보세요)<br>ADD 태그에 maven을 통해 생성된 .jar파일과 경로를 입력한다<br>이외에 태그는 자유롭게 작성해 줄 수 있다.<br>프롬프트에 <br>docker build -t ${"도커파일 명"} ${"디렉토리"} <br>형식으로 사용할 수 있다.<br><img alt="Pasted image 20250221114434.png" src="사진-및-문서/pasted-image-20250221114434.png" target="_self"><br><img alt="Pasted image 20250221114439.png" src="사진-및-문서/pasted-image-20250221114439.png" target="_self"><br>해당 단계를 마치면 이미지가 생성된 것을 확인할 수 있다.<br>프롬프트에 <br>docker run -p ${사용할 포트번호} ${이미지 명}
-<br>을 사용한다.<br>본인은 8000번 포트를 직접 사용하여 8080포트인 도커 컨테이너에 접근할 것이다.<br><img alt="Pasted image 20250221114443.png" src="사진-및-문서/pasted-image-20250221114443.png" target="_self"><br>짜잔!&nbsp; &nbsp;정상적으로 동작한다.<br>
-<img alt="Pasted image 20250221114501.png" src="사진-및-문서/pasted-image-20250221114501.png" target="_self"><br>
-<img alt="Pasted image 20250221114448.png" src="사진-및-문서/pasted-image-20250221114448.png" target="_self"><br>docker는 다운받아져 있는걸로 알고..&nbsp;<br>'docker pull redis:latest' 명령어를 사용하여 최신버전의 redis를 받아온다.<br><img alt="Pasted image 20250221114522.png" src="사진-및-문서/pasted-image-20250221114522.png" target="_self"><br>그 다음, <br>docker network create redis-network --driver bridge
-<br>명령어를 사용하여 네트워크를 생성해 준다.<br>※ docker network : 컨테이너간의 통신 및 데이터 공유를 위한 가상 네트워크<br><img alt="Pasted image 20250221114527.png" src="사진-및-문서/pasted-image-20250221114527.png" target="_self"><br>이제, 'sudo vim redis.conf' 명령어를 사용하여 redis.conf 파일을 수정하여 설정을 잡아준다.<br><img alt="Pasted image 20250221114531.png" src="사진-및-문서/pasted-image-20250221114531.png" target="_self"><br>docker run \ -d \ --name redis \ -p 6379:6379 \ --network redis-network \ -v ~/${데이터를 저장할 파일 경로} /redis.conf:/etc/redis/redis.conf \ -v redis_data:/data \
-redis:latest redis-server /etc/redis/redis.conf
-<br><img alt="Pasted image 20250221114535.png" src="사진-및-문서/pasted-image-20250221114535.png" target="_self"><br>포트번호와, 방금 설정한 네트워크, 데이터 저장 경로를 잡아준다.<br>이렇게 설정을 마쳤으면 redis 이미지가 생성되었음을 확인할 수 있다.<br><img alt="Pasted image 20250221114539.png" src="사진-및-문서/pasted-image-20250221114539.png" target="_self"><br>최종적으로 생성된 이미지로 컨테이너를 만들어 준다.<br><img alt="Pasted image 20250221114543.png" src="사진-및-문서/pasted-image-20250221114543.png" target="_self"><br>docker run --name myredis \ -p 6379:6379 \ --network redis-network \ -v /Users/lts/Desktop/docker/redis:/data \ -d redis:latest redis-server \ --appendonly yes
-<br><img alt="Pasted image 20250221114600.png" src="사진-및-문서/pasted-image-20250221114600.png" target="_self"><br>컨테이너까지 생성완료!<br>docker exec -it myredis redis-cli --raw
-<br>명령어를 사용하여 컨테이너 실행<br><img alt="Pasted image 20250221114605.png" src="사진-및-문서/pasted-image-20250221114605.png" target="_self"><br>프롬프트를 보면 정상적으로 접속됨을 확인할 수 있다.<br>※ 해당 프로젝트는 Maven 을 사용한 프로젝트이다.<br>spring.cache.type=redis
-spring.redis.host=localhost
-spring.redis.port=6379
-<br><img alt="Pasted image 20250221114610.png" src="사진-및-문서/pasted-image-20250221114610.png" target="_self"><br><img alt="Pasted image 20250221114616.png" src="사진-및-문서/pasted-image-20250221114616.png" target="_self"><br>import org.springframework.beans.factory.annotation.Value;
+<br><a data-href="🍊 aws EC2란" href="tools/aws/🍊-aws-ec2란.html" class="internal-link" target="_self" rel="noopener nofollow">🍊 aws EC2란</a>
+<br><a data-href="🌥 aws(EC2)셋팅부터 배포까지" href="tools/aws/🌥-aws(ec2)셋팅부터-배포까지.html" class="internal-link" target="_self" rel="noopener nofollow">🌥 aws(EC2)셋팅부터 배포까지</a>
+<br>
+<br><a data-href="🐋 docker" href="tools/docker/🐋-docker.html" class="internal-link" target="_self" rel="noopener nofollow">🐋 docker</a>
+<br><a data-href="📘 SpringBoot &amp; Docker + Reids 연동" href="tools/docker/📘-springboot-&amp;-docker-+-reids-연동.html" class="internal-link" target="_self" rel="noopener nofollow">📘 SpringBoot &amp; Docker + Reids 연동</a>
+<br>
+<br><a data-href="🎵 Obsidian" href="tools/🎵-obsidian.html" class="internal-link" target="_self" rel="noopener nofollow">🎵 Obsidian</a>
+<br>
+<br>🩹추가예정!!]]></description><link>tools/🪓-도구.html</link><guid isPermaLink="false">Tools/🪓 도구.md</guid><pubDate>Fri, 21 Feb 2025 05:22:40 GMT</pubDate></item><item><title><![CDATA[🏹 Spring Batch 트러블 슈팅]]></title><description><![CDATA[<a class="tag" href="?query=tag:프로젝트" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#프로젝트</a> <a class="tag" href="?query=tag:개발" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#개발</a> <a class="tag" href="?query=tag:SPRING" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SPRING</a> <a class="tag" href="?query=tag:Batch" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Batch</a> <a class="tag" href="?query=tag:Partitioning" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Partitioning</a> <a class="tag" href="?query=tag:Chunk" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Chunk</a> <br> <a href=".?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href=".?query=tag:개발" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개발">#개발</a> <a href=".?query=tag:SPRING" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SPRING">#SPRING</a> <a href=".?query=tag:Batch" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Batch">#Batch</a> <a href=".?query=tag:Partitioning" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Partitioning">#Partitioning</a> <a href=".?query=tag:Chunk" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Chunk">#Chunk</a><br>기존 예치금 차액비교 Batch의 Tasklet방식의 배치의 단점을 보완하는 chunk 방식의 배치를 구현하고,<br>
+나아가 다른 기능의 Batch에도 효과적으로 빠르게 적용할 수 있는재사용성/유지보수성 높은 코드, 선례를 만들기 위함이다.<br>
+<br>Chunk, Partioning방식을 Job을 추가 개발 (기존 balanceJob 유지)
+<br>당분간 두 Job을 병행하면서 비교
+<br>추가한 Job 기능에 문제없다면 기존 balanceJob 삭제
+<br><img alt="회사 은행 서비스1111.png" src="사진-및-문서/회사-은행-서비스1111.png" target="_self"><br>
+<img alt="Spring Batch Tasklet 예치금 잔액 비교 1.png" src="사진-및-문서/spring-batch-tasklet-예치금-잔액-비교-1.png" target="_self"><br>
+<img alt="Spring Batch Tasklet 예치금 잔액 비교 잘못된 차액발생 인식 타임라인.png" src="사진-및-문서/spring-batch-tasklet-예치금-잔액-비교-잘못된-차액발생-인식-타임라인.png" target="_self"><br>
+<br>평균 소요시간: 약 17.35분
+<br>최대 소요시간: 22분
+<br>최소 소요시간: 12분<br>
+<img alt="output (1).png" src="사진-및-문서/output-(1).png" target="_self">
+<br>
+<br>처음 가져온 Point 배치 완료시 까지 계속 물고있다. -&gt; 한 트렌젝션의 범위가 넓다.
+<br>
+<br>G5-Point 등은 처음 7시 시점에 묶여있다. 회원별로 실데이터를 건건이 api(신한)를 호출하여 비교한다. 때문에, 7시 이후에 수정된데이터를 실시간으로 반영하지 못한다.
+<br>
+<br>목적 : batch의 step 레벨에서의 스레드 분리 ( 병렬처리 )
+<br>
+<br>독립적인 ExecutionContext가 주어져 상태를 안전하게 관리할 수 있다.
+<br>
+<br>목적 : 각 step내의 트렌젝션 단위 분리
+<br>Reader / Processor / writer 가 역할을 분담
+<br>
+<br>
+Partition 생성: <br>Partition 1 : ID 1 ~ 25 / 대기열1 : ID 101 ~ 125 / 대기열2 : ID 201 ~ 225
+<br>Partition 2 : ID 26 ~ 50 / 대기열 : ID 126 ~ 150 / 대기열2 : ID 226 ~ 250
+<br>Partition 3 : ID 51 ~ 75 / 대기열 : ID 151 ~ 175 / 대기열2 : -
+<br>Partition 4 : ID 76 ~ 100 / 대기열 : ID 176 ~ 200 / 대기열2 : - <br>
+각 Partition에서 Chunk 처리: <br>Partition 1: <br>Chunk 1: ID 1 ~ 10 → 커밋
+<br>Chunk 2: ID 11 ~ 20 → 커밋
+<br>Chunk 3: ID 21 ~ 25 → 커밋 <br>Partition 2: <br>Chunk 1: ID 26 ~ 35 → 커밋
+<br>Chunk 2: ID 36 ~ 45 → 커밋
+<br>Chunk 3: ID 46 ~ 50 → 커밋 <br>나머지 Partition도 동일 방식으로 처리. <br>
+병렬 실행: <br>스레드 풀 크기 = 4이므로 4개의 Partition이 동시에 실행됩니다.
+<br>Partition 처리 순서는 스레드 풀에서 처리되는 순서에 따라 다를 수 있음. <br>
+트랜잭션 관리: <br>각 Partition은 독립적인 트랜잭션을 가짐.
+<br>각 Chunk가 커밋될 때마다 트랜잭션이 종료됨. <br>
+<br>
+Partition 생성: <br>Partition 1 : ID 1 ~ 25 / 대기열1 : ID 101 ~ 125 / 대기열2 : ID 201 ~ 225
+<br>Partition 2 : ID 26 ~ 50 / 대기열 : ID 126 ~ 150 / 대기열2 : ID 226 ~ 250
+<br>Partition 3 : ID 51 ~ 75 / 대기열 : ID 151 ~ 175 / 대기열2 : ID 251 ~ 275
+<br>Partition 4 : ID 76 ~ 100 / 대기열 : ID 176 ~ 200 / 대기열2 : ID 276 ~ 300
+<br>추가 스레드 풀 생성
+<br>Partition 5 : ID 300 ~ 325 / 대기열 : ID 326 ~ 350 / 대기열2 : ID 351 ~ 375
+<br>추가 스레드 풀 생성
+<br>Partition 6 : ID 376 ~ 400 / 대기열 : ID 401 ~ 425 / 대기열2 : ID 426 ~ 450 모든 대기열 소모 및 최대 스레드 풀 도달 =&gt; 작업 중단 및 오류 <br>-&gt; 이로볼때, 쿼리작업보다 api호출작업의 소요시간이 길어보임<br>범위 - 2017-11-07 ~ 2017-12-01
+startDate=2017-11-07&amp;endDate=2017-12-01
+<br>## 컬럼 개수 - 292개 기존 병렬처리 : 1분 7초
+기존로직 : 6분 32초 t:스레드 개수 / c:각 스레드별 청크 파티션 수 ###### SimpleAsyncTaskExecutor vs ThreadPoolTaskExecutor SimpleAsyncTaskExecutor
+g4/c10 : 1분 41.586초
+g5/c10 : 1분 30.037초
+g5/c3 : 1분 28.997초
+g5/c1 : 1분 29.931초
+g8/c10 : 1분 36.019초
+g10/c1 : 1분 24.529초 - ThreadPoolTaskExecutor
+Th min/maxSize64, g64/c10 : 1분 42.848초
+Th min/maxSize32, g32/c10 : 1분 26.551초 Th min/maxSize16, g16/c10 : 1분 46.753초 / 1분 33.779초 / 2분 25.759초
+1분 11.668초 / 2분 5.773초 / 2분 39.553초 Th min/maxSize32, g8/c20 : 3분 25.743초 Th min/maxSize16, g4/c10 : 2분 29.207초 / 2분 8.004초
+<br>
+<br>Grid사이즈(파티셔닝 갯수) 만큼 스레드 풀 계속 생성
+<br>파티셔닝 갯수가 많아졌을 때, 스레드 생성/소멸에 드는 오버헤드 증가
+<br>
+<br>최소 스레드풀 개수 / 최대 스레드풀 개수 / 대기열 큐 크기 / 유휴 시간 모두 설정가능
+<br>파티셔닝 갯수가 많을 경우, 처리 성능에 맞는 스레드 풀에서 대기작업으로 처리하여 오버헤드 감소
+<br>
+<br>총 처리량 기준 1/n로 각 스레드에 할당시 충분히 감당한 양으로, 대기열을 사용할 필요가 없다.
+<br>
+<br>쿼리 호출 및 페이징 기법 직접 구현
+<br>
+<br>Native Query 형태로 호출하여 자동 페이징
+<br>
+<br>Spring Batch에서는 공식적으로 지원하지 않음
+<br>자동 페이징
+<br>Querydsl형태로 쿼리 호출 가능
+<br>
+<br>기존(헬로)의 Querydsl기반 JPAQuery를 그대로 사용 가능
+<br>자동 페이징
+<br>그 외 Querydsl의 장점 보유
+<br>
+<br>기존 PagingItemReader의 메서드를 오버라이딩 하여 사용하며,<br>
+JPQL이 수행되던 부분에 코드를 수정하였다.
+<br>@Bean @Scope(value = "step", proxyMode = ScopedProxyMode.TARGET_CLASS) public QuerydslPagingItemReader&lt;HfbatBankBalanceCheckDto&gt; balanceReader() { ExecutionContext jobContext = Objects.requireNonNull(StepSynchronizationManager.getContext()).getStepExecution().getJobExecution().getExecutionContext(); Date startDate = (Date) jobContext.get(START_DATE_KEY); Date endDate = (Date) jobContext.get(END_DATE_KEY); return new QuerydslPagingItemReader&lt;&gt;( entityManagerFactory, executionOrder, DEFAULT_CHUNK_SIZE, queryFactory -&gt; repository.newFindChangeBalanceMemberList( startDate, endDate )); }
+<br>
+<br>각 파티션 스레드 별 종료 시간이 크게 상이하다. 총 소요시간 기준 최대 약 20% 차이
+<br>적용 한다면, 각 스레드 별로 even하게 작업을 수행하여 총 소요시간을 줄일 수 있을것이라 판단 <br>JOB private static AtomicLong executionOrder = new AtomicLong(0); ... new QuerydslPagingItemReader&lt;&gt;( entityManagerFactory, executionOrder, DEFAULT_CHUNK_SIZE, queryFactory -&gt; repository.newFindChangeBalanceMemberList( startDate, endDate ));
+<br>job 레벨에서의 스레드 세이프한 전역 변수를 생성하였다.
+<br>그 후, 각 파티션 별 리더에 인자값으로 넘긴다.
+<br>long currentExecutionOrder = executionOrder.getAndIncrement(); long startIndex = (currentExecutionOrder) * getPageSize(); int totalRecords = stepContext.getInt("totalRecords"); if (startIndex &gt;= totalRecords) { initResults(); // 빈 결과로 초기화 tx.commit(); return; } int chunkSizeToRead = Math.min(getPageSize(), (int) (totalRecords - startIndex)); // 남은 데이터 크기만큼 읽기 // QueryDSL Query 생성 JPQLQuery&lt;T&gt; query = createQuery() .offset(startIndex) .limit(chunkSizeToRead);
+<br>
+<br>먼저 한 청크단위의 작업을 끝낸 파티션은 그 다음 작업을 즉시 할당받게 된다.
+<br>즉, 총 처리시간 기준 가장 빨리끝난 파티션과 가장 늦게 끝난 파티션의 실행 시간 차이는 최대 한 청크사이즈를 처리하는 시간보다 크지 않게 된다.
+<br>1차 비교 이후 차액이 발생한 녀석들의 List 를 한번 더 검증한 후, =&gt; 추후 변경 됨<br>
+검증된 녀석들을 <br>List&lt;BalanceCheckResultDto&gt; realDiffList= new ArrayList&lt;&gt;();
+<br>최종적인 차액 리스트에 넣는다.<br>writer는 각 프로세서의 리턴으로 받은 녀석들을 하나의 DTO List로 합쳐 메세징 처리를 하게 된다.<br>
+<br>유지보수성이 좋다.
+<br>환경셋팅에 리소스가 많이든다. <br>
+<br>구현 레벨이 가장 쉽다
+<br>DTO(데이터)가 많아질 경우, 큰 리소스를 차지한다.
+<br>
+<br>방법 2.보다는 리소스가 적지만, 문자열 처리 시간이 추가로 소모된다.
+<br>
+<br>높은 쓰기 성능을 갖고있다.
+<br>동시성 문제 없이 다중 스레드에서 사용 가능하다.
+<br>인덱스로 접근이 불가능하다.
+<br>QueueManager클래스를 생성하며 공통으로 사용 가능하도록 하였고,<br>@Slf4j public class QueueManager&lt;T&gt; { protected final ConcurrentLinkedQueue&lt;T&gt; sharedQueue = new ConcurrentLinkedQueue&lt;&gt;(); // 데이터 추가 public void addItemToSharedQueue(T item) { if (item != null) { sharedQueue.add(item); } }
+<br>이를 상속받아 특정 오브젝트를 넘길 수 있도록 하였다.<br>public class BalanceQueue extends QueueManager&lt;BalanceCheckResultDto&gt;{ public List&lt;BalanceCheckResultDto&gt; getDtoFromQueue() { return super.getItemsFromQueue(); } }
+<br>이게 무슨소리인지? <br>보통의 Batch 서비스라면 I/O 작업에 부하가 걸려있겠지만, 현재 예치금 차액 배치는 processor 즉, 예치금 비교 연산에서 큰 리소스를 소모하고있다.
+<br>이에 해당하는 시간 소모를 줄이기 위해 processor(서비스로직) 을 병렬처리 함으로 최종 처리시간 단축을 꾀할 수 있을지에 대한 고민이다.
+<br>이후 설명하겠지만, 내부 병렬처리 로직은 청크의 트렌젝션을 무너뜨릴 가능성이 크므로 지양해야함. <br><img alt="Pasted image 20241206113120.png" src="사진-및-문서/pasted-image-20241206113120.png" target="_self"><br>소요시간 : 1분 9초
+<br>-&gt; 기존 limit절을 이용한 로직보다 속도가 더빠르며,<br>
+JpaPagingReader를 적용한다면 중복 select횟수를 줄여 더 빨라질 것으로 예상된다.<br>결론 : 둘 중 하나<br>#### 292 컬럼
+## Processor 삭제(병렬처리)로직
+#### grid-size:6 / chunk-size:20
+54679 ms
+54416 ms
+## Processor 순차처리(writer만 병렬처리) 로직 #### grid-size:6 / chunk-size:20
+60440 ms
+62271 ms
+#### grid-size:10 / chunk-size:20
+58129 ms
+56723 ms
+#### grid-size:16 / chunk-size:20
+58595 ms
+56314 ms #### grid-size:32 / chunk-size:20
+- SQLTransientConnectionException
+- 스레드풀 점유갯수 초과
+<br>하지만, 이후 청크 방식 Batch의 확장성과 유지보수성을 고려하여 리더,프로세서,라이터 방식으로 구현하기로 정했다.<br>청크사이즈가 다름에도 처리속도가 똑같은 이유?<br>grid-size:12 / chunk-size:30
+-
+3분 22.856초
+3분 23.096초 grid-size:12 / chunk-size:20
+-
+3분 23.546초
+3분 23.784초 grid-size:12 / chunk-size:10
+-
+3분 24.243초
+3분 22.389초
+3분 24.667초
+3분 24.789초 grid-size:12 / chunk-size:5
+-
+3분 24.953초
+3분 24.353초
+<br>
+<br>트렌젝션 분리가 되어있지 않았기 떄문에 청크사이즈를 아무리 잘게 쪼개도 시간이 같았던 것이다.
+<br>그럼 트렌젝션이 분리되지 않은 이유는?
+<br>dtoList.stream().parallel() .forEach(dto -&gt; {});
+<br>parallel문으로 내부 병렬처리로직을 구현했기 때문에, chunk의 트렌젝션에서 벗어나,<br>
+매 insert문 마다 커밋을 하였던 것이다.<br>반복 TEST 중.. 커넥션풀 Time Out 문제??<br>SHOW VARIABLES LIKE 'max_connections'; //최대 개수<br>
+SHOW STATUS LIKE 'Threads_connected'; //사용중인 개수<br><img alt="Pasted image 20241213102128.png" src="사진-및-문서/pasted-image-20241213102128.png" target="_self"><br>
+<br>배치를 완료한 이후에도 스레드 풀(히카리 풀)을 반환하지 않는지 확인
+<br><img alt="Pasted image 20241213102229.png" src="사진-및-문서/pasted-image-20241213102229.png" target="_self"><br>
+<br>Step이 마무리될때, 적어도 Job이 마무리 될때 entityManager를 클로즈 시키는것이 자명한데, 어째서 커넥션풀이 해제되지 않는가??
+<br><img alt="Pasted image 20241213143101.png" src="사진-및-문서/pasted-image-20241213143101.png" target="_self"><br><img alt="Pasted image 20241213143217.png" src="사진-및-문서/pasted-image-20241213143217.png" target="_self"><br><img alt="Pasted image 20241213103503.png" src="사진-및-문서/pasted-image-20241213103503.png" target="_self"><br><img alt="Pasted image 20241217150339.png" src="사진-및-문서/pasted-image-20241217150339.png" target="_self"><br>리스너에 너무 많은 역할이 부여된 모습
+<br><img alt="Pasted image 20241219145746.png" src="사진-및-문서/pasted-image-20241219145746.png" target="_self"><br>
+<br>StepExecution-Level ExecutionContext <br>
+각 Step에 고유한 ExecutionContext가 생성됩니다. <br>
+Step 내의 Reader, Processor, Writer 등에서 공유됩니다. <br>
+다른 Step과는 공유되지 않습니다. <br>
+balanceWorkerStep 내에서는 Reader, Processor, Writer가 동일한 ExecutionContext를 공유합니다. <br>
+balancePartitionStep과 balanceWorkerStep의 ExecutionContext는 서로 독립적입니다. <br>JobExecution-Level ExecutionContext <br>Job 전체에서 공유되며, 모든 Step이 동일한 ExecutionContext에 접근할 수 있습니다.
+<br>JobExecutionContext는 Step 간 데이터 전달이 필요할 때 유용합니다. <br>JobExecutionListener 객체 생성<br>@Slf4j public class JobTimerExecutionListener implements JobExecutionListener { private final String jobName; private long startTime = System.currentTimeMillis(); public JobTimerExecutionListener(String jobName) { this.jobName = jobName; } @Override public void beforeJob(JobExecution var1) { startTime = System.currentTimeMillis(); } @Override public void afterJob(JobExecution var1) { long endTime = System.currentTimeMillis(); long elapsedTime = endTime - startTime; long minutes = (elapsedTime / 1000) / 60; // 밀리초를 분으로 변환 double seconds = (elapsedTime / 1000.0) % 60; // 남은 밀리초를 초로 변환 (소수점 포함) log.info("{}-completed: {} ms | {} minutes {} seconds", jobName, elapsedTime, minutes, seconds); } }
+<br><img alt="output (9) 1.png" src="사진-및-문서/output-(9)-1.png" target="_self"><br><img alt="output (10).png" src="사진-및-문서/output-(10).png" target="_self"><br><img alt="do-messenger_screenshot_2024-12-23_14_40_21.png" src="사진-및-문서/do-messenger_screenshot_2024-12-23_14_40_21.png" target="_self"><br><img alt="Pasted image 20241224093159.png" src="사진-및-문서/pasted-image-20241224093159.png" target="_self"><br>
+<img alt="Pasted image 20241224093207.png" src="사진-및-문서/pasted-image-20241224093207.png" target="_self"><br>
+<img alt="Pasted image 20241224093225.png" src="사진-및-문서/pasted-image-20241224093225.png" target="_self"><br>🙇‍♂<a data-href="🏹 Spring Batch 트러블 슈팅 부록" href="project/hello-batch/🏹-spring-batch-트러블-슈팅-부록.html" class="internal-link" target="_self" rel="noopener nofollow">🏹 Spring Batch 트러블 슈팅 부록</a>]]></description><link>project/hello-batch/🏹-spring-batch-트러블-슈팅.html</link><guid isPermaLink="false">project/hello Batch/🏹 Spring Batch 트러블 슈팅.md</guid><pubDate>Fri, 21 Feb 2025 05:15:31 GMT</pubDate><enclosure url="사진-및-문서/회사-은행-서비스1111.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/회사-은행-서비스1111.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[👩‍👧‍👦 유입 통계 APP_<strong>SPRING AOP</strong>에 관하여]]></title><description><![CDATA[<a class="tag" href="?query=tag:프로젝트" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#프로젝트</a> <a class="tag" href="?query=tag:개발" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#개발</a> <a class="tag" href="?query=tag:DB" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DB</a> <a class="tag" href="?query=tag:SPRING" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SPRING</a> <a class="tag" href="?query=tag:AOP" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#AOP</a> <br> <a href=".?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href=".?query=tag:개발" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개발">#개발</a> <a href=".?query=tag:DB" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#DB">#DB</a> <a href=".?query=tag:SPRING" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SPRING">#SPRING</a> <a href=".?query=tag:AOP" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#AOP">#AOP</a> <br>Hello Service의 유입/동작 통계 모듈의 공통화 작업이다.
+Spring AOP를 사용하여 구성하였다.
+<br>
+<br>통계 필요 페이지 내에서(프론트), 쿠키 데이터 페이지 별 최초 진입 확인?
+<br>
+<br>해당 진입시점부터 특정 동작에 대한 모든 타임라인 로그
+<br>
+<br>레디스 가용 메모리에 대한 한계값 산정. -&gt; 아직 적용 X
+<br>
+<br>URL + 함수명 조합
+<br>=&gt; 메인 테이블<br>
+=&gt; 백로직에서 쿠키 데이터 쌓기<br>=&gt; 디테일 테이블 - 타임라인으로 관리 단, 메인테이블에 존재하는 내셕들에 대해서<br>
+=&gt; AOP에서 특정 서비스or메서드orURL로 지정하여 로그 쌀기<br>- 관심사(Aspect)를 분리하여, 각 서비스 메서드에 반복해서 구현하는 것이 아닌, 별도의 Aspect로 관리하여 핵심로직을 공통으로 적용하기 위함이다.
+<br>
+<br>난수 생성 후 물고있기☑ <br>IP로 추적 <br><img alt="Pasted image 20241224144309.png" src="사진-및-문서/pasted-image-20241224144309.png" target="_self"><br>쿠키가 필요한 페이지의 경로가 기본 path와 일치하는 경우(redirect url 이 SP_MARKETING_HIT_TEST1 의 하위 url일 경우)<br>
+에는 명시적으로 표시할 필요가 없지만,<br>AOP에서 Front-end 단의 특정 동작 필터링 하기<br><img alt="Pasted image 20241226111559.png" src="사진-및-문서/pasted-image-20241226111559.png" target="_self"><br>
+<br>장점: <br>코드가 간결하고 읽기 쉽다.
+<br>Spring의 AOP 인프라를 사용하여 메서드 인터셉션을 쉽게 구현할 수 있다. <br>단점:
+- 포인트컷 조건은 컴파일 시점에 고정된다.
+- 복잡한 조건이나 동적으로 변경되는 조건을 처리하기 어렵다. -&gt; @Pointcut 등의 조건에 부합하는 Bean객체를 컴파일 시점에 찾아내어 프록시를 감싼다.
+<br>
+<br>동적 생성: <br>런타임에 프록시를 생성하여 포인트컷과 어드바이스를 동적으로 적용.
+<br>StaticMethodMatcherPointcut 또는 DynamicMethodMatcherPointcut을 사용하여 런타임 조건 기반으로 메서드 매칭. <br>장점: <br>런타임 조건에 따라 동적으로 포인트컷 생성 가능.
+<br>복잡한 조건과 동적 필터링을 처리하기 용이.
+<br>Spring AOP가 아닌 순수 Java 프록시 방식도 지원. <br>단점: <br>코드가 복잡해지고 추가 구현이 필요.
+<br>Spring AOP와 동일한 수준의 간결성을 제공하지 않음. <br>-&gt; 해당 프록시 객체를 적용하고 싶은 Bean객체에 매번 생성(등록)해주어야 함.<br>import org.springframework.aop.Pointcut;
+import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator;
+import org.springframework.aop.support.DefaultPointcutAdvisor;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory;
-import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.data.redis.core.StringRedisTemplate;
-import org.springframework.data.redis.serializer.StringRedisSerializer; @Configuration
-public class RedisConfig { @Value("${spring.redis.host}") private String host; @Value("${spring.redis.port}") private int port; @Bean public LettuceConnectionFactory redisConnectionFactory() { return new LettuceConnectionFactory(host, port); } @Bean public RedisTemplate&lt;String, Object&gt; redisTemplate() { RedisTemplate&lt;String, Object&gt; redisTemplate = new RedisTemplate&lt;&gt;(); redisTemplate.setKeySerializer(new StringRedisSerializer()); redisTemplate.setValueSerializer(new StringRedisSerializer()); redisTemplate.setConnectionFactory(redisConnectionFactory()); return redisTemplate; } @Bean public StringRedisTemplate stringRedisTemplate() { final StringRedisTemplate stringRedisTemplate = new StringRedisTemplate(); stringRedisTemplate.setKeySerializer(new StringRedisSerializer()); stringRedisTemplate.setValueSerializer(new StringRedisSerializer()); stringRedisTemplate.setConnectionFactory(redisConnectionFactory()); return stringRedisTemplate; }
-}
-<br><img alt="Pasted image 20250221114621.png" src="사진-및-문서/pasted-image-20250221114621.png" target="_self"><br>import lombok.AllArgsConstructor; import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.redis.core.RedisHash;
-import org.springframework.data.redis.core.index.Indexed; import java.time.LocalDateTime; @Getter
-@RedisHash(value = "resultHistory", timeToLive = 3600) // Redis Repository 사용을 위한
-@AllArgsConstructor
-@NoArgsConstructor
-public class ResultHistory { @Id private String id; @Indexed // 필드 값으로 데이터를 찾을 수 있도록 설정 (findByAccessToken) private String ip; private String originalText; private String translatedText; @Indexed private LocalDateTime createDateTime; @Builder public ResultHistory(String ip, String originalText, String translatedText, LocalDateTime createDateTime) { this.ip = ip; this.originalText = originalText; this.translatedText = translatedText; this.createDateTime = createDateTime; }
-}
-<br><img alt="Pasted image 20250221114628.png" src="사진-및-문서/pasted-image-20250221114628.png" target="_self"><br>import com.teamTS.funfun.model.ResultHistory;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository; import java.util.List;
-import java.util.Optional; @Repository
-public interface ResultRedisRepository extends JpaRepository&lt;ResultHistory, String&gt; { Optional&lt;List&lt;ResultHistory&gt;&gt; findByIpOrderByCreateDateTimeAsc(String ip);
-}
-<br><img alt="Pasted image 20250221114633.png" src="사진-및-문서/pasted-image-20250221114633.png" target="_self"><br> @GetMapping("/hello") public String HelloWorld(Model model) { redisConnectionTest(); List&lt;TestModel&gt; tm = testRepository.getTestData(); model.addAttribute("data", tm.get(0).getTitle()); return "home/homeView"; } void redisConnectionTest() { final String key = "a"; final String data = "1"; final ValueOperations&lt;String, String&gt; valueOperations = redisTemplate.opsForValue(); valueOperations.set(key, data); final String s = valueOperations.get(key); } }
-<br><img alt="Pasted image 20250221114638.png" src="사진-및-문서/pasted-image-20250221114638.png" target="_self"><br>Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-<br>원인은 기존 MapperRepository와 Redis용 JpaRepository에서<br>@Repository
-<br>해당 어노테이션을 사용하여 충돌한듯 하다.<br>
-이럴때는<br>spring.main.allow-bean-definition-overriding=true
-<br>한 줄을 추가하여 준다.<br><img alt="Pasted image 20250221114644.png" src="사진-및-문서/pasted-image-20250221114644.png" target="_self"><br>성공적인 실행.<br><img alt="Pasted image 20250221114648.png" src="사진-및-문서/pasted-image-20250221114648.png" target="_self"><br>&nbsp;이후 ' keys * ' 명령어를 사용하여 데이터가 정상적으로 추가된 것을 확인할 수 있다.<br>]]></description><link>tools/docker/📘-springboot-&amp;-docker-+-reids-연동.html</link><guid isPermaLink="false">Tools/docker/📘 SpringBoot &amp; Docker + Reids 연동.md</guid><pubDate>Fri, 21 Feb 2025 04:50:17 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250221114306.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20250221114306.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[💻 프로젝트]]></title><description><![CDATA[<a class="tag" href="?query=tag:프로젝트" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#프로젝트</a> <a class="tag" href="?query=tag:모음" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#모음</a> <br> <a href=".?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href=".?query=tag:모음" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#모음">#모음</a><br>프로젝트
+import org.springframework.context.annotation.Configuration; @Configuration
+public class AopConfig { @Bean public Pointcut customPointcut() { return new CustomPointcut(); } @Bean public CustomAdvice customAdvice() { return new CustomAdvice(); } @Bean public DefaultPointcutAdvisor customAdvisor(Pointcut customPointcut, CustomAdvice customAdvice) { return new DefaultPointcutAdvisor(customPointcut, customAdvice); } @Bean public DefaultAdvisorAutoProxyCreator proxyCreator() { return new DefaultAdvisorAutoProxyCreator(); }
+} <br>
+<br>@Pointcut 방식과 동일한 동작: <br>Spring 컨테이너가 관리하는 모든 빈에 대해 조건을 평가하고 프록시를 자동 생성합니다. <br>프록시를 명시적으로 선언할 필요 없음: <br>ProxyFactory처럼 수동으로 프록시를 생성하지 않아도 됩니다. <br>유연성과 효율성 향상: <br>Spring AOP 인프라를 활용하므로, 관리가 용이하고 런타임 성능이 개선됩니다. <br>
+<br>BeanPostProcessor: <br>DefaultAdvisorAutoProxyCreator는 Spring의 BeanPostProcessor를 구현한 클래스이다.
+<br>Spring 컨테이너는 애플리케이션 컨텍스트에 등록된 모든 BeanPostProcessor를 자동으로 호출하여 빈의 초기화 전후 작업을 수행한다.
+<br>이를 통해, Spring AOP는 빈 생성 단계에서 프록시를 생성하고 조건에 맞는 빈에 대해 어드바이저를 적용. <br>Advisor 탐색: <br>DefaultAdvisorAutoProxyCreator는 Spring 컨텍스트에 등록된 모든 Advisor를 자동으로 탐색한다.
+<br>이는 DefaultAdvisorAutoProxyCreator가 BeanFactory를 통해 컨테이너의 모든 Advisor 타입 빈을 조회하기 때문.
+<br>탐색된 Advisor를 사용하여 각 빈의 메서드와 포인트컷 조건을 매칭. <br>Advisor와 빈의 매칭: <br>빈이 생성될 때, DefaultAdvisorAutoProxyCreator는 해당 빈의 메서드가 어떤 Advisor의 포인트컷 조건에 부합하는지 평가.
+<br>조건에 부합하면, 해당 빈을 프록시 객체로 감싸고, 어드바이스를 연결. <br>위 방법의 문제점? <br>
+<br>이렇게 맵핑이 되어야 하나, 이를 동적으로 탐지하지 못한다.
+<br>/* * EnableAspectJAutoProxy &gt; 프록시 적용시 인터페이스/클래스 여부 자동 판단 * 클래스에 인터페이스가 있으면 JDK 동적 프록시. * 인터페이스가 없으면 CGLIB 프록시. * */@Configuration @EnableAspectJAutoProxy public class AopConfig { @Bean public Pointcut customPointcut() { return new CustomPointcut(); } @Bean public CustomAdvice customAdvice() { return new CustomAdvice(); } @Bean public DefaultPointcutAdvisor customAdvisor(Pointcut customPointcut, CustomAdvice customAdvice) { return new DefaultPointcutAdvisor(customPointcut, customAdvice); } /* * @EnableAspectJAutoProxy를 사용해 등록했기 때문에 불필요. * */ // @Bean // public DefaultAdvisorAutoProxyCreator proxyCreator() { // return new DefaultAdvisorAutoProxyCreator(); // } }
+<br>프록시(Proxy)는 대리자라는 뜻으로, 다른 객체에 대한 인터페이스 역할을 하는 객체를 말합니다. 프로그래밍에서 프록시는 실제 객체에 접근하기 전에 특정 작업(로깅, 보안, 트랜잭션 관리 등)을 수행하거나, 객체에 대한 접근을 제어하는 데 사용됩니다.<br>
+<br>대리 객체: 프록시는 실제 객체에 대한 중간다리 역할을 합니다.
+<br>동작 조정: 프록시는 요청을 가로채서 추가적인 작업을 수행하거나, 요청을 변형한 뒤 실제 객체에 전달할 수 있습니다.
+<br>AOP와 연관: 프록시를 사용하면 코드를 변경하지 않고도 객체의 동작을 확장하거나 변경할 수 있습니다.
+<br>Method Name: loanerLoginPage<br>
+javax.servlet.http.HttpServletRequest<br>
+org.springframework.web.bind.annotation.GetMapping <br><img alt="Pasted image 20241226152219.png" src="사진-및-문서/pasted-image-20241226152219.png" target="_self"><br><img alt="Pasted image 20241226171158.png" src="사진-및-문서/pasted-image-20241226171158.png" target="_self"><br>
+<br>외부링크 최초진입. hitCode, hitUid 발급 및 DB저장
+<br>
+<br>외부링크 재진입. hitCode는 변경될 수 있으므로 "p"파라미터로 재발급<br>
+=&gt; hitCode는 매번 재발급 / hitUid는 없을때만 발급
+<br>
+<br>일반사용자 이며, 아무동작 하지 않는다.
+<br>
+<br>외부링크 진입 후 동작. 없는 녀석 새로 발급 및 DB저장
+<br>서비스 저장시 동시성 이슈가 발생할 수 있다?<br>@Override @Transactional public ResponseModel insertMarketingHitLog(String hitCode, String hitUid, String pageUrl, String pageType){ try { Optional&lt;HfMarketingHitLog&gt; existingLog = hfMarketingHitLogRepository.findByHitCodeAndHitUidAndPageUrlAndPageType(hitCode, hitUid, pageUrl, pageType); if (existingLog.isPresent()) { HfMarketingHitLog logToUpdate = existingLog.get(); logToUpdate.setUpdateDate(LocalDateTime.now()); hfMarketingHitLogRepository.save(logToUpdate); return new ResponseModel(ResponseModel.ResponseStatus.SUCCESS); } HfMarketingHitLog hfMarketingHitLog = HfMarketingHitLog.builder() .hitCode(hitCode) .hitUid(hitUid) .pageUrl(pageUrl) .pageType(pageType) .build(); hfMarketingHitLogRepository.save(hfMarketingHitLog); return new ResponseModel(ResponseModel.ResponseStatus.SUCCESS); } catch (Exception e) { return new ResponseModel(ResponseModel.ResponseStatus.FAILED, "데이터 처리 중 오류 발생"); } }
+<br>
+<br>여러 쓰레드(또는 트랜잭션)가 findByHitCodeAndHitUidAndPageUrlAndPageType 메서드를 호출하여 동일한 조건의 데이터를 동시에 조회할 수 있다.
+<br>두 쓰레드가 모두 existingLog.isPresent() 조건에서 false를 확인한 후, 동시에 새로운 HfMarketingHitLog 객체를 생성하고 저장하려 하면 데이터 중복 문제가 발생할 수 있다.
+<br>. Lock을 쓰면 되나, 이후 업데이트 로직 삭제(로그 테이블화) 변경으로 처리<br><img alt="Pasted image 20241230135801.png" src="사진-및-문서/pasted-image-20241230135801.png" target="_self"><br>1일의 유효기간을 갖는 uid를 발급하여, 인입코드 / Hit된 기능 주소 / 시간 을 저장한다.
+<br>uid는 외부url로 접근시 발급
+<br>page_url는 코드에 미리 등록 / hit_code는 모두(only 영문+숫자) 수용 가능
+<br><img alt="Pasted image 20250102160213.png" src="사진-및-문서/pasted-image-20250102160213.png" target="_self"><br>
+<img alt="Pasted image 20250102160223.png" src="사진-및-문서/pasted-image-20250102160223.png" target="_self"><br>
+<br>enum객체에 정의된 메서드를 DB로 전환하여 pointcut에서 해당 클래스, 메서드를 가져와 조건으로 정의
+<br>해당 조건에 부합하는 메서드를 프록시로 전환
+<br>
+<br>api호출을 통해 advice내의 동작은 런타임 환경에서 동적으로 변경이 가능한 것을 확인했다.
+<br>
+<br>런타입 위빙 방식이라고 하더라도, 변경은 불가능하다.
+<br>컴파일 위빙 방식은 컴파일 단계에서 원본 클래스 바이트코드를 변경하여 직접 위빙을 하는 방식이고,<br>
+런타임 위빙은 런타임단계에서 원본 클래스를 변경하지 않고 프록시 객체를 사용하여 교체하는 방식이다.
+<br>=&gt; 해당하는 부분은 리빌드와 큰 차이가 없고, 각 class에 scope를 따로 적용해야했기 때문에 고려하지 않았다.<br>=&gt; 연관성 있는 모든 참조를 수동으로 재설정해야하기 때문에 매우 복잡해진다.<br>
+<br>참조를 갱신하기 위해서는 Java리플렉션을 사용하여 강제로 참조를 갱신하거나, AspectJ의 런타임 위빙 방식을 활용해야 한다.
+<br>따라서, 서버 Kill을 하는 것과 진배 없다.
+<br>[부록]<br>
+<a data-href="👩‍👧‍👦 유입 통계 ADMIN용 테이블 설계 과정" href="project/hello-marketing/👩‍👧‍👦-유입-통계-admin용-테이블-설계-과정.html" class="internal-link" target="_self" rel="noopener nofollow">👩‍👧‍👦 유입 통계 ADMIN용 테이블 설계 과정</a>]]></description><link>project/hello-marketing/👩‍👧‍👦-유입-통계-app_spring-aop에-관하여.html</link><guid isPermaLink="false">project/hello marketing/👩‍👧‍👦 유입 통계 APP_SPRING AOP에 관하여.md</guid><pubDate>Fri, 21 Feb 2025 05:13:01 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20241224144309.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20241224144309.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[💻 프로젝트]]></title><description><![CDATA[<a class="tag" href="?query=tag:프로젝트" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#프로젝트</a> <a class="tag" href="?query=tag:모음" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#모음</a> <br> <a href=".?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href=".?query=tag:모음" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#모음">#모음</a><br>프로젝트
 public하게 공개할 수 있는 프로젝트의 제작 과정입니다.
 <br>
 <br><a data-href="👻 Obsidian 정적호스팅 CICD 과정" href="project/note-ci_cd/👻-obsidian-정적호스팅-cicd-과정.html" class="internal-link" target="_self" rel="noopener nofollow">👻 Obsidian 정적호스팅 CICD 과정</a>
@@ -130,62 +264,12 @@ public하게 공개할 수 있는 프로젝트의 제작 과정입니다.
 <br><a data-href="🏹 Spring Batch 트러블 슈팅 부록" href="project/hello-batch/🏹-spring-batch-트러블-슈팅-부록.html" class="internal-link" target="_self" rel="noopener nofollow">🏹 Spring Batch 트러블 슈팅 부록</a>
 <br><a data-href="🏹 Spring Batch 구조 드로잉" href="project/hello-batch/🏹-spring-batch-구조-드로잉.html" class="internal-link" target="_self" rel="noopener nofollow">🏹 Spring Batch 구조 드로잉</a>
 <br>
-<br><a data-href="👩‍👧‍👦 유입 통계 APP__SPRING AOP에 관하여" href="project/hello-marketing/👩‍👧‍👦-유입-통계-app__spring-aop에-관하여.html" class="internal-link" target="_self" rel="noopener nofollow">👩‍👧‍👦 유입 통계 APP__SPRING AOP에 관하여</a>
+<br><a data-href="👩‍👧‍👦 유입 통계 APP_SPRING AOP에 관하여" href="project/hello-marketing/👩‍👧‍👦-유입-통계-app_spring-aop에-관하여.html" class="internal-link" target="_self" rel="noopener nofollow">👩‍👧‍👦 유입 통계 APP_SPRING AOP에 관하여</a>
 <br><a data-href="👩‍👧‍👦 유입 통계 ADMIN용 테이블 설계 과정" href="project/hello-marketing/👩‍👧‍👦-유입-통계-admin용-테이블-설계-과정.html" class="internal-link" target="_self" rel="noopener nofollow">👩‍👧‍👦 유입 통계 ADMIN용 테이블 설계 과정</a>
 <br>
 <br><a data-href="📘 SpringBoot &amp; Docker + Reids 연동" href="tools/docker/📘-springboot-&amp;-docker-+-reids-연동.html" class="internal-link" target="_self" rel="noopener nofollow">📘 SpringBoot &amp; Docker + Reids 연동</a>
-<br><a data-href="🌥 aws(EC2)셋팅부터 배포까지" href="tools/aws/🌥-aws(ec2)셋팅부터-배포까지.html" class="internal-link" target="_self" rel="noopener nofollow">🌥 aws(EC2)셋팅부터 배포까지</a>]]></description><link>project/💻-프로젝트.html</link><guid isPermaLink="false">project/💻 프로젝트.md</guid><pubDate>Fri, 21 Feb 2025 04:33:04 GMT</pubDate></item><item><title><![CDATA[🍊 aws EC2란]]></title><description><![CDATA[<a class="tag" href="?query=tag:Tools" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Tools</a> <a class="tag" href="?query=tag:AWS" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#AWS</a> <a class="tag" href="?query=tag:Amazon" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Amazon</a> <a class="tag" href="?query=tag:Cloud" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Cloud</a> <br> <a href=".?query=tag:Tools" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Tools">#Tools</a> <a href=".?query=tag:AWS" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#AWS">#AWS</a> <a href=".?query=tag:Amazon" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Amazon">#Amazon</a> <a href=".?query=tag:Cloud" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Cloud">#Cloud</a><br><img alt="Pasted image 20250221114152.png" src="사진-및-문서/pasted-image-20250221114152.png" target="_self"><br>
-AWS의 EC2는 무엇이며, 왜 사용하는가? 에 대해 알아보겠다.<br>
-<br>
-Amazon Elastic Compute Cloud으로써 AWS에서 제공하는 클라우드 컴퓨팅 서비스이다.<br>
-즉, 독립괸 컴퓨터를 임대해주는 aws의 대표적인 서비스상품 이다. <br>
-클라우드 컴퓨팅 서비스로 컴퓨팅 요구사항의 변화에 따라 컴퓨팅 파워를 조정할 수 있다. <br>
-실제로 사용한 용량 만큼만 지불하여, 서비스 요금을 미리 선입금 할 필요가 없다. <br>
-Linux / Window 중 OS선택이 자유롭다. <br>
-머신러닝, 웹서버, 게임서버 등 다양한 용도에 최적화된 서버를 쉽게 구성 가능하다. <br>
-여러 aws서비스와 유기적인 연동이 가능하다. <br>
-<br>
-인스턴스란 aws클라우드에서 사용하는&nbsp;가상컴퓨터&nbsp;이다. <br>
-cpu, 메모리, 그래픽카드 등 연산을 위한 하드웨어 부분을 담당한다. <br>
-aws는 각 사용 사례에 맞게 최적화된 다양한 인스턴스 유형을 제공한다. <br>-&nbsp;한정된 요금으로&nbsp;유형(사용목적)을 정하고,&nbsp;사이즈를 골라, 각 인스턴스별 사용 목적에 따라 최적화 시킨다.<br>
-<img alt="Pasted image 20250221114208.png" src="사진-및-문서/pasted-image-20250221114208.png" target="_self"><br>
-<br>
-인스턴스가 연산(cpu, 메모리 등) 처리를 담당한다면, EBS는&nbsp;데이터를 저장하는&nbsp;역할을 한다. <br>
-즉, 클라우드에서 사용하는 가상 HDD이다. <br>
-손쉽게 사용량을 많게, 혹은 적게 확장할 수 있으며, 빌린 부분에 대한 부분만 저렴하게 비용을 지불 할 수 있다. <br>
-총 5가지 타입을 제공하는데, 다음과 같다.<br>
-<img alt="Pasted image 20250221114220.png" src="사진-및-문서/pasted-image-20250221114220.png" target="_self"> <br>
-<br>
-AMI는 인스턴스를 실행하기 위한 정보를 모은 단위이다. <br>
-EC2를 실행하기 위해서, cpu프로세서 타입, 저장공간 용량, 32/64비트, OS정보, 설치된 소프트웨어 정보 등 <br>세팅정보(템플릿)을 저장한 단위 이다.<br>
-즉, 서버에 필요한 운영체제와 다양한 소프트웨어로 구성된 탬플릿 <br>
-AMI를 사용하여&nbsp;현재 상태의 EC2셋팅(템플릿)을 복제하여 다른 계정이나, 다른 리전에 전달이 가능하다. <br>
-<br>위의 이유들로 생각할 수 있는&nbsp;장점들!
-<br>. 클라우드에서 확장 가능한 컴퓨팅 용량을 제공하기 때문에, 하드웨어에 대한 투자를 앞당길 필요가 없기 때문에,<br>신속하게 개발하고 배포 할 수 있다!<br>. 컴퓨팅 요구가 변화했을 때,&nbsp;용량을 빠르게 확장/축소&nbsp;할 수 있다. 즉, 비용을 아낄 수 있다.<br>. 일반적인 실패 시나리오를 방지하고, 장애 복구 능력이 뛰어난 도구를 제공한다.<br>. 이렇게 유연한 구조/사이즈 변경이 가능한 호스팅 서비스와 더불어, 안정적인 환경을 제공하며,<br>본안성이 매우 높은 네트워킹 기능을 제공한다.<br>]]></description><link>tools/aws/🍊-aws-ec2란.html</link><guid isPermaLink="false">Tools/aws/🍊 aws EC2란.md</guid><pubDate>Fri, 21 Feb 2025 03:24:20 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250221114152.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20250221114152.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[🐋 docker]]></title><description><![CDATA[<a class="tag" href="?query=tag:Tools" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Tools</a> <a class="tag" href="?query=tag:도커" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#도커</a> <a class="tag" href="?query=tag:Docker" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Docker</a> <br> <a href=".?query=tag:Tools" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Tools">#Tools</a> <a href=".?query=tag:도커" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#도커">#도커</a> <a href=".?query=tag:Docker" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Docker">#Docker</a><br><img alt="Pasted image 20250221114743.png" src="사진-및-문서/pasted-image-20250221114743.png" target="_self"><br>...aws의 설명에 의하면<br>
-<br>애플리케이션을 신속하게 구축, 테스트 및 배포할 수 있는 소프트웨어 플랫폼이다.
-<br>소프트웨어를&nbsp;컨테이너&nbsp;라는 표준화된 유닛으로 패키징하여 관리한다.<br>
-2-1. 컨테이너에는 라이브러리, 시스템 도구, 코드, 런타임 등 소프트웨어를 실행하는 데 필요한 모든것이 포함되어 있다.
-<br>Docker는 AWS와 협업하여 다양한 규모에서 안정적이고 저렴하게 애플리케이션을 구축, 제공할 수 있게 한다.
-<br>
-<br>코드, 런타임, 시스템도구 등등등 소프트웨어를 실행하는 데 필요한 모든 것을 포함하는 독립 실행형 실행 가능 패키지 이다.
-<br>다른컨테이너나 호스트 시스템을 방해하지 않고, Docker runtime을 사용하여 모든 호스트에서 실행할 수 있는 소프트웨어의 격리된 단위로 설계되어있다.
-<br>
-<br>별도의 하드웨어 에뮬레이션 없이 리눅스 커널을 공유해 컨테이너를 실행한다.
-<br>
-<br>하드웨어 에뮬레이션이 없어서 매우 빠르다. 또한 하나의 머신에서 프로세스만큼 많이 실행하는 것이 가능하다.
-<br>
-<br>컨테이너는 호스트의 환경이 아닌 독자적인 실행환경을 갖고 있다.
-<br>이 환경은 파일(Dockerfile)들로 구성되며, 공유될 수 있다.
-<br>
-<br>모든 이미지에는 계층이 있으며, 현재의 이미지가 적절하지 않은 경우 이전 버전으로 롤백이 가능하다.
-<br>CI/CD를 수행하는 데 도움을 준다.
-<br>
-<br>
-서버를 처음 설정할때, OS, 라이브러리, 컴파일러 등 많은 설정이 필요하고, 버전으 변경되고 업데이트 될 때 마다 다시 재설정이 필요하다. <br>
-하지만, 이러한 설정 등을 도커 컨테이너 위에서 진행한다면, 호스트 OS에 아무런 영향을 주지 않는다.<br>
-즉, 로컬 환경의 간섭 없이 독립적으로 구동된다! <br>
-또한 다른 서버로 이사를 가는 상황에서 이미지만을 가져와 새로운 서버에 컨테이너를 만들어 쉽게 동일한 환경을 구성할 수 있다. <br>
-<br>마이크로 서비스 구조로, 애플리케이션이 독립적인 구성 요소로 구축되어 각 애플리케이션 프로세스가 서비스로 실행된다.
-<br>
-<br>도커는 각 환경마다 쓸 수 있는 자원이 고정적으로 정해져 있지 않기 때문에, 유동적으로 자원을 할당하여 기존의 가상화 방식보다 훨씬 자원적, 성능적으로 뛰어나다
-<br>]]></description><link>tools/docker/🐋-docker.html</link><guid isPermaLink="false">Tools/docker/🐋 docker.md</guid><pubDate>Fri, 21 Feb 2025 03:23:57 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250221114743.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20250221114743.png"&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>
+<br><a data-href="🌥 aws(EC2)셋팅부터 배포까지" href="tools/aws/🌥-aws(ec2)셋팅부터-배포까지.html" class="internal-link" target="_self" rel="noopener nofollow">🌥 aws(EC2)셋팅부터 배포까지</a>]]></description><link>project/💻-프로젝트.html</link><guid isPermaLink="false">project/💻 프로젝트.md</guid><pubDate>Fri, 21 Feb 2025 05:10:56 GMT</pubDate></item><item><title><![CDATA[👩‍👧‍👦 유입 통계 ADMIN용 테이블 설계 과정]]></title><description><![CDATA[<a class="tag" href="?query=tag:프로젝트" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#프로젝트</a> <a class="tag" href="?query=tag:개발" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#개발</a> <a class="tag" href="?query=tag:SPRING" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SPRING</a> <a class="tag" href="?query=tag:AOP" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#AOP</a> <br> <a href=".?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href=".?query=tag:개발" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개발">#개발</a> <a href=".?query=tag:SPRING" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SPRING">#SPRING</a> <a href=".?query=tag:AOP" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#AOP">#AOP</a><br>hf_marketing_code<br>hf_marketing_target<br>hf_marketing_hit_log<br><img alt="Pasted image 20250102181842.png" src="사진-및-문서/pasted-image-20250102181842.png" target="_self"><br>=&gt; 해당형태로 컬럼을 고정시키고, 동적으로 유입 수 를 출력한다.<br>-&gt; 그 후 페이지에 뿌려주기<br>Date: 01-02
+Ad Type: 구글광고
+Total Inflow: 4
+Total Hit: 27
+Detail Information: Page Name: 대출하기 페이지 Hit: 9 Page Name: 한도조회 버튼 Hit: 12 Page Name: 이용안내 페이지 Hit: 6]]></description><link>project/hello-marketing/👩‍👧‍👦-유입-통계-admin용-테이블-설계-과정.html</link><guid isPermaLink="false">project/hello marketing/👩‍👧‍👦 유입 통계 ADMIN용 테이블 설계 과정.md</guid><pubDate>Fri, 21 Feb 2025 05:10:56 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250102181842.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20250102181842.png"&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>

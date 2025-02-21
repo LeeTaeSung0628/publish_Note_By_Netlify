@@ -172,8 +172,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5cc2f7897ebd9692",
+  "active": "c915a28227e0f308",
   "lastOpenFiles": [
+    "study/dev-seminar/🥗-spring-security_토큰-세션-쿠키-jwt-에-대하여.html",
     "tools/🪓-도구.html",
     "project/hello-marketing/👩‍👧‍👦-유입-통계-app_spring-aop에-관하여.html",
     "lectur/1.-객체-지향-설계와-스프링.html",
@@ -194,7 +195,6 @@
     "tools/docker",
     "tools/aws/🍊-aws-ec2란.html",
     "tools/aws/🌥-aws(ec2)셋팅부터-배포까지.html",
-    "tools/aws",
     "환영합니다!.md"
   ]
 }

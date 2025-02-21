@@ -1,275 +1,64 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[taesunglog]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib/media/favicon.png</url><title>taesunglog</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 21 Feb 2025 05:40:04 GMT</lastBuildDate><atom:link href="lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 21 Feb 2025 05:39:58 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[🏫 강의]]></title><description><![CDATA[<a class="tag" href="?query=tag:강의" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#강의</a> <a class="tag" href="?query=tag:모음" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#모음</a> <a class="tag" href="?query=tag:lectur" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#lectur</a> <br> <a href=".?query=tag:강의" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#강의">#강의</a> <a href=".?query=tag:모음" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#모음">#모음</a> <a href=".?query=tag:lectur" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#lectur">#lectur</a><br>강의
-강의를 수강하며, 정리한 내용 모음집 입니다.
-<br>정보
-inflearn - SpringCoreBasic.김영한 님의 강의 입니다.
-<br> <br> <br> <br> <br>]]></description><link>lectur/🏫-강의.html</link><guid isPermaLink="false">lectur/🏫 강의.md</guid><pubDate>Fri, 21 Feb 2025 05:39:29 GMT</pubDate></item><item><title><![CDATA[1. 객체 지향 설계와 스프링]]></title><description><![CDATA[<a class="tag" href="?query=tag:SpringCoreBasic" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SpringCoreBasic</a> <a class="tag" href="?query=tag:SPRING" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SPRING</a> <a class="tag" href="?query=tag:lectur" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#lectur</a> <a class="tag" href="?query=tag:강의" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#강의</a> <br> <a href=".?query=tag:SpringCoreBasic" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SpringCoreBasic">#SpringCoreBasic</a> <a href=".?query=tag:SPRING" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SPRING">#SPRING</a> <a href=".?query=tag:lectur" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#lectur">#lectur</a> <a href=".?query=tag:강의" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#강의">#강의</a><br>]]></description><link>lectur/1.-객체-지향-설계와-스프링.html</link><guid isPermaLink="false">lectur/1. 객체 지향 설계와 스프링.md</guid><pubDate>Fri, 21 Feb 2025 05:37:53 GMT</pubDate></item><item><title><![CDATA[🏠 taesung's Blog]]></title><description><![CDATA[<a class="tag" href="?query=tag:home" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#home</a> <a class="tag" href="?query=tag:index" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#index</a> <a class="tag" href="?query=tag:blog" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#blog</a> <a class="tag" href="?query=tag:공부" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#공부</a> <br> <a href=".?query=tag:home" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#home">#home</a> <a href=".?query=tag:index" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#index">#index</a> <a href=".?query=tag:blog" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#blog">#blog</a> <a href=".?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a><br><a data-tooltip-position="top" aria-label="https://github.com/LeeTaeSung0628" rel="noopener nofollow" class="external-link is-unresolved" href="https://github.com/LeeTaeSung0628" target="_self"><span alt="Pasted image 20250220144552.png" src="Pasted image 20250220144552.png" class="internal-embed media-embed image-embed is-loaded" style="width: 220px; max-width: 100%;"></span></a><img alt="Pasted image 20250220144552.png" src="사진-및-문서/pasted-image-20250220144552.png" style="width: 220px; max-width: 100%;" target="_self"><br>
-<a data-tooltip-position="top" aria-label="https://github.com/LeeTaeSung0628" rel="noopener nofollow" class="external-link is-unresolved" href="https://github.com/LeeTaeSung0628" target="_self"><font color="#ffffff"></font></a>🔗git Hub 이동<br><a data-tooltip-position="top" aria-label="https://git.io/typing-svg" rel="noopener nofollow" class="external-link is-unresolved" href="https://git.io/typing-svg" target="_self"></a><img alt="Typing SVG" src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;pause=1000&amp;color=36A9F7&amp;random=false&amp;width=435&amp;lines=%EC%97%AC%EA%B8%B0%EB%8A%94+%EA%B3%B5%EB%B6%80%ED%95%98%EA%B3%A0%2C+%EA%B8%B0%EB%A1%9D%ED%95%98%EB%8A%94+%EA%B3%B3%EC%9E%85%EB%8B%88%EB%8B%A4" referrerpolicy="no-referrer" target="_self" class="is-unresolved"><br> <br> <br> <br> <br> <br> <br> <br> <br> <br>Soon <br>깃 레포에서도 블로그 주소로 이어질 수 있도록 Readme 설정하기. <br>리드미 또한 옵시디언에서 작업이 가능하다. <br>Netlify 셋팅 추가하기]]></description><link>index.html</link><guid isPermaLink="false">index.md</guid><pubDate>Fri, 21 Feb 2025 05:25:16 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250220144552.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20250220144552.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[🪓 도구]]></title><description><![CDATA[<a class="tag" href="?query=tag:Tools" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Tools</a> <a class="tag" href="?query=tag:모음" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#모음</a> <a class="tag" href="?query=tag:도구" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#도구</a> <br> <a href=".?query=tag:Tools" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Tools">#Tools</a> <a href=".?query=tag:모음" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#모음">#모음</a> <a href=".?query=tag:도구" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#도구">#도구</a><br>툴 모음
-제가 사용하고 있는 편리/유용한 TOOL을 소개하고 설명하는 곳 입니다.
-<br>
-<br><a data-href="🍊 aws EC2란" href="tools/aws/🍊-aws-ec2란.html" class="internal-link" target="_self" rel="noopener nofollow">🍊 aws EC2란</a>
-<br><a data-href="🌥 aws(EC2)셋팅부터 배포까지" href="tools/aws/🌥-aws(ec2)셋팅부터-배포까지.html" class="internal-link" target="_self" rel="noopener nofollow">🌥 aws(EC2)셋팅부터 배포까지</a>
-<br>
-<br><a data-href="🐋 docker" href="tools/docker/🐋-docker.html" class="internal-link" target="_self" rel="noopener nofollow">🐋 docker</a>
-<br><a data-href="📘 SpringBoot &amp; Docker + Reids 연동" href="tools/docker/📘-springboot-&amp;-docker-+-reids-연동.html" class="internal-link" target="_self" rel="noopener nofollow">📘 SpringBoot &amp; Docker + Reids 연동</a>
-<br>
-<br><a data-href="🎵 Obsidian" href="tools/🎵-obsidian.html" class="internal-link" target="_self" rel="noopener nofollow">🎵 Obsidian</a>
-<br>
-<br>🩹추가예정!!]]></description><link>tools/🪓-도구.html</link><guid isPermaLink="false">Tools/🪓 도구.md</guid><pubDate>Fri, 21 Feb 2025 05:22:40 GMT</pubDate></item><item><title><![CDATA[🏹 Spring Batch 트러블 슈팅]]></title><description><![CDATA[<a class="tag" href="?query=tag:프로젝트" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#프로젝트</a> <a class="tag" href="?query=tag:개발" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#개발</a> <a class="tag" href="?query=tag:SPRING" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SPRING</a> <a class="tag" href="?query=tag:Batch" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Batch</a> <a class="tag" href="?query=tag:Partitioning" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Partitioning</a> <a class="tag" href="?query=tag:Chunk" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Chunk</a> <br> <a href=".?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href=".?query=tag:개발" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개발">#개발</a> <a href=".?query=tag:SPRING" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SPRING">#SPRING</a> <a href=".?query=tag:Batch" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Batch">#Batch</a> <a href=".?query=tag:Partitioning" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Partitioning">#Partitioning</a> <a href=".?query=tag:Chunk" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Chunk">#Chunk</a><br>기존 예치금 차액비교 Batch의 Tasklet방식의 배치의 단점을 보완하는 chunk 방식의 배치를 구현하고,<br>
-나아가 다른 기능의 Batch에도 효과적으로 빠르게 적용할 수 있는재사용성/유지보수성 높은 코드, 선례를 만들기 위함이다.<br>
-<br>Chunk, Partioning방식을 Job을 추가 개발 (기존 balanceJob 유지)
-<br>당분간 두 Job을 병행하면서 비교
-<br>추가한 Job 기능에 문제없다면 기존 balanceJob 삭제
-<br><img alt="회사 은행 서비스1111.png" src="사진-및-문서/회사-은행-서비스1111.png" target="_self"><br>
-<img alt="Spring Batch Tasklet 예치금 잔액 비교 1.png" src="사진-및-문서/spring-batch-tasklet-예치금-잔액-비교-1.png" target="_self"><br>
-<img alt="Spring Batch Tasklet 예치금 잔액 비교 잘못된 차액발생 인식 타임라인.png" src="사진-및-문서/spring-batch-tasklet-예치금-잔액-비교-잘못된-차액발생-인식-타임라인.png" target="_self"><br>
-<br>평균 소요시간: 약 17.35분
-<br>최대 소요시간: 22분
-<br>최소 소요시간: 12분<br>
-<img alt="output (1).png" src="사진-및-문서/output-(1).png" target="_self">
-<br>
-<br>처음 가져온 Point 배치 완료시 까지 계속 물고있다. -&gt; 한 트렌젝션의 범위가 넓다.
-<br>
-<br>G5-Point 등은 처음 7시 시점에 묶여있다. 회원별로 실데이터를 건건이 api(신한)를 호출하여 비교한다. 때문에, 7시 이후에 수정된데이터를 실시간으로 반영하지 못한다.
-<br>
-<br>목적 : batch의 step 레벨에서의 스레드 분리 ( 병렬처리 )
-<br>
-<br>독립적인 ExecutionContext가 주어져 상태를 안전하게 관리할 수 있다.
-<br>
-<br>목적 : 각 step내의 트렌젝션 단위 분리
-<br>Reader / Processor / writer 가 역할을 분담
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[taesunglog]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib/media/favicon.png</url><title>taesunglog</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 21 Feb 2025 08:52:13 GMT</lastBuildDate><atom:link href="lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 21 Feb 2025 08:52:11 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[🥗 Spring Security_토큰-세션-쿠키-JWT 에 대하여]]></title><description><![CDATA[<a class="tag" href="?query=tag:공부" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#공부</a> <a class="tag" href="?query=tag:Java" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Java</a> <a class="tag" href="?query=tag:SPRING" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SPRING</a> <a class="tag" href="?query=tag:Security" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Security</a> <a class="tag" href="?query=tag:Tokken" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Tokken</a> <a class="tag" href="?query=tag:Session" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Session</a> <a class="tag" href="?query=tag:Cookie" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Cookie</a> <br> <a href=".?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a> <a href=".?query=tag:Java" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Java">#Java</a> <a href=".?query=tag:SPRING" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SPRING">#SPRING</a> <a href=".?query=tag:Security" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Security">#Security</a> <a href=".?query=tag:Tokken" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Tokken">#Tokken</a> <a href=".?query=tag:Session" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Session">#Session</a> <a href=".?query=tag:Cookie" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Cookie">#Cookie</a><br>
+<br>Spring Security는 Spring 기반 애플리케이션에서 인증(Authentication)과 권한 부여(Authorization)를 제공하는 강력한 보안 프레임워크입니다.
+<br>다양한 보안 요구사항(예: HTTP 인증, OAuth2, JWT 등)을 처리할 수 있도록 확장 가능합니다.
 <br>
 <br>
-Partition 생성: <br>Partition 1 : ID 1 ~ 25 / 대기열1 : ID 101 ~ 125 / 대기열2 : ID 201 ~ 225
-<br>Partition 2 : ID 26 ~ 50 / 대기열 : ID 126 ~ 150 / 대기열2 : ID 226 ~ 250
-<br>Partition 3 : ID 51 ~ 75 / 대기열 : ID 151 ~ 175 / 대기열2 : -
-<br>Partition 4 : ID 76 ~ 100 / 대기열 : ID 176 ~ 200 / 대기열2 : - <br>
-각 Partition에서 Chunk 처리: <br>Partition 1: <br>Chunk 1: ID 1 ~ 10 → 커밋
-<br>Chunk 2: ID 11 ~ 20 → 커밋
-<br>Chunk 3: ID 21 ~ 25 → 커밋 <br>Partition 2: <br>Chunk 1: ID 26 ~ 35 → 커밋
-<br>Chunk 2: ID 36 ~ 45 → 커밋
-<br>Chunk 3: ID 46 ~ 50 → 커밋 <br>나머지 Partition도 동일 방식으로 처리. <br>
-병렬 실행: <br>스레드 풀 크기 = 4이므로 4개의 Partition이 동시에 실행됩니다.
-<br>Partition 처리 순서는 스레드 풀에서 처리되는 순서에 따라 다를 수 있음. <br>
-트랜잭션 관리: <br>각 Partition은 독립적인 트랜잭션을 가짐.
-<br>각 Chunk가 커밋될 때마다 트랜잭션이 종료됨. <br>
+인증(Authentication): <br>사용자가 애플리케이션에 접근하기 전에 신원을 확인.
+<br>일반적으로 사용자 이름과 비밀번호를 기반으로 인증. <br>
+권한 부여(Authorization): <br>인증된 사용자가 애플리케이션의 특정 리소스나 작업에 접근할 수 있는지 확인. <br>
+보안 필터: <br>요청과 응답을 처리하기 위한 필터 체인을 제공.
+<br>요청이 필터 체인을 통과하면 보안 정책이 적용됨. <br>
+확장성: <br>OAuth2, JWT, LDAP 등 다양한 인증 방식과 통합 가능. <br>
+<br>토큰(Token)은 인증 정보를 포함하는 문자열로, 클라이언트와 서버 간 인증 및 권한 부여를 간편화합니다.
+<br>사용자가 인증을 완료하면 서버가 토큰을 발급하고, 클라이언트는 이후 요청에 토큰을 포함하여 인증을 유지합니다.
 <br>
-Partition 생성: <br>Partition 1 : ID 1 ~ 25 / 대기열1 : ID 101 ~ 125 / 대기열2 : ID 201 ~ 225
-<br>Partition 2 : ID 26 ~ 50 / 대기열 : ID 126 ~ 150 / 대기열2 : ID 226 ~ 250
-<br>Partition 3 : ID 51 ~ 75 / 대기열 : ID 151 ~ 175 / 대기열2 : ID 251 ~ 275
-<br>Partition 4 : ID 76 ~ 100 / 대기열 : ID 176 ~ 200 / 대기열2 : ID 276 ~ 300
-<br>추가 스레드 풀 생성
-<br>Partition 5 : ID 300 ~ 325 / 대기열 : ID 326 ~ 350 / 대기열2 : ID 351 ~ 375
-<br>추가 스레드 풀 생성
-<br>Partition 6 : ID 376 ~ 400 / 대기열 : ID 401 ~ 425 / 대기열2 : ID 426 ~ 450 모든 대기열 소모 및 최대 스레드 풀 도달 =&gt; 작업 중단 및 오류 <br>-&gt; 이로볼때, 쿼리작업보다 api호출작업의 소요시간이 길어보임<br>범위 - 2017-11-07 ~ 2017-12-01
-startDate=2017-11-07&amp;endDate=2017-12-01
-<br>## 컬럼 개수 - 292개 기존 병렬처리 : 1분 7초
-기존로직 : 6분 32초 t:스레드 개수 / c:각 스레드별 청크 파티션 수 ###### SimpleAsyncTaskExecutor vs ThreadPoolTaskExecutor SimpleAsyncTaskExecutor
-g4/c10 : 1분 41.586초
-g5/c10 : 1분 30.037초
-g5/c3 : 1분 28.997초
-g5/c1 : 1분 29.931초
-g8/c10 : 1분 36.019초
-g10/c1 : 1분 24.529초 - ThreadPoolTaskExecutor
-Th min/maxSize64, g64/c10 : 1분 42.848초
-Th min/maxSize32, g32/c10 : 1분 26.551초 Th min/maxSize16, g16/c10 : 1분 46.753초 / 1분 33.779초 / 2분 25.759초
-1분 11.668초 / 2분 5.773초 / 2분 39.553초 Th min/maxSize32, g8/c20 : 3분 25.743초 Th min/maxSize16, g4/c10 : 2분 29.207초 / 2분 8.004초
 <br>
-<br>Grid사이즈(파티셔닝 갯수) 만큼 스레드 풀 계속 생성
-<br>파티셔닝 갯수가 많아졌을 때, 스레드 생성/소멸에 드는 오버헤드 증가
+무상태성: <br>토큰은 상태 정보를 포함하므로 서버가 세션을 유지할 필요 없음.
+<br>클라이언트가 모든 요청에 토큰을 포함하여 서버로 전송. <br>
+토큰 종류: <br>Bearer Token: 요청 헤더에 포함되어 인증.
+<br>Refresh Token: Access Token이 만료되었을 때 재발급에 사용. <br>
+<br>세션(Session)은 사용자가 서버에 접속한 동안 유지되는 상태 정보입니다.
+<br>서버는 클라이언트의 각 요청을 식별하기 위해 세션 ID를 생성하고, 이를 클라이언트에 제공.
 <br>
-<br>최소 스레드풀 개수 / 최대 스레드풀 개수 / 대기열 큐 크기 / 유휴 시간 모두 설정가능
-<br>파티셔닝 갯수가 많을 경우, 처리 성능에 맞는 스레드 풀에서 대기작업으로 처리하여 오버헤드 감소
+<br>사용자가 로그인하면 서버가 고유한 세션 ID를 생성.
+<br>세션 ID는 클라이언트의 쿠키에 저장.
+<br>이후 요청에서 클라이언트는 세션 ID를 포함하여 서버로 전송.
+<br>서버는 세션 저장소(Session Store)에 저장된 정보를 기반으로 클라이언트를 식별.
 <br>
-<br>총 처리량 기준 1/n로 각 스레드에 할당시 충분히 감당한 양으로, 대기열을 사용할 필요가 없다.
+<br>상태 유지: <br>서버는 클라이언트별로 상태 정보를 유지. <br>확장성 문제: <br>서버가 클라이언트별로 상태를 저장하므로 대규모 확장성이 떨어질 수 있음. <br>
+<br>쿠키(Cookie)는 클라이언트 브라우저에 저장되는 데이터 조각으로, 서버와 클라이언트 간 정보를 유지하기 위해 사용.
 <br>
-<br>쿼리 호출 및 페이징 기법 직접 구현
+<br>서버가 응답에 쿠키를 설정하면 클라이언트는 쿠키를 저장.
+<br>클라이언트는 이후 요청에 저장된 쿠키를 자동으로 서버에 포함.
+<br>서버는 쿠키를 기반으로 요청을 처리.
 <br>
-<br>Native Query 형태로 호출하여 자동 페이징
+<br>키-값 쌍: <br>쿠키는 key=value 형태로 저장. <br>보안 옵션: <br>HttpOnly: 자바스크립트를 통해 접근 불가.
+<br>Secure: HTTPS 요청에서만 전송. <br>유효 기간: <br>쿠키는 만료 시간이 지나면 자동 삭제. <br>
+<br>JWT는 JSON 형식으로 인코딩된 토큰으로, 클라이언트와 서버 간 인증 정보를 안전하게 전달하기 위해 사용.
+<br>무상태 인증 방식에서 많이 사용됨.
+<br>JWT는 세 부분으로 구성:<br>Header: <br>토큰 타입(JWT)과 알고리즘(HMAC, RSA 등) 정보를 포함.
+<br>예: {"alg": "HS256", "typ": "JWT"} <br>Payload: <br>토큰에 포함된 클레임(Claim) 정보를 포함.
+<br>예: {"sub": "user123", "role": "admin"} <br>Signature: <br>Header와 Payload를 비밀키로 서명하여 생성.
+<br>예: HMACSHA256(base64UrlEncode(header) + "." + base64UrlEncode(payload), secret) <br>
+<br>사용자가 로그인하면 서버가 JWT를 생성하여 클라이언트에 전달.
+<br>클라이언트는 이후 요청에서 JWT를 Authorization 헤더에 포함.
+<br>서버는 JWT를 검증하여 사용자를 인증.
 <br>
-<br>Spring Batch에서는 공식적으로 지원하지 않음
-<br>자동 페이징
-<br>Querydsl형태로 쿼리 호출 가능
+<br>자체 포함(Self-contained): <br>JWT는 인증 정보와 사용자 정보를 모두 포함. <br>무상태성: <br>서버는 JWT를 저장하지 않으므로 확장성이 뛰어남. <br>보안: <br>서명(Signature)을 통해 변조를 방지.
+<br>그러나 암호화되지 않은 Payload는 누구나 읽을 수 있음. <br>
+<br>상태 정보 저장 없음: <br>서버는 클라이언트의 상태 정보를 유지하지 않습니다.
+<br>즉, 서버는 이전 요청에 대한 정보를 기억하지 않고, 요청마다 필요한 인증 정보를 다시 받아야 합니다. <br>클라이언트 책임: <br>인증 정보(예: JWT 토큰)는 클라이언트가 관리합니다.
+<br>클라이언트는 매 요청마다 서버에 인증 정보를 제공해야 합니다. <br>확장성: <br>서버 간 상태 동기화가 필요 없으므로 수평 확장이 용이합니다.
+<br>로드 밸런싱을 사용하는 다중 서버 환경에서 적합. <br>
 <br>
-<br>기존(헬로)의 Querydsl기반 JPAQuery를 그대로 사용 가능
-<br>자동 페이징
-<br>그 외 Querydsl의 장점 보유
-<br>
-<br>기존 PagingItemReader의 메서드를 오버라이딩 하여 사용하며,<br>
-JPQL이 수행되던 부분에 코드를 수정하였다.
-<br>@Bean @Scope(value = "step", proxyMode = ScopedProxyMode.TARGET_CLASS) public QuerydslPagingItemReader&lt;HfbatBankBalanceCheckDto&gt; balanceReader() { ExecutionContext jobContext = Objects.requireNonNull(StepSynchronizationManager.getContext()).getStepExecution().getJobExecution().getExecutionContext(); Date startDate = (Date) jobContext.get(START_DATE_KEY); Date endDate = (Date) jobContext.get(END_DATE_KEY); return new QuerydslPagingItemReader&lt;&gt;( entityManagerFactory, executionOrder, DEFAULT_CHUNK_SIZE, queryFactory -&gt; repository.newFindChangeBalanceMemberList( startDate, endDate )); }
-<br>
-<br>각 파티션 스레드 별 종료 시간이 크게 상이하다. 총 소요시간 기준 최대 약 20% 차이
-<br>적용 한다면, 각 스레드 별로 even하게 작업을 수행하여 총 소요시간을 줄일 수 있을것이라 판단 <br>JOB private static AtomicLong executionOrder = new AtomicLong(0); ... new QuerydslPagingItemReader&lt;&gt;( entityManagerFactory, executionOrder, DEFAULT_CHUNK_SIZE, queryFactory -&gt; repository.newFindChangeBalanceMemberList( startDate, endDate ));
-<br>job 레벨에서의 스레드 세이프한 전역 변수를 생성하였다.
-<br>그 후, 각 파티션 별 리더에 인자값으로 넘긴다.
-<br>long currentExecutionOrder = executionOrder.getAndIncrement(); long startIndex = (currentExecutionOrder) * getPageSize(); int totalRecords = stepContext.getInt("totalRecords"); if (startIndex &gt;= totalRecords) { initResults(); // 빈 결과로 초기화 tx.commit(); return; } int chunkSizeToRead = Math.min(getPageSize(), (int) (totalRecords - startIndex)); // 남은 데이터 크기만큼 읽기 // QueryDSL Query 생성 JPQLQuery&lt;T&gt; query = createQuery() .offset(startIndex) .limit(chunkSizeToRead);
-<br>
-<br>먼저 한 청크단위의 작업을 끝낸 파티션은 그 다음 작업을 즉시 할당받게 된다.
-<br>즉, 총 처리시간 기준 가장 빨리끝난 파티션과 가장 늦게 끝난 파티션의 실행 시간 차이는 최대 한 청크사이즈를 처리하는 시간보다 크지 않게 된다.
-<br>1차 비교 이후 차액이 발생한 녀석들의 List 를 한번 더 검증한 후, =&gt; 추후 변경 됨<br>
-검증된 녀석들을 <br>List&lt;BalanceCheckResultDto&gt; realDiffList= new ArrayList&lt;&gt;();
-<br>최종적인 차액 리스트에 넣는다.<br>writer는 각 프로세서의 리턴으로 받은 녀석들을 하나의 DTO List로 합쳐 메세징 처리를 하게 된다.<br>
-<br>유지보수성이 좋다.
-<br>환경셋팅에 리소스가 많이든다. <br>
-<br>구현 레벨이 가장 쉽다
-<br>DTO(데이터)가 많아질 경우, 큰 리소스를 차지한다.
-<br>
-<br>방법 2.보다는 리소스가 적지만, 문자열 처리 시간이 추가로 소모된다.
-<br>
-<br>높은 쓰기 성능을 갖고있다.
-<br>동시성 문제 없이 다중 스레드에서 사용 가능하다.
-<br>인덱스로 접근이 불가능하다.
-<br>QueueManager클래스를 생성하며 공통으로 사용 가능하도록 하였고,<br>@Slf4j public class QueueManager&lt;T&gt; { protected final ConcurrentLinkedQueue&lt;T&gt; sharedQueue = new ConcurrentLinkedQueue&lt;&gt;(); // 데이터 추가 public void addItemToSharedQueue(T item) { if (item != null) { sharedQueue.add(item); } }
-<br>이를 상속받아 특정 오브젝트를 넘길 수 있도록 하였다.<br>public class BalanceQueue extends QueueManager&lt;BalanceCheckResultDto&gt;{ public List&lt;BalanceCheckResultDto&gt; getDtoFromQueue() { return super.getItemsFromQueue(); } }
-<br>이게 무슨소리인지? <br>보통의 Batch 서비스라면 I/O 작업에 부하가 걸려있겠지만, 현재 예치금 차액 배치는 processor 즉, 예치금 비교 연산에서 큰 리소스를 소모하고있다.
-<br>이에 해당하는 시간 소모를 줄이기 위해 processor(서비스로직) 을 병렬처리 함으로 최종 처리시간 단축을 꾀할 수 있을지에 대한 고민이다.
-<br>이후 설명하겠지만, 내부 병렬처리 로직은 청크의 트렌젝션을 무너뜨릴 가능성이 크므로 지양해야함. <br><img alt="Pasted image 20241206113120.png" src="사진-및-문서/pasted-image-20241206113120.png" target="_self"><br>소요시간 : 1분 9초
-<br>-&gt; 기존 limit절을 이용한 로직보다 속도가 더빠르며,<br>
-JpaPagingReader를 적용한다면 중복 select횟수를 줄여 더 빨라질 것으로 예상된다.<br>결론 : 둘 중 하나<br>#### 292 컬럼
-## Processor 삭제(병렬처리)로직
-#### grid-size:6 / chunk-size:20
-54679 ms
-54416 ms
-## Processor 순차처리(writer만 병렬처리) 로직 #### grid-size:6 / chunk-size:20
-60440 ms
-62271 ms
-#### grid-size:10 / chunk-size:20
-58129 ms
-56723 ms
-#### grid-size:16 / chunk-size:20
-58595 ms
-56314 ms #### grid-size:32 / chunk-size:20
-- SQLTransientConnectionException
-- 스레드풀 점유갯수 초과
-<br>하지만, 이후 청크 방식 Batch의 확장성과 유지보수성을 고려하여 리더,프로세서,라이터 방식으로 구현하기로 정했다.<br>청크사이즈가 다름에도 처리속도가 똑같은 이유?<br>grid-size:12 / chunk-size:30
--
-3분 22.856초
-3분 23.096초 grid-size:12 / chunk-size:20
--
-3분 23.546초
-3분 23.784초 grid-size:12 / chunk-size:10
--
-3분 24.243초
-3분 22.389초
-3분 24.667초
-3분 24.789초 grid-size:12 / chunk-size:5
--
-3분 24.953초
-3분 24.353초
-<br>
-<br>트렌젝션 분리가 되어있지 않았기 떄문에 청크사이즈를 아무리 잘게 쪼개도 시간이 같았던 것이다.
-<br>그럼 트렌젝션이 분리되지 않은 이유는?
-<br>dtoList.stream().parallel() .forEach(dto -&gt; {});
-<br>parallel문으로 내부 병렬처리로직을 구현했기 때문에, chunk의 트렌젝션에서 벗어나,<br>
-매 insert문 마다 커밋을 하였던 것이다.<br>반복 TEST 중.. 커넥션풀 Time Out 문제??<br>SHOW VARIABLES LIKE 'max_connections'; //최대 개수<br>
-SHOW STATUS LIKE 'Threads_connected'; //사용중인 개수<br><img alt="Pasted image 20241213102128.png" src="사진-및-문서/pasted-image-20241213102128.png" target="_self"><br>
-<br>배치를 완료한 이후에도 스레드 풀(히카리 풀)을 반환하지 않는지 확인
-<br><img alt="Pasted image 20241213102229.png" src="사진-및-문서/pasted-image-20241213102229.png" target="_self"><br>
-<br>Step이 마무리될때, 적어도 Job이 마무리 될때 entityManager를 클로즈 시키는것이 자명한데, 어째서 커넥션풀이 해제되지 않는가??
-<br><img alt="Pasted image 20241213143101.png" src="사진-및-문서/pasted-image-20241213143101.png" target="_self"><br><img alt="Pasted image 20241213143217.png" src="사진-및-문서/pasted-image-20241213143217.png" target="_self"><br><img alt="Pasted image 20241213103503.png" src="사진-및-문서/pasted-image-20241213103503.png" target="_self"><br><img alt="Pasted image 20241217150339.png" src="사진-및-문서/pasted-image-20241217150339.png" target="_self"><br>리스너에 너무 많은 역할이 부여된 모습
-<br><img alt="Pasted image 20241219145746.png" src="사진-및-문서/pasted-image-20241219145746.png" target="_self"><br>
-<br>StepExecution-Level ExecutionContext <br>
-각 Step에 고유한 ExecutionContext가 생성됩니다. <br>
-Step 내의 Reader, Processor, Writer 등에서 공유됩니다. <br>
-다른 Step과는 공유되지 않습니다. <br>
-balanceWorkerStep 내에서는 Reader, Processor, Writer가 동일한 ExecutionContext를 공유합니다. <br>
-balancePartitionStep과 balanceWorkerStep의 ExecutionContext는 서로 독립적입니다. <br>JobExecution-Level ExecutionContext <br>Job 전체에서 공유되며, 모든 Step이 동일한 ExecutionContext에 접근할 수 있습니다.
-<br>JobExecutionContext는 Step 간 데이터 전달이 필요할 때 유용합니다. <br>JobExecutionListener 객체 생성<br>@Slf4j public class JobTimerExecutionListener implements JobExecutionListener { private final String jobName; private long startTime = System.currentTimeMillis(); public JobTimerExecutionListener(String jobName) { this.jobName = jobName; } @Override public void beforeJob(JobExecution var1) { startTime = System.currentTimeMillis(); } @Override public void afterJob(JobExecution var1) { long endTime = System.currentTimeMillis(); long elapsedTime = endTime - startTime; long minutes = (elapsedTime / 1000) / 60; // 밀리초를 분으로 변환 double seconds = (elapsedTime / 1000.0) % 60; // 남은 밀리초를 초로 변환 (소수점 포함) log.info("{}-completed: {} ms | {} minutes {} seconds", jobName, elapsedTime, minutes, seconds); } }
-<br><img alt="output (9) 1.png" src="사진-및-문서/output-(9)-1.png" target="_self"><br><img alt="output (10).png" src="사진-및-문서/output-(10).png" target="_self"><br><img alt="do-messenger_screenshot_2024-12-23_14_40_21.png" src="사진-및-문서/do-messenger_screenshot_2024-12-23_14_40_21.png" target="_self"><br><img alt="Pasted image 20241224093159.png" src="사진-및-문서/pasted-image-20241224093159.png" target="_self"><br>
-<img alt="Pasted image 20241224093207.png" src="사진-및-문서/pasted-image-20241224093207.png" target="_self"><br>
-<img alt="Pasted image 20241224093225.png" src="사진-및-문서/pasted-image-20241224093225.png" target="_self"><br>🙇‍♂<a data-href="🏹 Spring Batch 트러블 슈팅 부록" href="project/hello-batch/🏹-spring-batch-트러블-슈팅-부록.html" class="internal-link" target="_self" rel="noopener nofollow">🏹 Spring Batch 트러블 슈팅 부록</a>]]></description><link>project/hello-batch/🏹-spring-batch-트러블-슈팅.html</link><guid isPermaLink="false">project/hello Batch/🏹 Spring Batch 트러블 슈팅.md</guid><pubDate>Fri, 21 Feb 2025 05:15:31 GMT</pubDate><enclosure url="사진-및-문서/회사-은행-서비스1111.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/회사-은행-서비스1111.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[👩‍👧‍👦 유입 통계 APP_<strong>SPRING AOP</strong>에 관하여]]></title><description><![CDATA[<a class="tag" href="?query=tag:프로젝트" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#프로젝트</a> <a class="tag" href="?query=tag:개발" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#개발</a> <a class="tag" href="?query=tag:DB" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DB</a> <a class="tag" href="?query=tag:SPRING" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SPRING</a> <a class="tag" href="?query=tag:AOP" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#AOP</a> <br> <a href=".?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href=".?query=tag:개발" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개발">#개발</a> <a href=".?query=tag:DB" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#DB">#DB</a> <a href=".?query=tag:SPRING" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SPRING">#SPRING</a> <a href=".?query=tag:AOP" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#AOP">#AOP</a> <br>Hello Service의 유입/동작 통계 모듈의 공통화 작업이다.
-Spring AOP를 사용하여 구성하였다.
-<br>
-<br>통계 필요 페이지 내에서(프론트), 쿠키 데이터 페이지 별 최초 진입 확인?
-<br>
-<br>해당 진입시점부터 특정 동작에 대한 모든 타임라인 로그
-<br>
-<br>레디스 가용 메모리에 대한 한계값 산정. -&gt; 아직 적용 X
-<br>
-<br>URL + 함수명 조합
-<br>=&gt; 메인 테이블<br>
-=&gt; 백로직에서 쿠키 데이터 쌓기<br>=&gt; 디테일 테이블 - 타임라인으로 관리 단, 메인테이블에 존재하는 내셕들에 대해서<br>
-=&gt; AOP에서 특정 서비스or메서드orURL로 지정하여 로그 쌀기<br>- 관심사(Aspect)를 분리하여, 각 서비스 메서드에 반복해서 구현하는 것이 아닌, 별도의 Aspect로 관리하여 핵심로직을 공통으로 적용하기 위함이다.
-<br>
-<br>난수 생성 후 물고있기☑ <br>IP로 추적 <br><img alt="Pasted image 20241224144309.png" src="사진-및-문서/pasted-image-20241224144309.png" target="_self"><br>쿠키가 필요한 페이지의 경로가 기본 path와 일치하는 경우(redirect url 이 SP_MARKETING_HIT_TEST1 의 하위 url일 경우)<br>
-에는 명시적으로 표시할 필요가 없지만,<br>AOP에서 Front-end 단의 특정 동작 필터링 하기<br><img alt="Pasted image 20241226111559.png" src="사진-및-문서/pasted-image-20241226111559.png" target="_self"><br>
-<br>장점: <br>코드가 간결하고 읽기 쉽다.
-<br>Spring의 AOP 인프라를 사용하여 메서드 인터셉션을 쉽게 구현할 수 있다. <br>단점:
-- 포인트컷 조건은 컴파일 시점에 고정된다.
-- 복잡한 조건이나 동적으로 변경되는 조건을 처리하기 어렵다. -&gt; @Pointcut 등의 조건에 부합하는 Bean객체를 컴파일 시점에 찾아내어 프록시를 감싼다.
-<br>
-<br>동적 생성: <br>런타임에 프록시를 생성하여 포인트컷과 어드바이스를 동적으로 적용.
-<br>StaticMethodMatcherPointcut 또는 DynamicMethodMatcherPointcut을 사용하여 런타임 조건 기반으로 메서드 매칭. <br>장점: <br>런타임 조건에 따라 동적으로 포인트컷 생성 가능.
-<br>복잡한 조건과 동적 필터링을 처리하기 용이.
-<br>Spring AOP가 아닌 순수 Java 프록시 방식도 지원. <br>단점: <br>코드가 복잡해지고 추가 구현이 필요.
-<br>Spring AOP와 동일한 수준의 간결성을 제공하지 않음. <br>-&gt; 해당 프록시 객체를 적용하고 싶은 Bean객체에 매번 생성(등록)해주어야 함.<br>import org.springframework.aop.Pointcut;
-import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator;
-import org.springframework.aop.support.DefaultPointcutAdvisor;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration; @Configuration
-public class AopConfig { @Bean public Pointcut customPointcut() { return new CustomPointcut(); } @Bean public CustomAdvice customAdvice() { return new CustomAdvice(); } @Bean public DefaultPointcutAdvisor customAdvisor(Pointcut customPointcut, CustomAdvice customAdvice) { return new DefaultPointcutAdvisor(customPointcut, customAdvice); } @Bean public DefaultAdvisorAutoProxyCreator proxyCreator() { return new DefaultAdvisorAutoProxyCreator(); }
-} <br>
-<br>@Pointcut 방식과 동일한 동작: <br>Spring 컨테이너가 관리하는 모든 빈에 대해 조건을 평가하고 프록시를 자동 생성합니다. <br>프록시를 명시적으로 선언할 필요 없음: <br>ProxyFactory처럼 수동으로 프록시를 생성하지 않아도 됩니다. <br>유연성과 효율성 향상: <br>Spring AOP 인프라를 활용하므로, 관리가 용이하고 런타임 성능이 개선됩니다. <br>
-<br>BeanPostProcessor: <br>DefaultAdvisorAutoProxyCreator는 Spring의 BeanPostProcessor를 구현한 클래스이다.
-<br>Spring 컨테이너는 애플리케이션 컨텍스트에 등록된 모든 BeanPostProcessor를 자동으로 호출하여 빈의 초기화 전후 작업을 수행한다.
-<br>이를 통해, Spring AOP는 빈 생성 단계에서 프록시를 생성하고 조건에 맞는 빈에 대해 어드바이저를 적용. <br>Advisor 탐색: <br>DefaultAdvisorAutoProxyCreator는 Spring 컨텍스트에 등록된 모든 Advisor를 자동으로 탐색한다.
-<br>이는 DefaultAdvisorAutoProxyCreator가 BeanFactory를 통해 컨테이너의 모든 Advisor 타입 빈을 조회하기 때문.
-<br>탐색된 Advisor를 사용하여 각 빈의 메서드와 포인트컷 조건을 매칭. <br>Advisor와 빈의 매칭: <br>빈이 생성될 때, DefaultAdvisorAutoProxyCreator는 해당 빈의 메서드가 어떤 Advisor의 포인트컷 조건에 부합하는지 평가.
-<br>조건에 부합하면, 해당 빈을 프록시 객체로 감싸고, 어드바이스를 연결. <br>위 방법의 문제점? <br>
-<br>이렇게 맵핑이 되어야 하나, 이를 동적으로 탐지하지 못한다.
-<br>/* * EnableAspectJAutoProxy &gt; 프록시 적용시 인터페이스/클래스 여부 자동 판단 * 클래스에 인터페이스가 있으면 JDK 동적 프록시. * 인터페이스가 없으면 CGLIB 프록시. * */@Configuration @EnableAspectJAutoProxy public class AopConfig { @Bean public Pointcut customPointcut() { return new CustomPointcut(); } @Bean public CustomAdvice customAdvice() { return new CustomAdvice(); } @Bean public DefaultPointcutAdvisor customAdvisor(Pointcut customPointcut, CustomAdvice customAdvice) { return new DefaultPointcutAdvisor(customPointcut, customAdvice); } /* * @EnableAspectJAutoProxy를 사용해 등록했기 때문에 불필요. * */ // @Bean // public DefaultAdvisorAutoProxyCreator proxyCreator() { // return new DefaultAdvisorAutoProxyCreator(); // } }
-<br>프록시(Proxy)는 대리자라는 뜻으로, 다른 객체에 대한 인터페이스 역할을 하는 객체를 말합니다. 프로그래밍에서 프록시는 실제 객체에 접근하기 전에 특정 작업(로깅, 보안, 트랜잭션 관리 등)을 수행하거나, 객체에 대한 접근을 제어하는 데 사용됩니다.<br>
-<br>대리 객체: 프록시는 실제 객체에 대한 중간다리 역할을 합니다.
-<br>동작 조정: 프록시는 요청을 가로채서 추가적인 작업을 수행하거나, 요청을 변형한 뒤 실제 객체에 전달할 수 있습니다.
-<br>AOP와 연관: 프록시를 사용하면 코드를 변경하지 않고도 객체의 동작을 확장하거나 변경할 수 있습니다.
-<br>Method Name: loanerLoginPage<br>
-javax.servlet.http.HttpServletRequest<br>
-org.springframework.web.bind.annotation.GetMapping <br><img alt="Pasted image 20241226152219.png" src="사진-및-문서/pasted-image-20241226152219.png" target="_self"><br><img alt="Pasted image 20241226171158.png" src="사진-및-문서/pasted-image-20241226171158.png" target="_self"><br>
-<br>외부링크 최초진입. hitCode, hitUid 발급 및 DB저장
-<br>
-<br>외부링크 재진입. hitCode는 변경될 수 있으므로 "p"파라미터로 재발급<br>
-=&gt; hitCode는 매번 재발급 / hitUid는 없을때만 발급
-<br>
-<br>일반사용자 이며, 아무동작 하지 않는다.
-<br>
-<br>외부링크 진입 후 동작. 없는 녀석 새로 발급 및 DB저장
-<br>서비스 저장시 동시성 이슈가 발생할 수 있다?<br>@Override @Transactional public ResponseModel insertMarketingHitLog(String hitCode, String hitUid, String pageUrl, String pageType){ try { Optional&lt;HfMarketingHitLog&gt; existingLog = hfMarketingHitLogRepository.findByHitCodeAndHitUidAndPageUrlAndPageType(hitCode, hitUid, pageUrl, pageType); if (existingLog.isPresent()) { HfMarketingHitLog logToUpdate = existingLog.get(); logToUpdate.setUpdateDate(LocalDateTime.now()); hfMarketingHitLogRepository.save(logToUpdate); return new ResponseModel(ResponseModel.ResponseStatus.SUCCESS); } HfMarketingHitLog hfMarketingHitLog = HfMarketingHitLog.builder() .hitCode(hitCode) .hitUid(hitUid) .pageUrl(pageUrl) .pageType(pageType) .build(); hfMarketingHitLogRepository.save(hfMarketingHitLog); return new ResponseModel(ResponseModel.ResponseStatus.SUCCESS); } catch (Exception e) { return new ResponseModel(ResponseModel.ResponseStatus.FAILED, "데이터 처리 중 오류 발생"); } }
-<br>
-<br>여러 쓰레드(또는 트랜잭션)가 findByHitCodeAndHitUidAndPageUrlAndPageType 메서드를 호출하여 동일한 조건의 데이터를 동시에 조회할 수 있다.
-<br>두 쓰레드가 모두 existingLog.isPresent() 조건에서 false를 확인한 후, 동시에 새로운 HfMarketingHitLog 객체를 생성하고 저장하려 하면 데이터 중복 문제가 발생할 수 있다.
-<br>. Lock을 쓰면 되나, 이후 업데이트 로직 삭제(로그 테이블화) 변경으로 처리<br><img alt="Pasted image 20241230135801.png" src="사진-및-문서/pasted-image-20241230135801.png" target="_self"><br>1일의 유효기간을 갖는 uid를 발급하여, 인입코드 / Hit된 기능 주소 / 시간 을 저장한다.
-<br>uid는 외부url로 접근시 발급
-<br>page_url는 코드에 미리 등록 / hit_code는 모두(only 영문+숫자) 수용 가능
-<br><img alt="Pasted image 20250102160213.png" src="사진-및-문서/pasted-image-20250102160213.png" target="_self"><br>
-<img alt="Pasted image 20250102160223.png" src="사진-및-문서/pasted-image-20250102160223.png" target="_self"><br>
-<br>enum객체에 정의된 메서드를 DB로 전환하여 pointcut에서 해당 클래스, 메서드를 가져와 조건으로 정의
-<br>해당 조건에 부합하는 메서드를 프록시로 전환
-<br>
-<br>api호출을 통해 advice내의 동작은 런타임 환경에서 동적으로 변경이 가능한 것을 확인했다.
-<br>
-<br>런타입 위빙 방식이라고 하더라도, 변경은 불가능하다.
-<br>컴파일 위빙 방식은 컴파일 단계에서 원본 클래스 바이트코드를 변경하여 직접 위빙을 하는 방식이고,<br>
-런타임 위빙은 런타임단계에서 원본 클래스를 변경하지 않고 프록시 객체를 사용하여 교체하는 방식이다.
-<br>=&gt; 해당하는 부분은 리빌드와 큰 차이가 없고, 각 class에 scope를 따로 적용해야했기 때문에 고려하지 않았다.<br>=&gt; 연관성 있는 모든 참조를 수동으로 재설정해야하기 때문에 매우 복잡해진다.<br>
-<br>참조를 갱신하기 위해서는 Java리플렉션을 사용하여 강제로 참조를 갱신하거나, AspectJ의 런타임 위빙 방식을 활용해야 한다.
-<br>따라서, 서버 Kill을 하는 것과 진배 없다.
-<br>[부록]<br>
-<a data-href="👩‍👧‍👦 유입 통계 ADMIN용 테이블 설계 과정" href="project/hello-marketing/👩‍👧‍👦-유입-통계-admin용-테이블-설계-과정.html" class="internal-link" target="_self" rel="noopener nofollow">👩‍👧‍👦 유입 통계 ADMIN용 테이블 설계 과정</a>]]></description><link>project/hello-marketing/👩‍👧‍👦-유입-통계-app_spring-aop에-관하여.html</link><guid isPermaLink="false">project/hello marketing/👩‍👧‍👦 유입 통계 APP_SPRING AOP에 관하여.md</guid><pubDate>Fri, 21 Feb 2025 05:13:01 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20241224144309.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20241224144309.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[💻 프로젝트]]></title><description><![CDATA[<a class="tag" href="?query=tag:프로젝트" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#프로젝트</a> <a class="tag" href="?query=tag:모음" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#모음</a> <br> <a href=".?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href=".?query=tag:모음" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#모음">#모음</a><br>프로젝트
-public하게 공개할 수 있는 프로젝트의 제작 과정입니다.
-<br>
-<br><a data-href="👻 Obsidian 정적호스팅 CICD 과정" href="project/note-ci_cd/👻-obsidian-정적호스팅-cicd-과정.html" class="internal-link" target="_self" rel="noopener nofollow">👻 Obsidian 정적호스팅 CICD 과정</a>
-<br><a data-href="⛈ Obsidian-AWS연동" href="project/note-ci_cd/⛈-obsidian-aws연동.html" class="internal-link" target="_self" rel="noopener nofollow">⛈ Obsidian-AWS연동</a>
-<br>
-<br><a data-href="🏹 Spring Batch 트러블 슈팅" href="project/hello-batch/🏹-spring-batch-트러블-슈팅.html" class="internal-link" target="_self" rel="noopener nofollow">🏹 Spring Batch 트러블 슈팅</a>
-<br><a data-href="🏹 Spring Batch 트러블 슈팅 부록" href="project/hello-batch/🏹-spring-batch-트러블-슈팅-부록.html" class="internal-link" target="_self" rel="noopener nofollow">🏹 Spring Batch 트러블 슈팅 부록</a>
-<br><a data-href="🏹 Spring Batch 구조 드로잉" href="project/hello-batch/🏹-spring-batch-구조-드로잉.html" class="internal-link" target="_self" rel="noopener nofollow">🏹 Spring Batch 구조 드로잉</a>
-<br>
-<br><a data-href="👩‍👧‍👦 유입 통계 APP_SPRING AOP에 관하여" href="project/hello-marketing/👩‍👧‍👦-유입-통계-app_spring-aop에-관하여.html" class="internal-link" target="_self" rel="noopener nofollow">👩‍👧‍👦 유입 통계 APP_SPRING AOP에 관하여</a>
-<br><a data-href="👩‍👧‍👦 유입 통계 ADMIN용 테이블 설계 과정" href="project/hello-marketing/👩‍👧‍👦-유입-통계-admin용-테이블-설계-과정.html" class="internal-link" target="_self" rel="noopener nofollow">👩‍👧‍👦 유입 통계 ADMIN용 테이블 설계 과정</a>
-<br>
-<br><a data-href="📘 SpringBoot &amp; Docker + Reids 연동" href="tools/docker/📘-springboot-&amp;-docker-+-reids-연동.html" class="internal-link" target="_self" rel="noopener nofollow">📘 SpringBoot &amp; Docker + Reids 연동</a>
-<br><a data-href="🌥 aws(EC2)셋팅부터 배포까지" href="tools/aws/🌥-aws(ec2)셋팅부터-배포까지.html" class="internal-link" target="_self" rel="noopener nofollow">🌥 aws(EC2)셋팅부터 배포까지</a>]]></description><link>project/💻-프로젝트.html</link><guid isPermaLink="false">project/💻 프로젝트.md</guid><pubDate>Fri, 21 Feb 2025 05:10:56 GMT</pubDate></item><item><title><![CDATA[👩‍👧‍👦 유입 통계 ADMIN용 테이블 설계 과정]]></title><description><![CDATA[<a class="tag" href="?query=tag:프로젝트" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#프로젝트</a> <a class="tag" href="?query=tag:개발" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#개발</a> <a class="tag" href="?query=tag:SPRING" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SPRING</a> <a class="tag" href="?query=tag:AOP" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#AOP</a> <br> <a href=".?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href=".?query=tag:개발" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개발">#개발</a> <a href=".?query=tag:SPRING" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SPRING">#SPRING</a> <a href=".?query=tag:AOP" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#AOP">#AOP</a><br>hf_marketing_code<br>hf_marketing_target<br>hf_marketing_hit_log<br><img alt="Pasted image 20250102181842.png" src="사진-및-문서/pasted-image-20250102181842.png" target="_self"><br>=&gt; 해당형태로 컬럼을 고정시키고, 동적으로 유입 수 를 출력한다.<br>-&gt; 그 후 페이지에 뿌려주기<br>Date: 01-02
-Ad Type: 구글광고
-Total Inflow: 4
-Total Hit: 27
-Detail Information: Page Name: 대출하기 페이지 Hit: 9 Page Name: 한도조회 버튼 Hit: 12 Page Name: 이용안내 페이지 Hit: 6]]></description><link>project/hello-marketing/👩‍👧‍👦-유입-통계-admin용-테이블-설계-과정.html</link><guid isPermaLink="false">project/hello marketing/👩‍👧‍👦 유입 통계 ADMIN용 테이블 설계 과정.md</guid><pubDate>Fri, 21 Feb 2025 05:10:56 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250102181842.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20250102181842.png"&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>
+Spring Security: <br>인증과 권한 부여를 처리하는 보안 프레임워크.
+<br>세션, 쿠키, 토큰(JWT 포함)과 통합 가능. <br>
+Token: <br>인증 정보를 포함한 문자열.
+<br>서버-클라이언트 간 무상태 인증을 위해 사용. <br>
+Session: <br>서버가 클라이언트별 상태 정보를 유지.
+<br>확장성이 낮지만 단순한 구조. <br>
+Cookie: <br>클라이언트에 저장되는 작은 데이터 조각.
+<br>세션 ID 또는 JWT 저장에 사용. <br>
+JWT: <br>JSON 형식의 자체 포함 토큰.
+<br>무상태 인증 및 높은 확장성을 제공.]]></description><link>study/dev-seminar/🥗-spring-security_토큰-세션-쿠키-jwt-에-대하여.html</link><guid isPermaLink="false">study/Dev Seminar/🥗 Spring Security_토큰-세션-쿠키-JWT 에 대하여.md</guid><pubDate>Fri, 21 Feb 2025 08:51:48 GMT</pubDate></item><item><title><![CDATA[🏠 taesung's Blog]]></title><description><![CDATA[<a class="tag" href="?query=tag:home" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#home</a> <a class="tag" href="?query=tag:index" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#index</a> <a class="tag" href="?query=tag:blog" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#blog</a> <a class="tag" href="?query=tag:공부" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#공부</a> <br> <a href=".?query=tag:home" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#home">#home</a> <a href=".?query=tag:index" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#index">#index</a> <a href=".?query=tag:blog" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#blog">#blog</a> <a href=".?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a><br><a data-tooltip-position="top" aria-label="https://github.com/LeeTaeSung0628" rel="noopener nofollow" class="external-link is-unresolved" href="https://github.com/LeeTaeSung0628" target="_self"><span alt="Pasted image 20250220144552.png" src="Pasted image 20250220144552.png" class="internal-embed media-embed image-embed is-loaded" style="width: 220px; max-width: 100%;"></span></a><img alt="Pasted image 20250220144552.png" src="사진-및-문서/pasted-image-20250220144552.png" style="width: 220px; max-width: 100%;" target="_self"><br>
+<a data-tooltip-position="top" aria-label="https://github.com/LeeTaeSung0628" rel="noopener nofollow" class="external-link is-unresolved" href="https://github.com/LeeTaeSung0628" target="_self"><font color="#ffffff"></font></a>🔗git Hub 이동<br><a data-tooltip-position="top" aria-label="https://git.io/typing-svg" rel="noopener nofollow" class="external-link is-unresolved" href="https://git.io/typing-svg" target="_self"></a><img alt="Typing SVG" src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;pause=1000&amp;color=36A9F7&amp;random=false&amp;width=435&amp;lines=%EC%97%AC%EA%B8%B0%EB%8A%94+%EA%B3%B5%EB%B6%80%ED%95%98%EA%B3%A0%2C+%EA%B8%B0%EB%A1%9D%ED%95%98%EB%8A%94+%EA%B3%B3%EC%9E%85%EB%8B%88%EB%8B%A4" referrerpolicy="no-referrer" target="_self" class="is-unresolved"><br> <br> <br> <br> <br> <br> <br> <br> <br> <br>Soon <br>깃 레포에서도 블로그 주소로 이어질 수 있도록 Readme 설정하기. <br>리드미 또한 옵시디언에서 작업이 가능하다. <br>Netlify 셋팅 추가하기]]></description><link>index.html</link><guid isPermaLink="false">index.md</guid><pubDate>Fri, 21 Feb 2025 08:49:24 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250220144552.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20250220144552.png"&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>

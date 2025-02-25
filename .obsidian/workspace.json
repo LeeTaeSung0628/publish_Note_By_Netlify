@@ -172,14 +172,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c915a28227e0f308",
+  "active": "5cc2f7897ebd9692",
   "lastOpenFiles": [
-    "study/dev-seminar/🥗-spring-security_토큰-세션-쿠키-jwt-에-대하여.html",
-    "tools/🪓-도구.html",
-    "project/hello-marketing/👩‍👧‍👦-유입-통계-app_spring-aop에-관하여.html",
-    "lectur/1.-객체-지향-설계와-스프링.html",
-    "lectur/🏫-강의.html",
-    "lectur",
+    "tools/🍌-elastic-ip(탄력적-ip)란.html",
+    "study/coding-test/bronze/15596. 정수 n개의 합/정수 n개의 합.py",
+    "study/coding-test/bronze/15596. 정수 n개의 합/readme.html",
+    "study/coding-test/bronze/15596. 정수 n개의 합",
+    "study/coding-test/bronze/12813. 이진수 연산/이진수 연산.py",
+    "study/coding-test/bronze/12813. 이진수 연산/readme.html",
+    "study/coding-test/bronze/12813. 이진수 연산",
+    "study/coding-test/bronze/10810. 공 넣기/공 넣기.py",
+    "study/coding-test/bronze/10810. 공 넣기/readme.html",
+    "study/coding-test/bronze/10810. 공 넣기",
+    "study/coding-test/bronze/2446. 별 찍기 － 9/별 찍기 － 9.py",
     "사진-및-문서/pasted-image-20250221114220.png",
     "사진-및-문서/pasted-image-20250221114208.png",
     "사진-및-문서/pasted-image-20250221114152.png",
@@ -190,11 +195,6 @@
     "사진-및-문서/pasted-image-20250221115214.png",
     "사진-및-문서/pasted-image-20250221115201.png",
     "사진-및-문서/pasted-image-20250221115157.png",
-    "tools/docker/📘-springboot-&-docker-+-reids-연동.html",
-    "tools/docker/🐋-docker.html",
-    "tools/docker",
-    "tools/aws/🍊-aws-ec2란.html",
-    "tools/aws/🌥-aws(ec2)셋팅부터-배포까지.html",
     "환영합니다!.md"
   ]
 }

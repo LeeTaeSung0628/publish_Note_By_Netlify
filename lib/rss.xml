@@ -1,64 +1,254 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[taesunglog]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib/media/favicon.png</url><title>taesunglog</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 21 Feb 2025 08:52:13 GMT</lastBuildDate><atom:link href="lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 21 Feb 2025 08:52:11 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[🥗 Spring Security_토큰-세션-쿠키-JWT 에 대하여]]></title><description><![CDATA[<a class="tag" href="?query=tag:공부" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#공부</a> <a class="tag" href="?query=tag:Java" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Java</a> <a class="tag" href="?query=tag:SPRING" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SPRING</a> <a class="tag" href="?query=tag:Security" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Security</a> <a class="tag" href="?query=tag:Tokken" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Tokken</a> <a class="tag" href="?query=tag:Session" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Session</a> <a class="tag" href="?query=tag:Cookie" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Cookie</a> <br> <a href=".?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a> <a href=".?query=tag:Java" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Java">#Java</a> <a href=".?query=tag:SPRING" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SPRING">#SPRING</a> <a href=".?query=tag:Security" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Security">#Security</a> <a href=".?query=tag:Tokken" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Tokken">#Tokken</a> <a href=".?query=tag:Session" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Session">#Session</a> <a href=".?query=tag:Cookie" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Cookie">#Cookie</a><br>
-<br>Spring Security는 Spring 기반 애플리케이션에서 인증(Authentication)과 권한 부여(Authorization)를 제공하는 강력한 보안 프레임워크입니다.
-<br>다양한 보안 요구사항(예: HTTP 인증, OAuth2, JWT 등)을 처리할 수 있도록 확장 가능합니다.
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[taesunglog]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib/media/favicon.png</url><title>taesunglog</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Tue, 25 Feb 2025 05:09:33 GMT</lastBuildDate><atom:link href="lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 25 Feb 2025 05:09:28 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[🏠 taesung's Blog]]></title><description><![CDATA[<a class="tag" href="?query=tag:home" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#home</a> <a class="tag" href="?query=tag:index" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#index</a> <a class="tag" href="?query=tag:blog" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#blog</a> <a class="tag" href="?query=tag:공부" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#공부</a> <br> <a href=".?query=tag:home" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#home">#home</a> <a href=".?query=tag:index" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#index">#index</a> <a href=".?query=tag:blog" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#blog">#blog</a> <a href=".?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a><br><a data-tooltip-position="top" aria-label="https://github.com/LeeTaeSung0628" rel="noopener nofollow" class="external-link is-unresolved" href="https://github.com/LeeTaeSung0628" target="_self"><span alt="Pasted image 20250220144552.png" src="Pasted image 20250220144552.png" class="internal-embed media-embed image-embed is-loaded" style="width: 220px; max-width: 100%;"></span></a><img alt="Pasted image 20250220144552.png" src="사진-및-문서/pasted-image-20250220144552.png" style="width: 220px; max-width: 100%;" target="_self"><br>
+<a data-tooltip-position="top" aria-label="https://github.com/LeeTaeSung0628" rel="noopener nofollow" class="external-link is-unresolved" href="https://github.com/LeeTaeSung0628" target="_self"><font color="#ffffff"></font></a>🔗git Hub 이동<br><a data-tooltip-position="top" aria-label="https://git.io/typing-svg" rel="noopener nofollow" class="external-link is-unresolved" href="https://git.io/typing-svg" target="_self"></a><img alt="Typing SVG" src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;pause=1000&amp;color=36A9F7&amp;random=false&amp;width=435&amp;lines=%EC%97%AC%EA%B8%B0%EB%8A%94+%EA%B3%B5%EB%B6%80%ED%95%98%EA%B3%A0%2C+%EA%B8%B0%EB%A1%9D%ED%95%98%EB%8A%94+%EA%B3%B3%EC%9E%85%EB%8B%88%EB%8B%A4" referrerpolicy="no-referrer" target="_self" class="is-unresolved"><br> <br> <br> <br> <br> <br> <br> <br> <br> <br>Soon <br>깃 레포에서도 블로그 주소로 이어질 수 있도록 Readme 설정하기. <br>리드미 또한 옵시디언에서 작업이 가능하다. <br>Netlify 셋팅 추가하기]]></description><link>index.html</link><guid isPermaLink="false">index.md</guid><pubDate>Tue, 25 Feb 2025 05:09:17 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250220144552.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20250220144552.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[👩‍👧‍👦 유입 통계 APP_<strong>SPRING AOP</strong>에 관하여]]></title><description><![CDATA[<a class="tag" href="?query=tag:프로젝트" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#프로젝트</a> <a class="tag" href="?query=tag:개발" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#개발</a> <a class="tag" href="?query=tag:DB" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DB</a> <a class="tag" href="?query=tag:SPRING" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SPRING</a> <a class="tag" href="?query=tag:AOP" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#AOP</a> <br> <a href=".?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href=".?query=tag:개발" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개발">#개발</a> <a href=".?query=tag:DB" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#DB">#DB</a> <a href=".?query=tag:SPRING" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SPRING">#SPRING</a> <a href=".?query=tag:AOP" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#AOP">#AOP</a> <br>Hello Service의 유입/동작 통계 모듈의 공통화 작업이다.
+Spring AOP를 사용하여 구성하였다.
 <br>
+<br>통계 필요 페이지 내에서(프론트), 쿠키 데이터 페이지 별 최초 진입 확인?
 <br>
-인증(Authentication): <br>사용자가 애플리케이션에 접근하기 전에 신원을 확인.
-<br>일반적으로 사용자 이름과 비밀번호를 기반으로 인증. <br>
-권한 부여(Authorization): <br>인증된 사용자가 애플리케이션의 특정 리소스나 작업에 접근할 수 있는지 확인. <br>
-보안 필터: <br>요청과 응답을 처리하기 위한 필터 체인을 제공.
-<br>요청이 필터 체인을 통과하면 보안 정책이 적용됨. <br>
-확장성: <br>OAuth2, JWT, LDAP 등 다양한 인증 방식과 통합 가능. <br>
-<br>토큰(Token)은 인증 정보를 포함하는 문자열로, 클라이언트와 서버 간 인증 및 권한 부여를 간편화합니다.
-<br>사용자가 인증을 완료하면 서버가 토큰을 발급하고, 클라이언트는 이후 요청에 토큰을 포함하여 인증을 유지합니다.
+<br>해당 진입시점부터 특정 동작에 대한 모든 타임라인 로그
 <br>
+<br>레디스 가용 메모리에 대한 한계값 산정. -&gt; 아직 적용 X
 <br>
-무상태성: <br>토큰은 상태 정보를 포함하므로 서버가 세션을 유지할 필요 없음.
-<br>클라이언트가 모든 요청에 토큰을 포함하여 서버로 전송. <br>
-토큰 종류: <br>Bearer Token: 요청 헤더에 포함되어 인증.
-<br>Refresh Token: Access Token이 만료되었을 때 재발급에 사용. <br>
-<br>세션(Session)은 사용자가 서버에 접속한 동안 유지되는 상태 정보입니다.
-<br>서버는 클라이언트의 각 요청을 식별하기 위해 세션 ID를 생성하고, 이를 클라이언트에 제공.
+<br>URL + 함수명 조합
+<br>=&gt; 메인 테이블<br>
+=&gt; 백로직에서 쿠키 데이터 쌓기<br>=&gt; 디테일 테이블 - 타임라인으로 관리 단, 메인테이블에 존재하는 내셕들에 대해서<br>
+=&gt; AOP에서 특정 서비스or메서드orURL로 지정하여 로그 쌀기<br>- 관심사(Aspect)를 분리하여, 각 서비스 메서드에 반복해서 구현하는 것이 아닌, 별도의 Aspect로 관리하여 핵심로직을 공통으로 적용하기 위함이다.
 <br>
-<br>사용자가 로그인하면 서버가 고유한 세션 ID를 생성.
-<br>세션 ID는 클라이언트의 쿠키에 저장.
-<br>이후 요청에서 클라이언트는 세션 ID를 포함하여 서버로 전송.
-<br>서버는 세션 저장소(Session Store)에 저장된 정보를 기반으로 클라이언트를 식별.
+<br>난수 생성 후 물고있기☑ <br>IP로 추적 <br><img alt="Pasted image 20241224144309.png" src="사진-및-문서/pasted-image-20241224144309.png" target="_self"><br>쿠키가 필요한 페이지의 경로가 기본 path와 일치하는 경우(redirect url 이 SP_MARKETING_HIT_TEST1 의 하위 url일 경우)<br>
+에는 명시적으로 표시할 필요가 없지만,<br>AOP에서 Front-end 단의 특정 동작 필터링 하기<br><img alt="Pasted image 20241226111559.png" src="사진-및-문서/pasted-image-20241226111559.png" target="_self"><br>
+<br>장점: <br>코드가 간결하고 읽기 쉽다.
+<br>Spring의 AOP 인프라를 사용하여 메서드 인터셉션을 쉽게 구현할 수 있다. <br>단점:
+- 포인트컷 조건은 컴파일 시점에 고정된다.
+- 복잡한 조건이나 동적으로 변경되는 조건을 처리하기 어렵다. -&gt; @Pointcut 등의 조건에 부합하는 Bean객체를 컴파일 시점에 찾아내어 프록시를 감싼다.
 <br>
-<br>상태 유지: <br>서버는 클라이언트별로 상태 정보를 유지. <br>확장성 문제: <br>서버가 클라이언트별로 상태를 저장하므로 대규모 확장성이 떨어질 수 있음. <br>
-<br>쿠키(Cookie)는 클라이언트 브라우저에 저장되는 데이터 조각으로, 서버와 클라이언트 간 정보를 유지하기 위해 사용.
+<br>동적 생성: <br>런타임에 프록시를 생성하여 포인트컷과 어드바이스를 동적으로 적용.
+<br>StaticMethodMatcherPointcut 또는 DynamicMethodMatcherPointcut을 사용하여 런타임 조건 기반으로 메서드 매칭. <br>장점: <br>런타임 조건에 따라 동적으로 포인트컷 생성 가능.
+<br>복잡한 조건과 동적 필터링을 처리하기 용이.
+<br>Spring AOP가 아닌 순수 Java 프록시 방식도 지원. <br>단점: <br>코드가 복잡해지고 추가 구현이 필요.
+<br>Spring AOP와 동일한 수준의 간결성을 제공하지 않음. <br>-&gt; 해당 프록시 객체를 적용하고 싶은 Bean객체에 매번 생성(등록)해주어야 함.<br>import org.springframework.aop.Pointcut;
+import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator;
+import org.springframework.aop.support.DefaultPointcutAdvisor;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration; @Configuration
+public class AopConfig { @Bean public Pointcut customPointcut() { return new CustomPointcut(); } @Bean public CustomAdvice customAdvice() { return new CustomAdvice(); } @Bean public DefaultPointcutAdvisor customAdvisor(Pointcut customPointcut, CustomAdvice customAdvice) { return new DefaultPointcutAdvisor(customPointcut, customAdvice); } @Bean public DefaultAdvisorAutoProxyCreator proxyCreator() { return new DefaultAdvisorAutoProxyCreator(); }
+} <br>
+<br>@Pointcut 방식과 동일한 동작: <br>Spring 컨테이너가 관리하는 모든 빈에 대해 조건을 평가하고 프록시를 자동 생성합니다. <br>프록시를 명시적으로 선언할 필요 없음: <br>ProxyFactory처럼 수동으로 프록시를 생성하지 않아도 됩니다. <br>유연성과 효율성 향상: <br>Spring AOP 인프라를 활용하므로, 관리가 용이하고 런타임 성능이 개선됩니다. <br>
+<br>BeanPostProcessor: <br>DefaultAdvisorAutoProxyCreator는 Spring의 BeanPostProcessor를 구현한 클래스이다.
+<br>Spring 컨테이너는 애플리케이션 컨텍스트에 등록된 모든 BeanPostProcessor를 자동으로 호출하여 빈의 초기화 전후 작업을 수행한다.
+<br>이를 통해, Spring AOP는 빈 생성 단계에서 프록시를 생성하고 조건에 맞는 빈에 대해 어드바이저를 적용. <br>Advisor 탐색: <br>DefaultAdvisorAutoProxyCreator는 Spring 컨텍스트에 등록된 모든 Advisor를 자동으로 탐색한다.
+<br>이는 DefaultAdvisorAutoProxyCreator가 BeanFactory를 통해 컨테이너의 모든 Advisor 타입 빈을 조회하기 때문.
+<br>탐색된 Advisor를 사용하여 각 빈의 메서드와 포인트컷 조건을 매칭. <br>Advisor와 빈의 매칭: <br>빈이 생성될 때, DefaultAdvisorAutoProxyCreator는 해당 빈의 메서드가 어떤 Advisor의 포인트컷 조건에 부합하는지 평가.
+<br>조건에 부합하면, 해당 빈을 프록시 객체로 감싸고, 어드바이스를 연결. <br>위 방법의 문제점? <br>
+<br>이렇게 맵핑이 되어야 하나, 이를 동적으로 탐지하지 못한다.
+<br>/* * EnableAspectJAutoProxy &gt; 프록시 적용시 인터페이스/클래스 여부 자동 판단 * 클래스에 인터페이스가 있으면 JDK 동적 프록시. * 인터페이스가 없으면 CGLIB 프록시. * */@Configuration @EnableAspectJAutoProxy public class AopConfig { @Bean public Pointcut customPointcut() { return new CustomPointcut(); } @Bean public CustomAdvice customAdvice() { return new CustomAdvice(); } @Bean public DefaultPointcutAdvisor customAdvisor(Pointcut customPointcut, CustomAdvice customAdvice) { return new DefaultPointcutAdvisor(customPointcut, customAdvice); } /* * @EnableAspectJAutoProxy를 사용해 등록했기 때문에 불필요. * */ // @Bean // public DefaultAdvisorAutoProxyCreator proxyCreator() { // return new DefaultAdvisorAutoProxyCreator(); // } }
+<br>프록시(Proxy)는 대리자라는 뜻으로, 다른 객체에 대한 인터페이스 역할을 하는 객체를 말합니다. 프로그래밍에서 프록시는 실제 객체에 접근하기 전에 특정 작업(로깅, 보안, 트랜잭션 관리 등)을 수행하거나, 객체에 대한 접근을 제어하는 데 사용됩니다.<br>
+<br>대리 객체: 프록시는 실제 객체에 대한 중간다리 역할을 합니다.
+<br>동작 조정: 프록시는 요청을 가로채서 추가적인 작업을 수행하거나, 요청을 변형한 뒤 실제 객체에 전달할 수 있습니다.
+<br>AOP와 연관: 프록시를 사용하면 코드를 변경하지 않고도 객체의 동작을 확장하거나 변경할 수 있습니다.
+<br>Method Name: loanerLoginPage<br>
+javax.servlet.http.HttpServletRequest<br>
+org.springframework.web.bind.annotation.GetMapping <br><img alt="Pasted image 20241226152219.png" src="사진-및-문서/pasted-image-20241226152219.png" target="_self"><br><img alt="Pasted image 20241226171158.png" src="사진-및-문서/pasted-image-20241226171158.png" target="_self"><br>
+<br>외부링크 최초진입. hitCode, hitUid 발급 및 DB저장
 <br>
-<br>서버가 응답에 쿠키를 설정하면 클라이언트는 쿠키를 저장.
-<br>클라이언트는 이후 요청에 저장된 쿠키를 자동으로 서버에 포함.
-<br>서버는 쿠키를 기반으로 요청을 처리.
+<br>외부링크 재진입. hitCode는 변경될 수 있으므로 "p"파라미터로 재발급<br>
+=&gt; hitCode는 매번 재발급 / hitUid는 없을때만 발급
 <br>
-<br>키-값 쌍: <br>쿠키는 key=value 형태로 저장. <br>보안 옵션: <br>HttpOnly: 자바스크립트를 통해 접근 불가.
-<br>Secure: HTTPS 요청에서만 전송. <br>유효 기간: <br>쿠키는 만료 시간이 지나면 자동 삭제. <br>
-<br>JWT는 JSON 형식으로 인코딩된 토큰으로, 클라이언트와 서버 간 인증 정보를 안전하게 전달하기 위해 사용.
-<br>무상태 인증 방식에서 많이 사용됨.
-<br>JWT는 세 부분으로 구성:<br>Header: <br>토큰 타입(JWT)과 알고리즘(HMAC, RSA 등) 정보를 포함.
-<br>예: {"alg": "HS256", "typ": "JWT"} <br>Payload: <br>토큰에 포함된 클레임(Claim) 정보를 포함.
-<br>예: {"sub": "user123", "role": "admin"} <br>Signature: <br>Header와 Payload를 비밀키로 서명하여 생성.
-<br>예: HMACSHA256(base64UrlEncode(header) + "." + base64UrlEncode(payload), secret) <br>
-<br>사용자가 로그인하면 서버가 JWT를 생성하여 클라이언트에 전달.
-<br>클라이언트는 이후 요청에서 JWT를 Authorization 헤더에 포함.
-<br>서버는 JWT를 검증하여 사용자를 인증.
+<br>일반사용자 이며, 아무동작 하지 않는다.
 <br>
-<br>자체 포함(Self-contained): <br>JWT는 인증 정보와 사용자 정보를 모두 포함. <br>무상태성: <br>서버는 JWT를 저장하지 않으므로 확장성이 뛰어남. <br>보안: <br>서명(Signature)을 통해 변조를 방지.
-<br>그러나 암호화되지 않은 Payload는 누구나 읽을 수 있음. <br>
-<br>상태 정보 저장 없음: <br>서버는 클라이언트의 상태 정보를 유지하지 않습니다.
-<br>즉, 서버는 이전 요청에 대한 정보를 기억하지 않고, 요청마다 필요한 인증 정보를 다시 받아야 합니다. <br>클라이언트 책임: <br>인증 정보(예: JWT 토큰)는 클라이언트가 관리합니다.
-<br>클라이언트는 매 요청마다 서버에 인증 정보를 제공해야 합니다. <br>확장성: <br>서버 간 상태 동기화가 필요 없으므로 수평 확장이 용이합니다.
-<br>로드 밸런싱을 사용하는 다중 서버 환경에서 적합. <br>
+<br>외부링크 진입 후 동작. 없는 녀석 새로 발급 및 DB저장
+<br>서비스 저장시 동시성 이슈가 발생할 수 있다?<br>@Override @Transactional public ResponseModel insertMarketingHitLog(String hitCode, String hitUid, String pageUrl, String pageType){ try { Optional&lt;HfMarketingHitLog&gt; existingLog = hfMarketingHitLogRepository.findByHitCodeAndHitUidAndPageUrlAndPageType(hitCode, hitUid, pageUrl, pageType); if (existingLog.isPresent()) { HfMarketingHitLog logToUpdate = existingLog.get(); logToUpdate.setUpdateDate(LocalDateTime.now()); hfMarketingHitLogRepository.save(logToUpdate); return new ResponseModel(ResponseModel.ResponseStatus.SUCCESS); } HfMarketingHitLog hfMarketingHitLog = HfMarketingHitLog.builder() .hitCode(hitCode) .hitUid(hitUid) .pageUrl(pageUrl) .pageType(pageType) .build(); hfMarketingHitLogRepository.save(hfMarketingHitLog); return new ResponseModel(ResponseModel.ResponseStatus.SUCCESS); } catch (Exception e) { return new ResponseModel(ResponseModel.ResponseStatus.FAILED, "데이터 처리 중 오류 발생"); } }
 <br>
-Spring Security: <br>인증과 권한 부여를 처리하는 보안 프레임워크.
-<br>세션, 쿠키, 토큰(JWT 포함)과 통합 가능. <br>
-Token: <br>인증 정보를 포함한 문자열.
-<br>서버-클라이언트 간 무상태 인증을 위해 사용. <br>
-Session: <br>서버가 클라이언트별 상태 정보를 유지.
-<br>확장성이 낮지만 단순한 구조. <br>
-Cookie: <br>클라이언트에 저장되는 작은 데이터 조각.
-<br>세션 ID 또는 JWT 저장에 사용. <br>
-JWT: <br>JSON 형식의 자체 포함 토큰.
-<br>무상태 인증 및 높은 확장성을 제공.]]></description><link>study/dev-seminar/🥗-spring-security_토큰-세션-쿠키-jwt-에-대하여.html</link><guid isPermaLink="false">study/Dev Seminar/🥗 Spring Security_토큰-세션-쿠키-JWT 에 대하여.md</guid><pubDate>Fri, 21 Feb 2025 08:51:48 GMT</pubDate></item><item><title><![CDATA[🏠 taesung's Blog]]></title><description><![CDATA[<a class="tag" href="?query=tag:home" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#home</a> <a class="tag" href="?query=tag:index" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#index</a> <a class="tag" href="?query=tag:blog" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#blog</a> <a class="tag" href="?query=tag:공부" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#공부</a> <br> <a href=".?query=tag:home" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#home">#home</a> <a href=".?query=tag:index" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#index">#index</a> <a href=".?query=tag:blog" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#blog">#blog</a> <a href=".?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a><br><a data-tooltip-position="top" aria-label="https://github.com/LeeTaeSung0628" rel="noopener nofollow" class="external-link is-unresolved" href="https://github.com/LeeTaeSung0628" target="_self"><span alt="Pasted image 20250220144552.png" src="Pasted image 20250220144552.png" class="internal-embed media-embed image-embed is-loaded" style="width: 220px; max-width: 100%;"></span></a><img alt="Pasted image 20250220144552.png" src="사진-및-문서/pasted-image-20250220144552.png" style="width: 220px; max-width: 100%;" target="_self"><br>
-<a data-tooltip-position="top" aria-label="https://github.com/LeeTaeSung0628" rel="noopener nofollow" class="external-link is-unresolved" href="https://github.com/LeeTaeSung0628" target="_self"><font color="#ffffff"></font></a>🔗git Hub 이동<br><a data-tooltip-position="top" aria-label="https://git.io/typing-svg" rel="noopener nofollow" class="external-link is-unresolved" href="https://git.io/typing-svg" target="_self"></a><img alt="Typing SVG" src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;pause=1000&amp;color=36A9F7&amp;random=false&amp;width=435&amp;lines=%EC%97%AC%EA%B8%B0%EB%8A%94+%EA%B3%B5%EB%B6%80%ED%95%98%EA%B3%A0%2C+%EA%B8%B0%EB%A1%9D%ED%95%98%EB%8A%94+%EA%B3%B3%EC%9E%85%EB%8B%88%EB%8B%A4" referrerpolicy="no-referrer" target="_self" class="is-unresolved"><br> <br> <br> <br> <br> <br> <br> <br> <br> <br>Soon <br>깃 레포에서도 블로그 주소로 이어질 수 있도록 Readme 설정하기. <br>리드미 또한 옵시디언에서 작업이 가능하다. <br>Netlify 셋팅 추가하기]]></description><link>index.html</link><guid isPermaLink="false">index.md</guid><pubDate>Fri, 21 Feb 2025 08:49:24 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250220144552.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20250220144552.png"&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>
+<br>여러 쓰레드(또는 트랜잭션)가 findByHitCodeAndHitUidAndPageUrlAndPageType 메서드를 호출하여 동일한 조건의 데이터를 동시에 조회할 수 있다.
+<br>두 쓰레드가 모두 existingLog.isPresent() 조건에서 false를 확인한 후, 동시에 새로운 HfMarketingHitLog 객체를 생성하고 저장하려 하면 데이터 중복 문제가 발생할 수 있다.
+<br>. Lock을 쓰면 되나, 이후 업데이트 로직 삭제(로그 테이블화) 변경으로 처리<br><img alt="Pasted image 20241230135801.png" src="사진-및-문서/pasted-image-20241230135801.png" target="_self"><br>1일의 유효기간을 갖는 uid를 발급하여, 인입코드 / Hit된 기능 주소 / 시간 을 저장한다.
+<br>uid는 외부url로 접근시 발급
+<br>page_url는 코드에 미리 등록 / hit_code는 모두(only 영문+숫자) 수용 가능
+<br><img alt="Pasted image 20250102160213.png" src="사진-및-문서/pasted-image-20250102160213.png" target="_self"><br>
+<img alt="Pasted image 20250102160223.png" src="사진-및-문서/pasted-image-20250102160223.png" target="_self"><br>
+<br>enum객체에 정의된 메서드를 DB로 전환하여 pointcut에서 해당 클래스, 메서드를 가져와 조건으로 정의
+<br>해당 조건에 부합하는 메서드를 프록시로 전환
+<br>
+<br>api호출을 통해 advice내의 동작은 런타임 환경에서 동적으로 변경이 가능한 것을 확인했다.
+<br>
+<br>런타입 위빙 방식이라고 하더라도, 변경은 불가능하다.
+<br>컴파일 위빙 방식은 컴파일 단계에서 원본 클래스 바이트코드를 변경하여 직접 위빙을 하는 방식이고,<br>
+런타임 위빙은 런타임단계에서 원본 클래스를 변경하지 않고 프록시 객체를 사용하여 교체하는 방식이다.
+<br>=&gt; 해당하는 부분은 리빌드와 큰 차이가 없고, 각 class에 scope를 따로 적용해야했기 때문에 고려하지 않았다.<br>=&gt; 연관성 있는 모든 참조를 수동으로 재설정해야하기 때문에 매우 복잡해진다.<br>
+<br>참조를 갱신하기 위해서는 Java리플렉션을 사용하여 강제로 참조를 갱신하거나, AspectJ의 런타임 위빙 방식을 활용해야 한다.
+<br>따라서, 서버 Kill을 하는 것과 진배 없다.
+<br>에러
+통계기능의 진입페이지에서 네이버 아날리틱스(외부 통계 프로그램)이 작동하지 않는 이슈
+<br>
+<br>외부 유입통계 페이지의 인입 주소는 일반적인 메인 페이지가 아닌, Gate를 거쳐서(redirect) 동작하게 된다.
+<br>이 때, 진입 referrer에 변동이 생기면서 집계가 되지 않는 오류가 발생한 것으로 보인다.
+<br>
+<br>해당 방법을 사용하여, View단을 추가하여 replace한다면, 처음 진입시 갖고 있는 referrer를 물고 갈수 있지 않을까?
+<br>redirect대신 view단을 통해 진입하도록 만든 후, naver아날리틱스 스크립트를 추가한다.
+<br>한계 : 외부 유입시 불필요한 페이지 방문이 생기게 되고, 유입과정의 시간이 증가한다. 또한, 해당 오류를 100% 해결할지 미지수
+<br>
+<br>해당 방법은 기존 naver아날리틱스를 사용하고 있는 로직을 그대로 사용하는 것이기 때문에 제일 확실하다.
+<br>한계 : 외부유입자가 아닌, 모든 사용자에게 session및 uid체크가 들어가기 때문에 부하가 증가한다.(DB통신은 X)
+<br>
+<br>BEST🖐
+<br>한계 : 네이버 아날리틱스의 내부로직 파악이 불가함
+<br>
+<br>현재 네이버의 내부 로직 파악이 불가하니, View를 추가하여 네이버 스크립트가 물고 가는지 먼저 TEST하도록 하기
+<br>&lt;html xmlns:th="http://www/thymeleaf.org" th:replace="layout/mainLayout :: mainLayout('gate loan')"&gt; &lt;script th:inline="javascript"&gt; $(document).ready(function() { location.href = [[${urls.SP_LOAN}]]; }); &lt;/script&gt;
+<br>mainLayout을 적용하여 해당 페이지에 default script를 적용시켰다.<br>[부록]<br>
+<a data-href="👩‍👧‍👦 유입 통계 ADMIN용 테이블 설계 과정" href="project/hello-marketing/👩‍👧‍👦-유입-통계-admin용-테이블-설계-과정.html" class="internal-link" target="_self" rel="noopener nofollow">👩‍👧‍👦 유입 통계 ADMIN용 테이블 설계 과정</a>]]></description><link>project/hello-marketing/👩‍👧‍👦-유입-통계-app_spring-aop에-관하여.html</link><guid isPermaLink="false">project/hello marketing/👩‍👧‍👦 유입 통계 APP_SPRING AOP에 관하여.md</guid><pubDate>Tue, 25 Feb 2025 04:34:18 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20241224144309.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20241224144309.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[🍌 Elastic IP(탄력적 IP)란]]></title><description><![CDATA[<a class="tag" href="?query=tag:Tools" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Tools</a> <a class="tag" href="?query=tag:AWS" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#AWS</a> <a class="tag" href="?query=tag:Amazon" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Amazon</a> <a class="tag" href="?query=tag:Cloud" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Cloud</a> <a class="tag" href="?query=tag:EC2" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#EC2</a> <br> <a href=".?query=tag:Tools" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Tools">#Tools</a> <a href=".?query=tag:AWS" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#AWS">#AWS</a> <a href=".?query=tag:Amazon" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Amazon">#Amazon</a> <a href=".?query=tag:Cloud" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Cloud">#Cloud</a> <a href=".?query=tag:EC2" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#EC2">#EC2</a><br>
+<br>EIP는 인터넷을 통해 접속할 수 있는 고정적인 IP주소를 할당하고, 인스턴스에 연결할 수 있는 서비스를 말한다.
+<br>모든 인스턴스 또는 네트워크 인터페이스에 EIP 연결이 가능하다.
+<br>EIP를 할당받고 삭제하기 전까지, 해당 EIP를 쭉 유지할 수 있다.
+<br>정보
+도메인과 IP주소를 연결할 떄, IP주소의 변동이 있어선 안되기 때문에, EIP를 사용한다.]]></description><link>tools/🍌-elastic-ip(탄력적-ip)란.html</link><guid isPermaLink="false">Tools/🍌 Elastic IP(탄력적 IP)란.md</guid><pubDate>Mon, 24 Feb 2025 01:41:27 GMT</pubDate></item><item><title><![CDATA[🌥 aws(EC2)셋팅부터 배포까지]]></title><description><![CDATA[<a class="tag" href="?query=tag:Tools" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Tools</a> <a class="tag" href="?query=tag:AWS" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#AWS</a> <a class="tag" href="?query=tag:Amazon" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Amazon</a> <a class="tag" href="?query=tag:Cloud" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Cloud</a> <a class="tag" href="?query=tag:Docker" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Docker</a> <a class="tag" href="?query=tag:Redis" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Redis</a> <a class="tag" href="?query=tag:EC2" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#EC2</a> <br> <a href=".?query=tag:Tools" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Tools">#Tools</a> <a href=".?query=tag:AWS" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#AWS">#AWS</a> <a href=".?query=tag:Amazon" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Amazon">#Amazon</a> <a href=".?query=tag:Cloud" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Cloud">#Cloud</a> <a href=".?query=tag:Docker" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Docker">#Docker</a> <a href=".?query=tag:Redis" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Redis">#Redis</a> <a href=".?query=tag:EC2" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#EC2">#EC2</a><br><img alt="Pasted image 20250221112429.png" src="사진-및-문서/pasted-image-20250221112429.png" target="_self"><br>
+<br>AWS가 제공하는&nbsp;'클라우드 컴퓨팅 서비스'&nbsp;이다.
+<br>예전의 쓴 더 자세한 글.<br>- Amazon Elastic Compute Cloud으로써 AWS에서 제공하는 클라우드 컴퓨팅 서비스이다. 즉, 독립괸 컴퓨터를 임대해주는 aws의
+<br>오늘은 EC2에서 인스턴스를 생성하고, docker를 통해 Spring boot 프로젝트를 띄워보겠다.<br>
+천천히 따라가 보자.<br>먼저&nbsp; 프로젝트가 설치된 경로에서 ' mvn install '명령어를 사용하여 jar 파일을 생성한다<br><img alt="Pasted image 20250221114856.png" src="사진-및-문서/pasted-image-20250221114856.png" target="_self"><br>
+<img alt="Pasted image 20250221114901.png" src="사진-및-문서/pasted-image-20250221114901.png" target="_self"><br>docker build -t [이미지 이름]:[태그] [dockerfile이 저장된 경로]
+<br><img alt="Pasted image 20250221114932.png" src="사진-및-문서/pasted-image-20250221114932.png" target="_self"><br><img alt="Pasted image 20250221114945.png" src="사진-및-문서/pasted-image-20250221114945.png" target="_self"><br><img alt="Pasted image 20250221114951.png" src="사진-및-문서/pasted-image-20250221114951.png" target="_self"><br>이제 docker는 준비가 끝났다...<br>자세한 설명은 생략한다. 검색해 보시길<br><img alt="Pasted image 20250221114959.png" src="사진-및-문서/pasted-image-20250221114959.png" target="_self"><br>4.번의 주소를 사용해서 접속한다.<br>
+이때!,&nbsp;.pem&nbsp;파일이 저장 되어있는 경로에서 진행한다<br><img alt="Pasted image 20250221115004.png" src="사진-및-문서/pasted-image-20250221115004.png" target="_self"><br>접속완료.<br><img alt="Pasted image 20250221115010.png" src="사진-및-문서/pasted-image-20250221115010.png" target="_self"><br>먼저, aws 무료 버전 인스턴스를 생성하고자 한다.<br>aws 사이트에 접속하여 개인계정을 생성한다. (aws 프리티어 서비스를 이용하면 1년 무료로 사용가능 함)
+<br>sudo docker pull [image이름]:[태그]
+<br><img alt="Pasted image 20250221115019.png" src="사진-및-문서/pasted-image-20250221115019.png" target="_self"><br>sudo docker images
+<br>명령어를 통해 생성된것을 확인할 수 있다.<br><img alt="Pasted image 20250221115024.png" src="사진-및-문서/pasted-image-20250221115024.png" target="_self"><br>1.2의 과정에서 ' --platform linux/amd64 ' 태그를 추가해 주고, 태그에 -linux를 붙였다.<br><img alt="Pasted image 20250221115030.png" src="사진-및-문서/pasted-image-20250221115030.png" target="_self"><br><img alt="Pasted image 20250221115035.png" src="사진-및-문서/pasted-image-20250221115035.png" target="_self"><br>잘 따라왔다면 EC2 환경에서 docker를 통해 받은 jar파일이 잘 실행되는 것을 볼 수 있다.<br>내가 만든 포트는 8000번이며 IP주소는 AWS의 인스턴스에서 찾아볼 수있다.<br>퍼블릭 IP주소 를 통해 접속을 확인해보기 전에..<br><img alt="Pasted image 20250221115040.png" src="사진-및-문서/pasted-image-20250221115040.png" target="_self"><br>해당 인스턴스의 보안그룹을 확인하고, 내가 설정한 포트(:8000)에 대한 접근을 허가해주어야한다.<br>
+보안그룹 확인 후,<br><img alt="Pasted image 20250221115046.png" src="사진-및-문서/pasted-image-20250221115046.png" target="_self"><br>네트워크 및 보안 -&gt; 해당 보안그룹 -&gt;&nbsp; 인바운드 규칙 편집 ( 인바운드란, 외부에서 해당 인스턴스로 접근하는 것)<br><img alt="Pasted image 20250221115052.png" src="사진-및-문서/pasted-image-20250221115052.png" target="_self"><br>8000번 포트 추가<br><img alt="Pasted image 20250221115058.png" src="사진-및-문서/pasted-image-20250221115058.png" target="_self"><br>이렇게 과정을 마치면...<br>http://[인스턴스의 퍼블릭 IP주소]:[포트번호]
+<br> 로 접속이 가능하다!<br>
+<img alt="Pasted image 20250221115102.png" src="사진-및-문서/pasted-image-20250221115102.png" target="_self"><br>다음의 대략정인 과정을 통해 진행될 것이다.<br>1. Docker를 통해 Redis 다운받기<br>2. Redis config 파일 생성/수정 및 docker file 생성하기<br>3. 2에서 생성한 conf 파일과 dockerfile로 docker image 생성하기<br>4. 생성한 image 를 docker hub에 올리기<br>5. EC2에서 redis image와 spring(jar)image 내려받기<br>6. 내려받은 image를 container로 실행하고, EC2 포트 열기<br>EC2셋팅법과 docker 및 redis를 셋팅하는 방법은 이전 글에서 찾아볼 수 있다.<br>spring + docker 셋팅<br>로컬에 도커가 셋팅되어있다고 가정하고,&nbsp; redis를 최신으로 내려받는다.<br>docker pull redis
+<br><img alt="Pasted image 20250221115117.png" src="사진-및-문서/pasted-image-20250221115117.png" target="_self"><br>docker desktop을 통해 확인할 수 있고,&nbsp;<br>docker images
+<br>명령어를 통해서 확인 할 수 있다.<br><img alt="Pasted image 20250221115122.png" src="사진-및-문서/pasted-image-20250221115122.png" target="_self"><br>1.에서 redis를 내려받았다면 해당하는 디렉토리에 redis.conf 파일이 생성된다.<br>
+생성되지 않았을경우 text파일 형식으로 생성해도 문제없다.<br>생성된 conf파일을 다음과 같이 수정하였다.<br># 연결 가능한 네트위크(0.0.0.0 = Anywhere)
+bind 0.0.0.0 # 연결 포트
+port 6379 # Master 노드의 기본 사용자 비밀번호
+requirepass 사용할비밀번호입력 # 최대 사용 메모리 용량(지정하지 않으면 시스템 전체 용량)
+maxmemory 2gb # 설정된 최대 사용 메모리 용량을 초과했을때 처리 방식
+# - noeviction : 쓰기 동작에 대해 error 반환 (Default)
+# - volatile-lru : expire 가 설정된 key 들중에서 LRU algorithm 에 의해서 선택된 key 제거
+# - allkeys-lru : 모든 key 들 중 LRU algorithm에 의해서 선택된 key 제거
+# - volatile-random : expire 가 설정된 key 들 중 임의의 key 제거
+# - allkeys-random : 모든 key 들 중 임의의 key 제거
+# - volatile-ttl : expire time(TTL)이 가장 적게 남은 key 제거 (minor TTL)
+maxmemory-policy volatile-ttl # == RDB 관련 설정 ==
+# 저장할 RDB 파일명
+dbfilename backup.rdb
+# 15분 안에 최소 1개 이상의 key가 변경 되었을 때
+save 900 1
+# 5분 안에 최소 10개 이상의 key가 변경 되었을 때
+save 300 10
+# 60초 안에 최소 10000개 이상의 key가 변경 되었을 때
+save 60 10000
+# RDB 저장 실패 시 write 명령 차단 여부
+stop-writes-on-bgsave-error no # == AOF 관련 설정 ==
+# AOF 사용 여부
+appendonly yes
+# 저장할 AOF 파일명
+appendfilename appendonly.aof
+# 디스크와 동기화 처리 방식
+# - always : AOF 값을 추가할 때마다 fsync를 호출해서 디스크에 쓰기
+# - everysec : 매초마다 fsync를 호출해서 디스크에 쓰기
+# - no : OS가 실제 sync를 할 때까지 따로 설정하지 않음
+appendfsync everysec # == Replication 관련 설정테스트 ==
+# Slave Redis 설정
+#임시주석slaveof 127.0.0.1 6380
+<br>docker file도 생성하여 준다.<br>FROM redis:latest
+COPY redis.conf /저장디렉토리/redis.conf
+CMD [ "redis-server", "/저장디렉토리/redis.conf" ]
+EXPOSE 6379
+<br><img alt="Pasted image 20250221115129.png" src="사진-및-문서/pasted-image-20250221115129.png" target="_self"><br>docker build --platform linux/amd64 -t 이미지이름:태그 디렉토리
+----
+docker build --platform linux/amd64 -t springredis:linux .
+<br>dockerfile이 있는 디렉토리에서 해당 명령어를 실행한다.<br>* --platform linux/amd64 태그는 본인의 ec2환경이 리눅스64 환경이기 때문에 추가했다.<br><img alt="Pasted image 20250221115132.png" src="사진-및-문서/pasted-image-20250221115132.png" target="_self"><br>docker push xotjd794613/springredis:linux
+------
+docker push 계정명/이미지이름:태그
+<br><img alt="Pasted image 20250221115136.png" src="사진-및-문서/pasted-image-20250221115136.png" target="_self"><br><img alt="Pasted image 20250221115140.png" src="사진-및-문서/pasted-image-20250221115140.png" target="_self"><br>업로드까지 완료했다.<br>이전에 만들어두었던 Spring(jar)이미지&nbsp;와 방금 push한 redis이미지를 받는다<br>docker pull xotjd794613/funfun:0.0.1-linux
+docker pull xotjd794613/springredis:linux
+--
+docker pull 계정명/이미지이름:태그
+<br>docker images
+<br>명령어로 확인 할 수 있다.<br><img alt="Pasted image 20250221115146.png" src="사진-및-문서/pasted-image-20250221115146.png" target="_self"><br>이미지를 컨테이너로 실행하자.<br>Spring 이미지 실행<br>sudo docker run -d -p 8000:8080 xotjd794613/funfun:0.0.1-linux
+------
+sudo docker run -d -p 포트 계정명/이미지명:태그
+<br>redis 이미지 실행<br>docker run --name springredis -p 6379:6379 -v /home/ec2-user/redis:/data -d xotjd794613/springredis:linux --appendonly yes ---------- docker run --name 컨테이너이름 -p 포트 -v 데이터저장할디렉토리:/data -d 계정명/이미지명:태그 --appendonly yes
+<br>'docker ps -a' 명령어로 실행중인 모든 컨테이너를 확인 할 수 있다.<br><img alt="Pasted image 20250221115151.png" src="사진-및-문서/pasted-image-20250221115151.png" target="_self"><br>http://ec2주소:포트번호로 접속시 정상적으로 spring기반 페이지와 redis가 연결된 것을 확인할 수 있다.<br><img alt="Pasted image 20250221115157.png" src="사진-및-문서/pasted-image-20250221115157.png" target="_self"><br>오류
+만약,&nbsp;해당주소로 접속시 접속이 안되거나, redis가 정상적으로 실행되지 않는경우
+<br>
+<br><img alt="Pasted image 20250221115201.png" src="사진-및-문서/pasted-image-20250221115201.png" target="_self">
+<br><img alt="Pasted image 20250221115214.png" src="사진-및-문서/pasted-image-20250221115214.png" target="_self"><br>2.1 ec2 redis 컨테이너 포트 확인<br>docker ps -a
+<br>로 redis 컨테이너 ID 확인<br><img alt="Pasted image 20250221115220.png" src="사진-및-문서/pasted-image-20250221115220.png" target="_self"><br>docker inspect 컨테이너ID
+<br>명령어로 IP 확인<br><img alt="Pasted image 20250221115224.png" src="사진-및-문서/pasted-image-20250221115224.png" target="_self"><br><img alt="Pasted image 20250221115228.png" src="사진-및-문서/pasted-image-20250221115228.png" target="_self"><br>spring 프로젝트에 ip 정보 추가<br>
+<img alt="Pasted image 20250221115232.png" src="사진-및-문서/pasted-image-20250221115232.png" target="_self"><br>]]></description><link>tools/aws/🌥-aws(ec2)셋팅부터-배포까지.html</link><guid isPermaLink="false">Tools/aws/🌥 aws(EC2)셋팅부터 배포까지.md</guid><pubDate>Mon, 24 Feb 2025 01:37:57 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250221112429.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20250221112429.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[🍊 aws EC2란]]></title><description><![CDATA[<a class="tag" href="?query=tag:Tools" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Tools</a> <a class="tag" href="?query=tag:AWS" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#AWS</a> <a class="tag" href="?query=tag:Amazon" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Amazon</a> <a class="tag" href="?query=tag:Cloud" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Cloud</a> <a class="tag" href="?query=tag:EC2" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#EC2</a> <br> <a href=".?query=tag:Tools" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Tools">#Tools</a> <a href=".?query=tag:AWS" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#AWS">#AWS</a> <a href=".?query=tag:Amazon" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Amazon">#Amazon</a> <a href=".?query=tag:Cloud" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Cloud">#Cloud</a> <a href=".?query=tag:EC2" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#EC2">#EC2</a><br><img alt="Pasted image 20250221114152.png" src="사진-및-문서/pasted-image-20250221114152.png" target="_self"><br>
+AWS의 EC2는 무엇이며, 왜 사용하는가? 에 대해 알아보겠다.<br>
+<br>
+Amazon Elastic Compute Cloud으로써 AWS에서 제공하는 클라우드 컴퓨팅 서비스이다.<br>
+즉, 독립괸 컴퓨터를 임대해주는 aws의 대표적인 서비스상품 이다. <br>
+클라우드 컴퓨팅 서비스로 컴퓨팅 요구사항의 변화에 따라 컴퓨팅 파워를 조정할 수 있다. <br>
+실제로 사용한 용량 만큼만 지불하여, 서비스 요금을 미리 선입금 할 필요가 없다. <br>
+Linux / Window 중 OS선택이 자유롭다. <br>
+머신러닝, 웹서버, 게임서버 등 다양한 용도에 최적화된 서버를 쉽게 구성 가능하다. <br>
+여러 aws서비스와 유기적인 연동이 가능하다. <br>
+<br>
+인스턴스란 aws클라우드에서 사용하는&nbsp;가상컴퓨터&nbsp;이다. <br>
+cpu, 메모리, 그래픽카드 등 연산을 위한 하드웨어 부분을 담당한다. <br>
+aws는 각 사용 사례에 맞게 최적화된 다양한 인스턴스 유형을 제공한다. <br>-&nbsp;한정된 요금으로&nbsp;유형(사용목적)을 정하고,&nbsp;사이즈를 골라, 각 인스턴스별 사용 목적에 따라 최적화 시킨다.<br>
+<img alt="Pasted image 20250221114208.png" src="사진-및-문서/pasted-image-20250221114208.png" target="_self"><br>
+<br>
+인스턴스가 연산(cpu, 메모리 등) 처리를 담당한다면, EBS는&nbsp;데이터를 저장하는&nbsp;역할을 한다. <br>
+즉, 클라우드에서 사용하는 가상 HDD이다. <br>
+손쉽게 사용량을 많게, 혹은 적게 확장할 수 있으며, 빌린 부분에 대한 부분만 저렴하게 비용을 지불 할 수 있다. <br>
+총 5가지 타입을 제공하는데, 다음과 같다.<br>
+<img alt="Pasted image 20250221114220.png" src="사진-및-문서/pasted-image-20250221114220.png" target="_self"> <br>
+<br>
+AMI는 인스턴스를 실행하기 위한 정보를 모은 단위이다. <br>
+EC2를 실행하기 위해서, cpu프로세서 타입, 저장공간 용량, 32/64비트, OS정보, 설치된 소프트웨어 정보 등 <br>세팅정보(템플릿)을 저장한 단위 이다.<br>
+즉, 서버에 필요한 운영체제와 다양한 소프트웨어로 구성된 탬플릿 <br>
+AMI를 사용하여&nbsp;현재 상태의 EC2셋팅(템플릿)을 복제하여 다른 계정이나, 다른 리전에 전달이 가능하다. <br>
+<br>위의 이유들로 생각할 수 있는&nbsp;장점들!
+<br>. 클라우드에서 확장 가능한 컴퓨팅 용량을 제공하기 때문에, 하드웨어에 대한 투자를 앞당길 필요가 없기 때문에,<br>신속하게 개발하고 배포 할 수 있다!<br>. 컴퓨팅 요구가 변화했을 때,&nbsp;용량을 빠르게 확장/축소&nbsp;할 수 있다. 즉, 비용을 아낄 수 있다.<br>. 일반적인 실패 시나리오를 방지하고, 장애 복구 능력이 뛰어난 도구를 제공한다.<br>. 이렇게 유연한 구조/사이즈 변경이 가능한 호스팅 서비스와 더불어, 안정적인 환경을 제공하며,<br>본안성이 매우 높은 네트워킹 기능을 제공한다.<br>]]></description><link>tools/aws/🍊-aws-ec2란.html</link><guid isPermaLink="false">Tools/aws/🍊 aws EC2란.md</guid><pubDate>Mon, 24 Feb 2025 01:37:49 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250221114152.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20250221114152.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[🪓 도구]]></title><description><![CDATA[<a class="tag" href="?query=tag:Tools" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Tools</a> <a class="tag" href="?query=tag:모음" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#모음</a> <a class="tag" href="?query=tag:도구" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#도구</a> <br> <a href=".?query=tag:Tools" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Tools">#Tools</a> <a href=".?query=tag:모음" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#모음">#모음</a> <a href=".?query=tag:도구" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#도구">#도구</a><br>툴 모음
+제가 사용하고 있는 편리/유용한 TOOL을 소개하고 설명하는 곳 입니다.
+<br>
+<br><a data-href="🍊 aws EC2란" href="tools/aws/🍊-aws-ec2란.html" class="internal-link" target="_self" rel="noopener nofollow">🍊 aws EC2란</a>
+<br><a data-href="🌥 aws(EC2)셋팅부터 배포까지" href="tools/aws/🌥-aws(ec2)셋팅부터-배포까지.html" class="internal-link" target="_self" rel="noopener nofollow">🌥 aws(EC2)셋팅부터 배포까지</a>
+<br><a data-href="🍌 Elastic IP(탄력적 IP)란" href="tools/🍌-elastic-ip(탄력적-ip)란.html" class="internal-link" target="_self" rel="noopener nofollow">🍌 Elastic IP(탄력적 IP)란</a>
+<br>
+<br><a data-href="🐋 docker" href="tools/docker/🐋-docker.html" class="internal-link" target="_self" rel="noopener nofollow">🐋 docker</a>
+<br><a data-href="📘 SpringBoot &amp; Docker + Reids 연동" href="tools/docker/📘-springboot-&amp;-docker-+-reids-연동.html" class="internal-link" target="_self" rel="noopener nofollow">📘 SpringBoot &amp; Docker + Reids 연동</a>
+<br>
+<br><a data-href="🎵 Obsidian" href="tools/🎵-obsidian.html" class="internal-link" target="_self" rel="noopener nofollow">🎵 Obsidian</a>
+<br>
+<br>🩹추가예정!!]]></description><link>tools/🪓-도구.html</link><guid isPermaLink="false">Tools/🪓 도구.md</guid><pubDate>Mon, 24 Feb 2025 01:37:31 GMT</pubDate></item><item><title><![CDATA[1. 객체 지향 설계와 스프링]]></title><description><![CDATA[<a class="tag" href="?query=tag:SpringCoreBasic" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SpringCoreBasic</a> <a class="tag" href="?query=tag:SPRING" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SPRING</a> <a class="tag" href="?query=tag:lectur" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#lectur</a> <a class="tag" href="?query=tag:강의" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#강의</a> <br> <a href=".?query=tag:SpringCoreBasic" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SpringCoreBasic">#SpringCoreBasic</a> <a href=".?query=tag:SPRING" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SPRING">#SPRING</a> <a href=".?query=tag:lectur" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#lectur">#lectur</a> <a href=".?query=tag:강의" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#강의">#강의</a><br>스프링이 제공하는 핵심 가치와 원리를 제대로 파악하고 사용한다.<br>객체 지향 프로그래밍
+<br>단순 레퍼런스 문서 설명이 아닌, 이유와 핵심원리
+<br>스프링의 본질에 대해 깊은 이해 -&gt; 객체지향 설계의 본질을 이해
+<br>2000년대 초반<br>
+EJB(enterprise java Beans) -&gt; spring / JAP 를 짬뽕해놓은 기술이 탄생<br>Java진영에서 표준으로 개발한 기술
+<br>컨테이너 기술
+<br>설정에 의한 트렌젝션 기술
+<br>분산 기술
+<br>엔티티 빈 : ORM기술 중 하나
+<br>가격이 매우 비쌌음 수천만원 짜리 Server도 존재했었음
+<br>단점 <br>어렵고
+<br>복잡하고
+<br>느리다
+<br>POJO - 오래된 방식의 자바 오브젝트, 그냥 이걸로 돌아가자는 말이 나올 정도였다.<br>두 명의 사람이 EJB에 환멸을 느끼고, 오픈소스를 만든다.<br>
+<br>EJB 컨테이너의 대체
+<br>단순함의 승리
+<br>현재 사실상의 표준 기술
+<br>
+<br>EJB의 엔티티빈 기술을 대체
+<br>JPA 새로운 표준 정의]]></description><link>lectur/1.-객체-지향-설계와-스프링.html</link><guid isPermaLink="false">lectur/1. 객체 지향 설계와 스프링.md</guid><pubDate>Fri, 21 Feb 2025 09:12:06 GMT</pubDate></item><item><title><![CDATA[🍎 객체 지향 설계와 스프링]]></title><description><![CDATA[<br>]]></description><link>lectur/🍎-객체-지향-설계와-스프링.html</link><guid isPermaLink="false">lectur/🍎 객체 지향 설계와 스프링.md</guid><pubDate>Fri, 21 Feb 2025 05:31:26 GMT</pubDate></item><item><title><![CDATA[[Bronze III] 별 찍기 - 9 - 2446]]></title><description><![CDATA[<br><br><a data-tooltip-position="top" aria-label="https://www.acmicpc.net/problem/2446" rel="noopener nofollow" class="external-link is-unresolved" href="https://www.acmicpc.net/problem/2446" target="_self">문제 링크</a> <br><br>메모리: 31256 KB, 시간: 40 ms<br><br>구현<br><br>예제를 보고 규칙을 유추한 뒤에 별을 찍어 보세요.<br><br> 첫째 줄에 N(1 ≤ N ≤ 100)이 주어진다.<br><br> 첫째 줄부터 2×N-1번째 줄까지 차례대로 별을 출력한다.]]></description><link>study/coding-test/bronze/2446. 별 찍기 － 9/readme.html</link><guid isPermaLink="false">study/Coding Test/Bronze/2446. 별 찍기 － 9/README.md</guid><pubDate>Sat, 20 Apr 2024 14:26:32 GMT</pubDate></item><item><title><![CDATA[[Bronze III] 공 넣기 - 10810]]></title><description><![CDATA[<br><br><a data-tooltip-position="top" aria-label="https://www.acmicpc.net/problem/10810" rel="noopener nofollow" class="external-link is-unresolved" href="https://www.acmicpc.net/problem/10810" target="_self">문제 링크</a> <br><br>메모리: 31256 KB, 시간: 44 ms<br><br>구현, 시뮬레이션<br><br>도현이는 바구니를 총 N개 가지고 있고, 각각의 바구니에는 1번부터 N번까지 번호가 매겨져 있다. 또, 1번부터 N번까지 번호가 적혀있는 공을 매우 많이 가지고 있다. 가장 처음 바구니에는 공이 들어있지 않으며, 바구니에는 공을 1개만 넣을 수 있다.<br>도현이는 앞으로 M번 공을 넣으려고 한다. 도현이는 한 번 공을 넣을 때, 공을 넣을 바구니 범위를 정하고, 정한 바구니에 모두 같은 번호가 적혀있는 공을 넣는다. 만약, 바구니에 공이 이미 있는 경우에는 들어있는 공을 빼고, 새로 공을 넣는다. 공을 넣을 바구니는 연속되어 있어야 한다.<br>공을 어떻게 넣을지가 주어졌을 때, M번 공을 넣은 이후에 각 바구니에 어떤 공이 들어 있는지 구하는 프로그램을 작성하시오.<br><br> 첫째 줄에 N (1 ≤ N ≤ 100)과 M (1 ≤ M ≤ 100)이 주어진다.<br>둘째 줄부터 M개의 줄에 걸쳐서 공을 넣는 방법이 주어진다. 각 방법은 세 정수 i j k로 이루어져 있으며, i번 바구니부터 j번 바구니까지에 k번 번호가 적혀져 있는 공을 넣는다는 뜻이다. 예를 들어, 2 5 6은 2번 바구니부터 5번 바구니까지에 6번 공을 넣는다는 뜻이다. (1 ≤ i ≤ j ≤ N, 1 ≤ k ≤ N)<br>도현이는 입력으로 주어진 순서대로 공을 넣는다.<br><br> 1번 바구니부터 N번 바구니에 들어있는 공의 번호를 공백으로 구분해 출력한다. 공이 들어있지 않은 바구니는 0을 출력한다.]]></description><link>study/coding-test/bronze/10810. 공 넣기/readme.html</link><guid isPermaLink="false">study/Coding Test/Bronze/10810. 공 넣기/README.md</guid><pubDate>Sat, 20 Apr 2024 14:26:32 GMT</pubDate></item><item><title><![CDATA[[Bronze II] 이진수 연산 - 12813]]></title><description><![CDATA[<br><br><a data-tooltip-position="top" aria-label="https://www.acmicpc.net/problem/12813" rel="noopener nofollow" class="external-link is-unresolved" href="https://www.acmicpc.net/problem/12813" target="_self">문제 링크</a> <br><br>메모리: 31256 KB, 시간: 500 ms<br><br>문자열<br><br>총 100,000 비트로 이루어진 이진수 A와 B가 주어진다. 이때, A &amp; B, A | B, A ^ B, ~A, ~B를 한 값을 출력하는 프로그램을 작성하시오.<br><br> 첫째 줄에 이진수 A, 둘째 줄에 이진수 B가 주어진다. 두 이진수의 길이는 모두 100,000이다. 예제의 경우에만 길이가 10이며, 예제는 채점하지 않는다.<br><br> 첫째 줄부터 한 줄에 하나씩 차례대로 A &amp; B, A | B, A ^ B, ~A, ~B를 출력한다.]]></description><link>study/coding-test/bronze/12813. 이진수 연산/readme.html</link><guid isPermaLink="false">study/Coding Test/Bronze/12813. 이진수 연산/README.md</guid><pubDate>Sat, 20 Apr 2024 14:26:32 GMT</pubDate></item><item><title><![CDATA[[Bronze II] 정수 N개의 합 - 15596]]></title><description><![CDATA[<br><br><a data-tooltip-position="top" aria-label="https://www.acmicpc.net/problem/15596" rel="noopener nofollow" class="external-link is-unresolved" href="https://www.acmicpc.net/problem/15596" target="_self">문제 링크</a> <br><br>메모리: 392952 KB, 시간: 352 ms<br><br>사칙연산, 구현, 수학<br><br>정수 n개가 주어졌을 때, n개의 합을 구하는 함수를 작성하시오.<br>작성해야 하는 함수는 다음과 같다.<br> <br>C, C11, C (Clang), C11 (Clang): long long sum(int *a, int n);<br>&lt;ul&gt; &lt;li&gt;&lt;code&gt;a&lt;/code&gt;: 합을 구해야 하는 정수 &lt;code&gt;n&lt;/code&gt;개가 저장되어 있는 배열 (0 ≤ a[i] ≤ 1,000,000, 1 ≤ n ≤ 3,000,000)&lt;/li&gt; &lt;li&gt;&lt;code&gt;n&lt;/code&gt;: 합을 구해야 하는 정수의 개수&lt;/li&gt; &lt;li&gt;리턴값: a에 포함되어 있는 정수 &lt;code&gt;n&lt;/code&gt;개의 합&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;C++, C++11, C++14, C++17, C++ (Clang), C++11 (Clang), C++14 (Clang), C++17 (Clang): &lt;code&gt;long long sum(std::vector&lt;int&gt; &amp;a);&lt;/code&gt;
+&lt;ul&gt; &lt;li&gt;&lt;code&gt;a&lt;/code&gt;: 합을 구해야 하는 정수 &lt;code&gt;n&lt;/code&gt;개가 저장되어 있는 배열 (0 ≤ a[i] ≤ 1,000,000, 1 ≤ n ≤ 3,000,000)&lt;/li&gt; &lt;li&gt;리턴값: &lt;code&gt;a&lt;/code&gt;에 포함되어 있는 정수 &lt;code&gt;n&lt;/code&gt;개의 합&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Python 2, Python 3, PyPy, PyPy3: &lt;code&gt;def solve(a: list) -&gt; int&lt;/code&gt;
+&lt;ul&gt; &lt;li&gt;&lt;code&gt;a&lt;/code&gt;: 합을 구해야 하는 정수 &lt;code&gt;n&lt;/code&gt;개가 저장되어 있는 리스트 (0 ≤ a[i] ≤ 1,000,000, 1 ≤ n ≤ 3,000,000)&lt;/li&gt; &lt;li&gt;리턴값: &lt;code&gt;a&lt;/code&gt;에 포함되어 있는 정수 &lt;code&gt;n&lt;/code&gt;개의 합 (정수)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Java: &lt;code&gt;long sum(int[] a);&lt;/code&gt; (클래스 이름: Test)
+&lt;ul&gt; &lt;li&gt;&lt;code&gt;a&lt;/code&gt;: 합을 구해야 하는 정수 &lt;code&gt;n&lt;/code&gt;개가 저장되어 있는 배열 (0 ≤ a[i] ≤ 1,000,000, 1 ≤ n ≤ 3,000,000)&lt;/li&gt; &lt;li&gt;리턴값: &lt;code&gt;a&lt;/code&gt;에 포함되어 있는 정수 &lt;code&gt;n&lt;/code&gt;개의 합&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Go: &lt;code&gt;sum(a []int) int&lt;/code&gt;
+&lt;ul&gt; &lt;li&gt;&lt;code&gt;a&lt;/code&gt;: 합을 구해야 하는 정수 &lt;code&gt;n&lt;/code&gt;개가 저장되어 있는 배열 (0 ≤ a[i] ≤ 1,000,000, 1 ≤ n ≤ 3,000,000)&lt;/li&gt; &lt;li&gt;리턴값: &lt;code&gt;a&lt;/code&gt;에 포함되어 있는 정수 &lt;code&gt;n&lt;/code&gt;개의 합&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+<br><br><br> Empty<br><br> Empty]]></description><link>study/coding-test/bronze/15596. 정수 n개의 합/readme.html</link><guid isPermaLink="false">study/Coding Test/Bronze/15596. 정수 N개의 합/README.md</guid><pubDate>Sat, 20 Apr 2024 14:26:32 GMT</pubDate></item></channel></rss>

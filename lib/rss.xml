@@ -1,15 +1,150 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[taesunglog]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib/media/favicon.png</url><title>taesunglog</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 05 Mar 2025 00:46:27 GMT</lastBuildDate><atom:link href="lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 05 Mar 2025 00:46:26 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[💻 프로젝트]]></title><description><![CDATA[<a class="tag" href="?query=tag:프로젝트" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#프로젝트</a> <a class="tag" href="?query=tag:모음" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#모음</a> <br> <a href=".?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href=".?query=tag:모음" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#모음">#모음</a><br>프로젝트
-public하게 공개할 수 있는 프로젝트의 제작 과정입니다.
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[taesunglog]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib/media/favicon.png</url><title>taesunglog</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 05 Mar 2025 01:27:40 GMT</lastBuildDate><atom:link href="lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 05 Mar 2025 01:27:37 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[🔐 Lock이란 무엇인가. 헬로 서비스 이슈]]></title><description><![CDATA[<a class="tag" href="?query=tag:SQL" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SQL</a> <a class="tag" href="?query=tag:Lock" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Lock</a> <a class="tag" href="?query=tag:개선" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#개선</a> <a class="tag" href="?query=tag:이슈" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#이슈</a> <br> <a href=".?query=tag:SQL" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SQL">#SQL</a> <a href=".?query=tag:Lock" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Lock">#Lock</a> <a href=".?query=tag:개선" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개선">#개선</a> <a href=".?query=tag:이슈" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#이슈">#이슈</a><br>
+<br>투자자 투자순서보장 X <br>락 획득 실패와 정합성 문제 -&gt; 락에 유효시간이 있기 떄문이다. 4초 <br>-&gt; 큐 구조이긴 하나, 순차적으로 허가를 준다고 하여도 먼저 작업이 끝난 녀석부터 실행되기 때문에.<br>
+<br>중앙기록관리기관(p2p)에서 해당 상품에 대한 단일 투자기록을 요구.<br>
+즉, 하나라도 실패하면 실패한 투자건으로써 보낼수 밖에 없는 규정
 <br>
-<br><a data-href="🏹 예치금 차액 비교 Spring Batch 리펙토링" href="project/hello-batch/🏹-예치금-차액-비교-spring-batch-리펙토링.html" class="internal-link" target="_self" rel="noopener nofollow">🏹 예치금 차액 비교 Spring Batch 리펙토링</a>⭐
-<br><a data-href="🏹 예치금 차액 비교 Spring Batch 리펙토링 부록" href="project/hello-batch/🏹-예치금-차액-비교-spring-batch-리펙토링-부록.html" class="internal-link" target="_self" rel="noopener nofollow">🏹 예치금 차액 비교 Spring Batch 리펙토링 부록</a>
-<br><a data-href="✏ Chunk_Partitioning Batch 구조 드로잉" href="project/hello-batch/✏-chunk_partitioning-batch-구조-드로잉.html" class="internal-link" target="_self" rel="noopener nofollow">✏ Chunk_Partitioning Batch 구조 드로잉</a>
+<br>매 투자 건 별로 조회하는 개인별 투자한도를 redis로 관리하여, 투자건별 속도 개선
 <br>
-<br><a data-href="👩‍👧‍👦 marketing Analytics 공통모듈 제작기" href="project/hello-marketing/👩‍👧‍👦-marketing-analytics-공통모듈-제작기.html" class="internal-link" target="_self" rel="noopener nofollow">👩‍👧‍👦 marketing Analytics 공통모듈 제작기</a>⭐
-<br><a data-href="👩‍👧‍👦 Analytics 공통모듈 ADMIN용 데이터 추출" href="project/hello-marketing/👩‍👧‍👦-analytics-공통모듈-admin용-데이터-추출.html" class="internal-link" target="_self" rel="noopener nofollow">👩‍👧‍👦 Analytics 공통모듈 ADMIN용 데이터 추출</a>
+<br>상품을 미리 열어, 투자 금액 데이터를 쌓는 원리.
+<br>해당 방법을 사용하면 데이터 정합성 및 경합을위한 락 사용 불필요
+<br>주의 ! 투자 완료 후 실패 처리를 받을 가능성 존재<br>결론
+현재 신탁 운영으로 인한 한도 데이터를 직접관리하지 못하는 문제와,<br>
+보수적인 운영상의 방침으로 큰 구조 개선을 힘들어 보임
+현재는 리펙토링을 통해 lock에 묶여있는 로직을 단순화 하는것에 만족해야겠음.]]></description><link>issue_troubleshooting/🔐-lock이란-무엇인가.-헬로-서비스-이슈.html</link><guid isPermaLink="false">Issue_TroubleShooting/🔐 Lock이란 무엇인가. 헬로 서비스 이슈.md</guid><pubDate>Wed, 05 Mar 2025 01:25:45 GMT</pubDate></item><item><title><![CDATA[🏹 예치금 차액 비교 Spring Batch 리펙토링]]></title><description><![CDATA[<a class="tag" href="?query=tag:프로젝트" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#프로젝트</a> <a class="tag" href="?query=tag:개발" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#개발</a> <a class="tag" href="?query=tag:SPRING" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SPRING</a> <a class="tag" href="?query=tag:Batch" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Batch</a> <a class="tag" href="?query=tag:Partitioning" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Partitioning</a> <a class="tag" href="?query=tag:Chunk" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Chunk</a> <a class="tag" href="?query=tag:성능개선" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#성능개선</a> <br> <a href=".?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href=".?query=tag:개발" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개발">#개발</a> <a href=".?query=tag:SPRING" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SPRING">#SPRING</a> <a href=".?query=tag:Batch" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Batch">#Batch</a> <a href=".?query=tag:Partitioning" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Partitioning">#Partitioning</a> <a href=".?query=tag:Chunk" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Chunk">#Chunk</a> <a href=".?query=tag:성능개선" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#성능개선">#성능개선</a> <br>기존 예치금 차액비교 Batch의 Tasklet방식의 배치의 단점을 보완하는 chunk 방식의 배치를 구현하고,<br>
+나아가 다른 기능의 Batch에도 효과적으로 빠르게 적용할 수 있는재사용성/유지보수성 높은 코드, 선례를 만들기 위함이다.<br>
+<br>Chunk, Partioning방식을 Job을 추가 개발 (기존 balanceJob 유지)
+<br>당분간 두 Job을 병행하면서 비교
+<br>추가한 Job 기능에 문제없다면 기존 balanceJob 삭제
+<br><img alt="회사 은행 서비스1111.png" src="사진-및-문서/회사-은행-서비스1111.png" target="_self"><br>
+<img alt="Spring Batch Tasklet 예치금 잔액 비교 1.png" src="사진-및-문서/spring-batch-tasklet-예치금-잔액-비교-1.png" target="_self"><br>
+<img alt="Spring Batch Tasklet 예치금 잔액 비교 잘못된 차액발생 인식 타임라인.png" src="사진-및-문서/spring-batch-tasklet-예치금-잔액-비교-잘못된-차액발생-인식-타임라인.png" target="_self"><br>
+<br>평균 소요시간: 약 17.35분
+<br>최대 소요시간: 22분
+<br>최소 소요시간: 12분<br>
+<img alt="output (1).png" src="사진-및-문서/output-(1).png" target="_self">
 <br>
-<br><a data-href="👻 Obsidian 정적호스팅 CICD 과정" href="project/note-ci_cd/👻-obsidian-정적호스팅-cicd-과정.html" class="internal-link" target="_self" rel="noopener nofollow">👻 Obsidian 정적호스팅 CICD 과정</a>
-<br><a data-href="⛈ Obsidian-AWS연동" href="project/note-ci_cd/⛈-obsidian-aws연동.html" class="internal-link" target="_self" rel="noopener nofollow">⛈ Obsidian-AWS연동</a>
+<br>처음 가져온 Point 배치 완료시 까지 계속 물고있다. -&gt; 한 트렌젝션의 범위가 넓다.
+<br>정보 <br>병목이 있진 않으나, 한 배치서비스의 트렌젝션에서 외부 api의 값 변동을 반영하지 못함. <br>
+<br>G5-Point 등은 처음 7시 시점에 묶여있다. 회원별로 실데이터를 건건이 api(신한)를 호출하여 비교한다. 때문에, 7시 이후에 수정된데이터를 실시간으로 반영하지 못한다.
 <br>
-<br><a data-href="📘 SpringBoot &amp; Docker + Reids 연동" href="tools/docker/📘-springboot-&amp;-docker-+-reids-연동.html" class="internal-link" target="_self" rel="noopener nofollow">📘 SpringBoot &amp; Docker + Reids 연동</a>
-<br><a data-href="🌥 aws(EC2)셋팅부터 배포까지" href="tools/aws/🌥-aws(ec2)셋팅부터-배포까지.html" class="internal-link" target="_self" rel="noopener nofollow">🌥 aws(EC2)셋팅부터 배포까지</a>]]></description><link>project/💻-프로젝트.html</link><guid isPermaLink="false">project/💻 프로젝트.md</guid><pubDate>Wed, 05 Mar 2025 00:46:20 GMT</pubDate></item></channel></rss>
+<br>목적 : batch의 step 레벨에서의 스레드 분리 ( 병렬처리 )
+<br>
+<br>독립적인 ExecutionContext가 주어져 상태를 안전하게 관리할 수 있다.
+<br>
+<br>목적 : 각 step내의 트렌젝션 단위 분리
+<br>Reader / Processor / writer 가 역할을 분담
+<br>
+<br>
+Partition 생성: <br>Partition 1 : ID 1 ~ 25 / 대기열1 : ID 101 ~ 125 / 대기열2 : ID 201 ~ 225
+<br>Partition 2 : ID 26 ~ 50 / 대기열 : ID 126 ~ 150 / 대기열2 : ID 226 ~ 250
+<br>Partition 3 : ID 51 ~ 75 / 대기열 : ID 151 ~ 175 / 대기열2 : -
+<br>Partition 4 : ID 76 ~ 100 / 대기열 : ID 176 ~ 200 / 대기열2 : - <br>
+각 Partition에서 Chunk 처리: <br>Partition 1: <br>Chunk 1: ID 1 ~ 10 → 커밋
+<br>Chunk 2: ID 11 ~ 20 → 커밋
+<br>Chunk 3: ID 21 ~ 25 → 커밋 <br>Partition 2: <br>Chunk 1: ID 26 ~ 35 → 커밋
+<br>Chunk 2: ID 36 ~ 45 → 커밋
+<br>Chunk 3: ID 46 ~ 50 → 커밋 <br>나머지 Partition도 동일 방식으로 처리. <br>
+병렬 실행: <br>스레드 풀 크기 = 4이므로 4개의 Partition이 동시에 실행됩니다.
+<br>Partition 처리 순서는 스레드 풀에서 처리되는 순서에 따라 다를 수 있음. <br>
+트랜잭션 관리: <br>각 Partition은 독립적인 트랜잭션을 가짐.
+<br>각 Chunk가 커밋될 때마다 트랜잭션이 종료됨. <br>
+<br>
+Partition 생성: <br>Partition 1 : ID 1 ~ 25 / 대기열1 : ID 101 ~ 125 / 대기열2 : ID 201 ~ 225
+<br>Partition 2 : ID 26 ~ 50 / 대기열 : ID 126 ~ 150 / 대기열2 : ID 226 ~ 250
+<br>Partition 3 : ID 51 ~ 75 / 대기열 : ID 151 ~ 175 / 대기열2 : ID 251 ~ 275
+<br>Partition 4 : ID 76 ~ 100 / 대기열 : ID 176 ~ 200 / 대기열2 : ID 276 ~ 300
+<br>추가 스레드 풀 생성
+<br>Partition 5 : ID 300 ~ 325 / 대기열 : ID 326 ~ 350 / 대기열2 : ID 351 ~ 375
+<br>추가 스레드 풀 생성
+<br>Partition 6 : ID 376 ~ 400 / 대기열 : ID 401 ~ 425 / 대기열2 : ID 426 ~ 450 모든 대기열 소모 및 최대 스레드 풀 도달 =&gt; 작업 중단 및 오류 <br>-&gt; 이로볼때, 쿼리작업보다 api호출작업의 소요시간이 길어보임<br>범위 - 2017-11-07 ~ 2017-12-01
+startDate=2017-11-07&amp;endDate=2017-12-01 ## 컬럼 개수 - 292개 기존 병렬처리 : 1분 7초
+기존로직 : 6분 32초 t:스레드 개수 / c:각 스레드별 청크 파티션 수 ###### SimpleAsyncTaskExecutor vs ThreadPoolTaskExecutor SimpleAsyncTaskExecutor
+g4/c10 : 1분 41.586초
+g5/c10 : 1분 30.037초
+g5/c3 : 1분 28.997초
+g5/c1 : 1분 29.931초
+g8/c10 : 1분 36.019초
+g10/c1 : 1분 24.529초 - ThreadPoolTaskExecutor
+Th min/maxSize64, g64/c10 : 1분 42.848초
+Th min/maxSize32, g32/c10 : 1분 26.551초 Th min/maxSize16, g16/c10 : 1분 46.753초 / 1분 33.779초 / 2분 25.759초
+1분 11.668초 / 2분 5.773초 / 2분 39.553초 Th min/maxSize32, g8/c20 : 3분 25.743초 Th min/maxSize16, g4/c10 : 2분 29.207초 / 2분 8.004초
+<br>
+<br>Grid사이즈(파티셔닝 갯수) 만큼 스레드 풀 계속 생성
+<br>파티셔닝 갯수가 많아졌을 때, 스레드 생성/소멸에 드는 오버헤드 증가
+<br>
+<br>최소 스레드풀 개수 / 최대 스레드풀 개수 / 대기열 큐 크기 / 유휴 시간 모두 설정가능
+<br>파티셔닝 갯수가 많을 경우, 처리 성능에 맞는 스레드 풀에서 대기작업으로 처리하여 오버헤드 감소
+<br>
+<br>총 처리량 기준 1/n로 각 스레드에 할당시 충분히 감당한 양으로, 대기열을 사용할 필요가 없다.
+<br>
+<br>쿼리 호출 및 페이징 기법 직접 구현
+<br>
+<br>Native Query 형태로 호출하여 자동 페이징
+<br>
+<br>Spring Batch에서는 공식적으로 지원하지 않음
+<br>자동 페이징
+<br>Querydsl형태로 쿼리 호출 가능
+<br>
+<br>기존(헬로)의 Querydsl기반 JPAQuery를 그대로 사용 가능
+<br>자동 페이징
+<br>그 외 Querydsl의 장점 보유
+<br>
+<br>기존 PagingItemReader의 메서드를 오버라이딩 하여 사용하며,<br>
+JPQL이 수행되던 부분에 코드를 수정하였다.
+<br>@Bean @Scope(value = "step", proxyMode = ScopedProxyMode.TARGET_CLASS) public QuerydslPagingItemReader&lt;HfbatBankBalanceCheckDto&gt; balanceReader() { ExecutionContext jobContext = Objects.requireNonNull(StepSynchronizationManager.getContext()).getStepExecution().getJobExecution().getExecutionContext(); Date startDate = (Date) jobContext.get(START_DATE_KEY); Date endDate = (Date) jobContext.get(END_DATE_KEY); return new QuerydslPagingItemReader&lt;&gt;( entityManagerFactory, executionOrder, DEFAULT_CHUNK_SIZE, queryFactory -&gt; repository.newFindChangeBalanceMemberList( startDate, endDate )); }
+<br>
+<br>각 파티션 스레드 별 종료 시간이 크게 상이하다. 총 소요시간 기준 최대 약 20% 차이
+<br>적용 한다면, 각 스레드 별로 even하게 작업을 수행하여 총 소요시간을 줄일 수 있을것이라 판단 <br>JOB private static AtomicLong executionOrder = new AtomicLong(0); ... new QuerydslPagingItemReader&lt;&gt;( entityManagerFactory, executionOrder, DEFAULT_CHUNK_SIZE, queryFactory -&gt; repository.newFindChangeBalanceMemberList( startDate, endDate ));
+<br>job 레벨에서의 스레드 세이프한 전역 변수를 생성하였다.
+<br>그 후, 각 파티션 별 리더에 인자값으로 넘긴다.
+<br>long currentExecutionOrder = executionOrder.getAndIncrement(); long startIndex = (currentExecutionOrder) * getPageSize(); int totalRecords = stepContext.getInt("totalRecords"); if (startIndex &gt;= totalRecords) { initResults(); // 빈 결과로 초기화 tx.commit(); return; } int chunkSizeToRead = Math.min(getPageSize(), (int) (totalRecords - startIndex)); // 남은 데이터 크기만큼 읽기 // QueryDSL Query 생성 JPQLQuery&lt;T&gt; query = createQuery() .offset(startIndex) .limit(chunkSizeToRead);
+<br>
+<br>먼저 한 청크단위의 작업을 끝낸 파티션은 그 다음 작업을 즉시 할당받게 된다.
+<br>즉, 총 처리시간 기준 가장 빨리끝난 파티션과 가장 늦게 끝난 파티션의 실행 시간 차이는 최대 한 청크사이즈를 처리하는 시간보다 크지 않게 된다.
+<br>1차 비교 이후 차액이 발생한 녀석들의 List 를 한번 더 검증한 후, =&gt; 추후 변경 됨<br>
+검증된 녀석들을 <br>List&lt;BalanceCheckResultDto&gt; realDiffList= new ArrayList&lt;&gt;();
+<br>최종적인 차액 리스트에 넣는다.<br>writer는 각 프로세서의 리턴으로 받은 녀석들을 하나의 DTO List로 합쳐 메세징 처리를 하게 된다.<br>
+<br>유지보수성이 좋다.
+<br>환경셋팅에 리소스가 많이든다. <br>
+<br>구현 레벨이 가장 쉽다
+<br>DTO(데이터)가 많아질 경우, 큰 리소스를 차지한다.
+<br>
+<br>방법 2.보다는 리소스가 적지만, 문자열 처리 시간이 추가로 소모된다.
+<br>
+<br>높은 쓰기 성능을 갖고있다.
+<br>동시성 문제 없이 다중 스레드에서 사용 가능하다.
+<br>인덱스로 접근이 불가능하다.
+<br>QueueManager클래스를 생성하며 공통으로 사용 가능하도록 하였고,<br>@Slf4j public class QueueManager&lt;T&gt; { protected final ConcurrentLinkedQueue&lt;T&gt; sharedQueue = new ConcurrentLinkedQueue&lt;&gt;(); // 데이터 추가 public void addItemToSharedQueue(T item) { if (item != null) { sharedQueue.add(item); } }
+<br>이를 상속받아 특정 오브젝트를 넘길 수 있도록 하였다.<br>public class BalanceQueue extends QueueManager&lt;BalanceCheckResultDto&gt;{ public List&lt;BalanceCheckResultDto&gt; getDtoFromQueue() { return super.getItemsFromQueue(); } }
+<br>이게 무슨소리인지? <br>보통의 Batch 서비스라면 I/O 작업에 부하가 걸려있겠지만, 현재 예치금 차액 배치는 processor 즉, 예치금 비교 연산에서 큰 리소스를 소모하고있다.
+<br>이에 해당하는 시간 소모를 줄이기 위해 processor(서비스로직) 을 병렬처리 함으로 최종 처리시간 단축을 꾀할 수 있을지에 대한 고민이다.
+<br>이후 설명하겠지만, 내부 병렬처리 로직은 청크의 트렌젝션을 무너뜨릴 가능성이 크므로 지양해야함. <br><img alt="Pasted image 20241206113120.png" src="사진-및-문서/pasted-image-20241206113120.png" target="_self"><br>소요시간 : 1분 9초
+<br>-&gt; 기존 limit절을 이용한 로직보다 속도가 더빠르며,<br>
+JpaPagingReader를 적용한다면 중복 select횟수를 줄여 더 빨라질 것으로 예상된다.<br>결론 : 둘 중 하나<br>#### 292 컬럼
+## Processor 삭제(병렬처리)로직
+#### grid-size:6 / chunk-size:20
+54679 ms
+54416 ms
+## Processor 순차처리(writer만 병렬처리) 로직 #### grid-size:6 / chunk-size:20
+60440 ms
+62271 ms
+#### grid-size:10 / chunk-size:20
+58129 ms
+56723 ms
+#### grid-size:16 / chunk-size:20
+58595 ms
+56314 ms #### grid-size:32 / chunk-size:20
+- SQLTransientConnectionException
+- 스레드풀 점유갯수 초과
+<br>하지만, 이후 청크 방식 Batch의 확장성과 유지보수성을 고려하여 리더,프로세서,라이터 방식으로 구현하기로 정했다.<br><img alt="Pasted image 20241217150339.png" src="사진-및-문서/pasted-image-20241217150339.png" target="_self"><br>리스너에 너무 많은 역할이 부여된 모습
+<br><img alt="Pasted image 20241219145746.png" src="사진-및-문서/pasted-image-20241219145746.png" target="_self"><br>
+<br>StepExecution-Level ExecutionContext <br>
+각 Step에 고유한 ExecutionContext가 생성됩니다. <br>
+Step 내의 Reader, Processor, Writer 등에서 공유됩니다. <br>
+다른 Step과는 공유되지 않습니다. <br>
+balanceWorkerStep 내에서는 Reader, Processor, Writer가 동일한 ExecutionContext를 공유합니다. <br>
+balancePartitionStep과 balanceWorkerStep의 ExecutionContext는 서로 독립적입니다. <br>JobExecution-Level ExecutionContext <br>Job 전체에서 공유되며, 모든 Step이 동일한 ExecutionContext에 접근할 수 있습니다.
+<br>JobExecutionContext는 Step 간 데이터 전달이 필요할 때 유용합니다. <br>JobExecutionListener 객체 생성<br>@Slf4j public class JobTimerExecutionListener implements JobExecutionListener { private final String jobName; private long startTime = System.currentTimeMillis(); public JobTimerExecutionListener(String jobName) { this.jobName = jobName; } @Override public void beforeJob(JobExecution var1) { startTime = System.currentTimeMillis(); } @Override public void afterJob(JobExecution var1) { long endTime = System.currentTimeMillis(); long elapsedTime = endTime - startTime; long minutes = (elapsedTime / 1000) / 60; // 밀리초를 분으로 변환 double seconds = (elapsedTime / 1000.0) % 60; // 남은 밀리초를 초로 변환 (소수점 포함) log.info("{}-completed: {} ms | {} minutes {} seconds", jobName, elapsedTime, minutes, seconds); } }
+<br><img alt="output (9) 1.png" src="사진-및-문서/output-(9)-1.png" target="_self"><br><img alt="output (10).png" src="사진-및-문서/output-(10).png" target="_self"><br><img alt="do-messenger_screenshot_2024-12-23_14_40_21.png" src="사진-및-문서/do-messenger_screenshot_2024-12-23_14_40_21.png" target="_self"><br><img alt="Pasted image 20241224093159.png" src="사진-및-문서/pasted-image-20241224093159.png" target="_self"><br>
+<img alt="Pasted image 20241224093207.png" src="사진-및-문서/pasted-image-20241224093207.png" target="_self"><br>
+<img alt="Pasted image 20241224093225.png" src="사진-및-문서/pasted-image-20241224093225.png" target="_self"><br>]]></description><link>project/hello-batch/🏹-예치금-차액-비교-spring-batch-리펙토링.html</link><guid isPermaLink="false">project/hello Batch/🏹 예치금 차액 비교 Spring Batch 리펙토링.md</guid><pubDate>Wed, 05 Mar 2025 00:55:46 GMT</pubDate><enclosure url="사진-및-문서/회사-은행-서비스1111.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/회사-은행-서비스1111.png"&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>

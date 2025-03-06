@@ -1,8 +1,57 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[taesunglog]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib/media/favicon.png</url><title>taesunglog</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 05 Mar 2025 01:27:40 GMT</lastBuildDate><atom:link href="lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 05 Mar 2025 01:27:37 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[🔐 Lock이란 무엇인가. 헬로 서비스 이슈]]></title><description><![CDATA[<a class="tag" href="?query=tag:SQL" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SQL</a> <a class="tag" href="?query=tag:Lock" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Lock</a> <a class="tag" href="?query=tag:개선" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#개선</a> <a class="tag" href="?query=tag:이슈" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#이슈</a> <br> <a href=".?query=tag:SQL" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SQL">#SQL</a> <a href=".?query=tag:Lock" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Lock">#Lock</a> <a href=".?query=tag:개선" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개선">#개선</a> <a href=".?query=tag:이슈" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#이슈">#이슈</a><br>
-<br>투자자 투자순서보장 X <br>락 획득 실패와 정합성 문제 -&gt; 락에 유효시간이 있기 떄문이다. 4초 <br>-&gt; 큐 구조이긴 하나, 순차적으로 허가를 준다고 하여도 먼저 작업이 끝난 녀석부터 실행되기 때문에.<br>
-<br>중앙기록관리기관(p2p)에서 해당 상품에 대한 단일 투자기록을 요구.<br>
-즉, 하나라도 실패하면 실패한 투자건으로써 보낼수 밖에 없는 규정
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[taesunglog]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib/media/favicon.png</url><title>taesunglog</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Thu, 06 Mar 2025 07:41:13 GMT</lastBuildDate><atom:link href="lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Thu, 06 Mar 2025 07:41:10 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[🔐 상품 투자하기 서비스 이슈 및 Lock기법 개선안]]></title><description><![CDATA[<a class="tag" href="?query=tag:SQL" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SQL</a> <a class="tag" href="?query=tag:Lock" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Lock</a> <a class="tag" href="?query=tag:개선" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#개선</a> <a class="tag" href="?query=tag:이슈" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#이슈</a> <a class="tag" href="?query=tag:세미나" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#세미나</a> <br> <a href=".?query=tag:SQL" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SQL">#SQL</a> <a href=".?query=tag:Lock" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Lock">#Lock</a> <a href=".?query=tag:개선" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개선">#개선</a> <a href=".?query=tag:이슈" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#이슈">#이슈</a> <a href=".?query=tag:세미나" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#세미나">#세미나</a><br>
+<br>투자자 투자실행 시 순서보장X <br>락 획득 실패와 정합성 문제 <br>헬로의 투자 서비스는 다음과 같다.<br>특정 scf / 주택담보대출 상품에 대해 투자자를 모집한다.
+<br>투자자들은 특정시간에 open되는 상품에 일괄적으로 투자신청을한다. <br>이때, 각 회원별로 "투자 신청 기록"을 진행한다.
+<br>투자신청 기록이란, P2PCenter(금융결제원) API를 통해 유효성(투자기록 / 투자한도)을 조회하여 투자적합여부를 체크하고 기록하는것을 말한다. <br>회원별 검증 및 투자금 계산을 마치면 정상 투자가 진행된다.
+<br>이때, 투자신청 기록 로직에서 Lock기법이 적용되어있다.<br>
 <br>
+Lock기법은 여러 요청이 같은 리소스에 접근하려 할 때, 한 번에 하나의 요청만을 처리하도록 막는 기법이다. <br>
+데이터 정합성이 무엇보다 중요한 서비스에서 충돌을 방지하여 일관성을 효과적으로 유지하기 위함이다. <br>
+헬로 서비스의 경우, 회원 idx로 lock을 유지하여 성능과 안정성 확보<br>
+-상품별 한도 / 투자자 일별 투자상한 / 투자 금액 / 예치금 등 정합성이 무엇보다 우선시 되는 데이터들이 포함 <br>
+<br>설계 방법에 따라, 강한 일관성 유지 가능.
+<br>높은 트래픽을 감당할 수 있음. (동시요청)
+<br>수평적 확장에 용이(스케일 아웃)
+<br>
+<br>설계 방법에 따라, lock / 대기열 모두 일관성(데이터 정합성)을 유지할 수 있지만,<br>
+lock 기법 사용시 추가적인 셋팅 없이 쉽게 일관성 및 실시간 처리를 구현할 수 있기에 채택되었다.
+<br>
+<br>동시성 이슈를 해결하고자.
+<br>동시성 이슈를 대응해야할 곳.<br>모집금액과 동일 차주 투자 한도를 넘지 않게 상품의 동시성
+<br>p2p투자한도와 예치금 한도를 넘지 않게 회원별 동시성
+<br>우리는 외부은행에 투자자,대출자 돈을 모두 맡겨두고 운영(신탁 운영)중이다.<br>한도를 금결원 api를 통해 매번 체크
+<br>실제 돈이 빠져나가는 시점은, 모든 투자기록을 마친 후, 대출을 실행하는 시점에서 돈을 가져간다.<br>회원별 동시성
+<br>세마포어 뮤텍스 비관적락 등 여러 방법론이 있지만, 우리는 redisson lock을 사용하였다.<br>k8s를 통해 여러 server를 띄워놓는 분산환경이기 때문.
+<br>먼저, 헬로 투자하기 서비스는 redisson lock을 사용한다.<br>Lock testLock = redissonClient.getLock("affterProcessorLock-" + Idx);
+testLock.tryLock(4, 4, TimeUnit.SECONDS);
+// ...투자 로직
+testLock.unlock();
+<br>
+<br>Redis기반의 분산 락 구현체이다.
+<br>멀티 서버 환겨에서 동시성 문제를 해결하기 위해 사용된다.
+<br>여러개의 애플리케이션 인스턴스가 동일한 공유자원에 접근할 때, 중복 처리나 데잍터 불일치 문제를 방지해준다.
+<br>단일 서버 환경에서는 synchronized, 일반 Lock을 통해 임계 구역을 보호할 수 있다.<br>
+하지만, 멀티서버(분산 시스템) 환경에서는 이런<br>
+임계구역(Critical Section) : 여러 프로세스 또는 스레드가 공유 자원(Shared Resource) 에 접근하는 코드 영역
+<br>
+<br>분산 환경에서의 동시성 문제를 효과적으로 해결하기 위함
+<br>싱글스레드 큐 방식의 Redis는 왜 순서를 보장하지 않는가?<br>Redis가 lock을 관리하는 과정 자체는 싱글 스레드 큐 방식이다.<br>
+허나, Redisson Lock은 비동기 이벤트 기반의 락 처리 방식을 사용한다.
+<br>즉, 락을 흭득하려는 프로세스는 우선순위가 없는 경쟁적락방식이다.
+<br>정보
+FIFO 방식의 "공정 락(Fair Lock)"또한 지원하여 원하는 바 사용 가능하다.
+<br>
+<br>여러 클라이언트(서버 또는 스레드)가 동시에 같은 락을 요청할 수 있음.
+<br>가장 먼저 Redis에 락을 설정한 클라이언트가 락을 획득(경쟁 방식).
+<br>락을 획득한 클라이언트가 해제해야 다른 클라이언트가 락을 획득 가능.
+<br>락이 만료되거나 자동 연장(Watchdog)되면서 동작.
+<br>
+<br>왜 락이 풀리지?
+lock으로 묶여있는 로직 안에 너무 많은 동작이 몰려있다.<br>
+-&gt; 락에 유효시간이 있기 떄문이다. 4초<br>
+-&gt; 그때, 4초가 넘어 버리게 된다면, 락을 놓아버리고 동시성이 깨질 수 있는 가능성이 있다.
+어쩨서?? <br>A, B에 대해 단일 투자자가 투자를 했을 때,<br>
+A상품에 대한 투자를 완료처리하여 예치금 차감이 되지 않은 상태에서 락이 풀려버린다면?<br>
+B상품에 대한 투자도 정상처리가 되어버린다. <br>
 <br>매 투자 건 별로 조회하는 개인별 투자한도를 redis로 관리하여, 투자건별 속도 개선
 <br>
 <br>상품을 미리 열어, 투자 금액 데이터를 쌓는 원리.
@@ -10,141 +59,212 @@
 <br>주의 ! 투자 완료 후 실패 처리를 받을 가능성 존재<br>결론
 현재 신탁 운영으로 인한 한도 데이터를 직접관리하지 못하는 문제와,<br>
 보수적인 운영상의 방침으로 큰 구조 개선을 힘들어 보임
-현재는 리펙토링을 통해 lock에 묶여있는 로직을 단순화 하는것에 만족해야겠음.]]></description><link>issue_troubleshooting/🔐-lock이란-무엇인가.-헬로-서비스-이슈.html</link><guid isPermaLink="false">Issue_TroubleShooting/🔐 Lock이란 무엇인가. 헬로 서비스 이슈.md</guid><pubDate>Wed, 05 Mar 2025 01:25:45 GMT</pubDate></item><item><title><![CDATA[🏹 예치금 차액 비교 Spring Batch 리펙토링]]></title><description><![CDATA[<a class="tag" href="?query=tag:프로젝트" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#프로젝트</a> <a class="tag" href="?query=tag:개발" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#개발</a> <a class="tag" href="?query=tag:SPRING" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SPRING</a> <a class="tag" href="?query=tag:Batch" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Batch</a> <a class="tag" href="?query=tag:Partitioning" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Partitioning</a> <a class="tag" href="?query=tag:Chunk" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Chunk</a> <a class="tag" href="?query=tag:성능개선" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#성능개선</a> <br> <a href=".?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href=".?query=tag:개발" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개발">#개발</a> <a href=".?query=tag:SPRING" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SPRING">#SPRING</a> <a href=".?query=tag:Batch" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Batch">#Batch</a> <a href=".?query=tag:Partitioning" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Partitioning">#Partitioning</a> <a href=".?query=tag:Chunk" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Chunk">#Chunk</a> <a href=".?query=tag:성능개선" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#성능개선">#성능개선</a> <br>기존 예치금 차액비교 Batch의 Tasklet방식의 배치의 단점을 보완하는 chunk 방식의 배치를 구현하고,<br>
-나아가 다른 기능의 Batch에도 효과적으로 빠르게 적용할 수 있는재사용성/유지보수성 높은 코드, 선례를 만들기 위함이다.<br>
-<br>Chunk, Partioning방식을 Job을 추가 개발 (기존 balanceJob 유지)
-<br>당분간 두 Job을 병행하면서 비교
-<br>추가한 Job 기능에 문제없다면 기존 balanceJob 삭제
-<br><img alt="회사 은행 서비스1111.png" src="사진-및-문서/회사-은행-서비스1111.png" target="_self"><br>
-<img alt="Spring Batch Tasklet 예치금 잔액 비교 1.png" src="사진-및-문서/spring-batch-tasklet-예치금-잔액-비교-1.png" target="_self"><br>
-<img alt="Spring Batch Tasklet 예치금 잔액 비교 잘못된 차액발생 인식 타임라인.png" src="사진-및-문서/spring-batch-tasklet-예치금-잔액-비교-잘못된-차액발생-인식-타임라인.png" target="_self"><br>
-<br>평균 소요시간: 약 17.35분
-<br>최대 소요시간: 22분
-<br>최소 소요시간: 12분<br>
-<img alt="output (1).png" src="사진-및-문서/output-(1).png" target="_self">
+현재는 리펙토링을 통해 lock에 묶여있는 로직을 단순화 하는것에 만족해야겠음.]]></description><link>issue_troubleshooting/🔐-상품-투자하기-서비스-이슈-및-lock기법-개선안.html</link><guid isPermaLink="false">Issue_TroubleShooting/🔐 상품 투자하기 서비스 이슈 및 Lock기법 개선안.md</guid><pubDate>Thu, 06 Mar 2025 07:40:28 GMT</pubDate></item><item><title><![CDATA[📕 공부]]></title><description><![CDATA[<a class="tag" href="?query=tag:공부" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#공부</a> <a class="tag" href="?query=tag:모음" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#모음</a> <br> <a href=".?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a> <a href=".?query=tag:모음" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#모음">#모음</a><br>공부
+보고 배운 지식 중 공유하고 싶은 정보를 모아둔 카테고리 입니다.
 <br>
-<br>처음 가져온 Point 배치 완료시 까지 계속 물고있다. -&gt; 한 트렌젝션의 범위가 넓다.
-<br>정보 <br>병목이 있진 않으나, 한 배치서비스의 트렌젝션에서 외부 api의 값 변동을 반영하지 못함. <br>
-<br>G5-Point 등은 처음 7시 시점에 묶여있다. 회원별로 실데이터를 건건이 api(신한)를 호출하여 비교한다. 때문에, 7시 이후에 수정된데이터를 실시간으로 반영하지 못한다.
+<br><a data-href="⏰ Script 로딩 지연 이슈" href="issue_troubleshooting/⏰-script-로딩-지연-이슈.html" class="internal-link" target="_self" rel="noopener nofollow">⏰ Script 로딩 지연 이슈</a>⭐
+<br><a data-href="🔐 상품 투자하기 서비스 이슈 및 Lock기법 개선안" href="issue_troubleshooting/🔐-상품-투자하기-서비스-이슈-및-lock기법-개선안.html" class="internal-link" target="_self" rel="noopener nofollow">🔐 상품 투자하기 서비스 이슈 및 Lock기법 개선안</a>⭐
+<br><a data-href="🚦 Spring Batch(스레드와 트렌젝션) 트러블슈팅" href="issue_troubleshooting/🚦-spring-batch(스레드와-트렌젝션)-트러블슈팅.html" class="internal-link" target="_self" rel="noopener nofollow">🚦 Spring Batch(스레드와 트렌젝션) 트러블슈팅</a>
+<br><a data-href="⚔ 간단한 StckOverflow 원인분석(Query)" href="issue_troubleshooting/⚔-간단한-stckoverflow-원인분석(query).html" class="internal-link" target="_self" rel="noopener nofollow">⚔ 간단한 StckOverflow 원인분석(Query)</a>
 <br>
-<br>목적 : batch의 step 레벨에서의 스레드 분리 ( 병렬처리 )
+<br><a data-href="☕ JAVA , OOP" href="study/cs/☕-java-,-oop.html" class="internal-link" target="_self" rel="noopener nofollow">☕ JAVA , OOP</a>
+<br><a data-href="🍃 Spring" href="study/cs/🍃-spring.html" class="internal-link" target="_self" rel="noopener nofollow">🍃 Spring</a>
+<br><a data-href="🎩 DevOps" href="study/cs/🎩-devops.html" class="internal-link" target="_self" rel="noopener nofollow">🎩 DevOps</a>
+<br><a data-href="📔 DataBase" href="study/cs/📔-database.html" class="internal-link" target="_self" rel="noopener nofollow">📔 DataBase</a>
+<br><a data-href="📭 Server" href="study/cs/📭-server.html" class="internal-link" target="_self" rel="noopener nofollow">📭 Server</a>
+<br><a data-href="🐞 etc" href="study/cs/🐞-etc.html" class="internal-link" target="_self" rel="noopener nofollow">🐞 etc</a>
 <br>
-<br>독립적인 ExecutionContext가 주어져 상태를 안전하게 관리할 수 있다.
+<br><a data-href="🤠 Coding Test 풀이 모음" href="study/coding-test/🤠-coding-test-풀이-모음.html" class="internal-link" target="_self" rel="noopener nofollow">🤠 Coding Test 풀이 모음</a>
+<br><a data-href="👽 Algorithm" href="study/coding-test/👽-algorithm.html" class="internal-link" target="_self" rel="noopener nofollow">👽 Algorithm</a>
 <br>
-<br>목적 : 각 step내의 트렌젝션 단위 분리
-<br>Reader / Processor / writer 가 역할을 분담
+<br><a data-href="🔻 Redis 캐쉬 전략 - hello 서비스에 적용하여 성능개선 가능성" href="study/dev-seminar/🔻-redis-캐쉬-전략-hello-서비스에-적용하여-성능개선-가능성.html" class="internal-link" target="_self" rel="noopener nofollow">🔻 Redis 캐쉬 전략 - hello 서비스에 적용하여 성능개선 가능성</a>
+<br><a data-href="🍂 JPA, Mybatis , Dead Lock" href="study/dev-seminar/🍂-jpa,-mybatis-,-dead-lock.html" class="internal-link" target="_self" rel="noopener nofollow">🍂 JPA, Mybatis , Dead Lock</a>
+<br><a data-href="🔹 TDD에 대하여" href="study/dev-seminar/🔹-tdd에-대하여.html" class="internal-link" target="_self" rel="noopener nofollow">🔹 TDD에 대하여</a>
+<br><a data-href="🪕 JPA 에 대한 고찰" href="study/dev-seminar/🪕-jpa-에-대한-고찰.html" class="internal-link" target="_self" rel="noopener nofollow">🪕 JPA 에 대한 고찰</a>
+<br><a data-href="🔐 상품 투자하기 서비스 이슈 및 Lock기법 개선안" href="issue_troubleshooting/🔐-상품-투자하기-서비스-이슈-및-lock기법-개선안.html" class="internal-link" target="_self" rel="noopener nofollow">🔐 상품 투자하기 서비스 이슈 및 Lock기법 개선안</a>
+<br><a data-href="🥗 Spring Security_토큰-세션-쿠키-JWT 에 대하여" href="study/dev-seminar/🥗-spring-security_토큰-세션-쿠키-jwt-에-대하여.html" class="internal-link" target="_self" rel="noopener nofollow">🥗 Spring Security_토큰-세션-쿠키-JWT 에 대하여</a>
+<br><a data-href="📔 DB 테이블 설계, 어떻게 하는게 옳은 방법인가" href="study/dev-seminar/📔-db-테이블-설계,-어떻게-하는게-옳은-방법인가.html" class="internal-link" target="_self" rel="noopener nofollow">📔 DB 테이블 설계, 어떻게 하는게 옳은 방법인가</a>
+<br>
+<br><a data-href="🥈 필기 1과목 - 소프트웨어 설계" href="study/정보처리기사/정보처리기사-필기/🥈-필기-1과목-소프트웨어-설계.html" class="internal-link" target="_self" rel="noopener nofollow">🥈 필기 1과목 - 소프트웨어 설계</a>
+<br><a data-href="🥈 필기 2과목 - 소프트웨어 개발" href="study/정보처리기사/정보처리기사-필기/🥈-필기-2과목-소프트웨어-개발.html" class="internal-link" target="_self" rel="noopener nofollow">🥈 필기 2과목 - 소프트웨어 개발</a>
+<br><a data-href="🥈 필기 3과목 - 데이터베이스 구축" href="study/정보처리기사/정보처리기사-필기/🥈-필기-3과목-데이터베이스-구축.html" class="internal-link" target="_self" rel="noopener nofollow">🥈 필기 3과목 - 데이터베이스 구축</a>
+<br><a data-href="🥈 필기 4과목 - 프로그래밍 언어 활용" href="study/정보처리기사/정보처리기사-필기/🥈-필기-4과목-프로그래밍-언어-활용.html" class="internal-link" target="_self" rel="noopener nofollow">🥈 필기 4과목 - 프로그래밍 언어 활용</a>
+<br><a data-href="🥈 필기 5과목 - 정보시스템 구축관리" href="study/정보처리기사/정보처리기사-필기/🥈-필기-5과목-정보시스템-구축관리.html" class="internal-link" target="_self" rel="noopener nofollow">🥈 필기 5과목 - 정보시스템 구축관리</a>
+<br>
+<br><a data-href="🥇 정보처리 기사 실기 키워드" href="study/정보처리기사/정보처리기사-실기/🥇-정보처리-기사-실기-키워드.html" class="internal-link" target="_self" rel="noopener nofollow">🥇 정보처리 기사 실기 키워드</a>
+<br><a data-href="🥇 정보처리 기사 실기 SQL 문제" href="study/정보처리기사/정보처리기사-실기/🥇-정보처리-기사-실기-sql-문제.html" class="internal-link" target="_self" rel="noopener nofollow">🥇 정보처리 기사 실기 SQL 문제</a>]]></description><link>study/📕-공부.html</link><guid isPermaLink="false">study/📕 공부.md</guid><pubDate>Thu, 06 Mar 2025 06:06:21 GMT</pubDate></item><item><title><![CDATA[💻 프로젝트]]></title><description><![CDATA[<a class="tag" href="?query=tag:프로젝트" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#프로젝트</a> <a class="tag" href="?query=tag:모음" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#모음</a> <br> <a href=".?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href=".?query=tag:모음" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#모음">#모음</a><br>프로젝트
+public하게 공개할 수 있는 프로젝트의 제작 과정입니다.
+<br>
+<br><a data-href="🏹 예치금 차액 비교 Spring Batch 리펙토링" href="project/hello-batch/🏹-예치금-차액-비교-spring-batch-리펙토링.html" class="internal-link" target="_self" rel="noopener nofollow">🏹 예치금 차액 비교 Spring Batch 리펙토링</a>⭐
+<br><a data-href="🏹 예치금 차액 비교 Spring Batch 리펙토링 부록" href="project/hello-batch/🏹-예치금-차액-비교-spring-batch-리펙토링-부록.html" class="internal-link" target="_self" rel="noopener nofollow">🏹 예치금 차액 비교 Spring Batch 리펙토링 부록</a>
+<br><a data-href="✏ Chunk_Partitioning Batch 구조 드로잉" href="project/hello-batch/✏-chunk_partitioning-batch-구조-드로잉.html" class="internal-link" target="_self" rel="noopener nofollow">✏ Chunk_Partitioning Batch 구조 드로잉</a>
+<br>
+<br><a data-href="👩‍👧‍👦 marketing Analytics 공통모듈 제작기" href="project/hello-marketing/👩‍👧‍👦-marketing-analytics-공통모듈-제작기.html" class="internal-link" target="_self" rel="noopener nofollow">👩‍👧‍👦 marketing Analytics 공통모듈 제작기</a>⭐
+<br><a data-href="👩‍👧‍👦 Analytics 공통모듈 ADMIN용 데이터 추출" href="project/hello-marketing/👩‍👧‍👦-analytics-공통모듈-admin용-데이터-추출.html" class="internal-link" target="_self" rel="noopener nofollow">👩‍👧‍👦 Analytics 공통모듈 ADMIN용 데이터 추출</a>
+<br>
+<br><a data-href="👻 Obsidian 정적호스팅 CICD 과정" href="project/note-ci_cd/👻-obsidian-정적호스팅-cicd-과정.html" class="internal-link" target="_self" rel="noopener nofollow">👻 Obsidian 정적호스팅 CICD 과정</a>
+<br><a data-href="⛈ Obsidian-AWS연동" href="project/note-ci_cd/⛈-obsidian-aws연동.html" class="internal-link" target="_self" rel="noopener nofollow">⛈ Obsidian-AWS연동</a>
+<br>
+<br><a data-href="📘 SpringBoot &amp; Docker + Reids 연동" href="tools/docker/📘-springboot-&amp;-docker-+-reids-연동.html" class="internal-link" target="_self" rel="noopener nofollow">📘 SpringBoot &amp; Docker + Reids 연동</a>
+<br><a data-href="🌥 aws(EC2)셋팅부터 배포까지" href="tools/aws/🌥-aws(ec2)셋팅부터-배포까지.html" class="internal-link" target="_self" rel="noopener nofollow">🌥 aws(EC2)셋팅부터 배포까지</a>]]></description><link>project/💻-프로젝트.html</link><guid isPermaLink="false">project/💻 프로젝트.md</guid><pubDate>Thu, 06 Mar 2025 06:05:28 GMT</pubDate></item><item><title><![CDATA[🏠 taesung's Blog]]></title><description><![CDATA[<a class="tag" href="?query=tag:home" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#home</a> <a class="tag" href="?query=tag:index" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#index</a> <a class="tag" href="?query=tag:blog" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#blog</a> <a class="tag" href="?query=tag:공부" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#공부</a> <br> <a href=".?query=tag:home" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#home">#home</a> <a href=".?query=tag:index" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#index">#index</a> <a href=".?query=tag:blog" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#blog">#blog</a> <a href=".?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a><br><a data-tooltip-position="top" aria-label="https://github.com/LeeTaeSung0628" rel="noopener nofollow" class="external-link is-unresolved" href="https://github.com/LeeTaeSung0628" target="_self"><span alt="Pasted image 20250220144552.png" src="Pasted image 20250220144552.png" class="internal-embed media-embed image-embed is-loaded" style="width: 220px; max-width: 100%;"></span></a><img alt="Pasted image 20250220144552.png" src="사진-및-문서/pasted-image-20250220144552.png" style="width: 220px; max-width: 100%;" target="_self"><br>
+<a data-tooltip-position="top" aria-label="https://github.com/LeeTaeSung0628" rel="noopener nofollow" class="external-link is-unresolved" href="https://github.com/LeeTaeSung0628" target="_self"><font color="#ffffff"></font></a>🔗git Hub 이동<br><a data-tooltip-position="top" aria-label="https://git.io/typing-svg" rel="noopener nofollow" class="external-link is-unresolved" href="https://git.io/typing-svg" target="_self"></a><img alt="Typing SVG" src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;pause=1000&amp;color=36A9F7&amp;random=false&amp;width=435&amp;lines=%EC%97%AC%EA%B8%B0%EB%8A%94+%EA%B3%B5%EB%B6%80%ED%95%98%EA%B3%A0%2C+%EA%B8%B0%EB%A1%9D%ED%95%98%EB%8A%94+%EA%B3%B3%EC%9E%85%EB%8B%88%EB%8B%A4" referrerpolicy="no-referrer" target="_self" class="is-unresolved"><br> <br> <br> <br> <br> <br> <br> <br> <br> <br>Soon <br>깃 레포에서도 블로그 주소로 이어질 수 있도록 Readme 설정하기. <br>리드미 또한 옵시디언에서 작업이 가능하다. <br>Netlify 셋팅 추가하기]]></description><link>index.html</link><guid isPermaLink="false">index.md</guid><pubDate>Thu, 06 Mar 2025 06:03:57 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250220144552.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20250220144552.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[2. 스프링 핵심 원리 이해]]></title><description><![CDATA[<a class="tag" href="?query=tag:SpringCoreBasic" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SpringCoreBasic</a> <a class="tag" href="?query=tag:SPRING" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SPRING</a> <a class="tag" href="?query=tag:lectur" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#lectur</a> <a class="tag" href="?query=tag:강의" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#강의</a> <br> <a href=".?query=tag:SpringCoreBasic" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SpringCoreBasic">#SpringCoreBasic</a> <a href=".?query=tag:SPRING" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SPRING">#SPRING</a> <a href=".?query=tag:lectur" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#lectur">#lectur</a> <a href=".?query=tag:강의" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#강의">#강의</a><br>스타터 사이트 : <a rel="noopener nofollow" class="external-link is-unresolved" href="https://start.spring.io/" target="_self">https://start.spring.io/</a><br>
+<img alt="Pasted image 20250305173344.png" src="사진-및-문서/pasted-image-20250305173344.png" style="width: 625px; max-width: 100%;" target="_self"><br>
+별도의 의존관계는 추가하지 않음<br><img alt="Pasted image 20250305175924.png" src="사진-및-문서/pasted-image-20250305175924.png" target="_self">]]></description><link>lectur/2.-스프링-핵심-원리-이해.html</link><guid isPermaLink="false">lectur/2. 스프링 핵심 원리 이해.md</guid><pubDate>Wed, 05 Mar 2025 08:59:31 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250305173344.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20250305173344.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[1. 객체 지향 설계와 스프링]]></title><description><![CDATA[<a class="tag" href="?query=tag:SpringCoreBasic" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SpringCoreBasic</a> <a class="tag" href="?query=tag:SPRING" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SPRING</a> <a class="tag" href="?query=tag:lectur" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#lectur</a> <a class="tag" href="?query=tag:강의" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#강의</a> <br> <a href=".?query=tag:SpringCoreBasic" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SpringCoreBasic">#SpringCoreBasic</a> <a href=".?query=tag:SPRING" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SPRING">#SPRING</a> <a href=".?query=tag:lectur" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#lectur">#lectur</a> <a href=".?query=tag:강의" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#강의">#강의</a><br>스프링이 제공하는 핵심 가치와 원리를 제대로 파악하고 사용한다.<br>객체 지향 프로그래밍
+<br>단순 레퍼런스 문서 설명이 아닌, 이유와 핵심원리
+<br>스프링의 본질에 대해 깊은 이해 -&gt; 객체지향 설계의 본질을 이해
+<br>2000년대 초반<br>
+EJB(enterprise java Beans) -&gt; spring / JAP 를 짬뽕해놓은 기술이 탄생<br>Java진영에서 표준으로 개발한 기술
+<br>컨테이너 기술
+<br>설정에 의한 트렌젝션 기술
+<br>분산 기술
+<br>엔티티 빈 : ORM기술 중 하나
+<br>가격이 매우 비쌌음 수천만원 짜리 Server도 존재했었음
+<br>단점 <br>어렵고
+<br>복잡하고
+<br>느리다
+<br>POJO - 오래된 방식의 자바 오브젝트, 그냥 이걸로 돌아가자는 말이 나올 정도였다.<br>두 명의 사람이 EJB에 환멸을 느끼고, 오픈소스를 만든다.<br>
+<br>EJB 컨테이너의 대체
+<br>단순함의 승리
+<br>현재 사실상의 표준 기술
+<br>
+<br>EJB의 엔티티빈 기술을 대체
+<br>JPA 새로운 표준 정의
+<br> EJB 엔티티 빈 -&gt; 하이버네이트 -&gt; JPA(같은 사람이 거의 하이버네이트와 비슷하게 만든 JAVA표준)<br>JPA - 표준 인터페이스<br>
+하이버네이트 - 80% 이상의 점유율을 차지하는 JAP 구현체<br>
+<br>2002 로드 존슨 책 출간
+<br>EJB의 문제점 지적
+<br>EJB없이 고품질의 확장 가능한 애플리케이션을 개발할 수 있음을 보여줌
+<br>30,000라인 이상의 기반 기술을 예제코드로 선보임
+<br>BeanFactory, applicationContext, POJO, DI, IoC(제어의 역전)
+<br>책 출간 이후 '유겐 휠러', '얀 카로프'가 로드 존슨에게 오픈소스 프로젝트를 제안하여<br>
+만들어진 것이 SPRING( EBJ 겨울을 넘어 새로운 시작이라는 뜻 )<br>1.0 - xml<br>
+2.0 - xml 편의기능<br>
+3.0 - 자바 코드로 설정<br>
+4.0 - 자바8<br>
+boot 1.0 - 기존 스프링의 복잡한 셋팅/설정을 개선<br>
+5.0 / boot 2.0 - 리엑티브 프로그래밍 지원<br>
+...<br>예전 스프링은 설정이 절반이다 라고 할 정도로 설정이 힘들었다.
+<br>필수<br>스프링 프레임워크
+<br>스프링 부트
+<br>선택<br>스프링 데이터 - noSQL, RDB 등 CRUD를 편리하게 도와줌
+<br>스프링 세션
+<br>스프링 시큐리티
+<br>스프링 레스트 독스 - API문서화, 테스트를 편리하게 도와줌
+<br>스프링 배치 - 배치 처리 특화 기술
+<br>스프링 클라우드 - 클라우드..
+<br>
+<br>핵심기술 - 스프링 DI 컨테이너 / AOP / 이벤트
+<br>웹 기술 - 스프링 MVC / 스프링 Web Flux
+<br>데이터 - 트렌젝션 / JDBC / ORM / xml
+<br>기술통합 - 캐시, 이메일, 원격, 스케줄링
+<br>테스트 - 스프링기반 테스트
+<br>언어 - 코틀린, 그루비
 <br>
 <br>
-Partition 생성: <br>Partition 1 : ID 1 ~ 25 / 대기열1 : ID 101 ~ 125 / 대기열2 : ID 201 ~ 225
-<br>Partition 2 : ID 26 ~ 50 / 대기열 : ID 126 ~ 150 / 대기열2 : ID 226 ~ 250
-<br>Partition 3 : ID 51 ~ 75 / 대기열 : ID 151 ~ 175 / 대기열2 : -
-<br>Partition 4 : ID 76 ~ 100 / 대기열 : ID 176 ~ 200 / 대기열2 : - <br>
-각 Partition에서 Chunk 처리: <br>Partition 1: <br>Chunk 1: ID 1 ~ 10 → 커밋
-<br>Chunk 2: ID 11 ~ 20 → 커밋
-<br>Chunk 3: ID 21 ~ 25 → 커밋 <br>Partition 2: <br>Chunk 1: ID 26 ~ 35 → 커밋
-<br>Chunk 2: ID 36 ~ 45 → 커밋
-<br>Chunk 3: ID 46 ~ 50 → 커밋 <br>나머지 Partition도 동일 방식으로 처리. <br>
-병렬 실행: <br>스레드 풀 크기 = 4이므로 4개의 Partition이 동시에 실행됩니다.
-<br>Partition 처리 순서는 스레드 풀에서 처리되는 순서에 따라 다를 수 있음. <br>
-트랜잭션 관리: <br>각 Partition은 독립적인 트랜잭션을 가짐.
-<br>각 Chunk가 커밋될 때마다 트랜잭션이 종료됨. <br>
+스프링을 편리하게 사용할 수 있도록 지원, 최근에는 스텐다드로 사용 <br>
+단독으로 실행할 수 있는 스프링 애플리케이션을 쉽게 생성<br>
+-Tomcat같은 웹 서버를 내장하여 별도의 웹 서버 설치 불필요 <br>
+손쉬운 빌드 구성을 위한 starter 종속성 제공 <br>
+스프링과 3rd parth 라이브러리 자동 구성 <br>메이저 외부 라이브러리 버전 자동 체크/다운 <br>
+메트릭, 상태 확인, 외부 구성 같은 프로덕션 준비 기능 제공 <br>
+관례에 의한 간결한 설정 <br>문맥에 따라 다르게 사용된다.<br>스프링 DI 컨테이너 기술
+<br>스프링 프레임워크
+<br>스프링 부트, 프레임워크 등 모두 포함한 생태계
 <br>
-Partition 생성: <br>Partition 1 : ID 1 ~ 25 / 대기열1 : ID 101 ~ 125 / 대기열2 : ID 201 ~ 225
-<br>Partition 2 : ID 26 ~ 50 / 대기열 : ID 126 ~ 150 / 대기열2 : ID 226 ~ 250
-<br>Partition 3 : ID 51 ~ 75 / 대기열 : ID 151 ~ 175 / 대기열2 : ID 251 ~ 275
-<br>Partition 4 : ID 76 ~ 100 / 대기열 : ID 176 ~ 200 / 대기열2 : ID 276 ~ 300
-<br>추가 스레드 풀 생성
-<br>Partition 5 : ID 300 ~ 325 / 대기열 : ID 326 ~ 350 / 대기열2 : ID 351 ~ 375
-<br>추가 스레드 풀 생성
-<br>Partition 6 : ID 376 ~ 400 / 대기열 : ID 401 ~ 425 / 대기열2 : ID 426 ~ 450 모든 대기열 소모 및 최대 스레드 풀 도달 =&gt; 작업 중단 및 오류 <br>-&gt; 이로볼때, 쿼리작업보다 api호출작업의 소요시간이 길어보임<br>범위 - 2017-11-07 ~ 2017-12-01
-startDate=2017-11-07&amp;endDate=2017-12-01 ## 컬럼 개수 - 292개 기존 병렬처리 : 1분 7초
-기존로직 : 6분 32초 t:스레드 개수 / c:각 스레드별 청크 파티션 수 ###### SimpleAsyncTaskExecutor vs ThreadPoolTaskExecutor SimpleAsyncTaskExecutor
-g4/c10 : 1분 41.586초
-g5/c10 : 1분 30.037초
-g5/c3 : 1분 28.997초
-g5/c1 : 1분 29.931초
-g8/c10 : 1분 36.019초
-g10/c1 : 1분 24.529초 - ThreadPoolTaskExecutor
-Th min/maxSize64, g64/c10 : 1분 42.848초
-Th min/maxSize32, g32/c10 : 1분 26.551초 Th min/maxSize16, g16/c10 : 1분 46.753초 / 1분 33.779초 / 2분 25.759초
-1분 11.668초 / 2분 5.773초 / 2분 39.553초 Th min/maxSize32, g8/c20 : 3분 25.743초 Th min/maxSize16, g4/c10 : 2분 29.207초 / 2분 8.004초
+<br>자바 언어 기반의 프레임워크
+<br>자바 언어의 가장 큰 특징 - 객체 지향 언어
+<br>스프링은 객체 지향 언어가 가진 강력한 특징을 살려내는 프레임워크
+<br>스프링은 좋은 객체 지향 애플리케이션을 개발할 수 있게 도와주는 프레임워크⭐
 <br>
-<br>Grid사이즈(파티셔닝 갯수) 만큼 스레드 풀 계속 생성
-<br>파티셔닝 갯수가 많아졌을 때, 스레드 생성/소멸에 드는 오버헤드 증가
 <br>
-<br>최소 스레드풀 개수 / 최대 스레드풀 개수 / 대기열 큐 크기 / 유휴 시간 모두 설정가능
-<br>파티셔닝 갯수가 많을 경우, 처리 성능에 맞는 스레드 풀에서 대기작업으로 처리하여 오버헤드 감소
+컴퓨터 프로그래밍을 명령어의 목록으로 보는 시각에서 벗어나, 여러개의 독립된 단위,<br>
+즉, 객체 들의 모임으로 파악하고자 하는것이다. <br>
+각각의 객체는 메시지를 주고받고, 데이터를 처리할 수 있다.(협력) <br>
+객체지향 프로그래밍은 유연하고 변경용이하게 만들기 때문에 대규모 소프트웨어 개발에 많이 사용된다. <br>
+<br>레고 블럭 조립하듯,
+<br>컴퓨터 부품 갈아 끼우듯,
+<br>컴포넌트를 쉽고 유연하게 변경하면서 개발할 수 있는 방법.<br>
+=&gt; 다형성
 <br>
-<br>총 처리량 기준 1/n로 각 스레드에 할당시 충분히 감당한 양으로, 대기열을 사용할 필요가 없다.
+<br>자동차의 역할 (인터페이스)
+<br>자동차 구현 K3, 모델3, 아반떼 등 (class, 구현체)
+<br>운전자는 역할(인터페이스)만을 따르면 모든 자동차를 이용할 수 있다.<br>
+즉, 클라이언트에 영향을 주지 않고 새로운 기능을 구현할 수 있다.<br>유연하고, 변경에 용이한 것!!<br>ex) 정렬 알고리즘, 할인 정책 등등<br>
+<br>클라이언트는 대상의 역할(인타페이스)만 알면 된다.
+<br>클라이언트는 구현 대상의 내부구조를 몰라도 된다.
+<br>클라이언트는 구현 대상의 내부 구조가 변경되어도 영향을 받지 않는다.
+<br>클라이언트는 구현 대상 자체를 변경해도 영향을 받지 않는다.
 <br>
-<br>쿼리 호출 및 페이징 기법 직접 구현
+<br>오버라이딩은 자바의 기본 문법
+<br>오버라이딩 된 메서드가 실행
+<br>다형성으로 인터페이스를 구현한 객체를 실행 시점에 유연하게 변경 가능
+<br>물론, 클래스 상속 관계도 다형성/오버라이딩 적용가능(권장안함)
 <br>
-<br>Native Query 형태로 호출하여 자동 페이징
+<br>인터페이스를 구현한 객체 인스턴스를 실행 시점에 유연하게 변경할 수 있다.
+<br>다형성의 본질을 이해하려면 협력이라는 객체사이의 관계에서 시작해야함.
+<br>클라이언트를 변경하지 않고, 서버의 구현 기능을 유연하게 변경할 수 있다.
+<br>확장 가능한 설계
 <br>
-<br>Spring Batch에서는 공식적으로 지원하지 않음
-<br>자동 페이징
-<br>Querydsl형태로 쿼리 호출 가능
+<br>역할(인터페이스) 자체가 변하면, 클라이언트, 서버 모두에 큰 변경이 발생한다.
 <br>
-<br>기존(헬로)의 Querydsl기반 JPAQuery를 그대로 사용 가능
-<br>자동 페이징
-<br>그 외 Querydsl의 장점 보유
+<br>다형성이 가장 중요하다!
+<br>스프링은 다형성을 극대화해서 이용할 수 있게 도와준다.
+<br>스프링에서 이야기하는 IoC, DI는 다형성을 활용해서 역할과 구현을 편리하게 다룰 수있도록 지원한다.
+<br>스프링을 사용하면 마치 레고 블럭 조립하듯 구현을 편리하게 변경할 수 있다.
 <br>
-<br>기존 PagingItemReader의 메서드를 오버라이딩 하여 사용하며,<br>
-JPQL이 수행되던 부분에 코드를 수정하였다.
-<br>@Bean @Scope(value = "step", proxyMode = ScopedProxyMode.TARGET_CLASS) public QuerydslPagingItemReader&lt;HfbatBankBalanceCheckDto&gt; balanceReader() { ExecutionContext jobContext = Objects.requireNonNull(StepSynchronizationManager.getContext()).getStepExecution().getJobExecution().getExecutionContext(); Date startDate = (Date) jobContext.get(START_DATE_KEY); Date endDate = (Date) jobContext.get(END_DATE_KEY); return new QuerydslPagingItemReader&lt;&gt;( entityManagerFactory, executionOrder, DEFAULT_CHUNK_SIZE, queryFactory -&gt; repository.newFindChangeBalanceMemberList( startDate, endDate )); }
+<br>클린코드로 유명한 로버트 마틴이 좋은 객체 지향 설계의 5가지 원칙을 정리한것.
+<br>SRP: 단일 책임 원칙(single responsibility principle)
+<br>OCP: 개방-폐쇄 원칙 (Open/closed principle)
+<br>LSP: 리스코프 치환 원칙 (Liskov substitution principle)
+<br>ISP: 인터페이스 분리 원칙 (Interface segregation principle)
+<br>DIP: 의존관계 역전 원칙 (Dependency inversion principle)
 <br>
-<br>각 파티션 스레드 별 종료 시간이 크게 상이하다. 총 소요시간 기준 최대 약 20% 차이
-<br>적용 한다면, 각 스레드 별로 even하게 작업을 수행하여 총 소요시간을 줄일 수 있을것이라 판단 <br>JOB private static AtomicLong executionOrder = new AtomicLong(0); ... new QuerydslPagingItemReader&lt;&gt;( entityManagerFactory, executionOrder, DEFAULT_CHUNK_SIZE, queryFactory -&gt; repository.newFindChangeBalanceMemberList( startDate, endDate ));
-<br>job 레벨에서의 스레드 세이프한 전역 변수를 생성하였다.
-<br>그 후, 각 파티션 별 리더에 인자값으로 넘긴다.
-<br>long currentExecutionOrder = executionOrder.getAndIncrement(); long startIndex = (currentExecutionOrder) * getPageSize(); int totalRecords = stepContext.getInt("totalRecords"); if (startIndex &gt;= totalRecords) { initResults(); // 빈 결과로 초기화 tx.commit(); return; } int chunkSizeToRead = Math.min(getPageSize(), (int) (totalRecords - startIndex)); // 남은 데이터 크기만큼 읽기 // QueryDSL Query 생성 JPQLQuery&lt;T&gt; query = createQuery() .offset(startIndex) .limit(chunkSizeToRead);
+<br>한 클래스는 하나의 책임만 가져야 한다.
+<br>중요한 기준은 변경이다.
+<br>변경이 있을 때 파급 효과가 적으면 단일 책임 원칙을 잘 따른것.
+<br>UI변경, 객체의 생성과 사용을 분리
 <br>
-<br>먼저 한 청크단위의 작업을 끝낸 파티션은 그 다음 작업을 즉시 할당받게 된다.
-<br>즉, 총 처리시간 기준 가장 빨리끝난 파티션과 가장 늦게 끝난 파티션의 실행 시간 차이는 최대 한 청크사이즈를 처리하는 시간보다 크지 않게 된다.
-<br>1차 비교 이후 차액이 발생한 녀석들의 List 를 한번 더 검증한 후, =&gt; 추후 변경 됨<br>
-검증된 녀석들을 <br>List&lt;BalanceCheckResultDto&gt; realDiffList= new ArrayList&lt;&gt;();
-<br>최종적인 차액 리스트에 넣는다.<br>writer는 각 프로세서의 리턴으로 받은 녀석들을 하나의 DTO List로 합쳐 메세징 처리를 하게 된다.<br>
-<br>유지보수성이 좋다.
-<br>환경셋팅에 리소스가 많이든다. <br>
-<br>구현 레벨이 가장 쉽다
-<br>DTO(데이터)가 많아질 경우, 큰 리소스를 차지한다.
+<br>확장에는 열려있으나, 변경에는 닫혀있어야 한다.
+<br>다형성을 잘 활용하여야 한다.
+<br>인터페이스를 구현한 새로운 클래스를 하나 만들어서 새로운 기능을 구현
+<br>역할과 구현의 분리
+<br>	- MemberService 클라이언트가 구현 클래스를 직접 선택 MemberRepository m = new MemoryMemberRepository(); //기존 코드 //DIP 위반 MemberRepository m = new JdbcMemberRepository(); //변경 코드 //DIP 위반
+<br>구현 객체를 변경하려면 클라이언트 코드를 변경해야 한다.
+<br>분명 다형성을 사용했지만 OCP 원칙을 지킬 수 없다. -&gt; 클라이언트가 기존코드를 변경해야한다.<br>
+-&gt; 객체를 생성하고, 연관관계를 맺어주는 별도의 조립, 설정자가 필요하다 : 스프링 컨테이너 / DI, IoC <br>
+<br>프로그램의 객체는 프로그램의 정확성을 깨뜨리지 않으면서 하위 타입의 인스턴스로 바꿀 수 있어야 한다
+<br>하위 클래스는 인터페이스 규약을 다 지켜야 한다는 것
+<br>다형성을 지원하기 위 한 원칙, 인터페이스를 구현한 구현체는 믿고 사용하려면, 이 원칙이 필요하다.
+<br>단순히 컴파일에 성공하는 것을 넘어서는 이야기
+<br>ex) 자동차 인터페이스의 엑셀은 앞으로 가라는 기능, 뒤로 가게 구현하면 LSP 위반<br>
+<br>특정 클라이언트를 위한 인터페이스 여러 개가, 범용 인터페이스 하나보다 낫다
+<br>자동차 인터페이스 -&gt; 운전 인터페이스, 정비 인터페이스로 분리
+<br>사용자 클라이언트 -&gt; 운전자 클라이언트, 정비사 클라이언트로 분리
+<br>분리하면 정비 인터페이스 자체가 변해도 운전자 클라이언트에 영향을 주지 않음
+<br>인터페이스가 명확해지고, 대체 가능성이 높아진다.
 <br>
-<br>방법 2.보다는 리소스가 적지만, 문자열 처리 시간이 추가로 소모된다.
+<br>프로그래머는 “추상화에 의존해야지, 구체화에 의존하면 안된다.”
+<br>구현 클래스에 의존하지 말고, 인터페이스에 의존하라는 뜻
+<br>역할(Role)에 의존하게 해야 한다는 것과 같다.
+<br>구현체에 의존하게 되면 변 경이 아주 어려워진다
 <br>
-<br>높은 쓰기 성능을 갖고있다.
-<br>동시성 문제 없이 다중 스레드에서 사용 가능하다.
-<br>인덱스로 접근이 불가능하다.
-<br>QueueManager클래스를 생성하며 공통으로 사용 가능하도록 하였고,<br>@Slf4j public class QueueManager&lt;T&gt; { protected final ConcurrentLinkedQueue&lt;T&gt; sharedQueue = new ConcurrentLinkedQueue&lt;&gt;(); // 데이터 추가 public void addItemToSharedQueue(T item) { if (item != null) { sharedQueue.add(item); } }
-<br>이를 상속받아 특정 오브젝트를 넘길 수 있도록 하였다.<br>public class BalanceQueue extends QueueManager&lt;BalanceCheckResultDto&gt;{ public List&lt;BalanceCheckResultDto&gt; getDtoFromQueue() { return super.getItemsFromQueue(); } }
-<br>이게 무슨소리인지? <br>보통의 Batch 서비스라면 I/O 작업에 부하가 걸려있겠지만, 현재 예치금 차액 배치는 processor 즉, 예치금 비교 연산에서 큰 리소스를 소모하고있다.
-<br>이에 해당하는 시간 소모를 줄이기 위해 processor(서비스로직) 을 병렬처리 함으로 최종 처리시간 단축을 꾀할 수 있을지에 대한 고민이다.
-<br>이후 설명하겠지만, 내부 병렬처리 로직은 청크의 트렌젝션을 무너뜨릴 가능성이 크므로 지양해야함. <br><img alt="Pasted image 20241206113120.png" src="사진-및-문서/pasted-image-20241206113120.png" target="_self"><br>소요시간 : 1분 9초
-<br>-&gt; 기존 limit절을 이용한 로직보다 속도가 더빠르며,<br>
-JpaPagingReader를 적용한다면 중복 select횟수를 줄여 더 빨라질 것으로 예상된다.<br>결론 : 둘 중 하나<br>#### 292 컬럼
-## Processor 삭제(병렬처리)로직
-#### grid-size:6 / chunk-size:20
-54679 ms
-54416 ms
-## Processor 순차처리(writer만 병렬처리) 로직 #### grid-size:6 / chunk-size:20
-60440 ms
-62271 ms
-#### grid-size:10 / chunk-size:20
-58129 ms
-56723 ms
-#### grid-size:16 / chunk-size:20
-58595 ms
-56314 ms #### grid-size:32 / chunk-size:20
-- SQLTransientConnectionException
-- 스레드풀 점유갯수 초과
-<br>하지만, 이후 청크 방식 Batch의 확장성과 유지보수성을 고려하여 리더,프로세서,라이터 방식으로 구현하기로 정했다.<br><img alt="Pasted image 20241217150339.png" src="사진-및-문서/pasted-image-20241217150339.png" target="_self"><br>리스너에 너무 많은 역할이 부여된 모습
-<br><img alt="Pasted image 20241219145746.png" src="사진-및-문서/pasted-image-20241219145746.png" target="_self"><br>
-<br>StepExecution-Level ExecutionContext <br>
-각 Step에 고유한 ExecutionContext가 생성됩니다. <br>
-Step 내의 Reader, Processor, Writer 등에서 공유됩니다. <br>
-다른 Step과는 공유되지 않습니다. <br>
-balanceWorkerStep 내에서는 Reader, Processor, Writer가 동일한 ExecutionContext를 공유합니다. <br>
-balancePartitionStep과 balanceWorkerStep의 ExecutionContext는 서로 독립적입니다. <br>JobExecution-Level ExecutionContext <br>Job 전체에서 공유되며, 모든 Step이 동일한 ExecutionContext에 접근할 수 있습니다.
-<br>JobExecutionContext는 Step 간 데이터 전달이 필요할 때 유용합니다. <br>JobExecutionListener 객체 생성<br>@Slf4j public class JobTimerExecutionListener implements JobExecutionListener { private final String jobName; private long startTime = System.currentTimeMillis(); public JobTimerExecutionListener(String jobName) { this.jobName = jobName; } @Override public void beforeJob(JobExecution var1) { startTime = System.currentTimeMillis(); } @Override public void afterJob(JobExecution var1) { long endTime = System.currentTimeMillis(); long elapsedTime = endTime - startTime; long minutes = (elapsedTime / 1000) / 60; // 밀리초를 분으로 변환 double seconds = (elapsedTime / 1000.0) % 60; // 남은 밀리초를 초로 변환 (소수점 포함) log.info("{}-completed: {} ms | {} minutes {} seconds", jobName, elapsedTime, minutes, seconds); } }
-<br><img alt="output (9) 1.png" src="사진-및-문서/output-(9)-1.png" target="_self"><br><img alt="output (10).png" src="사진-및-문서/output-(10).png" target="_self"><br><img alt="do-messenger_screenshot_2024-12-23_14_40_21.png" src="사진-및-문서/do-messenger_screenshot_2024-12-23_14_40_21.png" target="_self"><br><img alt="Pasted image 20241224093159.png" src="사진-및-문서/pasted-image-20241224093159.png" target="_self"><br>
-<img alt="Pasted image 20241224093207.png" src="사진-및-문서/pasted-image-20241224093207.png" target="_self"><br>
-<img alt="Pasted image 20241224093225.png" src="사진-및-문서/pasted-image-20241224093225.png" target="_self"><br>]]></description><link>project/hello-batch/🏹-예치금-차액-비교-spring-batch-리펙토링.html</link><guid isPermaLink="false">project/hello Batch/🏹 예치금 차액 비교 Spring Batch 리펙토링.md</guid><pubDate>Wed, 05 Mar 2025 00:55:46 GMT</pubDate><enclosure url="사진-및-문서/회사-은행-서비스1111.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/회사-은행-서비스1111.png"&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>
+그런데 OCP에서 설명한 MemberService는 인터페이스에 의존하지만, 구현 클래스도 동시에 의존한다.
+<br>MemberService 클라이언트가 구현 클래스를 직접 선택<br>MemberRepository m = new MemoryMemberRepository(); //DIP 위반
+<br>그럼 인터페이스만 사용하면 구현체가 없는데 어떻게 위반을 안해?<br>
+<br>다형성 만으로는 쉽게 부품을 갈아 끼우듯이 개발할 수 없다.
+<br>다형성 만으로는 구현 객체를 변경할 때 클라이언트 코드도 함께 변경된다.
+<br>다형성 만으로는 OCP, DIP를 지킬 수 없다.
+<br>뭔가 더 필요하다.
+<br>
+<br>
+스프링은 다음 기술로 다형성 + OCP, DIP를 가능하게 지원<br>
+DI(Dependency Injection): 의존관계, 의존성 주입<br>
+DI 컨테이너 제공 <br>
+클라이언트 코드의 변경 없이 기능 확장 <br>
+쉽게 부품을 교체하듯이 개발 <br>
+<br>순수하게 자바로 OCP, DIP 원칙들을 지키면서 개발을 해보면, 결국 스프링 프레임워크를 만들게 된다.<br>
+(더 정확히는 DI 컨테이너)
+<br>
+<br>하지만 인터페이스를 도입하면 추상화라는 비용이 발생한다.
+<br>기능을 확장할 가능성이 없다면, 구체 클래스를 직접 사용하고,<br>
+향후 꼭 필요할 때 리팩터 링해서 인터페이스를 도입하는 것도 방법이다]]></description><link>lectur/1.-객체-지향-설계와-스프링.html</link><guid isPermaLink="false">lectur/1. 객체 지향 설계와 스프링.md</guid><pubDate>Wed, 05 Mar 2025 08:28:42 GMT</pubDate></item></channel></rss>

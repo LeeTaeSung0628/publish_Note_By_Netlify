@@ -172,8 +172,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5cc2f7897ebd9692",
+  "active": "389fc3cf85ae38e1",
   "lastOpenFiles": [
+    "사진-및-문서/pasted-image-20250305175924.png",
+    "사진-및-문서/pasted-image-20250305173344.png",
+    "lectur/2.-스프링-핵심-원리-이해.html",
+    "issue_troubleshooting/🔐-상품-투자하기-서비스-이슈-및-lock기법-개선안.html",
     "사진-및-문서/pasted-image-20250304121338.png",
     "사진-및-문서/pasted-image-20250304121455.png",
     "사진-및-문서/pasted-image-20250304121009.png",
@@ -187,14 +191,10 @@
     "issue_troubleshooting/⏰-script-로딩-지연-이슈.html",
     "사진-및-문서/pasted-image-20250225161448.png",
     "사진-및-문서/output-(14).png",
-    "사진-및-문서/pasted-image-20250227122736.png",
-    "사진-및-문서/pasted-image-20250227122010.png",
     "tools/aws/🍌-elastic-ip(탄력적-ip)란.html",
     "study/dev-seminar/🔒-투자하기-서비스-락(lock)기법-개선안.html",
     "study/정보처리기사/정보처리기사-실기/🥇-정보처리-기사-실기-sql-문제.html",
     "project/hello-marketing/👩‍👧‍👦-marketing-analytics-공통모듈-제작기.html",
-    "project/hello-marketing/👩‍👧‍👦-analytics-공통모듈-admin용-데이터-추출.html",
-    "project/hello-batch/🏹-예치금-차액-비교-spring-batch-리펙토링-부록.html",
     "환영합니다!.md"
   ]
 }

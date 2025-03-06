@@ -1,4 +1,4 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[taesunglog]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib/media/favicon.png</url><title>taesunglog</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Thu, 06 Mar 2025 07:41:13 GMT</lastBuildDate><atom:link href="lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Thu, 06 Mar 2025 07:41:10 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[🔐 상품 투자하기 서비스 이슈 및 Lock기법 개선안]]></title><description><![CDATA[<a class="tag" href="?query=tag:SQL" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SQL</a> <a class="tag" href="?query=tag:Lock" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Lock</a> <a class="tag" href="?query=tag:개선" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#개선</a> <a class="tag" href="?query=tag:이슈" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#이슈</a> <a class="tag" href="?query=tag:세미나" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#세미나</a> <br> <a href=".?query=tag:SQL" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SQL">#SQL</a> <a href=".?query=tag:Lock" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Lock">#Lock</a> <a href=".?query=tag:개선" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개선">#개선</a> <a href=".?query=tag:이슈" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#이슈">#이슈</a> <a href=".?query=tag:세미나" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#세미나">#세미나</a><br>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[taesunglog]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib/media/favicon.png</url><title>taesunglog</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Thu, 06 Mar 2025 08:30:01 GMT</lastBuildDate><atom:link href="lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Thu, 06 Mar 2025 08:30:00 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[🔐 상품 투자하기 서비스 이슈 및 Lock기법 개선안]]></title><description><![CDATA[<a class="tag" href="?query=tag:SQL" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SQL</a> <a class="tag" href="?query=tag:Lock" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Lock</a> <a class="tag" href="?query=tag:개선" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#개선</a> <a class="tag" href="?query=tag:이슈" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#이슈</a> <a class="tag" href="?query=tag:세미나" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#세미나</a> <br> <a href=".?query=tag:SQL" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SQL">#SQL</a> <a href=".?query=tag:Lock" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Lock">#Lock</a> <a href=".?query=tag:개선" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개선">#개선</a> <a href=".?query=tag:이슈" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#이슈">#이슈</a> <a href=".?query=tag:세미나" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#세미나">#세미나</a><br>
 <br>투자자 투자실행 시 순서보장X <br>락 획득 실패와 정합성 문제 <br>헬로의 투자 서비스는 다음과 같다.<br>특정 scf / 주택담보대출 상품에 대해 투자자를 모집한다.
 <br>투자자들은 특정시간에 open되는 상품에 일괄적으로 투자신청을한다. <br>이때, 각 회원별로 "투자 신청 기록"을 진행한다.
 <br>투자신청 기록이란, P2PCenter(금융결제원) API를 통해 유효성(투자기록 / 투자한도)을 조회하여 투자적합여부를 체크하고 기록하는것을 말한다. <br>회원별 검증 및 투자금 계산을 마치면 정상 투자가 진행된다.
@@ -8,7 +8,7 @@ Lock기법은 여러 요청이 같은 리소스에 접근하려 할 때, 한 번
 데이터 정합성이 무엇보다 중요한 서비스에서 충돌을 방지하여 일관성을 효과적으로 유지하기 위함이다. <br>
 헬로 서비스의 경우, 회원 idx로 lock을 유지하여 성능과 안정성 확보<br>
 -상품별 한도 / 투자자 일별 투자상한 / 투자 금액 / 예치금 등 정합성이 무엇보다 우선시 되는 데이터들이 포함 <br>
-<br>설계 방법에 따라, 강한 일관성 유지 가능.
+<br>설계 방법에 따라, 강한 일관성 유지 가능하지만, 추가적인 설계/개발이 필요.
 <br>높은 트래픽을 감당할 수 있음. (동시요청)
 <br>수평적 확장에 용이(스케일 아웃)
 <br>
@@ -38,13 +38,23 @@ testLock.unlock();
 허나, Redisson Lock은 비동기 이벤트 기반의 락 처리 방식을 사용한다.
 <br>즉, 락을 흭득하려는 프로세스는 우선순위가 없는 경쟁적락방식이다.
 <br>정보
-FIFO 방식의 "공정 락(Fair Lock)"또한 지원하여 원하는 바 사용 가능하다.
-<br>
+FIFO 방식의 "공정 락(Fair Lock)"또한 지원하여 원하는 바 사용 가능하다. <br>대기열 방식이라고 봐도 되겠다. <br>
 <br>여러 클라이언트(서버 또는 스레드)가 동시에 같은 락을 요청할 수 있음.
 <br>가장 먼저 Redis에 락을 설정한 클라이언트가 락을 획득(경쟁 방식).
 <br>락을 획득한 클라이언트가 해제해야 다른 클라이언트가 락을 획득 가능.
 <br>락이 만료되거나 자동 연장(Watchdog)되면서 동작.
+<br>이러한 동작 방식 때문에, Starvation(기아 현상)이 야기되는 문제가 있다.<br>기아현상이란, 고부하 환경에서 락을 흭득하려는 클라이언트가 많으면, 후순위 요청이 계속해서 무시될 가능성이 생기긴다.<br>
+즉, A투자자가 먼저 투자를 하였음에도 불구하고 그 다음에 실행한 투자자 B,C가 먼저 처리될 수 있다는것이다.<br>그리고 실제 운영 환경에서 해당 경우를 심심치 않게 찾아볼 수 있다.<br>최대 30초 이상 대기상태에서 기다린 인원이 있음.<br>
+-&gt; 그러나 평균 속도는 대기열에 비해 굉장히 빠르다.(추가적인 대기열(FIFO 큐)이 없기 때문에 락 획득 속도가 빠름)
+<br>해당 질문에 대한 답은,<br>
+분산환경에서 고부하 api통신, I/O 작업을 수행하며 적절한 퍼포먼스를 유지하기 위한 타협점 이라고 볼 수 있다.<br>
+<br>상품을 미리 열어, 투자 금액 데이터를 쌓는 원리.
+<br>해당 방법을 사용하면 데이터 정합성 및 속도를 보장받을 수 있다.
 <br>
+<br>투자자 입장에서는 투자 완료 이후 취소 통보를 받을 수 있음. <br>투자자 개인 한도는 금융결제위원회에서 관리하며, 타 업체의 한도와 공유되어 중복투자로인한 취소 가능성
+<br>상품 투자 한도 초과로 인한 취소가능성<br>
+해당 경우에 재 투자를 받아야 할 경우도 생김 <br>
+사내 정책의 문제 또한 존재하기 때문에, 모든 부분에서 완벽하기란 쉽지 않아 보인다.
 <br>왜 락이 풀리지?
 lock으로 묶여있는 로직 안에 너무 많은 동작이 몰려있다.<br>
 -&gt; 락에 유효시간이 있기 떄문이다. 4초<br>
@@ -59,212 +69,4 @@ B상품에 대한 투자도 정상처리가 되어버린다. <br>
 <br>주의 ! 투자 완료 후 실패 처리를 받을 가능성 존재<br>결론
 현재 신탁 운영으로 인한 한도 데이터를 직접관리하지 못하는 문제와,<br>
 보수적인 운영상의 방침으로 큰 구조 개선을 힘들어 보임
-현재는 리펙토링을 통해 lock에 묶여있는 로직을 단순화 하는것에 만족해야겠음.]]></description><link>issue_troubleshooting/🔐-상품-투자하기-서비스-이슈-및-lock기법-개선안.html</link><guid isPermaLink="false">Issue_TroubleShooting/🔐 상품 투자하기 서비스 이슈 및 Lock기법 개선안.md</guid><pubDate>Thu, 06 Mar 2025 07:40:28 GMT</pubDate></item><item><title><![CDATA[📕 공부]]></title><description><![CDATA[<a class="tag" href="?query=tag:공부" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#공부</a> <a class="tag" href="?query=tag:모음" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#모음</a> <br> <a href=".?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a> <a href=".?query=tag:모음" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#모음">#모음</a><br>공부
-보고 배운 지식 중 공유하고 싶은 정보를 모아둔 카테고리 입니다.
-<br>
-<br><a data-href="⏰ Script 로딩 지연 이슈" href="issue_troubleshooting/⏰-script-로딩-지연-이슈.html" class="internal-link" target="_self" rel="noopener nofollow">⏰ Script 로딩 지연 이슈</a>⭐
-<br><a data-href="🔐 상품 투자하기 서비스 이슈 및 Lock기법 개선안" href="issue_troubleshooting/🔐-상품-투자하기-서비스-이슈-및-lock기법-개선안.html" class="internal-link" target="_self" rel="noopener nofollow">🔐 상품 투자하기 서비스 이슈 및 Lock기법 개선안</a>⭐
-<br><a data-href="🚦 Spring Batch(스레드와 트렌젝션) 트러블슈팅" href="issue_troubleshooting/🚦-spring-batch(스레드와-트렌젝션)-트러블슈팅.html" class="internal-link" target="_self" rel="noopener nofollow">🚦 Spring Batch(스레드와 트렌젝션) 트러블슈팅</a>
-<br><a data-href="⚔ 간단한 StckOverflow 원인분석(Query)" href="issue_troubleshooting/⚔-간단한-stckoverflow-원인분석(query).html" class="internal-link" target="_self" rel="noopener nofollow">⚔ 간단한 StckOverflow 원인분석(Query)</a>
-<br>
-<br><a data-href="☕ JAVA , OOP" href="study/cs/☕-java-,-oop.html" class="internal-link" target="_self" rel="noopener nofollow">☕ JAVA , OOP</a>
-<br><a data-href="🍃 Spring" href="study/cs/🍃-spring.html" class="internal-link" target="_self" rel="noopener nofollow">🍃 Spring</a>
-<br><a data-href="🎩 DevOps" href="study/cs/🎩-devops.html" class="internal-link" target="_self" rel="noopener nofollow">🎩 DevOps</a>
-<br><a data-href="📔 DataBase" href="study/cs/📔-database.html" class="internal-link" target="_self" rel="noopener nofollow">📔 DataBase</a>
-<br><a data-href="📭 Server" href="study/cs/📭-server.html" class="internal-link" target="_self" rel="noopener nofollow">📭 Server</a>
-<br><a data-href="🐞 etc" href="study/cs/🐞-etc.html" class="internal-link" target="_self" rel="noopener nofollow">🐞 etc</a>
-<br>
-<br><a data-href="🤠 Coding Test 풀이 모음" href="study/coding-test/🤠-coding-test-풀이-모음.html" class="internal-link" target="_self" rel="noopener nofollow">🤠 Coding Test 풀이 모음</a>
-<br><a data-href="👽 Algorithm" href="study/coding-test/👽-algorithm.html" class="internal-link" target="_self" rel="noopener nofollow">👽 Algorithm</a>
-<br>
-<br><a data-href="🔻 Redis 캐쉬 전략 - hello 서비스에 적용하여 성능개선 가능성" href="study/dev-seminar/🔻-redis-캐쉬-전략-hello-서비스에-적용하여-성능개선-가능성.html" class="internal-link" target="_self" rel="noopener nofollow">🔻 Redis 캐쉬 전략 - hello 서비스에 적용하여 성능개선 가능성</a>
-<br><a data-href="🍂 JPA, Mybatis , Dead Lock" href="study/dev-seminar/🍂-jpa,-mybatis-,-dead-lock.html" class="internal-link" target="_self" rel="noopener nofollow">🍂 JPA, Mybatis , Dead Lock</a>
-<br><a data-href="🔹 TDD에 대하여" href="study/dev-seminar/🔹-tdd에-대하여.html" class="internal-link" target="_self" rel="noopener nofollow">🔹 TDD에 대하여</a>
-<br><a data-href="🪕 JPA 에 대한 고찰" href="study/dev-seminar/🪕-jpa-에-대한-고찰.html" class="internal-link" target="_self" rel="noopener nofollow">🪕 JPA 에 대한 고찰</a>
-<br><a data-href="🔐 상품 투자하기 서비스 이슈 및 Lock기법 개선안" href="issue_troubleshooting/🔐-상품-투자하기-서비스-이슈-및-lock기법-개선안.html" class="internal-link" target="_self" rel="noopener nofollow">🔐 상품 투자하기 서비스 이슈 및 Lock기법 개선안</a>
-<br><a data-href="🥗 Spring Security_토큰-세션-쿠키-JWT 에 대하여" href="study/dev-seminar/🥗-spring-security_토큰-세션-쿠키-jwt-에-대하여.html" class="internal-link" target="_self" rel="noopener nofollow">🥗 Spring Security_토큰-세션-쿠키-JWT 에 대하여</a>
-<br><a data-href="📔 DB 테이블 설계, 어떻게 하는게 옳은 방법인가" href="study/dev-seminar/📔-db-테이블-설계,-어떻게-하는게-옳은-방법인가.html" class="internal-link" target="_self" rel="noopener nofollow">📔 DB 테이블 설계, 어떻게 하는게 옳은 방법인가</a>
-<br>
-<br><a data-href="🥈 필기 1과목 - 소프트웨어 설계" href="study/정보처리기사/정보처리기사-필기/🥈-필기-1과목-소프트웨어-설계.html" class="internal-link" target="_self" rel="noopener nofollow">🥈 필기 1과목 - 소프트웨어 설계</a>
-<br><a data-href="🥈 필기 2과목 - 소프트웨어 개발" href="study/정보처리기사/정보처리기사-필기/🥈-필기-2과목-소프트웨어-개발.html" class="internal-link" target="_self" rel="noopener nofollow">🥈 필기 2과목 - 소프트웨어 개발</a>
-<br><a data-href="🥈 필기 3과목 - 데이터베이스 구축" href="study/정보처리기사/정보처리기사-필기/🥈-필기-3과목-데이터베이스-구축.html" class="internal-link" target="_self" rel="noopener nofollow">🥈 필기 3과목 - 데이터베이스 구축</a>
-<br><a data-href="🥈 필기 4과목 - 프로그래밍 언어 활용" href="study/정보처리기사/정보처리기사-필기/🥈-필기-4과목-프로그래밍-언어-활용.html" class="internal-link" target="_self" rel="noopener nofollow">🥈 필기 4과목 - 프로그래밍 언어 활용</a>
-<br><a data-href="🥈 필기 5과목 - 정보시스템 구축관리" href="study/정보처리기사/정보처리기사-필기/🥈-필기-5과목-정보시스템-구축관리.html" class="internal-link" target="_self" rel="noopener nofollow">🥈 필기 5과목 - 정보시스템 구축관리</a>
-<br>
-<br><a data-href="🥇 정보처리 기사 실기 키워드" href="study/정보처리기사/정보처리기사-실기/🥇-정보처리-기사-실기-키워드.html" class="internal-link" target="_self" rel="noopener nofollow">🥇 정보처리 기사 실기 키워드</a>
-<br><a data-href="🥇 정보처리 기사 실기 SQL 문제" href="study/정보처리기사/정보처리기사-실기/🥇-정보처리-기사-실기-sql-문제.html" class="internal-link" target="_self" rel="noopener nofollow">🥇 정보처리 기사 실기 SQL 문제</a>]]></description><link>study/📕-공부.html</link><guid isPermaLink="false">study/📕 공부.md</guid><pubDate>Thu, 06 Mar 2025 06:06:21 GMT</pubDate></item><item><title><![CDATA[💻 프로젝트]]></title><description><![CDATA[<a class="tag" href="?query=tag:프로젝트" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#프로젝트</a> <a class="tag" href="?query=tag:모음" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#모음</a> <br> <a href=".?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href=".?query=tag:모음" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#모음">#모음</a><br>프로젝트
-public하게 공개할 수 있는 프로젝트의 제작 과정입니다.
-<br>
-<br><a data-href="🏹 예치금 차액 비교 Spring Batch 리펙토링" href="project/hello-batch/🏹-예치금-차액-비교-spring-batch-리펙토링.html" class="internal-link" target="_self" rel="noopener nofollow">🏹 예치금 차액 비교 Spring Batch 리펙토링</a>⭐
-<br><a data-href="🏹 예치금 차액 비교 Spring Batch 리펙토링 부록" href="project/hello-batch/🏹-예치금-차액-비교-spring-batch-리펙토링-부록.html" class="internal-link" target="_self" rel="noopener nofollow">🏹 예치금 차액 비교 Spring Batch 리펙토링 부록</a>
-<br><a data-href="✏ Chunk_Partitioning Batch 구조 드로잉" href="project/hello-batch/✏-chunk_partitioning-batch-구조-드로잉.html" class="internal-link" target="_self" rel="noopener nofollow">✏ Chunk_Partitioning Batch 구조 드로잉</a>
-<br>
-<br><a data-href="👩‍👧‍👦 marketing Analytics 공통모듈 제작기" href="project/hello-marketing/👩‍👧‍👦-marketing-analytics-공통모듈-제작기.html" class="internal-link" target="_self" rel="noopener nofollow">👩‍👧‍👦 marketing Analytics 공통모듈 제작기</a>⭐
-<br><a data-href="👩‍👧‍👦 Analytics 공통모듈 ADMIN용 데이터 추출" href="project/hello-marketing/👩‍👧‍👦-analytics-공통모듈-admin용-데이터-추출.html" class="internal-link" target="_self" rel="noopener nofollow">👩‍👧‍👦 Analytics 공통모듈 ADMIN용 데이터 추출</a>
-<br>
-<br><a data-href="👻 Obsidian 정적호스팅 CICD 과정" href="project/note-ci_cd/👻-obsidian-정적호스팅-cicd-과정.html" class="internal-link" target="_self" rel="noopener nofollow">👻 Obsidian 정적호스팅 CICD 과정</a>
-<br><a data-href="⛈ Obsidian-AWS연동" href="project/note-ci_cd/⛈-obsidian-aws연동.html" class="internal-link" target="_self" rel="noopener nofollow">⛈ Obsidian-AWS연동</a>
-<br>
-<br><a data-href="📘 SpringBoot &amp; Docker + Reids 연동" href="tools/docker/📘-springboot-&amp;-docker-+-reids-연동.html" class="internal-link" target="_self" rel="noopener nofollow">📘 SpringBoot &amp; Docker + Reids 연동</a>
-<br><a data-href="🌥 aws(EC2)셋팅부터 배포까지" href="tools/aws/🌥-aws(ec2)셋팅부터-배포까지.html" class="internal-link" target="_self" rel="noopener nofollow">🌥 aws(EC2)셋팅부터 배포까지</a>]]></description><link>project/💻-프로젝트.html</link><guid isPermaLink="false">project/💻 프로젝트.md</guid><pubDate>Thu, 06 Mar 2025 06:05:28 GMT</pubDate></item><item><title><![CDATA[🏠 taesung's Blog]]></title><description><![CDATA[<a class="tag" href="?query=tag:home" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#home</a> <a class="tag" href="?query=tag:index" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#index</a> <a class="tag" href="?query=tag:blog" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#blog</a> <a class="tag" href="?query=tag:공부" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#공부</a> <br> <a href=".?query=tag:home" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#home">#home</a> <a href=".?query=tag:index" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#index">#index</a> <a href=".?query=tag:blog" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#blog">#blog</a> <a href=".?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a><br><a data-tooltip-position="top" aria-label="https://github.com/LeeTaeSung0628" rel="noopener nofollow" class="external-link is-unresolved" href="https://github.com/LeeTaeSung0628" target="_self"><span alt="Pasted image 20250220144552.png" src="Pasted image 20250220144552.png" class="internal-embed media-embed image-embed is-loaded" style="width: 220px; max-width: 100%;"></span></a><img alt="Pasted image 20250220144552.png" src="사진-및-문서/pasted-image-20250220144552.png" style="width: 220px; max-width: 100%;" target="_self"><br>
-<a data-tooltip-position="top" aria-label="https://github.com/LeeTaeSung0628" rel="noopener nofollow" class="external-link is-unresolved" href="https://github.com/LeeTaeSung0628" target="_self"><font color="#ffffff"></font></a>🔗git Hub 이동<br><a data-tooltip-position="top" aria-label="https://git.io/typing-svg" rel="noopener nofollow" class="external-link is-unresolved" href="https://git.io/typing-svg" target="_self"></a><img alt="Typing SVG" src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;pause=1000&amp;color=36A9F7&amp;random=false&amp;width=435&amp;lines=%EC%97%AC%EA%B8%B0%EB%8A%94+%EA%B3%B5%EB%B6%80%ED%95%98%EA%B3%A0%2C+%EA%B8%B0%EB%A1%9D%ED%95%98%EB%8A%94+%EA%B3%B3%EC%9E%85%EB%8B%88%EB%8B%A4" referrerpolicy="no-referrer" target="_self" class="is-unresolved"><br> <br> <br> <br> <br> <br> <br> <br> <br> <br>Soon <br>깃 레포에서도 블로그 주소로 이어질 수 있도록 Readme 설정하기. <br>리드미 또한 옵시디언에서 작업이 가능하다. <br>Netlify 셋팅 추가하기]]></description><link>index.html</link><guid isPermaLink="false">index.md</guid><pubDate>Thu, 06 Mar 2025 06:03:57 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250220144552.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20250220144552.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[2. 스프링 핵심 원리 이해]]></title><description><![CDATA[<a class="tag" href="?query=tag:SpringCoreBasic" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SpringCoreBasic</a> <a class="tag" href="?query=tag:SPRING" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SPRING</a> <a class="tag" href="?query=tag:lectur" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#lectur</a> <a class="tag" href="?query=tag:강의" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#강의</a> <br> <a href=".?query=tag:SpringCoreBasic" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SpringCoreBasic">#SpringCoreBasic</a> <a href=".?query=tag:SPRING" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SPRING">#SPRING</a> <a href=".?query=tag:lectur" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#lectur">#lectur</a> <a href=".?query=tag:강의" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#강의">#강의</a><br>스타터 사이트 : <a rel="noopener nofollow" class="external-link is-unresolved" href="https://start.spring.io/" target="_self">https://start.spring.io/</a><br>
-<img alt="Pasted image 20250305173344.png" src="사진-및-문서/pasted-image-20250305173344.png" style="width: 625px; max-width: 100%;" target="_self"><br>
-별도의 의존관계는 추가하지 않음<br><img alt="Pasted image 20250305175924.png" src="사진-및-문서/pasted-image-20250305175924.png" target="_self">]]></description><link>lectur/2.-스프링-핵심-원리-이해.html</link><guid isPermaLink="false">lectur/2. 스프링 핵심 원리 이해.md</guid><pubDate>Wed, 05 Mar 2025 08:59:31 GMT</pubDate><enclosure url="사진-및-문서/pasted-image-20250305173344.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="사진-및-문서/pasted-image-20250305173344.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[1. 객체 지향 설계와 스프링]]></title><description><![CDATA[<a class="tag" href="?query=tag:SpringCoreBasic" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SpringCoreBasic</a> <a class="tag" href="?query=tag:SPRING" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SPRING</a> <a class="tag" href="?query=tag:lectur" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#lectur</a> <a class="tag" href="?query=tag:강의" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#강의</a> <br> <a href=".?query=tag:SpringCoreBasic" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SpringCoreBasic">#SpringCoreBasic</a> <a href=".?query=tag:SPRING" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SPRING">#SPRING</a> <a href=".?query=tag:lectur" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#lectur">#lectur</a> <a href=".?query=tag:강의" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#강의">#강의</a><br>스프링이 제공하는 핵심 가치와 원리를 제대로 파악하고 사용한다.<br>객체 지향 프로그래밍
-<br>단순 레퍼런스 문서 설명이 아닌, 이유와 핵심원리
-<br>스프링의 본질에 대해 깊은 이해 -&gt; 객체지향 설계의 본질을 이해
-<br>2000년대 초반<br>
-EJB(enterprise java Beans) -&gt; spring / JAP 를 짬뽕해놓은 기술이 탄생<br>Java진영에서 표준으로 개발한 기술
-<br>컨테이너 기술
-<br>설정에 의한 트렌젝션 기술
-<br>분산 기술
-<br>엔티티 빈 : ORM기술 중 하나
-<br>가격이 매우 비쌌음 수천만원 짜리 Server도 존재했었음
-<br>단점 <br>어렵고
-<br>복잡하고
-<br>느리다
-<br>POJO - 오래된 방식의 자바 오브젝트, 그냥 이걸로 돌아가자는 말이 나올 정도였다.<br>두 명의 사람이 EJB에 환멸을 느끼고, 오픈소스를 만든다.<br>
-<br>EJB 컨테이너의 대체
-<br>단순함의 승리
-<br>현재 사실상의 표준 기술
-<br>
-<br>EJB의 엔티티빈 기술을 대체
-<br>JPA 새로운 표준 정의
-<br> EJB 엔티티 빈 -&gt; 하이버네이트 -&gt; JPA(같은 사람이 거의 하이버네이트와 비슷하게 만든 JAVA표준)<br>JPA - 표준 인터페이스<br>
-하이버네이트 - 80% 이상의 점유율을 차지하는 JAP 구현체<br>
-<br>2002 로드 존슨 책 출간
-<br>EJB의 문제점 지적
-<br>EJB없이 고품질의 확장 가능한 애플리케이션을 개발할 수 있음을 보여줌
-<br>30,000라인 이상의 기반 기술을 예제코드로 선보임
-<br>BeanFactory, applicationContext, POJO, DI, IoC(제어의 역전)
-<br>책 출간 이후 '유겐 휠러', '얀 카로프'가 로드 존슨에게 오픈소스 프로젝트를 제안하여<br>
-만들어진 것이 SPRING( EBJ 겨울을 넘어 새로운 시작이라는 뜻 )<br>1.0 - xml<br>
-2.0 - xml 편의기능<br>
-3.0 - 자바 코드로 설정<br>
-4.0 - 자바8<br>
-boot 1.0 - 기존 스프링의 복잡한 셋팅/설정을 개선<br>
-5.0 / boot 2.0 - 리엑티브 프로그래밍 지원<br>
-...<br>예전 스프링은 설정이 절반이다 라고 할 정도로 설정이 힘들었다.
-<br>필수<br>스프링 프레임워크
-<br>스프링 부트
-<br>선택<br>스프링 데이터 - noSQL, RDB 등 CRUD를 편리하게 도와줌
-<br>스프링 세션
-<br>스프링 시큐리티
-<br>스프링 레스트 독스 - API문서화, 테스트를 편리하게 도와줌
-<br>스프링 배치 - 배치 처리 특화 기술
-<br>스프링 클라우드 - 클라우드..
-<br>
-<br>핵심기술 - 스프링 DI 컨테이너 / AOP / 이벤트
-<br>웹 기술 - 스프링 MVC / 스프링 Web Flux
-<br>데이터 - 트렌젝션 / JDBC / ORM / xml
-<br>기술통합 - 캐시, 이메일, 원격, 스케줄링
-<br>테스트 - 스프링기반 테스트
-<br>언어 - 코틀린, 그루비
-<br>
-<br>
-스프링을 편리하게 사용할 수 있도록 지원, 최근에는 스텐다드로 사용 <br>
-단독으로 실행할 수 있는 스프링 애플리케이션을 쉽게 생성<br>
--Tomcat같은 웹 서버를 내장하여 별도의 웹 서버 설치 불필요 <br>
-손쉬운 빌드 구성을 위한 starter 종속성 제공 <br>
-스프링과 3rd parth 라이브러리 자동 구성 <br>메이저 외부 라이브러리 버전 자동 체크/다운 <br>
-메트릭, 상태 확인, 외부 구성 같은 프로덕션 준비 기능 제공 <br>
-관례에 의한 간결한 설정 <br>문맥에 따라 다르게 사용된다.<br>스프링 DI 컨테이너 기술
-<br>스프링 프레임워크
-<br>스프링 부트, 프레임워크 등 모두 포함한 생태계
-<br>
-<br>자바 언어 기반의 프레임워크
-<br>자바 언어의 가장 큰 특징 - 객체 지향 언어
-<br>스프링은 객체 지향 언어가 가진 강력한 특징을 살려내는 프레임워크
-<br>스프링은 좋은 객체 지향 애플리케이션을 개발할 수 있게 도와주는 프레임워크⭐
-<br>
-<br>
-컴퓨터 프로그래밍을 명령어의 목록으로 보는 시각에서 벗어나, 여러개의 독립된 단위,<br>
-즉, 객체 들의 모임으로 파악하고자 하는것이다. <br>
-각각의 객체는 메시지를 주고받고, 데이터를 처리할 수 있다.(협력) <br>
-객체지향 프로그래밍은 유연하고 변경용이하게 만들기 때문에 대규모 소프트웨어 개발에 많이 사용된다. <br>
-<br>레고 블럭 조립하듯,
-<br>컴퓨터 부품 갈아 끼우듯,
-<br>컴포넌트를 쉽고 유연하게 변경하면서 개발할 수 있는 방법.<br>
-=&gt; 다형성
-<br>
-<br>자동차의 역할 (인터페이스)
-<br>자동차 구현 K3, 모델3, 아반떼 등 (class, 구현체)
-<br>운전자는 역할(인터페이스)만을 따르면 모든 자동차를 이용할 수 있다.<br>
-즉, 클라이언트에 영향을 주지 않고 새로운 기능을 구현할 수 있다.<br>유연하고, 변경에 용이한 것!!<br>ex) 정렬 알고리즘, 할인 정책 등등<br>
-<br>클라이언트는 대상의 역할(인타페이스)만 알면 된다.
-<br>클라이언트는 구현 대상의 내부구조를 몰라도 된다.
-<br>클라이언트는 구현 대상의 내부 구조가 변경되어도 영향을 받지 않는다.
-<br>클라이언트는 구현 대상 자체를 변경해도 영향을 받지 않는다.
-<br>
-<br>오버라이딩은 자바의 기본 문법
-<br>오버라이딩 된 메서드가 실행
-<br>다형성으로 인터페이스를 구현한 객체를 실행 시점에 유연하게 변경 가능
-<br>물론, 클래스 상속 관계도 다형성/오버라이딩 적용가능(권장안함)
-<br>
-<br>인터페이스를 구현한 객체 인스턴스를 실행 시점에 유연하게 변경할 수 있다.
-<br>다형성의 본질을 이해하려면 협력이라는 객체사이의 관계에서 시작해야함.
-<br>클라이언트를 변경하지 않고, 서버의 구현 기능을 유연하게 변경할 수 있다.
-<br>확장 가능한 설계
-<br>
-<br>역할(인터페이스) 자체가 변하면, 클라이언트, 서버 모두에 큰 변경이 발생한다.
-<br>
-<br>다형성이 가장 중요하다!
-<br>스프링은 다형성을 극대화해서 이용할 수 있게 도와준다.
-<br>스프링에서 이야기하는 IoC, DI는 다형성을 활용해서 역할과 구현을 편리하게 다룰 수있도록 지원한다.
-<br>스프링을 사용하면 마치 레고 블럭 조립하듯 구현을 편리하게 변경할 수 있다.
-<br>
-<br>클린코드로 유명한 로버트 마틴이 좋은 객체 지향 설계의 5가지 원칙을 정리한것.
-<br>SRP: 단일 책임 원칙(single responsibility principle)
-<br>OCP: 개방-폐쇄 원칙 (Open/closed principle)
-<br>LSP: 리스코프 치환 원칙 (Liskov substitution principle)
-<br>ISP: 인터페이스 분리 원칙 (Interface segregation principle)
-<br>DIP: 의존관계 역전 원칙 (Dependency inversion principle)
-<br>
-<br>한 클래스는 하나의 책임만 가져야 한다.
-<br>중요한 기준은 변경이다.
-<br>변경이 있을 때 파급 효과가 적으면 단일 책임 원칙을 잘 따른것.
-<br>UI변경, 객체의 생성과 사용을 분리
-<br>
-<br>확장에는 열려있으나, 변경에는 닫혀있어야 한다.
-<br>다형성을 잘 활용하여야 한다.
-<br>인터페이스를 구현한 새로운 클래스를 하나 만들어서 새로운 기능을 구현
-<br>역할과 구현의 분리
-<br>	- MemberService 클라이언트가 구현 클래스를 직접 선택 MemberRepository m = new MemoryMemberRepository(); //기존 코드 //DIP 위반 MemberRepository m = new JdbcMemberRepository(); //변경 코드 //DIP 위반
-<br>구현 객체를 변경하려면 클라이언트 코드를 변경해야 한다.
-<br>분명 다형성을 사용했지만 OCP 원칙을 지킬 수 없다. -&gt; 클라이언트가 기존코드를 변경해야한다.<br>
--&gt; 객체를 생성하고, 연관관계를 맺어주는 별도의 조립, 설정자가 필요하다 : 스프링 컨테이너 / DI, IoC <br>
-<br>프로그램의 객체는 프로그램의 정확성을 깨뜨리지 않으면서 하위 타입의 인스턴스로 바꿀 수 있어야 한다
-<br>하위 클래스는 인터페이스 규약을 다 지켜야 한다는 것
-<br>다형성을 지원하기 위 한 원칙, 인터페이스를 구현한 구현체는 믿고 사용하려면, 이 원칙이 필요하다.
-<br>단순히 컴파일에 성공하는 것을 넘어서는 이야기
-<br>ex) 자동차 인터페이스의 엑셀은 앞으로 가라는 기능, 뒤로 가게 구현하면 LSP 위반<br>
-<br>특정 클라이언트를 위한 인터페이스 여러 개가, 범용 인터페이스 하나보다 낫다
-<br>자동차 인터페이스 -&gt; 운전 인터페이스, 정비 인터페이스로 분리
-<br>사용자 클라이언트 -&gt; 운전자 클라이언트, 정비사 클라이언트로 분리
-<br>분리하면 정비 인터페이스 자체가 변해도 운전자 클라이언트에 영향을 주지 않음
-<br>인터페이스가 명확해지고, 대체 가능성이 높아진다.
-<br>
-<br>프로그래머는 “추상화에 의존해야지, 구체화에 의존하면 안된다.”
-<br>구현 클래스에 의존하지 말고, 인터페이스에 의존하라는 뜻
-<br>역할(Role)에 의존하게 해야 한다는 것과 같다.
-<br>구현체에 의존하게 되면 변 경이 아주 어려워진다
-<br>
-그런데 OCP에서 설명한 MemberService는 인터페이스에 의존하지만, 구현 클래스도 동시에 의존한다.
-<br>MemberService 클라이언트가 구현 클래스를 직접 선택<br>MemberRepository m = new MemoryMemberRepository(); //DIP 위반
-<br>그럼 인터페이스만 사용하면 구현체가 없는데 어떻게 위반을 안해?<br>
-<br>다형성 만으로는 쉽게 부품을 갈아 끼우듯이 개발할 수 없다.
-<br>다형성 만으로는 구현 객체를 변경할 때 클라이언트 코드도 함께 변경된다.
-<br>다형성 만으로는 OCP, DIP를 지킬 수 없다.
-<br>뭔가 더 필요하다.
-<br>
-<br>
-스프링은 다음 기술로 다형성 + OCP, DIP를 가능하게 지원<br>
-DI(Dependency Injection): 의존관계, 의존성 주입<br>
-DI 컨테이너 제공 <br>
-클라이언트 코드의 변경 없이 기능 확장 <br>
-쉽게 부품을 교체하듯이 개발 <br>
-<br>순수하게 자바로 OCP, DIP 원칙들을 지키면서 개발을 해보면, 결국 스프링 프레임워크를 만들게 된다.<br>
-(더 정확히는 DI 컨테이너)
-<br>
-<br>하지만 인터페이스를 도입하면 추상화라는 비용이 발생한다.
-<br>기능을 확장할 가능성이 없다면, 구체 클래스를 직접 사용하고,<br>
-향후 꼭 필요할 때 리팩터 링해서 인터페이스를 도입하는 것도 방법이다]]></description><link>lectur/1.-객체-지향-설계와-스프링.html</link><guid isPermaLink="false">lectur/1. 객체 지향 설계와 스프링.md</guid><pubDate>Wed, 05 Mar 2025 08:28:42 GMT</pubDate></item></channel></rss>
+현재는 리펙토링을 통해 lock에 묶여있는 로직을 단순화 하는것에 만족해야겠음.]]></description><link>issue_troubleshooting/🔐-상품-투자하기-서비스-이슈-및-lock기법-개선안.html</link><guid isPermaLink="false">Issue_TroubleShooting/🔐 상품 투자하기 서비스 이슈 및 Lock기법 개선안.md</guid><pubDate>Thu, 06 Mar 2025 08:29:43 GMT</pubDate></item></channel></rss>

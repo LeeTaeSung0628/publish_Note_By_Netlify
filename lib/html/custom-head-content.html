@@ -11,11 +11,10 @@
                 themeToggle.checked = true; // 다크 모드 유지
                 themeToggle.disabled = true; // 토글 비활성화
 
-                // 버튼의 부모 요소에 "🏠 taesung's Blog" 추가
-                let parent = themeToggle.parentElement;
-                if (parent) {
-                    parent.innerHTML = "🏠 taesung's Blog"; // 부모 요소에 텍스트 삽입
-                }
+            // .topbar-content 내부에 "🏠 taesung's Blog" 추가
+            let topbar = document.querySelector(".topbar-content");
+            if (topbar) {
+                topbar.innerHTML = "🏠 taesung's Blog"; // 텍스트 삽입
             }
             console.log("다크 모드가 강제 적용되었으며, 테마 토글 기능이 비활성화되었습니다.");
         }

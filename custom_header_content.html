@@ -1,3 +1,38 @@
-<script>
-    alert("뿌우우우웅");
+<script>  
+        console.log("뿌에에에에에엥")  
+        document.addEventListener("DOMContentLoaded", function() {  
+            // 테마를 강제로 다크 모드로 설정  
+            if (localStorage.getItem("theme") !== "dark") {  
+                localStorage.setItem("theme", "dark");  
+                document.documentElement.setAttribute("data-theme", "dark");  
+                console.log("Theme forced to dark.");  
+            }  
+  
+            // 테마 변경 감지 및 강제 유지  
+            const observer = new MutationObserver(() => {  
+                if (document.documentElement.getAttribute("data-theme") !== "dark") {  
+                    document.documentElement.setAttribute("data-theme", "dark");  
+                    localStorage.setItem("theme", "dark");  
+                    console.log("Theme reset to dark.");  
+                }  
+            });  
+  
+            observer.observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });  
+  
+            // 개발자 도구를 통해 강제로 변경하는 것을 방지  
+            Object.defineProperty(document.documentElement, "dataset", {  
+                get: function() {  
+                    return new Proxy({}, {  
+                        get: function(target, prop) {  
+                            return prop === "theme" ? "dark" : undefined;  
+                        },  
+                        set: function() {  
+                            return true;  
+                        }  
+                    });  
+                }  
+            });  
+  
+            console.log("Dark mode enforcement complete.");  
+        });  
 </script>

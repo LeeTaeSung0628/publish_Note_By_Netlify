@@ -1,30 +1,28 @@
 <script>
-    // 다크 테마 강제 적용
-    document.addEventListener("DOMContentLoaded", function() {
-        document.body.classList.remove("theme-light");
+    document.addEventListener("DOMContentLoaded", function () {
+        // 강제로 다크 테마 적용
         document.body.classList.add("theme-dark");
-        document.documentElement.style.setProperty("--color-base-00", "#000000");
-        document.documentElement.style.setProperty("--color-base-10", "#121212");
-        document.documentElement.style.setProperty("--color-base-20", "#1E1E1E");
-        document.documentElement.style.setProperty("--text-normal", "#FFFFFF");
-        document.documentElement.style.setProperty("--text-muted", "#B0B0B0");
-	 console.log("123");
+        document.body.classList.remove("theme-light");
+
+        // 테마 토글 버튼 비활성화
+        let themeToggle = document.querySelector(".theme-toggle-input");
+        if (themeToggle) {
+            themeToggle.checked = true; // 다크 모드 유지
+            themeToggle.disabled = true; // 토글 비활성화
+        }
+
+        // 테마 관련 이벤트 리스너 제거
+        const observer = new MutationObserver(mutations => {
+            mutations.forEach(mutation => {
+                if (mutation.attributeName === "class") {
+                    document.body.classList.add("theme-dark");
+                    document.body.classList.remove("theme-light");
+                }
+            });
+        });
+
+        observer.observe(document.body, { attributes: true });
+
+        console.log("다크 모드가 강제 적용되었으며, 테마 토글 기능이 비활성화되었습니다.");
     });
 </script>
-
-<style>
-    /* 블랙 테마 강제 스타일 */
-    :root, body, .theme-dark {
-        --color-base-00: #000000 !important;
-        --color-base-10: #121212 !important;
-        --color-base-20: #1E1E1E !important;
-        --color-base-30: #252525 !important;
-        --color-base-40: #303030 !important;
-        --text-normal: #FFFFFF !important;
-        --text-muted: #B0B0B0 !important;
-        --background-primary: #000000 !important;
-        --background-secondary: #121212 !important;
-        --background-tertiary: #1E1E1E !important;
-        --border-color: #303030 !important;
-    }
-</style>

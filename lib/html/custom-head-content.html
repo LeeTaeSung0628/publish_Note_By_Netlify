@@ -12,10 +12,10 @@
                 themeToggle.disabled = true; // 토글 비활성화
             }
 
-            // .topbar-content 내부에 "🏠 taesung's Blog" 추가
+            // .topbar-content 내부에 하이퍼링크 추가
             let topbar = document.querySelector(".topbar-content");
             if (topbar) {
-                topbar.innerHTML = "🏠 taesung's Blog"; // 텍스트 삽입
+                topbar.innerHTML = `<a href="index.html" style="text-decoration: none; color: inherit;">🏠 taesung's Blog</a>`; // 링크 삽입
             }
 
             console.log("다크 모드가 강제 적용되었으며, 테마 토글 기능이 비활성화되었습니다.");

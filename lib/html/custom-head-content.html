@@ -11,19 +11,6 @@
                 themeToggle.checked = true; // 다크 모드 유지
                 themeToggle.disabled = true; // 토글 비활성화
             }
-
-            // 테마 변경 방지 (MutationObserver 사용)
-            const observer = new MutationObserver(mutations => {
-                mutations.forEach(mutation => {
-                    if (mutation.attributeName === "class") {
-                        document.body.classList.add("theme-dark");
-                        document.body.classList.remove("theme-light");
-                    }
-                });
-            });
-
-            observer.observe(document.body, { attributes: true });
-
             console.log("다크 모드가 강제 적용되었으며, 테마 토글 기능이 비활성화되었습니다.");
         }
 

@@ -1,29 +1,42 @@
 <script>
-	console.log("test123");
-    document.addEventListener("DOMContentLoaded", function () {
-        // 강제로 다크 테마 적용
-        document.body.classList.add("theme-dark");
-        document.body.classList.remove("theme-light");
+    (function() {
+        function forceDarkTheme() {
+            // 강제 다크 모드 적용
+            document.body.classList.add("theme-dark");
+            document.body.classList.remove("theme-light");
 
-        // 테마 토글 버튼 비활성화
-        let themeToggle = document.querySelector(".theme-toggle-input");
-        if (themeToggle) {
-            themeToggle.checked = true; // 다크 모드 유지
-            themeToggle.disabled = true; // 토글 비활성화
+            // 테마 토글 버튼 비활성화
+            let themeToggle = document.querySelector(".theme-toggle-input");
+            if (themeToggle) {
+                themeToggle.checked = true; // 다크 모드 유지
+                themeToggle.disabled = true; // 토글 비활성화
+            }
+
+            // 테마 변경 방지 (MutationObserver 사용)
+            const observer = new MutationObserver(mutations => {
+                mutations.forEach(mutation => {
+                    if (mutation.attributeName === "class") {
+                        document.body.classList.add("theme-dark");
+                        document.body.classList.remove("theme-light");
+                    }
+                });
+            });
+
+            observer.observe(document.body, { attributes: true });
+
+            console.log("다크 모드가 강제 적용되었으며, 테마 토글 기능이 비활성화되었습니다.");
         }
 
-        // 테마 관련 이벤트 리스너 제거
-        const observer = new MutationObserver(mutations => {
-            mutations.forEach(mutation => {
-                if (mutation.attributeName === "class") {
-                    document.body.classList.add("theme-dark");
-                    document.body.classList.remove("theme-light");
-                }
-            });
-        });
-
-        observer.observe(document.body, { attributes: true });
-
-        console.log("다크 모드가 강제 적용되었으며, 테마 토글 기능이 비활성화되었습니다.");
-    });
+        // 기존 window.onload가 있으면 유지하면서 추가
+        let prevOnLoad = window.onload;
+	console.log("1");
+	console.log(prevOnLoad);
+        window.onload = function(event) {
+	console.log("2");
+            if (typeof prevOnLoad === "function") {
+                prevOnLoad(event);
+            }
+            forceDarkTheme();
+        };
+    })();
 </script>

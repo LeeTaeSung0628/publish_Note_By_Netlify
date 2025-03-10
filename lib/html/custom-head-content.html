@@ -25,6 +25,30 @@ body.theme-dark {
     background-color: var(--color-base-00) !important;
     color: var(--text-normal) !important;
 }
+
+/* 페이지 상단으로 이동하는 플로팅 버튼 */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-accent);
+    color: var(--color-base-00);
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    display: none;
+    transition: opacity 0.3s;
+}
+
+#scrollToTopBtn:hover {
+    background-color: var(--color-accent);
+    opacity: 0.8;
+}
 </style>
 
 <script>
@@ -57,6 +81,7 @@ body.theme-dark {
             prevOnLoad(event);
         }
         forceDarkTheme();
+        addScrollToTopButton();
     };
 
     const observer = new MutationObserver((mutations) => {
@@ -71,5 +96,24 @@ body.theme-dark {
     });
 
     observer.observe(document.body, { attributes: true, attributeFilter: ["class"] });
+
+    function addScrollToTopButton() {
+        let button = document.createElement("button");
+        button.id = "scrollToTopBtn";
+        button.innerHTML = "&#9650;"; // 위 화살표 아이콘
+        document.body.appendChild(button);
+
+        button.addEventListener("click", function() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+
+        window.addEventListener("scroll", function() {
+            if (window.scrollY > 200) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        });
+    }
 })();
 </script>

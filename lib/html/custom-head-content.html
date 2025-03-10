@@ -1,36 +1,75 @@
+<style>
+:root {
+    --color-base-00: #1c2127; /* 다크 테마 기본 배경 */
+    --color-base-10: #282c34;
+    --color-base-100: #dadada;
+    --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+    --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --text-normal: var(--color-base-100);
+    --background-secondary-alt: var(--color-base-30);
+}
+
+/* 강제 다크 테마 적용 */
+body {
+    background-color: var(--color-base-00) !important;
+    color: var(--text-normal) !important;
+}
+
+/* 모든 다크/라이트 테마 클래스 무효화 */
+body.theme-light {
+    background-color: var(--color-base-00) !important;
+    color: var(--text-normal) !important;
+}
+
+body.theme-dark {
+    background-color: var(--color-base-00) !important;
+    color: var(--text-normal) !important;
+}
+</style>
+
 <script>
-    document.title = "🏠 taesung's Blog";
-    (function() {
-        function forceDarkTheme() {
-            // 강제 다크 모드 적용
-            document.body.classList.add("theme-dark");
-            document.body.classList.remove("theme-light");
+(function() {
+    document.documentElement.classList.add("theme-dark");
+    document.documentElement.classList.remove("theme-light");
 
-            // 테마 토글 버튼 찾기
-            let themeToggle = document.querySelector(".theme-toggle-input");
-            if (themeToggle) {
-                themeToggle.checked = true; // 다크 모드 유지
-                themeToggle.disabled = true; // 토글 비활성화
-            }
+    function forceDarkTheme() {
+        document.body.classList.add("theme-dark");
+        document.body.classList.remove("theme-light");
 
-            // .topbar-content 내부에 하이퍼링크 추가
-            let topbar = document.querySelector(".topbar-content");
-            if (topbar) {
-                topbar.innerHTML = `
-                    <a class="tree-item-self is-clickable nav-file-title" href="index.html" data-path="index.html">
-                        <div class="tree-item-inner nav-file-title-content">🏠 taesung's Blog</div>
-                    </a>`;
-            }
+        let themeToggle = document.querySelector(".theme-toggle-input");
+        if (themeToggle) {
+            themeToggle.checked = true;
+            themeToggle.disabled = true;
         }
 
-        // 기존 window.onload가 있으면 유지하면서 추가
-        let prevOnLoad = window.onload;
-        console.log(prevOnLoad);
-        window.onload = function(event) {
-            if (typeof prevOnLoad === "function") {
-                prevOnLoad(event);
+        let topbar = document.querySelector(".topbar-content");
+        if (topbar) {
+            topbar.innerHTML = `
+                <a class="tree-item-self is-clickable nav-file-title" href="index.html" data-path="index.html">
+                    <div class="tree-item-inner nav-file-title-content">🏠 taesung's Blog</div>
+                </a>`;
+        }
+    }
+
+    let prevOnLoad = window.onload;
+    window.onload = function(event) {
+        if (typeof prevOnLoad === "function") {
+            prevOnLoad(event);
+        }
+        forceDarkTheme();
+    };
+
+    const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+            if (mutation.attributeName === "class") {
+                if (!document.body.classList.contains("theme-dark")) {
+                    console.log("⚠ 테마 변경 감지됨, 다시 다크 테마 적용");
+                    forceDarkTheme();
+                }
             }
-            forceDarkTheme();
-        };
-    })();
+        });
+    });
+
+    observer.observe(document.body, { attributes: true, attributeFilter: ["class"] });
+})();
 </script>

@@ -172,18 +172,28 @@ body.theme-dark {
 
 
 
-let originalFunction = window.setActiveDocument; // 기존 함수 저장
+    let setActiveDocument1 = window.setActiveDocument; // 기존 함수 저장
 
-window.setActiveDocument = function(...args) {
-    if (typeof originalFunction === "function") {
-        console.log("시래래랠");
-        forceDarkTheme();
-        addScrollToTopButton();
-        updateScrollButtonPosition();
-        observeMarkdownPreviewResize();
-        return originalFunction.apply(this, args); // 원래 함수 실행
-    }
-};
+    window.setActiveDocument = function(...args) {
+        if (typeof setActiveDocument1 === "function") {
+            forceDarkTheme();
+            addScrollToTopButton();
+            updateScrollButtonPosition();
+            observeMarkdownPreviewResize();
+            return setActiveDocument1.apply(this, args); // 원래 함수 실행
+        }
+    };
+
+    let setupRootPath1 = window.setupRootPath; // 기존 함수 저장
+
+    window.setupRootPath = function(...args) {
+        if (typeof setupRootPath1 === "function") {
+            addScrollToTopButton();
+            updateScrollButtonPosition();
+            observeMarkdownPreviewResize();
+            return setupRootPath1.apply(this, args); // 원래 함수 실행
+        }
+    };
 
 })();
 </script>

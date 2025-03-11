@@ -173,6 +173,7 @@ let originalFunction = window.setActiveDocument; // 기존 함수 저장
 
 window.setActiveDocument = function(...args) {
     if (typeof originalFunction === "function") {
+        console.log("시래래랠");
         forceDarkTheme();
         addScrollToTopButton();
         updateScrollButtonPosition();

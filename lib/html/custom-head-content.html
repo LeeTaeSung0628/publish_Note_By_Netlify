@@ -40,7 +40,6 @@ body.theme-dark {
     line-height: 60px;
     cursor: pointer;
     opacity: 0;
-    visibility: hidden;
     transition: opacity 0.3s ease-in-out, transform 0.2s;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
     z-index: 99999;
@@ -100,10 +99,10 @@ body.theme-dark {
 
         let sidebarRect = sidebar.getBoundingClientRect();
         let buttonWidth = 60; // 버튼 너비
-        let padding = 40; // 우측 여백
+        let padding = 70; // 우측 여백
 
         // 버튼을 사이드바 바깥쪽 우측 하단에 배치
-        button.style.right = `${window.innerWidth - sidebarRect.left - buttonWidth - padding}px`;
+        button.style.right = `${window.innerWidth - sidebarRect.left - buttonWidth + padding}px`;
     }
 
     function addScrollToTopButton() {

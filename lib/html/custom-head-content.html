@@ -170,7 +170,6 @@ body.theme-dark {
 let originalFunction = window.setActiveDocument; // 기존 함수 저장
 
 window.setActiveDocument = function(...args) {
-    console.log("🚀 aaa() 함수가 실행됨!", args); // 실행 감지
     if (typeof originalFunction === "function") {
         return originalFunction.apply(this, args); // 원래 함수 실행
     }

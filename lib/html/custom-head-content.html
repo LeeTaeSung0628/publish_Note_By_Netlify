@@ -1,4 +1,4 @@
-<style>
+<style>j
 :root {
     --color-base-00: #1c2127; /* 다크 테마 기본 배경 */
     --color-base-10: #282c34;
@@ -165,8 +165,16 @@ body.theme-dark {
     }
 
     observer.observe(targetNode, { childList: true, subtree: true });
-  }
 
+
+let originalFunction = window.setActiveDocument; // 기존 함수 저장
+
+window.setActiveDocument = function(...args) {
+    console.log("🚀 aaa() 함수가 실행됨!", args); // 실행 감지
+    if (typeof originalFunction === "function") {
+        return originalFunction.apply(this, args); // 원래 함수 실행
+    }
+};
 
 })();
 </script>

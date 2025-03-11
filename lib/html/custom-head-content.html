@@ -1,3 +1,59 @@
+<style>
+:root {
+    --color-base-00: #1c2127; /* 다크 테마 기본 배경 */
+    --color-base-10: #282c34;
+    --color-base-100: #dadada;
+    --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+    --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --text-normal: var(--color-base-100);
+    --background-secondary-alt: var(--color-base-30);
+}
+
+/* 강제 다크 테마 적용 */
+body {
+    background-color: var(--color-base-00) !important;
+    color: var(--text-normal) !important;
+}
+
+/* 모든 다크/라이트 테마 클래스 무효화 */
+body.theme-light {
+    background-color: var(--color-base-00) !important;
+    color: var(--text-normal) !important;
+}
+
+body.theme-dark {
+    background-color: var(--color-base-00) !important;
+    color: var(--text-normal) !important;
+}
+
+/* 페이지 상단으로 이동하는 플로팅 버튼 */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 60px;
+    right: 60px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--background-secondary-alt);
+    color: var(--text-normal);
+    border: 2px solid #404040;
+    border-radius: 50%;
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, transform 0.2s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    z-index: 99999;
+}
+
+#scrollToTopBtn:hover {
+    background-color: var(--color-accent);
+    transform: scale(1.2);
+}
+</style>
+
 <script>
 alert("그래도그렇지");
 </script>

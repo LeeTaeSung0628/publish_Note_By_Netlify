@@ -102,18 +102,6 @@ body.theme-dark {
             }
         });
     }
- 
-    //테마 변경감지
-    const observer = new MutationObserver((mutations) => {
-        mutations.forEach((mutation) => {
-            if (mutation.attributeName === "class") {
-                if (!document.body.classList.contains("theme-dark")) {
-                    console.log("⚠ 테마 변경 감지됨, 다시 다크 테마 적용");
-                    forceDarkTheme();
-                }
-            }
-        });
-    });
 
 //-------------
 
@@ -186,22 +174,41 @@ body.theme-dark {
         });
     }
 
+    function observeDOMChanges() {
+    let targetNode = document.querySelector(".markdown-preview-view");
+    
+    let observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+            if (mutation.type === "childList") {
+	   forceDarkTheme();
+                addScrollToTopButton(); // 버튼을 다시 추가
+            }
+        });
+    });
+
+    observer.observe(targetNode, { childList: true, subtree: true });
+}
+
     let prevOnLoad = window.onload;
     window.onload = function(event) {
+	console.log("윈도우 온로드");
         if (typeof prevOnLoad === "function") {
             prevOnLoad(event);
         }
         forceDarkTheme();
         addScrollToTopButton();
-        observeMarkdownPreviewResize()
+        observeMarkdownPreviewResize();
+        observeDOMChanges();
     };
 
 
     // 문서가 로드될 때 실행
     document.addEventListener("DOMContentLoaded", () => {
+	console.log("돔 컨텐츠로드");
         forceDarkTheme();
         addScrollToTopButton();
-        observeMarkdownPreviewResize()
+        observeMarkdownPreviewResize();
+        observeDOMChanges();
     });
 })();
 </script>

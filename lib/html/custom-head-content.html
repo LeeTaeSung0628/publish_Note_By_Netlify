@@ -55,5 +55,32 @@ body.theme-dark {
 </style>
 
 <script>
-alert("그래도그렇지");
+alert("수정은된거지?");
+(function() {
+    function forceDarkTheme() {
+	alert("다크테마 온");
+        document.body.classList.add("theme-dark");
+        document.body.classList.remove("theme-light");
+
+        let themeToggle = document.querySelector(".theme-toggle-input");
+        if (themeToggle) {
+            themeToggle.checked = true;
+            themeToggle.disabled = true;
+        }
+
+        let topbar = document.querySelector(".topbar-content");
+        if (topbar) {
+            topbar.innerHTML = `
+                <a class="tree-item-self is-clickable nav-file-title" href="index.html" data-path="index.html">
+                    <div class="tree-item-inner nav-file-title-content">🏠 taesung's Blog</div>
+                </a>`;
+        }
+    }
+
+    // 문서가 로드될 때 실행
+    document.addEventListener("DOMContentLoaded", () => {
+        forceDarkTheme();
+    });
+
+})();
 </script>

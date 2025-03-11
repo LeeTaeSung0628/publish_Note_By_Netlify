@@ -167,13 +167,12 @@ body.theme-dark {
     observer.observe(targetNode, { childList: true, subtree: true });
   }
 
-console.log(window.setActiveDocument); // undefined? function?
-    let originalFunction = window.setActiveDocument; // 기존 함수 저장
+    var originalFunction = window.setActiveDocument; // 기존 함수 저장
     window.setActiveDocument = function(...args) {
         if (typeof originalFunction === "function") {
 	console.log("실행");
-            forceDarkTheme();
-            addScrollToTopButton();
+//            forceDarkTheme();
+//            addScrollToTopButton();
             return originalFunction.apply(this, args); // 원래 함수 실행
         }
     };

@@ -105,6 +105,14 @@ body.theme-dark {
         button.style.right = `${window.innerWidth - sidebarRect.left - buttonWidth + padding}px`;
     }
 
+    //버튼 항상 맨 위로 유지
+    function ensureButtonOnTop() {
+        let button = document.getElementById("scrollToTopBtn");
+        if (button && button !== document.body.lastElementChild) {
+            document.body.appendChild(button); // 버튼이 마지막 요소가 아닐 경우에만 이동
+        }
+    }
+
     function addScrollToTopButton() {
         let container = document.querySelector(".sidebar-right.sidebar");
         if (!container) return;
@@ -123,7 +131,7 @@ body.theme-dark {
         button.style.opacity = "0";
         button.style.visibility = "visible";
         updateScrollButtonPosition();
-
+        ensureButtonOnTop(); // 버튼을 항상 맨 위로 이동
 
         // 버튼 클릭 시 최상단으로 이동
         button.addEventListener("click", function() {

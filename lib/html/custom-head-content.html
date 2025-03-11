@@ -103,18 +103,13 @@ body.theme-dark {
         let padding = 40; // 우측 여백
 
         // 버튼을 사이드바 바깥쪽 우측 하단에 배치
-        button.style.right = `${window.innerWidth - sidebarRect.left - buttonWidth + padding}px`;
+        button.style.right = `${window.innerWidth - sidebarRect.left - buttonWidth - padding}px`;
     }
 
     function addScrollToTopButton() {
         let container = document.querySelector(".sidebar-right.sidebar");
-
         if (!container) return;
-
         let button = document.getElementById("scrollToTopBtn");
-        console.log("button - ");
-        console.log(button);
-        console.log("button - ");
         if (!button) {
             button = document.createElement("button");
             button.id = "scrollToTopBtn";

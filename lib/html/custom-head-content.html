@@ -62,12 +62,6 @@ alert("수정은된거지?");
         document.body.classList.add("theme-dark");
         document.body.classList.remove("theme-light");
 
-        let themeToggle = document.querySelector(".theme-toggle-input");
-        if (themeToggle) {
-            themeToggle.checked = true;
-            themeToggle.disabled = true;
-        }
-
         let topbar = document.querySelector(".topbar-content");
         if (topbar) {
             topbar.innerHTML = `
@@ -79,7 +73,10 @@ alert("수정은된거지?");
 
     // 문서가 로드될 때 실행
     window.onload = function(event) {
-        forceDarkTheme();
+            if (typeof prevOnLoad === "function") {
+                prevOnLoad(event);
+            }
+           forceDarkTheme();
     }
 })();
 </script>

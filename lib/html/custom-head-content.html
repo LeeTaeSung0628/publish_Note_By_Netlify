@@ -187,28 +187,17 @@ body.theme-dark {
     });
 
     observer.observe(targetNode, { childList: true, subtree: true });
-}
+  }
 
-    let prevOnLoad = window.onload;
-    window.onload = function(event) {
-	console.log("윈도우 온로드");
-        if (typeof prevOnLoad === "function") {
-            prevOnLoad(event);
+    let originalFunction = window.setActiveDocument; // 기존 함수 저장
+    window.setActiveDocument = function(...args) {
+        console.log("🚀 setActiveDocument() 함수가 실행됨!", args); // 실행 감지
+        if (typeof originalFunction === "function") {
+	console.log("11");
+            return originalFunction.apply(this, args); // 원래 함수 실행
         }
-        forceDarkTheme();
-        addScrollToTopButton();
-        observeMarkdownPreviewResize();
-        observeDOMChanges();
+	console.log("22");
     };
 
-
-    // 문서가 로드될 때 실행
-    document.addEventListener("DOMContentLoaded", () => {
-	console.log("돔 컨텐츠로드");
-        forceDarkTheme();
-        addScrollToTopButton();
-        observeMarkdownPreviewResize();
-        observeDOMChanges();
-    });
 })();
 </script>

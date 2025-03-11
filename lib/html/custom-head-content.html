@@ -78,9 +78,8 @@ alert("수정은된거지?");
     }
 
     // 문서가 로드될 때 실행
-    document.addEventListener("DOMContentLoaded", () => {
+    window.onload = function(event) {
         forceDarkTheme();
-    });
-
+    }
 })();
 </script>

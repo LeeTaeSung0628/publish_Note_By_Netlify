@@ -105,8 +105,10 @@ body.theme-dark {
     }
 
     function addScrollToTopButton() {
-        let container = document.querySelector(".document-container");
-        if (!container) return;
+        let fixContainer = document.querySelector(".document-container");
+        let scrollContainer = document.querySelector(".markdown-preview-view");
+
+        if (!fixContainer) return;
 
         let button = document.getElementById("scrollToTopBtn");
         console.log("button - ");
@@ -117,7 +119,7 @@ body.theme-dark {
             button = document.createElement("button");
             button.id = "scrollToTopBtn";
             button.innerHTML = "&#9650;"; // 위 화살표 아이콘
-            container.appendChild(button); // body에 추가하여 고정
+            fixContainer.appendChild(button); // body에 추가하여 고정
         }
         // 버튼을 화면 우측 하단에 고정
         button.style.position = "fixed";
@@ -128,8 +130,8 @@ body.theme-dark {
         button.style.visibility = "hidden";
         updateScrollButtonPosition();
         // 스크롤 이벤트 감지
-        container.addEventListener("scroll", function() {
-            if (container.scrollTop > 200) {
+        scrollContainer.addEventListener("scroll", function() {
+            if (scrollContainer.scrollTop > 200) {
                 button.style.opacity = "1";
                 button.style.visibility = "visible";
             } else {
@@ -140,7 +142,7 @@ body.theme-dark {
 
         // 버튼 클릭 시 최상단으로 이동
         button.addEventListener("click", function() {
-            container.scrollTo({ top: 0, behavior: "smooth" });
+            scrollContainer.scrollTo({ top: 0, behavior: "smooth" });
         });
 
         window.addEventListener("resize", updateScrollButtonPosition);

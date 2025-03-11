@@ -77,12 +77,14 @@ body.theme-dark {
 
 //-------------
 
+    // 트리거 / 핸들러
     function handleResize(entries) {
         for (let entry of entries) {
             updateScrollButtonPosition();
         }
     }
 
+    //스크롤 페이지 크기 변경 감지
     function observeMarkdownPreviewResize() {
         let container = document.querySelector(".markdown-preview-view");
         if (!container) return;
@@ -92,6 +94,7 @@ body.theme-dark {
         resizeObserver.observe(container);
     }
 
+    //페이지 크기 변경시 동적으로 위치 변경
     function updateScrollButtonPosition() {
         let sidebar = document.querySelector(".sidebar-right.sidebar");
         let button = document.getElementById("scrollToTopBtn");
@@ -158,5 +161,15 @@ body.theme-dark {
         }
     };
 
+    // `MutationObserver`를 사용하여 새로운 요소가 추가될 때 버튼을 맨 위로 유지하되, 무한 루프 방지
+    const observer = new MutationObserver((mutations) => {
+        for (let mutation of mutations) {
+            if (mutation.type === "childList") {
+                ensureButtonOnTop();
+            }
+        }
+    });
+
+    observer.observe(document.body, { childList: true, subtree: false });
 })();
 </script>

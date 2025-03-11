@@ -30,7 +30,7 @@ body.theme-dark {
 #scrollToTopBtn {
     position: fixed;
     bottom: 20px;
-    right: 50px;
+    right: 20px;
     width: 50px;
     height: 50px;
     background-color: var(--color-accent);
@@ -45,7 +45,6 @@ body.theme-dark {
     visibility: hidden;
     transition: opacity 0.3s ease-in-out, transform 0.2s;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-    z-index: 10000;
 }
 
 #scrollToTopBtn:hover {
@@ -88,11 +87,6 @@ body.theme-dark {
             button.innerHTML = "&#9650;"; // 위 화살표 아이콘
             document.body.appendChild(button);
         }
-        button.style.position = "fixed";
-        button.style.bottom = "20px";
-        button.style.right = "calc(50% - 600px)"; /* 중앙 컨텐츠 기준 우측 하단 유지 */
-        button.style.maxRight = "20px";
-        button.style.zIndex = "10000"; /* 화면 맨 앞 유지 */
 
         button.addEventListener("click", function() {
             window.scrollTo({ top: 0, behavior: "smooth" });
@@ -129,7 +123,6 @@ body.theme-dark {
         });
     });
 
-    observer.observe(document.body, { attributes: true, attributeFilter: ["class"] });
 
     // 페이지 로딩 완료 후 버튼 보장 실행
     document.addEventListener("DOMContentLoaded", addScrollToTopButton);

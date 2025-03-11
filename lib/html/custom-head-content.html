@@ -79,7 +79,6 @@ body.theme-dark {
     }
 
     function addScrollToTopButton() {
-        console.log("버튼 플로팅 실행");
         let button = document.getElementById("scrollToTopBtn");
         if (!button) {
             button = document.createElement("button");
@@ -118,15 +117,6 @@ body.theme-dark {
 
         let containerRect = container.getBoundingClientRect();
         button.style.right = `${Math.max(60, window.innerWidth - containerRect.right + 60)}px`;
-    }
-
-    function observeMarkdownPreviewResize() {
-        let container = document.querySelector(".markdown-preview-view");
-        if (!container) return;
-
-        // ResizeObserver 인스턴스 생성
-        const resizeObserver = new ResizeObserver(handleResize);
-        resizeObserver.observe(container);
     }
 
     function addScrollToTopButton() {
@@ -174,29 +164,16 @@ body.theme-dark {
         });
     }
 
-    function observeDOMChanges() {
-    let targetNode = document.querySelector(".markdown-preview-view");
-    
-    let observer = new MutationObserver((mutations) => {
-        mutations.forEach((mutation) => {
-            if (mutation.type === "childList") {
-	   forceDarkTheme();
-                addScrollToTopButton(); // 버튼을 다시 추가
-            }
-        });
-    });
-
     observer.observe(targetNode, { childList: true, subtree: true });
   }
 
     let originalFunction = window.setActiveDocument; // 기존 함수 저장
     window.setActiveDocument = function(...args) {
-        console.log("🚀 setActiveDocument() 함수가 실행됨!", args); // 실행 감지
         if (typeof originalFunction === "function") {
-	console.log("11");
+            forceDarkTheme();
+            addScrollToTopButton();
             return originalFunction.apply(this, args); // 원래 함수 실행
         }
-	console.log("22");
     };
 
 })();

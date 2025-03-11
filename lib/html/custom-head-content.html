@@ -103,11 +103,11 @@ body.theme-dark {
         let padding = 20; // 우측 여백
 
         // 버튼을 사이드바 바깥쪽 우측 하단에 배치
-        button.style.right = `${window.innerWidth - sidebarRect.left - buttonWidth - padding}px`;
+        button.style.right = `${window.innerWidth - sidebarRect.left - buttonWidth + padding}px`;
     }
 
     function addScrollToTopButton() {
-        let container = document.querySelector(".markdown-preview-view");
+        let container = document.querySelector(".sidebar-right.sidebar");
 
         if (!container) return;
 
@@ -130,8 +130,9 @@ body.theme-dark {
         button.style.visibility = "hidden";
         updateScrollButtonPosition();
         // 스크롤 이벤트 감지
-        container.addEventListener("scroll", function() {
-            if (container.scrollTop > 200) {
+        let scrollContainer = document.querySelector(".markdown-preview-view");
+        scrollContainer.addEventListener("scroll", function() {
+            if (scrollContainer.scrollTop > 200) {
                 button.style.opacity = "1";
                 button.style.visibility = "visible";
             } else {
@@ -142,7 +143,7 @@ body.theme-dark {
 
         // 버튼 클릭 시 최상단으로 이동
         button.addEventListener("click", function() {
-            container.scrollTo({ top: 0, behavior: "smooth" });
+            scrollContainer.scrollTo({ top: 0, behavior: "smooth" });
         });
 
         window.addEventListener("resize", updateScrollButtonPosition);

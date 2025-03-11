@@ -59,10 +59,7 @@ body.theme-dark {
         document.documentElement.classList.add("theme-dark");
         document.documentElement.classList.remove("theme-light");
 
-        let isInitialized = false; // 중복 실행 방지 플래그
-
         function forceDarkTheme() {
-            if (document.body.classList.contains("theme-dark")) return; // 중복 실행 방지
             document.body.classList.add("theme-dark");
             document.body.classList.remove("theme-light");
 
@@ -81,10 +78,8 @@ body.theme-dark {
             }
         }
 
-        function handleResize(entries) {
-            for (let entry of entries) {
-                updateScrollButtonPosition();
-            }
+        function handleResize() {
+            updateScrollButtonPosition();
         }
 
         function observeMarkdownPreviewResize() {
@@ -104,18 +99,21 @@ body.theme-dark {
             button.style.right = `${Math.max(60, window.innerWidth - containerRect.right + 60)}px`;
         }
 
-        function addScrollToTopButton() {
-            let container = document.querySelector(".markdown-preview-view");
+        function removeExistingScrollButton() {
+            let oldButton = document.getElementById("scrollToTopBtn");
+            if (oldButton) oldButton.remove();
+        }
 
+        function addScrollToTopButton() {
+            removeExistingScrollButton(); // 기존 버튼 제거 후 새로 추가
+
+            let container = document.querySelector(".markdown-preview-view");
             if (!container) return;
 
-            let button = document.getElementById("scrollToTopBtn");
-            if (!button) {
-                button = document.createElement("button");
-                button.id = "scrollToTopBtn";
-                button.innerHTML = "&#9650;";
-                document.body.appendChild(button);
-            }
+            let button = document.createElement("button");
+            button.id = "scrollToTopBtn";
+            button.innerHTML = "&#9650;";
+            document.body.appendChild(button);
 
             button.style.position = "fixed";
             button.style.bottom = "60px";
@@ -143,18 +141,13 @@ body.theme-dark {
         }
 
         function observeMarkdownPreviewChanges() {
-            if (isInitialized) return; // 이미 초기화된 경우 다시 실행하지 않음
-            isInitialized = true;
-
-            const observer = new MutationObserver((mutations, obs) => {
+            const observer = new MutationObserver((mutations) => {
                 let container = document.querySelector(".markdown-preview-view");
                 if (!container) return;
 
                 forceDarkTheme();
                 addScrollToTopButton();
                 updateScrollButtonPosition();
-
-                obs.disconnect(); // 감지를 중단하여 무한 실행 방지
             });
 
             observer.observe(document.body, { childList: true, subtree: true });
@@ -167,11 +160,15 @@ body.theme-dark {
                 originalSetActiveDocument.apply(this, args);
             }
 
-            observeMarkdownPreviewChanges();
+            forceDarkTheme();
+            addScrollToTopButton();
+            updateScrollButtonPosition();
             observeMarkdownPreviewResize();
         };
 
+        // 초기에 한 번 실행 (새로운 페이지 로딩 시에도 정상 동작)
         observeMarkdownPreviewChanges();
     })();
+
 
 </script>

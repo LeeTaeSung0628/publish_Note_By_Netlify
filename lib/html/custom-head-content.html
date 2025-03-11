@@ -167,7 +167,7 @@ body.theme-dark {
     observer.observe(targetNode, { childList: true, subtree: true });
   }
 
-    let originalFunction = window.setActiveDocument; // 기존 함수 저장
+    var originalFunction = window.setActiveDocument; // 기존 함수 저장
     window.setActiveDocument = function(...args) {
         if (typeof originalFunction === "function") {
 	console.log("실행");

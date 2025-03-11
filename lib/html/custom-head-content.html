@@ -176,22 +176,11 @@ body.theme-dark {
 
     window.setActiveDocument = function(...args) {
         if (typeof setActiveDocument1 === "function") {
+            setActiveDocument1.apply(this, args); // 원래 함수 실행
             forceDarkTheme();
             addScrollToTopButton();
             updateScrollButtonPosition();
-            observeMarkdownPreviewResize();
-            return setActiveDocument1.apply(this, args); // 원래 함수 실행
-        }
-    };
-
-    let setupRootPath1 = window.setupRootPath; // 기존 함수 저장
-
-    window.setupRootPath = function(...args) {
-        if (typeof setupRootPath1 === "function") {
-            addScrollToTopButton();
-            updateScrollButtonPosition();
-            observeMarkdownPreviewResize();
-            return setupRootPath1.apply(this, args); // 원래 함수 실행
+            return observeMarkdownPreviewResize();
         }
     };
 

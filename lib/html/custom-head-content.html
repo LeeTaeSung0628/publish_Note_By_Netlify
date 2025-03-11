@@ -59,7 +59,10 @@ body.theme-dark {
         document.documentElement.classList.add("theme-dark");
         document.documentElement.classList.remove("theme-light");
 
+        let isInitialized = false; // 중복 실행 방지 플래그
+
         function forceDarkTheme() {
+            if (document.body.classList.contains("theme-dark")) return; // 중복 실행 방지
             document.body.classList.add("theme-dark");
             document.body.classList.remove("theme-light");
 
@@ -140,13 +143,18 @@ body.theme-dark {
         }
 
         function observeMarkdownPreviewChanges() {
-            const observer = new MutationObserver(() => {
+            if (isInitialized) return; // 이미 초기화된 경우 다시 실행하지 않음
+            isInitialized = true;
+
+            const observer = new MutationObserver((mutations, obs) => {
                 let container = document.querySelector(".markdown-preview-view");
-                if (container) {
-                    forceDarkTheme();
-                    addScrollToTopButton();
-                    updateScrollButtonPosition();
-                }
+                if (!container) return;
+
+                forceDarkTheme();
+                addScrollToTopButton();
+                updateScrollButtonPosition();
+
+                obs.disconnect(); // 감지를 중단하여 무한 실행 방지
             });
 
             observer.observe(document.body, { childList: true, subtree: true });

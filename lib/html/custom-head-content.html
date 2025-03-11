@@ -100,7 +100,7 @@ body.theme-dark {
 
         let sidebarRect = sidebar.getBoundingClientRect();
         let buttonWidth = 60; // 버튼 너비
-        let padding = 20; // 우측 여백
+        let padding = 40; // 우측 여백
 
         // 버튼을 사이드바 바깥쪽 우측 하단에 배치
         button.style.right = `${window.innerWidth - sidebarRect.left - buttonWidth + padding}px`;
@@ -127,22 +127,17 @@ body.theme-dark {
         button.style.right = "60px";
         button.style.zIndex = "99999";
         button.style.opacity = "0";
-        button.style.visibility = "hidden";
+        button.style.visibility = "visible";
         updateScrollButtonPosition();
-        // 스크롤 이벤트 감지
-        let scrollContainer = document.querySelector(".markdown-preview-view");
-        scrollContainer.addEventListener("scroll", function() {
-            if (scrollContainer.scrollTop > 200) {
-                button.style.opacity = "1";
-                button.style.visibility = "visible";
-            } else {
-                button.style.opacity = "0";
-                button.style.visibility = "hidden";
-            }
-        });
+
 
         // 버튼 클릭 시 최상단으로 이동
         button.addEventListener("click", function() {
+            // 스크롤 이벤트 감지
+            let scrollContainer = document.querySelector(".markdown-preview-view");
+            if(!scrollContainer){
+               return
+            }
             scrollContainer.scrollTo({ top: 0, behavior: "smooth" });
         });
 

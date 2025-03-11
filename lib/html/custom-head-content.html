@@ -55,120 +55,108 @@ body.theme-dark {
 </style>
 
 <script>
-    (function() {
-        document.documentElement.classList.add("theme-dark");
-        document.documentElement.classList.remove("theme-light");
+(function() {
+    document.documentElement.classList.add("theme-dark");
+    document.documentElement.classList.remove("theme-light");
 
-        function forceDarkTheme() {
-            document.body.classList.add("theme-dark");
-            document.body.classList.remove("theme-light");
+    function forceDarkTheme() {
+        document.body.classList.add("theme-dark");
+        document.body.classList.remove("theme-light");
 
-            let themeToggle = document.querySelector(".theme-toggle-input");
-            if (themeToggle) {
-                themeToggle.checked = true;
-                themeToggle.disabled = true;
-            }
+        let themeToggle = document.querySelector(".theme-toggle-input");
+        if (themeToggle) {
+            themeToggle.checked = true;
+            themeToggle.disabled = true;
+        }
 
-            let topbar = document.querySelector(".topbar-content");
-            if (topbar) {
-                topbar.innerHTML = `
+        let topbar = document.querySelector(".topbar-content");
+        if (topbar) {
+            topbar.innerHTML = `
                 <a class="tree-item-self is-clickable nav-file-title" href="index.html" data-path="index.html">
                     <div class="tree-item-inner nav-file-title-content">🏠 taesung's Blog</div>
                 </a>`;
-            }
         }
+    }
 
-        function handleResize() {
+//-------------
+
+    function handleResize(entries) {
+        for (let entry of entries) {
             updateScrollButtonPosition();
         }
+    }
 
-        function observeMarkdownPreviewResize() {
-            let container = document.querySelector(".markdown-preview-view");
-            if (!container) return;
+    function observeMarkdownPreviewResize() {
+        let container = document.querySelector(".markdown-preview-view");
+        if (!container) return;
 
-            const resizeObserver = new ResizeObserver(handleResize);
-            resizeObserver.observe(container);
-        }
+        // ResizeObserver 인스턴스 생성
+        const resizeObserver = new ResizeObserver(handleResize);
+        resizeObserver.observe(container);
+    }
 
-        function updateScrollButtonPosition() {
-            let container = document.querySelector(".markdown-preview-view");
-            let button = document.getElementById("scrollToTopBtn");
-            if (!container || !button) return;
+    function updateScrollButtonPosition() {
+        let container = document.querySelector(".markdown-preview-view");
+        let button = document.getElementById("scrollToTopBtn");
+        if (!container || !button) return;
 
-            let containerRect = container.getBoundingClientRect();
-            button.style.right = `${Math.max(60, window.innerWidth - containerRect.right + 60)}px`;
-        }
+        let containerRect = container.getBoundingClientRect();
+        button.style.right = `${Math.max(60, window.innerWidth - containerRect.right + 60)}px`;
+    }
 
-        function removeExistingScrollButton() {
-            let oldButton = document.getElementById("scrollToTopBtn");
-            if (oldButton) oldButton.remove();
-        }
+    function addScrollToTopButton() {
+        let container = document.querySelector(".markdown-preview-view");
 
-        function addScrollToTopButton() {
-            removeExistingScrollButton(); // 기존 버튼 제거 후 새로 추가
+        if (!container) return;
 
-            let container = document.querySelector(".markdown-preview-view");
-            if (!container) return;
-
-            let button = document.createElement("button");
+        let button = document.getElementById("scrollToTopBtn");
+        console.log("button - ");
+        console.log(button);
+        console.log("button - ");
+        if (!button) {
+            button = document.createElement("button");
             button.id = "scrollToTopBtn";
-            button.innerHTML = "&#9650;";
-            document.body.appendChild(button);
-
-            button.style.position = "fixed";
-            button.style.bottom = "60px";
-            button.style.right = "60px";
-            button.style.zIndex = "99999";
-            button.style.opacity = "0";
-            button.style.visibility = "hidden";
-            updateScrollButtonPosition();
-
-            container.addEventListener("scroll", function() {
-                if (container.scrollTop > 200) {
-                    button.style.opacity = "1";
-                    button.style.visibility = "visible";
-                } else {
-                    button.style.opacity = "0";
-                    button.style.visibility = "hidden";
-                }
-            });
-
-            button.addEventListener("click", function() {
-                container.scrollTo({ top: 0, behavior: "smooth" });
-            });
-
-            window.addEventListener("resize", updateScrollButtonPosition);
+            button.innerHTML = "&#9650;"; // 위 화살표 아이콘
+            container.appendChild(button); // body에 추가하여 고정
         }
-
-        function observeMarkdownPreviewChanges() {
-            const observer = new MutationObserver((mutations) => {
-                let container = document.querySelector(".markdown-preview-view");
-                if (!container) return;
-
-                forceDarkTheme();
-                addScrollToTopButton();
-                updateScrollButtonPosition();
-            });
-
-            observer.observe(document.body, { childList: true, subtree: true });
-        }
-
-        let originalSetActiveDocument = window.setActiveDocument;
-
-        window.setActiveDocument = function(...args) {
-            if (typeof originalSetActiveDocument === "function") {
-                originalSetActiveDocument.apply(this, args);
+        // 버튼을 화면 우측 하단에 고정
+        button.style.position = "fixed";
+        button.style.bottom = "60px";
+        button.style.right = "60px";
+        button.style.zIndex = "99999";
+        button.style.opacity = "0";
+        button.style.visibility = "hidden";
+        updateScrollButtonPosition();
+        // 스크롤 이벤트 감지
+        container.addEventListener("scroll", function() {
+            if (container.scrollTop > 200) {
+                button.style.opacity = "1";
+                button.style.visibility = "visible";
+            } else {
+                button.style.opacity = "0";
+                button.style.visibility = "hidden";
             }
+        });
 
+        // 버튼 클릭 시 최상단으로 이동
+        button.addEventListener("click", function() {
+            container.scrollTo({ top: 0, behavior: "smooth" });
+        });
+
+        window.addEventListener("resize", updateScrollButtonPosition);
+    }
+
+    let setActiveDocument1 = window.setActiveDocument; // 기존 함수 저장
+
+    window.setActiveDocument = function(...args) {
+        if (typeof setActiveDocument1 === "function") {
+            setActiveDocument1.apply(this, args); // 원래 함수 실행
             forceDarkTheme();
             addScrollToTopButton();
             updateScrollButtonPosition();
-            observeMarkdownPreviewResize();
-        };
+            return observeMarkdownPreviewResize();
+        }
+    };
 
-        // 초기에 한 번 실행 (새로운 페이지 로딩 시에도 정상 동작)
-        observeMarkdownPreviewChanges();
-    })();
-
-
+})();
 </script>

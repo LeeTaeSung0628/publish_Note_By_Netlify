@@ -102,15 +102,6 @@ body.theme-dark {
             }
         });
     }
-
-    let prevOnLoad = window.onload;
-    window.onload = function(event) {
-        if (typeof prevOnLoad === "function") {
-            prevOnLoad(event);
-        }
-        forceDarkTheme();
-        setTimeout(addScrollToTopButton, 500); // 강제 실행 보장
-    };
  
     //테마 변경감지
     const observer = new MutationObserver((mutations) => {
@@ -188,18 +179,21 @@ body.theme-dark {
         });
 
         window.addEventListener("resize", updateScrollButtonPosition);
+
        // 사이드바 변경 감지
         const observer = new MutationObserver(() => {
             updateScrollButtonPosition();
         });
     }
 
-
-    // 페이지 로딩 완료 후 버튼 보장 실행
-    // 문서가 로드될 때 실행
-    document.addEventListener("DOMContentLoaded", () => {
+    let prevOnLoad = window.onload;
+    window.onload = function(event) {
+        if (typeof prevOnLoad === "function") {
+            prevOnLoad(event);
+        }
+        forceDarkTheme();
         addScrollToTopButton();
         observeMarkdownPreviewResize()
-    });
+    };
 })();
 </script>

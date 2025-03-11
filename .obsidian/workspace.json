@@ -178,6 +178,7 @@
   },
   "active": "5cc2f7897ebd9692",
   "lastOpenFiles": [
+    "custom_header_content.html",
     "lib/styles/theme.css",
     "lib/styles/other-plugins.css",
     "lib/styles/supported-plugins.css",
@@ -188,7 +189,6 @@
     "lib/scripts/tinycolor.js",
     "lib/scripts/pixi.js",
     "lib/scripts/minisearch.js",
-    "lib/scripts/graph-wasm.wasm",
     "lib/media/favicon.png",
     "lib/media/6155340132a851f6089e.svg",
     "lib/media/2308ab1944a6bfa5c5b8.svg",

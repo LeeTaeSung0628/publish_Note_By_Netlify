@@ -108,14 +108,6 @@ body.theme-dark {
         button.style.right = `${window.innerWidth - sidebarRect.left - buttonWidth + padding}px`;
     }
 
-    //버튼 항상 맨 위로 유지
-    function ensureButtonOnTop() {
-        let button = document.getElementById("scrollToTopBtn");
-        if (button && button !== document.body.lastElementChild) {
-            document.body.appendChild(button); // 버튼이 마지막 요소가 아닐 경우에만 이동
-        }
-    }
-
     function addScrollToTopButton() {
         let container = document.querySelector(".sidebar-right.sidebar");
         if (!container) return;
@@ -131,10 +123,9 @@ body.theme-dark {
         button.style.bottom = "60px";
         button.style.right = "60px";
         button.style.zIndex = "99999";
-        button.style.opacity = "0";
+        button.style.opacity = "1";
         button.style.visibility = "visible";
         updateScrollButtonPosition();
-        ensureButtonOnTop(); // 버튼을 항상 맨 위로 이동
 
         // 버튼 클릭 시 최상단으로 이동
         button.addEventListener("click", function() {
@@ -160,16 +151,6 @@ body.theme-dark {
             return observeMarkdownPreviewResize();
         }
     };
-
-    // `MutationObserver`를 사용하여 새로운 요소가 추가될 때 버튼을 맨 위로 유지하되, 무한 루프 방지
-    const observer = new MutationObserver((mutations) => {
-        for (let mutation of mutations) {
-            if (mutation.type === "childList") {
-                ensureButtonOnTop();
-            }
-        }
-    });
-
-    observer.observe(document.body, { childList: true, subtree: false });
+    버튼 동작은 완벽하게 작동함, 태그 맨뒤로 숨은것만 앞으로 옮기면 될것 처럼 보임
 })();
 </script>

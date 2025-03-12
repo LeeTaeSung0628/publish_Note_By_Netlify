@@ -178,6 +178,9 @@
   },
   "active": "5cc2f7897ebd9692",
   "lastOpenFiles": [
+    "netlify.toml~",
+    "🏠-taesung's-blog.html",
+    "netlify.toml",
     "사진-및-문서/pasted-image-20250312144444.png",
     "study/정보처리기사/정보처리기사-실기/🥇-정보처리-기사-실기-프로그래밍-포인터.html",
     "lectur/🏫-강의-&-자격증.html",
@@ -187,8 +190,6 @@
     "lib/scripts/tinycolor.js",
     "lib/scripts/minisearch.js",
     "lib/scripts/graph-wasm.js",
-    "lib/scripts/graph-wasm.wasm",
-    "lib/scripts/graph-view.js",
     "lib/media/favicon.png",
     "lib/media/6155340132a851f6089e.svg",
     "lib/media/2308ab1944a6bfa5c5b8.svg",
@@ -198,7 +199,6 @@
     "사진-및-문서/pasted-image-20250307172522.png",
     "사진-및-문서/pasted-image-20250305175924.png",
     "사진-및-문서/pasted-image-20250305173344.png",
-    "사진-및-문서/pasted-image-20250304171240.png",
     "환영합니다!.md"
   ]
 }

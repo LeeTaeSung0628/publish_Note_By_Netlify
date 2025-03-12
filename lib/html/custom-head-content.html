@@ -86,7 +86,7 @@ body.theme-dark {
 
     //스크롤 페이지 크기 변경 감지
     function observeMarkdownPreviewResize() {
-        let container = document.querySelector(".markdown-preview-view");
+        let container = document.querySelector(".sidebar-right.sidebar");
         if (!container) return;
 
         // ResizeObserver 인스턴스 생성
@@ -102,7 +102,7 @@ body.theme-dark {
 
         let sidebarRect = sidebar.getBoundingClientRect();
         let buttonWidth = 60; // 버튼 너비
-        let padding = 70; // 우측 여백
+        let padding = 90; // 우측 여백
 
         // 버튼을 사이드바 바깥쪽 우측 하단에 배치
         button.style.right = `${window.innerWidth - sidebarRect.left - buttonWidth + padding}px`;

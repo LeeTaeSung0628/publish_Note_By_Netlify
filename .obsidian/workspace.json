@@ -172,8 +172,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7690d863b2e3bd17",
+  "active": "5cc2f7897ebd9692",
   "lastOpenFiles": [
+    "사진-및-문서/pasted-image-20250325102427.png",
+    "study/cs/🚨-rsa-암호화-방식의-이해와-구현.html",
+    "project/🐡-spring-security와-filter-적용기.html",
     "서비스-취약점-점검-결과-보고.pdf",
     "사진-및-문서/pasted-image-20250317135544.png",
     "사진-및-문서/pasted-image-20250317135331.png",
@@ -192,9 +195,6 @@
     "lectur/2.4.1-전체-흐름-정리.html",
     "study/dev-seminar/🍂-jpa,-mybatis-,-dead-lock이슈.html",
     "study/cs/🪕-jpa-에-대한-고찰.html",
-    "study/cs/🍊-spring의-의존성-주입(di).html",
-    "study/cs/🌋-osiv와-영속성-컨텍스트.html",
-    "issue_troubleshooting/🚦-spring-batch-트러블슈팅.html",
     "환영합니다!.md"
   ]
 }

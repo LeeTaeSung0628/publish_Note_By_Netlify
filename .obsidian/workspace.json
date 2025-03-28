@@ -11,10 +11,14 @@
             "id": "7690d863b2e3bd17",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "새 탭"
+              "type": "split-diff-view",
+              "state": {
+                "aFile": "🏠-taesung's-blog.html",
+                "bFile": "🏠-taesung's-blog.html",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: 🏠-taesung's-blog.html"
             }
           }
         ]
@@ -172,7 +176,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5cc2f7897ebd9692",
+  "active": "7690d863b2e3bd17",
   "lastOpenFiles": [
     "사진-및-문서/pasted-image-20250328120415.png",
     "study/cs/🍎-redis로-key관리하기.html",

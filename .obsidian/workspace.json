@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "d7e06531e06975f9",
+        "id": "1117c0f47bae9897",
         "type": "tabs",
         "children": [
           {
-            "id": "7690d863b2e3bd17",
+            "id": "b24376e2aa7ac590",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": "🏠-taesung's-blog.html",
-                "bFile": "🏠-taesung's-blog.html",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: 🏠-taesung's-blog.html"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "새 탭"
             }
           }
         ]
@@ -178,6 +174,10 @@
   },
   "active": "5cc2f7897ebd9692",
   "lastOpenFiles": [
+    "study/cs/🤲분산-환경에서의-cache-선택하기.html",
+    "study/정보처리기사/정보처리기사-실기/🥇-정보처리-기사-실기-기타문제.html",
+    "짧은-키워드/redis-만료-정책.html",
+    "짧은-키워드",
     "issue_troubleshooting/🚨-rsa-암호화-방식의-이해와-적용-(feat.취약성점검).html",
     "사진-및-문서/prof2.jpg",
     "사진-및-문서/prof2.png",
@@ -188,13 +188,9 @@
     "study/cs/🚨-rsa-암호화-방식의-이해와-적용-(feat.취약성점검).html",
     "project/🔫-이슈·트러블슈팅.html",
     "issue_troubleshooting/🔐-상품-투자하기-서비스-lock기법-개선안.html",
-    "issue_troubleshooting/⏰-script-로딩-지연-문제-해결-.js.html",
     "사진-및-문서/pasted-image-20250325172818.png",
     "사진-및-문서/pasted-image-20250325165845.png",
     "사진-및-문서/pasted-image-20250325102427.png",
-    "study/cs/🚨-rsa-암호화-방식의-이해와-구현.html",
-    "project/🐡-spring-security와-filter-적용기.html",
-    "서비스-취약점-점검-결과-보고.pdf",
     "사진-및-문서/pasted-image-20250317135544.png",
     "사진-및-문서/pasted-image-20250317135331.png",
     "사진-및-문서/pasted-image-20250317134652.png",

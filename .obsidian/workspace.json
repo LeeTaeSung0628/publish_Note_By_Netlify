@@ -11,10 +11,14 @@
             "id": "b24376e2aa7ac590",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "새 탭"
+              "type": "split-diff-view",
+              "state": {
+                "aFile": "tools/aws/🍌-elastic-ip(탄력적-ip)란.html",
+                "bFile": "tools/aws/🍌-elastic-ip(탄력적-ip)란.html",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: 🍌-elastic-ip(탄력적-ip)란.html"
             }
           }
         ]
@@ -174,6 +178,7 @@
   },
   "active": "5cc2f7897ebd9692",
   "lastOpenFiles": [
+    "사진-및-문서/스크린샷-2025-04-14-오전-12.06.09.png",
     "study/cs/🤲분산-환경에서의-cache-선택하기.html",
     "study/정보처리기사/정보처리기사-실기/🥇-정보처리-기사-실기-기타문제.html",
     "짧은-키워드/redis-만료-정책.html",
@@ -187,7 +192,6 @@
     "study/cs/🪕-jpa-관련-용어-정리.html",
     "study/cs/🚨-rsa-암호화-방식의-이해와-적용-(feat.취약성점검).html",
     "project/🔫-이슈·트러블슈팅.html",
-    "issue_troubleshooting/🔐-상품-투자하기-서비스-lock기법-개선안.html",
     "사진-및-문서/pasted-image-20250325172818.png",
     "사진-및-문서/pasted-image-20250325165845.png",
     "사진-및-문서/pasted-image-20250325102427.png",

@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "1117c0f47bae9897",
+        "id": "9c33ae884cac13d1",
         "type": "tabs",
         "children": [
           {
-            "id": "b24376e2aa7ac590",
+            "id": "1dbea94acb104dc9",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": "tools/aws/🍌-elastic-ip(탄력적-ip)란.html",
-                "bFile": "tools/aws/🍌-elastic-ip(탄력적-ip)란.html",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: 🍌-elastic-ip(탄력적-ip)란.html"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "새 탭"
             }
           }
         ]
@@ -178,6 +174,12 @@
   },
   "active": "5cc2f7897ebd9692",
   "lastOpenFiles": [
+    "사진-및-문서/pasted-image-20250415181225.png",
+    "사진-및-문서/pasted-image-20250416182123.png",
+    "사진-및-문서/pasted-image-20250416181833.png",
+    "사진-및-문서/pasted-image-20250416172118.png",
+    "사진-및-문서/pasted-image-20250416171828.png",
+    "사진-및-문서/pasted-image-20250415182923.png",
     "사진-및-문서/스크린샷-2025-04-14-오전-12.06.09.png",
     "study/cs/🤲분산-환경에서의-cache-선택하기.html",
     "study/정보처리기사/정보처리기사-실기/🥇-정보처리-기사-실기-기타문제.html",
@@ -193,12 +195,6 @@
     "study/cs/🚨-rsa-암호화-방식의-이해와-적용-(feat.취약성점검).html",
     "project/🔫-이슈·트러블슈팅.html",
     "사진-및-문서/pasted-image-20250325172818.png",
-    "사진-및-문서/pasted-image-20250325165845.png",
-    "사진-및-문서/pasted-image-20250325102427.png",
-    "사진-및-문서/pasted-image-20250317135544.png",
-    "사진-및-문서/pasted-image-20250317135331.png",
-    "사진-및-문서/pasted-image-20250317134652.png",
-    "사진-및-문서/pasted-image-20250317122417.png",
     "환영합니다!.md"
   ]
 }

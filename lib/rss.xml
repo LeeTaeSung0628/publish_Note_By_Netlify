@@ -1,87 +1,160 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[blog]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://lts.kr/</link><image><url>https://lts.kr/lib/media/favicon.png</url><title>blog</title><link>https://lts.kr/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 23 Apr 2025 08:21:22 GMT</lastBuildDate><atom:link href="https://lts.kr/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 23 Apr 2025 08:21:21 GMT</pubDate><copyright><![CDATA[taesung's Blog]]></copyright><ttl>60</ttl><dc:creator>taesung's Blog</dc:creator><item><title><![CDATA[🚢Kubernetes(k8s)란]]></title><description><![CDATA[<a class="tag" href="https://lts.kr/?query=tag:Tools" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Tools</a> <a class="tag" href="https://lts.kr/?query=tag:Kubernetes" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Kubernetes</a> <a class="tag" href="https://lts.kr/?query=tag:k8s" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#k8s</a> <br> <a href="https://lts.kr?query=tag:Tools" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Tools">#Tools</a> <a href="https://lts.kr?query=tag:Kubernetes" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Kubernetes">#Kubernetes</a> <a href="https://lts.kr?query=tag:k8s" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#k8s">#k8s</a><br>
-<br>과거에는 서버 1대에 하나의 앱을 설치하는 방식 → 리소스 낭비
-<br>가상화(VM)는 개선책이었지만 느리고 무겁다
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[blog]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://lts.kr/</link><image><url>https://lts.kr/lib/media/favicon.png</url><title>blog</title><link>https://lts.kr/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Tue, 29 Apr 2025 09:12:08 GMT</lastBuildDate><atom:link href="https://lts.kr/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 29 Apr 2025 09:12:06 GMT</pubDate><copyright><![CDATA[taesung's Blog]]></copyright><ttl>60</ttl><dc:creator>taesung's Blog</dc:creator><item><title><![CDATA[🐡 Spring Security와 Filter]]></title><description><![CDATA[<a class="tag" href="https://lts.kr/?query=tag:프로젝트" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#프로젝트</a> <a class="tag" href="https://lts.kr/?query=tag:개발" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#개발</a> <a class="tag" href="https://lts.kr/?query=tag:SPRING" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SPRING</a> <a class="tag" href="https://lts.kr/?query=tag:Security" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Security</a> <a class="tag" href="https://lts.kr/?query=tag:Filter" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Filter</a> <br> <a href="https://lts.kr?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href="https://lts.kr?query=tag:개발" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개발">#개발</a> <a href="https://lts.kr?query=tag:SPRING" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SPRING">#SPRING</a> <a href="https://lts.kr?query=tag:Security" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Security">#Security</a> <a href="https://lts.kr?query=tag:Filter" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Filter">#Filter</a><br>
+<br>Spring Security는 Java기반 웹 어플리케이션의 보안을 제공하는 강력한 프레임워크다.
+<br>웹보안(HTTP인증, 접근제어) 뿐 아니라, 메소드 레벨 보안, 세션 관리, JWT 등 다양한 보안 시나리오를 제공한다.
+<br>Spring Security는 Filter기반 아키텍처를 사용한다.
+<br>Filter를 통해 HTTP요청과 응답을 가로채어 인증(Authentication), 인가(Authorization) 과정을 수행한다.<br>먼저, 스프링 시큐리티가 동작하기 위해서는 Filter가 필요하다.<br>
+여기서 Servlet Filter는 Spring의 관리에서 벗어나기 때문에, DI사용에 한계가 있다.<br><img alt="do-messenger_screenshot_2025-04-29_15_37_33.png" src="https://lts.kr/사진-및-문서/do-messenger_screenshot_2025-04-29_15_37_33.png" target="_self"><br>
+이에 따라 스프링은, 요청을 위임하는 DelegatingFilterProxy 를 만들었다.<br>
+<br>Servlet Container(Tomcat 등..)는 오직 Servlet Filter만 인식할 수 있다.<br>
+이때, Spring Security의 인증, 인가 로직은 Spring Bean으로 만들어진다.
+<br>즉, <br>Tomcat입장에서는 Spring Bean을 직접 호출할 방법이 없다.
+<br>Spring입장에서는 Servlet Filter Chain에 진입하여야 한다.
+<br>이 두개를 연결해 주는 역할을 하는것이 DelegatingFilterProxy 이다. <br>
+<br>클라이언트가 서버로 HTTP 요청을 보낸다.
+<br>톰캣(Servlet Container)이 Filter Chain을 조회하여 DelegatingFilterProxy를 호출한다.
+<br>DelegatingFilterProxy는 <br>Spring ApplicationContext에서 자신이 참조할 Bean 이름(보통 "springSecurityFilterChain")을 찾는다.
+<br>해당 이름의 Bean을 가져온다.
+<br>가져온 Bean(보통 FilterChainProxy)의 doFilter() 메서드를 호출하여 실제 보안 처리를 진행한다. <br>FilterChainProxy는 내부에 등록된 다수의 SecurityFilter 들을 순서대로 호출한다.
+<br>이때 DelegatingFilterProxy가 직접 보안 로직을 수행하는 것이 아닌,<br>
+"Spring의 필터야, 이 요청 처리 좀 해줘" 하고 넘긴다.<br>[ Client Request ] ↓
+[ Servlet Container Filter Chain ] ↓
+[ DelegatingFilterProxy (web.xml 등록) ] ↓ (Spring Bean 호출)
+[ FilterChainProxy (Spring Security 설정에 따라 동작) ] ↓
+[ Security Filter1 → Security Filter2 → ... → Security FilterN ] ↓
+[ DispatcherServlet ] ↓
+[ Controller 처리 ]
+<br>사용자가 누구인지를 확인하는 과정. ex) 아이디와 비밀번호로 로그인하여 사용자를 식별.
+<br>사용자가 로그인 폼을 통해 아이디와 비밀번호를 제출
+<br>UsernamePasswordAuthenticationFilter가 이 요청을 가로챔
+<br>사용자 입력값을 바탕으로 UsernamePasswordAuthenticationToken 생성
+<br>AuthenticationManager에 인증 요청을 위임
+<br>AuthenticationProvider가 UserDetailsService를 통해 사용자 정보를 로드
+<br>PasswordEncoder로 비밀번호 비교
+<br>인증 성공 시 Authentication 객체를 SecurityContextHolder에 저장
+<br>인증된 사용자가 어떤 리소스에 접근할 수 있는지 결정하는 과정. ex) 일반 사용자는 `/admin/**`에 접근 불가, ROLE_ADMIN 만 접근 가능
+<br>요청이 들어옴
+<br>FilterSecurityInterceptor가 요청 URL에 대한 접근 권한 체크
+<br>인증된 Authentication 객체에 포함된 권한(GrantedAuthority) 목록과 비교
+<br>인가 실패 시 AccessDeniedException 발생 → AccessDeniedHandler로 위임
+<br>SecurityContext는 현재 사용자에 대한 보안 정보를 저장하는 객체다.<br>
+Spring Security는 이 컨텍스트를 통해 현재 요청이 어떤 사용자에 의해 수행되는지 알 수 있다.<br>저장 위치:<br>기본적으로 ThreadLocal을 사용
+<br>이는 각 스레드마다 고유한 컨텍스트를 유지할 수 있도록 해준다
+<br>Spring Security의 인증 상태를 나타내는 핵심 인터페이스다. 주요 구성 요소는 다음과 같다<br>Spring Security는 비밀번호를 절대 평문으로 비교하지 않는다.<br>
+항상 PasswordEncoder를 통해 암호화된 상태로 비교해야 한다.<br>기본적으로 BCryptPasswordEncoder가 권장되며, 단방향 해시 함수로 안전하다.<br>@Bean public PasswordEncoder passwordEncoder() { return new BCryptPasswordEncoder(); }
+<br>인증 시 비밀번호 비교는 이렇게 이뤄진다<br>String raw = "plain_pw"; String hashed = userDetails.getPassword(); boolean match = passwordEncoder.matches(raw, hashed);]]></description><link>https://lts.kr/study/cs/🐡-spring-security와-filter.html</link><guid isPermaLink="false">study/CS/🐡 Spring Security와 Filter.md</guid><dc:creator><![CDATA[taesung's Blog]]></dc:creator><pubDate>Tue, 29 Apr 2025 09:10:58 GMT</pubDate><enclosure url="https://lts.kr/사진-및-문서/do-messenger_screenshot_2025-04-29_15_37_33.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://lts.kr/사진-및-문서/do-messenger_screenshot_2025-04-29_15_37_33.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Servlet이란 무엇인가]]></title><description><![CDATA[<br><br>Servlet은 간단히 말하면,<br>
+"자바로 작성된 웹 요청/응답을 처리하는 서버 측 프로그램"이다.
 <br>
-<br>Docker를 사용한 컨테이너(꼭 Docker가 아니더라도..) 기술은 경량화된 격리 실행환경 제공
-<br>문제: 수백~수천 개의 컨테이너를 관리, 스케줄링, 모니터링를 사람이 직접 한다는것은 많이 어렵다.
-<br>
-<br>구글이 자사 서비스에서 10년 넘게 써온 내부 컨테이너 오케스트레이터 “Borg”의 아이디어를 오픈소스로 풀어낸 것이 Kubernetes(줄여서 k8s)이다.
-<br>
-<br>위에서 설명했듯 여러개의 컨테이너를 자동으로 배포, 스케일링, 복구, 관리하는 컨테이너 오케스트레이션 플랫폼이다.
-<br> +-------------------+ | Master Node | |-------------------| | - API Server | | - Scheduler | | - Controller Mgr | | - etcd (DB) | +---------+---------+ | ┌────────────┴────────────┐ ↓ ↓ +-------------+ +---------------+ | Worker Node| | Worker Node | |-------------| |---------------| | kubelet | | kubelet | | kube-proxy | | kube-proxy | | containerd | | containerd | +-------------+ +---------------+ ↓ ↓ [Pod: 컨테이너 + 네트워크 + 볼륨]
-<br>k8s가 컨테이너 오케스트레이션 플랫폼 (어디에, 어떠게 배포할지 결정 )이라면,<br>
-argoCD는 <a data-href="GitOps" href="https://lts.kr/짧은-키워드/gitops.html" class="internal-link" target="_self" rel="noopener nofollow">GitOps</a>기반의 Continuous Delivery 도구 (무엇을, 언제, 어떤 방식으로 배포할지 관리) 이다.<br>
-<br>k8s의 모든 배포는 yaml파일을 통해 이뤄진다.<br>
-→이때, 배포를 수행하는 개발자마다 각자의 PC에서 yaml파일을 만들어 관리한다면, 많은 노력이 들어가게 된다.<br>
-따라서, <a data-href="GitOps" href="https://lts.kr/짧은-키워드/gitops.html" class="internal-link" target="_self" rel="noopener nofollow">GitOps</a>방법론에 따라, 배포와 관련된 모든 코드를 Git을 통해 관리하도록 하는것이다.
-<br>즉, ArgoCD는 Kubernetes를 위한 GitOps 자동 배포 계층이다.<br>Git Repository (Manifest 저장) ← (감시) ← Argo CD → (반영) → Kubernetes Cluster<br>
-<br>Argo CD는 Kubernetes의 배포 자동화 담당
-<br>Kubernetes는 애플리케이션을 실행하고, Argo CD는 그것을 배포/관리함
-<br>Git을 소스 오브 트루스로 삼고, Argo CD는 상태를 감시하고 Kubernetes와 싱크 맞춤
-<br>실시간 배포 이력 추적, 자동 복구, 롤백, 멀티클러스터 지원 등 GitOps 핵심 도구
-<br>Kubernetes를 쓰는 조직이라면 Argo CD는 필수에 가까움 (Jenkins는 CI로만 남게 됨)]]></description><link>https://lts.kr/tools/kubernetes/🚢kubernetes(k8s)란.html</link><guid isPermaLink="false">Tools/Kubernetes/🚢Kubernetes(k8s)란.md</guid><dc:creator><![CDATA[taesung's Blog]]></dc:creator><pubDate>Wed, 23 Apr 2025 07:55:15 GMT</pubDate></item><item><title><![CDATA[GitOps]]></title><description><![CDATA[<br>
+<br>Servlet = Server + Applets의 합성어.<br> <br>웹 브라우저의 요청(Request)을 받고, 그에 대한 응답(Response)을 생성하는 자바 클래스.<br> <br>HTTP 통신 기반으로 동작한다. (하지만 이론상은 TCP 기반도 가능)<br> <br>공식적 정의:<br>
+서블릿은 Java 언어로 작성된 서버 측 컴포넌트로서, HTTP 요청을 받아 처리하고, HTTP 응답을 생성하는 역할을 한다.<br>
+(Java Servlet Specification, 현재 버전은 6.0)
+<br><br>
+<br>서버 시작 시 또는 요청 시 로딩 <br>톰캣(Tomcat) 같은 서블릿 컨테이너가 Servlet 클래스를 메모리에 로딩하고 객체를 생성한다.<br> <br>init() 호출 <br>생성된 서블릿 인스턴스에 대해 init(ServletConfig config) 메서드가 1회 호출된다.<br> <br>초기화 작업(리소스 연결 등)을 한다.<br> <br>요청마다 service() 호출 <br>클라이언트 요청이 들어오면 service(ServletRequest req, ServletResponse res)가 호출된다.<br> <br>여기서 HTTP 요청 종류(GET, POST 등)에 따라 알맞은 메서드(doGet, doPost 등)가 분기 호출된다.<br> <br>서버 종료 시 destroy() 호출 <br>서버 종료나 재배포 시, destroy() 메서드가 호출되어 리소스 정리(clean-up)한다. <br><br><br>Servlet 컨테이너는 Servlet의 생명주기를 관리하고 HTTP 요청을 대신 받아 Servlet에 연결해준다.<br>컨테이너가 하는 일은:<br>
+<br>HTTP 요청 수신<br> <br>URL 매핑 → 해당 Servlet 호출<br> <br>Servlet 인스턴스 생성/관리<br> <br>멀티 스레드로 각 요청 처리<br> <br>Servlet API 제공 (HttpServletRequest, HttpServletResponse 등)<br> <br>대표적인 Servlet 컨테이너: Apache Tomcat, Jetty, Undertow, WildFly 등]]></description><link>https://lts.kr/짧은-키워드/servlet.html</link><guid isPermaLink="false">짧은 키워드/Servlet.md</guid><dc:creator><![CDATA[taesung's Blog]]></dc:creator><pubDate>Tue, 29 Apr 2025 06:58:38 GMT</pubDate></item><item><title><![CDATA[GitOps]]></title><description><![CDATA[<br>
 <br>
 DevOps(개발과 운영을 통합하여 효율성,협력,안정성을 개선하는 개발/운영 방법론)의 실천 방법중 하나로, 애플리케이션 배포와 운영에 관련된 모든요소를 Git에서 관리(Opertation)한다는 뜻이다. <br>
-Git의 버전관리 시스템과 운영환경간의 일관성을 유지하여 소프트웨어간의 불일치 문제를해결할 수 있다. ]]></description><link>https://lts.kr/짧은-키워드/gitops.html</link><guid isPermaLink="false">짧은 키워드/GitOps.md</guid><dc:creator><![CDATA[taesung's Blog]]></dc:creator><pubDate>Wed, 23 Apr 2025 06:51:53 GMT</pubDate></item><item><title><![CDATA[👔 Jenkins란]]></title><description><![CDATA[<a class="tag" href="https://lts.kr/?query=tag:Tools" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Tools</a> <a class="tag" href="https://lts.kr/?query=tag:도커" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#도커</a> <a class="tag" href="https://lts.kr/?query=tag:Docker" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Docker</a> <br> <a href="https://lts.kr?query=tag:Tools" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Tools">#Tools</a> <a href="https://lts.kr?query=tag:도커" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#도커">#도커</a> <a href="https://lts.kr?query=tag:Docker" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Docker">#Docker</a><br>
-<br>Jenkins는 오픈소스 기반의 자동화 서버로, 주로 지속적 통합(CI: Continuous Integration)과 지속적 배포(CD: Continuous Delivery/Deployment)를 자동화하기 위해 사용된다.
-<br>특징<br>java기반으로 만들어져, OS에 상관없이 실행 가능
-<br>파이프라인 기반으로 소프트웨어 빌드, 테스트, 배포 자동화
-<br>플러그인 아키텍처로 확장성이 뛰어남
+Git의 버전관리 시스템과 운영환경간의 일관성을 유지하여 소프트웨어간의 불일치 문제를해결할 수 있다. ]]></description><link>https://lts.kr/짧은-키워드/gitops.html</link><guid isPermaLink="false">짧은 키워드/GitOps.md</guid><dc:creator><![CDATA[taesung's Blog]]></dc:creator><pubDate>Tue, 29 Apr 2025 06:55:23 GMT</pubDate></item><item><title><![CDATA[📕 공부]]></title><description><![CDATA[<a class="tag" href="https://lts.kr/?query=tag:공부" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#공부</a> <a class="tag" href="https://lts.kr/?query=tag:모음" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#모음</a> <br> <a href="https://lts.kr?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a> <a href="https://lts.kr?query=tag:모음" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#모음">#모음</a><br>공부
+보고 배운 지식 중 공유하고 싶은 정보를 모아둔 카테고리 입니다.
 <br>
-<br>개발자가 코드 변경 시 자동으로 빌드 + 테스트 수행
-<br>코드 병합 시 문제 조기 탐지
-<br>코드 품질 유지 + 릴리즈 주기 단축
+<br><a data-href="🐡 Spring Security와 Filter" href="https://lts.kr/study/cs/🐡-spring-security와-filter.html" class="internal-link" target="_self" rel="noopener nofollow">🐡 Spring Security와 Filter</a>
+<br><a data-href="🚨 RSA 암호화 방식의 이해와 적용 (feat.취약성점검)" href="https://lts.kr/issue_troubleshooting/🚨-rsa-암호화-방식의-이해와-적용-(feat.취약성점검).html" class="internal-link" target="_self" rel="noopener nofollow">🚨 RSA 암호화 방식의 이해와 적용 (feat.취약성점검)</a>
+<br><a data-href="🍎 Redis로 Key관리하기" href="https://lts.kr/study/cs/🍎-redis로-key관리하기.html" class="internal-link" target="_self" rel="noopener nofollow">🍎 Redis로 Key관리하기</a>
+<br><a data-href="🌋 OSIV와 영속성 컨텍스트" href="https://lts.kr/study/cs/🌋-osiv와-영속성-컨텍스트.html" class="internal-link" target="_self" rel="noopener nofollow">🌋 OSIV와 영속성 컨텍스트</a>
+<br><a data-href="🐰 Java의 String과 SpringBuffer" href="https://lts.kr/study/cs/🐰-java의-string과-springbuffer.html" class="internal-link" target="_self" rel="noopener nofollow">🐰 Java의 String과 SpringBuffer</a>
+<br><a data-href="🛬 JDK와 JRE, JVM" href="https://lts.kr/study/cs/🛬-jdk와-jre,-jvm.html" class="internal-link" target="_self" rel="noopener nofollow">🛬 JDK와 JRE, JVM</a>
+<br><a data-href="🍊 Spring의 의존성 주입(DI)" href="https://lts.kr/study/cs/🍊-spring의-의존성-주입(di).html" class="internal-link" target="_self" rel="noopener nofollow">🍊 Spring의 의존성 주입(DI)</a>
+<br><a data-href="🪕 JPA 관련 용어 정리" href="https://lts.kr/study/cs/🪕-jpa-관련-용어-정리.html" class="internal-link" target="_self" rel="noopener nofollow">🪕 JPA 관련 용어 정리</a>
 <br>
-<br>테스트 통과 후 자동으로 스테이징 또는 운영 서버에 배포
-<br>릴리즈 주기 자동화 → 빠른 피드백 루프
+<br><a data-href="☕ JAVA , OOP" href="https://lts.kr/study/cs/☕-java-,-oop.html" class="internal-link" target="_self" rel="noopener nofollow">☕ JAVA , OOP</a>
+<br><a data-href="🍃 Spring" href="https://lts.kr/study/cs/🍃-spring.html" class="internal-link" target="_self" rel="noopener nofollow">🍃 Spring</a>
+<br><a data-href="🎩 DevOps" href="https://lts.kr/study/cs/🎩-devops.html" class="internal-link" target="_self" rel="noopener nofollow">🎩 DevOps</a>
+<br><a data-href="📔 DataBase" href="https://lts.kr/study/cs/📔-database.html" class="internal-link" target="_self" rel="noopener nofollow">📔 DataBase</a>
+<br><a data-href="📭 Server" href="https://lts.kr/study/cs/📭-server.html" class="internal-link" target="_self" rel="noopener nofollow">📭 Server</a>
+<br><a data-href="🐞 etc" href="https://lts.kr/study/cs/🐞-etc.html" class="internal-link" target="_self" rel="noopener nofollow">🐞 etc</a>
 <br>
-<br>빌드 → 테스트 → 배포 → 모니터링까지의 전체 과정을 파이프라인으로 시각화<br>
-<img alt="Pasted image 20250421164348.png" src="https://lts.kr/사진-및-문서/pasted-image-20250421164348.png" style="width: 750px; max-width: 100%;" target="_self">
-<br>Git Hook, Cron, Webhook, Polling 등 다양한 트리거 지원
-<br>Webhook vs Polling
-폴링(Poliing) : 일정 시간 간격으로 저장소의 변경사항을 확인<br>
-웹훅(Webhook) : 저장소(Git 등)에 변경사항이 발생했을 때, 젠킨스에 즉시 알려주는 방식
-<br>이를 설정하는 방법은 젠킨스의 파이프 라인 설정을 통해 이루어 진다.<br>파이프라인 구조 예시
-<br>pipeline { agent any triggers { // GitHub에서 Webhook을 통해 이벤트가 올 때 트리거됨 githubPush() } stages { stage('Checkout') { steps { git url: 'https://github.com/your-org/your-repo.git', branch: 'main' } } stage('Build') { steps { sh 'echo Building...' } } } ---- agent any triggers { // 5분마다 Git 변경사항 확인 (cron 표현식) pollSCM('H/5 * * * *') } stages { stage('Checkout') { steps { git url: 'https://github.com/your-org/your-repo.git', branch: 'main' } } stage('Build') { steps { sh 'echo Building...' } } }
+<br><a data-href="🤠 Coding Test 풀이 모음" href="https://lts.kr/study/coding-test/🤠-coding-test-풀이-모음.html" class="internal-link" target="_self" rel="noopener nofollow">🤠 Coding Test 풀이 모음</a>
+<br><a data-href="👽 Algorithm" href="https://lts.kr/study/coding-test/👽-algorithm.html" class="internal-link" target="_self" rel="noopener nofollow">👽 Algorithm</a>
+<br>
+<br><a data-href="🔻 Redis 캐쉬 전략 - hello 서비스에 적용하여 성능개선 가능성" href="https://lts.kr/study/dev-seminar/🔻-redis-캐쉬-전략-hello-서비스에-적용하여-성능개선-가능성.html" class="internal-link" target="_self" rel="noopener nofollow">🔻 Redis 캐쉬 전략 - hello 서비스에 적용하여 성능개선 가능성</a>
+<br><a data-href="🔐 상품 투자하기 서비스 Lock기법 개선안" href="https://lts.kr/issue_troubleshooting/🔐-상품-투자하기-서비스-lock기법-개선안.html" class="internal-link" target="_self" rel="noopener nofollow">🔐 상품 투자하기 서비스 Lock기법 개선안</a>
+<br><a data-href="🔹 TDD에 대하여" href="https://lts.kr/study/dev-seminar/🔹-tdd에-대하여.html" class="internal-link" target="_self" rel="noopener nofollow">🔹 TDD에 대하여</a>
+<br><a data-href="🍂 JPA, Mybatis , Dead Lock이슈" href="https://lts.kr/study/dev-seminar/🍂-jpa,-mybatis-,-dead-lock이슈.html" class="internal-link" target="_self" rel="noopener nofollow">🍂 JPA, Mybatis , Dead Lock이슈</a>
+<br><a data-href="🥗 Spring Security_토큰-세션-쿠키-JWT 에 대하여" href="https://lts.kr/study/dev-seminar/🥗-spring-security_토큰-세션-쿠키-jwt-에-대하여.html" class="internal-link" target="_self" rel="noopener nofollow">🥗 Spring Security_토큰-세션-쿠키-JWT 에 대하여</a>
+<br><a data-href="📔 DB 테이블 설계, 어떻게 하는게 옳은 방법인가" href="https://lts.kr/study/dev-seminar/📔-db-테이블-설계,-어떻게-하는게-옳은-방법인가.html" class="internal-link" target="_self" rel="noopener nofollow">📔 DB 테이블 설계, 어떻게 하는게 옳은 방법인가</a>]]></description><link>https://lts.kr/study/📕-공부.html</link><guid isPermaLink="false">study/📕 공부.md</guid><dc:creator><![CDATA[taesung's Blog]]></dc:creator><pubDate>Tue, 29 Apr 2025 05:41:42 GMT</pubDate></item><item><title><![CDATA[🍎 Redis로 Key관리하기]]></title><description><![CDATA[<a class="tag" href="https://lts.kr/?query=tag:공부" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#공부</a> <a class="tag" href="https://lts.kr/?query=tag:Redis" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Redis</a> <a class="tag" href="https://lts.kr/?query=tag:Cash" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Cash</a> <a class="tag" href="https://lts.kr/?query=tag:memory" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#memory</a> <a class="tag" href="https://lts.kr/?query=tag:다중서버" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#다중서버</a> <a class="tag" href="https://lts.kr/?query=tag:NoSql" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#NoSql</a> <br> <a href="https://lts.kr?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a> <a href="https://lts.kr?query=tag:Redis" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Redis">#Redis</a> <a href="https://lts.kr?query=tag:Cash" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Cash">#Cash</a> <a href="https://lts.kr?query=tag:memory" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#memory">#memory</a> <a href="https://lts.kr?query=tag:다중서버" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#다중서버">#다중서버</a> <a href="https://lts.kr?query=tag:NoSql" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#NoSql">#NoSql</a><br>
+<br>주로 애플리케이션 캐시 또는 빠른 응답 데이터베이스로 사용되는 오픈소스,<br>
+인매모리, NoSql &lt;키, 벨류&gt; 저장소이다.
+<br>또한, redis는 보조기억장치(HDD / SSD)가 아닌 메모리에 데이터를 저장하여<br>
+탁월한 속도, 안정성, 성능을 제공할 수 있다.<br> 애플이케이션이 외부 데이터 소스에 의존하는 경우 트레픽이 증가하거나, 애플리케이션이 확장될때 소스의 지연 시간과 처리량으로 인하여 병목현상이 발생할 수 있다.<br>
+이때 Redis를 적용하면, 데이터를 메모리에 저장하여 읽거나 쓸때 지연 시간을 최소화 할 수 있다.<br>
+<br>redis는 앱 성능 향상을 위해 특별히 설계되어, 기존 NoSQL 데이터 저장소와 차별화 되는 기능이 있다.
+<br>
+<br>MongoDB, PostgreSql 과 같은 NoSQL DB와 달리, 메모리를 저장소로 사용하여<br>
+읽기 쓰기 성능이 월등히 높다. 또한 고가용성과 확장성을 보장하는데 도움이된다.
+<br>고가용성 이란?
+가용성 : 서버 또는 네트워크 등의 정보 시스템이 정상적으로 사용 가능한 정도를 의미.<br>
+== 정상적인 사용시간 / 전체 사용시간 = 시스템 가동률(가용성) 여기서, 고가용성이란 가용성이 99%, 99.9% 등과 같이 높은 가용성을 지닌 시스템을 의미한다.
+<br>
+<br>redis는 웹 클라이언트가 평소보다 처리하는데 오래 걸릴 수 있는 작업을 대기열에 넣을 수 있다.<br>
+요청/응답 주기의 백그라운드에서 실행되는 자동화된 프로세스를 쉽게 구현할 수 있는 것이다.
+<br>
+<br>redis는 기술적으로는 키/벨류 저장소 이지만, 여러 데이터 유형과 구조를 지원하는 데이터 구조 서버이다.
+<br>
+<br>고유하고 정렬되지 않은 문자열
+<br>바이너리 세이프 데이터
+<br>하이퍼로그
+<br>비트 배열
+<br>해시
+<br>목록
+<br>
+<br>
+<br>build.gradle에 의존성 추가 <br>implementation 'org.springframework.boot:spring-boot-starter-data-redis' <br>yml redis 속성 추가 <br>cache: type: redis redis: cache-null-values: true redis: host: `레디스 호스트`
+port: `레디스 포트`
+<br>
+<br>@Configuration으로 redis사용에 필요한 셋팅을 Bean으로 등록할 클래스.
+<br>@Configuration public class RedisConfiguration { @Value("${spring.redis.host}") private String host; @Value("${spring.redis.port}") private int port;
 }
+<br>Redis 서버와 연결을 생성 및 관리해주는 인터페이스<br>@Bean public RedisConnectionFactory redisConnectionFactory() { return new LettuceConnectionFactory(host, port); }
+<br>어플리케이션 서버와 Redis 서버 간의 데이터 송수신을 하는 클라이언트
+<br>대표적으로 Lettuce와 Jedis, Redisson 이 있다.
 <br>
-<br>Freestyle Job: 기본 작업 단위 (빌드, 테스트, 배포 설정)
-<br>Pipeline: Groovy 기반 DSL로 멀티스텝 작업 정의
-<br>Multibranch Pipeline: 브랜치마다 파이프라인 분기 설정
+<br>비동기 및 논블로킹 I/O를 기반으로 하여 고부하, 다중 스레드 환경에 적합
 <br>
-<br>1,800개 이상의 공식 플러그인
-<br>주요 플러그인: <br>Git / GitHub / Bitbucket
-<br>Docker
-<br>Slack / Email Notification
-<br>Kubernetes
-<br>SonarQube
-<br>Artifactory / Nexus <br>
-<br>이메일, Slack, Teams, Webhook 등 다양한 알림 지원
-<br>실패/성공/경고 상태에 따라 조건부 메시지 전송 가능
+<br>블로킹 I/O(동기) 방식을 사용.
+<br>고부하나 비동기 처리가 중요한 환경에서는 효울이 떨어진다.
 <br>
-<br>작업당 빌드 결과 로그 저장
-<br>실패 시 어떤 스텝에서 실패했는지 명확히 추적 가능
-<br>
-<br>LDAP, Active Directory 연동
-<br>Role 기반 접근 제어 (RBAC)
-<br>Job/Folder 단위 권한 설정 <br>
-<br>Master는 Job 스케줄링 및 관리
-<br>Agent (노드)는 실제 빌드 실행 담당
-<br>스케일아웃 구조로 부하 분산 가능
-<br>젠킨스와 도커는 서버 자동화(CI/CD)환경에서 매우 자주 함께 활용된다.<br>
-두 도구의 역할은 서로 다르지만 서로를 보완해주는 역할을 한다.<br>먼저 도커의 주 역할은 애플리케이션 실행 환경의 캡슐화 이다.<br>
-이렇게 캡슐화된 것을 이미지 또는 컨테이너라고 한다.<br>이미지와 컨테이너?
-이미지와 컨테이너는 사실상 같은 개념을 가리키는 용어이다.
-도커 이미지 : Docker라는 특정 기술/플랫폼을 통해 생성되고 관리되는 이미지. Docker에 종속적<br>
-컨테이너 : 보다 일반적인 용어로, 컨테이너 기술을 사용하는 모든 플랫폼의 이미지를 뜻한다.
-<br>즉, 젠킨스와 도커의 관계를 요약하자면<br>
-Jenkins는 Docker를 사용해 컨테이너 환경에서 빌드와 테스트를 실행하거나, 애플리케이션을 Docker 이미지로 빌드하고 레지스트리에 배포하며, 필요 시 Jenkins 자체도 Docker 컨테이너로 실행할 수 있다.<br>
-<br>파이프라인 실행 트리거 <br>GitHub/GitLab에서 코드 변경 발생 시: <br>✅ Webhook: 변경 사항을 Jenkins에 즉시 알림
-<br>✅ Polling: Jenkins가 주기적으로 변경 여부 확인<br>소스코드 + Dockerfile 가져오기 <br>트리거 감지 후 Jenkins가 Git 저장소에서 코드와 Dockerfile을 `checkout <br>dockerfile
-→ 컨테이너 이미지를 만들기 위한 설정 파일(스크립트)<br>
-쉽게 말해, “어떤 OS에, 어떤 앱을 설치하고, 어떤 명령을 실행할 것인지”를 정의한 레시피라고 볼 수 있다.
-<br>Docker 이미지 빌드 <br>docker build -t my-app . 명령으로 컨테이너 이미지 생성<br>컨테이너 기반 테스트 수행 (선택) <br>docker run으로 테스트 자동화 실행<br>Docker 이미지 푸시 <br>DockerHub, ECR 등에 docker push 수행<br>서버 또는 클러스터에 배포 <br>SSH, Docker Compose, Kubernetes 등을 통해 자동 배포<br>
-▶ <a data-href="🚢Kubernetes(k8s)란" href="https://lts.kr/tools/kubernetes/🚢kubernetes(k8s)란.html" class="internal-link" target="_self" rel="noopener nofollow">🚢Kubernetes(k8s)란</a> <br>알림 및 로그 저장 <br>Slack, Email 알림 전송 + Jenkins에 빌드 로그 기록]]></description><link>https://lts.kr/tools/jenkins/👔-jenkins란.html</link><guid isPermaLink="false">Tools/Jenkins/👔 Jenkins란.md</guid><dc:creator><![CDATA[taesung's Blog]]></dc:creator><pubDate>Wed, 23 Apr 2025 06:30:56 GMT</pubDate><enclosure url="https://lts.kr/사진-및-문서/pasted-image-20250421164348.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://lts.kr/사진-및-문서/pasted-image-20250421164348.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[🪓 도구]]></title><description><![CDATA[<a class="tag" href="https://lts.kr/?query=tag:Tools" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Tools</a> <a class="tag" href="https://lts.kr/?query=tag:모음" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#모음</a> <a class="tag" href="https://lts.kr/?query=tag:도구" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#도구</a> <br> <a href="https://lts.kr?query=tag:Tools" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Tools">#Tools</a> <a href="https://lts.kr?query=tag:모음" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#모음">#모음</a> <a href="https://lts.kr?query=tag:도구" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#도구">#도구</a><br>툴 모음
+<br>단순히 Redis 연결을 관리하는 것을 넘어 분산 락, 분산 컬렉션, 분산 캐시 등 고급 기능을 제공.
+<br>직접 RedisConnectionFactory로 사용하기보다는 RedissonClient를 빈으로 등록하고 이를 통해 분산 락이나 캐시 매니저를 구성.
+<br> ▶ <a data-href="🔐 상품 투자하기 서비스 Lock기법 개선안" href="https://lts.kr/issue_troubleshooting/🔐-상품-투자하기-서비스-lock기법-개선안.html" class="internal-link" target="_self" rel="noopener nofollow">🔐 상품 투자하기 서비스 Lock기법 개선안</a><br>
+<br>따라서 해당 코드에는 비동기 성능이 높은 좋은 Lettuce 선택.<br>Redis에 저장될 캐시의 기본 직렬화 및 만료 시간(TTL) 등의 설정을 담당.<br>private RedisCacheConfiguration redisCacheDefaultConfiguration() { return RedisCacheConfiguration .defaultCacheConfig() .serializeKeysWith(RedisSerializationContext.SerializationPair .fromSerializer(new StringRedisSerializer())) .serializeValuesWith(RedisSerializationContext.SerializationPair .fromSerializer(new GenericJackson2JsonRedisSerializer());
+}
+<br>serializeKeysWith : StringRedisSerializer를 사용하여 키를 문자열로 직렬화합니다.
+<br>serializeValuesWith : GenericJackson2JsonRedisSerializer와 ObjectMapper를 사용해 JSON 형식으로 직렬화 GenericJackson2JsonRedisSerializer : 직렬화 방식 중 하나로, JSON형식을 지원. <br>여러 캐시 이름에 대해 각기 다른 TTL(Time To Live)을 동적으로 설정.<br>private Map&lt;String, RedisCacheConfiguration&gt; redisCacheConfigurationMap() { Map&lt;String, RedisCacheConfiguration&gt; cacheConfigurations = new HashMap&lt;&gt;(); for (Map.Entry&lt;String, Long&gt; cacheNameAndTimeout : cacheProperties.getTtl().entrySet()) { cacheConfigurations .put(cacheNameAndTimeout.getKey(), redisCacheDefaultConfiguration().entryTtl( Duration.ofSeconds(cacheNameAndTimeout.getValue()))); } return cacheConfigurations; }
+<br>//cacheProperties.yml<br>cache: ttl: CacheName: 10 #만료 시간
+<br>외부 설정(CacheProperties)에서 캐시별 TTL 정보를 읽어와 각 캐시의 만료 시간을 지정<br>
+이를 통해 특정 캐시만 별도의 만료 정책 등을 적용할 수 있다.
+<br>entryTtl : 기본 만료시간 설정
+<br>Spring의 캐시 추상화에서 Redis를 캐시 저장소로 사용하기 위한 캐시 매니저를 생성<br>
+위에서 설정한 redisCacheDefaultConfiguration과 cacheConfigurations(커스텀) 이 삽입된다.<br>@Bean
+public CacheManager redisCacheManager(RedisConnectionFactory redisConnectionFactory) { return RedisCacheManager.RedisCacheManagerBuilder .fromConnectionFactory(redisConnectionFactory) .cacheDefaults(redisCacheDefaultConfiguration()) .withInitialCacheConfigurations(redisCacheConfigurationMap()) .build();
+}
+<br>withInitialCacheConfigurations : RedisCacheManager를 생성할 때 미리 정의된 특정 캐시 이름에 대해 개별적인 설정을 적용할 수 있도록 해주는 메서드입니다.
+<br>▶ <a data-href="🚨 RSA 암호화 방식의 이해와 적용 (feat.취약성점검)" href="https://lts.kr/issue_troubleshooting/🚨-rsa-암호화-방식의-이해와-적용-(feat.취약성점검).html" class="internal-link" target="_self" rel="noopener nofollow">🚨 RSA 암호화 방식의 이해와 적용 (feat.취약성점검)</a> 에서 이어진다.<br>@Service public class TestServiceImpl { private final CacheManager cacheManager; private final RedisTemplate&lt;String, Object&gt; redisTemplate; public TestServiceImpl(CacheManager cacheManager, RedisTemplate&lt;String, Object&gt; redisTemplate) { this.cacheManager = cacheManager; this.redisTemplate = redisTemplate; }
+}
+<br>(생성자 주입)<br>위(RedisConfiguration)에서 생성한 CacheManager 및 RedisTemplate의 빈을 주입한다.
+<br>주의
+만약, Bean으로 생성된 CacheManager객체나, RedisTemplate객체가 여러개라면,<br>
+@Qualifier 어노테이션으로 Bean이름을 명시해야한다. `ex) @Qualifier("CustomCacheManager") CacheManager cacheManager ...` <br>	Cache privateKeyCache = cacheManager.getCache("CacheName"); public void putCache() { if (privateKeyCache != null) { privateKeyCache.put(keyId, 벨류); } else { // 캐시가 없으면 예외 처리 또는 로깅 throw new IllegalStateException("privateKeyCache 가 유요하지 않습니다."); } } public void getCache() { if (privateKeyCache == null) { throw new IllegalStateException("rsaPrivateKeyCache 가 유요하지 않습니다."); } String privateKeyValue = privateKeyCache.get(keyId, String.class); // 1회용 사용을 위해 조회 후 캐시에서 제거할 수 있다. rsaPrivateKeyCache.evict(keyId); // 1회용 사용: 캐시에서 제거 }
+<br>getCache.(CacheName)으로 캐쉬를 객체를 가져온다.
+<br>put(keyId, 벨류); / get(keyId, String.class); 로 삽입 / 가져오기가 가능하다.
+<br>.evict(keyId)로 삭제 ( 1회성 사용이 가능하다. )
+<br>1회성으로 사용하는 이유
+나의 경우에 RSA키를 매번 발급 받기 때문에 값을 꺼냄과 동시에 해당 키벨류를 삭제한다.<br>
+Exception이 터지더라도, cacheProperties 에 설정한 TTL이 초과되면 삭제된다.
+<br><img alt="Pasted image 20250328120415.png" src="https://lts.kr/사진-및-문서/pasted-image-20250328120415.png" target="_self"><br>application.yml / properties ↓
+CacheProperties (ttl map 관리) ↓
+redisCacheConfigurationMap() → 캐시별 TTL 매핑 ↓
+redisCacheDefaultConfiguration() → 기본 설정 (ex: serializer, 기본 TTL) ↓
+redisCacheManager() → 최종 CacheManager 생성
+<br>다음과 같이 TTL 시간 및 <a data-href="Redis 만료 정책" href="https://lts.kr/짧은-키워드/redis-만료-정책.html" class="internal-link" target="_self" rel="noopener nofollow">Redis 만료 정책</a>을 맵핑 할 수 있다.]]></description><link>https://lts.kr/study/cs/🍎-redis로-key관리하기.html</link><guid isPermaLink="false">study/CS/🍎 Redis로 Key관리하기.md</guid><dc:creator><![CDATA[taesung's Blog]]></dc:creator><pubDate>Tue, 29 Apr 2025 03:07:17 GMT</pubDate><enclosure url="https://lts.kr/사진-및-문서/pasted-image-20250328120415.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://lts.kr/사진-및-문서/pasted-image-20250328120415.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[🪓 도구]]></title><description><![CDATA[<a class="tag" href="https://lts.kr/?query=tag:Tools" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Tools</a> <a class="tag" href="https://lts.kr/?query=tag:모음" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#모음</a> <a class="tag" href="https://lts.kr/?query=tag:도구" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#도구</a> <br> <a href="https://lts.kr?query=tag:Tools" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Tools">#Tools</a> <a href="https://lts.kr?query=tag:모음" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#모음">#모음</a> <a href="https://lts.kr?query=tag:도구" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#도구">#도구</a><br>툴 모음
 제가 사용하고 있는 편리/유용한 TOOL을 소개하고 설명하는 곳 입니다.
 <br>
 <br><a data-href="🍊 aws EC2란" href="https://lts.kr/tools/aws/🍊-aws-ec2란.html" class="internal-link" target="_self" rel="noopener nofollow">🍊 aws EC2란</a>
@@ -102,4 +175,26 @@ Jenkins는 Docker를 사용해 컨테이너 환경에서 빌드와 테스트를 
 <br><a data-href="🎵 Obsidian" href="https://lts.kr/tools/🎵-obsidian.html" class="internal-link" target="_self" rel="noopener nofollow">🎵 Obsidian</a>
 <br><a data-href="👻 Obsidian 정적호스팅 CICD 과정" href="https://lts.kr/project/note-ci_cd/👻-obsidian-정적호스팅-cicd-과정.html" class="internal-link" target="_self" rel="noopener nofollow">👻 Obsidian 정적호스팅 CICD 과정</a>
 <br>
-<br>🩹추가예정!!]]></description><link>https://lts.kr/tools/🪓-도구.html</link><guid isPermaLink="false">Tools/🪓 도구.md</guid><dc:creator><![CDATA[taesung's Blog]]></dc:creator><pubDate>Wed, 23 Apr 2025 05:45:53 GMT</pubDate></item></channel></rss>
+<br>🩹추가예정!!]]></description><link>https://lts.kr/tools/🪓-도구.html</link><guid isPermaLink="false">Tools/🪓 도구.md</guid><dc:creator><![CDATA[taesung's Blog]]></dc:creator><pubDate>Thu, 24 Apr 2025 00:49:30 GMT</pubDate></item><item><title><![CDATA[🚢Kubernetes(k8s)란]]></title><description><![CDATA[<a class="tag" href="https://lts.kr/?query=tag:Tools" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Tools</a> <a class="tag" href="https://lts.kr/?query=tag:Kubernetes" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Kubernetes</a> <a class="tag" href="https://lts.kr/?query=tag:k8s" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#k8s</a> <br> <a href="https://lts.kr?query=tag:Tools" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Tools">#Tools</a> <a href="https://lts.kr?query=tag:Kubernetes" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Kubernetes">#Kubernetes</a> <a href="https://lts.kr?query=tag:k8s" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#k8s">#k8s</a><br>
+<br>과거에는 서버 1대에 하나의 앱을 설치하는 방식 → 리소스 낭비
+<br>가상화(VM)는 개선책이었지만 느리고 무겁다
+<br>
+<br>Docker를 사용한 컨테이너(꼭 Docker가 아니더라도..) 기술은 경량화된 격리 실행환경 제공
+<br>문제: 수백~수천 개의 컨테이너를 관리, 스케줄링, 모니터링를 사람이 직접 한다는것은 많이 어렵다.
+<br>
+<br>구글이 자사 서비스에서 10년 넘게 써온 내부 컨테이너 오케스트레이터 “Borg”의 아이디어를 오픈소스로 풀어낸 것이 Kubernetes(줄여서 k8s)이다.
+<br>
+<br>위에서 설명했듯 여러개의 컨테이너를 자동으로 배포, 스케일링, 복구, 관리하는 컨테이너 오케스트레이션 플랫폼이다.
+<br> +-------------------+ | Master Node | |-------------------| | - API Server | | - Scheduler | | - Controller Mgr | | - etcd (DB) | +---------+---------+ | ┌────────────┴────────────┐ ↓ ↓ +-------------+ +---------------+ | Worker Node| | Worker Node | |-------------| |---------------| | kubelet | | kubelet | | kube-proxy | | kube-proxy | | containerd | | containerd | +-------------+ +---------------+ ↓ ↓ [Pod: 컨테이너 + 네트워크 + 볼륨]
+<br>k8s가 컨테이너 오케스트레이션 플랫폼 (어디에, 어떠게 배포할지 결정 )이라면,<br>
+argoCD는 <a data-href="GitOps" href="https://lts.kr/짧은-키워드/gitops.html" class="internal-link" target="_self" rel="noopener nofollow">GitOps</a>기반의 Continuous Delivery 도구 (무엇을, 언제, 어떤 방식으로 배포할지 관리) 이다.<br>
+<br>k8s의 모든 배포는 yaml파일을 통해 이뤄진다.<br>
+→이때, 배포를 수행하는 개발자마다 각자의 PC에서 yaml파일을 만들어 관리한다면, 많은 노력이 들어가게 된다.<br>
+따라서, <a data-href="GitOps" href="https://lts.kr/짧은-키워드/gitops.html" class="internal-link" target="_self" rel="noopener nofollow">GitOps</a>방법론에 따라, 배포와 관련된 모든 코드를 Git을 통해 관리하도록 하는것이다.
+<br>즉, ArgoCD는 Kubernetes를 위한 GitOps 자동 배포 계층이다.<br>Git Repository (Manifest 저장) ← (감시) ← Argo CD → (반영) → Kubernetes Cluster<br>
+<br>Argo CD는 Kubernetes의 배포 자동화 담당
+<br>Kubernetes는 애플리케이션을 실행하고, Argo CD는 그것을 배포/관리함
+<br>Git을 소스 오브 트루스로 삼고, Argo CD는 상태를 감시하고 Kubernetes와 싱크 맞춤
+<br>실시간 배포 이력 추적, 자동 복구, 롤백, 멀티클러스터 지원 등 GitOps 핵심 도구
+<br>Kubernetes를 쓰는 조직이라면 Argo CD는 필수에 가까움 (Jenkins는 CI로만 남게 됨)
+<br>]]></description><link>https://lts.kr/tools/kubernetes/🚢kubernetes(k8s)란.html</link><guid isPermaLink="false">Tools/Kubernetes/🚢Kubernetes(k8s)란.md</guid><dc:creator><![CDATA[taesung's Blog]]></dc:creator><pubDate>Wed, 23 Apr 2025 09:14:09 GMT</pubDate></item></channel></rss>

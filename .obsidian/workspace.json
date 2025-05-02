@@ -172,8 +172,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c915a28227e0f308",
+  "active": "5cc2f7897ebd9692",
   "lastOpenFiles": [
+    "study/cs/🐹-msa(microservices-architecture).html",
+    "study/cs/🌩-cloud-native-architecture-분석.html",
+    "짧은-키워드/restful-api.html",
+    "짧은-키워드/cicd.html",
     "사진-및-문서/do-messenger_screenshot_2025-04-29_15_37_33.png",
     "study/cs/🐡-spring-security와-filter.html",
     "짧은-키워드/servlet.html",
@@ -184,9 +188,6 @@
     "짧은-키워드/gitops.html",
     "사진-및-문서/pasted-image-20250417121150.png",
     "사진-및-문서/pasted-image-20250421164348.png",
-    "tools/jenkins/🏉-jenkins란.html",
-    "tools/jenkins",
-    "tools/docker/🐋-docker-란.html",
     "사진-및-문서/pasted-image-20250415181225.png",
     "사진-및-문서/pasted-image-20250416182123.png",
     "사진-및-문서/pasted-image-20250416181833.png",
@@ -194,7 +195,6 @@
     "사진-및-문서/pasted-image-20250416171828.png",
     "사진-및-문서/pasted-image-20250415182923.png",
     "사진-및-문서/스크린샷-2025-04-14-오전-12.06.09.png",
-    "사진-및-문서/prof2.jpg",
     "환영합니다!.md"
   ]
 }

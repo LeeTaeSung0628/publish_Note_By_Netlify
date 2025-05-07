@@ -27,42 +27,47 @@
 </ol>
 </div></div></div><div class="el-p"><p dir="auto">MSA는 애플리케이션을 작은 서비스로 분리하여, 각 서비스가 독립적으로 <u>개발, 배포, 확장</u> 될 수 있도록 한다.
 즉, 위의 모놀리식 아키텍처의 단점을 모두 보완하는 특징을 갖고 있다.</p></div><div class="el-h4 heading-wrapper"><h4 data-heading="MSA 장점" dir="auto" class="heading" id="MSA_장점"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>MSA 장점</h4><div class="heading-children"><div class="el-ol"><ol>
-<li data-line="0" dir="auto">배포</li>
+<li data-line="0" dir="auto"><u>배포</u></li>
 </ol></div><div class="el-ul"><ul>
 <li data-line="0" dir="auto">서비스별 개별 배포가 가능(배포시 전체 서비스의 중단이 없음)</li>
 <li data-line="1" dir="auto">특정 서비스의 요구사항만을 반영하여, 빠르게 배포 가능</li>
-</ul></div><div class="el-p"><p dir="auto">&nbsp;
-2. 확장</p></div><div class="el-ul"><ul>
+</ul></div><div class="el-ol"><ol start="2">
+<li data-line="0" dir="auto"><u>확장</u></li>
+</ol></div><div class="el-ul"><ul>
 <li data-line="0" dir="auto">특정 서비스에 대한 확장성(scale-out)이 유리하다.</li>
 <li data-line="1" dir="auto"><strong>Cloud Native Architecture</strong>에 적합하다.
 <blockquote dir="auto">
 <h2 data-heading="▶ [[🌩 Cloud-Native Architecture 분석]] 보러가기" dir="auto" class="heading" id="▶_[[🌩_Cloud-Native_Architecture_분석]]_보러가기">▶ <a data-href="🌩 Cloud-Native Architecture 분석" href="study/cs/🌩-cloud-native-architecture-분석.html" class="internal-link" target="_self" rel="noopener nofollow">🌩 Cloud-Native Architecture 분석</a> 보러가기</h2>
 </blockquote>
 </li>
-</ul></div><div class="el-p"><p dir="auto">&nbsp;</p></div><div class="el-ol"><ol>
-<li data-line="0" dir="auto">장애</li>
+</ul></div><div class="el-ol"><ol start="3">
+<li data-line="0" dir="auto"><u>장애</u></li>
 </ol></div><div class="el-ul"><ul>
 <li data-line="0" dir="auto">일부 장애가 전체 서비스로 확장될 가능성이 적다.(장애 격리가 쉽다)</li>
-</ul></div><div class="el-p"><p dir="auto">&nbsp;
-4. 그 외</p></div><div class="el-ul"><ul>
+</ul></div><div class="el-ol"><ol start="4">
+<li data-line="0" dir="auto"><u>그 외</u></li>
+</ol></div><div class="el-ul"><ul>
 <li data-line="0" dir="auto">새로운 기술을 적용하기 유연하다.(전체 서비스가 아닌 특정 서비스만 별도의 기술 또는 언어로 구현 가능)</li>
 <li data-line="1" dir="auto">각각의 서비스에 대한 구조 파악 및 분석이 모놀리식 구조에 비해 쉽다.</li>
 </ul></div></div></div><div class="el-h4 heading-wrapper"><h4 data-heading="MSA 단점" dir="auto" class="heading" id="MSA_단점"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>MSA 단점</h4><div class="heading-children"><div class="el-ol"><ol>
-<li data-line="0" dir="auto">설계의 어려움</li>
+<li data-line="0" dir="auto"><u>설계의 어려움</u></li>
 </ol></div><div class="el-ul"><ul>
 <li data-line="0" dir="auto">MSA는 모놀리식에 비해 상대적으로 많이 복잡하다. 또한, 통신의 장애와 서버의 부하 등을 고려하여 transaction을 유지할지 결정해야 한다.</li>
-</ul></div><div class="el-p"><p dir="auto">&nbsp;
-2. 성능</p></div><div class="el-ul"><ul>
+</ul></div><div class="el-ol"><ol start="2">
+<li data-line="0" dir="auto"><u>성능</u></li>
+</ol></div><div class="el-ul"><ul>
 <li data-line="0" dir="auto">서비스 간 호출 시 API를 사용하므로, 통신 비용이나 Latency에 대해 이슈가 존재.</li>
-</ul></div><div class="el-p"><p dir="auto">&nbsp;
-3. 테스트/데이터 트랜잭션</p></div><div class="el-ul"><ul>
+</ul></div><div class="el-ol"><ol start="3">
+<li data-line="0" dir="auto"><u>테스트/데이터 트랜잭션</u></li>
+</ol></div><div class="el-ul"><ul>
 <li data-line="0" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>모놀리식에서는 단일 트랜잭션을 유지하면 됐지만 MSA에서는 비즈니스에 대한 DB를 가지고 있는 서비스도 각기 다르고, 서비스의 연결을 위해서는 통신이 포함되기 때문에 트랜잭션을 일관되게 유지하며 개발하는게 어렵다.
 <ul>
 <li data-line="1" dir="auto">통합 테스트가 어렵다. 개발 환경과 실제 운영환경을 동일하게 가져가는 것의 어려움</li>
 </ul>
 </li>
-</ul></div><div class="el-p"><p dir="auto">&nbsp;
-4. 데이터 관리</p></div><div class="el-ul"><ul>
+</ul></div><div class="el-ol"><ol start="4">
+<li data-line="0" dir="auto"><u>데이터 관리</u></li>
+</ol></div><div class="el-ul"><ul>
 <li data-line="0" dir="auto">데이터가 여러 서비스에 분산되어 있어 관리하는데 어려움이 있다.</li>
 </ul></div><div class="el-div"><div data-callout-metadata="" data-callout-fold="" data-callout="info" class="callout"><div class="callout-title" dir="auto"><div class="callout-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-info"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg></div><div class="callout-title-inner">그래서 msa가 무조건 좋은것인가?</div></div><div class="callout-content">
 <ul>
@@ -112,9 +117,8 @@
 <li data-line="4" dir="auto">핵심 기능은 다른 기능들과의 결합도가 높다</li>
 <li data-line="5" dir="auto">핵심 기능일 수록 장기간의 유지보수로 인하여, 도메인간의 경계가 명확하지 않을 가능성이 높다</li>
 </ol>
-<p dir="auto">이러한 핵심 기능들은 사람의 눈으로만 판단하는데 어려움이 있기 떄문에, 다양한 정적 분석도구를 활용하면 좋다.
-<br></p>
-</div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="MSA 서비스 분리 원칙" dir="auto" class="heading" id="MSA_서비스_분리_원칙"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>MSA 서비스 분리 원칙</h2><div class="heading-children"><div class="el-p"><p dir="auto">다음은 MSA에서 유연성과 확장성을 확보하기 위한 주요 서비스 분리 원칙이다.
+<p dir="auto">이러한 핵심 기능들은 사람의 눈으로만 판단하는데 어려움이 있기 떄문에, 다양한 정적 분석도구를 활용하면 좋다.</p>
+</div></div></div><div class="el-br"><br></div><div class="el-h2 heading-wrapper"><h2 data-heading="MSA 서비스 분리 원칙" dir="auto" class="heading" id="MSA_서비스_분리_원칙"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>MSA 서비스 분리 원칙</h2><div class="heading-children"><div class="el-p"><p dir="auto">다음은 MSA에서 유연성과 확장성을 확보하기 위한 주요 서비스 분리 원칙이다.
 <br></p></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="1. 코드의 재개발" dir="auto" class="heading" id="1._코드의_재개발"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>1. 코드의 재개발</h2><div class="heading-children"><div class="el-ul"><ul>
 <li data-line="0" dir="auto">분리 대상 서비스를 확정하고 나서는, 기존 모놀리식 <em>코드를 재사용 할것인지, 재개발 할것인지를 고민</em>해야한다.</li>
 <li data-line="1" dir="auto">일반적으로 코드를 재사용하여 서비스를 구성하는 것이 효율적으로 보이지만 오히려 비효율을 초래할 가능성이 크다.</li>

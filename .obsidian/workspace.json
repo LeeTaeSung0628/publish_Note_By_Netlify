@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9c33ae884cac13d1",
+        "id": "06445ccce1166c04",
         "type": "tabs",
         "children": [
           {
-            "id": "1dbea94acb104dc9",
+            "id": "1324e876f98e9a9e",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -172,8 +172,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5cc2f7897ebd9692",
+  "active": "1324e876f98e9a9e",
   "lastOpenFiles": [
+    "사진-및-문서/pasted-image-20250512180307.png",
+    "project/🚞-java-대용량-excel-리펙토링.html",
     "사진-및-문서/do-messenger_screenshot_2025-05-02_14_28_33.png",
     "project/melometer-project/✈mm_클라우드-마이그레이션.html",
     "project/melometer-project",
@@ -185,7 +187,6 @@
     "study/cs/🐡-spring-security와-filter.html",
     "짧은-키워드/servlet.html",
     "짧은-키워드/무제.html",
-    "tools/kubernetes/🚢kubernetes(k8s)란.html",
     "사진-및-문서/pasted-image-20250417121150.png",
     "사진-및-문서/pasted-image-20250421164348.png",
     "사진-및-문서/pasted-image-20250415181225.png",
@@ -194,7 +195,6 @@
     "사진-및-문서/pasted-image-20250416172118.png",
     "사진-및-문서/pasted-image-20250416171828.png",
     "사진-및-문서/pasted-image-20250415182923.png",
-    "사진-및-문서/스크린샷-2025-04-14-오전-12.06.09.png",
     "환영합니다!.md"
   ]
 }

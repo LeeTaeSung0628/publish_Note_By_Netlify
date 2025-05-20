@@ -1,37 +1,312 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Category]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://lts.kr/</link><image><url>https://lts.kr/lib/media/favicon.png</url><title>Category</title><link>https://lts.kr/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 16 May 2025 08:01:02 GMT</lastBuildDate><atom:link href="https://lts.kr/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 16 May 2025 08:01:01 GMT</pubDate><copyright><![CDATA[taesung's Blog]]></copyright><ttl>60</ttl><dc:creator>taesung's Blog</dc:creator><item><title><![CDATA[🍧 JPA의 동작원리와 중복 데이터 로그 이슈]]></title><description><![CDATA[<a class="tag" href="https://lts.kr/?query=tag:SQL" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SQL</a> <a class="tag" href="https://lts.kr/?query=tag:JPA" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#JPA</a> <a class="tag" href="https://lts.kr/?query=tag:이슈" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#이슈</a> <a class="tag" href="https://lts.kr/?query=tag:log" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#log</a> <a class="tag" href="https://lts.kr/?query=tag:로그" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#로그</a> <br> <a href="https://lts.kr?query=tag:SQL" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SQL">#SQL</a> <a href="https://lts.kr?query=tag:JPA" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#JPA">#JPA</a> <a href="https://lts.kr?query=tag:이슈" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#이슈">#이슈</a> <a href="https://lts.kr?query=tag:log" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#log">#log</a> <a href="https://lts.kr?query=tag:로그" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#로그">#로그</a><br>업무 중 한 가지 이슈가 있었고, JPA의 영속상태와 동작원리에 대해서 자세히 짚고 넘어가야할 필요가 있다고 느껴
-해당 글을 쓰게 되었다.<br>상황은 다음과 같다.<br>신한은행의 계좌잔액(예치금)과 우리가 관리하는 DB의 계좌 잔액간의 차액이 발생했다는 알림을 받았다. <br>원인을 찾기위해 신한 전문을 쌓는 log테이블과, 우리 회원 입급내역 log테이블을 비교하였다.
-<br>이떄, 신한에는 같은 금액의 중복 log가 없으나, 우리 DB에는 차액만큼의 중복 입금 log를 발견할 수 있었다. <br>더티 체킹 ← 다음 걔념도 알아보기<br>인서트 - 첫 save로직에 select을 하는지.
-<br>준영속상태 - 메모리에 idx가 있으면, select를 한번 날리고 db에 있다면 업데이트를 칠 수 있다.
-비영속과 준영속을 나누는 기준과 JPA동작 순서, 원리 알아보기<br>비영속상태에서 save 를 날렸을 때, select를 날리는지? 날린다면 이유가 뭐고,
-준영속상태랑의 차이점이 무엇인지? 궁금하다.<br>추가 예정.]]></description><link>https://lts.kr/issue_troubleshooting/🍧-jpa의-save동작원리와-데이터-로그-이슈.html</link><guid isPermaLink="false">Issue_TroubleShooting/🍧 JPA의 SAVE동작원리와 데이터 로그 이슈.md</guid><dc:creator><![CDATA[taesung's Blog]]></dc:creator><pubDate>Fri, 16 May 2025 08:00:57 GMT</pubDate></item><item><title><![CDATA[🔫 이슈 분석 &amp; 트러블슈팅]]></title><description><![CDATA[<a class="tag" href="https://lts.kr/?query=tag:이슈" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#이슈</a> <a class="tag" href="https://lts.kr/?query=tag:트러블슈팅" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#트러블슈팅</a> <a class="tag" href="https://lts.kr/?query=tag:모음" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#모음</a> <br> <a href="https://lts.kr?query=tag:이슈" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#이슈">#이슈</a> <a href="https://lts.kr?query=tag:트러블슈팅" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#트러블슈팅">#트러블슈팅</a> <a href="https://lts.kr?query=tag:모음" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#모음">#모음</a><br>이슈 / 트러블 슈팅
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Category]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://lts.kr/</link><image><url>https://lts.kr/lib/media/favicon.png</url><title>Category</title><link>https://lts.kr/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Tue, 20 May 2025 08:02:44 GMT</lastBuildDate><atom:link href="https://lts.kr/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 20 May 2025 08:02:38 GMT</pubDate><copyright><![CDATA[taesung's Blog]]></copyright><ttl>60</ttl><dc:creator>taesung's Blog</dc:creator><item><title><![CDATA[🏠 taesung's Blog]]></title><description><![CDATA[<a class="tag" href="https://lts.kr/?query=tag:home" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#home</a> <a class="tag" href="https://lts.kr/?query=tag:index" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#index</a> <a class="tag" href="https://lts.kr/?query=tag:blog" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#blog</a> <a class="tag" href="https://lts.kr/?query=tag:공부" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#공부</a> <br> <a href="https://lts.kr?query=tag:home" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#home">#home</a> <a href="https://lts.kr?query=tag:index" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#index">#index</a> <a href="https://lts.kr?query=tag:blog" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#blog">#blog</a> <a href="https://lts.kr?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a><br><a data-tooltip-position="top" aria-label="https://github.com/LeeTaeSung0628" rel="noopener nofollow" class="external-link is-unresolved" href="https://github.com/LeeTaeSung0628" target="_self"><span alt="prof2.jpg" src="prof2.jpg" class="internal-embed media-embed image-embed is-loaded" style="width: 250px; max-width: 100%;"></span></a><img alt="prof2.jpg" src="https://lts.kr/사진-및-문서/prof2.jpg" style="width: 250px; max-width: 100%;" target="_self"><br><a data-tooltip-position="top" aria-label="https://git.io/typing-svg" rel="noopener nofollow" class="external-link is-unresolved" href="https://git.io/typing-svg" target="_self"></a><img alt="Typing SVG" src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;pause=1000&amp;color=36A9F7&amp;random=false&amp;width=435&amp;lines=%EC%97%AC%EA%B8%B0%EB%8A%94+%EA%B3%B5%EB%B6%80%ED%95%98%EA%B3%A0%2C+%EA%B8%B0%EB%A1%9D%ED%95%98%EB%8A%94+%EA%B3%B3%EC%9E%85%EB%8B%88%EB%8B%A4" referrerpolicy="no-referrer" target="_self" class="is-unresolved"><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>]]></description><link>https://lts.kr/🏠-taesung's-blog.html</link><guid isPermaLink="false">🏠 taesung's Blog.md</guid><dc:creator><![CDATA[taesung's Blog]]></dc:creator><pubDate>Tue, 20 May 2025 08:02:26 GMT</pubDate><enclosure url="https://lts.kr/사진-및-문서/prof2.jpg" length="0" type="image/jpeg"/><content:encoded>&lt;figure&gt;&lt;img src="https://lts.kr/사진-및-문서/prof2.jpg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[🍧 JPA의 영속성 상태와 데이터 Log 이슈]]></title><description><![CDATA[<a class="tag" href="https://lts.kr/?query=tag:SQL" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SQL</a> <a class="tag" href="https://lts.kr/?query=tag:JPA" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#JPA</a> <a class="tag" href="https://lts.kr/?query=tag:이슈" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#이슈</a> <a class="tag" href="https://lts.kr/?query=tag:log" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#log</a> <a class="tag" href="https://lts.kr/?query=tag:로그" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#로그</a> <br> <a href="https://lts.kr?query=tag:SQL" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SQL">#SQL</a> <a href="https://lts.kr?query=tag:JPA" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#JPA">#JPA</a> <a href="https://lts.kr?query=tag:이슈" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#이슈">#이슈</a> <a href="https://lts.kr?query=tag:log" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#log">#log</a> <a href="https://lts.kr?query=tag:로그" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#로그">#로그</a><br>업무 중 한 가지 이슈가 있었고, JPA의 영속상태와 동작원리에 대해서 자세히 짚고 넘어가야할 필요가 있다고 느껴
+해당 글을 쓰게 되었다.<br>상황은 다음과 같다.<br>신한은행의 계좌잔액(예치금)과 입금내역을 관리하는 DB의 계좌 잔액간의 차액이 발생했다는 알림을 받았다. <br>원인을 찾기위해 신한 전문을 쌓는 log테이블과, 회원 입급내역 log테이블을 비교하였다.
+<br>이떄, 신한DB 에는 같은 금액의 중복 log가 없으나, 입금 내역 DB에는 차액만큼의 중복 입금 log를 발견할 수 있었다. <br>차액이 138만원 발생했다고 가정했을 때,<br>입금내역DB에는 10시 / 11시 총 2개의 138만원 입금내역이 LOG로 남아있었다. <br>여기서 해당 입금내역이 차액을 발생시켰을 것으로 예상할 수 있었다. <br>
+<br>실제 신한의 전문을 저장하는 DB에는 11시의 입금내역만이 존재하고 있었다.
+<br>
+<br>신한 측문의 결과 입금에 문제가 생겼을 경우 해당 입금 전문을 동일하게 한 번 더 보낸다는 사실을 알 수 있었다. <br>보통의 상황이라면, 동일한(id값 동일) 전문을 받아 DB에 insert된다면 SQL Exception이 터졌을 것이라 생각하였다.
+하지만 상황으로 미루어 볼때, insert가 아닌 update가 동작했을 것으로 예상할 수 있다.<br>해당 Insert쿼리는 Spring DATA JPA의 SAVE메서드로 구현되어있다.
+<br>첫번째 save 후 두 번째 save동작 까지, 1시간의 시간 차이가 있다.
+<br>트렌젝션이 종료된 이후(commit)임에도 기존의 id를 기억하여 update를 할 수 있었던 이유가 무었일까?<br>영속상태에 관한 관련된 또 다른 이슈.<br>영속성 컨텍스트에 대한 설명.<br><img alt="Pasted image 20250519144842.png" src="https://lts.kr/사진-및-문서/pasted-image-20250519144842.png" style="width: 700px; max-width: 100%;" target="_self"><br>
+<br>아래 코드의 실행 결과로 알 수 있듯이, 비영속 상태의 엔티티를 save()하여 persist()를 수행했을 때, DB에 이미 동일한 ID(PK)가 있다면 예외를 발생시킨다.
+<br>@Autowired private EntityManager em; @Test @Transactional void MemberPersistenceTest() { // 1) 새 엔티티 인스턴스 생성 → Transient 상태 HfMarketingCode testcode = new HfMarketingCode(); testcode.setHitCode("testCode1"); testcode.setCodeName("testName1"); em.persist(testcode); em.flush(); }
+<br><img alt="Pasted image 20250520142253.png" src="https://lts.kr/사진-및-문서/pasted-image-20250520142253.png" target="_self"><br>주의
+영속성 컨텍스트에 등록할 객체의 id 설정의 @GeneratedValue(strategy = GenerationType.IDENTITY)<br>
+여부에 따라, 지연 쓰기가 동작하지 않을 수 있다. <br>기본키 생성에 대한 권한을 DB에 위임하기 때문에, JPA가 곧바로 id값을 알기위해 지연하지 않고, 바로 insert쿼리를 실행시킨다. <br>질문?
+동일한 idx(pk)의 엔티티를 넘겨 save동작을 수행했을 때, persist(insert) 가 아닌 merge(update) 가 되었다면,<br>
+해당 엔티티의 영속 상태는 어떻게 되는가?
+<br>
+엔티티 메니저는 트렌젝션이 종료될때 close되며, 이때 모든 영속석 컨텍스트에 등록된 엔티티를 준영속 상태로 돌린다.
+따라서, 준영속 상태로 관리되고 있던 객체에 save() 연산이 수행되면서, update쿼리가 실행된 것.
+<br>그렇다면 준영속 상태의 지속 범위는 어떻게 될까?<br>보통 엔티티 객체가 준영속 상태로 진입하게 되면, 엔티티 매니저와 모든 의존성을 끊기 때문에 일반적인 POJO 객체와 같이 GC(가비지 컬렉터) 에 의해 메모리를 해제하게 된다.
+<br>그럼에도 1시간의 시간 차가 발생했음에도 GC로 정리가 되지 않은 부분은 조금 의아하다.
+<br>해당 부분은 더 깊게 찾아보야 할것으로 보인다.
+<br>]]></description><link>https://lts.kr/issue_troubleshooting/🍧-jpa의-영속성-상태와-데이터-log-이슈.html</link><guid isPermaLink="false">Issue_TroubleShooting/🍧 JPA의 영속성 상태와 데이터 Log 이슈.md</guid><dc:creator><![CDATA[taesung's Blog]]></dc:creator><pubDate>Tue, 20 May 2025 08:01:49 GMT</pubDate><enclosure url="https://lts.kr/사진-및-문서/pasted-image-20250519144842.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://lts.kr/사진-및-문서/pasted-image-20250519144842.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[영속성 컨텍스트]]></title><description><![CDATA[<br><br><br><br>- 엔티티를 영구적으로 저장하는 환경
+- 앱과 DB사이의 객체를 보관하는 가상의 DB역할
+- **엔티티 메니저**를 통해 저장하거나 조회한다.
+<br><br><br><br><br>
+<br>엔티티 매니저를 생성할 때 하나 만들어진다.
+<br>엔티티 매니저를 통해서 영속성 컨텍스트에 접근하고 관리할 수 있다.
+<br><br><br>JPA의 save() 함수는?
+save()함수는 내부적으로 isNew(Entity)연산을 수행하여,<br>
+해당 엔티티가 신규로 등록되는 엔티티이면 persist()를, 기존에 존재하는 엔티티면 merge()를 수행한다.
+<br><br><br><br><br><br>// 객체를 생성한 상태 (비영속)
+Member member = new Member();
+// 객체의 값 변경해도 영속상태에 영행 X
+member.setName("이태성");
+<br><br>// 객체를 생성한 상태(비영속)
+Member member = new Member();
+member.setName("이태성"); EntityManager em = emf.createEntityManager();
+em.getTransaction().begin();
+//엔티티 매니저를 사용하여 영속상태로 등록
+em.persist(member);
+<br><br>// 엔티티 매니저를 사용하여 영속상태를 분리 -&gt; 준영속 상태
+em.detach(member);
+<br>
+<br>메모리에 식별자 값을 갖고는 있지만, 영속성 컨텍스트의 어떠한 동작도 하지 않느 상태
+<br><br>// 엔티티 매니저를 사용하여 영속상태를 상태 -&gt; 삭제 상태
+em.remove(member); // 영속성 컨텍스트를 비워도 관리되던 엔티티는 준영속성 상태가 된다.
+em.clear(); // 영속성 컨텍스트를 종료해도 관리되던 엔티티는 준영속 상태가 된다.
+em.close();
+<br>
+<br>영속성 컨텍스트를 비우거나(Clear) 종료해도(Close) 엔티티는 삭제되지 않는다(→ 준영속상태가 된다)
+<br>오직 삭제(Remove)를 통해서만 영속상태를 삭제상태로 변경할 수 있다.
+<br><br><br><br><br><br>
+<br>영속 상태의 엔티티를 1차 캐쉬에 저장하여, 같은 엔티티를 조회할시 DB에서 재조회 하지 않아도 된다.
+<br><br>Member a = em.find(Member.class, "A");
+Member b = em.find(Member.class, "A"); System.out.println(a==b) // true
+<br>
+<br>1차 캐시로 격리 수준을 DB가 아닌 애플리케이션 차원에서 제공해 줄 수 있다.
+<br><br>EntityManager em = emf.createEntityManager();
+EntityTransaction transaction = em.getTransaction(); transaction.begin(); // 트렌젝션 시작 em.persist(memberA);
+em.persist(memberB); // 커밋하는 순간 데이터베이스에 INSERT SQL을 보낸다.
+transaction.commit(); // 트렌젝션 커밋
+<br>영속성 컨텍스트에서 관리하는 객체는 수정되어도 DB에 바로 Insert 쿼리를 날리지 않는다.
+SQL 쿼리들을 모아놓았다가 flush(커밋) 될 때 모아둔 쿼리를 모두 날린다.<br><br>EntityManager em = emf.createEntityManager();
+EntityTransaction transaction = em.getTransaction();
+transaction.begin(); // 영속 엔티티 조회
+Member member = em.find(Member.class, "A"); // 영속 엔티티 데이터 수정
+member.setName("이태성");
+member.setJob("프로그래머"); transaction.commit(); // [트랜잭션] 커밋
+<br>
+<br>엔티티매니저에서 엔티티를 find()후 해당 객체의 값을 수정 후 커밋하면 어떻게 될까?
+<br>따로 save나 update문이 없어 변경이 적용되지 않을것 같지만, 자동으로 변경점을 감지하여 반영된다.
+<br>변경감지는 지연쓰기또한 동작한다.
+<br><br><br>
+<br>flush()는 영속성 컨텍스트의 변경 내용을 DB에 반영하는 행위이다. <br>플러시의 흐름<br>
+<br>변경 감지가 동작해서 스냅샷(트렌젝션의 시작 시점)과 비교해서 변경점을 찾는다.
+<br>변경된 엔티티에 대해서 수정 쿼리를 만들고 SQL 저장소에 등록한다.
+<br>쓰기 지연 SQL 저장소의 쿼리를 데이터베이스에 반영한다.
+<br>트랜잭션 커밋시 자동 호출
+<br>JPQL 쿼리 실행 시 자동 호출
+<br>em.flush()
+]]></description><link>https://lts.kr/짧은-키워드/영속성-컨텍스트.html</link><guid isPermaLink="false">짧은 키워드/영속성 컨텍스트.md</guid><dc:creator><![CDATA[taesung's Blog]]></dc:creator><pubDate>Tue, 20 May 2025 07:14:08 GMT</pubDate></item><item><title><![CDATA[🌋 OSIV란 무엇인가]]></title><description><![CDATA[<a class="tag" href="https://lts.kr/?query=tag:공부" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#공부</a> <a class="tag" href="https://lts.kr/?query=tag:Java" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Java</a> <a class="tag" href="https://lts.kr/?query=tag:JPA" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#JPA</a> <a class="tag" href="https://lts.kr/?query=tag:OSIV" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#OSIV</a> <a class="tag" href="https://lts.kr/?query=tag:영속성컨텍스트" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#영속성컨텍스트</a> <br> <a href="https://lts.kr?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a> <a href="https://lts.kr?query=tag:Java" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Java">#Java</a> <a href="https://lts.kr?query=tag:JPA" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#JPA">#JPA</a> <a href="https://lts.kr?query=tag:OSIV" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#OSIV">#OSIV</a> <a href="https://lts.kr?query=tag:영속성컨텍스트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#영속성컨텍스트">#영속성컨텍스트</a><br>
+<br>OSIV란 View에 데이터를 전달할 때 지연 로딩 등의 이유로 영속성 컨텍스트를 지속해야 하는 경우에 사용되는 옵션이다.
+<br>즉, 영속성 컨택스트(앤티티 매니저)의 생명주기를 웹 요청이 끝날 때 까지 연장하는 옵션이다.
+이 설정은 어플리케이션에 별다른 설정을 하지 않았다면 default ON 상태이다.<br>서버 실행 시 아래와 같은 로그를 확인할 수 있다.<br>spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering.Explicitly configure spring.jpa.open-in-view to disable this warning
+<br><img alt="Pasted image 20250314152143.png" src="https://lts.kr/사진-및-문서/pasted-image-20250314152143.png" target="_self"><br>
+OpenSessionInViewFilter 초기화 <br>OpenSessionInViewFilter는 Hibernate(JPA객체)세션을 요청 전체 처리동안 열어두기 위한 서블릿 필터이다.
+<br>해당 필터는 sessionFactory의 openSession메서드를 호출하여 새로운 Hibernate세션을 얻는다. <br>
+요청 처리 시작 <br>doFilter 메서드가 FilterChain 객체에 의해 호출되어 요청의 계속 처리를 허용한다. <br>
+DispatcherServlet 및 컨트롤러 호출 <br>DispatcherServlet이 호출되어 HTTP 요청을 기본 컨트롤러(여기서는 PostController)로 라우팅한다. <br>
+서비스 레이어 트랜잭션 <br>PostController는 PostService를 호출하여 Post 엔터티 목록을 가져온다. <br>PostService는 새로운 트랜잭션을 시작하며, HibernateTransactionManager OpenSessionInViewFilter에서 열린 동일한 Hibernate 세션을 재사용한다. <br>
+데이터 액세스 레이어 <br>PostService는 PostDAO (데이터 액세스 객체)에게 Post 엔터티 목록을 가져오도록 위임한다. <br>PostDAO는 어떠한 게으른 연관성도 초기화하지 않고 Post 엔터티 목록을 검색한다. 게으른 연관성은 Hibernate에서 즉시 가져오지 않고 필요할 때 로드되는 관계이다. <br>
+트랜잭션 커밋<br>
+- PostService는 기본 트랜잭션을 커밋한다. 그러나 세션이 외부에서 열렸기 때문에( OpenSessionInViewFilter에서), 이 시점에서 세션은 닫히지 않는다.
+주의
+트렌젝션은 커멧 되더라도 오픈 세션(영속성 컨텍스트) 은 닫히지 않는다! <br>
+뷰 렌더링 시작 <br>DispatcherServlet이 사용자 인터페이스 (UI)를 렌더링하기 시작한다. <br>
+게으른 연관성 초기화 <br>렌더링 과정 중에 UI는 Post 엔터티의 게으른 연관성을 탐색한다. <br>이 탐색은 게으른 연관성의 초기화를 트리거하며 추가적인 데이터베이스 쿼리를 날린다. <br>Lazy Loading이 일어나는 시점
+<br>세션 닫힘 <br>OpenSessionInViewFilter는 이제 Hibernate 세션을 닫을 수 있습니다. 렌더링 프로세스가 완료되었기 때문이다. <br>세션과 관련된 데이터베이스 연결이 해제된다. <br>
+<br>
+JPA의 영속성 컨텍스트가 DB커넥션을 얻는 시점은 DB트렌젝션을 시작할 때 이다.
+@Transactional 어노테이션이 붙은 매서드가 실행될 때.
+-없다면, 해당 JPA쿼리(Repository JPA 조회 메서드에 자동으로 트렌젝션 부여)가 실행되는 시점에 얻게 된다. <br>
+DB커넥션을 반환하는 시점은 서비스 레이어의 @Transactional어노테이션이 붙은 메서드가 끝날때 이다.
+이 떄, 영속성 컨텍스트가 사라지고 DB커넥션이 반환된다. <br>즉, 한 컨트롤러 안에서 여러개의 서비스 레이어의 함수를 여러개 실행할 경우,
+각각의 메서드마다 영속성 컨텍스트가 생기고 사라지게 된다.<br>해당 방식은 DB커넥션을 최소한으로만 사용하기 때문에 트레픽이 중요한 경우 유연하고 효율적이다.<br>
+<br>
+JPA가 영속성 컨텍스트를 얻는 시점은 동일하다.
+@Transactional 어노테이션이 붙은 매서드가 실행될 때.
+-없다면, 해당 JPA쿼리가 실행되는 시점에 얻게 된다. <br>
+DB커넥션을 반환하는 시점은
+-api의 경우 : 데이터가 유저에게 반환될 때 까지.
+-tamplate으로 갈 경우 : 모든 데이터가 렌더링 되어 출력될 때 까지. <br>즉, @Transactional메서드가 끝날 떄 즉시 반환하지 않고 프록시 객체가 Lazy Loading으로
+호출될 수 있기 때문에, 영속성 컨텍스트를 살려 놓는것이다.<br>정보
+영속성 컨텐스트는 DB커넥션을 보유해야 유지될 수 있다.
+<br>해당 방식은 개발적인 측면에서 중복을 줄이고, 지연로딩을 사용할 수 있어 코드의 유지보수성에 큰 도움을 주지만, DB커넥션을 오래 물고 있기 때문에 자칫 성능적인 장애를 일으킬 수 있다.]]></description><link>https://lts.kr/study/cs/🌋-osiv란-무엇인가.html</link><guid isPermaLink="false">study/CS/🌋 OSIV란 무엇인가.md</guid><dc:creator><![CDATA[taesung's Blog]]></dc:creator><pubDate>Mon, 19 May 2025 05:31:44 GMT</pubDate><enclosure url="https://lts.kr/사진-및-문서/pasted-image-20250314152143.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://lts.kr/사진-및-문서/pasted-image-20250314152143.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[📕 공부]]></title><description><![CDATA[<a class="tag" href="https://lts.kr/?query=tag:공부" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#공부</a> <a class="tag" href="https://lts.kr/?query=tag:모음" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#모음</a> <br> <a href="https://lts.kr?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a> <a href="https://lts.kr?query=tag:모음" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#모음">#모음</a><br>공부
+보고 배운 지식 중 공유하고 싶은 정보를 모아둔 카테고리 입니다.
+<br>
+<br><a data-href="🌩 Cloud-Native Architecture 분석" href="https://lts.kr/study/cs/🌩-cloud-native-architecture-분석.html" class="internal-link" target="_self" rel="noopener nofollow">🌩 Cloud-Native Architecture 분석</a> <br><a data-href="🐹 MSA(Microservices Architecture)" href="https://lts.kr/study/cs/🐹-msa(microservices-architecture).html" class="internal-link" target="_self" rel="noopener nofollow">🐹 MSA(Microservices Architecture)</a>
+<br><a data-href="🐋 docker 란" href="https://lts.kr/tools/docker/🐋-docker-란.html" class="internal-link" target="_self" rel="noopener nofollow">🐋 docker 란</a>
+<br><a data-href="🚢Kubernetes(k8s)란" href="https://lts.kr/tools/kubernetes/🚢kubernetes(k8s)란.html" class="internal-link" target="_self" rel="noopener nofollow">🚢Kubernetes(k8s)란</a>
+<br><a data-href="👔 Jenkins란" href="https://lts.kr/tools/jenkins/👔-jenkins란.html" class="internal-link" target="_self" rel="noopener nofollow">👔 Jenkins란</a> <br><a data-href="🐡 Spring Security와 Filter" href="https://lts.kr/study/cs/🐡-spring-security와-filter.html" class="internal-link" target="_self" rel="noopener nofollow">🐡 Spring Security와 Filter</a>
+<br><a data-href="🚨 RSA 암호화 방식의 이해와 적용 (feat.취약성점검)" href="https://lts.kr/issue_troubleshooting/🚨-rsa-암호화-방식의-이해와-적용-(feat.취약성점검).html" class="internal-link" target="_self" rel="noopener nofollow">🚨 RSA 암호화 방식의 이해와 적용 (feat.취약성점검)</a>
+<br><a data-href="🍎 Redis로 Key관리하기" href="https://lts.kr/study/cs/🍎-redis로-key관리하기.html" class="internal-link" target="_self" rel="noopener nofollow">🍎 Redis로 Key관리하기</a>
+<br><a data-href="🌋 OSIV란 무엇인가" href="https://lts.kr/study/cs/🌋-osiv란-무엇인가.html" class="internal-link" target="_self" rel="noopener nofollow">🌋 OSIV란 무엇인가</a>
+<br><a data-href="🐰 Java의 String과 SpringBuffer" href="https://lts.kr/study/cs/🐰-java의-string과-springbuffer.html" class="internal-link" target="_self" rel="noopener nofollow">🐰 Java의 String과 SpringBuffer</a>
+<br><a data-href="🛬 JDK와 JRE, JVM" href="https://lts.kr/study/cs/🛬-jdk와-jre,-jvm.html" class="internal-link" target="_self" rel="noopener nofollow">🛬 JDK와 JRE, JVM</a>
+<br><a data-href="🍊 Spring의 의존성 주입(DI)" href="https://lts.kr/study/cs/🍊-spring의-의존성-주입(di).html" class="internal-link" target="_self" rel="noopener nofollow">🍊 Spring의 의존성 주입(DI)</a>
+<br><a data-href="🪕 JPA 관련 용어 정리" href="https://lts.kr/study/cs/🪕-jpa-관련-용어-정리.html" class="internal-link" target="_self" rel="noopener nofollow">🪕 JPA 관련 용어 정리</a>
+<br>
+<br><a data-href="☕ JAVA , OOP" href="https://lts.kr/study/cs/☕-java-,-oop.html" class="internal-link" target="_self" rel="noopener nofollow">☕ JAVA , OOP</a>
+<br><a data-href="🍃 Spring" href="https://lts.kr/study/cs/🍃-spring.html" class="internal-link" target="_self" rel="noopener nofollow">🍃 Spring</a>
+<br><a data-href="🎩 DevOps" href="https://lts.kr/study/cs/🎩-devops.html" class="internal-link" target="_self" rel="noopener nofollow">🎩 DevOps</a>
+<br><a data-href="📔 DataBase" href="https://lts.kr/study/cs/📔-database.html" class="internal-link" target="_self" rel="noopener nofollow">📔 DataBase</a>
+<br><a data-href="📭 Server" href="https://lts.kr/study/cs/📭-server.html" class="internal-link" target="_self" rel="noopener nofollow">📭 Server</a>
+<br><a data-href="🐞 etc" href="https://lts.kr/study/cs/🐞-etc.html" class="internal-link" target="_self" rel="noopener nofollow">🐞 etc</a>
+<br>
+<br><a data-href="🤠 Coding Test 풀이 모음" href="https://lts.kr/study/coding-test/🤠-coding-test-풀이-모음.html" class="internal-link" target="_self" rel="noopener nofollow">🤠 Coding Test 풀이 모음</a>
+<br><a data-href="👽 Algorithm" href="https://lts.kr/study/coding-test/👽-algorithm.html" class="internal-link" target="_self" rel="noopener nofollow">👽 Algorithm</a>
+<br>
+<br><a data-href="🔻 Redis 캐쉬 전략 - hello 서비스에 적용하여 성능개선 가능성" href="https://lts.kr/study/dev-seminar/🔻-redis-캐쉬-전략-hello-서비스에-적용하여-성능개선-가능성.html" class="internal-link" target="_self" rel="noopener nofollow">🔻 Redis 캐쉬 전략 - hello 서비스에 적용하여 성능개선 가능성</a>
+<br><a data-href="🔐 상품 투자하기 서비스 Lock기법 개선안" href="https://lts.kr/issue_troubleshooting/🔐-상품-투자하기-서비스-lock기법-개선안.html" class="internal-link" target="_self" rel="noopener nofollow">🔐 상품 투자하기 서비스 Lock기법 개선안</a>
+<br><a data-href="🔹 TDD에 대하여" href="https://lts.kr/study/dev-seminar/🔹-tdd에-대하여.html" class="internal-link" target="_self" rel="noopener nofollow">🔹 TDD에 대하여</a>
+<br><a data-href="🍂 JPA, Mybatis , Dead Lock이슈" href="https://lts.kr/study/dev-seminar/🍂-jpa,-mybatis-,-dead-lock이슈.html" class="internal-link" target="_self" rel="noopener nofollow">🍂 JPA, Mybatis , Dead Lock이슈</a>
+<br><a data-href="🥗 Spring Security_토큰-세션-쿠키-JWT 에 대하여" href="https://lts.kr/study/dev-seminar/🥗-spring-security_토큰-세션-쿠키-jwt-에-대하여.html" class="internal-link" target="_self" rel="noopener nofollow">🥗 Spring Security_토큰-세션-쿠키-JWT 에 대하여</a>
+<br><a data-href="📔 DB 테이블 설계, 어떻게 하는게 옳은 방법인가" href="https://lts.kr/study/dev-seminar/📔-db-테이블-설계,-어떻게-하는게-옳은-방법인가.html" class="internal-link" target="_self" rel="noopener nofollow">📔 DB 테이블 설계, 어떻게 하는게 옳은 방법인가</a>]]></description><link>https://lts.kr/study/📕-공부.html</link><guid isPermaLink="false">study/📕 공부.md</guid><dc:creator><![CDATA[taesung's Blog]]></dc:creator><pubDate>Mon, 19 May 2025 05:31:41 GMT</pubDate></item><item><title><![CDATA[🍂 JPA, Mybatis , Dead Lock이슈]]></title><description><![CDATA[<a class="tag" href="https://lts.kr/?query=tag:세미나" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#세미나</a> <a class="tag" href="https://lts.kr/?query=tag:이슈" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#이슈</a> <a class="tag" href="https://lts.kr/?query=tag:JPA" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#JPA</a> <a class="tag" href="https://lts.kr/?query=tag:Java" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Java</a> <a class="tag" href="https://lts.kr/?query=tag:Mybatis" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Mybatis</a> <a class="tag" href="https://lts.kr/?query=tag:DeadLock" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DeadLock</a> <br> <a href="https://lts.kr?query=tag:세미나" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#세미나">#세미나</a> <a href="https://lts.kr?query=tag:이슈" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#이슈">#이슈</a> <a href="https://lts.kr?query=tag:JPA" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#JPA">#JPA</a> <a href="https://lts.kr?query=tag:Java" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Java">#Java</a> <a href="https://lts.kr?query=tag:Mybatis" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Mybatis">#Mybatis</a> <a href="https://lts.kr?query=tag:DeadLock" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#DeadLock">#DeadLock</a><br>정보
+해당 내용은 Hello 주간 세미나 중 주제로 선정된,<br>
+투자하기 Dead Lock이슈 해결과정에 대한 설명이다.
+<br>
+<br>server log
+<br>Caused by: org.apache.ibatis.exceptions.PersistenceException:
+###Error querying database. Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30008ms.
+###The error occurred while executing a query
+###Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30008ms.
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30008ms.
+at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:197)
+at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:162)
+<br>해당 서버의 maximum-pool-size는 40으로 설정되어있으며,
+30초의 대기를 했음에도 Connection Pool을 할당받지 못한 상황이다.<br>위 조건 발생 코드 예시
+<br>public void deadLockMethod(){ mybatisSelectMethod(); jpaSelectMethod(); mybatisSelectMethod();
+}
+<br>
+<br>해당 로직은 몇개월 전 수정 된 이후, 계속해서 정상적으로 운영되던 코드이다.
+<br>순간적으로 트레픽이 몰린 상황을 가정하더라도, 40개의 pool이 30초간 점유를 지속한 것은 비정상 적이다.
+<br>
+<br>일반적으로 deadlock은 DB레벨에서의 트렌젝션이 서로 기다리는 경우에 많이 발생한다.
+<br>하지만, Stack trace를 확인하였을 때, DB레벨의 deadlock은 아니었다.
+<br>
+<br>서비스 로직에서 한 서비스가 커넥션풀을 반환하지 않고, 또 다른 서비스가 커넥션 풀을 요청하면 무한 순환이 발생할 가능성이 있다.
+<br>즉, 위 예시 코드에서 Connection Pool을 반환하지 않고 무한정 대기할 가능성이 가장 크다고 판단하였다.<br>public void deadLockMethod(){ mybatisSelectMethod(); jpaSelectMethod(); mybatisSelectMethod();
+}
+<br>커넥션 풀 상호 점유가 일어나고 있는 서비스 로직을 보았을 때, 특별한 점은 보이지 않는다.
+그러나, 한가지
+mybatis와 jpa를 혼용해서 사용중인 로직인 점이 눈에 뛴다.<br>@Transactional 이 걸려있지 않기 때문에, 순차적으로<br>mybatisSelectMethod(); : 커넥션 풀 점유 후 반환
+<br>jpaSelectMethod(); : 앤티티 매니저에서 커넥션 풀 점유 후 close(반환)
+<br>mybatisSelectMethod(); : 커넥션 풀 점유 후 반환
+(이때 커넥션풀이 전부 점유중이라면 대기 30s )
+<br>의 순서로 진행될 거라고 생각했다.<br>MyBatis는 내부적으로 JDBC 커넥션을 관리하지 않고, DataSource를 통해 커넥션을 가져옴.
+즉, Spring에서 설정한 커넥션 풀(HikariCP, DBCP 등)을 통해 커넥션을 관리한다.**<br>
+<br>MyBatis가 DataSource(ex: HikariCP)에서 커넥션을 요청
+<br>SQL 실행 (SELECT 문 수행)
+<br>커넥션이 자동 반환됨 (커밋/롤백 필요 없음)
+<br>jpa또한 커넥션 풀을 통해 커넥션을 관리하지만, 영속성 컨텍스트(엔티티 매니저)에 권한을 위임한다.
+앤티티 매니자 : 영속성 컨텍스트를 관리하는 핵심 객체<br>
+<br>jpa가 앤티티 매니저를 통해 DataSource(ex: HikariCP)에서 커넥션을 요청
+<br>SQL 실행 (find(SELECT 문) 수행)
+<br>엔티티 매니저 Close <br>커넥션 반환
+<br>
+<br>앤티티 매니저가 Connection Pool을 반환하는 시점은 언제인가
+<br><a data-tooltip-position="top" aria-label="https://velog.io/@seyoung755/%EC%82%BD%EC%A7%88%EA%B8%B0-%EC%98%81%EC%86%8D%EC%84%B1-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EC%9D%98-%EC%A7%80%EC%86%8D-%EB%B2%94%EC%9C%84-feat.-OSIV" rel="noopener nofollow" class="external-link is-unresolved" href="https://velog.io/@seyoung755/%EC%82%BD%EC%A7%88%EA%B8%B0-%EC%98%81%EC%86%8D%EC%84%B1-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EC%9D%98-%EC%A7%80%EC%86%8D-%EB%B2%94%EC%9C%84-feat.-OSIV" target="_self">영속성 컨텍스트의 지속 범위</a>
+-&gt; 서치 중 위 내용을 참고하여, OSIV 라는 것을 알게되었다.<br><img alt="Pasted image 20250314122906.png" src="https://lts.kr/사진-및-문서/pasted-image-20250314122906.png" style="width: 675px; max-width: 100%;" target="_self">
+OSIV란 View에 데이터를 전달할 때 지연 로딩 등의 이유로 영속성 컨텍스트를 지속해야 하는 경우에 사용되는 것이다.
+즉, 영속성 컨택스트(앤티티 매니저)의 생명주기를 웹 요청이 끝날 때 까지 연장하는 옵션이다.
+이 설정은 어플리케이션에 별다른 설정을 하지 않았다면 default ON 상태이다.<br>public void deadLockMethod(){ mybatisSelectMethod(); -- 1 jpaSelectMethod(); -- 2 mybatisSelectMethod(); -- 3
+}
+<br>다시 한번 위 코드를 보자.<br>트래픽이 몰려 커넥션 풀 40개가 전부 점유되었을 때를 가정하자.<br>@Service
+public class TestServiceImpl implements TestService { private final MybatisRepo mybatisRepo; private final JpaRepo jpaRepo; public TestServiceImpl(MybatisRepo mybatisRepo, JpaRepo jpaRepo) { this.mybatisRepo = mybatisRepo; this.jpaRepo = jpaRepo; } public void test() { // JPA jpaRepo.somethingRun(); // MyBatis mybatisRepo.somethingRun(); }
+} <br>조건<br>여러개의 클라언트의 요청이 동시에 발생
+<br>2개 이상의 클라이언트가 2번함수를 수행 후, 영속성 컨택스트를 유지 중
+<br>3번함수를 실행하려고 하나, 커넥션 풀이 가득차 대기상태에 돌입
+<br>실행<br>개발자는 2번함수는 동작을 완료한 후 커넥션풀이 해제되길 기대함.
+<br>OSIV 옵션이 켜져있을때, Lazy Loading이 view레이어 까지 이어짐.
+-즉, 동작이 완료되어도 커넥션풀을 해제하지 않음.
+<br>3번함수는 커넥션풀이 해제되길 무한정 기다림.
+<br>
+<br>해당 서버의 옵션을 끄면, 데이터 일관성 문제 및 커넥션 점유 문제를 해결 가능
+한계 : 해당 서버의 다른 서비스 까지 직접적인 영향을 끼침
+<br>
+<br>@Transactional어노테이션을 사용하더라도 결과는 마찬가지. <br>오히려 OSIV옵션 OFF이더라도 같은 트렌젝션 안에 있다면 영속성 컨텍스트를 놔주지 않기 때문에 결과는 동일.
+<br> 즉, DB커넥션 점유 시점의 차이만 생길 뿐, 반환시점의 차이는 없다.<br>단, 트렌젝션 매니저를 통합하여 코드를 리펙토링한다면 가능<br>
+<br>JAP로 함수를 단일화 한다면, 동일한 커넥션(HikariCP) 안에서 실행되어, 커넥션 풀 무한 대기/선점 문제를 방지할 수 있다.
+<br>또는 mybatis로 단일화 하더라도, 처리 즉시 커넥션풀을 반환하기 때문에 문제해결 가능
+<br><a data-tooltip-position="top" aria-label="https://velog.io/@12onetwo12/%EC%9E%A5%EC%95%A0%ED%9A%8C%EA%B3%A0-DBCP-Connection-Leak-%ED%95%B4%EA%B2%B0-%EC%97%AC%EC%A0%95-feat.HikariCP-Dead-lock-QueryDSL" rel="noopener nofollow" class="external-link is-unresolved" href="https://velog.io/@12onetwo12/%EC%9E%A5%EC%95%A0%ED%9A%8C%EA%B3%A0-DBCP-Connection-Leak-%ED%95%B4%EA%B2%B0-%EC%97%AC%EC%A0%95-feat.HikariCP-Dead-lock-QueryDSL" target="_self">JPA, Mybatis 동시 사용시 발생할 수 있는 HikariCP Dead lock 해결 여정 ( feat.OSIV )</a>]]></description><link>https://lts.kr/study/dev-seminar/🍂-jpa,-mybatis-,-dead-lock이슈.html</link><guid isPermaLink="false">study/Dev Seminar/🍂 JPA, Mybatis , Dead Lock이슈.md</guid><dc:creator><![CDATA[taesung's Blog]]></dc:creator><pubDate>Mon, 19 May 2025 05:31:41 GMT</pubDate><enclosure url="https://lts.kr/사진-및-문서/pasted-image-20250314122906.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://lts.kr/사진-및-문서/pasted-image-20250314122906.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[🔫 이슈 분석 &amp; 트러블슈팅]]></title><description><![CDATA[<a class="tag" href="https://lts.kr/?query=tag:이슈" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#이슈</a> <a class="tag" href="https://lts.kr/?query=tag:트러블슈팅" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#트러블슈팅</a> <a class="tag" href="https://lts.kr/?query=tag:모음" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#모음</a> <br> <a href="https://lts.kr?query=tag:이슈" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#이슈">#이슈</a> <a href="https://lts.kr?query=tag:트러블슈팅" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#트러블슈팅">#트러블슈팅</a> <a href="https://lts.kr?query=tag:모음" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#모음">#모음</a><br>이슈 / 트러블 슈팅
 크고 작은 이슈와, 그 해결 과정을 쓴 글 모음입니다.
 <br>
-<br><a data-href="🍧 JPA의 SAVE동작원리와 데이터 로그 이슈" href="https://lts.kr/issue_troubleshooting/🍧-jpa의-save동작원리와-데이터-로그-이슈.html" class="internal-link" target="_self" rel="noopener nofollow">🍧 JPA의 SAVE동작원리와 데이터 로그 이슈</a>
-<br><a data-href="🍂 JPA, Mybatis , Dead Lock이슈" href="https://lts.kr/study/dev-seminar/🍂-jpa,-mybatis-,-dead-lock이슈.html" class="internal-link" target="_self" rel="noopener nofollow">🍂 JPA, Mybatis , Dead Lock이슈</a> <br><a data-href="🌋 OSIV와 영속성 컨텍스트" href="https://lts.kr/study/cs/🌋-osiv와-영속성-컨텍스트.html" class="internal-link" target="_self" rel="noopener nofollow">🌋 OSIV와 영속성 컨텍스트</a>
+<br><a data-href="🍧 JPA의 영속성 상태와 데이터 Log 이슈" href="https://lts.kr/issue_troubleshooting/🍧-jpa의-영속성-상태와-데이터-log-이슈.html" class="internal-link" target="_self" rel="noopener nofollow">🍧 JPA의 영속성 상태와 데이터 Log 이슈</a>
+<br><a data-href="🍂 JPA, Mybatis , Dead Lock이슈" href="https://lts.kr/study/dev-seminar/🍂-jpa,-mybatis-,-dead-lock이슈.html" class="internal-link" target="_self" rel="noopener nofollow">🍂 JPA, Mybatis , Dead Lock이슈</a> <br><a data-href="🌋 OSIV란 무엇인가" href="https://lts.kr/study/cs/🌋-osiv란-무엇인가.html" class="internal-link" target="_self" rel="noopener nofollow">🌋 OSIV란 무엇인가</a>
 <br><a data-href="🪕 JPA 관련 용어 정리" href="https://lts.kr/study/cs/🪕-jpa-관련-용어-정리.html" class="internal-link" target="_self" rel="noopener nofollow">🪕 JPA 관련 용어 정리</a> <br><a data-href="🔐 상품 투자하기 서비스 Lock기법 개선안" href="https://lts.kr/issue_troubleshooting/🔐-상품-투자하기-서비스-lock기법-개선안.html" class="internal-link" target="_self" rel="noopener nofollow">🔐 상품 투자하기 서비스 Lock기법 개선안</a>
 <br><a data-href="⚔ StckOverflow 이슈와 QueryDSL" href="https://lts.kr/issue_troubleshooting/⚔-stckoverflow-이슈와-querydsl.html" class="internal-link" target="_self" rel="noopener nofollow">⚔ StckOverflow 이슈와 QueryDSL</a>
 <br>
 <br><a data-href="🚨 RSA 암호화 방식의 이해와 적용 (feat.취약성점검)" href="https://lts.kr/issue_troubleshooting/🚨-rsa-암호화-방식의-이해와-적용-(feat.취약성점검).html" class="internal-link" target="_self" rel="noopener nofollow">🚨 RSA 암호화 방식의 이해와 적용 (feat.취약성점검)</a> <br><a data-href="🤲분산 환경에서의 Cache 선택하기" href="https://lts.kr/study/cs/🤲분산-환경에서의-cache-선택하기.html" class="internal-link" target="_self" rel="noopener nofollow">🤲분산 환경에서의 Cache 선택하기</a>
 <br><a data-href="🍎 Redis로 Key관리하기" href="https://lts.kr/study/cs/🍎-redis로-key관리하기.html" class="internal-link" target="_self" rel="noopener nofollow">🍎 Redis로 Key관리하기</a> <br><a data-href="🚦 Spring Batch 트러블슈팅" href="https://lts.kr/issue_troubleshooting/🚦-spring-batch-트러블슈팅.html" class="internal-link" target="_self" rel="noopener nofollow">🚦 Spring Batch 트러블슈팅</a>
-<br><a data-href="⏰ Script 로딩 지연 문제 해결 .js" href="https://lts.kr/issue_troubleshooting/⏰-script-로딩-지연-문제-해결-.js.html" class="internal-link" target="_self" rel="noopener nofollow">⏰ Script 로딩 지연 문제 해결 .js</a>]]></description><link>https://lts.kr/project/🔫-이슈-분석-&amp;-트러블슈팅.html</link><guid isPermaLink="false">project/🔫 이슈 분석 &amp; 트러블슈팅.md</guid><dc:creator><![CDATA[taesung's Blog]]></dc:creator><pubDate>Fri, 16 May 2025 08:00:39 GMT</pubDate></item><item><title><![CDATA[3.1 스프링 컨테이너 생성]]></title><description><![CDATA[<a class="tag" href="https://lts.kr/?query=tag:SpringCoreBasic" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SpringCoreBasic</a> <a class="tag" href="https://lts.kr/?query=tag:SPRING" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SPRING</a> <a class="tag" href="https://lts.kr/?query=tag:lectur" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#lectur</a> <a class="tag" href="https://lts.kr/?query=tag:강의" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#강의</a> <a class="tag" href="https://lts.kr/?query=tag:컨테이너" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#컨테이너</a> <a class="tag" href="https://lts.kr/?query=tag:Bean" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Bean</a> <a class="tag" href="https://lts.kr/?query=tag:빈" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#빈</a> <br> <a href="https://lts.kr?query=tag:SpringCoreBasic" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SpringCoreBasic">#SpringCoreBasic</a> <a href="https://lts.kr?query=tag:SPRING" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#SPRING">#SPRING</a> <a href="https://lts.kr?query=tag:lectur" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#lectur">#lectur</a> <a href="https://lts.kr?query=tag:강의" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#강의">#강의</a> <a href="https://lts.kr?query=tag:컨테이너" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#컨테이너">#컨테이너</a> <a href="https://lts.kr?query=tag:Bean" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Bean">#Bean</a> <a href="https://lts.kr?query=tag:빈" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#빈">#빈</a><br>//스프링 컨테이너 생성
-ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
+<br><a data-href="⏰ Script 로딩 지연 문제 해결 .js" href="https://lts.kr/issue_troubleshooting/⏰-script-로딩-지연-문제-해결-.js.html" class="internal-link" target="_self" rel="noopener nofollow">⏰ Script 로딩 지연 문제 해결 .js</a>]]></description><link>https://lts.kr/project/🔫-이슈-분석-&amp;-트러블슈팅.html</link><guid isPermaLink="false">project/🔫 이슈 분석 &amp; 트러블슈팅.md</guid><dc:creator><![CDATA[taesung's Blog]]></dc:creator><pubDate>Mon, 19 May 2025 05:31:41 GMT</pubDate></item><item><title><![CDATA[🚞 Java 대용량 Excel 리펙토링]]></title><description><![CDATA[<a class="tag" href="https://lts.kr/?query=tag:프로젝트" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#프로젝트</a> <a class="tag" href="https://lts.kr/?query=tag:개발" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#개발</a> <a class="tag" href="https://lts.kr/?query=tag:JAVA" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#JAVA</a> <a class="tag" href="https://lts.kr/?query=tag:Excel" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Excel</a> <a class="tag" href="https://lts.kr/?query=tag:엑셀" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#엑셀</a> <a class="tag" href="https://lts.kr/?query=tag:성능개선" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#성능개선</a> <a class="tag" href="https://lts.kr/?query=tag:리펙토링" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#리펙토링</a> <br> <a href="https://lts.kr?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href="https://lts.kr?query=tag:개발" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개발">#개발</a> <a href="https://lts.kr?query=tag:JAVA" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#JAVA">#JAVA</a> <a href="https://lts.kr?query=tag:Excel" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Excel">#Excel</a> <a href="https://lts.kr?query=tag:엑셀" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#엑셀">#엑셀</a> <a href="https://lts.kr?query=tag:성능개선" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#성능개선">#성능개선</a> <a href="https://lts.kr?query=tag:리펙토링" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#리펙토링">#리펙토링</a><br>
+<br>기존 DataTables기반의 Excel export 기능의 성능 부진으로 인한 리펙토링
+<br>클라이언트 → 서버사이드 로의 로직 변경
+<br>DataTables 기반의 기존 처리
+** DataTables란? HTML 테이블을 동적으로 처리하기 위한 jQuery 플러그인이다.
+DataTables의 기능 중 Export 기능이 있는데, 클립보드 복사와 인쇄 등 의 기능도 지원한다.<br>
+기존의 Excel출력 기능이 이 DataTables의 Export 기능으로 만들어져 있었다.
 <br>
-ApplicationContext 를 스프링 컨테이너라 한다. ApplicationContext 는 인터페이스이다. <br>
-스프링 컨테이너는 XML을 기반으로 만들 수 있고, 애노테이션 기반의 자바 설정 클래스로 만들 수 있다. <br>
-<br>자바 설정 클래스를 기반으로 스프링 컨테이너(ApplicationContext)를 만들어보자. <br>new AnnotationConfigApplicationContext(AppConfig.class); → AppConfig.class를 파라미터로 넘긴다.
-<br>이 클래스는 ApplicationContext 인터페이스의 구현체이다. <br>참고
-정확히 스프링 컨테이너 를 부를 때, <br>BeanFactory
-<br>ApplicationContext 로 구분해서 불러야 하지만, BeanFactory를 직접 사용하는 경우는 거의 없어,<br>
-일반적으로 ApplicationContext를 스프링 컨테이너 라고 부른다.
-<br>new AnnotationConfigApplicationContext(AppConfig.class)
-<br>해당 코드로 AppConfig.class 파일을 넘기면 스프링 컨테이너가 생성된다.<br><img alt="스크린샷 2025-05-15 오후 10.33.42.png" src="https://lts.kr/사진-및-문서/스크린샷-2025-05-15-오후-10.33.42.png" target="_self">
-(스프링 컨테이너가 AppConfig.class의 구성 정보를 확인한 후 스프링 빈을 등록한다.)<br>@Bean
-public MemberService memberService() { return new MemberServiceImpl(memberRepository());
-}
-<br>Bean어노테이션이 붙은 메서드의 이름을 사용하여 빈을 등록한다.
-<br><img alt="스크린샷 2025-05-15 오후 10.38.28.png" src="https://lts.kr/사진-및-문서/스크린샷-2025-05-15-오후-10.38.28.png" target="_self"><br>** 빈 이름을 직접 부여할 수 있다. @Bean(name="memberService2")<br>
-<br>@Bean이 붙은 메서드로 의존관계를 주입한다.
-<br>단순히 자바 코드를 호출하는 것이 아닌, 싱글톤을 통해 객체 1개만 생성하도록 한다,
-<br><img alt="스크린샷 2025-05-15 오후 10.41.15.png" src="https://lts.kr/사진-및-문서/스크린샷-2025-05-15-오후-10.41.15.png" target="_self"><br>
-<br>스프링은 빈을 생성하고, 의존관계를 주입하는 단계가 나누어져 있다.
-<br>class ApplicationContextInfoTest { AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class); @Test @DisplayName("모든 빈 출력하기") void findAllBean() { String[] beanDefinitionNames = ac.getBeanDefinitionNames(); for (String beanDefinitionName : beanDefinitionNames) { Object bean = ac.getBean(beanDefinitionName); System.out.println("name=" + beanDefinitionName + " object=" + bean); } }]]></description><link>https://lts.kr/lectur/3.1-스프링-컨테이너-생성.html</link><guid isPermaLink="false">lectur/3.1 스프링 컨테이너 생성.md</guid><dc:creator><![CDATA[taesung's Blog]]></dc:creator><pubDate>Fri, 16 May 2025 08:00:15 GMT</pubDate><enclosure url="https://lts.kr/사진-및-문서/스크린샷-2025-05-15-오후-10.33.42.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://lts.kr/사진-및-문서/스크린샷-2025-05-15-오후-10.33.42.png"&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>
+DataTables는 클라이언트 측에서 브라우저 메모리를 사용하여 엑셀 파일을 생성한다.
+웹 HTML기반의 `DataTables Buttons`를 사용하여 데이터와 스타일을 엑셀 파일로 변환한다.<br>
+<br>브라우저 메모리 한계 <br>브라우저는 서버보다 메모리와 CPU 성능이 낮다.
+<br>대용량 데이터를 처리할 때 브라우저가 멈추거나 충돌할 가능성이 크다.
+<br>DataTables는 전체 데이터를 메모리에 적재한 후 엑셀로 변환한다.
+<br>Ajax로 부분 데이터를 불러오는 서버사이드 모드에서는 현재 페이지 데이터만 엑셀로 변환됩니다.
+<br>모든 데이터를 한꺼번에 가져와 처리하면 처리 한계에 도달할 가능성이 더 커진다. <br>ex) 10만 개 이상의 행을 엑셀로 내보내면 브라우저의 메모리 한계를 초과하여 강제로 종료되는 경우가 많다.<br>
+<br>파일 변환 속도 <br>JavaScript 기반으로 파일을 생성하는 데 시간이 많이 소요된다.
+<br>데이터 변환과 파일 생성이 모두 싱글 스레드로 이루어져 병렬 처리의 이점을 활용하지 못한다. <br>
+<br>스타일 커스터마이징의 복잡성 <br>엑셀 스타일을 커스터마이징하는 과정이 복잡하며, XML 직접 수정 방식은 성능 저하를 초래한다.
+<br>파일의 구조와 스타일을 모두 제어하려면 JavaScript 메모리 부담이 더욱 커진다. <br>정리
+소규모 데이터의 Export에는 간단한 설정으로 빠른 구현이 가능하나.<br>
+10만개 이상의 대용량 데이터에서는 한계가 명확하다.
+<br>... buttons: [ { extend: 'excel', name: 'Excel', text: 'Excel', filename: '엑셀출력_' + moment().format('YYYYMMDDhhmm'), title: '', action: serverSideButtonAction, customize: function(xlsx) { var sSh = xlsx.xl['styles.xml']; var lastXfIndex = $('cellXfs xf', sSh).length - 1; var sheet = xlsx.xl.worksheets['sheet1.xml']; // 스타일 적용 var n1 = '&lt;xf numFmtId="0" fontId="2" fillId="2" borderId="1" applyFont="1" applyFill="1" applyBorder="1" xfId="0" applyAlignment="1"&gt;' + '&lt;alignment horizontal="center"/&gt;&lt;/xf&gt;'; var n2 = '&lt;xf numFmtId="0" fontId="0" fillId="0" borderId="1" applyFont="0" applyFill="0" applyBorder="0" xfId="0" applyAlignment="0"&gt;' + '&lt;alignment horizontal="right"/&gt;&lt;/xf&gt;'; sSh.childNodes[0].childNodes[5].innerHTML += n1 + n2; var greyBoldCentered = lastXfIndex + 1; var value = lastXfIndex + 2; $('c', sheet).attr('s', value); $('row:first c', sheet).attr('s', greyBoldCentered); } }
+] <br>
+<br>서버의 자원 활용 <br>서버의 메모리와 CPU는 클라이언트보다 월등히 높아 대량 데이터 처리에 유리하다.
+<br>서버가 Excel 파일을 직접 생성하여 브라우저에 전송하므로 클라이언트의 부담이 줄어든다. <br>
+<br>대용량 데이터 처리 <br>수십만 건 이상의 데이터를 메모리 효율적으로 처리 가능
+<br>Apache POI와 같은 라이브러리는 스트리밍 방식으로 데이터를 파일에 직접 기록하여 메모리 과부하를 방지한다.
+<br>SXSSFWorkbook를 사용하여 매우 큰 데이터를 처리할 수 있습니다. <br>SXSSFWorkbook란?
+Apache POI 라이브러리에서 제공하는 대용량 Excel 파일 생성용 클래스<br>
+SXSSFWorkbook은 메모리 절약을 위해 디스크 기반 스트리밍 방식을 사용하여 메모리에 모든 데이터를 올리지 않고, 필요한 부분만 메모리에 유지한다.
+<br>
+<br>병렬 처리 <br>멀티스레딩을 통해 데이터 수집과 파일 생성을 병렬로 수행할 수 있다.
+<br>서버 자원을 최대로 활용하여 성능을 극대화할 수 있다. <br>
+<br>직접 파일 다운로드 <br>엑셀 파일을 서버에서 생성하고, URL을 통해 클라이언트가 다운로드 받도록 처리하여 브라우저 부담 최소화.
+<br>응답을 스트리밍 방식으로 처리하여 중간에 데이터가 소실되지 않도록 보장한다. <br>
+<br>엑셀 파일 처리 클래스
+<br>엑셀파일 생성, 데이터 추가, 스타일 적용 등
+<br>SXSSFWorkbook방식으로 스트리밍 처리 <br>대용량 처리에 적합
+<br>일정 개수 이상의 row를 디스크로 flush
+<br>OutOfMemory방지 <br>for (T t : data) { renderBody(t, rowNum, bodyStyle, totalStyle, accumStyle); if (rowNum % 10000 == 0 || rowNum == data.size()) { // 10,000건 마다 flush try { // 마지막 데이터의 경우, 남는 데이터 만큼만 flush, 아닌경우 10,000건씩 플러쉬 workbook.getSheet(sheetName).flushRows(rowNum == data.size() ? data.size() % 10000 : 10000); } catch (IOException e) { throw new BadRequestException(e.getMessage()); } } rowNum++; }
+<br>Excel Sheet정보 파라미터로 받아서 초기화
+<br>SimpleExcelMetaDataFactory를 이용하여 엑셀 메타데이터를 생성
+<br>전체적인 엑셀 다운로드까지의 모든 단계를 포함하고 실제 랜더링해서 셀을 생성하는것
+<br>
+<br>싱글톤 객체로 생성
+<br>엑셀로 출력할 DTO객체의 어노테이션을 파악해 메타데이터 정리
+<br>SimpleExcelMetadata객체를 생성하기 위한 기본 틀 제공(헤더, 스타일, 필드 목록 등)
+<br>CellStyleMap을 사용하여 각 필드의 스타일을 미리 캐싱 ( 스타일 중복 방지 )
+<br>private void applyCellStyle(CellStyleMap cellStyleMap, ExcelColumnStyle fieldStyle, ExcelColumnStyle classDefaultStyle, String fieldName, CellPart part, Workbook workbook) { /* dto 의 field 값에 스타일이 설정되어 있는지 체크 */ boolean styleCheck = fieldStyle.excelCellStyleClass() != NullStyle.class; /* dto 의 field 에 스타일 존재 유무에 따라, ExcelCellKey 의 fieldName 지정 */ String fieldNameKey = styleCheck ? fieldName : "DEFAULT"; /* dto 의 field 에 스타일 존재 유무에 따라 스타일 설정 */ ExcelColumnStyle style = styleCheck ? fieldStyle : classDefaultStyle; ExcelCellKey excelCellKey = ExcelCellKey.of(fieldNameKey, part); /* 해당 키값과 같은 키값을 가진 데이터가 있는 경우 styleMap 에 추가하지 않음 */ if (!cellStyleMap.valueCheck(excelCellKey)) { cellStyleMap.put(decideAppliedStyle(style, workbook), excelCellKey, workbook); } }
+<br>스타일, 정보등 dto 어노테이션 필드들을 읽어와서 파악하고, 가공하여 SimpleExcelFile에서 사용하기 쉽게 만드는 역할
+<br>
+<br>@DefaultExcelHeaderStyle: 엑셀 헤더에 기본 스타일 적용 <br>스타일: HeaderStyle.class <br>@DefaultExcelBodyStyle: 엑셀 데이터 행에 기본 스타일 적용 <br>스타일: BodyStyle.class <br>@DefaultExcelTotalRow: 합계 행에 기본 스타일 적용
+<br>@DefaultExcelHeaderStyle(style = @ExcelColumnStyle(excelCellStyleClass = HeaderStyle.class)) @DefaultExcelBodyStyle(style = @ExcelColumnStyle(excelCellStyleClass = BodyStyle.class)) @DefaultExcelTotalRow(style = @ExcelColumnStyle(excelCellStyleClass = TotalRowStyle.class)) public class PgDepositListExcelDto { @ExcelColumn(headerName = "No") private String rowNum; @ExcelColumn(headerName = "회원번호") private String mbNo; @ExcelColumn(headerName = "아이디") private String mbId; @ExcelColumn( headerName = "금액", bodyStyle = @ExcelColumnStyle(excelCellStyleClass = AmountStyle.class), totalRowStyle = @ExcelColumnStyle(excelCellStyleClass = TotalAmountStyle.class) ) private long amt;
+<br>실제 객체와 맵핑될 excelDTO객체
+<br>SimpleExcelMetaDataFactory에서 @ExcelColumn 어노테이션이 붙은 필드를 수집하여 리스트에 저장<br>public SimpleExcelMetadata createSimpleExcelMetaData( Class&lt;?&gt; type, Workbook workbook, SheetType sheetType, boolean hasGroupHeader) { List&lt;Field&gt; fields = getExcelAnnotatedFields(type); List&lt;String&gt; headerNames = new ArrayList&lt;&gt;(); for (Field field : fields) { ExcelColumn excelColumn = field.getAnnotation(ExcelColumn.class); // 어노테이션 체크 String headerName = excelColumn.headerName(); headerNames.add(headerName); applyCellStyle(cellStyleMap, excelColumn.headerStyle(), null, field.getName(), HEADER, workbook); } return new SimpleExcelMetadata(headerNames, fields, cellStyleMap, groups);
+} <br>
+<br>엑셀로 출력할 기존 객체 → CustomExcelDto로 파싱 후 simpleExcelWrite로 엑셀 출력
+<br>쿼리 데이터 조회시 페이징으로 메모리 관리
+<br>// 1) 엑셀 파일 생성 (데이터 -&gt; ExcelFile)
+SimpleExcelFile&lt;E&gt; excelFile = new SimpleExcelFile&lt;&gt;( simpleExcelWriteDto.getData(), simpleExcelWriteDto.getType(), simpleExcelWriteDto.getSheetName(), simpleExcelWriteDto.getSheetType() ); // 2) ExcelSetUpDto 간단히 만들어서, 기존 write(...) 메서드 사용 ExcelSetUpDto excelSetUpDto = ExcelSetUpDto.builder() .response(simpleExcelWriteDto.getResponse()) .excel(excelFile.getWorkbook()) .excelPreFileTitle(simpleExcelWriteDto.getPreFileTitle()) .excelFilePath(simpleExcelWriteDto.getFilePath()) .build(); // 3) 한 번에 write
+excelFile.write(excelSetUpDto);
+<br>case 1<br>입력 : 예치금 입금내역 셀 개수 : 40,000건 출력 : 실패
+<br>case 2<br>입력 : 예치금 입금내역 셀 개수 : 5,000건 출력 : 성공
+<br><img alt="Pasted image 20250516163401.png" src="https://lts.kr/사진-및-문서/pasted-image-20250516163401.png" target="_self">
+case1(4만건) - 메모리 사용율 80% 초과로 인한 순단 발생
+<img alt="Pasted image 20250516163522.png" src="https://lts.kr/사진-및-문서/pasted-image-20250516163522.png" target="_self">
+이후, case2(5천건) - 메모리 사용율 51%<br>
+<br>예치금 입금내역(9개의 속성 X 8,000필드) → 약 7만 셀
+<br>test case<br>입력 : 예치금 입금내역 셀 개수 : 70,000건 출력 : 성공
+<br>cpu 최대 사용율 17.2%
+<br><img alt="Pasted image 20250513101628.png" src="https://lts.kr/사진-및-문서/pasted-image-20250513101628.png" target="_self"><br>메모리 469MB
+<br><img alt="Pasted image 20250513101743.png" src="https://lts.kr/사진-및-문서/pasted-image-20250513101743.png" target="_self">
+<img alt="Pasted image 20250516154726.png" src="https://lts.kr/사진-및-문서/pasted-image-20250516154726.png" style="width: 725px; max-width: 100%;" target="_self"><br>case1<br>입력 : 예치금 입금내역 셀 개수 : 70,000건 출력 : 성공
+<br><img alt="Pasted image 20250516164727.png" src="https://lts.kr/사진-및-문서/pasted-image-20250516164727.png" target="_self">
+<img alt="Pasted image 20250516164550.png" src="https://lts.kr/사진-및-문서/pasted-image-20250516164550.png" target="_self">
+<img alt="Pasted image 20250516164537.png" src="https://lts.kr/사진-및-문서/pasted-image-20250516164537.png" target="_self">
+<img alt="Pasted image 20250516165030.png" src="https://lts.kr/사진-및-문서/pasted-image-20250516165030.png" target="_self"><br>메모리 사용율 약 36%
+<br>case2<br>입력 : 예치금 입금내역 셀 개수 : 140,000건 출력 : 성공
+<br><img alt="Pasted image 20250516165307.png" src="https://lts.kr/사진-및-문서/pasted-image-20250516165307.png" target="_self">
+<img alt="Pasted image 20250516165250.png" src="https://lts.kr/사진-및-문서/pasted-image-20250516165250.png" target="_self">
+<img alt="Pasted image 20250516165344.png" src="https://lts.kr/사진-및-문서/pasted-image-20250516165344.png" target="_self"><br>메모리 사용율 약 38%
+<br>case3<br>입력 : 예치금 입금내역 셀 개수 : 240,000건 출력 : 성공
+<br><img alt="Pasted image 20250516165523.png" src="https://lts.kr/사진-및-문서/pasted-image-20250516165523.png" target="_self">
+<img alt="Pasted image 20250516165617.png" src="https://lts.kr/사진-및-문서/pasted-image-20250516165617.png" target="_self">
+<img alt="Pasted image 20250516165627.png" src="https://lts.kr/사진-및-문서/pasted-image-20250516165627.png" target="_self"><br>메모리 사용율 약 40%
+<br>
+<br>예치금 입금내역(9개의 속성 X 666,000필드) → 약 600만 셀
+<br>
+<br>최대 엑셀 셀 수용량 약 100배 증가.]]></description><link>https://lts.kr/project/🚞-java-대용량-excel-리펙토링.html</link><guid isPermaLink="false">project/🚞 Java 대용량 Excel 리펙토링.md</guid><dc:creator><![CDATA[taesung's Blog]]></dc:creator><pubDate>Fri, 16 May 2025 08:56:51 GMT</pubDate><enclosure url="https://lts.kr/사진-및-문서/pasted-image-20250516163401.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://lts.kr/사진-및-문서/pasted-image-20250516163401.png"&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>

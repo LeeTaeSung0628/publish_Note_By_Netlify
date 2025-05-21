@@ -105,8 +105,11 @@ OSIV란 View에 데이터를 전달할 때 지연 로딩 등의 이유로 영속
 <li data-line="2" dir="auto"><em>3번함수</em>를 실행하려고 하나, 커넥션 풀이 가득차 <strong>대기상태에 돌입</strong></li>
 </ul></div><div class="el-p"><p dir="auto"><strong>실행</strong></p></div><div class="el-ol"><ol>
 <li data-line="0" dir="auto">개발자는 <em>2번함수</em>는 동작을 완료한 후 커넥션풀이 해제되길 기대함.</li>
-<li data-line="1" dir="auto">OSIV 옵션이 켜져있을때, <strong>Lazy Loading</strong>이 view레이어 까지 이어짐.
--즉, 동작이 완료되어도 <strong>커넥션풀을 해제하지 않음</strong>.</li>
+<li data-line="1" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>OSIV 옵션이 켜져있을때, <strong>Lazy Loading</strong>이 view레이어 까지 이어짐.
+<ul>
+<li data-line="2" dir="auto">즉, 동작이 완료되어도 <strong>커넥션풀을 해제하지 않음</strong>.</li>
+</ul>
+</li>
 <li data-line="3" dir="auto"><em>3번함수</em>는 커넥션풀이 <u>해제되길 무한정 기다림.</u></li>
 </ol></div><div class="el-hr"><hr></div></div></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="<font color=&quot;#9bbb59&quot;>해결방법</font>" dir="auto" class="heading" id="<font_color=&quot;#9bbb59&quot;>해결방법</font>"><font color="#9bbb59">해결방법</font></h1><div class="heading-children"><div class="el-h2 heading-wrapper"><h2 data-heading="1. OSIV옵션 OFF" dir="auto" class="heading" id="1._OSIV옵션_OFF"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>1. OSIV옵션 OFF</h2><div class="heading-children"><div class="el-ul"><ul>
 <li data-line="0" dir="auto">해당 서버의 옵션을 끄면, 데이터 일관성 문제 및 커넥션 점유 문제를 해결 가능

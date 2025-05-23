@@ -62,7 +62,7 @@
 <blockquote dir="auto">
 </blockquote>
 </li>
-<li data-line="5" dir="auto">id값을 명시적으로 지정한 후, <code>save()</code>를 수행하면 예외가 발생한다. 그 이유는, 명시적으로id를 지정하는 순간 non-null의 id값을 갖게되고, <code>isNew()</code>의 첫 호출부터 id가 null이 아니기 때문에, 기존에 존재하는 id값에 대해 persist를 수행하게 되어 예외가 발생하는 것이다.</li>
+<li data-line="5" dir="auto">id값을 명시적으로 지정한 후, <code>persist()</code>를 수행하면 예외가 발생한다. 그 이유는, 명시적으로id를 지정하는 순간 non-null의 id값을 갖게되고, <code>isNew()</code>의 첫 호출부터 id가 null이 아니기 때문에, 기존에 존재하는 id값에 대해 persist를 수행하게 되어 예외가 발생하는 것이다.</li>
 </ol>
 </div></div></div><div class="el-p"><p dir="auto">아래는 JPA save()의 isNew() 분기문</p></div><div class="el-pre"><pre class="language-java" tabindex="0"><code data-line="0" class="language-java is-loaded"><span class="token annotation punctuation">@Transactional</span>  
 <span class="token keyword">public</span> <span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">S</span> <span class="token keyword">extends</span> <span class="token class-name">T</span><span class="token punctuation">&gt;</span></span> <span class="token class-name">S</span> <span class="token function">save</span><span class="token punctuation">(</span><span class="token class-name">S</span> entity<span class="token punctuation">)</span> <span class="token punctuation">{</span>  
@@ -93,7 +93,7 @@
 </blockquote>
 </li>
 <li data-line="6" dir="auto">
-<p>물론, 이미 존재하는 id값을 갖는 엔티티를 <code>persist()</code>하면 pk중복 예외가 방생하는 것은 맞다. 영속성 컨텍스트에 등록여부를 판단 할 뿐, id값의 유뮤를 따지지(select하지) 않기 때문이다.</p>
+<p>물론, 이미 존재하는 id값을 갖는 엔티티를 <code>persist()</code>하면 pk중복 예외가 방생하는 것은 맞다. <code>persist()</code>는 영속성 컨텍스트에 등록여부를 판단 할 뿐, id값의 유뮤를 따지지(select하지) 않기 때문이다.</p>
 </li>
 <li data-line="7" dir="auto">
 <p><em>하지만 이러한 상황이 발생하는 것이 <u>정상적인 상황에서 불가능하다.</u></em></p>

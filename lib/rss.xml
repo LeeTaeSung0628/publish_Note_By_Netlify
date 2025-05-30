@@ -1,167 +1,37 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Category]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://lts.kr/</link><image><url>https://lts.kr/lib/media/favicon.png</url><title>Category</title><link>https://lts.kr/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 28 May 2025 07:04:05 GMT</lastBuildDate><atom:link href="https://lts.kr/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 28 May 2025 07:04:03 GMT</pubDate><copyright><![CDATA[taesung's Blog]]></copyright><ttl>60</ttl><dc:creator>taesung's Blog</dc:creator><item><title><![CDATA[🤑 ANONI Chat 개발기 - CICD 구성]]></title><description><![CDATA[<a class="tag" href="https://lts.kr/?query=tag:프로젝트" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#프로젝트</a> <a class="tag" href="https://lts.kr/?query=tag:개발" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#개발</a> <a class="tag" href="https://lts.kr/?query=tag:개요" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#개요</a> <a class="tag" href="https://lts.kr/?query=tag:구상" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#구상</a> <a class="tag" href="https://lts.kr/?query=tag:인프라" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#인프라</a> <a class="tag" href="https://lts.kr/?query=tag:CIDE" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#CIDE</a> <a class="tag" href="https://lts.kr/?query=tag:Jenkins" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Jenkins</a> <a class="tag" href="https://lts.kr/?query=tag:Vultr" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Vultr</a> <br> <a href="https://lts.kr?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href="https://lts.kr?query=tag:개발" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개발">#개발</a> <a href="https://lts.kr?query=tag:개요" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개요">#개요</a> <a href="https://lts.kr?query=tag:구상" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#구상">#구상</a> <a href="https://lts.kr?query=tag:인프라" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#인프라">#인프라</a> <a href="https://lts.kr?query=tag:CIDE" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#CIDE">#CIDE</a> <a href="https://lts.kr?query=tag:Jenkins" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Jenkins">#Jenkins</a> <a href="https://lts.kr?query=tag:Vultr" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Vultr">#Vultr</a><br>이전 시간에 Clude환경에 docker컨테이너를 구동시키는 것 까지 진행하였다.<br>▶ <a data-href="🤑 ANONI Chat 개발기 - infra setup" href="https://lts.kr/project/new-project/🤑-anoni-chat-개발기-infra-setup.html" class="internal-link" target="_self" rel="noopener nofollow">🤑 ANONI Chat 개발기 - infra setup</a><br>이번 시간에는 CICD환경을 구성하겠다.<br>graph TD A[GitHub Push] B[Jenkins Git Pull] C[Gradle Build Jar] D[Docker Build &amp; Tag] E[DockerHub Push] F[서버 Pull + Deploy]
-<br>여기서 해당 방식은 Docker-in-Docker(DinD)방식 중 DooD 방식으로 진행한다.
-<br>DinD란? - “도커 안에 도커를 실행한다”는 개념.<br>DinD의 종류 <br>일반적인 경우에, Docker에서 Jenkins이미지를 pull받아 컨테이너를 실행시키는 것이 가장 간단하다.
-하지만, 이번엔 같은(Ubuntu)서버 내에서 Jenkins와 Spring서버를 Docker로 함께 띄울예정 이다.<br>그렇게 때문에 위에서 기술한 DooD방식으로 Docker로 띄운 Jenkins안에서 Docker를 제어해야한다.<br>이를위해 /var/run/docker.sock을 마운트 해야한다.<br>현재 스펙은 ubuntu:22.04 / Spring 3.3.12 / Java17 이다.<br># 베이스 이미지 설정
-FROM ubuntu:22.04 LABEL maintainer="xotjd794613@naver.com" #- **비대화식 모드 설정**
-# apt 설치 시 발생하는 `timezone 설정`, `Y/N 질문` 등을 자동으로 건너뛰기 위한 설정
-ENV DEBIAN_FRONTEND=noninteractive # 1. UBUNTU 시스템 패키지`s 설치
-RUN apt-get update &amp;&amp; apt-get install -y \ curl gnupg2 ca-certificates apt-transport-https software-properties-common \ git sudo unzip wget lsb-release openjdk-17-jdk \ &amp;&amp; apt-get clean # 2. 사용자 hello 생성 및 sudo 권한 부여(비밀번호 묻지 않도록)
-# Docker CLI 사용이나 기타 시스템 명령 실행 시 필요
-RUN useradd -m -d /home/hello -s /bin/bash hello \ &amp;&amp; echo "hello ALL=(ALL) NOPASSWD:ALL" &gt;&gt; /etc/sudoers ENV JENKINS_HOME=/home/hello # 3. Docker CLI 설치 (DooD 방식) - Jenkins 내부에서 `docker build`, `docker run`, `docker push` 명령 사용 가능
-# Jenkins가 호스트의 Docker 데몬을 **/var/run/docker.sock**로 제어하게 되는 구조를 전제로 셋팅
-RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /usr/share/keyrings/docker.gpg &amp;&amp; \ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" \ &gt; /etc/apt/sources.list.d/docker.list &amp;&amp; \ apt-get update &amp;&amp; apt-get install -y docker-ce-cli # 4. Jenkins WAR 다운로드 (LTS 버전)
-# /usr/share/jenkins.war 경로에 배치
-ENV JENKINS_VERSION=2.440.1
-RUN wget https://get.jenkins.io/war-stable/${JENKINS_VERSION}/jenkins.war -O /usr/share/jenkins.war # 5. 포트 노출
-# → 도커 실행 시 `-p 8080:8080 -p 50000:50000` 으로 외부 연결 가능
-EXPOSE 8080
-EXPOSE 50000 # 6. Jenkins 실행
-# Dockerfile 실행 이후 명령은 `jenkins` 사용자 권한으로 실행됨 (보안을 위해 루트 권한 피함)
-USER hello
-WORKDIR /var/hello # `8080` 포트에서 Jenkins 서비스가 시작됨
-CMD ["java", "-jar", "/usr/share/jenkins.war"] <br>Docker이미지 빌드<br>jenkins-dood이름으로 이미지 생성
-<br>docker build -t jenkins-dood .
-docker tag jenkins-dood xotjd794613/jenkins-dood:v0.01
-<br> <br>push/pull 후 docker.sock 사용하여 실행<br>docker run -d \ --name jenkins-dood \ -p 8080:8080 \ -v /var/run/docker.sock:/var/run/docker.sock \ jenkins-dood:v0.01 <br>
-permission denied 오류
-<img alt="do-messenger_screenshot_2025-05-28_11_42_51.png" src="https://lts.kr/사진-및-문서/do-messenger_screenshot_2025-05-28_11_42_51.png" target="_self">
-<br>즉, /var/run/docker.sock 파일에 접근할 수 있는 권한이 없기 때문에 발생한 오류이다.
-<img alt="do-messenger_screenshot_2025-05-28_12_03_35.png" src="https://lts.kr/사진-및-문서/do-messenger_screenshot_2025-05-28_12_03_35.png" target="_self"><br>다음과 같이 docker.sock에 접근권한은 root만이 갖고 있기 때문에,
-현재 계정을 docker그룹에 포함시켜야 한다.<br>
-<br>Dockerfile에 아래 내용을 추가하기
-<br># + Docker 그룹id확인 후(GID: 999)에 추가 (호스트와 GID 일치) RUN groupadd -g 999 docker &amp;&amp; \ useradd -m -d /home/hello -s /bin/bash -G docker hello &amp;&amp; \ echo "hello ALL=(ALL) NOPASSWD:ALL" &gt;&gt; /etc/sudoers
-<br>또는<br>root계정으로 변경 후 권한주기<br>sudo usermod -aG docker hello(계정명)
-<br>문제 해결 후,
-ip주소:8080으로 접속하면 jenkins admin 페이지를 확인할 수 있다.<br><img alt="Pasted image 20250528142521.png" src="https://lts.kr/사진-및-문서/pasted-image-20250528142521.png" target="_self"><br>위 페이지에서 admin passwd를 찾기 위해서는 ssh에서 다음 명령어를 통해 알 수 있다.<br>docker exec -it jenkins-dood cat /home/hello/secrets/initialAdminPassword
-<br>admin 로그인 완료
-<br><img alt="Pasted image 20250528145922.png" src="https://lts.kr/사진-및-문서/pasted-image-20250528145922.png" target="_self"><br>
-<br>Jenkins 커뮤니티에서 추천하는 기본 플러그인 모음을 자동 설치해줌
-<br>여기엔 Git, Pipeline, Credentials 등 필수 요소가 포함되어 있음
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Category]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://lts.kr/</link><image><url>https://lts.kr/lib/media/favicon.png</url><title>Category</title><link>https://lts.kr/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 30 May 2025 09:02:12 GMT</lastBuildDate><atom:link href="https://lts.kr/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 30 May 2025 09:02:11 GMT</pubDate><copyright><![CDATA[taesung's Blog]]></copyright><ttl>60</ttl><dc:creator>taesung's Blog</dc:creator><item><title><![CDATA[젠킨스 파이프라인 설정]]></title><description><![CDATA[<br><br><br><br><br>credential은 도커 허브, 깃 허브 등 젠킨스가 빌드하고 배포하는 과정에서 필요한 로그인 정보들이라고 생각하면 된다.<br>설정은 Jenkins 관리 &gt; Security &gt; Credential로 진입
+<img alt="Pasted image 20250529235812.png" src="https://lts.kr/사진-및-문서/pasted-image-20250529235812.png" target="_self"><br>이후 system &gt; global credential &gt; 우측 상단에 add credential<br>여기서 도커 허브와 git hub 등 인증 정보를 기입
+<a rel="noopener nofollow" class="external-link is-unresolved" href="https://velog.io/@uiop5487/Jenkins-CICD-Pipeline-%EA%B5%AC%EC%B6%95" target="_self">https://velog.io/@uiop5487/Jenkins-CICD-Pipeline-%EA%B5%AC%EC%B6%95</a>
+해당 블로그 참고<br><br>아이템 접속(Annoni-App-Prod) &gt; 구성으로 접속<br>자동 빌드보다는 수동빌드가 더 안전하다고 생각해서 폴링이나 웹훅 방식을 사용하지 않는다.<br><img alt="Pasted image 20250529235718.png" src="https://lts.kr/사진-및-문서/pasted-image-20250529235718.png" target="_self">
+그래서 트리거는 아무것도 설정하지 않음<br>회사에서 처럼 직접 젠킨스에서 빌드를 눌러야 빌드가 시작됨<br>스크립트 작성<br>pipeline { agent any environment { // Docker Hub 정보 DOCKER_HUB_REPO = 'xotjd794613/my-spring-app' //도커 허브 레포 넣기 DOCKER_IMAGE_TAG = String.format("v0.%02d", BUILD_NUMBER as Integer) DOCKER_LATEST_TAG = 'latest' // 컨테이너 정보 CONTAINER_NAME = 'annonichat-app' //주석 1번 : 컨테이너 실행 명령어 수정 필요 CONTAINER_PORT = '8000:8080' // Docker Hub Credentials ID (Jenkins에서 설정할 이름) DOCKER_HUB_CREDENTIALS = 'docker-hub-credentials' //도커허브 credential에서 지정한 이름 } //2025.05.29 여기까지 했음.. stages { stage('1. Git Clone') { steps { echo '📂 GitHub에서 최신 코드 가져오기...' checkout scm sh 'git log --oneline -5' } } stage('2. Build') { steps { echo '🔨 Spring Boot 애플리케이션 빌드 중...' script { // Gradle 프로젝트인 경우 if (fileExists('gradlew')) { sh './gradlew clean build -x test' } // Maven 프로젝트인 경우 else if (fileExists('pom.xml')) { sh 'mvn clean compile -DskipTests' } else { error('Gradle 또는 Maven 프로젝트가 아닙니다!') } } } } stage('3. Test') { steps { echo '🧪 단위 테스트 실행 중...' script { try { if (fileExists('gradlew')) { sh './gradlew test' } else if (fileExists('pom.xml')) { sh 'mvn test' } } catch (Exception e) { echo "⚠️ 테스트 실패: ${e.getMessage()}" // 테스트 실패 시 빌드 중단하려면 아래 주석 해제 // throw e } } } post { always { // 테스트 결과 게시 (선택사항) script { if (fileExists('build/test-results/test/*.xml')) { publishTestResults testResultsPattern: 'build/test-results/test/*.xml' } else if (fileExists('target/surefire-reports/*.xml')) { publishTestResults testResultsPattern: 'target/surefire-reports/*.xml' } } } } } stage('4. Docker Image Build') { steps { echo '🐳 Docker 이미지 빌드 중...' script { // JAR 파일 위치 확인 def jarFile = '' if (fileExists('build/libs/')) { jarFile = sh(script: 'find build/libs -name "*.jar" | grep -v plain', returnStdout: true).trim() } else if (fileExists('target/')) { jarFile = sh(script: 'find target -name "*.jar"', returnStdout: true).trim() } if (jarFile) { echo "JAR 파일 발견: ${jarFile}" // Docker 이미지 빌드 sh """ docker build -t ${DOCKER_HUB_REPO}:${DOCKER_IMAGE_TAG} . docker tag ${DOCKER_HUB_REPO}:${DOCKER_IMAGE_TAG} ${DOCKER_HUB_REPO}:${DOCKER_LATEST_TAG} """ echo "✅ Docker 이미지 빌드 완료: ${DOCKER_HUB_REPO}:${DOCKER_IMAGE_TAG}" } else { error('JAR 파일을 찾을 수 없습니다!') } } } } stage('5. Docker Image Push') { steps { echo '📤 Docker Hub에 이미지 푸시 중...' script { // Docker Hub 로그인 및 푸시 withCredentials([usernamePassword(credentialsId: "${DOCKER_HUB_CREDENTIALS}", passwordVariable: 'DOCKER_PASSWORD', usernameVariable: 'DOCKER_USERNAME')]) { sh """ echo ${DOCKER_PASSWORD} | docker login -u ${DOCKER_USERNAME} --password-stdin docker push ${DOCKER_HUB_REPO}:${DOCKER_IMAGE_TAG} docker push ${DOCKER_HUB_REPO}:${DOCKER_LATEST_TAG} docker logout """ } } echo "✅ Docker 이미지 푸시 완료!" } } stage('6. Deploy') { steps { echo '🚀 최신 이미지로 배포 중...' script { try { // 기존 컨테이너 중지 및 삭제 sh "docker stop ${CONTAINER_NAME} || true" sh "docker rm ${CONTAINER_NAME} || true" // 기존 이미지 삭제 (용량 절약) sh "docker rmi ${DOCKER_HUB_REPO}:${DOCKER_LATEST_TAG} || true" // 최신 이미지 Pull sh "docker pull ${DOCKER_HUB_REPO}:${DOCKER_LATEST_TAG}" // 새 컨테이너 실행 sh """ docker run -d \\ --name ${CONTAINER_NAME} \\ --restart always \\ -p ${CONTAINER_PORT} \\ ${DOCKER_HUB_REPO}:${DOCKER_LATEST_TAG} """ // 컨테이너 상태 확인 sh "sleep 10" // 컨테이너 시작 대기 sh "docker ps | grep ${CONTAINER_NAME}" echo "✅ 배포 완료! 컨테이너 ${CONTAINER_NAME}가 실행 중입니다." } catch (Exception e) { echo "❌ 배포 실패: ${e.getMessage()}" throw e } } } } } post { always { echo '🧹 빌드 후 정리 작업...' // 빌드 과정에서 생성된 임시 이미지들 정리 sh 'docker image prune -f || true' } success { echo '🎉 CI/CD 파이프라인이 성공적으로 완료되었습니다!' // 성공 시 알림 (Slack, Email 등 설정 가능) } failure { echo '❌ CI/CD 파이프라인이 실패했습니다.' // 실패 시 알림 설정 가능 } }
+}
 <br>
-!만약 특정한 커스텀 설정이나 최소 설치 환경이 필요한 경우엔 오른쪽을 선택해서 수동으로 선택할 수 있음
-<br>에러
-<img alt="Pasted image 20250528151309.png" src="https://lts.kr/사진-및-문서/pasted-image-20250528151309.png" style="width: 625px; max-width: 100%;" target="_self"><br>
-자동 설치중 대부분에서 fail이 발생했다.
-<br>
-<br>ubuntu서버가 외부망에 붙지 못했나??
-<img alt="Pasted image 20250528151438.png" src="https://lts.kr/사진-및-문서/pasted-image-20250528151438.png" target="_self">
-<br> 핑 확인시 정상적으로 붙어있는 모습<br>그렇다면 무엇이 문제일까?<br>호스트 Ubuntu는 인터넷 연결이 되어 있어도, Docker 컨테이너 내부는 DNS나 라우팅 설정이 다를 수 있다.
-<br>이를 위한 확인. (컨테이너에 붙기)<br>docker exec -it jenkins-dood bash
-# 컨테이너에 붙은 후 `apt update로 확인`
-<br><img alt="Pasted image 20250528152038.png" src="https://lts.kr/사진-및-문서/pasted-image-20250528152038.png" style="width: 700px; max-width: 100%;" target="_self"><br>E: Could not open lock file /var/lib/apt/lists/lock - open (13: Permission denied)
-E: Unable to lock directory /var/lib/apt/lists/
-<br>다음과 같은 로그를 보고 큰 단서를 얻을 수 있었다.
-이 에러는 컨테이너 내부에서 apt update를 실행하려 했지만, 현재 사용자가 루트 권한이 아니기 때문에 실패한 것이다.<br>jenkins dockerfile 중,,,<br># 6. Jenkins 실행
-# Dockerfile 실행 이후 명령은 `jenkins` 사용자 권한으로 실행됨 (보안을 위해 루트 권한 피함)
-USER hello
-WORKDIR /var/hello
-<br>다음 부분을 보면 알 수 있다.<br>하지만...
-이미 hello 계정에는 /etc/sudoers sudo권한을 준것을 볼 수있다.<br>RUN groupadd -g 999 docker &amp;&amp; \ useradd -m -d /home/hello -s /bin/bash -G docker hello &amp;&amp; \ echo "hello ALL=(ALL) NOPASSWD:ALL" &gt;&gt; /etc/sudoers
-<br>]]></description><link>https://lts.kr/project/new-project/🤑-anoni-chat-개발기-cicd-구성.html</link><guid isPermaLink="false">project/New Project/🤑 ANONI Chat 개발기 - CICD 구성.md</guid><dc:creator><![CDATA[taesung's Blog]]></dc:creator><pubDate>Wed, 28 May 2025 06:28:47 GMT</pubDate><enclosure url="https://lts.kr/사진-및-문서/do-messenger_screenshot_2025-05-28_11_42_51.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://lts.kr/사진-및-문서/do-messenger_screenshot_2025-05-28_11_42_51.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[apt-get 도구 업데이트/업그레이드]]></title><description><![CDATA[<br><br>
-<br><br><br><br>sudo apt-get update ( )
-sudo apt-get upgrade ( apt-get 도구 업그레이드 )
-<br> gui를 설치하기 전에 apt-get 도구를 update와 upgrade를 진행한다.<br><br><br>sudo apt-get install --no-install-recommends ubuntu-desktop ( 최소 설치 )
-sudo apt-get install ubuntu-desktop ( 전체 설치 )
-<br>
-<br>여타 desktop버전의 프로그램들 ex) 인터넷 브라우저 등 을 설치할 계획이라면, 전체 설치를 하면되고,
-<br>DB, jenkins 등 서버용 셋팅만을 원하면 최소 설치를 하기를 권장한다.<br><br><br>sudo apt-get install indicator-appmenu-tools ( hud service not connected 오류 해결 ) sudo apt-get install indicator-session ( 계정, 세션 아이콘 추가 ) sudo apt-get install indicator-datetime ( 상단 메뉴 시간 추가 ) sudo apt-get install indicator-applet-complete ( 볼륨 조절 아이콘 추가 )
-<br>
-<br>gui 패키지 설치 후 발생할 수 있는 hud service not connected 오류와 관련하여 indicator-appmenu-tools
-패키지를 통해 해결할 수 있다.
-<br>나머지 패키지는 사용자의 입장에서 직관적인 편의성을 위한 패지키로써 선택사항입니다.
-<br><br><br>startx ( xwindow 환경 실행 ) sudo systemctl isolate graphical.target ( runlevel 5 일회성 실행 / init 실행 ) sudo systemctl enable graphical.target ( runlevel 5 영구히 실행 / 활성 ) sudo systemctl set-default graphical.target ( runlevel 5 영구히 실행 / inittab 수정 )
-<br>
-<br>CLI에 startx 명령어를 입력하면 xwindow 환경이 실행이 되면서 gui 환경으로 전환이 된다.
-<br>startx 명령어 없이 영구히 적용하기 위해 위 명령어를 입력하면 된다.
-<br><br><br>gradlew bootJar
-docker build -t anonichat .
-docker tag anonichat xotjd794613/anonichat:v0.02
-<br>
-<br>docker build -t "생성할 이미지 이름" "도커파일을 찾을 위치"
-<br>docker tag "복사할 이미지 원본 이름" "복사된 이미지 이름":"태그"
-<br><br><br>curl -fsSL https://get.docker.com | sh
-docker login
-sudo docker pull [image이름]:[태그]
-<br><br><br>sudo docker run -p 8000:8080 "계정명"/"이미지이름":"태그"
-<br><br><br>docker run -d \ --name jenkins-dood \ -p 8080:8080 \ -v /var/run/docker.sock:/var/run/docker.sock \ xotjd794613/jenkins-dood:v0.01
-<br>
-<br>--name jenkins-dood \ 실행시킬 컨테이너 이름
-<br>-p 8080:8080 \ 실행시킬 포트번호
-<br>xotjd794613/jenkins-dood:v0.01 실행시킬 이미지 명
-<br><br><br>su -
-<br><br><br>(권한부여 / root계정에서 실행)<br>sudo usermod -aG docker hello(계정명)
-]]></description><link>https://lts.kr/project/new-project/ubuntu-sever-명령어-모음.html</link><guid isPermaLink="false">project/New Project/UBUNTU sever 명령어 모음.md</guid><dc:creator><![CDATA[taesung's Blog]]></dc:creator><pubDate>Wed, 28 May 2025 05:36:35 GMT</pubDate></item><item><title><![CDATA[🤑 ANONI Chat 개발기 - infra setup]]></title><description><![CDATA[<a class="tag" href="https://lts.kr/?query=tag:프로젝트" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#프로젝트</a> <a class="tag" href="https://lts.kr/?query=tag:개발" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#개발</a> <a class="tag" href="https://lts.kr/?query=tag:개요" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#개요</a> <a class="tag" href="https://lts.kr/?query=tag:구상" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#구상</a> <a class="tag" href="https://lts.kr/?query=tag:인프라" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#인프라</a> <a class="tag" href="https://lts.kr/?query=tag:Vultr" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Vultr</a> <a class="tag" href="https://lts.kr/?query=tag:docker" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#docker</a> <br> <a href="https://lts.kr?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href="https://lts.kr?query=tag:개발" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개발">#개발</a> <a href="https://lts.kr?query=tag:개요" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개요">#개요</a> <a href="https://lts.kr?query=tag:구상" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#구상">#구상</a> <a href="https://lts.kr?query=tag:인프라" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#인프라">#인프라</a> <a href="https://lts.kr?query=tag:Vultr" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#Vultr">#Vultr</a> <a href="https://lts.kr?query=tag:docker" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#docker">#docker</a><br><img alt="Pasted image 20250523150517.png" src="https://lts.kr/사진-및-문서/pasted-image-20250523150517.png" target="_self"><br>스프링 이니셜라이저를 사용하여 java기반의 SpringBoot서버 초기 셋팅
-<br>보안과 확장성을 고려하여 Cloud 서버를 구축하고자 Vultr를 선택하였다.<br>▶ <a data-href="🌩 Cloud-Native Architecture 분석" href="https://lts.kr/study/cs/🌩-cloud-native-architecture-분석.html" class="internal-link" target="_self" rel="noopener nofollow">🌩 Cloud-Native Architecture 분석</a><br>그 중 Vultr를 선택한 이유는,<br>성능 대비 가격 효율성 <br>AWS, Azure 등 대형 클라우드 서비스보다 저렴하면서, 높은 성능의 인스턴스를 제공한다. <br>다양한 인스턴스 옵션 <br>공유 CPU / Cloud GPU 등 다양한 유형의 인스턴스를 지원한다. <br>유연한 요금제와 과금 <br>Vultr는 시간 단위로, 사용한 만큼 실시간으로 과금된다.
-<br>또한, 포인트를 먼저 결제하고, 그 포인트에서 차감되는 방식으로 초과 과금을 방지하고, 예상하기도 쉽다. <br><img alt="do-messenger_screenshot_2025-05-26_11_02_05.png" src="https://lts.kr/사진-및-문서/do-messenger_screenshot_2025-05-26_11_02_05.png" target="_self"><br>서비스 완성 이전까지 월 5달러 스펙의 인스턴스를 띄워놓을 계획이다.
-<br>추후, 언제나 server스펙을 업그레이드 할 수 있기 때문이다.
-<br>Main ServerOS로는 linux Ubuntu를 선택하였다.
-<br>Vultr 인스턴스 생성후, console에서 최소사양으로 ubuntu desktop을 설지하겠다.<br>sudo apt-get update ( apt-get 도구 업데이트 )
-sudo apt-get upgrade ( apt-get 도구 업그레이드 )
-<br> gui를 설치하기 전에 apt-get 도구를 update와 upgrade를 진행한다.<br>sudo apt-get install --no-install-recommends ubuntu-desktop ( 최소 설치 )
-sudo apt-get install ubuntu-desktop ( 전체 설치 )
-<br>여타 desktop버전의 프로그램들 ex) 인터넷 브라우저 등 을 설치할 계획이라면, 전체 설치를 하면되고,
-<br>DB, jenkins 등 서버용 셋팅만을 원하면 최소 설치를 하기를 권장한다.<br>sudo apt-get install indicator-appmenu-tools ( hud service not connected 오류 해결 ) sudo apt-get install indicator-session ( 계정, 세션 아이콘 추가 ) sudo apt-get install indicator-datetime ( 상단 메뉴 시간 추가 ) sudo apt-get install indicator-applet-complete ( 볼륨 조절 아이콘 추가 )
-<br>gui 패키지 설치 후 발생할 수 있는 hud service not connected 오류와 관련하여 indicator-appmenu-tools
-패키지를 통해 해결할 수 있다.
-<br>나머지 패키지는 사용자의 입장에서 직관적인 편의성을 위한 패지키로써 선택사항입니다.
-<br>startx ( xwindow 환경 실행 ) sudo systemctl isolate graphical.target ( runlevel 5 일회성 실행 / init 실행 ) sudo systemctl enable graphical.target ( runlevel 5 영구히 실행 / 활성 ) sudo systemctl set-default graphical.target ( runlevel 5 영구히 실행 / inittab 수정 )
-<br>CLI에 startx 명령어를 입력하면 xwindow 환경이 실행이 되면서 gui 환경으로 전환이 된다.
-<br>startx 명령어 없이 영구히 적용하기 위해 위 명령어를 입력하면 된다.
-<img alt="do-messenger_screenshot_2025-05-26_11_42_35.png" src="https://lts.kr/사진-및-문서/do-messenger_screenshot_2025-05-26_11_42_35.png" style="width: 675px; max-width: 100%;" target="_self">
-<br>
-우분투의 runlevel
-<br>0 : poweroff.target 1 : rescue.target 2, 3, 4 : multi-user.target ( CLI 환경 )
-5 : graphical.target ( GUI 환경 )
-6 : reboot.target <br># 1. 베이스 이미지 (명시적으로 22.04)
-FROM ubuntu:22.04 # 2. 작성자 정보 LABEL maintainer="xotjd794613@naver.com" # 3. 환경변수 설정 (비인터랙티브 설치) ENV DEBIAN_FRONTEND=noninteractive # 4. 패키지 업데이트 및 JDK 17 설치 RUN apt-get update &amp;&amp; \ apt-get install -y openjdk-17-jdk curl &amp;&amp; \ apt-get clean &amp;&amp; rm -rf /var/lib/apt/lists/* # 5. 작업 디렉토리 설정 WORKDIR /app # 6. 실행할 jar 파일 복사 (빌드된 .jar)
-COPY ./build/libs/AnoniChat-0.0.1-SNAPSHOT.jar /app/AnoniChatApp.jar # 7. 포트 노출 (SpringBoot default: 8080)
-EXPOSE 8080 # 8. 기본 실행 명령 ENTRYPOINT ["java", "-jar", "/app/AnoniChatApp.jar"]
-<br>Spring 프로젝트의 Gradle 빌드 후 .jar파일의 위치를 기준으로 docker파일을 작성해주었다.
-<br>이슈
-다음과 같은 디렉토리 상황에서 <img alt="do-messenger_screenshot_2025-05-26_17_57_47 1.png" src="https://lts.kr/사진-및-문서/do-messenger_screenshot_2025-05-26_17_57_47-1.png" target="_self">
-경로를 찾을 수 없는 오류가 발생하였다. <br>C:\Users\User\Desktop\AnoniChat\
-├── App\
-│ ├── Dockerfile
-│ └── build\
-│ └── libs\
-│ └── AnoniChat-0.0.1-SNAPSHOT.jar
-<br>.dockerignore 파일<br>.gradle build target *.iml *.log .DS_Store .git
-<br>이그노어 파일에 build를 추가시켜놓고도 모르고있었다..
-<br>문제 해결 후<br>gradle빌드 후 도커 이미지파일 생성
-<br>gradlew bootJar
-docker build -t anonichat .
-<br>docker image 생성 완료.<br><img alt="Pasted image 20250527095229.png" src="https://lts.kr/사진-및-문서/pasted-image-20250527095229.png" style="width: 650px; max-width: 100%;" target="_self">
-<img alt="Pasted image 20250526182326.png" src="https://lts.kr/사진-및-문서/pasted-image-20250526182326.png" target="_self"><br>build : .(현재 디렉토리)를 기준으로 빌드하여 이미지 생성
-<br>tag : 현재 anonichat이미지에 태그를 붙여 복사
-<br>docker build -t xotjd794613/anonichat:v0.02 .
-docker tag anonichat xotjd794613/anonichat:v0.02
-docker push "계정명"/anonichat-app:latest
-<br>이미지 생성후 UBUNTU서버에서
-<br>docker 다운로드
-<br>docker 로그인
-<br>image pull 받기
-<br>curl -fsSL https://get.docker.com | sh
-docker login
-sudo docker pull [image이름]:[태그]
-<br>sudo docker run -p 8000:8080 "계정명"/anonichat:latest
-<br><img alt="Pasted image 20250527103130.png" src="https://lts.kr/사진-및-문서/pasted-image-20250527103130.png" style="width: 925px; max-width: 100%;" target="_self"><br><img alt="Pasted image 20250527144405.png" src="https://lts.kr/사진-및-문서/pasted-image-20250527144405.png" style="width: 575px; max-width: 100%;" target="_self"><br>
-<br>개발자는 로컬에서 .jar로 실행
-<br>서버는 Ubuntu, 다른 Java 버전, 설정 다를 수 있음 → "로컬에선 되는데 서버에선 안 돼"
-<br>
-<br>Dockerfile에 명시된 Java 버전, 종속성, 실행 방식이 모두 이미지에 포함
-<br>개발/운영 환경 차이가 없음<br>
-→ "로컬에선 되는데 서버에선 안 돼" 문제가 사라짐
-<br>
-<br>.jar 파일을 빌드하고 → 서버에 복사하고 → 수동으로 백업 &amp; 재실행
-<br>
-<br>Jenkins에서 docker build → docker push → 서버에서 docker pull &amp;&amp; restart
-<br>단일 명령으로 배포 자동화됨
-<br>docker run xotjd794613/anonichat:v0.02 docker run xotjd794613/anonichat:v0.01<br>→ 이전 버전으로 즉시 롤백 가능<br>과거 방식은 .jar 백업/복원 과정이 필요했음<br>
-Docker는 이미지 자체가 버전 단위 배포본<br>
-<br>서버에 JDK 없어도 됨
-<br>Gradle, Maven, OpenJDK, Node 등 포함해서 독립 실행 가능
-<br>Java + Redis + Nginx 등 멀티 컨테이너 서비스화도 가능
-<br>→ 서버는 단지 "Docker 런타임"만 제공하면 됨<br>
-<br>시스템에 직접 설치하는 것이 아님 → 호스트 오염 없음
-<br>서버를 초기화하거나 다른 서버로 옮겨도 → Docker만 깔고 이미지 pull
-<br>→ 서버 관리와 인프라 유지 부담 최소화<br>]]></description><link>https://lts.kr/project/new-project/🤑-anoni-chat-개발기-infra-setup.html</link><guid isPermaLink="false">project/New Project/🤑 ANONI Chat 개발기 - infra setup.md</guid><dc:creator><![CDATA[taesung's Blog]]></dc:creator><pubDate>Wed, 28 May 2025 05:30:41 GMT</pubDate><enclosure url="https://lts.kr/사진-및-문서/pasted-image-20250523150517.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://lts.kr/사진-및-문서/pasted-image-20250523150517.png"&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>
+<br>컨테이너 실행 명령어 변경이 필요한 이유 : 기존 명령어는 container name이 지정되어 있지 않아서 도커가 무작위로 생성했었다.
+그래서 스크립트에 필요한 컨테이너 이름을 고정적으로 사용하기 위해 명령어를 바꿔야한다.
+변경 명령어 : docker run -d \ --name anonichat-app \ -p 8081:8080 \ xotjd794613/anonichat:v0.04
+]]></description><link>https://lts.kr/project/new-project/젠킨스-파이프라인-설정.html</link><guid isPermaLink="false">project/New Project/젠킨스 파이프라인 설정.md</guid><dc:creator><![CDATA[taesung's Blog]]></dc:creator><pubDate>Fri, 30 May 2025 09:01:56 GMT</pubDate><enclosure url="https://lts.kr/사진-및-문서/pasted-image-20250529235812.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://lts.kr/사진-및-문서/pasted-image-20250529235812.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[젠킨스 설정 초기화 문제]]></title><description><![CDATA[<br><br><br><br> 젠킨스 웹페이지에 접속 &gt; 초기 비밀번호 입력 &gt; admin id/pw 생성 &gt; 플러그인 설치 &gt; 젠킨스 메인 화면 까지 이미 마친 상황이었다.
+그런데 퇴근하고 집에서 젠킨스에 다시 접속하니까 초기 비밀번호 입력부터 다시 시작되었다.<br>분명히 모든 설정을 끝냈는데 다시 하는게 뭔가 이상했다.<br>초기 비밀번호는 항상 입력하고 들어가야했다.
+분명 문제가 있다 생각하고 연구를 해보았다.<br><br>문제는 볼륨 마운트였다.<br>볼륨 마운트는 컨테이너의 문제점인 컨테이너 삭제시 모든 데이터가 사라지는것을 방지하는 기술이다.<br>컨테이너의 문제점:<br>컨테이너 생성 → 데이터 저장 → 컨테이너 삭제 → 모든 데이터 사라짐
+<br>볼륨 마운트 해결책:<br>컨테이너 생성 → 데이터 저장 → 컨테이너 삭제 → 데이터는 호스트에 보존
+새 컨테이너 생성 → 기존 데이터 그대로 사용
+<br>즉 기존에는 볼륨 마운트를 적용하지 않아서 젠킨스 초기 설정 정보가 모두 날아갔고
+집에와서 다시 접속해보니 처음부터 다시 시작한 것이다.<br>기존 컨테이너 실행 명령어<br>docker run -d \ --name jenkins-dood \ -p 8080:8080 \ -v /var/run/docker.sock:/var/run/docker.sock \ jenkins-dood:v0.06
+<br>볼륨 마운트 적용한 컨테이너 실행 명령어<br>docker run -d \ —name jenkins-dood \ -p 8080:8080 \ -v /var/run/docker.sock:/var/run/docker.sock \ -v jenkins_home:/home/hello \ ##볼륨 마운트 적용 명령어 xotjd794613/jenkins-dood:v0.06
+<br>단순한 한줄이지만 컨테이너에서 생성된 데이터를 해당 디렉토리에 저장해놓고
+컨테이너가 다시 실행되더라도 필요한 데이터를 지정한 디렉토리에서 꺼내서 사용한다.<br><br>위의 명령어로 컨테이너를 다시 실행하고 젠킨스에 접속했다.
+그리고 모든 초기설정을 마쳤다.<br><img alt="Pasted image 20250529221139.png" src="https://lts.kr/사진-및-문서/pasted-image-20250529221139.png" target="_self">
+브라우저 캐시 삭제 후 다시 접속하니 이제 초기 비밀번호 입력하는 것도 안나오고
+정상적으로 젠킨스 로그인 화면이 나온다.]]></description><link>https://lts.kr/project/new-project/젠킨스-설정-초기화-문제.html</link><guid isPermaLink="false">project/New Project/젠킨스 설정 초기화 문제.md</guid><dc:creator><![CDATA[taesung's Blog]]></dc:creator><pubDate>Fri, 30 May 2025 09:01:47 GMT</pubDate><enclosure url="https://lts.kr/사진-및-문서/pasted-image-20250529221139.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://lts.kr/사진-및-문서/pasted-image-20250529221139.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[🔑 Docker Image를 Git repo로 관리하기]]></title><description><![CDATA[<a class="tag" href="https://lts.kr/?query=tag:프로젝트" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#프로젝트</a> <a class="tag" href="https://lts.kr/?query=tag:개발" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#개발</a> <a class="tag" href="https://lts.kr/?query=tag:인프라" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#인프라</a> <a class="tag" href="https://lts.kr/?query=tag:docker" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#docker</a> <a class="tag" href="https://lts.kr/?query=tag:git" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#git</a> <br> <a href="https://lts.kr?query=tag:프로젝트" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#프로젝트">#프로젝트</a> <a href="https://lts.kr?query=tag:개발" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#개발">#개발</a> <a href="https://lts.kr?query=tag:인프라" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#인프라">#인프라</a> <a href="https://lts.kr?query=tag:docker" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#docker">#docker</a> <a href="https://lts.kr?query=tag:git" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#git">#git</a><br>
+<br>Docker 이미지를 Docker Hub가 아닌 GitHub 팀 저장소에서 관리하려면,<br>GitHub Container Registry(GHCR) 를 활용하여 이미지를 저장하고 배포할 수 있다. <br>
+<br>GitHub와의 통합 <br>GHCR는 GitHub와 통합되어 있어, 저장소와 연동하여 컨테이너 이미지를 관리할 수 있다. <br>퍼블릭 및 프라이빗 이미지 지원 <br>이미지를 퍼블릭 또는 프라이빗으로 설정할 수 있어, 접근 제어가 가능하다. <br>세분화된 권한 관리 <br>Personal Access Token(PAT)을 사용하여 세분화된 권한 설정이 가능하다. <br>GitHub Actions와의 연동 <br>GitHub Actions를 통해 CI/CD 파이프라인을 구축하고, 자동으로 이미지를 빌드하고 GHCR에 푸시할 수 있다. <br>GHCR에 이미지를 푸시하려면 인증이 필요하다. 이를 위해 Personal Access Token(PAT)을 생성하고 설정해야 한다.<br>
+GitHub 계정의 Settings &gt; Developer settings &gt; Personal access tokens로 이동한다. <br>
+Generate new token을 클릭하고, 권한을 선택 <br>write:packages <br>read:packages <br>delete:packages (선택 사항)
+<img alt="Pasted image 20250530173935.png" src="https://lts.kr/사진-및-문서/pasted-image-20250530173935.png" target="_self"> <br>
+토큰을 생성하고 안전한 곳에 저장 후 <br>
+로컬 환경에서 다음 명령어로 Docker에 로그인한다. <br>echo $CR_PAT | docker login ghcr.io -u YOUR_GITHUB_USERNAME --password-stdin
+<br>여기서 CR_PAT는 생성한 토큰을 환경 변수로 설정하는 명령어 이다.<br>Dockerfile이 있는 디렉토리에서 다음 명령어로 이미지를 빌드하고 태깅한다.<br>docker build -t ghcr.io/"OWNER"/"REPOSITORY"/"IMAGE_NAME":"TAG" .
+<br>OWNER는 GitHub 사용자명 또는 조직명입니다. <br>REPOSITORY는 이미지와 연결할 GitHub 저장소명입니다. <br>IMAGE_NAME은 이미지의 이름입니다.
+<br>docker build -t ghcr.io/my-org/my-repo/my-app:latest .
+<br>빌드한 이미지를 GHCR에 푸시한다.<br>docker push ghcr.io/OWNER/REPOSITORY/IMAGE_NAME:TAG
+<br>예시:<br>docker push ghcr.io/my-org/my-repo/my-app:latest
+<br>푸시가 완료되면, 해당 이미지는 GitHub의 Packages 섹션에서 확인할 수 있다.<br>GHCR에 푸시된 이미지는 다음 명령어로 사용할 수 있다.<br>docker pull ghcr.io/OWNER/REPOSITORY/IMAGE_NAME:TAG
+<br>또한, Kubernetes 등의 오케스트레이션 도구에서 해당 이미지를 참조하여 배포할 수 있다.<br>이러한 과정을 통해 Docker 이미지를 GitHub 팀 저장소에서 효과적으로 관리하고 배포할 수 있다.<br>또한, 추가적인 자동화나 보안 설정이 필요하다면, GitHub Actions의 다양한 기능과 GHCR의 접근 제어 설정을 활용할 수 있다.]]></description><link>https://lts.kr/project/new-project/🔑-docker-image를-git-repo로-관리하기.html</link><guid isPermaLink="false">project/New Project/🔑 Docker Image를 Git repo로 관리하기.md</guid><dc:creator><![CDATA[taesung's Blog]]></dc:creator><pubDate>Fri, 30 May 2025 08:39:36 GMT</pubDate><enclosure url="https://lts.kr/사진-및-문서/pasted-image-20250530173935.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://lts.kr/사진-및-문서/pasted-image-20250530173935.png"&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>

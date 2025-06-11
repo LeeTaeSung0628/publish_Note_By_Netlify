@@ -82,9 +82,9 @@
         if(!menuBtn){
             menuBtn = document.createElement('button');
             menuBtn.id = 'floatingMenuBtn';
-            menuBtn.innerHTML = '+';
             container.appendChild(menuBtn);
         }
+        menuBtn.innerHTML = '+'; // reset to collapsed state on page load
         let topBtn = document.getElementById('scrollToTopBtn');
         if(!topBtn){
             topBtn = document.createElement('button');

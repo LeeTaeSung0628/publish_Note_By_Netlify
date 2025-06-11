@@ -152,10 +152,11 @@
             }
         };
         homeBtn.onclick = ()=>{
+            const homeURL = new URL(rootPath + "🏠-taesung's-blog.html", location.href);
             if(typeof window.setActiveDocument === 'function'){
-                window.setActiveDocument("🏠-taesung's-blog.html");
+                window.setActiveDocument(homeURL);
             }else{
-                location.href = rootPath + "🏠-taesung's-blog.html";
+                location.href = homeURL.href;
             }
         };
         window.addEventListener('resize', updateScrollButtonPosition);

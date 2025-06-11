@@ -28,24 +28,20 @@
     transform: scale(1.2);
 }
 </style>
-
 <script>
-(function() {
-    document.documentElement.classList.add("theme-dark");
-    document.documentElement.classList.remove("theme-light");
 
-    function forceDarkTheme() {
-        document.body.classList.add("theme-dark");
-        document.body.classList.remove("theme-light");
-
-        let themeToggle = document.querySelector(".theme-toggle-input");
-        if (themeToggle) {
+(function(){
+    const rootPath = document.querySelector('meta#root-path')?.getAttribute('root-path') || './';
+    function forceDarkTheme(){
+        document.body.classList.add('theme-dark');
+        document.body.classList.remove('theme-light');
+        const themeToggle = document.querySelector('.theme-toggle-input');
+        if(themeToggle){
             themeToggle.checked = true;
             themeToggle.disabled = true;
         }
-
-        let topbar = document.querySelector(".topbar-content");
-        if (topbar) {
+        const topbar = document.querySelector('.topbar-content');
+        if(topbar){
             topbar.innerHTML = `
                 <a class="tree-item-self is-clickable nav-file-title" href="🏠-taesung's-blog.html" data-path="🏠-taesung's-blog.html">
                     <div class="tree-item-inner nav-file-title-content">🏠 taesung's Blog</div>
@@ -53,131 +49,131 @@
         }
     }
 
-//-------------
+    function handleResize(){ updateScrollButtonPosition(); }
 
-    // 트리거 / 핸들러
-    function handleResize(entries) {
-        for (let entry of entries) {
-            updateScrollButtonPosition();
-        }
-    }
-
-    //스크롤 페이지 크기 변경 감지
-    function observeMarkdownPreviewResize() {
-        let container = document.querySelector(".sidebar-right.sidebar");
-        if (!container) return;
-
-        // ResizeObserver 인스턴스 생성
-        const resizeObserver = new ResizeObserver(handleResize);
+    let resizeObserver;
+    function observeMarkdownPreviewResize(){
+        if(resizeObserver) return;
+        const container = document.querySelector('.sidebar-right.sidebar');
+        if(!container) return;
+        resizeObserver = new ResizeObserver(handleResize);
         resizeObserver.observe(container);
     }
 
-    //페이지 크기 변경시 동적으로 위치 변경
-    function updateScrollButtonPosition() {
-        let sidebar = document.querySelector(".sidebar-right.sidebar");
-        let menuBtn = document.getElementById("floatingMenuBtn");
-        let topBtn = document.getElementById("scrollToTopBtn");
-        let backBtn = document.getElementById("goBackBtn");
-        if (!sidebar || !menuBtn) return;
-
-        let sidebarRect = sidebar.getBoundingClientRect();
-        let buttonWidth = 60; // 버튼 너비
-        let padding = 90; // 우측 여백
-
-        let right = `${window.innerWidth - sidebarRect.left - buttonWidth + padding}px`;
+    function updateScrollButtonPosition(){
+        const sidebar = document.querySelector('.sidebar-right.sidebar');
+        const menuBtn = document.getElementById('floatingMenuBtn');
+        const topBtn = document.getElementById('scrollToTopBtn');
+        const backBtn = document.getElementById('goBackBtn');
+        if(!sidebar || !menuBtn) return;
+        const sidebarRect = sidebar.getBoundingClientRect();
+        const buttonWidth = 60;
+        const padding = 90;
+        const right = `${window.innerWidth - sidebarRect.left - buttonWidth + padding}px`;
         menuBtn.style.right = right;
-        if (topBtn) topBtn.style.right = right;
-        if (backBtn) backBtn.style.right = right;
+        if(topBtn) topBtn.style.right = right;
+        if(backBtn) backBtn.style.right = right;
     }
 
-    function addFloatingButtons() {
-        let container = document.querySelector(".sidebar-right.sidebar");
-        if (!container) return;
-
-        let menuBtn = document.getElementById("floatingMenuBtn");
-        if (!menuBtn) {
-            menuBtn = document.createElement("button");
-            menuBtn.id = "floatingMenuBtn";
-            menuBtn.innerHTML = "+";
+    function addFloatingButtons(){
+        const container = document.querySelector('.sidebar-right.sidebar');
+        if(!container) return;
+        let menuBtn = document.getElementById('floatingMenuBtn');
+        if(!menuBtn){
+            menuBtn = document.createElement('button');
+            menuBtn.id = 'floatingMenuBtn';
+            menuBtn.innerHTML = '+';
             container.appendChild(menuBtn);
         }
-
-        let topBtn = document.getElementById("scrollToTopBtn");
-        if (!topBtn) {
-            topBtn = document.createElement("button");
-            topBtn.id = "scrollToTopBtn";
-            topBtn.innerHTML = "&#9650;";
+        let topBtn = document.getElementById('scrollToTopBtn');
+        if(!topBtn){
+            topBtn = document.createElement('button');
+            topBtn.id = 'scrollToTopBtn';
+            topBtn.innerHTML = '&#9650;';
             container.appendChild(topBtn);
         }
-
-        let backBtn = document.getElementById("goBackBtn");
-        if (!backBtn) {
-            backBtn = document.createElement("button");
-            backBtn.id = "goBackBtn";
-            backBtn.innerHTML = "&#8592;";
+        let backBtn = document.getElementById('goBackBtn');
+        if(!backBtn){
+            backBtn = document.createElement('button');
+            backBtn.id = 'goBackBtn';
+            backBtn.innerHTML = '&#8592;';
             container.appendChild(backBtn);
         }
-
-        // 기본 위치 세팅
-        menuBtn.style.position = "fixed";
-        menuBtn.style.bottom = "60px";
-        menuBtn.style.right = "60px";
-        menuBtn.style.opacity = "1";
-        menuBtn.style.visibility = "visible";
-
-        [topBtn, backBtn].forEach((btn, idx) => {
-            btn.style.position = "fixed";
+        menuBtn.style.position = 'fixed';
+        menuBtn.style.bottom = '60px';
+        menuBtn.style.right = '60px';
+        menuBtn.style.opacity = '1';
+        menuBtn.style.visibility = 'visible';
+        [topBtn, backBtn].forEach((btn, idx)=>{
+            btn.style.position = 'fixed';
             btn.style.bottom = `${60 + (idx + 1) * 70}px`;
-            btn.style.right = "60px";
-            btn.style.zIndex = "99998";
-            btn.style.opacity = "0";
-            btn.style.visibility = "hidden";
+            btn.style.right = '60px';
+            btn.style.zIndex = '99998';
+            btn.style.opacity = '0';
+            btn.style.visibility = 'hidden';
         });
-
         updateScrollButtonPosition();
-
-        menuBtn.addEventListener("click", function() {
-            let visible = topBtn.style.visibility === "visible";
-            if (visible) {
-                topBtn.style.opacity = "0";
-                topBtn.style.visibility = "hidden";
-                backBtn.style.opacity = "0";
-                backBtn.style.visibility = "hidden";
-                menuBtn.innerHTML = "+";
-            } else {
-                topBtn.style.opacity = "1";
-                topBtn.style.visibility = "visible";
-                backBtn.style.opacity = "1";
-                backBtn.style.visibility = "visible";
-                menuBtn.innerHTML = "×";
+        menuBtn.onclick = ()=>{
+            const visible = topBtn.style.visibility === 'visible';
+            if(visible){
+                topBtn.style.opacity = '0';
+                topBtn.style.visibility = 'hidden';
+                backBtn.style.opacity = '0';
+                backBtn.style.visibility = 'hidden';
+                menuBtn.innerHTML = '+';
+            }else{
+                topBtn.style.opacity = '1';
+                topBtn.style.visibility = 'visible';
+                backBtn.style.opacity = '1';
+                backBtn.style.visibility = 'visible';
+                menuBtn.innerHTML = '×';
             }
-        });
-
-        topBtn.addEventListener("click", function() {
-            let scrollContainer = document.querySelector(".markdown-preview-view");
-            if(!scrollContainer){
-               return;
+        };
+        topBtn.onclick = ()=>{
+            const scrollContainer = document.querySelector('.markdown-preview-view');
+            if(scrollContainer) scrollContainer.scrollTo({top:0,behavior:'smooth'});
+        };
+        backBtn.onclick = ()=>{
+            if(history.length > 1){
+                history.back();
+            }else{
+                location.href = rootPath;
             }
-            scrollContainer.scrollTo({ top: 0, behavior: "smooth" });
-        });
-
-        backBtn.addEventListener("click", function() {
-            history.back();
-        });
-
-        window.addEventListener("resize", updateScrollButtonPosition);
+        };
+        window.addEventListener('resize', updateScrollButtonPosition);
     }
 
-    let setActiveDocument1 = window.setActiveDocument; // 기존 함수 저장
+    function initFloatingMenu(){
+        forceDarkTheme();
+        addFloatingButtons();
+        updateScrollButtonPosition();
+        observeMarkdownPreviewResize();
+    }
 
-    window.setActiveDocument = function(...args) {
-        if (typeof setActiveDocument1 === "function") {
-            setActiveDocument1.apply(this, args); // 원래 함수 실행
-            forceDarkTheme();
-            addFloatingButtons();
-            updateScrollButtonPosition();
-            return observeMarkdownPreviewResize();
+    function patchSetActiveDocument(){
+        if(typeof window.setActiveDocument !== 'function' || window.setActiveDocument._patched) return;
+        const original = window.setActiveDocument;
+        window.setActiveDocument = function(...args){
+            const result = original.apply(this,args);
+            initFloatingMenu();
+            return result;
+        };
+        window.setActiveDocument._patched = true;
+        initFloatingMenu();
+    }
+
+    function waitForPatch(){
+        if(typeof window.setActiveDocument === 'function'){
+            patchSetActiveDocument();
+        }else{
+            setTimeout(waitForPatch,100);
         }
-    };
+    }
+
+    if(document.readyState === 'loading'){
+        document.addEventListener('DOMContentLoaded', waitForPatch);
+    }else{
+        waitForPatch();
+    }
 })();
 </script>

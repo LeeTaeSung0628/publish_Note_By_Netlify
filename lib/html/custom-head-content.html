@@ -44,10 +44,22 @@
         }
         const topbar = document.querySelector('.topbar-content');
         if(topbar){
+            const homeUrl = (rootPath.endsWith('/') ? rootPath : rootPath + '/') + "🏠-taesung's-blog.html";
             topbar.innerHTML = `
-                <a class="tree-item-self is-clickable nav-file-title" href="🏠-taesung's-blog.html" data-path="🏠-taesung's-blog.html">
+                <a class="tree-item-self is-clickable nav-file-title" href="${homeUrl}" data-path="🏠-taesung's-blog.html">
                     <div class="tree-item-inner nav-file-title-content">🏠 taesung's Blog</div>
                 </a>`;
+            const homeLink = topbar.querySelector('a');
+            if(homeLink){
+                homeLink.addEventListener('click', evt => {
+                    evt.preventDefault();
+                    if(typeof window.setActiveDocument === 'function'){
+                        window.setActiveDocument(homeLink);
+                    }else{
+                        location.href = homeUrl;
+                    }
+                });
+            }
         }
     }
 

@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "06445ccce1166c04",
+        "id": "907c2ec9fce7279d",
         "type": "tabs",
         "children": [
           {
-            "id": "1324e876f98e9a9e",
+            "id": "5add43bfee25d2b3",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "새 탭"
+              "type": "split-diff-view",
+              "state": {
+                "aFile": "🏠-taesung's-blog.html",
+                "bFile": "🏠-taesung's-blog.html",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: 🏠-taesung's-blog.html"
             }
           }
         ]
@@ -172,8 +176,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5cc2f7897ebd9692",
+  "active": "5add43bfee25d2b3",
   "lastOpenFiles": [
+    "project/new-project/☘-anoni-chat-db-setup.html",
     "README.md",
     "project/new-project/ubuntu-bash-명령어-모음.html",
     "project/new-project/nginx-docker-compose.yml.html",

@@ -177,7 +177,10 @@
 
     function addUtterances(){
         const section = document.querySelector('.markdown-preview-sizer.markdown-preview-section');
-        if(!section) return;
+        if(!section){
+            if(retry > 0) setTimeout(()=>addUtterances(retry-1),100);
+            return;
+        }
 
         const existing = document.getElementById('utterances-wrapper');
         if(existing) existing.remove();

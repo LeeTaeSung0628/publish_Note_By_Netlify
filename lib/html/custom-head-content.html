@@ -99,6 +99,22 @@
         if(homeBtn) homeBtn.style.right = right;
     }
 
+    function addUtterancView(){
+const commentDiv = document.createElement('div');
+commentDiv.id = 'comments';
+document.querySelector('.markdown-preview-view').appendChild(commentDiv);
+
+const script = document.createElement('script');
+script.src = 'https://utteranc.es/client.js';
+script.async = true;
+script.setAttribute('repo', 'LeeTaeSung0628/publish_Note_By_Netlify');
+script.setAttribute('issue-term', 'pathname');
+script.setAttribute('label', 'comments');
+script.setAttribute('crossorigin', 'anonymous');
+script.setAttribute('theme', 'github-dark-orange');
+commentDiv.appendChild(script);
+    }
+
     function addFloatingButtons(){
         const container = document.querySelector('.sidebar-right.sidebar');
         if(!container) return;
@@ -180,6 +196,7 @@
         addFloatingButtons();
         updateScrollButtonPosition();
         observeMarkdownPreviewResize();
+        addUtterancView();
     }
 
     function patchSetActiveDocument(){
@@ -208,4 +225,5 @@
         waitForPatch();
     }
 })();
+
 </script>

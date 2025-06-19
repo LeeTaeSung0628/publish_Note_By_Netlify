@@ -184,14 +184,14 @@
 
         const wrapper = document.createElement('div');
         wrapper.id = 'utterances-wrapper';
-        wrapper.innerHTML = '<hr><br><br><h1>댓글추가</h1>';
+        wrapper.innerHTML = '<br><br><br>';
 
         const script = document.createElement('script');
         script.src = 'https://utteranc.es/client.js';
         script.setAttribute('repo', 'LeeTaeSung0628/publish_Note_By_Netlify');
         script.setAttribute('issue-term', 'pathname');
         script.setAttribute('label', 'comments');
-        script.setAttribute('theme', 'github-dark-orange');
+        script.setAttribute('theme', 'github-dark');
         script.crossOrigin = 'anonymous';
         script.async = true;
 
@@ -214,6 +214,7 @@
         window.setActiveDocument = function(...args){
             const result = original.apply(this,args);
             initFloatingMenu();
+            requestAnimationFrame(()=>requestAnimationFrame(initFloatingMenu));
             return result;
         };
         window.setActiveDocument._patched = true;

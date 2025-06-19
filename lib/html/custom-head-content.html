@@ -175,7 +175,24 @@
         window.addEventListener('resize', updateScrollButtonPosition);
     }
 
+    function onSectionReady(cb){
+        const sec = document.querySelector('.markdown-preview-sizer.markdown-preview-section');
+        if(sec){
+            cb(sec);
+            return;
+        }
+        const observer = new MutationObserver(() => {
+            const s = document.querySelector('.markdown-preview-sizer.markdown-preview-section');
+            if(s){
+                observer.disconnect();
+                cb(s);
+            }
+        });
+        observer.observe(document.body,{childList:true,subtree:true});
+    }
+
     function addUtterances(){
+	onSectionReady(section => {
         const section = document.querySelector('.markdown-preview-sizer.markdown-preview-section');
         if(!section){
             if(retry > 0) setTimeout(()=>addUtterances(retry-1),100);
@@ -201,6 +218,7 @@
         wrapper.appendChild(script);
         section.appendChild(wrapper);
         console.log('Utterances added');
+ });
     }
 
     function initFloatingMenu(){

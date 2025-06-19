@@ -93,7 +93,7 @@
         if(!commentDiv){
             commentDiv = document.createElement('div');
             commentDiv.id = 'comments';
-            preview.appendChild(commentDiv);
+            preview.prepend(commentDiv);
         }
 
         if(commentDiv.querySelector('iframe')) return;

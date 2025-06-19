@@ -211,12 +211,24 @@
         addUtterances();
     }
 
+    function ensureInitAfterWebpage(){
+        const script = document.getElementById('webpage-script');
+        if(script){
+            if(script.getAttribute('loaded')){
+                initFloatingMenu();
+            }else{
+                script.addEventListener('load', initFloatingMenu, {once:true});
+            }
+        }else{
+            setTimeout(ensureInitAfterWebpage, 50);
+        }
+    }
+
     function patchSetActiveDocument(){
         if(typeof window.setActiveDocument !== 'function' || window.setActiveDocument._patched) return;
         const original = window.setActiveDocument;
         window.setActiveDocument = function(...args){
             const result = original.apply(this,args);
-            initFloatingMenu();
             requestAnimationFrame(()=>requestAnimationFrame(initFloatingMenu));
             return result;
         };
@@ -233,8 +245,12 @@
     }
 
     if(document.readyState === 'loading'){
-        document.addEventListener('DOMContentLoaded', waitForPatch);
+        document.addEventListener('DOMContentLoaded', () => {
+            ensureInitAfterWebpage();
+            waitForPatch();
+        });
     }else{
+        ensureInitAfterWebpage();
         waitForPatch();
     }
 })();

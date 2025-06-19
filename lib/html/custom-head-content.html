@@ -100,19 +100,24 @@
     }
 
     function addUtterancView(){
-const commentDiv = document.createElement('div');
-commentDiv.id = 'comments';
-document.querySelector('.markdown-preview-view').appendChild(commentDiv);
+        const preview = document.querySelector('.markdown-preview-view');
+        if(!preview) return;
 
-const script = document.createElement('script');
-script.src = 'https://utteranc.es/client.js';
-script.async = true;
-script.setAttribute('repo', 'LeeTaeSung0628/publish_Note_By_Netlify');
-script.setAttribute('issue-term', 'pathname');
-script.setAttribute('label', 'comments');
-script.setAttribute('crossorigin', 'anonymous');
-script.setAttribute('theme', 'github-dark-orange');
-commentDiv.appendChild(script);
+        const existing = preview.querySelector('#comments');
+        if(existing) existing.remove();
+
+        const commentDiv = document.createElement('div');
+        commentDiv.id = 'comments';
+        preview.appendChild(commentDiv);
+        const script = document.createElement('script');
+        script.src = 'https://utteranc.es/client.js';
+        script.async = true;
+        script.setAttribute('repo', 'LeeTaeSung0628/publish_Note_By_Netlify');
+        script.setAttribute('issue-term', 'pathname');
+        script.setAttribute('label', 'comments');
+        script.setAttribute('crossorigin', 'anonymous');
+        script.setAttribute('theme', 'github-dark-orange');
+        commentDiv.appendChild(script);
     }
 
     function addFloatingButtons(){

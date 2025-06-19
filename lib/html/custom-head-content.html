@@ -207,10 +207,10 @@
     }else{
         waitForPatch();
     }
-})();
 
 // Add Utterances comments to every page
 document.addEventListener('DOMContentLoaded', function(){
+   console.log("실행");
     const section = document.querySelector('.markdown-preview-sizer.markdown-preview-section');
     if(!section) return;
 
@@ -229,5 +229,5 @@ document.addEventListener('DOMContentLoaded', function(){
     wrapper.appendChild(script);
     section.appendChild(wrapper);
 });
-
+})();
 </script>

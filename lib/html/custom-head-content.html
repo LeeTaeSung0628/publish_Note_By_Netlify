@@ -175,29 +175,9 @@
         window.addEventListener('resize', updateScrollButtonPosition);
     }
 
-    function onSectionReady(cb){
-        const sec = document.querySelector('.markdown-preview-sizer.markdown-preview-section');
-        if(sec){
-            cb(sec);
-            return;
-        }
-        const observer = new MutationObserver(() => {
-            const s = document.querySelector('.markdown-preview-sizer.markdown-preview-section');
-            if(s){
-                observer.disconnect();
-                cb(s);
-            }
-        });
-        observer.observe(document.body,{childList:true,subtree:true});
-    }
-
     function addUtterances(){
-	onSectionReady(section => {
         const section = document.querySelector('.markdown-preview-sizer.markdown-preview-section');
-        if(!section){
-            if(retry > 0) setTimeout(()=>addUtterances(retry-1),100);
-            return;
-        }
+        if(!section) return;
 
         const existing = document.getElementById('utterances-wrapper');
         if(existing) existing.remove();
@@ -218,7 +198,6 @@
         wrapper.appendChild(script);
         section.appendChild(wrapper);
         console.log('Utterances added');
- });
     }
 
     function initFloatingMenu(){
@@ -229,24 +208,12 @@
         addUtterances();
     }
 
-    function ensureInitAfterWebpage(){
-        const script = document.getElementById('webpage-script');
-        if(script){
-            if(script.getAttribute('loaded')){
-                initFloatingMenu();
-            }else{
-                script.addEventListener('load', initFloatingMenu, {once:true});
-            }
-        }else{
-            setTimeout(ensureInitAfterWebpage, 50);
-        }
-    }
-
     function patchSetActiveDocument(){
         if(typeof window.setActiveDocument !== 'function' || window.setActiveDocument._patched) return;
         const original = window.setActiveDocument;
         window.setActiveDocument = function(...args){
             const result = original.apply(this,args);
+            initFloatingMenu();
             requestAnimationFrame(()=>requestAnimationFrame(initFloatingMenu));
             return result;
         };
@@ -258,17 +225,13 @@
         if(typeof window.setActiveDocument === 'function'){
             patchSetActiveDocument();
         }else{
-            setTimeout(waitForPatch,100);
+            setTimeout(waitForPatch,300);
         }
     }
 
     if(document.readyState === 'loading'){
-        document.addEventListener('DOMContentLoaded', () => {
-            ensureInitAfterWebpage();
-            waitForPatch();
-        });
+        document.addEventListener('DOMContentLoaded', waitForPatch);
     }else{
-        ensureInitAfterWebpage();
         waitForPatch();
     }
 })();

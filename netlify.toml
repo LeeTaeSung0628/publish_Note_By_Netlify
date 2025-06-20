@@ -1,4 +1,4 @@
 [[redirects]]
 from = "/*"
 to = "/🏠-taesung's-blog.html"
-status = 200
+status = 301

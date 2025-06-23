@@ -13,12 +13,12 @@
             "state": {
               "type": "split-diff-view",
               "state": {
-                "aFile": "🏠-taesung's-blog.html",
-                "bFile": "🏠-taesung's-blog.html",
+                "aFile": "lib/html/custom-head-content.html",
+                "bFile": "lib/html/custom-head-content.html",
                 "aRef": ""
               },
               "icon": "diff",
-              "title": "Diff: 🏠-taesung's-blog.html"
+              "title": "Diff: custom-head-content.html"
             }
           }
         ]
@@ -178,6 +178,10 @@
   },
   "active": "5cc2f7897ebd9692",
   "lastOpenFiles": [
+    "사진-및-문서/do-messenger_screenshot_2025-06-23_12_07_38.png",
+    "사진-및-문서/do-messenger_screenshot_2025-06-23_11_44_05.png",
+    "사진-및-문서/do-messenger_screenshot_2025-06-23_11_43_55.png",
+    "사진-및-문서/do-messenger_screenshot_2025-06-23_11_43_48.png",
     "사진-및-문서/do-messenger_screenshot_2025-06-19_14_08_30.png",
     "project/new-project/☘-anoni-chat-모니터링-도구-적용(elastic-apm)-+-slack알림.html",
     "utterances.json",
@@ -196,10 +200,6 @@
     "사진-및-문서/pasted-image-20250609165033.png",
     "사진-및-문서/do-messenger_screenshot_2025-06-09_11_03_39.png",
     "사진-및-문서/pasted-image-20250605172823.png",
-    "사진-및-문서/pasted-image-20250605172214.png",
-    "사진-및-문서/do-messenger_screenshot_2025-06-04_13_38_39.png",
-    "사진-및-문서/do-messenger_screenshot_2025-06-04_11_29_14.png",
-    "사진-및-문서/do-messenger_screenshot_2025-06-04_11_29_26.png",
     "환영합니다!.md"
   ]
 }

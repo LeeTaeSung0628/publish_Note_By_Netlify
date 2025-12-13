@@ -1,146 +1,91 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><parsererror xmlns="http://www.w3.org/1999/xhtml" style="display: block; white-space: pre; border: 2px solid #c77; padding: 0 1em 0 1em; margin: 1em; background-color: #fdd; color: black"><h3>This page contains the following errors:</h3><div style="font-family:monospace;font-size:12px">error on line 144 at column 976: Input is not proper UTF-8, indicate encoding !
-Bytes: 0x08 0x4A 0x61 0x76
-</div><h3>Below is a rendering of the page up to the first error.</h3></parsererror><channel><title><![CDATA[Category]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://lts.kr/</link><image><url>https://lts.kr/lib/media/favicon.png</url><title>Category</title><link>https://lts.kr/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sat, 13 Dec 2025 12:46:42 GMT</lastBuildDate><atom:link href="https://lts.kr/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sat, 13 Dec 2025 12:46:36 GMT</pubDate><copyright><![CDATA[taesung's Blog]]></copyright><ttl>60</ttl><dc:creator>taesung's Blog</dc:creator><item><title><![CDATA[📕 공부]]></title><description><![CDATA[<a class="tag" href="https://lts.kr/?query=tag:공부" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#공부</a> <a class="tag" href="https://lts.kr/?query=tag:모음" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#모음</a> <br> <a href="https://lts.kr?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a> <a href="https://lts.kr?query=tag:모음" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#모음">#모음</a><br>공부
-보고 배운 지식 중 공유하고 싶은 정보를 모아둔 카테고리 입니다.
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Category]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://lts.kr/</link><image><url>https://lts.kr/lib/media/favicon.png</url><title>Category</title><link>https://lts.kr/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sat, 13 Dec 2025 14:40:02 GMT</lastBuildDate><atom:link href="https://lts.kr/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sat, 13 Dec 2025 14:40:00 GMT</pubDate><copyright><![CDATA[taesung's Blog]]></copyright><ttl>60</ttl><dc:creator>taesung's Blog</dc:creator><item><title><![CDATA[💁 Tech Friends Mixer 2025 회고]]></title><description><![CDATA[<a class="tag" href="https://lts.kr/?query=tag:공부" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#공부</a> <a class="tag" href="https://lts.kr/?query=tag:업무관계" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#업무관계</a> <a class="tag" href="https://lts.kr/?query=tag:빅데이터" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#빅데이터</a> <a class="tag" href="https://lts.kr/?query=tag:기업문화" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#기업문화</a> <a class="tag" href="https://lts.kr/?query=tag:플랫폼" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#플랫폼</a> <a class="tag" href="https://lts.kr/?query=tag:모임" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#모임</a> <a class="tag" href="https://lts.kr/?query=tag:회고" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#회고</a> <a class="tag" href="https://lts.kr/?query=tag:MCP" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#MCP</a> <a class="tag" href="https://lts.kr/?query=tag:AI" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#AI</a> <br> <a href="https://lts.kr?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a> <a href="https://lts.kr?query=tag:업무관계" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#업무관계">#업무관계</a> <a href="https://lts.kr?query=tag:빅데이터" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#빅데이터">#빅데이터</a> <a href="https://lts.kr?query=tag:기업문화" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#기업문화">#기업문화</a> <a href="https://lts.kr?query=tag:플랫폼" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#플랫폼">#플랫폼</a> <a href="https://lts.kr?query=tag:모임" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#모임">#모임</a> <a href="https://lts.kr?query=tag:회고" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#회고">#회고</a> <a href="https://lts.kr?query=tag:MCP" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#MCP">#MCP</a> <a href="https://lts.kr?query=tag:AI" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#AI">#AI</a> <br><img alt="스크린샷 2025-12-13 오후 9.33.10.png" src="https://lts.kr/사진-및-문서/스크린샷-2025-12-13-오후-9.33.10.png" target="_self">
+<img alt="스크린샷 2025-12-13 오후 11.35.42.png" src="https://lts.kr/사진-및-문서/스크린샷-2025-12-13-오후-11.35.42.png" target="_self">
+TFM2025 을 다녀온 후기이다. 간단하게 정리한 정보를 토대로 이후 더 상세하게 기술하겠다.<br> 설명 발췌
+&nbsp;2025년의 끝자락,<br>
+한 해 동안 각자의 자리에서 버텨온 개발자, 디자이너, 기획자들이 한자리에 모입니다.
+이번 Tech Friends Mixer는 성과를 자랑하거나 트렌드를 나열하는 컨퍼런스가 아닙니다.<br>
+대신, 우리가 진짜로 겪은 고민들 —<br>
+기획이 꼬였던 오후, 디자인이 갈피를 못 잡던 날, 릴리즈 직전의 긴장감 —<br>
+그 순간들을 나누는 자리입니다.
+<br>말 그대로, 다양한 분야의 사람들이 모여 여러가지 이야기를 나누며 공감하는 그런 자리였다.
+가벼운 마음으로 참석한 모임이지만 기대보다도 더 깊은 인사이트를 얻게 되어 참 감사한 시간이었다.<br>
+<br>업무성과가 좋아지고 회사 평가가좋아지는 마법의 한마디
 <br>
-<br><a data-href="🤖 Java Socket 프로그래밍" href="https://lts.kr/study/cs/🤖-java-socket-프로그래밍.html" class="internal-link" target="_self" rel="noopener nofollow">🤖 Java Socket 프로그래밍</a>
-<br><a data-href="🏉 EAI, API 게이트 웨이,서비스 매쉬" href="https://lts.kr/study/cs/🏉-eai,-api-게이트-웨이,서비스-매쉬.html" class="internal-link" target="_self" rel="noopener nofollow">🏉 EAI, API 게이트 웨이,서비스 매쉬</a>
-<br><a data-href="🍌 React와 Next.js" href="https://lts.kr/study/cs/🍌-react와-next.js.html" class="internal-link" target="_self" rel="noopener nofollow">🍌 React와 Next.js</a>
-<br><a data-href="🎗 @Transactional(readOnly = true) 붙이는 이유" href="https://lts.kr/study/cs/🎗-@transactional(readonly-=-true)-붙이는-이유.html" class="internal-link" target="_self" rel="noopener nofollow">🎗 @Transactional(readOnly = true) 붙이는 이유</a>
-<br><a data-href="🌩 Cloud-Native Architecture 분석" href="https://lts.kr/study/cs/🌩-cloud-native-architecture-분석.html" class="internal-link" target="_self" rel="noopener nofollow">🌩 Cloud-Native Architecture 분석</a> <br><a data-href="🐹 MSA(Microservices Architecture)" href="https://lts.kr/study/cs/🐹-msa(microservices-architecture).html" class="internal-link" target="_self" rel="noopener nofollow">🐹 MSA(Microservices Architecture)</a>
-<br><a data-href="🐋 docker 란" href="https://lts.kr/tools/docker/🐋-docker-란.html" class="internal-link" target="_self" rel="noopener nofollow">🐋 docker 란</a>
-<br><a data-href="🚢Kubernetes(k8s)란" href="https://lts.kr/tools/kubernetes/🚢kubernetes(k8s)란.html" class="internal-link" target="_self" rel="noopener nofollow">🚢Kubernetes(k8s)란</a>
-<br><a data-href="👔 Jenkins란" href="https://lts.kr/tools/jenkins/👔-jenkins란.html" class="internal-link" target="_self" rel="noopener nofollow">👔 Jenkins란</a> <br><a data-href="🐡 Spring Security와 Filter" href="https://lts.kr/study/cs/🐡-spring-security와-filter.html" class="internal-link" target="_self" rel="noopener nofollow">🐡 Spring Security와 Filter</a>
-<br><a data-href="🚨 RSA 암호화 방식의 이해와 적용 (feat.취약성점검)" href="https://lts.kr/issue_troubleshooting/🚨-rsa-암호화-방식의-이해와-적용-(feat.취약성점검).html" class="internal-link" target="_self" rel="noopener nofollow">🚨 RSA 암호화 방식의 이해와 적용 (feat.취약성점검)</a> <br><a data-href="🍎 Redis로 Key관리하기" href="https://lts.kr/study/cs/🍎-redis로-key관리하기.html" class="internal-link" target="_self" rel="noopener nofollow">🍎 Redis로 Key관리하기</a> <br><a data-href="🌋 OSIV란 무엇인가" href="https://lts.kr/study/cs/🌋-osiv란-무엇인가.html" class="internal-link" target="_self" rel="noopener nofollow">🌋 OSIV란 무엇인가</a>
-<br><a data-href="🐰 Java의 String과 SpringBuffer" href="https://lts.kr/study/cs/🐰-java의-string과-springbuffer.html" class="internal-link" target="_self" rel="noopener nofollow">🐰 Java의 String과 SpringBuffer</a>
-<br><a data-href="🛬 JDK와 JRE, JVM" href="https://lts.kr/study/cs/🛬-jdk와-jre,-jvm.html" class="internal-link" target="_self" rel="noopener nofollow">🛬 JDK와 JRE, JVM</a>
-<br><a data-href="🍊 Spring의 의존성 주입(DI)" href="https://lts.kr/study/cs/🍊-spring의-의존성-주입(di).html" class="internal-link" target="_self" rel="noopener nofollow">🍊 Spring의 의존성 주입(DI)</a>
-<br><a data-href="🪕 JPA 관련 용어 정리" href="https://lts.kr/study/cs/🪕-jpa-관련-용어-정리.html" class="internal-link" target="_self" rel="noopener nofollow">🪕 JPA 관련 용어 정리</a>
+<br>‘시켜서 했다’ → ‘내가 판단했다’
+<br>‘믿지 않는 상사’ → ‘믿어주고, 도와주는 동료’
+<br>회사는 ‘나 혼자 잘한다’ → ‘옆 사람도 챙긴다’
+<br>상위평가를 받는 사람들의 공통점
 <br>
-<br><a data-href="☕ JAVA , OOP" href="https://lts.kr/study/cs/☕-java-,-oop.html" class="internal-link" target="_self" rel="noopener nofollow">☕ JAVA , OOP</a>
-<br><a data-href="🍃 Spring" href="https://lts.kr/study/cs/🍃-spring.html" class="internal-link" target="_self" rel="noopener nofollow">🍃 Spring</a>
-<br><a data-href="🎩 DevOps" href="https://lts.kr/study/cs/🎩-devops.html" class="internal-link" target="_self" rel="noopener nofollow">🎩 DevOps</a>
-<br><a data-href="📔 DataBase" href="https://lts.kr/study/cs/📔-database.html" class="internal-link" target="_self" rel="noopener nofollow">📔 DataBase</a>
-<br><a data-href="📭 Server" href="https://lts.kr/study/cs/📭-server.html" class="internal-link" target="_self" rel="noopener nofollow">📭 Server</a>
-<br><a data-href="🐞 etc" href="https://lts.kr/study/cs/🐞-etc.html" class="internal-link" target="_self" rel="noopener nofollow">🐞 etc</a>
+<br>스스로 판단하기에 상대에게 뭐가 필요한지 파악하는 역량
+<br>“괜찮으세요?” 등 상대를 위한 작은 배려
+<br>프로덕트는 모든 파트가 중요함을 배워야 한다.
+<br>자신과 더불어 타인의 이익도 챙길 줄 알아야한다.
+<br>서로 win win 하는 관계가 아니라면 시작도 하지 말아라.
 <br>
-<br><a data-href="🤠 Coding Test 풀이 모음" href="https://lts.kr/study/coding-test/🤠-coding-test-풀이-모음.html" class="internal-link" target="_self" rel="noopener nofollow">🤠 Coding Test 풀이 모음</a>
-<br><a data-href="👽 Algorithm" href="https://lts.kr/study/coding-test/👽-algorithm.html" class="internal-link" target="_self" rel="noopener nofollow">👽 Algorithm</a>
+<br>일에 지장 없도록 몰래몰래 기업문화 개선을 위해 노력했다.
+<br>굳이 기업문화에 반하는 말을 한다기 보다, 스스로 개선해 나가는 노력을 한다.
+<br>비즈니스에 해가 되지 않도록
 <br>
-<br><a data-href="💁 Tech Friends Mixer 2025 회고" href="https://lts.kr/💁 Tech Friends Mixer 2025 회고" class="internal-link is-unresolved" target="_self" rel="noopener nofollow">💁 Tech Friends Mixer 2025 회고</a>
-<br><a data-href="🧑‍🤝‍🧑 AWSKRUG 플랫폼엔지니어링 모임 Agentic MCP for EKS 회고" href="https://lts.kr/study/cs/🧑‍🤝‍🧑-awskrug-플랫폼엔지니어링-모임-agentic-mcp-for-eks-회고.html" class="internal-link" target="_self" rel="noopener nofollow">🧑‍🤝‍🧑 AWSKRUG 플랫폼엔지니어링 모임 Agentic MCP for EKS 회고</a> <br><a data-href="🔻 Redis 캐쉬 전략 - hello 서비스에 적용하여 성능개선 가능성" href="https://lts.kr/study/dev-seminar/🔻-redis-캐쉬-전략-hello-서비스에-적용하여-성능개선-가능성.html" class="internal-link" target="_self" rel="noopener nofollow">🔻 Redis 캐쉬 전략 - hello 서비스에 적용하여 성능개선 가능성</a>
-<br><a data-href="🔐 상품 투자하기 서비스 Lock기법 개선안" href="https://lts.kr/issue_troubleshooting/🔐-상품-투자하기-서비스-lock기법-개선안.html" class="internal-link" target="_self" rel="noopener nofollow">🔐 상품 투자하기 서비스 Lock기법 개선안</a>
-<br><a data-href="🔹 TDD에 대하여" href="https://lts.kr/study/dev-seminar/🔹-tdd에-대하여.html" class="internal-link" target="_self" rel="noopener nofollow">🔹 TDD에 대하여</a>
-<br><a data-href="🍂 JPA, Mybatis , Dead Lock이슈" href="https://lts.kr/study/dev-seminar/🍂-jpa,-mybatis-,-dead-lock이슈.html" class="internal-link" target="_self" rel="noopener nofollow">🍂 JPA, Mybatis , Dead Lock이슈</a>
-<br><a data-href="🥗 Spring Security_토큰-세션-쿠키-JWT 에 대하여" href="https://lts.kr/study/dev-seminar/🥗-spring-security_토큰-세션-쿠키-jwt-에-대하여.html" class="internal-link" target="_self" rel="noopener nofollow">🥗 Spring Security_토큰-세션-쿠키-JWT 에 대하여</a>
-<br><a data-href="📔 DB 테이블 설계, 어떻게 하는게 옳은 방법인가" href="https://lts.kr/study/dev-seminar/📔-db-테이블-설계,-어떻게-하는게-옳은-방법인가.html" class="internal-link" target="_self" rel="noopener nofollow">📔 DB 테이블 설계, 어떻게 하는게 옳은 방법인가</a>]]></description><link>https://lts.kr/study/📕-공부.html</link><guid isPermaLink="false">study/📕 공부.md</guid><dc:creator><![CDATA[taesung's Blog]]></dc:creator><pubDate>Sat, 13 Dec 2025 12:35:36 GMT</pubDate></item><item><title><![CDATA[🧑‍🤝‍🧑 AWSKRUG 플랫폼엔지니어링 모임 Agentic MCP for EKS 회고]]></title><description><![CDATA[<a class="tag" href="https://lts.kr/?query=tag:공부" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#공부</a> <a class="tag" href="https://lts.kr/?query=tag:AWS" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#AWS</a> <a class="tag" href="https://lts.kr/?query=tag:AWSKRUG" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#AWSKRUG</a> <a class="tag" href="https://lts.kr/?query=tag:플랫폼" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#플랫폼</a> <a class="tag" href="https://lts.kr/?query=tag:모임" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#모임</a> <a class="tag" href="https://lts.kr/?query=tag:회고" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#회고</a> <a class="tag" href="https://lts.kr/?query=tag:EKS" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#EKS</a> <a class="tag" href="https://lts.kr/?query=tag:MCP" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#MCP</a> <a class="tag" href="https://lts.kr/?query=tag:AI" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#AI</a> <br> <a href="https://lts.kr?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a> <a href="https://lts.kr?query=tag:AWS" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#AWS">#AWS</a> <a href="https://lts.kr?query=tag:AWSKRUG" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#AWSKRUG">#AWSKRUG</a> <a href="https://lts.kr?query=tag:플랫폼" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#플랫폼">#플랫폼</a> <a href="https://lts.kr?query=tag:모임" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#모임">#모임</a> <a href="https://lts.kr?query=tag:회고" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#회고">#회고</a> <a href="https://lts.kr?query=tag:EKS" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#EKS">#EKS</a> <a href="https://lts.kr?query=tag:MCP" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#MCP">#MCP</a> <a href="https://lts.kr?query=tag:AI" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#AI">#AI</a> <br><img alt="do-messenger_screenshot_2025-07-02_11_35_48.png" src="https://lts.kr/사진-및-문서/do-messenger_screenshot_2025-07-02_11_35_48.png" style="width: 500px; max-width: 100%;" target="_self"><br>
-최근 나는 vultr플랫폼에서 ci/cd를 구현하여 운영중에 있다.<br>AWS가 아닌 vultr를 사용하게 된 계기는 역시 운영비 부분이 가장 컸다. 하지만, 이번 세미나를 통해서 다시 AWS로 클라우드 플랫폼을 옮길까 고민을 하게 되었다.
-비싸지만 그만큼 해주는 녀석들.<br>AWSKRUG 플랫폼엔지니어링 모임에 참여후 학습한 내용과 소감을 간단하게 정리하려고 한다.<br>
-<br>AWSKRUG(AWS한국사용자모임)에서 주최한 Agentic/MCP for EKS 핸즈온랩 강의 이다.
-<br>Amazon Q Developer와 연계된 AI에이전트가 어떻게 k8s기반 운영을 지원할 수 있는지.
-<br>코드 생성 + 실행 + 트러블슈팅이 하나의 흐름으로 연결되는 Agentic Workflow가 어떤 모습인지.
-<br>실제 Git 기반 설정 파일과 EKS 리소스를 자동으로 생성·관리하는 방식이 어떻게 되는지.
-<br>각각의 단어에 대해 알아보자.<br>
-<br>Agentic는 자율성에 관한 유형 중 하나이다.
-<br>Agent는 주로 자율적으로 목표를 달성하고, 상황을 인식하며, 의사결정을 수행하는 독립 실행 단위를 말한다.
-<br>예를 들어, AI Agentic 시스템은 단순히 명령만 수행하는 게 아니라, 스스로 다음 행동을 계획하고 실행 흐름을 제어한다.
-<br>DevOps 맥락에서는 운영 자동화 에이전트, 자율 오케스트레이션, 자기 복구(Self-Healing) 시스템 같은 데에서 Agentic 개념이 쓰인다.
+<br>기존의 레거시 프로젝트에서 TDD를 적용할 때 얻을 수 있는 인사이트
 <br>
-<br>MCP는 보통 Model Context Protocol의 줄임말로 사용된다.
-<br>2024년 11월 AI기업 Anthrophic이 오픈소스로 공개한 새로운 기술 표준이다.
-<br>AI가 여러 데이터와 도구를 통합해 활용할 수 있도록 하는 표준 프로토콜(규약), 연결 규칙이다.
-<br>ex) Google, MongoDB, Obsidian 등 MCP를 활용하면 CLI프롬프트 한번으로 여러작업을 모두 ai처리에 맡길 수 있음(읽기,쓰기 모두 가능)
+<br>비즈니스 규칙 미반영
+<br>엣지 케이스 누락
+<br>실제 요구사항과 불일치
 <br>
-<br>EKS는 Elastic Kubernetes Service의 약자.
-<br>AWS가 제공하는 Managed Kubernetes 클러스터 서비스이다.
-<br>사용자는 직접 Kubernetes Control Plane을 설치하거나 유지보수하지 않고, <br>AWS가 API Server, etcd, Control Plane 확장 등을 자동으로 관리. <br>사용자는 워커 노드(Node Group)만 구성해서 Pod을 배포하면 된다.
-<br>EKS는 AWS IAM, VPC, ELB, CloudWatch 같은 AWS 서비스와 통합된다.
-<br>온프레미스에서 직접 Kubernetes 운영하는 것보다 운영 복잡성이 낮아진다.
-<br>위 과정은 Q CLI를 셋팅하는 것 부터 시작한다.<br>curl --proto '=https' --tlsv1.2 -sSf \ "https://desktop-release.q.us-east-1.amazonaws.com/latest/q-x86_64-linux.zip" \ -o "q.zip" ✔ Do you want q to modify your shell config? → Yes
-✔ Select login method → Use for Free with Builder ID Confirm the following code in the browser:
-Code: xxxx-xxxx Open this URL: https://view.awsapps.com/start/#/device?user_code=xxxx-xxxx To learn more about MCP safety, see https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/command-line-mcp-security.html Welcome to █████╗ ███╗ ███╗ █████╗ ███████╗ ██████╗ ███╗ ██╗ ██████╗ ██╔══██╗████╗ ████║██╔══██╗╚══███╔╝██╔═══██╗████╗ ██║ ██╔═══██╗
-███████║██╔████╔██║███████║ ███╔╝ ██║ ██║██╔██╗ ██║ ██║ ██║
-██╔══██║██║╚██╔╝██║██╔══██║ ███╔╝ ██║ ██║██║╚██╗██║ ██║▄▄ ██║
-██║ ██║██║ ╚═╝ ██║██║ ██║███████╗╚██████╔╝██║ ╚████║ ╚██████╔╝
-╚═╝ ╚═╝╚═╝ ╚═╝╚═╝ ╚═╝╚══════╝ ╚═════╝ ╚═╝ ╚═══╝ ╚══▀▀═╝ <br>Q CLI는 터미널에서 실행되는 ai기반 도우미이다.
-<br>AWS환경과 상호작용할 수 있는 CLI를 제공한다.
-<br>예를 들어 다음과 같은 질문도 가능하다.<br>“EKS 클러스터를 보호하기 위한 몇 가지 모범 사례는 무엇인가요?” --- EKS 클러스터를 보호하기 위한 모범 사례는 다음과 같습니다: 1. 네트워크 보안 • 프라이빗 서브넷에 워커 노드 배치 • 보안 그룹을 사용하여 트래픽 제한 • AWS PrivateLink 또는 VPC 엔드포인트 사용 2. IAM 및 RBAC 구성 • 최소 권한 원칙 적용 • IAM 역할과 Kubernetes RBAC 통합 • 서비스 계정에 IAM 역할 사용 (IRSA) 3. 암호화 및 보안 설정 • EKS 클러스터 및 EBS 볼륨에 대한 암호화 활성화 • Secrets 암호화 구현 • AWS KMS 키 사용 4. 컨테이너 보안 • 신뢰할 수 있는 이미지만 사용 • 이미지 스캐닝 구현 (ECR 스캐닝 또는 서드파티 도구) • 컨테이너 실행 시 루트 권한 제한 ... 생략 이러한 모범 사례를 구현하면 EKS 클러스터의 보안 태세를 크게 향상시킬 수 있습니다.
-<br>~/environment/myeks 디렉토리에 nginx-deployment.yaml이라는 이름으로 기본 Kubernetes nginx 배포를 위한 YAML 파일을 생성해주세요. --- Kubernetes nginx 배포를 위한 기본 YAML 파일을 생성하겠습니다. 🛠️ Using tool: fs_write ⋮ ● Path: /home/ec2-user/nginx-deployment.yaml + 1: apiVersion: apps/v1
-+ 2: kind: Deployment
-+ 3: metadata:
-+ 4: name: nginx-deployment
-+ 5: labels:
-+ 6: app: nginx
-+ 7: spec:
-+ 8: replicas: 3
-+ 9: selector:
-+ 10: matchLabels:
-+ 11: app: nginx ... 중략
-+ 35: selector:
-+ 36: app: nginx
-+ 37: ports:
-+ 38: - port: 80
-+ 39: targetPort: 80
-+ 40: type: ClusterIP Allow this action? Use 't' to trust (always allow) this tool for the session. [y/n/t]: &gt; t
-Creating: /home/ec2-user/nginx-deployment.yaml ⋮ ● Completed in 0.0s nginx-deployment.yaml 파일을 성공적으로 생성했습니다. 이 파일에는 다음 내용이 포함되어 있습니다: 1. Deployment 리소스: • 3개의 복제본(replicas) • nginx:1.14.2 이미지 사용 • 포트 80 노출 • 리소스 제한 설정: • CPU 제한: 0.5 코어, 요청: 0.2 코어 • 메모리 제한: 512Mi, 요청: 256Mi 2. Service 리소스: • ClusterIP 타입 서비스 • 포트 80을 통해 Deployment에 연결 <br>docker image 다운로드
-<br>셋팅 yml파일 작성
-<br>권한부여
-<br>리소스 차트 작성
-<br>컨테이너 실행
-<br>테스트
-<br>또한, 위 과정은 아주 단편적인 기능일 뿐 활용도는 무궁무진 하며 캐시데이터로 학습이 지속적으로 이루어졌을 때는 성능이 더욱 높아질 여지가 충분하다.<br>┌────────────┐ ┌────────────┐ ┌────────────┐
-│ 터미널 입력│ ─▶ │ Q CLI │─▶ │ MCP Client │
-└────────────┘ └────────────┘ └────────────┘ │ JSON-RPC over stdio/stdout │ ┌────────────┐ │ MCP Server │ └────────────┘ │ ┌────────────┐ │ 로컬 Tools │ └────────────┘ <br>
-<br>사용자 입력
-<br>Q CLI 입력 처리
-<br>컨텍스트 수집 시작
-<br>컨텍스트 수집 완료
-<br>MCP Client 초기화
-<br>도구 발견
-<br>LLM 페이로드 구성
-<br>LLM 분석 요청
-<br>LLM 분석 완료
-<br>도구 실행 시작
-<br>kubectl 명령 실행
-<br>결과 분석 및 응답 생성
-<br>사용자에게 응답 전달
+<br>이후 실습...
 <br>
-<br>보안 <br>민감한 AWS 자격증명을 로컬에서만 처리 → 민감정보가 로컬을 벗어날 때에는 자체 마스킹 처리
-<br>Kubeconfig 같은 클러스터 접근정보 보호 <br>성능 <br>로컬 파일 시스템 접근 빠름
-<br>네트워크 호출 최소화 <br>일관성 <br>사용자 환경 맞춤 컨텍스트 자동 수집 → 위에서 기술한 대로, 학습하여 성능이 더욱 개선(최적화) 될 수 있다. <br>실제 실무 파일 <br>AWS 프로파일, 자격증명, K8s 설정, 현재 디렉터리 사용 <br>질문자의 역량에 따라서, 불필요한 반복 역질문과 같이 토큰을 소모하거나, 보안/운영상의 큰 위험요소를 남길 수 있다.<br>이를 미연에 방지하고, 최적화 하는 방법이 바로 프로파일과 컨텍스트이다.<br>컨텍스트를 활용하여 Amazon Q가 다양한 작업을 더 효과적으로 도와줄 수 있다.<br>
-<br>개발 규칙, 프로젝트 세부사항, 코딩 표준 등을 포함한 정보
-<br>Amazon Q의 응답을 더 정확하고 맞춤화되게 만든다.
+<br>정답이 들어있는 서버
+<br>AI에게 도메인 규칙 전달
+<br>스펙 문서 없이도 작동
+<br>레거시 코드도 안전하게 개선 가능
+<br> AI에이전트를 설계할 때, 성능 좋은 에이전트 보다 양질의 데이터? 교육을 시키는 것이 중요하다.<br>
+<br>제미나이나, 클러드는 CLI에서 진행되어 룰이나 코딩하기가 힘들다.
+<br>이에 반해 UX관점에서 커서는 GUI를 지원하기 때문에 쉽다.
+<br>커서는 가격대비 RPM관점이나 백본?이 더 효율적이고 대중적이다.
 <br>
-<br>Amazon Q가 사용자와 시스템에 맞춰 반응하도록 설정된 컨텍스트 모음입니다.
+<br>예제 프로젝트에 대한 비즈니스 로직에 대한 정의와 JSON 형태의 데이터.
 <br>
-<br>모든 프로파일에 공통적으로 적용되는 규칙
+<br>어떠한 기준으로 접근을해서 test코드가 나왔는지?
+<br>ai 백본이 작은 모델이 하나가 더 붙거나, 지금 조건에서 사용할 수 있는 tool이 뭐가있는지 파악 후 백본 ai가 실행하기 된다.
+<br>백본 모델자체의 고유 능력이다.
+<br>지정이 필요하다면, 텍스트 유사도 방식으로 찾아가는 것이기 때문에 명확하게 지정해주어야한다.
+<br> 해당 강의에 할당된 시간이 길지 않아, 더 딥하게 들어가진 못해서 아쉬움 이 남는 기분이었다.
+이후 강의가 끝난 이후에 너무 감사하게도 20분 가량 시간내어 주셔서 더 깊은 대화를 할 수 있었다.<br>강의가 너무짧아서 아쉬웠다는 스몰토킹으로 시작하여 여러가지 방향에 대해 제시해주신 권도현 선생님,<br>얕고 넓은 지식의 중요성
+<br>검토자의 입장
+<br>성능좋은 에이전트가 아닌, 상황에 특화된 다중 에이전트와 MCP
+<br>비즈니스 지식의 중요성
+개발자가 놓칠 수 있는, 또한 AI가 평생 따라오지 못할 부분 ‘비즈니스’
+<br>..
 <br>
-<br>특정 프로파일에만 적용되는 규칙
+<br>데이터 엔지니어 - 데이터를 위한 안정적인 파이프라인 (데이터수집, ETL)을 설계,구축,관리
+<br>데이터 분석가 - 데이터를 분석하여 비즈니스 인사이트를 도출, 시각화 , 보고서
+<br>데이터 사이언티스트 - 통계, 수학, 프로그래밍 지식을 활용해 데이터 분석
 <br>
-컨텍스트 파일은 일반적으로 Markdown 형식이며, 다음과 같은 내용을 포함할 수 있다.<br>프로젝트 요구사항
-<br>개발 가이드라인
-<br>보안 정책
-<br>배포 표준 등
-<br>ex)<br># shell 에서 실행합니다.
-cat &gt; ~/environment/myeks/kubernetes_standards.md &lt;&lt; 'EOF'
-# Kubernetes 배포 표준 ## 일반 가이드라인
-- 모든 Kubernetes 리소스는 다음과 같은 라벨을 반드시 포함해야 합니다: - app: {애플리케이션 이름} - environment: {dev|staging|prod} - team: platform-engineering - cost-center: cc-12345 ## 배포 구성
-- 리소스 요청(requests) 및 제한(limits)을 반드시 명시해야 합니다
-- CPU 요청: 최소 100m, 최대 1000m
-- 메모리 요청: 최소 128Mi, 최대 1Gi
-- 배포 전략은 롤링 업데이트를 사용하며, maxSurge는 25%, maxUnavailable도 25%로 설정
-- 모든 컨테이너에 readiness 및 liveness probe를 설정해야 합니다
-- 이미지 풀 정책은 "IfNotPresent"로 설정할 것 ## 컨테이너 보안
-- 컨테이너는 root가 아닌 사용자로 실행해야 함 (runAsNonRoot: true)
-- 가능하면 읽기 전용 루트 파일 시스템을 사용할 것 (readOnlyRootFilesystem: true)
-- 권한 상승 허용은 false로 설정 (allowPrivilegeEscalation: false)
-- 모든 capabilities는 제거하고 필요한 항목만 명시적으로 추가 ## 네트워킹
-- 서비스 포트는 프로토콜에 따라 명확히 이름 지정 (예: http, https, grpc)
-- Ingress 리소스는 TLS를 사용하고, HTTP 요청은 HTTPS로 리디렉션해야 함
-- 네임스페이스 간 트래픽 제한을 위해 NetworkPolicy 사용 ## 예시: 컨테이너 포트 설정
-yaml
-ports:
-• name: http containerPort: 8080 protocol: TCP
-EOF
-<br>일련의 과정을 통해서 각 서비스 마다의 프로파일을 최적으로 구성한다면,<br>업무 효율은 어마어마 할것 같다.<br>이전, claude 를 사용해 fileSystem, git, obsidian MCP를 연결하여 포스팅 자동화 시스템을 구축한 경험이 있다.<br>이때에는 단순히 작업 플로우를 줄이는데에 목적이 있다고 생각했다. 하지만, 이번 세미나를 통해서 배운 지식은 그것을 훨씬 뛰어넘었다.<br>보통의 경우엔 컨트롤하지 못하는 영역까지 ai의 범위가 넓어졌고, 양질의 정보만을 선택적으로 학습한 전문적인 ai솔루션이 나옴에 따라<br>사용 경험이 이전과는 확연하게 달라짐을 느꼈다. 앞으로는 AI로 인하여, 업무 학습방법이 이전과는 크게 달라질 것으로 생각된다.<br>코딩(행위)이 아닌 개념과 아키텍처로?<br>이는 비단, AWS의 Q CLI뿐 아니라 모든 AI 에이전트에 해당되는 사항일 것이다.
-<br>그러나 AI는 여전히 생산성을 높여주는 보조도구일 뿐, 전체적인 시스템과 세부 내용들을 이해하지 못하고 사용한다면 위험한 무기가 될 수 도있다고 생각한다. 때문에 다방면으로 넓은 지식을 쌓을 필요가 생겼다. ✌🏻 ✌🏻]]></description><link>https://lts.kr/study/cs/🧑‍🤝‍🧑-awskrug-플랫폼엔지니어링-모임-agentic-mcp-for-eks-회고.html</link><guid isPermaLink="false">study/CS/🧑‍🤝‍🧑 AWSKRUG 플랫폼엔지니어링 모임 Agentic MCP for EKS 회고.md</guid><dc:creator><![CDATA[taesung's Blog]]></dc:creator><pubDate>Sat, 13 Dec 2025 12:34:36 GMT</pubDate><enclosure url="https://lts.kr/사진-및-문서/do-messenger_screenshot_2025-07-02_11_35_48.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://lts.kr/사진-및-문서/do-messenger_screenshot_2025-07-02_11_35_48.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[🤖 Java Socket 프로그래밍]]></title><description/></item></channel></rss>
+<br>기존 DB로 처리하기 힘든 대용량 데이터
+-하나의 서버에서 저장 및 처기 불가능
+<br>
+<br>로그 원본데이터
+<br>사용자 행동 데이터
+<br>웹 크롤링 데이터
+<br>
+<br>FDS(이상거래탐지시스템)
+<br>추천 시스템 - 광고추천 등 , 개인화 모델
+<br>AI모델 학습
+<br>
+<br>굉장히 큰 데이터를 다룰 수 있는 SQL 플랫폼?
+<br>
+<br>커다란 저장공간을 제공한다.
+<br>컴퓨팅을 따로 제공하지는 않으며, 텍스트위주의 큰 데이터를 제공
+<br>
+<br>하둡 / 구글 빅 쿼리 / 아마존 EMR 등등.. 이 해당된다.
+<br>
+<br>카카오의 데이터 플랫폼 단위는 EB단위. ( 1EB - 1000PB - 1,000,000TB )
+<br>AWS S3 standard 기준으로 1EB당 공간비용은 월 360억
+<br>이와같이 일정 수준의 범위를 넘어가면 외부플랫폼 비용이 증가하기 떄문에, on-premise환경으로 구축한다.
+<br>
+<br>하둡의 기본 스토리지 레이어
+<br>대규모 데이터를 클러스터 내 여러 노드에 분산하여 저장 <br>데이터 복제본을 여러벌 저장하여 고가용성 확보 <br>데이터는불변으로, 쓰기 완료 후 일부 수정 불가능
+<br>높은 처리량에 최적화
+<br>1015데이터 화재로 인하여 IDC(데이터센터) 3중화를 진행하게 되었다.(기존데비 용량 증가 없음)<br>
+<br>3레플리카 대신 EC를 사용한다면 저정용량이 크게 줄어든다.
+<br>Apach ozone 기반 대규모 분산 오브젝트 스토리지 운영]]></description><link>https://lts.kr/study/cs/💁-tech-friends-mixer-2025-회고.html</link><guid isPermaLink="false">study/CS/💁 Tech Friends Mixer 2025 회고.md</guid><dc:creator><![CDATA[taesung's Blog]]></dc:creator><pubDate>Sat, 13 Dec 2025 14:39:01 GMT</pubDate><enclosure url="https://lts.kr/사진-및-문서/스크린샷-2025-12-13-오후-9.33.10.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://lts.kr/사진-및-문서/스크린샷-2025-12-13-오후-9.33.10.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[🏠 taesung's Blog]]></title><description><![CDATA[<a class="tag" href="https://lts.kr/?query=tag:home" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#home</a> <a class="tag" href="https://lts.kr/?query=tag:index" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#index</a> <a class="tag" href="https://lts.kr/?query=tag:blog" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#blog</a> <a class="tag" href="https://lts.kr/?query=tag:공부" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#공부</a> <br> <a href="https://lts.kr?query=tag:home" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#home">#home</a> <a href="https://lts.kr?query=tag:index" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#index">#index</a> <a href="https://lts.kr?query=tag:blog" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#blog">#blog</a> <a href="https://lts.kr?query=tag:공부" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a><br><a data-tooltip-position="top" aria-label="https://github.com/LeeTaeSung0628" rel="noopener nofollow" class="external-link is-unresolved" href="https://github.com/LeeTaeSung0628" target="_self"><span alt="prof2.jpg" src="prof2.jpg" class="internal-embed media-embed image-embed is-loaded" style="width: 250px; max-width: 100%;"></span></a><img alt="prof2.jpg" src="https://lts.kr/사진-및-문서/prof2.jpg" style="width: 250px; max-width: 100%;" target="_self"><br><a data-tooltip-position="top" aria-label="https://git.io/typing-svg" rel="noopener nofollow" class="external-link is-unresolved" href="https://git.io/typing-svg" target="_self"></a><img alt="Typing SVG" src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;pause=1000&amp;color=36A9F7&amp;random=false&amp;width=435&amp;lines=%EC%97%AC%EA%B8%B0%EB%8A%94+%EA%B3%B5%EB%B6%80%ED%95%98%EA%B3%A0%2C+%EA%B8%B0%EB%A1%9D%ED%95%98%EB%8A%94+%EA%B3%B3%EC%9E%85%EB%8B%88%EB%8B%A4" referrerpolicy="no-referrer" target="_self" class="is-unresolved"><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>]]></description><link>https://lts.kr/🏠-taesung's-blog.html</link><guid isPermaLink="false">🏠 taesung's Blog.md</guid><dc:creator><![CDATA[taesung's Blog]]></dc:creator><pubDate>Sat, 13 Dec 2025 12:50:54 GMT</pubDate><enclosure url="https://lts.kr/사진-및-문서/prof2.jpg" length="0" type="image/jpeg"/><content:encoded>&lt;figure&gt;&lt;img src="https://lts.kr/사진-및-문서/prof2.jpg"&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>

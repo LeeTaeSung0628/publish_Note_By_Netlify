@@ -1,18 +1,23 @@
 {
   "commitMessage": "vault backup: \n{{date}}",
+  "autoCommitMessage": "vault backup: \n{{date}}",
+  "commitMessageScript": "",
   "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
   "autoSaveInterval": 0,
   "autoPushInterval": 0,
   "autoPullInterval": 0,
   "autoPullOnBoot": false,
+  "autoCommitOnlyStaged": false,
   "disablePush": true,
   "pullBeforePush": false,
   "disablePopups": false,
+  "showErrorNotices": true,
   "disablePopupsForNoChanges": false,
   "listChangedFilesInMessageBody": false,
   "showStatusBar": true,
   "updateSubmodules": false,
   "syncMethod": "merge",
+  "mergeStrategy": "none",
   "customMessageOnAutoBackup": false,
   "autoBackupAfterFileChange": false,
   "treeStructure": false,
@@ -25,11 +30,16 @@
   "showBranchStatusBar": true,
   "setLastSaveToLastCommit": false,
   "submoduleRecurseCheckout": false,
-  "gitDir": "/Users/lts/Library/Mobile Documents/iCloud~md~obsidian/Documents/publish_Note_By_Netlify/.git",
+  "gitDir": "C:\\Users\\User\\Desktop\\ltsFiles\\obsidian_public for Netlify\\.git",
   "showFileMenu": true,
   "authorInHistoryView": "hide",
   "dateInHistoryView": false,
   "diffStyle": "split",
+  "hunks": {
+    "showSigns": false,
+    "hunkCommands": false,
+    "statusBar": "disabled"
+  },
   "lineAuthor": {
     "show": false,
     "followMovement": "inactive",
@@ -54,6 +64,5 @@
     "gutterSpacingFallbackLength": 5,
     "lastShownAuthorDisplay": "initials",
     "lastShownDateTimeFormatOptions": "date"
-  },
-  "autoCommitMessage": "vault backup: \n{{date}}"
+  }
 }

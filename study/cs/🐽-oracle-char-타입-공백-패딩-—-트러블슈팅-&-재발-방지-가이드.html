@@ -1,0 +1,354 @@
+<!DOCTYPE html> <html><head>
+<title>🐽 Oracle CHAR 타입 공백 패딩 — 트러블슈팅 &amp; 재발 방지 가이드</title>
+<base href="../..">
+<meta id="root-path" root-path="../..">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
+<meta charset="UTF-8">
+<meta name="description" content="Category - 🐽 Oracle CHAR 타입 공백 패딩 — 트러블슈팅 &amp; 재발 방지 가이드">
+<meta property="og:title" content="🐽 Oracle CHAR 타입 공백 패딩 — 트러블슈팅 &amp; 재발 방지 가이드">
+<meta property="og:description" content="Category - 🐽 Oracle CHAR 타입 공백 패딩 — 트러블슈팅 &amp; 재발 방지 가이드">
+<meta property="og:type" content="website">
+<meta property="og:url" content="./https://lts.kr/study/cs/🐽-oracle-char-타입-공백-패딩-—-트러블슈팅-&amp;-재발-방지-가이드.html">
+<meta property="og:image" content="undefined">
+<meta property="og:site_name" content="Category">
+<meta name="author" content="taesung's Blog"><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="./https://lts.kr/lib/rss.xml"><include src="lib/html/custom-head-content.html"></include><script async="" id="webpage-script" src="lib/scripts/webpage.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="minisearch-script" src="https://cdn.jsdelivr.net/npm/minisearch@6.3.0/dist/umd/index.min.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><link rel="stylesheet" href="lib/styles/obsidian.css"><link rel="preload" href="lib/styles/other-plugins.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/other-plugins.css"></noscript><link rel="stylesheet" href="lib/styles/theme.css"><link rel="preload" href="lib/styles/global-variable-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/global-variable-styles.css"></noscript><link rel="preload" href="lib/styles/main-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/main-styles.css"></noscript><style>body{--line-width:40em;--line-width-adaptive:40em;--file-line-width:40em;--sidebar-width:min(20em, 80vw);--collapse-arrow-size:11px;--tree-horizontal-spacing:0.6em;--tree-vertical-spacing:0.6em;--sidebar-margin:12px}.sidebar{height:100%;min-width:calc(var(--sidebar-width) + var(--divider-width-hover));max-width:calc(var(--sidebar-width) + var(--divider-width-hover));font-size:14px;z-index:10;position:relative;overflow:hidden;transition:min-width ease-in-out,max-width ease-in-out;transition-duration:.2s;contain:size}.sidebar-left{left:0}.sidebar-right{right:0}.sidebar.is-collapsed{min-width:0;max-width:0}body.floating-sidebars .sidebar{position:absolute}.sidebar-content{height:100%;min-width:calc(var(--sidebar-width) - var(--divider-width-hover));top:0;padding:var(--sidebar-margin);padding-top:4em;line-height:var(--line-height-tight);background-color:var(--background-secondary);transition:background-color,border-right,border-left,box-shadow;transition-duration:var(--color-fade-speed);transition-timing-function:ease-in-out;position:absolute;display:flex;flex-direction:column}.sidebar:not(.is-collapsed) .sidebar-content{min-width:calc(max(100%,var(--sidebar-width)) - 3px);max-width:calc(max(100%,var(--sidebar-width)) - 3px)}.sidebar-left .sidebar-content{left:0;border-top-right-radius:var(--radius-l);border-bottom-right-radius:var(--radius-l)}.sidebar-right .sidebar-content{right:0;border-top-left-radius:var(--radius-l);border-bottom-left-radius:var(--radius-l)}.sidebar:has(.sidebar-content:empty):has(.topbar-content:empty){display:none}.sidebar-topbar{height:2em;width:var(--sidebar-width);top:var(--sidebar-margin);padding-inline:var(--sidebar-margin);z-index:1;position:fixed;display:flex;align-items:center;transition:width ease-in-out;transition-duration:inherit}.sidebar.is-collapsed .sidebar-topbar{width:calc(2.3em + var(--sidebar-margin) * 2)}.sidebar .sidebar-topbar.is-collapsed{width:0}.sidebar-left .sidebar-topbar{left:0}.sidebar-right .sidebar-topbar{right:0}.topbar-content{overflow:hidden;overflow:clip;width:100%;height:100%;display:flex;align-items:center;transition:inherit}.sidebar.is-collapsed .topbar-content{width:0;transition:inherit}.clickable-icon.sidebar-collapse-icon{background-color:transparent;color:var(--icon-color-focused);padding:0!important;margin:0!important;height:100%!important;width:2.3em!important;margin-inline:0.14em!important;position:absolute}.sidebar-left .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);right:var(--sidebar-margin)}.sidebar-right .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);left:var(--sidebar-margin)}.clickable-icon.sidebar-collapse-icon svg.svg-icon{width:100%;height:100%}.sidebar-section-header{margin:0 0 1em 0;text-transform:uppercase;letter-spacing:.06em}body{transition:background-color var(--color-fade-speed) ease-in-out}.webpage-container{display:flex;flex-direction:row;height:100%;width:100%;align-items:stretch;justify-content:center}.document-container{opacity:1;flex-basis:100%;max-width:100%;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;transition:opacity .2s ease-in-out;contain:inline-size}.hide{opacity:0;transition:opacity .2s ease-in-out}.document-container>.markdown-preview-view{margin:var(--sidebar-margin);margin-bottom:0;width:100%;width:-webkit-fill-available;width:-moz-available;width:fill-available;background-color:var(--background-primary);transition:background-color var(--color-fade-speed) ease-in-out;border-top-right-radius:var(--window-radius,var(--radius-m));border-top-left-radius:var(--window-radius,var(--radius-m));overflow-x:hidden!important;overflow-y:auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;contain:inline-size}.document-container>.markdown-preview-view>.markdown-preview-sizer{padding-bottom:80vh!important;width:100%!important;max-width:var(--line-width)!important;flex-basis:var(--line-width)!important;transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}.markdown-rendered img:not([width]),.view-content img:not([width]){max-width:100%;outline:0}.document-container>.view-content.embed{display:flex;padding:1em;height:100%;width:100%;align-items:center;justify-content:center}.document-container>.view-content.embed>*{max-width:100%;max-height:100%;object-fit:contain}:not(h1,h2,h3,h4,h5,h6):has(> :is(.math,table)){overflow-x:auto!important}.document-container>.view-content{overflow-x:auto;contain:content;padding:0;margin:0;height:100%}.scroll-highlight{position:absolute;width:100%;height:100%;pointer-events:none;z-index:1000;background-color:hsla(var(--color-accent-hsl),.25);opacity:0;padding:1em;inset:50%;translate:-50% -50%;border-radius:var(--radius-s)}</style><script defer="">async function loadIncludes(){if("file:"!=location.protocol){let e=document.querySelectorAll("include");for(const t of e){let e=t.getAttribute("src");try{const o=await fetch(e);if(!o.ok){console.log("Could not include file: "+e),t?.remove();continue}let l=await o.text(),n=document.createRange().createContextualFragment(l),c=Array.from(n.children);for(let e of c)e.classList.add("hide"),e.style.transition="opacity 0.5s ease-in-out",setTimeout((()=>{e.classList.remove("hide")}),10);t.before(n),t.remove(),console.log("Included file: "+e)}catch(o){t?.remove(),console.log("Could not include file: "+e,o);continue}}}else{if(document.querySelectorAll("include").length>0){var e=document.createElement("div");e.id="error",e.textContent="Web server exports must be hosted on an http / web server to be viewed correctly.",e.style.position="fixed",e.style.top="50%",e.style.left="50%",e.style.transform="translate(-50%, -50%)",e.style.fontSize="1.5em",e.style.fontWeight="bold",e.style.textAlign="center",document.body.appendChild(e),document.querySelector(".document-container")?.classList.remove("hide")}}}document.addEventListener("DOMContentLoaded",(()=>{loadIncludes()}));let isFileProtocol="file:"==location.protocol;function waitLoadScripts(e,t){let o=e.map((e=>document.getElementById(e+"-script"))),l=0;!function e(){let n=o[l];l++,n&&"true"!=n.getAttribute("loaded")||l<o.length&&e(),l<o.length?n.addEventListener("load",e):t()}()}</script></head><body class="publish css-settings-manager theme-dark styled-scrollbars show-inline-title is-floating-nav auto-full-screen show-ribbon is-focused"><script defer="">let theme=localStorage.getItem("theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");"dark"==theme?(document.body.classList.add("theme-dark"),document.body.classList.remove("theme-light")):(document.body.classList.add("theme-light"),document.body.classList.remove("theme-dark")),window.innerWidth<480?document.body.classList.add("is-phone"):window.innerWidth<768?document.body.classList.add("is-tablet"):window.innerWidth<1024?document.body.classList.add("is-small-screen"):document.body.classList.add("is-large-screen")</script><div class="webpage-container workspace"><div class="sidebar-left sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content"><div class="search-input-container"><div class="search-input-wrapper"><input enterkeyhint="search" type="search" spellcheck="false" placeholder="Search..."><div class="search-input-clear-button" aria-label="Clear search"></div></div></div><include src="lib/html/file-tree.html"></include></div><script defer="">let ls = document.querySelector(".sidebar-left"); ls.classList.add("is-collapsed"); if (window.innerWidth > 768) ls.classList.remove("is-collapsed"); ls.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-left-width"));</script></div><div class="document-container markdown-reading-view hide"><div class="markdown-preview-view markdown-rendered allow-fold-headings allow-fold-lists is-readable-line-width"><style id="MJX-CHTML-styles"></style><div class="markdown-preview-sizer markdown-preview-section"><h1 class="page-title heading inline-title" id="🐽 Oracle CHAR 타입 공백 패딩 — 트러블슈팅 &amp;amp; 재발 방지 가이드"><p dir="auto">🐽 Oracle CHAR 타입 공백 패딩 — 트러블슈팅 &amp; 재발 방지 가이드</p></h1><div class="el-h1 heading-wrapper"><div class="heading-children"><div class="el-p"><p dir="auto"><a href="?query=tag:%EA%B3%B5%EB%B6%80" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#공부">#공부</a> <a href="?query=tag:%EA%B5%AC%EC%A1%B0" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#구조">#구조</a> <a href="?query=tag:%EC%84%A4%EA%B3%84" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#설계">#설계</a> <a href="?query=tag:MSA" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#MSA">#MSA</a> <a href="?query=tag:CloudNative" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#CloudNative">#CloudNative</a></p></div><div class="el-hr"><hr></div><div class="el-br"><br></div><div class="el-h2 heading-wrapper"><h2 data-heading="목차" dir="auto" class="heading" id="목차"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>목차</h2><div class="heading-children"><div class="el-ol"><ol>
+<li data-line="0" dir="auto">
+<p><a class="internal-link" data-href="#1-현상" href="study/cs/🐽-oracle-char-타입-공백-패딩-—-트러블슈팅-&amp;-재발-방지-가이드.html#1-현상" target="_self" rel="noopener nofollow">현상</a></p>
+</li>
+<li data-line="2" dir="auto">
+<p><a class="internal-link" data-href="#2-원인-분석" href="study/cs/🐽-oracle-char-타입-공백-패딩-—-트러블슈팅-&amp;-재발-방지-가이드.html#2-원인-분석" target="_self" rel="noopener nofollow">원인 분석</a></p>
+</li>
+<li data-line="4" dir="auto">
+<p><a class="internal-link" data-href="#3-로그에서-정상으로-보였던-이유" href="study/cs/🐽-oracle-char-타입-공백-패딩-—-트러블슈팅-&amp;-재발-방지-가이드.html#3-로그에서-정상으로-보였던-이유" target="_self" rel="noopener nofollow">로그에서 정상으로 보였던 이유</a></p>
+</li>
+<li data-line="6" dir="auto">
+<p><a class="internal-link" data-href="#4-적용한-수정-내역" href="study/cs/🐽-oracle-char-타입-공백-패딩-—-트러블슈팅-&amp;-재발-방지-가이드.html#4-적용한-수정-내역" target="_self" rel="noopener nofollow">적용한 수정 내역</a></p>
+</li>
+<li data-line="8" dir="auto">
+<p><a class="internal-link" data-href="#5-재발-방지-대책" href="study/cs/🐽-oracle-char-타입-공백-패딩-—-트러블슈팅-&amp;-재발-방지-가이드.html#5-재발-방지-대책" target="_self" rel="noopener nofollow">재발 방지 대책</a></p>
+</li>
+<li data-line="10" dir="auto">
+<p><a class="internal-link" data-href="#6-oracle-char-vs-varchar2-핵심-정리" href="study/cs/🐽-oracle-char-타입-공백-패딩-—-트러블슈팅-&amp;-재발-방지-가이드.html#6-oracle-char-vs-varchar2-핵심-정리" target="_self" rel="noopener nofollow">Oracle CHAR vs VARCHAR2 핵심 정리</a></p>
+</li>
+</ol></div><div class="el-hr"><hr></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="1. 현상" dir="auto" class="heading" id="1._현상"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>1. 현상</h2><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">항목</th>
+<th dir="ltr">내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr"><strong>발생 기능</strong></td>
+<td dir="ltr">기준정보 &gt; 코드관리 — 코드 그룹 단건 조회 (<code>selectGroupOne</code>)</td>
+</tr>
+<tr>
+<td dir="ltr"><strong>증상</strong></td>
+<td dir="ltr">전체 목록 조회(<code>selectGroupList</code>)는 정상, 단건 조회는 항상 데이터 없음(0건)</td>
+</tr>
+<tr>
+<td dir="ltr"><strong>P6SPY 로그</strong></td>
+<td dir="ltr">SQL·파라미터 모두 정상으로 출력됨</td>
+</tr>
+<tr>
+<td dir="ltr"><strong>MyBatis 매핑</strong></td>
+<td dir="ltr">결과 객체 <code>null</code> 반환 (매핑 실패가 아닌 0건 반환)</td>
+</tr>
+</tbody>
+</table></div><div class="el-hr"><hr></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="2. 원인 분석" dir="auto" class="heading" id="2._원인_분석"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>2. 원인 분석</h2><div class="heading-children"><div class="el-h3 heading-wrapper"><h3 data-heading="2.1 Oracle CHAR 타입의 공백 패딩" dir="auto" class="heading" id="2.1_Oracle_CHAR_타입의_공백_패딩"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>2.1 Oracle CHAR 타입의 공백 패딩</h3><div class="heading-children"><div class="el-p"><p dir="auto">Oracle의 <code>CHAR(n)</code> 컬럼은 입력값이 선언 길이보다 짧을 경우 <strong>오른쪽에 공백을 패딩</strong>하여 저장한다.</p></div><div class="el-pre"><pre><code data-line="0">
+-- GROUP_CD 컬럼이 CHAR(5)로 선언된 경우
+
+INSERT INTO T_CODEGROUP VALUES ('KOR', '002', '거래구분');
+
+-- → DB에는 GROUP_CD = '002 &nbsp;' (뒤에 공백 2자리 패딩되어 저장)
+
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-p"><p dir="auto">디버그 로그로 확인한 실제 저장값:</p></div><div class="el-pre"><pre><code data-line="0">
+[DEBUG] DB 실제값 langCd='KOR' groupCd='002 &nbsp;' groupName='거래구분'
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ↑↑ 공백 2자리 패딩
+
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div></div></div><div class="el-h3 heading-wrapper"><h3 data-heading="2.2 Oracle의 두 가지 문자열 비교 규칙" dir="auto" class="heading" id="2.2_Oracle의_두_가지_문자열_비교_규칙"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>2.2 Oracle의 두 가지 문자열 비교 규칙</h3><div class="heading-children"><div class="el-p"><p dir="auto">Oracle은 비교 대상의 데이터 타입에 따라 다른 비교 규칙을 적용한다.</p></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">비교 조합</th>
+<th dir="ltr">적용 규칙</th>
+<th dir="ltr">결과 예시</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr"><code>CHAR = CHAR</code></td>
+<td dir="ltr"><strong>공백 패딩 비교</strong> (blank-padded)</td>
+<td dir="ltr"><code>'002' = '002  '</code> → <strong>TRUE</strong></td>
+</tr>
+<tr>
+<td dir="ltr"><code>CHAR = VARCHAR2</code></td>
+<td dir="ltr"><strong>비패딩 비교</strong> (non-padded)</td>
+<td dir="ltr"><code>'002' = '002  '</code> → <strong>FALSE</strong></td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h3 heading-wrapper"><h3 data-heading="2.3 JDBC 파라미터는 VARCHAR2로 전송된다" dir="auto" class="heading" id="2.3_JDBC_파라미터는_VARCHAR2로_전송된다"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>2.3 JDBC 파라미터는 VARCHAR2로 전송된다</h3><div class="heading-children"><div class="el-p"><p dir="auto">MyBatis/JDBC는 Java <code>String</code> 타입 파라미터를 Oracle에 <strong>VARCHAR2</strong>로 바인딩한다.</p></div><div class="el-pre"><pre><code data-line="0">
+애플리케이션: groupCd = "002" &nbsp; &nbsp;→ JDBC PreparedStatement → Oracle VARCHAR2('002')
+
+DB 저장값: &nbsp; &nbsp;GROUP_CD = '002 &nbsp;' → CHAR(5)
+
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-p"><p dir="auto">비교 조합이 <code>CHAR = VARCHAR2</code>가 되므로 비패딩 비교 규칙이 적용되어:</p></div><div class="el-pre"><pre class="language-sql"><code data-line="0" class="language-sql is-loaded">
+<span class="token comment">-- 실제로 Oracle이 수행하는 비교</span>
+
+<span class="token keyword">WHERE</span> GROUP_CD <span class="token operator">=</span> <span class="token string">'002'</span>
+
+<span class="token comment">-- '002  ' (CHAR)  =  '002' (VARCHAR2)  → FALSE → 0건 반환</span>
+
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div></div></div><div class="el-h3 heading-wrapper"><h3 data-heading="2.4 selectGroupList는 왜 정상이었나" dir="auto" class="heading" id="2.4_selectGroupList는_왜_정상이었나"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>2.4 selectGroupList는 왜 정상이었나</h3><div class="heading-children"><div class="el-p"><p dir="auto"><code>selectGroupList</code>는 WHERE 절이 없는 <strong>전체 조회</strong>이므로 파라미터 바인딩이 발생하지 않는다. CHAR 패딩 값 그대로 반환될 뿐, 비교 연산이 없어 문제가 드러나지 않았다.</p></div><div class="el-pre"><pre class="language-sql"><code data-line="0" class="language-sql is-loaded">
+<span class="token comment">-- 목록 조회: WHERE 없음 → 비교 없음 → 패딩값 그대로 반환</span>
+
+<span class="token keyword">SELECT</span> LANG_CD<span class="token punctuation">,</span> GROUP_CD<span class="token punctuation">,</span> GROUP_NAME <span class="token keyword">FROM</span> T_CODEGROUP <span class="token keyword">ORDER</span> <span class="token keyword">BY</span> LANG_CD<span class="token punctuation">,</span> GROUP_CD
+
+<span class="token comment">-- → 정상 동작</span>
+
+  
+
+<span class="token comment">-- 단건 조회: CHAR 컬럼을 VARCHAR2 파라미터와 비교 → 0건</span>
+
+<span class="token keyword">SELECT</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token keyword">FROM</span> T_CODEGROUP <span class="token keyword">WHERE</span> GROUP_CD <span class="token operator">=</span> <span class="token string">'002'</span>
+
+<span class="token comment">-- → 0건 반환 (DB에는 '002  '로 저장되어 있음)</span>
+
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-hr"><hr></div></div></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="3. 로그에서 정상으로 보였던 이유" dir="auto" class="heading" id="3._로그에서_정상으로_보였던_이유"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>3. 로그에서 정상으로 보였던 이유</h2><div class="heading-children"><div class="el-h3 heading-wrapper"><h3 data-heading="3.1 P6SPY는 바인딩 직전 값을 로깅한다" dir="auto" class="heading" id="3.1_P6SPY는_바인딩_직전_값을_로깅한다"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>3.1 P6SPY는 바인딩 직전 값을 로깅한다</h3><div class="heading-children"><div class="el-p"><p dir="auto">P6SPY는 PreparedStatement의 <code>setString()</code> 호출 시점 — 즉 Oracle 서버에 값이 전달되기 <strong>이전</strong> 에 파라미터를 가로채 로깅한다.</p></div><div class="el-pre"><pre><code data-line="0">
+[P6SPY 로그]
+
+select LANG_CD, GROUP_CD, GROUP_NAME from T_CODEGROUP
+
+where LANG_CD = 'KOR' and GROUP_CD = '002'
+
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-p"><p dir="auto">로그 상으로는 <code>'002'</code>가 올바르게 바인딩된 것처럼 보이지만, Oracle 내부에서는 이 값을 <strong>VARCHAR2 타입</strong>으로 처리하여 <code>'002 &nbsp;'</code>(CHAR)와 비교하므로 0건이 반환된다.</p></div><div class="el-pre"><pre><code data-line="0">
+P6SPY 로그: &nbsp;GROUP_CD = '002' &nbsp; &nbsp;← 눈에는 정상
+
+Oracle 내부: &nbsp;'002' (VARCHAR2) ≠ '002 &nbsp;' (CHAR) &nbsp;← 실제로는 불일치
+
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div></div></div><div class="el-h3 heading-wrapper"><h3 data-heading="3.2 SQL Developer에서는 왜 되었나" dir="auto" class="heading" id="3.2_SQL_Developer에서는_왜_되었나"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>3.2 SQL Developer에서는 왜 되었나</h3><div class="heading-children"><div class="el-p"><p dir="auto">SQL Developer에서 쿼리를 직접 실행할 때는 리터럴 문자열 <code>'002'</code>가 Oracle 내부에서 <strong>CHAR 타입</strong>으로 처리되어 공백 패딩 비교 규칙이 적용되므로 정상 조회된다.</p></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">실행 환경</th>
+<th dir="ltr">파라미터 타입</th>
+<th dir="ltr">비교 규칙</th>
+<th dir="ltr">결과</th>
+<th dir="auto"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">SQL Developer (리터럴)</td>
+<td dir="ltr">CHAR</td>
+<td dir="ltr">공백 패딩 비교</td>
+<td dir="ltr">정상 조회</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">JDBC PreparedStatement</td>
+<td dir="ltr">VARCHAR2</td>
+<td dir="ltr">비패딩 비교</td>
+<td dir="ltr">0건 반환</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div><div class="el-p"><p dir="auto">이 차이가 "쿼리는 정상인데 애플리케이션에서만 안 된다"는 혼란을 유발했다.</p></div><div class="el-hr"><hr></div></div></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="4. 적용한 수정 내역" dir="auto" class="heading" id="4._적용한_수정_내역"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>4. 적용한 수정 내역</h2><div class="heading-children"><div class="el-h3 heading-wrapper"><h3 data-heading="4.1 수정 전 (문제 코드)" dir="auto" class="heading" id="4.1_수정_전_(문제_코드)"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>4.1 수정 전 (문제 코드)</h3><div class="heading-children"><div class="el-pre"><pre class="language-xml"><code data-line="0" class="language-xml is-loaded">
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>selectGroupOne<span class="token punctuation">"</span></span> <span class="token attr-name">resultMap</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>groupRm<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+
+    SELECT LANG_CD, GROUP_CD, GROUP_NAME
+
+    FROM T_CODEGROUP
+
+    WHERE LANG_CD = #{langCd} AND GROUP_CD = #{groupCd}
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">&gt;</span></span>
+
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div></div></div><div class="el-h3 heading-wrapper"><h3 data-heading="4.2 수정 후 (수정 코드)" dir="auto" class="heading" id="4.2_수정_후_(수정_코드)"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>4.2 수정 후 (수정 코드)</h3><div class="heading-children"><div class="el-p"><p dir="auto">CHAR 컬럼에 <code>RTRIM</code>을 적용하여 공백 패딩을 제거한 후 비교하고, SELECT 시에도 정규화된 값을 반환한다.</p></div><div class="el-pre"><pre class="language-xml"><code data-line="0" class="language-xml is-loaded">
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>selectGroupOne<span class="token punctuation">"</span></span> <span class="token attr-name">resultType</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>kr.co.nh.atms.web.code.entity.CodeGroup<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+
+    SELECT RTRIM(LANG_CD)  AS langCd,
+
+           RTRIM(GROUP_CD) AS groupCd,
+
+           GROUP_NAME      AS groupName
+
+    FROM T_CODEGROUP
+
+    WHERE RTRIM(LANG_CD) = #{langCd} AND RTRIM(GROUP_CD) = #{groupCd}
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">&gt;</span></span>
+
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div></div></div><div class="el-h3 heading-wrapper"><h3 data-heading="4.3 동일 문제가 적용된 전체 범위" dir="auto" class="heading" id="4.3_동일_문제가_적용된_전체_범위"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>4.3 동일 문제가 적용된 전체 범위</h3><div class="heading-children"><div class="el-p"><p dir="auto"><code>T_CODEGROUP</code>과 <code>T_CODE</code>의 CHAR 컬럼(<code>LANG_CD</code>, <code>GROUP_CD</code>, <code>CODE</code>)을 사용하는 <strong>모든 WHERE 절과 SELECT</strong> 에 일괄 적용하였다.</p></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">쿼리 ID</th>
+<th dir="ltr">적용 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr"><code>codeCols</code> (공통 컬럼)</td>
+<td dir="ltr"><code>RTRIM</code> + <code>AS</code> 별칭 추가</td>
+</tr>
+<tr>
+<td dir="ltr"><code>codeWhere</code> (공통 조건)</td>
+<td dir="ltr"><code>RTRIM(컬럼) = #{파라미터}</code></td>
+</tr>
+<tr>
+<td dir="ltr"><code>selectCodeOne</code></td>
+<td dir="ltr">WHERE 절 RTRIM 적용</td>
+</tr>
+<tr>
+<td dir="ltr"><code>selectCodeByGroup</code></td>
+<td dir="ltr">WHERE 절 RTRIM 적용</td>
+</tr>
+<tr>
+<td dir="ltr"><code>updateCode</code></td>
+<td dir="ltr">WHERE 절 RTRIM 적용</td>
+</tr>
+<tr>
+<td dir="ltr"><code>deleteCode</code></td>
+<td dir="ltr">WHERE 절 RTRIM 적용</td>
+</tr>
+<tr>
+<td dir="ltr"><code>selectGroupList</code></td>
+<td dir="ltr">SELECT RTRIM 적용 (반환값 정규화)</td>
+</tr>
+<tr>
+<td dir="ltr"><code>selectGroupOne</code></td>
+<td dir="ltr">SELECT + WHERE 모두 RTRIM 적용</td>
+</tr>
+<tr>
+<td dir="ltr"><code>updateGroup</code></td>
+<td dir="ltr">WHERE 절 RTRIM 적용</td>
+</tr>
+<tr>
+<td dir="ltr"><code>deleteGroup</code></td>
+<td dir="ltr">WHERE 절 RTRIM 적용</td>
+</tr>
+<tr>
+<td dir="ltr"><code>countCodesByGroup</code></td>
+<td dir="ltr">WHERE 절 RTRIM 적용</td>
+</tr>
+</tbody>
+</table></div><div class="el-blockquote"><blockquote dir="auto">
+<p><strong>INSERT는 수정 불필요</strong>: INSERT 시 Oracle이 자동으로 CHAR 길이에 맞게 패딩하므로 정상 동작한다.</p>
+</blockquote></div><div class="el-hr"><hr></div></div></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="5. 재발 방지 대책" dir="auto" class="heading" id="5._재발_방지_대책"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>5. 재발 방지 대책</h2><div class="heading-children"><div class="el-h3 heading-wrapper"><h3 data-heading="5.1 DB 스키마 설계 원칙 (신규 테이블)" dir="auto" class="heading" id="5.1_DB_스키마_설계_원칙_(신규_테이블)"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>5.1 DB 스키마 설계 원칙 (신규 테이블)</h3><div class="heading-children"><div class="el-p"><p dir="auto"><strong><code>CHAR</code> 타입은 사용하지 않는다. 고정 길이 코드성 컬럼도 <code>VARCHAR2</code>로 선언한다.</strong></p></div><div class="el-pre"><pre class="language-sql"><code data-line="0" class="language-sql is-loaded">
+<span class="token comment">-- ❌ 금지</span>
+
+GROUP_CD  <span class="token keyword">CHAR</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span>
+
+  
+
+<span class="token comment">-- ✅ 권장</span>
+
+GROUP_CD  VARCHAR2<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span>  <span class="token operator">NOT</span> <span class="token boolean">NULL</span>
+
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-p"><p dir="auto"><code>CHAR</code>는 비교 시 타입에 따라 동작이 달라지는 숨겨진 위험이 있다. Oracle에서 <code>VARCHAR2</code>는 입력 길이 그대로 저장하며 JDBC와 완전히 호환된다.</p></div></div></div><div class="el-h3 heading-wrapper"><h3 data-heading="5.2 기존 CHAR 컬럼을 다루는 MyBatis 작성 규칙" dir="auto" class="heading" id="5.2_기존_CHAR_컬럼을_다루는_MyBatis_작성_규칙"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>5.2 기존 CHAR 컬럼을 다루는 MyBatis 작성 규칙</h3><div class="heading-children"><div class="el-p"><p dir="auto">레거시 DB의 <code>CHAR</code> 컬럼을 피할 수 없는 경우, 아래 규칙을 반드시 따른다.</p></div><div class="el-pre"><pre class="language-xml"><code data-line="0" class="language-xml is-loaded">
+<span class="token comment">&lt;!-- ❌ 금지: CHAR 컬럼을 파라미터와 직접 비교 --&gt;</span>
+
+WHERE GROUP_CD = #{groupCd}
+
+  
+
+<span class="token comment">&lt;!-- ✅ 필수: RTRIM으로 공백 제거 후 비교 --&gt;</span>
+
+WHERE RTRIM(GROUP_CD) = #{groupCd}
+
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-pre"><pre class="language-xml"><code data-line="0" class="language-xml is-loaded">
+<span class="token comment">&lt;!-- ❌ 금지: CHAR 컬럼을 그대로 SELECT --&gt;</span>
+
+SELECT GROUP_CD FROM T_CODEGROUP
+
+  
+
+<span class="token comment">&lt;!-- ✅ 권장: RTRIM으로 정규화하여 SELECT --&gt;</span>
+
+SELECT RTRIM(GROUP_CD) AS GROUP_CD FROM T_CODEGROUP
+
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div></div></div><div class="el-h3 heading-wrapper"><h3 data-heading="5.3 코드 리뷰 체크리스트 항목 추가" dir="auto" class="heading" id="5.3_코드_리뷰_체크리스트_항목_추가"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>5.3 코드 리뷰 체크리스트 항목 추가</h3><div class="heading-children"><div class="el-p"><p dir="auto">PR 리뷰 시 아래 항목을 점검한다.</p></div><div class="el-pre"><pre><code data-line="0">
+[ ] Oracle CHAR 타입 컬럼과의 WHERE 비교에 RTRIM이 적용되어 있는가?
+
+[ ] CHAR 타입 컬럼이 SELECT에 포함된 경우 RTRIM 정규화가 되어 있는가?
+
+[ ] 신규 테이블 DDL에 CHAR 타입이 사용되지 않았는가?
+
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div></div></div><div class="el-h3 heading-wrapper"><h3 data-heading="5.4 SQL Developer와 JDBC 동작 차이 인지" dir="auto" class="heading" id="5.4_SQL_Developer와_JDBC_동작_차이_인지"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>5.4 SQL Developer와 JDBC 동작 차이 인지</h3><div class="heading-children"><div class="el-p"><p dir="auto">테스트 시 다음 사항을 반드시 확인한다.</p></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">점검 항목</th>
+<th dir="ltr">방법</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">P6SPY 로그만으로 결과를 판단하지 않는다</td>
+<td dir="ltr">P6SPY는 바인딩 값을 보여주지만, 타입 정보는 표시하지 않는다</td>
+</tr>
+<tr>
+<td dir="ltr">SQL Developer 직접 실행 결과를 맹신하지 않는다</td>
+<td dir="ltr">리터럴 문자열은 CHAR 비교, JDBC는 VARCHAR2 비교로 동작이 다르다</td>
+</tr>
+<tr>
+<td dir="ltr">단건 조회는 목록 조회와 별도로 반드시 테스트한다</td>
+<td dir="ltr">WHERE 절이 없는 목록과 달리, 단건은 CHAR 비교 문제가 노출된다</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h3 heading-wrapper"><h3 data-heading="5.5 디버깅 시 파라미터 길이 출력 패턴" dir="auto" class="heading" id="5.5_디버깅_시_파라미터_길이_출력_패턴"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>5.5 디버깅 시 파라미터 길이 출력 패턴</h3><div class="heading-children"><div class="el-p"><p dir="auto">CHAR 타입 문제는 값이 같아 보여도 길이가 다르면 발생한다. 의심 시 길이를 함께 로깅한다.</p></div><div class="el-pre"><pre class="language-java"><code data-line="0" class="language-java is-loaded">
+log<span class="token punctuation">.</span><span class="token function">debug</span><span class="token punctuation">(</span><span class="token string">"groupCd='{}' len={}"</span><span class="token punctuation">,</span> groupCd<span class="token punctuation">,</span> groupCd <span class="token operator">==</span> <span class="token keyword">null</span> <span class="token operator">?</span> <span class="token operator">-</span><span class="token number">1</span> <span class="token operator">:</span> groupCd<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-p"><p dir="auto">DB 실제값과 수신 파라미터의 <code>len</code>이 다르면 CHAR 패딩 문제를 의심한다.</p></div><div class="el-hr"><hr></div></div></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="6. Oracle CHAR vs VARCHAR2 핵심 정리" dir="auto" class="heading" id="6._Oracle_CHAR_vs_VARCHAR2_핵심_정리"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>6. Oracle CHAR vs VARCHAR2 핵심 정리</h2><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">항목</th>
+<th dir="ltr"><code>CHAR(n)</code></th>
+<th dir="ltr"><code>VARCHAR2(n)</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">저장 방식</td>
+<td dir="ltr">고정 길이 (공백 패딩)</td>
+<td dir="ltr">가변 길이 (입력값 그대로)</td>
+</tr>
+<tr>
+<td dir="ltr"><code>= CHAR</code> 비교</td>
+<td dir="ltr">공백 패딩 비교 (blank-padded)</td>
+<td dir="auto">—</td>
+</tr>
+<tr>
+<td dir="ltr"><code>= VARCHAR2</code> 비교</td>
+<td dir="ltr"><strong>비패딩 비교 (non-padded)</strong></td>
+<td dir="ltr">비패딩 비교</td>
+</tr>
+<tr>
+<td dir="ltr">JDBC String 비교</td>
+<td dir="ltr"><strong>비패딩</strong> → <code>'002' ≠ '002  '</code></td>
+<td dir="ltr">비패딩 → <code>'002' = '002'</code></td>
+</tr>
+<tr>
+<td dir="ltr">SQL Developer 리터럴 비교</td>
+<td dir="ltr">공백 패딩 → <code>'002' = '002  '</code></td>
+<td dir="auto">—</td>
+</tr>
+<tr>
+<td dir="ltr">해결 방법</td>
+<td dir="ltr"><code>RTRIM(컬럼) = #{param}</code></td>
+<td dir="ltr">별도 처리 불필요</td>
+</tr>
+</tbody>
+</table></div><div class="el-blockquote"><blockquote dir="auto">
+<p><strong>핵심</strong>: SQL Developer에서는 되고 애플리케이션에서는 안 된다면 CHAR vs VARCHAR2 비교 규칙 차이를 가장 먼저 의심하라.</p>
+</blockquote></div><div class="mod-footer mod-ui"></div></div></div></div></div></div></div></div><div class="sidebar-right sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content"><div class="outline-tree tree-container"><div class="tree-item nav-folder mod-root" data-depth="0"><div class="tree-item-self nav-folder-title"><div class="tree-item-inner nav-folder-title-content">Table Of Contents</div><button class="clickable-icon nav-action-button tree-collapse-all" aria-label="Collapse All"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg></button></div><div class="tree-item-children nav-folder-children"><div class="nav-folder-spacer"></div><div class="tree-item mod-collapsible" data-depth="1"><a class="tree-item-self is-clickable" href="study/cs/🐽-oracle-char-타입-공백-패딩-—-트러블슈팅-&amp;-재발-방지-가이드.html#🐽 Oracle CHAR 타입 공백 패딩 — 트러블슈팅 &amp;amp; 재발 방지 가이드" data-path="#🐽 Oracle CHAR 타입 공백 패딩 — 트러블슈팅 &amp;amp; 재발 방지 가이드"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><div class="tree-item-inner heading-link" heading-name="🐽 Oracle CHAR 타입 공백 패딩 — 트러블슈팅 &amp; 재발 방지 가이드">🐽 Oracle CHAR 타입 공백 패딩 — 트러블슈팅 &amp; 재발 방지 가이드</div></a><div class="tree-item-children"><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="study/cs/🐽-oracle-char-타입-공백-패딩-—-트러블슈팅-&amp;-재발-방지-가이드.html#목차" data-path="#목차"><div class="tree-item-inner heading-link" heading-name="목차">목차</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="study/cs/🐽-oracle-char-타입-공백-패딩-—-트러블슈팅-&amp;-재발-방지-가이드.html#1._현상" data-path="#1._현상"><div class="tree-item-inner heading-link" heading-name="1. 현상">1. 
+현상
+</div></a><div class="tree-item-children"></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-item-self is-clickable" href="study/cs/🐽-oracle-char-타입-공백-패딩-—-트러블슈팅-&amp;-재발-방지-가이드.html#2._원인_분석" data-path="#2._원인_분석"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><div class="tree-item-inner heading-link" heading-name="2. 원인 분석">2. 
+원인 분석
+</div></a><div class="tree-item-children"><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="study/cs/🐽-oracle-char-타입-공백-패딩-—-트러블슈팅-&amp;-재발-방지-가이드.html#2.1_Oracle_CHAR_타입의_공백_패딩" data-path="#2.1_Oracle_CHAR_타입의_공백_패딩"><div class="tree-item-inner heading-link" heading-name="2.1 Oracle CHAR 타입의 공백 패딩">2.1 Oracle CHAR 타입의 공백 패딩</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="study/cs/🐽-oracle-char-타입-공백-패딩-—-트러블슈팅-&amp;-재발-방지-가이드.html#2.2_Oracle의_두_가지_문자열_비교_규칙" data-path="#2.2_Oracle의_두_가지_문자열_비교_규칙"><div class="tree-item-inner heading-link" heading-name="2.2 Oracle의 두 가지 문자열 비교 규칙">2.2 Oracle의 두 가지 문자열 비교 규칙</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="study/cs/🐽-oracle-char-타입-공백-패딩-—-트러블슈팅-&amp;-재발-방지-가이드.html#2.3_JDBC_파라미터는_VARCHAR2로_전송된다" data-path="#2.3_JDBC_파라미터는_VARCHAR2로_전송된다"><div class="tree-item-inner heading-link" heading-name="2.3 JDBC 파라미터는 VARCHAR2로 전송된다">2.3 JDBC 파라미터는 VARCHAR2로 전송된다</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="study/cs/🐽-oracle-char-타입-공백-패딩-—-트러블슈팅-&amp;-재발-방지-가이드.html#2.4_selectGroupList는_왜_정상이었나" data-path="#2.4_selectGroupList는_왜_정상이었나"><div class="tree-item-inner heading-link" heading-name="2.4 selectGroupList는 왜 정상이었나">2.4 selectGroupList는 왜 정상이었나</div></a><div class="tree-item-children"></div></div></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-item-self is-clickable" href="study/cs/🐽-oracle-char-타입-공백-패딩-—-트러블슈팅-&amp;-재발-방지-가이드.html#3._로그에서_정상으로_보였던_이유" data-path="#3._로그에서_정상으로_보였던_이유"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><div class="tree-item-inner heading-link" heading-name="3. 로그에서 정상으로 보였던 이유">3. 
+로그에서 정상으로 보였던 이유
+</div></a><div class="tree-item-children"><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="study/cs/🐽-oracle-char-타입-공백-패딩-—-트러블슈팅-&amp;-재발-방지-가이드.html#3.1_P6SPY는_바인딩_직전_값을_로깅한다" data-path="#3.1_P6SPY는_바인딩_직전_값을_로깅한다"><div class="tree-item-inner heading-link" heading-name="3.1 P6SPY는 바인딩 직전 값을 로깅한다">3.1 P6SPY는 바인딩 직전 값을 로깅한다</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="study/cs/🐽-oracle-char-타입-공백-패딩-—-트러블슈팅-&amp;-재발-방지-가이드.html#3.2_SQL_Developer에서는_왜_되었나" data-path="#3.2_SQL_Developer에서는_왜_되었나"><div class="tree-item-inner heading-link" heading-name="3.2 SQL Developer에서는 왜 되었나">3.2 SQL Developer에서는 왜 되었나</div></a><div class="tree-item-children"></div></div></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-item-self is-clickable" href="study/cs/🐽-oracle-char-타입-공백-패딩-—-트러블슈팅-&amp;-재발-방지-가이드.html#4._적용한_수정_내역" data-path="#4._적용한_수정_내역"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><div class="tree-item-inner heading-link" heading-name="4. 적용한 수정 내역">4. 
+적용한 수정 내역
+</div></a><div class="tree-item-children"><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="study/cs/🐽-oracle-char-타입-공백-패딩-—-트러블슈팅-&amp;-재발-방지-가이드.html#4.1_수정_전_(문제_코드)" data-path="#4.1_수정_전_(문제_코드)"><div class="tree-item-inner heading-link" heading-name="4.1 수정 전 (문제 코드)">4.1 수정 전 (문제 코드)</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="study/cs/🐽-oracle-char-타입-공백-패딩-—-트러블슈팅-&amp;-재발-방지-가이드.html#4.2_수정_후_(수정_코드)" data-path="#4.2_수정_후_(수정_코드)"><div class="tree-item-inner heading-link" heading-name="4.2 수정 후 (수정 코드)">4.2 수정 후 (수정 코드)</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="study/cs/🐽-oracle-char-타입-공백-패딩-—-트러블슈팅-&amp;-재발-방지-가이드.html#4.3_동일_문제가_적용된_전체_범위" data-path="#4.3_동일_문제가_적용된_전체_범위"><div class="tree-item-inner heading-link" heading-name="4.3 동일 문제가 적용된 전체 범위">4.3 동일 문제가 적용된 전체 범위</div></a><div class="tree-item-children"></div></div></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-item-self is-clickable" href="study/cs/🐽-oracle-char-타입-공백-패딩-—-트러블슈팅-&amp;-재발-방지-가이드.html#5._재발_방지_대책" data-path="#5._재발_방지_대책"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><div class="tree-item-inner heading-link" heading-name="5. 재발 방지 대책">5. 
+재발 방지 대책
+</div></a><div class="tree-item-children"><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="study/cs/🐽-oracle-char-타입-공백-패딩-—-트러블슈팅-&amp;-재발-방지-가이드.html#5.1_DB_스키마_설계_원칙_(신규_테이블)" data-path="#5.1_DB_스키마_설계_원칙_(신규_테이블)"><div class="tree-item-inner heading-link" heading-name="5.1 DB 스키마 설계 원칙 (신규 테이블)">5.1 DB 스키마 설계 원칙 (신규 테이블)</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="study/cs/🐽-oracle-char-타입-공백-패딩-—-트러블슈팅-&amp;-재발-방지-가이드.html#5.2_기존_CHAR_컬럼을_다루는_MyBatis_작성_규칙" data-path="#5.2_기존_CHAR_컬럼을_다루는_MyBatis_작성_규칙"><div class="tree-item-inner heading-link" heading-name="5.2 기존 CHAR 컬럼을 다루는 MyBatis 작성 규칙">5.2 기존 CHAR 컬럼을 다루는 MyBatis 작성 규칙</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="study/cs/🐽-oracle-char-타입-공백-패딩-—-트러블슈팅-&amp;-재발-방지-가이드.html#5.3_코드_리뷰_체크리스트_항목_추가" data-path="#5.3_코드_리뷰_체크리스트_항목_추가"><div class="tree-item-inner heading-link" heading-name="5.3 코드 리뷰 체크리스트 항목 추가">5.3 코드 리뷰 체크리스트 항목 추가</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="study/cs/🐽-oracle-char-타입-공백-패딩-—-트러블슈팅-&amp;-재발-방지-가이드.html#5.4_SQL_Developer와_JDBC_동작_차이_인지" data-path="#5.4_SQL_Developer와_JDBC_동작_차이_인지"><div class="tree-item-inner heading-link" heading-name="5.4 SQL Developer와 JDBC 동작 차이 인지">5.4 SQL Developer와 JDBC 동작 차이 인지</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="study/cs/🐽-oracle-char-타입-공백-패딩-—-트러블슈팅-&amp;-재발-방지-가이드.html#5.5_디버깅_시_파라미터_길이_출력_패턴" data-path="#5.5_디버깅_시_파라미터_길이_출력_패턴"><div class="tree-item-inner heading-link" heading-name="5.5 디버깅 시 파라미터 길이 출력 패턴">5.5 디버깅 시 파라미터 길이 출력 패턴</div></a><div class="tree-item-children"></div></div></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="study/cs/🐽-oracle-char-타입-공백-패딩-—-트러블슈팅-&amp;-재발-방지-가이드.html#6._Oracle_CHAR_vs_VARCHAR2_핵심_정리" data-path="#6._Oracle_CHAR_vs_VARCHAR2_핵심_정리"><div class="tree-item-inner heading-link" heading-name="6. Oracle CHAR vs VARCHAR2 핵심 정리">6. 
+Oracle CHAR vs VARCHAR2 핵심 정리
+</div></a><div class="tree-item-children"></div></div></div></div></div></div></div></div><script defer="">let rs = document.querySelector(".sidebar-right"); rs.classList.add("is-collapsed"); if (window.innerWidth > 768) rs.classList.remove("is-collapsed"); rs.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-right-width"));</script></div></div></body></html>

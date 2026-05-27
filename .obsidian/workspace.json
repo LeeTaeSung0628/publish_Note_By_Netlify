@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "907c2ec9fce7279d",
+        "id": "badc23c0ca4191b9",
         "type": "tabs",
         "children": [
           {
-            "id": "5add43bfee25d2b3",
+            "id": "6b852602bb89c8ec",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": "lib/html/custom-head-content.html",
-                "bFile": "lib/html/custom-head-content.html",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: custom-head-content.html"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "새 탭"
             }
           }
         ]
@@ -149,7 +145,7 @@
             }
           },
           {
-            "id": "5cc2f7897ebd9692",
+            "id": "1cad6f159ccdc2d0",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -177,8 +173,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5cc2f7897ebd9692",
+  "active": "1cad6f159ccdc2d0",
   "lastOpenFiles": [
+    "lib/fonts/01dcbad1bac635f9c9cd.woff2",
+    "lib/fonts/c504db5c06caaf7cdfba.woff2",
+    "study/cs/🐽-oracle-char-타입-공백-패딩-—-트러블슈팅-&-재발-방지-가이드.html",
     "study/cs/🤖-java-socket-프로그래밍.html",
     "lib/fonts/085cb93e613ba3d40d2b.woff2",
     "lib/fonts/293fd13dbca5a3e450ef.woff2",
@@ -189,9 +188,6 @@
     "project/new-project/📴-anonichat-frontserver-feat.-next.js.html",
     "project/new-project/📍-next.js-page-router.html",
     "study/cs/🍌-react와-next.js.html",
-    "project/new-project/📊-anoni-chat-erd.excalidraw.html",
-    "project/new-project/🖼-anonichat-flowchart.excalidraw.html",
-    "issue_troubleshooting/⏰-상품-투자-페이지-정적리소스-랜더링-지연-이슈.html",
     "사진-및-문서/do-messenger_screenshot_2025-06-23_12_07_38.png",
     "사진-및-문서/do-messenger_screenshot_2025-06-23_11_44_05.png",
     "사진-및-문서/do-messenger_screenshot_2025-06-23_11_43_55.png",

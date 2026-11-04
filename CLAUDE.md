@@ -40,5 +40,4 @@ Most commits are Obsidian Git auto-commits (`vault backup: <timestamp>`), not ha
 ## Known quirks
 
 - `deleteOldFiles` is off in the export settings, so pages of renamed/deleted notes linger (e.g. `lectur/🏫-강의.html`, `project/🔫-이슈·트러블슈팅.html`, the `project/new-project/🤑-…` pages). Leave them unless the user asks.
-- `public-Note/project/ATMS/🏧 ATMS - ELK Stack 구축(Kafka 기반 저널 스트리밍).md` has no page here yet (the home page HTML doesn't list it either).
 - `lib/html/custom-head-content.html` is the same file as `public-Note/custom-head-content.html` (dark theme forcing, floating buttons).
